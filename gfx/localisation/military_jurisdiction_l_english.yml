@@ -1,0 +1,72 @@
+﻿l_english:
+ 
+ military_jurisdiction:0 "Military Jurisdiction"
+
+mj_code_of_ethics:0 "Code of Ethics"
+mj_non_core_manpower:0 "Non-Core Manpower"
+mj_female_service:0 "Female Service"
+mj_training_quality:0 "Training Quality"
+mj_branch_rivarly:0 "Branch Rivalry"
+mj_volunteer_forces:0 "Volunteers"
+
+
+strict_ethics:0 "Strict Ethics"
+strict_ethics_desc:0 "Strict ethics are expected from the armed forces. Forces are monitored, war laws and ethics are strictly enforced."
+code_of_honour:0 "Code of Honour"
+code_of_honour_desc:0 "Armed forces operate under a code of honour which upholds basic human rights and dignity."
+no_supervision:0 "No Supervision"
+no_supervision_desc:0 "The armed forces lack supervision or restrictions and mercy is given on a soldier per soldier basis."
+merciless:0 "Merciless"
+merciless_desc:0 "The army operates under no concern for humanitarian law or human rights."
+encouraged_brutality:0 "Encouraged Brutality"
+encouraged_brutality_desc:0 "Brutality in this army is encouraged"
+
+
+non_core_recruitment_prohibited:0 "Non-[ROOT.GetAdjective] Recruitment Prohibited"
+non_core_recruitment_prohibited_desc:0 "Prohibits Non-[ROOT.GetAdjective] citizens from serving in the armed forces."
+segregated_regiments:0 "Segregated Regiments"
+segregated_regiments_desc:0 "Ethnicities and minorities are allowed to serve but are placed in seperate regiments."
+integrated_manpower:0 "Integrated Manpower"
+integrated_manpower_desc:0 "The armed forces operate with no concern to ethnicity or race."
+
+
+equal_service:0 "Equal Service"
+equal_service_desc:0 "The armed forces operate with no concern to gender."
+support_roles:0 "Combat Support Roles"
+support_roles_desc:0 "Women are allowed to serve in the armed forces under combat support roles."
+non_combat_roles:0 "Non-Combat Roles"
+non_combat_roles_desc:0 "Women are allowed to serve in the armed forces, but only in non-combat roles."
+service_prohibited:0 "Service Prohibited"
+service_prohibited_desc:0 "Women are prohibited from serving in the armed forces."
+
+
+advanced_training:0 "Advanced Training"
+advanced_training_desc:0 "Soldiers receive advanced, top of the line training."
+extensive_training:0 "Extensive Training"
+extensive_training_desc:0 "Soldiers receive extensive training."
+basic_training:0 "Basic Training"
+basic_training_desc:0 "Soldiers receive basic training."
+minimal_training:0 "Minimal Training"
+minimal_training_desc:0 "Soldiers receive minimal training."
+no_training:0 "No Training"
+no_training_desc:0 ""Soldiers" are thrown into combat with zero training."
+
+
+army_dominant:0 "Army Dominant"
+army_dominant_desc:0 "Balance skews heavily toward the clique of the land forces."
+army_strengthened:0 "Army Strengthened"
+army_strengthened_desc:0 "Balance skews towards the clique of the land forces."
+balanced_rivarly:0 "Balanced"
+balanced_rivarly_desc:0 "The power struggle between military wings is at a balance"
+navy_strengthened:0 "Navy Strengthened"
+navy_strengthened_desc:0 "Balance skews towards the clique of the navy."
+navy_dominant:0 "Navy Dominant"
+navy_dominant_desc:0 "Balance skews heavily towards the clique of the navy."
+
+
+large_volunteer_force:0 "Large Force"
+large_volunteer_force_desc:0 "A large force is reserved for foreign conflicts and interventions."
+small_force:0 "Small Force"
+small_force_desc:0 "A small force is reserved for foreign conflicts and interventions."
+no_volunteers:0 "No Volunteer Force"
+no_volunteers_desc:0 "No force is reserved for foreign conflicts and interventions."

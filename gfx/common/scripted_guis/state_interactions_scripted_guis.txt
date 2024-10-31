@@ -1,0 +1,686 @@
+scripted_gui = {
+	state_interactions_gui = {
+		context_type = selected_state_context
+		window_name = "state_interactions_container"
+		
+		visible = {
+			always = yes
+		}
+
+		effects = {
+
+			###CLICK
+
+			#coring
+			coring1_button_click = {
+				ROOT = { add_political_power = -4 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring2_button_click = {
+				ROOT = { add_political_power = -12 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring3_button_click = {
+				ROOT = { add_political_power = -20 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring4_button_click = {
+				ROOT = { add_political_power = -28 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring5_button_click = {
+				ROOT = { add_political_power = -36 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring6_button_click = {
+				ROOT = { add_political_power = -44 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring7_button_click = {
+				ROOT = { add_political_power = -52 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+			coring8_button_click = {
+				ROOT = { add_political_power = -60 }
+				add_core_of = FROM
+				remove_claim_by = FROM
+			}
+
+			#uncoring
+			uncoring1_button_click = {
+				ROOT = { 
+					add_political_power = -2
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring2_button_click = {
+				ROOT = { 
+					add_political_power = -6
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring3_button_click = {
+				ROOT = { 
+					add_political_power = -10
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring4_button_click = {
+				ROOT = { 
+					add_political_power = -14
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring5_button_click = {
+				ROOT = { 
+					add_political_power = -18
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring6_button_click = {
+				ROOT = { 
+					add_political_power = -22
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring7_button_click = {
+				ROOT = { 
+					add_political_power = -26
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+			uncoring8_button_click = {
+				ROOT = { 
+					add_political_power = -30
+				}
+				remove_core_of = FROM
+				start_resistance = yes
+				force_enable_resistance = ROOT
+				set_compliance = 30
+			}
+
+			#move capital
+			move_capital_button_click = {
+				ROOT = { 
+					add_political_power = -200
+					set_capital = {state = PREV}
+				}
+			}
+
+			#request resource rights
+			request_resource_rights_button_click = {
+				random_country = {
+					limit = {
+						owns_state = FROM
+						NOT = { tag = ROOT }
+					}
+					give_resource_rights = {
+						receiver = ROOT
+						state = FROM
+					}
+					ROOT = {
+						remove_relation_modifier = {
+							target = PREV
+							modifier = resource_rights_given_opmod
+						}
+						add_political_power = -25
+					}
+				}
+				set_state_flag = state_interactions_resource_rights_sflag
+			}
+
+			#remove_resource rights
+			remove_resource_rights_button_click = {
+				every_country = {
+					remove_resource_rights = PREV
+				}
+				ROOT = {
+					add_political_power = -25
+				}
+				clr_state_flag = state_interactions_resource_rights_sflag
+			}		
+
+			#border war
+			border_war_button_click = {
+				ROOT = {
+					set_variable = { next_border_war_allowed_in_this_many_days = 365 }
+					set_country_flag = {
+						flag = border_war_started_cflag
+						days = 365
+						value = 1
+					}
+					add_political_power = -50
+					add_command_power = -25
+				}
+				random_neighbor_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+						#check_variable = { num_armies_in_state@THIS > 0 }
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = THIS
+							num_provinces = 1
+							#on_win = japan_border_conflict.2
+							#on_lose = japan_border_conflict.3
+							#on_cancel = japan_border_conflict.4
+						}
+									
+						defender = {
+							state = PREV
+							num_provinces = 1
+							#on_win = japan_border_conflict.3
+							#on_lose = japan_border_conflict.2
+							#on_cancel = japan_border_conflict.4
+						}
+					}
+				}
+				owner = {
+					set_variable = { next_border_war_defender_allowed_in_this_many_days = 180 }
+					set_country_flag = {
+						flag = border_war_recent_cflag
+						days = 180
+						value = 1
+					}
+				}
+			}
+			
+			#demiliterise
+			demiliterise_button_click = {
+				ROOT = { 
+					add_political_power = -25
+				}
+				set_demilitarized_zone = yes
+			}
+			
+			#remiliterise
+			remiliterise_button_click = {
+				ROOT = { 
+					add_political_power = -25
+				}
+				set_demilitarized_zone = no
+			}
+		}
+
+		triggers = {
+
+			###VISIBILITY
+
+			#coring
+			coring1_button_visible = {
+				NOT = { state_population > 50000 }
+			}
+			coring2_button_visible = {
+				state_population > 50000
+				NOT = { state_population > 100000 }
+			}
+			coring3_button_visible = {
+				state_population > 100000
+				NOT = { state_population > 250000 }
+			}
+			coring4_button_visible = {
+				state_population > 250000
+				NOT = { state_population > 500000 }
+			}
+			coring5_button_visible = {
+				state_population > 500000
+				NOT = { state_population > 1000000 }
+			}
+			coring6_button_visible = {
+				state_population > 1000000
+				NOT = { state_population > 2500000 }
+			}
+			coring7_button_visible = {
+				state_population > 2500000
+				NOT = { state_population > 5000000 }
+			}
+			coring8_button_visible = {
+				state_population > 5000000
+			}
+			
+			#uncoring
+			uncoring1_button_visible = {
+				NOT = { state_population > 50000 }
+			}
+			uncoring2_button_visible = {
+				state_population > 50000
+				NOT = { state_population > 100000 }
+			}
+			uncoring3_button_visible = {
+				state_population > 100000
+				NOT = { state_population > 250000 }
+			}
+			uncoring4_button_visible = {
+				state_population > 250000
+				NOT = { state_population > 500000 }
+			}
+			uncoring5_button_visible = {
+				state_population > 500000
+				NOT = { state_population > 1000000 }
+			}
+			uncoring6_button_visible = {
+				state_population > 1000000
+				NOT = { state_population > 2500000 }
+			}
+			uncoring7_button_visible = {
+				state_population > 2500000
+				NOT = { state_population > 5000000 }
+			}
+			uncoring8_button_visible = {
+				state_population > 5000000
+			}
+
+			#move capital
+			move_capital_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+			
+			#request resource rights
+			request_resource_rights_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+			
+			#remove resource rights
+			remove_resource_rights_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+			
+			#border war
+			border_war_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+			
+			#demiliterise
+			demiliterise_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+			
+			#remiliterise
+			remiliterise_button_visible = {
+				always = yes					#this is the only button so always visible
+			}
+
+			###ENABLED
+
+			#coring
+			coring1_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 3.99 }
+			}
+			coring2_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 11.99 }
+			}
+			coring3_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 19.99 }
+			}
+			coring4_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 27.99 }
+			}
+			coring5_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 35.99 }
+			}
+			coring6_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 43.99 }
+			}
+			coring7_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 51.99 }
+			}
+			coring8_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER2_TT NOT = { is_core_of = FROM } }
+				OR = {
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER3_TT compliance > 60 }
+					custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER5_TT has_resistance = no }
+				}	
+				custom_trigger_tooltip = { tooltip = CORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 59.99 }
+			}
+
+			#uncoring
+			uncoring1_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 1.99 }
+			}
+			uncoring2_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 5.99 }
+			}
+			uncoring3_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 9.99 }
+			}
+			uncoring4_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 13.99 }
+			}
+			uncoring5_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 17.99 }
+			}
+			uncoring6_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 21.99 }
+			}
+			uncoring7_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 25.99 }
+			}
+			uncoring8_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER3_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = UNCORING_BUTTON_TRIGGER4_TT has_global_flag = coring_button_allowed_gflag }
+				check_variable = { ROOT.political_power > 29.99 }
+			}
+			
+			#move capital
+			move_capital_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = MOVE_CAPITAL_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = MOVE_CAPITAL_BUTTON_TRIGGER2_TT is_core_of = FROM }
+				custom_trigger_tooltip = { tooltip = MOVE_CAPITAL_BUTTON_TRIGGER3_TT is_capital = no }
+				check_variable = { ROOT.political_power > 199.99 }
+			}
+			
+			#request resource rights
+			request_resource_rights_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = REQUEST_RESOURCE_RIGHTS_BUTTON_TRIGGER1_TT NOT = { is_owned_and_controlled_by = ROOT } }
+				custom_trigger_tooltip = { tooltip = REQUEST_RESOURCE_RIGHTS_BUTTON_TRIGGER2_TT NOT = { has_state_flag = state_interactions_resource_rights_sflag } }
+				custom_trigger_tooltip = {
+					tooltip = REQUEST_RESOURCE_RIGHTS_BUTTON_TRIGGER3_TT
+					ROOT = {
+						has_relation_modifier = {
+							target = PREV
+							modifier = resource_rights_given_opmod
+						}
+					}
+				}
+				check_variable = { ROOT.political_power > 24.99 }
+			}
+			
+			#remove resource rights
+			remove_resource_rights_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = REMOVE_RESOURCE_RIGHTS_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = REMOVE_RESOURCE_RIGHTS_BUTTON_TRIGGER2_TT has_state_flag = state_interactions_resource_rights_sflag }
+				check_variable = { ROOT.political_power > 24.99 }
+			}
+			
+			#border war
+			border_war_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = BORDER_WAR_BUTTON_TRIGGER1_TT ROOT = { is_subject = no } }
+				custom_trigger_tooltip = {
+					tooltip = BORDER_WAR_BUTTON_TRIGGER2_TT
+					NOT = { is_owned_and_controlled_by = ROOT }
+					owner = { NOT = { has_war_with = ROOT } }
+					owner = { NOT = { is_in_faction_with = ROOT } }
+					owner = { NOT = { is_puppet_of = ROOT } }
+					owner = { NOT = { is_subject_of = ROOT } }
+				}
+				custom_trigger_tooltip = {
+					tooltip = BORDER_WAR_BUTTON_TRIGGER3_TT
+					any_country = {
+						is_neighbor_of = ROOT
+						PREV = { is_owned_and_controlled_by = THIS }
+					}
+					any_neighbor_state = {
+						is_owned_and_controlled_by = ROOT
+						#check_variable = { num_armies_in_state@THIS > 0 }
+					}
+				}
+				custom_trigger_tooltip = { tooltip = BORDER_WAR_BUTTON_TRIGGER4_TT ROOT = { NOT = { has_country_flag = border_war_started_cflag } } }
+				custom_trigger_tooltip = { tooltip = BORDER_WAR_BUTTON_TRIGGER5_TT owner = { NOT = { has_country_flag = border_war_recent_cflag } } }
+
+				check_variable = { ROOT.political_power > 49.99 }
+				check_variable = { ROOT.command_power > 24.99 }
+			}
+			
+			#demiliterise
+			demiliterise_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = DEMILITERISE_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				custom_trigger_tooltip = { tooltip = DEMILITERISE_BUTTON_TRIGGER2_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = DEMILITERISE_BUTTON_TRIGGER3_TT is_demilitarized_zone = no }
+				check_variable = { ROOT.political_power > 24.99 }
+			}
+
+			#remiliterise
+			remiliterise_button_click_enabled = {
+				custom_trigger_tooltip = { tooltip = REMILITERISE_BUTTON_TRIGGER1_TT is_owned_and_controlled_by = ROOT }
+				#custom_trigger_tooltip = { tooltip = REMILITERISE_BUTTON_TRIGGER2_TT is_capital = no }
+				custom_trigger_tooltip = { tooltip = REMILITERISE_BUTTON_TRIGGER3_TT is_demilitarized_zone = yes }
+				check_variable = { ROOT.political_power > 24.99 }
+			}
+		}	
+
+		ai_check = {
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+
+			###CLICK
+
+			#coring
+			coring1_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring2_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring3_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring4_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring5_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring6_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring7_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+			coring8_button_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+
+			#uncoring
+			uncoring1_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring2_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring3_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring4_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring5_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring6_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring7_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			uncoring8_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#move capital
+			move_capital_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#request resource rights
+			request_resource_rights_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#remove resource rights
+			remove_resource_rights_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#border war
+			border_war_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#demiliterise
+			demiliterise_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			
+			#remiliterise
+			remiliterise_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
+}

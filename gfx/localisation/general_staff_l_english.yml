@@ -1,0 +1,56 @@
+﻿l_english:
+
+general_staff:0 "General Staff"
+
+gf_command_structure:0 "Command Structure"
+gf_logistics_system:0 "Logistics System"
+gf_officer_training:0 "Officer Training"
+gf_special_forces_role:0 "Special Forces Role"
+gf_marine_role:0 "Marine Role"
+gf_paratrooper_role:0 "Paratrooper Role"
+
+
+centralized_hierarchy:0 "Centralized Hierarchy"
+centralized_hierarchy_desc:0 "The army shall be organized in a typical , top down structure where high ranking officer's word takes precedence."
+decentralized_democracy:0 "Decentralized Democracy"
+decentralized_democracy_desc:0 "The army shall be organized in an atypical manner where soldiers and members of the military elect the leaders of all levels of hierarchy, resulting in a more democratic organisation resembling state government where each individual matters."
+
+
+push_system:0 "Push System"
+push_system_desc:0 "A push system manufactures, directs and routes military materiel based on a projection of demands. This method minimizes risks of shortages, but causes administrative strain and leads to more waste."
+pull_system:0 "Pull System"
+pull_system_desc:0 "A pull system manufactures, directs and routes military materiel based on actual demand rather than expectations. This method minimizes inefficiency and wasteful production, but requires efficient communication and organisation."
+
+advanced_officer_training:0 "Advanced Training"
+advanced_officer_training_desc:0 "Officers receive advanced, top of the line training."
+major_officer_training:0 "Major Training"
+major_officer_training_desc:0 "Officers receive good training."
+junior_officer_training:0 "Junior Training"
+junior_officer_training_desc:0 "Officers receive little training."
+foreign_officer_missions:0 "Foreign Missions"
+foreign_officer_missions_desc:0 "Officers are sent as attaches on foreign missions."
+
+
+army_support:0 "Army Support"
+army_support_desc:0 "Special forces provide support for the main army and are usually integrated with it."
+special_operations:0 "Spec-Ops"
+special_operations_desc:0 "Special forces execute calculated, high value missions that benefit the whole front but are otherwise seperated from high command."
+foreign_conflicts:0 "Foreign Conflicts"
+foreign_conflicts_desc:0 "Special forces act as an intervention force in foreign conflicts, supporting allies abroad."
+
+
+marine_army_command:0 "Army Command"
+marine_army_command_desc:0 "Marines main function is to support the army and create vulnerabilities through landing spearheads."
+marine_navy_command:0 "Navy Command"
+marine_navy_command_desc:0 "Marines are placed under the command of the navy and its jurisdiction."
+marine_spec_ops_command:0 "Spec-Ops Command"
+marine_spec_ops_command_desc:0 "Marines operate independently to fullfil high value missions."
+
+
+para_army_command:0 "Army Command"
+para_army_command_desc:0 "Paratroopers support the army through creating opportunities and acting as decoys for the main army."
+para_air_command:0 "Air Command"
+para_air_command_desc:0 "Paratroopers are placed under the command of the airforce and its jurisdiction."
+para_spec_ops_command:0 "Spec-Ops Command"
+para_spec_ops_command_desc:0 "Paratroopers are placed on special missions and act similarly to special forces."
+

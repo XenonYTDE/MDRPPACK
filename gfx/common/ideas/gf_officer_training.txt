@@ -1,0 +1,164 @@
+ideas = {
+
+    gf_officer_training = {
+        law = yes
+        use_list_view = yes
+
+        advanced_officer_training = {
+
+            available = {
+                command_power > 5
+            }
+
+            level = 2  
+
+            removal_cost = 0
+
+            modifier = {
+               training_time_factor = 0.10
+               max_dig_in_factor = 0.10
+               dig_in_speed_factor = 0.20
+               max_planning_factor = 0.10
+               planning_speed = 0.10
+               max_command_power = -5
+            }
+
+            on_add = {
+                add_command_power = -5
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    is_major = yes
+                    add = 40
+                }
+
+                modifier = {
+                    num_divisions > 50
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        major_officer_training = {
+
+            available = {
+
+            }
+
+            level = 1
+
+            removal_cost = 0
+
+            modifier = {
+               training_time_factor = 0.05
+               max_dig_in_factor = 0.05
+               dig_in_speed_factor = 0.10
+               max_planning_factor = 0.05
+               planning_speed = 0.05
+            }
+
+            ai_will_do =  {
+                base = 20
+
+                modifier = {
+                    num_divisions > 20
+                    add = 40
+                }
+                
+                modifier = {
+                    is_major = no
+                    add = 20
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        junior_officer_training = {
+
+            available = {
+
+            }
+
+            level = 2
+
+            removal_cost = 0
+
+            modifier = {
+                experience_gain_army_factor = 0.10
+                training_time_factor = -0.10
+                minimum_training_level = -0.10
+                max_dig_in_factor = -0.10
+               max_planning_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    num_divisions < 10
+                    add = 30
+                }
+                
+            }
+
+            cancel_if_invalid = no
+        }
+
+        foreign_officer_missions = {
+
+            available = {
+                num_divisions > 5
+            }
+
+            cost = 100
+            removal_cost = 0
+
+            modifier = {
+                send_volunteer_divisions_required = -0.20
+                send_volunteer_size = 1
+                send_volunteer_factor = 0.10
+                air_volunteer_cap = 10
+            }
+
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+                    has_war = yes
+                    add = -1000
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 20
+                }
+
+                modifier = {
+                    is_major = yes
+
+                    OR = {
+                        has_government = communism
+                        has_government = democratic
+                    }
+                    add = 20
+                }
+                
+                modifier = {
+                    num_faction_members > 5
+                    is_faction_leader = yes
+                    add = 40
+                }
+
+                
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}

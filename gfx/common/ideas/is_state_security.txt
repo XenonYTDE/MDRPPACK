@@ -1,0 +1,192 @@
+ideas = {
+    
+    is_state_security = {
+        law = yes
+        use_list_view = yes
+
+        police_only = {
+            
+            available = {
+
+            }
+
+            level = 3
+
+            modifier = {
+                #political_power_factor #= #0.05
+                foreign_subversive_activites = 0.10
+                encryption_factor = 0.01
+                decryption_factor = 0.01
+                stability_factor = 0.05
+                drift_defence_factor = -0.10
+                resistance_activity = 0.05
+                compliance_growth = 0.05
+                civilian_intel_to_others = 5
+                army_intel_to_others = 5
+                navy_intel_to_others = 5
+                airforce_intel_to_others = 5
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    has_government = democratic
+                    add = 60
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        counter_terrorism_operatives = {
+
+            available = {
+
+            }
+
+            level = 2
+
+            modifier = {
+                political_power_factor = -0.02
+                foreign_subversive_activites = -0.05
+                stability_factor = 0.03
+                encryption_factor = 0.02
+                decryption_factor = 0.02
+                drift_defence_factor = -0.05
+                compliance_growth = -0.025
+                civilian_intel_to_others = 3
+                army_intel_to_others = 3
+                navy_intel_to_others = 3
+                airforce_intel_to_others = 3
+            }
+
+            ai_will_do = {
+                base = 20
+            }
+
+            cancel_if_invalid = no
+
+        }
+
+        gendarmerie = {
+
+            available = {
+                
+            }
+            
+            cost = 10
+            level = 1
+
+            modifier = {
+
+            }
+
+            ai_will_do = {
+                base = 40
+
+                modifier = {
+                    has_government = neutrality
+                    NOT = {
+                        has_country_leader_ideology = anarchism
+                    }
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        sassy_secret_police = {
+
+            available = {
+                NOT = {
+                    has_government = democratic
+                }
+            }
+
+            level = 2
+
+            modifier = {
+                political_power_factor = -0.10
+                foreign_subversive_activites = -0.20
+                #stability_factor #= #-0.03
+                encryption_factor = 0.05
+                decryption_factor = 0.05
+                drift_defence_factor = 0.15
+                resistance_activity = -0.05
+                compliance_growth = -0.025
+                intelligence_agency_defense = 0.30
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_country_leader_ideology = stalinism
+                    add = 60
+                }
+
+                modifier = {
+                    has_country_leader_ideology = nazism
+                    add = 60
+                }
+
+                modifier = {
+                    OR = {
+                        tag = GER 
+                        tag = SOV 
+                    }
+
+                    NOT = {
+                        has_government = democratic
+                    }
+                    add = 20
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        military_policing = {
+
+            available = {
+                NOT = {
+                    has_government = democratic
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                political_power_factor = -0.05
+                stability_factor = -0.05
+                encryption_factor = 0.03
+                decryption_factor = 0.03
+                resistance_growth = -0.10
+                resistance_activity = -0.10
+                resistance_target = -0.10
+                civilian_intel_to_others = -1
+                army_intel_to_others = -1
+                navy_intel_to_others = -1
+                airforce_intel_to_others = -1
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    has_idea = military_head
+                    add = 50
+                }
+
+                modifier = {
+                    has_government = fascism
+                    add = 30
+                }
+            }
+            
+            cancel_if_invalid = yes
+        }
+    }
+}

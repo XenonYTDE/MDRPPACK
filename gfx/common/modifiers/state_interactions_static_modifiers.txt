@@ -1,0 +1,4 @@
+resource_rights_given_opmod = {
+	valid_relation_trigger = {
+	}
+}

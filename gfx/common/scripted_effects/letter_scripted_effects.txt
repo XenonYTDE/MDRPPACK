@@ -1,0 +1,11 @@
+send_insult_effect = {
+}
+
+clear_generated_insults_cache = {
+	clear_array = last_randomized_insults
+	clear_array = written_type_of_insult_array
+	clear_array = valid_insults_list_array
+	clear_variable = show_write_insult_menu
+	clear_variable = show_save_insuls_window
+	clear_variable = show_insuls_list_window
+}

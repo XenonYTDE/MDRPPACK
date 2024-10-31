@@ -1,0 +1,99 @@
+ideas = {
+
+    gf_logistics_system = {
+        law = yes
+        use_list_view = yes
+
+        push_system = {
+
+            available = {
+
+            }
+
+            cost = 80
+            removal_cost = 0
+
+            modifier = {
+                supply_factor = 0.30
+                out_of_supply_factor = 0.20
+                max_fuel_factor = 0.20
+                army_fuel_capacity_factor = 0.20
+                planning_speed = -0.10
+            }
+            
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    tag =  SOV 
+                    add = 80
+                }
+
+                modifier = {
+                    has_government = fascism
+                    add = 40
+                }
+
+                modifier = {
+                    has_idea = military_head
+                    add = 60
+                }
+                
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        pull_system = {
+
+            available = {
+
+            }
+
+            cost = 80
+            removal_cost = 0
+
+            modifier = {
+                out_of_supply_factor = -0.20
+                supply_combat_penalties_on_core_factor = -0.50
+                attrition = -0.05
+                truck_attrition_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 20
+                
+                modifier = {
+                    has_government = democratic
+                    add = 40
+                }
+
+                modifier = {
+                    tag = GER 
+                    add = 60
+                }
+
+                modifier = {
+
+                    OR = {
+                        tag = USA 
+                        tag = ENG 
+
+                    }
+                    add = 60
+                }
+
+                modifier = {
+
+                    OR = {
+                        has_idea = workers_council
+                        has_idea = communal_council
+                    }
+                    add = 60
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

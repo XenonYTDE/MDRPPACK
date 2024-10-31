@@ -1,0 +1,127 @@
+scripted_gui = {
+    scripted_gui_example_2 = {
+    
+        #context type is now selected_state_context, which means that this gui will be only visible if you select a state
+        #and the scope of every effect/trigger/localization of this gui will be the selected state
+        #and the root will be the player
+		#another similar context is selected_country_context, which pops up when you right click a country to open its diplomacy screen
+        context_type = selected_state_context
+		
+		window_name = "scripted_gui_example_2"
+		
+		visible = {
+			ROOT = { has_opinion = { target = PREV value < -2 } }
+		NOT = {is_controlled_by=ROOT}
+            check_variable = { global.current_example = 2 }
+            #in addition to visible check, this window will be only visible when you select a state
+		}
+		
+		effects = {
+			#some additional example effects effects
+            button_build_military_factory_click = {
+                #build a military factory to state
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+            }
+            button_nuke_click = {
+			   ROOT = {add_opinion_modifier = { target = PREV modifier = small_decrease }}
+                #launch a nuke at current scope from root (player) to PREV (which was our current scape before we switch to ROOT)
+                ROOT = {	
+                   add_state_claim = PREV
+                }
+            }
+            
+            
+            #same as example 1, but since scope is now state, these variables are actually being stored in the state that is selected. Each state will show a different example2Variable
+			button_add_click = {
+			ROOT= {add_political_power= -100}
+                add_to_variable = { example2Variable = 25 }
+			}
+			button_subtract_click = {
+			ROOT= {add_political_power= 50}
+                subtract_from_variable = { example2Variable = 25 }
+			}
+            
+			button_add_control_click = {
+                add_to_variable = { example2Variable = 5 }
+                clamp_variable = { var = example2Variable min = 0 max = 100 }
+			}
+			button_subtract_control_click = {
+                subtract_from_variable = { example2Variable = 5 }
+                clamp_variable = { var = example2Variable min = 0 max = 100 }
+			}
+		}
+        
+        
+		triggers = {
+			#some additional triggers for this example
+			
+            button_build_military_factory_visible = {
+				#we only want this button to be visisible for our own states
+                #ROOT is player and current scope is selected state
+                #this button is only visible if selected state is owned by player
+                is_owned_by = ROOT
+            }
+            button_build_military_factory_click_enabled = {
+				#and only enabled if we can actually build it
+                free_building_slots = {
+                    building = arms_factory
+                    size > 0
+                }
+            }
+            
+            button_add_click = {
+		
+				 NOT = { is_claimed_by = ROOT }
+            }
+			 button_nuke_visible = {
+			  check_variable = { example2Variable > 99 }
+				#nuke button is visible for non-player states
+                #ROOT is player and current scope is selected state
+                #this button is only visible if selected state is not owned by player
+                NOT = { is_owned_by = ROOT }
+				 NOT = { is_claimed_by = ROOT }
+            }
+			
+			#these two texts are visible depending if you are or you are not selecting a player state
+            text_3_visible = {
+                #ROOT is player and current scope is selected state
+                #this text is only visible if selected state is owned by player
+                is_owned_by = ROOT
+            }
+            text_4_visible = {
+                #ROOT is player and current scope is selected state
+                #this text is only visible if selected state is owned by player
+                NOT = { is_owned_by = ROOT }
+            }
+            
+            
+            
+           
+        
+			button_add_click_enabled = {
+                check_variable = { example2Variable < 99 }
+				ROOT = { has_political_power > 100 }
+			}
+			button_subtract_click_enabled = {
+                check_variable = { example2Variable > 0 }
+			}
+            text_2_visible = {
+                check_variable = { example2Variable > 99 }
+            }
+        }
+    }
+	
+	#this is the scripted gui entry for small "select a state to try this example!" pop up
+    scripted_gui_example_2_info = {
+        context_type = player
+		window_name = "scripted_gui_example_2_info"
+		visible = {
+            check_variable = { global.current_example = 2 }
+		}
+    }
+}
+

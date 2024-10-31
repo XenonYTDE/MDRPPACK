@@ -1,0 +1,115 @@
+spriteTypes = {
+
+	#government_type
+
+	spriteType = {
+		name = "GFX_idea_slot_gt_head_of_state"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gt_judiciary"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gt_government_form"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+    
+
+	#gt_head_of_state
+
+
+	spriteType = {
+		name = "GFX_idea_monarch"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_monarch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_prime_minister"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_prime_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_president"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_president.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_military_head"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_military_head.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chairman"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_chairman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_federal_council"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_federal_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_communal_council"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_communal_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_workers_council"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_workers_council.dds"
+	}
+
+
+    #gt_judiciary
+ 
+    spriteType = {
+		name = "GFX_idea_Independent"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_independent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_subordinate_to_the_executive"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_subordinate_to_the_executive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_politicized"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_politicized.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_corrupt"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_corrupt.dds"
+	}
+
+
+	#gt_government_form #5slots
+    
+
+	spriteType = {
+		name = "GFX_idea_unitary_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_unitary_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_devolved_unitary_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_devolved_unitary_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sassy_federated_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_federated_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_communal_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_communal_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_city_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_city_state.dds"
+	}
+}

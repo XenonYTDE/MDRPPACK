@@ -1,0 +1,409 @@
+ideas = {
+    ep_economic_model = {
+        law = yes
+        use_list_view = yes
+
+        post_scarcity = {
+            available = {
+                has_tech = fully_automated_drones
+                has_tech = medical_nanorobots
+                has_tech = computing6
+                has_tech = t3D_printed_nanofibers
+                has_tech = internet6
+                has_tech = large_scale_nanocellulose_manufacturing
+                has_tech = construction7
+                has_tech = excavation7
+                has_tech = crispr_treatment
+                has_tech = energy_efficiency7
+                has_tech = early_maglev_rail
+                has_idea = health_06
+                has_idea = social_06
+                has_idea = police_05
+                has_idea = edu_05
+                has_idea = bureau_05
+                custom_trigger_tooltip = {
+                    tooltip = 50_per_capita_or_more_tt
+                    check_variable = { gdp_per_capita > 49.999 }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = productivity_requirement_tt
+                    check_variable = { overall_productivity > 1749.99 }
+                }
+                OR = {
+                    has_idea = stable_growth
+                    has_idea = fast_growth
+                    has_idea = economic_boom
+                }
+
+                OR = {
+                    has_idea = slight_corruption
+                    has_idea = negligible_corruption
+                }
+            }
+            
+            level = 9
+
+            modifier = {
+                monthly_population = 0.5
+                stability_factor = 0.5
+                local_resources_factor = 5.0
+                industrial_capacity_factory = 3.0
+                research_speed_factor = 5.0
+                production_speed_buildings_factor = 5.0
+                production_factory_efficiency_gain_factor = 2.5
+                production_factory_max_efficiency_factor = 2.5
+                production_factory_start_efficiency_factor = 2.5
+                industrial_capacity_dockyard = 3.0
+                mil_facs_worker_requirement_modifier = -0.9
+                civ_facs_worker_requirement_modifier = -0.9
+                dockyard_worker_requirement_modifier = -0.9
+                offices_worker_requirement_modifier = -0.9
+                energy_use_multiplier = 1
+                high_unemployment_threshold_modifier = 1
+                base_migration_rate_value = 1
+                political_power_gain = 2.5
+                justify_war_goal_time = 1.0
+                enemy_justify_war_goal_time = 1
+                trade_opinion_factor = 0.25
+                resource_to_market_modifier = 0.15
+                min_export = 0.15
+                civilian_intel_to_others = 10
+                foreign_influence_defense_modifier = -0.2
+                health_cost_multiplier_modifier = -0.15
+				social_cost_multiplier_modifier = -0.15
+                foreign_influence_modifier = 0.25
+                monthly_population = 0.5
+            }
+
+            ai_will_do = {
+                base = 100
+
+                modifier = {
+                    has_government = democratic
+                    add = 20
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 20
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        rentier_state = {
+            available = {
+                OR = {
+                    oil > 50
+                    rubber > 50
+                }
+                NOT = {
+                    has_government = communism
+                }
+            }
+            
+            level = 8
+
+            modifier = {
+                political_power_gain = 0.25
+                local_resources_factor = 0.25
+                production_speed_buildings_factor = -0.10
+                industrial_capacity_factory = -0.10
+                research_speed_factor = -0.05
+                drift_defence_factor = 0.25
+                max_fuel_factor = 0.20
+                fuel_gain_factor = 0.20
+            }
+
+            ai_will_do = {
+                base = 40
+
+                modifier = {
+                    has_government = neutrality
+                    add = 40
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        laisezz_faire = {
+            available = {
+                NOT = {
+                    has_government = communism
+                }
+            }
+
+            level = 7
+
+            modifier = {
+                political_power_factor = 0.10
+                local_resources_factor = -0.05
+                consumer_goods_factor = -0.10
+                stability_factor = -0.05
+                production_speed_buildings_factor = -0.10
+                production_factory_max_efficiency_factor = 0.05
+                research_speed_factor = 0.10
+                industrial_capacity_factory = 0.10
+                industrial_capacity_dockyard = 0.20
+                min_export = 0.15
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_government = neutrality
+                    add = 40
+                }
+
+                modifier = {
+                    has_government = nationalist
+                    add = 20
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        welfare_capitalism = {
+            available = {
+                NOT = {
+                    has_government = communism
+                    has_government = nationalist
+                }
+            }
+
+            level = 6
+
+            modifier = {
+                political_power_factor = 0.07
+                local_resources_factor = -0.05
+                production_speed_buildings_factor = -0.05
+                research_speed_factor = 0.05
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.10
+                min_export = 0.10
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    has_government = democratic
+                    add = 40
+                }
+
+                modifier = {
+                    has_government = neutrality
+                    add = 10
+                }
+
+                modifier = {
+                    factor = 3
+                }          
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        mixed_market = {
+            available = {
+            }
+
+            level = 5
+
+            modifier = {
+                political_power_factor = 0.05
+                local_resources_factor = 0.10
+                stability_factor = 0.05
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.05
+                production_factory_max_efficiency_factor = -0.05
+                min_export = 0.05
+            }
+
+            ai_will_do = {
+                base = 40
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        state_capitalism = {
+            available = {
+                NOT = {
+                    has_government = democratic
+                }
+            }
+
+            level = 4
+
+            modifier = {
+                political_power_factor = -0.05
+                local_resources_factor = 0.15
+                stability_factor = 0.07
+                consumer_goods_factor = 0.05
+                production_speed_buildings_factor = 0.075
+                production_factory_max_efficiency_factor = -0.025
+                research_speed_factor = -0.025
+                industrial_capacity_factory = 0.05
+                min_export = -0.10
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_government = nationalist
+                    add = 40
+                }
+
+                modifier = {
+                    has_government = neutrality
+                    add = 10
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }  
+        
+        pllanned_economy = {
+            available = {
+                NOT = {
+                    has_government = democratic  
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                political_power_factor = -0.1
+                local_resources_factor = 0.20
+                consumer_goods_factor = 0.10
+                stability_factor = 0.10
+                production_speed_buildings_factor = 0.10
+                production_factory_efficiency_gain_factor = 0.05
+                research_speed_factor = -0.075
+                industrial_capacity_factory = 0.10
+                conversion_cost_civ_to_mil_factor = -0.10
+                conversion_cost_mil_to_civ_factor = -0.10
+                min_export = -0.15
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_government = nationalist
+                    add = 20
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 80
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+            
+            cancel_if_invalid = yes
+        }
+
+        communal_economy = {
+            available = {
+                has_government = communism
+            }
+            
+            level = 2
+        
+            modifier = {
+                political_power_factor = 0.10
+                local_resources_factor = -0.20
+                consumer_goods_factor = -0.30
+                stability_factor = -0.30
+                production_speed_buildings_factor = -0.10
+                production_factory_efficiency_gain_factor = 0.10
+                production_factory_max_efficiency_factor = 0.20
+                research_speed_factor = -0.10
+                industrial_capacity_factory = -0.15
+                conversion_cost_civ_to_mil_factor = +2.0
+                conversion_cost_mil_to_civ_factor = -2.0
+                min_export = -0.25
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_government = communism
+                    add = 20
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        syndicalist_markets = {
+            available = {
+                has_government = communism
+            }
+
+            level = 1
+
+            modifier = {
+                political_power_factor = 0.05
+                consumer_goods_factor = -0.05
+                local_resources_factor = -0.05
+                production_speed_arms_factory_factor = -0.30
+                industrial_capacity_factory = 0.10
+                production_factory_start_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.10
+                production_factory_max_efficiency_factor = 0.10
+                research_speed_factor = 0.05
+                min_export = 0.05
+            }
+
+            ai_will_do = {
+                base = 20
+                
+                modifier = {
+                    has_government = communism
+                    add = 40
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

@@ -1,0 +1,76 @@
+ideas = {
+    
+    gf_paratrooper_role = {
+        law = yes
+        use_list_view = yes
+
+        para_army_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                paradrop_organization_factor = 0.25
+            }
+
+            ai_will_do = {
+                base = 20
+            }
+
+            cancel_if_invalid = no
+        }
+
+        para_air_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0 
+
+            modifier = {
+                paratrooper_aa_defense = 0.25
+                paratrooper_weight_factor = -0.10
+                air_fuel_consumption_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    tag =  USA 
+                    add = 10
+                }
+            }
+            
+            cancel_if_invalid = no
+        }
+
+        para_spec_ops_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                extra_paratrooper_supply_grace = 120
+                paratroopers_special_forces_contribution_factor = -0.10
+
+            }
+
+            ai_will_do = {
+                base = 20
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}

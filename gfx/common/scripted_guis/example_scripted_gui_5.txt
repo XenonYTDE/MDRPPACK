@@ -1,0 +1,89 @@
+scripted_gui = {
+    scripted_gui_example_5 = {
+    
+         context_type = selected_state_context
+		
+		window_name = "scripted_gui_example_5"
+		
+		visible = {
+            check_variable = { global.current_example = 5}
+		}
+		
+		effects = {
+			button_add_a_click = {
+			ROOT = {add_stability = -0.3}
+			ROOT = {add_political_power= -100}
+				ROOT = {set_capital = PREV}
+			}
+			
+		}
+        
+		triggers = {
+		   button_add_a_click_enabled = {
+                ROOT = { has_political_power > 199}
+            }
+		button_add_a_visible = {
+		 is_owned_by = ROOT 
+   
+            }
+        }
+		
+		# ai enabled runs with country scope once at the initialization. If it is false the scripted gui won't be enabled for that country at all
+        ai_enabled = {
+			always = no
+        }
+
+		# interval of this scripted gui will be evaluated by AI
+        ai_test_interval = 3 # every 3 hours
+        ai_test_variance = 0.2 #with variance of 20% (so it is actually every 2.4 - 3.6 hours)
+		
+		# on every interval tick, AI will check this trigger with country trigger if it should do an ai check. if it is false, AI won't check this scripted gui for this tick
+		ai_check = {
+			always = yes
+        }
+		
+		# each effect under effects list can have an ai weight. If it does AI will calculate its AI weight and if it positive, it will run the effect
+		ai_weights = {
+			#name of the effect
+		    button_add_a_click = {
+				ai_will_do = {
+					base = -1 #by default it is negative so AI won't run this
+					modifier = {
+						check_variable = { a < 10 } #if variable a is less than 10, then AI will click this
+						
+						# we are calculating a temp variable here and adding it as modifier (lower value of a, higher t is so AI will priotize this button more)
+						set_temp_variable = { t = 15 }
+						subtract_from_temp_variable = { t = a }
+						add = t
+					}
+				}
+		   }
+		   # same as previous one but for b and c
+		   button_add_b_click = {
+				ai_will_do = {
+					base = -1
+					modifier = {
+						check_variable = { b < 10 }
+						
+						set_temp_variable = { t = 15 }
+						subtract_from_temp_variable = { t = b }
+						add = t
+					}
+				}
+		   }
+		   button_add_c_click = {
+				ai_will_do = {
+					base = -1
+					modifier = {
+						check_variable = { c < 10 }
+						
+						set_temp_variable = { t = 15 }
+						subtract_from_temp_variable = { t = c }
+						add = t
+					}
+				}
+		   }
+		}
+    }
+}
+

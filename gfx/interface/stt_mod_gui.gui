@@ -1,0 +1,141 @@
+guiTypes = {
+	#Example Scripted GUI Window
+	containerWindowType = {
+		name = "Ship_Transfer_GUI"
+		size = { width = 180 height = 160 }
+		Orientation = center
+		moveable = yes
+		position = { x = 5 y = 0 }
+					
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window2_1b_border"
+		}
+		instantTextBoxType = {
+		name = "text_ueberschrift_stt_box"
+		format = center
+		position = { x=-5 y=12 }
+		text = stt_ueberschrift_diplo_gui
+		font = "hoi_16mbs"
+		maxHeight = 12
+		}
+		buttonType = {
+			name ="Button_1"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=15 y=15 }
+			buttonText = "SS"
+			buttonFont ="hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn1_ss_type
+		}
+			
+		buttonType = {
+			name ="Button_2"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=15 y=40 }
+			buttonText = "SG"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn2_ssg_type
+		}
+				buttonType = {
+			name ="Button_3"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=15 y=65 }
+			buttonText = "DD"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip_delayed = stt_btn3_dd_type
+		} 
+				buttonType = {
+			name ="Button_4"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=15 y=90 }
+			buttonText = "CV"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn4_cv_type
+		} 
+				buttonType = {
+			name ="Button_5"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=40 y=15 }
+			buttonText = "FF"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn5_ff_type
+		} 
+				buttonType = {
+			name ="Button_6"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=40 y=40 }
+			buttonText = "BB"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn6_bb_type
+		} 
+                        buttonType = {
+			name ="Button_7"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=40 y=65 }
+			buttonText = "BC"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn7_bc_type
+		} 
+                                buttonType = {
+			name ="Button_8"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=40 y=90 }
+			buttonText = "LH"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn8_lh_type
+		} 
+                                buttonType = {
+			name ="Button_9"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=65 y=15 }
+			buttonText = "KK"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn9_kk_type
+		} 
+                        buttonType = {
+			name ="Button_10"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=65 y=40 }
+			buttonText = "CG"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn10_cg_type
+		} 
+                        buttonType = {
+			name ="Button_11"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=65 y=65 }
+			buttonText = "SD"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn11_sd_type
+		} 
+                        buttonType = {
+			name ="Button_12"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=65 y=90 }
+			buttonText = "HF"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn12_hf_type
+		} 
+                        buttonType = {
+			name ="Button_13"
+			quadTextureSprite ="GFX_icon_button_32x32"
+			position = { x=90 y=50 }
+			buttonText = "PT"
+			buttonFont = "hoi_16mbs"
+			Orientation = centre
+			pdx_tooltip = stt_btn13_pt_type
+		} 
+	}
+}

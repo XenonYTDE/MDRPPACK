@@ -1,0 +1,91 @@
+ideas = {
+
+    gf_special_forces_role = {
+        law = yes
+        use_list_view = yes
+
+        army_support = {
+
+            available = {
+
+            }
+            
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_attack_factor = -0.10
+                special_forces_defence_factor = -0.10
+                special_forces_cap = 0.20
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    
+                }
+                
+            }
+
+            cancel_if_invalid = no
+        }
+
+        special_operations = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_attack_factor = 0.10
+                special_forces_defence_factor = 0.10
+                special_forces_cap = -0.05
+                special_forces_out_of_supply_factor = -0.30
+                special_forces_training_time_factor = 0.10
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    tag = GER 
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        foreign_conflicts = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_no_supply_grace = 180
+                special_forces_training_time_factor = 0.20
+                send_volunteer_size = 1
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    num_faction_members > 10
+                    is_faction_leader = yes
+                    add = 30
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}

@@ -1,0 +1,17 @@
+﻿l_english:
+    # game rules
+ RULE_GROUP_CWC:0 "Core with Compliance"
+    # Core on other continents
+ ONLY_ALLOW_CORING_ON_STARTING_CONTINENT:0 "Allow cores on other continents"
+ RULE_ONLY_CORE_PLAYERS_CONTINENT:0 "Only for players"
+ RULE_ONLY_CORE_PLAYERS_CONTINENT_DESC:0 "Only players are allowed to have cores with compliance on other continents, preventing the colonial powers with AI from getting too strong using their colonies."
+ RULE_CORE_PLAYERS_AND_AI_CONINENT:0 "For everyone"
+ RULE_CORE_PLAYERS_AND_AI_CONINENT_DESC:0 "Everyone is allowed to core with compliance on other continents, potentionally making colonial powers too strong."\
+ RULE_CORE_NO_ONE_CONINENT:0 "For no one"
+ RULE_CORE_NO_ONE_CONINENT_DESC:0 "No one is allowed to core with compliance on other continents, preventing starting and future colonial powers from getting too strong."
+    # Coring for AI
+ ALLOW_AI_CORING:0 "Let the AI core with compliance"
+ RULE_ALLOW_AI_CORING:0 "Yes"
+ RULE_ALLOW_AI_CORING_DESC:0 "Allows the AI to core with compliance."
+ RULE_DISABLE_AI_CORING:0 "Player only"
+ RULE_DISABLE_AI_CORING_DESC:0 "Only players can core with compliance."

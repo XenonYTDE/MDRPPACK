@@ -1,0 +1,10 @@
+puppet_integrate_navies = {
+
+	icon = generic_political_actions
+	visible = {
+			any_other_country = {
+				is_subject_of = ROOT
+				compare_autonomy_state < autonomy_colony 
+			}
+	}
+}
