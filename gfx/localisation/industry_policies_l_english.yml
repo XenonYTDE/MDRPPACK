@@ -1,0 +1,42 @@
+﻿l_english:
+ 
+industry_policies:0 "Industrial Policies"
+
+ip_economic_base:0 "Economic Base"
+ip_construction_focus:0 "Construction Focus"
+ip_resource_efforts:0 "Resource Efforts"
+
+
+agrarian_base:0 "Agrarian Base"
+agrarian_base_desc:0 "Agriculture is the bread and butter of this nation's economy."
+banking_tax_heaven:0 "Banking And Tax Haven"
+banking_tax_heaven_desc:0 "Taxes for foreign investors are low to non existent and regulation is often lacking, resulting in the creation of a tax haven."
+small_business:0 "Small Business"
+small_business_desc:0 "Small businesses dominate this nation's markets."
+natural_resources:0 "Natural Resources"
+natural_resources_desc:0 "Emphasis is placed on the extraction and trade of natural resources."
+business_and_enterprise:0 "Business And Enterprise"
+business_and_enterprise_desc:0 "Large enterprises and corporations dominate this nation's markets."
+industry_manufacturing:0 "Industry And Manufacturing"
+industry_manufacturing_desc:0 "Both light and heavy industry comprise the majority of this nation's economic output."
+
+
+industrial_complexes:0 "Industrial Complexes"
+industrial_complexes_desc:0 "The state prioritizes the construction of factories and manufacturing complexes over all else."
+military_buildings:0 "Military Buildings"
+military_buildings_desc:0 "The state prioritizes the construction of dockyards and arms factories over all else."
+defense_focus:0 "Defensive Construction"
+defense_focus_desc:0 "The state prioritizes the construction of defenses over all else."
+infrastructure_focus:0 "Infrastructure Focus"
+infrastructure_focus_desc:0 "The state prioritizes the construction of infrastructure over all else."
+
+
+synthetic_fuel:0 "Synthetic Fuel"
+synthetic_fuel_desc:0 "The synthesis and delivery of fuel is prioritized."
+alternative_materials:0 "Alternative Materials"
+alternative_materials_desc:0 "Through scrapping and recycling, production can continue even without the necessary resources. Albeit at a lower pace."
+extraction_programs:0 "Extraction Programs"
+extraction_programs_desc:0 "Programs are put in placed in order to bolster the extraction of resources."
+
+
+

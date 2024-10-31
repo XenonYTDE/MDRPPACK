@@ -1,0 +1,72 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#allow coring
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_coring_button
+						option = allow_coring_button_option_yes
+					}
+				}
+				set_global_flag = coring_button_allowed_gflag
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { #state
+						has_state_flag = state_interactions_resource_rights_sflag
+					}
+				}
+				clr_state_flag = state_interactions_resource_rights_sflag
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = next_border_war_allowed_in_this_many_days
+					check_variable = {
+						next_border_war_allowed_in_this_many_days > 0
+					}
+				}
+				subtract_from_variable = {
+					next_border_war_allowed_in_this_many_days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_variable = next_border_war_allowed_in_this_many_days
+					check_variable = {
+						next_border_war_allowed_in_this_many_days = 0
+					}
+				}
+				clr_country_flag = border_war_started_cflag
+			}
+			if = {
+				limit = {
+					has_variable = next_border_war_defender_allowed_in_this_many_days
+					check_variable = {
+						next_border_war_defender_allowed_in_this_many_days > 0
+					}
+				}
+				subtract_from_variable = {
+					next_border_war_defender_allowed_in_this_many_days = 1
+				}
+			}
+			if = {
+				limit = {
+					has_variable = next_border_war_defender_allowed_in_this_many_days
+					check_variable = {
+						next_border_war_defender_allowed_in_this_many_days = 0
+					}
+				}
+				clr_country_flag = border_war_recent_cflag
+			}			
+		}
+	}
+}

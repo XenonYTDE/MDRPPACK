@@ -1,0 +1,206 @@
+ideas = {
+
+    gp_minority_rights = {
+        law = yes
+        use_list_view = yes
+
+        affirmative_action = {
+            
+            available = {
+                OR = {
+                    NOT = {
+                        has_government = nationalist
+                        has_government = neutrality
+                    }
+                }
+            }
+
+            level = 5
+
+            modifier = {
+                political_power_factor = -0.20
+                non_core_manpower = 0.25
+                stability_factor = 0.10
+                resistance_damage_to_garrison = -0.30
+            }
+
+            ai_will_do = { 
+                base = 10
+                
+                modifier = {
+                    has_government = democratic
+                    add = 30
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 70
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        significant_rights = {
+
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            level = 4
+
+            modifier = {
+                political_power_factor = -0.10
+                non_core_manpower = 0.15
+                stability_factor = 0.05
+                resistance_damage_to_garrison = -0.15
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    OR = {
+                        has_government = democratic
+                        has_government = communism
+                    }
+                    add = 40
+                } 
+                
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        neutral_stance = {
+            available = {
+            }
+
+            level = 3
+
+            modifier = {
+                #political_power_factor = 0.05
+                non_core_manpower = 0.05
+                stability_factor = 0.025
+                #resistance_damage_to_garrison #= #-0.15
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    has_government = neutrality
+                    add = 70
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 20
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        racial_segregation = {
+            available = {
+                NOT = {
+                    has_government = communism
+                }
+                
+            }
+
+            level = 2
+
+            modifier = {
+                political_power_factor = 0.10
+                non_core_manpower = -0.25
+                resistance_damage_to_garrison = 0.15
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    has_government = neutrality
+                    add = 30
+                }
+
+                modifier = {
+                    has_government = fascism
+                    add = 60
+                }
+
+                modifier = {
+                    has_government = democratic
+                    original_tag = ENG
+                    add = 30
+                }
+
+                modifier = {
+                    factor = 3
+                }
+
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        racial_hierarchy = {
+            available = {
+                has_government = nationalist 
+            }
+
+            level = 1
+            
+            modifier = {
+                political_power_factor = 0.20
+                non_core_manpower = -0.50
+                conscription_factor = 0.10
+                stability_factor = -0.05
+                resistance_damage_to_garrison = 0.40
+            }
+
+            ai_will_do = {
+                base = 1
+
+                modifier = {
+                    has_government = nationalist
+                    add = 80
+                }
+
+                modifier = {
+                  has_government = nationalist
+                  original_tag = GER
+                  add = 100
+                }
+
+                modifier = {
+                    has_government = fascism
+                    original_tag = JAP
+                    add = 100
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+    }
+}

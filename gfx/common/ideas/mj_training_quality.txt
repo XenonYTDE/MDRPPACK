@@ -1,0 +1,253 @@
+ideas = {
+
+    mj_training_quality = {
+        law = yes
+        use_list_view = yes
+
+        advanced_training = {
+
+            available = {
+                NOT = {
+                    #has_idea = disarmed_nation
+                    amount_manpower_in_deployment_queue > 10000
+                }
+            }
+
+            level = 3
+            
+            modifier = {
+                experience_gain_army_factor = 0.10
+                experience_gain_air_factor = 0.10
+                experience_gain_navy_factor = 0.10
+                army_attack_factor = 0.10
+                army_defence_factor = 0.10
+                air_accidents_factor = -0.10
+                air_weather_penalty = -0.10
+                land_night_attack = 0.10
+                mobilization_speed = -0.20
+                training_time_factor = 0.20
+                minimum_training_level = 0.20
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    is_major = yes
+                    add = 40
+                }
+
+                modifier = {
+                    has_idea = military_head
+                    add = 30
+                }
+                
+            }
+
+            cancel_if_invalid = no
+        }
+
+        extensive_training = {
+            
+            available = {
+                  NOT = {
+                    amount_manpower_in_deployment_queue > 10000
+                  }
+            }
+
+            level = 2
+
+            modifier = {
+                experience_gain_army_factor = 0.05
+                experience_gain_air_factor = 0.05
+                experience_gain_navy_factor = 0.05
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                air_accidents_factor = -0.05
+                air_weather_penalty = -0.05
+                land_night_attack = 0.05
+                mobilization_speed = -0.10
+                training_time_factor = 0.10
+                minimum_training_level = 0.10
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    is_major = yes
+                    add = 50
+                }
+
+                modifier = {
+                    has_idea = military_head
+                    add = 40
+                }
+
+                modifier = {
+                    is_major = no
+                    ai_wants_divisions > 5
+                    add = -10
+                }
+              }
+
+              cancel_if_invalid = no
+        }
+
+            
+        
+        
+            basic_training = {
+                
+                available = {
+
+                }
+                
+                cost = 10
+                level = 1
+
+                modifier = {
+
+                    experience_gain_army_factor = 0.05
+                    experience_gain_air_factor = 0.05
+                }
+
+                ai_will_do = {
+                    base = 40
+
+                    modifier  = {
+                       has_war = yes
+                       enemies_strength_ratio > 0.20
+                       add = 40
+                    }
+                }
+
+                cancel_if_invalid = yes
+            }
+        
+            minimal_training = {
+
+                available = {
+                    OR = {
+                        AND = {
+                            has_war = yes
+                            enemies_strength_ratio > 0.30
+                        }
+
+                        AND = {
+                            has_war_support > 0.5
+                            surrender_progress > 0.30
+                        }
+                        has_war_support > 0.70
+                    }
+                }
+
+                level = 2
+
+                modifier = {
+                    experience_gain_army_factor = -0.10
+                    experience_gain_air_factor = -0.10
+                    experience_gain_navy_factor = -0.10
+                    army_org_factor = -0.05
+                    army_attack_factor = -0.05
+                    army_defence_factor = -0.05
+                    air_accidents_factor = 0.075
+                    air_weather_penalty = 0.07
+                    land_night_attack = -0.07
+                    mobilization_speed = 0.25
+                    training_time_factor = -0.25
+                    minimum_training_level = -0.10
+                }
+
+                ai_will_do = {
+                    base = 20
+
+                    modifier = {
+                        has_war = yes
+                        enemies_strength_ratio > 0.40
+                        add = 40
+                    }
+
+                    modifier = {
+                        is_major = no
+                        surrender_progress > 0.50
+                        casualties_k > 300
+                        add = 100
+                    }
+
+                    modifier = {
+                        is_major = yes
+                        surrender_progress > 0.30
+                        casualties_k > 1000
+                        add = 60
+                    }
+
+                    modifier = {
+                        is_major = yes
+                        surrender_progress > 0.80
+                        casualties_k > 3000
+                        add = 400
+                    }
+                }
+
+                cancel_if_invalid = yes
+            }
+
+            no_training = {
+
+                available = {
+                    has_war = yes
+
+                    OR = {
+                        has_war_support > 0.90
+                        enemies_strength_ratio > 0.70
+                        surrender_progress > 0.70
+                    }
+                }
+
+                level = 3
+
+                modifier = {
+                    experience_gain_army_factor = -0.20
+                    experience_gain_air_factor = -0.20
+                    experience_gain_navy_factor = -0.20
+                    army_org_factor = -0.15
+                    army_attack_factor = -0.20
+                    army_defence_factor = -0.20
+                    air_accidents_factor = 0.15
+                    air_weather_penalty = 0.15
+                    land_night_attack = -0.15
+                    mobilization_speed = 0.50
+                    training_time_factor = -0.50
+                    minimum_training_level = -0.20
+                }
+
+                ai_will_do = {
+                    base = 0
+                    
+                    modifier = {
+                        is_major = no
+                        surrender_progress > 0.90
+                        casualties_k > 100
+                        add = 100
+                        
+                    }
+
+                    modifier = {
+                        is_major = yes
+                        surrender_progress > 90
+                        casualties_k > 4000
+                        add = 500
+                    }
+
+                    modifier = {
+                        enemies_strength_ratio > 2
+                        add = 100
+                    }
+
+                }
+
+                cancel_if_invalid = yes
+            }
+       }
+}

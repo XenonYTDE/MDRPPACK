@@ -1,0 +1,83 @@
+ideas = {
+
+    gf_marine_role = {
+        law = yes
+        use_list_view = yes
+
+        marine_army_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                naval_invasion_prep_speed = 0.10
+                amphibious_invasion = 0.15
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    tag =  JAP 
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        marine_navy_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                naval_invasion_planning_bonus_speed = 0.10
+                naval_invasion_penalty = -0.10
+                naval_invasion_capacity = 5
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    tag =  USA 
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        marine_spec_ops_command = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                transport_capacity = -0.50
+                extra_marine_supply_grace = 120
+                naval_invasion_capacity = 1
+            }
+
+            ai_will_do = {
+                base = 20
+                
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}

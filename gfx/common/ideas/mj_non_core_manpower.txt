@@ -1,0 +1,139 @@
+ideas = {
+
+    mj_non_core_manpower = {
+        law = yes
+        use_list_view = yes
+
+        non_core_recruitment_prohibited = {
+
+            available = {
+                
+                OR = {
+                    has_idea = racial_segregation
+                    has_idea = racial_hierarchy
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                non_core_manpower = -1
+                #recruitable_population_factor #= #-0.05
+                army_org_factor = 0.10
+                army_morale_factor = 0.10
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    has_idea = racial_segregation
+                    has_government = fascism
+                    add = 50
+                }
+                
+                modifier = {
+                    has_idea = racial_hierarchy
+                    add = 70
+                }
+
+                modifier = {
+                    has_idea = racial_hierarchy
+                    tag = GER 
+                    add = 400
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = -10
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        segregated_regiments = {
+
+            available = {
+
+                NOT = {
+                    has_idea = affirmative_action
+                    has_idea = significant_rights
+                    has_idea = racial_hierarchy
+                }
+            }
+
+            level = 1
+
+            modifier = {
+                conscription_factor = 0.05
+                non_core_manpower = 0.05 #0.1
+                army_org_factor = 0.05
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                    has_idea = racial_segregation
+                    add = 40
+                }
+                
+                modifier = {
+                    has_government = democratic
+                    tag = ENG 
+                    add = 60
+                }
+
+                modifier = {
+                    has_idea = neutral_stance
+                    add = 20
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        integrated_manpower = {
+
+            available = {
+
+                NOT = {
+                    has_idea = neutral_stance
+                    has_idea = racial_hierarchy
+                    has_idea = racial_segregation
+                }
+            }
+
+            level = 2
+
+            modifier = {
+                non_core_manpower = 0.25 #.30
+                #conscription_factor = 0.02
+                army_org_factor = -0.025
+                army_morale_factor = -0.05
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    has_government = fascism
+                    add = -25
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 70
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 20
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

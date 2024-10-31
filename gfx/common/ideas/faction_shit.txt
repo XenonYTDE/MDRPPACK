@@ -1,0 +1,25 @@
+ideas = {
+    country = {
+        create_faction_spirit = {
+            picture = faction_spirit
+
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            rule = {
+                can_create_factions = yes
+                can_join_factions = yes
+            }
+
+            modifier = {
+
+            }
+        }
+    }
+}

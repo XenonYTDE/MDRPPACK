@@ -1,0 +1,143 @@
+spriteTypes = {
+
+	#military jurisdiction
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_command_structure"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_logistics_system"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_officer_training"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_special_forces_role"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_marine_role"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gf_paratrooper_role"
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+	}
+    
+
+	#gf_command_structure #2slots
+    
+
+    spriteType = {
+		name = "GFX_idea_centralized_hierarchy"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_command_structure\\_centralized_hierarchy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_decentralized_democracy"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_command_structure\\_decentralized_democracy.dds"
+	}
+
+
+    #gf_logistics_system #2slots
+
+
+    spriteType = {
+		name = "GFX_idea_push_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_logistics_system\\_push_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_pull_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_logistics_system\\_pull_system.dds"
+	}
+
+
+	#gf_officer_training #4slots
+
+
+    spriteType = {
+		name = "GFX_idea_advanced_officer_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_advanced_officer_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_major_officer_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_major_officer_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_junior_officer_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_junior_officer_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_officer_missions"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_foreign_officer_missions.dds"
+	}
+
+
+	#gf_special_forces_role #3slots
+    
+
+    spriteType = {
+		name = "GFX_idea_army_support"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_army_support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_special_operations"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_special_operations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_conflicts"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_foreign_conflicts.dds"
+	}
+
+
+	#gf_marine_role #3slots
+ 
+
+    spriteType = {
+		name = "GFX_idea_marine_army_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_army_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_marine_navy_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_navy_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_marine_spec_ops_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_spec_ops_command.dds"
+	}
+
+
+	#gf_paratrooper_role #3slots
+
+
+	spriteType = {
+		name = "GFX_idea_para_army_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_army_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_para_air_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_air_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_para_spec_ops_command"
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_spec_ops_command.dds"
+	}
+}

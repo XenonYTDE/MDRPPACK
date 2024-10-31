@@ -1,0 +1,80 @@
+add_namespace = si
+
+# transferred states
+news_event = {
+    id = si.1
+    title = si.1.t
+    desc = si.1.desc
+	picture = GFX_news_event_009
+    
+    is_triggered_only = yes
+	major = yes
+    
+    option = {
+        name = si.1.a
+    }
+}
+
+# claimed states
+news_event = {
+    id = si.2
+    title = si.2.t
+    desc = si.2.desc
+	picture = GFX_news_event_064
+    
+    is_triggered_only = yes
+	major = yes
+    
+    option = {
+        name = si.2.a
+    }
+}
+
+# border war (custom) - delayed
+country_event = {
+    id = si.3
+    title = si.3.t
+    desc = si.3.desc
+	picture = GFX_report_event_spr_solidify_the_frontlines
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			#var:ROOT.si_border_war_attacked_state_var = { set_border_war = no }
+			create_wargoal = { target = ROOT.si_border_war_attacker_tag_var   type = topple_government   expire = global.si_border_war_duration_var }
+			set_variable = { ROOT.si_border_war_attacked_state_var = 0 }
+			set_variable = { ROOT.si_border_war_attacker_tag_var = 0 }
+		}
+	}
+
+    option = {
+        name = si.3.a
+		ai_chance = { base = 1 }
+    }
+}
+
+# border war (custom) - immediate
+country_event = {
+    id = si.4
+    title = si.4.t
+    desc = si.4.desc
+	picture = GFX_report_event_DEN_resistance
+
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# fire delayed event to reset
+			country_event = {
+				id = si.3
+				days = global.si_border_war_duration_var
+			}
+		}
+	}
+
+    option = {
+        name = si.4.a
+		ai_chance = { base = 1 }
+    }
+}
