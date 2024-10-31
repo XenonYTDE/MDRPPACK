@@ -1913,6 +1913,7 @@ ideas = {
 				army_attack_factor = -0.9
 				army_defence_factor = -0.9
 				personnel_cost_multiplier_modifier = 1.0
+				enemy_justify_war_goal_time = 0.5
 			}
 
 			ai_will_do = {
@@ -2531,8 +2532,9 @@ ideas = {
 				guarantee_tension = 0.60
 				join_faction_tension = 0.80
 				generate_wargoal_tension = 0.95
-				enemy_justify_war_goal_time = 0.2
+				enemy_justify_war_goal_time = 0.5
 				army_core_defence_factor = 0.15
+				justify_war_goal_time = 0.5
 			}
 
 			ai_will_do = {
@@ -2586,7 +2588,8 @@ ideas = {
 				guarantee_tension = 0.40
 				join_faction_tension = 0.60
 				generate_wargoal_tension = 0.75
-				enemy_justify_war_goal_time = 0.1
+				enemy_justify_war_goal_time = 0.25
+				justify_war_goal_time = 0.25
 			}
 
 			ai_will_do = {
