@@ -248,6 +248,8 @@ communal_state:0 "Communal State"
 communal_state_desc:0 "Communes are an organizational community with social cohesion derived from a shared culture. As a governing community, a commune often entails some degree of local governance, communal ownership, and cultural cohesion."
 city_state:0 "City State"
 city_state_desc:0 "A city-state is an independent sovereign city which serves as the center of political, economic, and cultural life over its contiguous territory."
+region_state:0 "Regional State"
+region_state:0:desc "A regional state is a state that is divided into regions, each with its own government and laws. The regions are not sovereign states, but they are granted a degree of autonomy by the central government."
 
 
 #welfare_policies

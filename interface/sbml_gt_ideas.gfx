@@ -112,4 +112,9 @@ spriteTypes = {
 		name = "GFX_idea_city_state"
 		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_city_state.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_region_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_city_state.dds"
+	}
 }
