@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	mutual_improvement_relations.1 = {
+		value = 50
+	}
+	mutual_improvement_relations.2 = {
+		value = 25
+	}   
+	mutual_improvement_relations.3 = {
+		value = 20
+	}      
+}

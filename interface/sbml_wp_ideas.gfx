@@ -1,0 +1,187 @@
+spriteTypes = {
+
+	#government_type
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_labour_laws"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_healthcare_policy"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_education_policy"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_benefits_policy"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_healthcare_focus"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_wp_education_focus"
+		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
+	}
+    
+    
+	#wp_labour_laws #5slots
+
+    spriteType = {
+		name = "GFX_idea_eight_hour_workday"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_eight_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_twelve_hour_workday"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_twelve_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fourteen_hour_workday"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_fourteen_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_eighteen_hour_workday"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_eighteen_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_work_hour_limits"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_no_work_hour_limits.dds"
+	}
+
+
+	#wp_healthcare_policy #4slots
+
+    
+	spriteType = {
+		name = "GFX_idea_comprehensive_healthcare_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_comprehensive_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_standard_healthcare_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_standard_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_healthcare_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_basic_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_national_healthcare_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_no_national_healthcare_system.dds"
+	}
+
+
+	#wp_education_policy #5slots
+
+    spriteType = {
+		name = "GFX_idea_subsidized_higher_education"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_subsidized_higher_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_subsidized_basic_education"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_subsidized_basic_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_education_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_basic_education_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_official_education_system"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_no_official_education_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_left_to_the_market"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_left_to_the_market.dds"
+	}
+
+
+	#wp_benefits_policy #4slots
+
+    
+	spriteType = {
+		name = "GFX_idea_generous_state_welfare"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_generous_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_moderate_state_welfare"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_moderate_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_state_welfare"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_basic_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_state_welfare"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_no_state_welfare.dds"
+	}
+
+
+	#wp_healthcare_focus #3slots
+
+
+    spriteType = {
+		name = "GFX_idea_military_hospitals"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_military_hospitals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_research_focus"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_research_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_health_focus"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_health_focus.dds"
+	}
+	
+
+	#wp_education_focus #5slots
+    
+
+	spriteType = {
+		name = "GFX_idea_business_schools"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_business_schools.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_military_academies"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_military_academies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_medical_universities"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_medical_universities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_elite_institutions"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_elite_institutions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_propaganda_programs"
+		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_propaganda_programs.dds"
+	}
+
+}

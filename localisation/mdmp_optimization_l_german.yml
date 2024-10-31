@@ -1,0 +1,79 @@
+﻿l_german:
+#Base Stuff#
+ RULE_NO_ADD_BONUS_OPTION_DESC:0 "Als Standard beibehalten"
+ MDOptimization_RULES:0 "Benutzerdefinierte Regeln für die MD-Optimierung"
+
+#ZZZ AI STUFF#
+ ai_reduce_spam:0 "KI-Rechtegesetz"
+ ai_reduce_spam_desc:0 "Nur um zu dienen"
+ POLITICS_TOMAS_COPIN_DESC:0 "Sein Tomas Copin"
+
+#Remove SA#
+ RULE_REMOVE_SOUTH_AMERICA:0 "Südamerika entfernen"
+ RULE_YES_REMOVE_SOUTH_AMERICA_DESC:0 "Löscht Südamerika"
+ RULE_NO_REMOVE_SOUTH_AMERICA_DESC:0 "Löscht Südamerika nicht"
+
+#Merge SA#
+ RULE_MERGE_SOUTH_AMERICA:0 "Südamerika verschmelzen"
+ RULE_YES_MERGE_SOUTH_AMERICA_DESC:0 "Verschmilzt Südamerika"
+ RULE_NO_MERGE_SOUTH_AMERICA_DESC:0 "Verschmilzt Südamerika nicht" 
+
+#Remove Africa#
+ RULE_REMOVE_AFRICA:0 "Entferne Afrika"
+ RULE_YES_REMOVE_AFRICA_DESC:0 "Löscht Afrika"
+ RULE_NO_REMOVE_AFRICA_DESC:0 "Hält Afrika"
+ 
+#Merge Africa#
+ RULE_MERGE_AFRICA:0 "Afrika verschmelzen"
+ RULE_YES_MERGE_AFRICA_DESC:0 "Verschmilzt Afrika"
+ RULE_NO_MERGE_AFRICA_DESC:0 "Hält das gleiche Afrika"
+ 
+#Remove Central America#
+ RULE_REMOVE_CENTRAL_AMERICA:0 "Mittelamerika entfernen"
+ RULE_YES_REMOVE_CENTRAL_AMERICA_DESC:0 "Löscht Mittelamerika"
+ RULE_NO_REMOVE_CENTRAL_AMERICA_DESC:0 "Hält Mittelamerika"
+ 
+#Merge Central America#
+ RULE_MERGE_CENTRAL_AMERICA:0 "Zentralamerika zusammenführen"
+ RULE_YES_MERGE_CENTRAL_AMERICA_DESC:0 "Verschmilzt Mittelamerika"
+ RULE_NO_MERGE_CENTRAL_AMERICA_DESC:0 "Hält Mittelamerika gleich" 
+ 
+#Misc Rules
+MDOptimization_Misc_RULES:0 "MD-Optimierung Verschiedene benutzerdefinierte Regeln"
+
+#Merge Asia
+ RULE_MERGE_ASIA:0 "Asien verschmelzen"
+ RULE_YES_MERGE_ASIA_DESC:0 "Verschmilzt Asien"
+ RULE_NO_MERGE_ASIA_DESC:0 "Hält Asien gleich"
+
+#Remove Arabia#
+ RULE_REMOVE_ARABIA:0 "Arabien entfernen"
+ RULE_YES_REMOVE_ARABIA_DESC:0 "Arabien löschen"
+ RULE_NO_REMOVE_ARABIA_DESC:0 "Behalte Arabien"
+
+#Merge Arabia#
+ RULE_MERGE_ARABIA:0 "Arabien verschmelzen"
+ RULE_YES_MERGE_ARABIA_DESC:0 "Verschmilzt Arabien"
+ RULE_NO_MERGE_ARABIA_DESC:0 "Hält Arabien gleich"
+ 
+#Merge Oceania#
+ RULE_MERGE_OCEANIA:0 "Ozeanien verschmelzen"
+ RULE_YES_MERGE_OCEANIA_DESC:0 "Verschmilzt Ozeanien"
+ RULE_NO_MERGE_OCEANIA_DESC:0 "Hält Ozeanien gleich" 
+ 
+#Remove Oceania#
+ RULE_REMOVE_OCEANIA:0 "Ozeanien entfernen"
+ RULE_YES_REMOVE_OCEANIA_DESC:0 "Entfernt Ozeanien"
+ RULE_NO_REMOVE_OCEANIA_DESC:0 "Hält Ozeanien gleich" 
+
+
+#Disable AI#
+ RULE_DISABLE_AI_NATIONS:0 "KI-Nationen deaktivieren"
+ RULE_YES_DISABLE_AI_NATIONS_DESC:0 "Fügt allen KI-Nationen einen nationalen Geist hinzu, der sie daran hindert, irgendetwas zu tun, das das Spiel beschleunigt."
+ RULE_NO_DISABLE_AI_NATIONS_DESC:0 "KI-Nationen werden ihre vollen Fähigkeiten haben. Empfohlen für Spiele mit geringerer Spielerzahl oder Einzelspieler"
+ disabled_ai_nation:0 "KI-Rechtegesetz"
+ disabled_ai_nation_desc:0 "Nur um zu dienen"
+ REMOVE_AI_LIMITER:0 "KI-Begrenzer entfernen"
+ REMOVE_AI_LIMITER_desc:0 "Entfernt den KI-Begrenzer"
+ REMOVE_AI_LIMITER_DECISION:0 "KI-Begrenzer entfernen"
+ REMOVE_AI_LIMITER_DECISION_desc:0 "Entfernt den KI-Begrenzer"

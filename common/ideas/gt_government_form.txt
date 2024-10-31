@@ -1,0 +1,223 @@
+ideas = {
+
+    gt_government_form = {
+        law = yes
+        use_list_view = yes
+
+        unitary_state = {
+
+            available = {
+
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+            }
+
+            ai_will_do = {
+
+                base = 40
+
+                modifier = {
+                    tag = GER
+                    has_government = fascism
+                    add = 100
+                }
+
+                modifier = {
+                    tag = ITA
+                    has_government = fascism
+                    add = 100
+                }
+
+                modifier = {
+                    factor = 4
+                }
+            }
+            
+            cancel_if_invalid = yes
+        }
+
+        devolved_unitary_state = {
+
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                compliance_growth = 0.10
+                resistance_growth = -0.20
+            }
+
+            ai_will_do = {
+
+                base = 40
+
+                modifier = {
+                    tag = ITA
+                    has_government = democratic
+                    add = 40
+                }
+
+                modifier = {
+                    tag = SPR
+                    has_government = democratic
+                    add = 40
+                }
+
+                modifier = {
+                    factor = 4
+                }
+
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        sassy_federated_state = {
+
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                #political_power_factor = 0.05
+                war_support_factor = -0.10
+                global_building_slots_factor = 0.10
+                resistance_target = -0.10
+                resistance_decay = 0.20
+            }
+
+            ai_will_do = {
+
+                base = 40
+
+                modifier = {
+                    has_government = democratic
+
+                    OR = {
+                        tag = USA
+                        tag = GER
+                        tag = RAJ
+                        tag = CAN
+                        tag = MEX
+                        tag = BRA
+                        tag = ARG 
+                        tag = SOV
+                        tag = AST
+                    }
+                    add = 100
+                }
+
+                modifier = {
+                    has_government = communism
+                    tag = SOV 
+                    add = 100
+                }
+
+                modifier = {
+                    NOT = {
+                        has_government = fascism
+                        has_government = neutrality
+                    }
+                    tag = SWI
+                    add = 100
+                }
+
+                modifier = {
+                    factor = 3
+                }
+            }
+        }
+
+        communal_state = {
+
+            available = {
+                OR = {
+                has_government = communism
+              }
+            }
+            
+            
+
+            cost = 200 
+            removal_cost = -1
+            
+
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = -0.10
+                war_support_factor = -0.15
+                compliance_growth = 0.15
+                resistance_damage_to_garrison = -0.40
+                #required_garrison_factor #= #-0.10
+            }
+        
+            ai_will_do = {
+
+                base = 10
+
+               modifier = {
+                   has_country_leader_ideology = anarchism
+                   add = 200
+               }
+
+               modifier = {
+                factor = 3
+               }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        city_state = {
+
+            available = {
+                num_of_controlled_states < 2
+            }
+
+            cost = 50
+            removal_cost = -1
+
+            modifier = {
+                global_building_slots_factor = 5
+                industrial_capacity_factory = 2
+                industrial_capacity_dockyard = 2
+                conscription_factor = 0.20
+                production_speed_buildings_factor = 3
+                #production_speed_infrastructure_factor #= #2
+                #production_speed_bunker_factor = #3
+                #production_speed_coastal_bunker_factor #= #3
+                #production_speed_anti_air_building_factor #= #3
+                #production_speed_radar_station_factor #= #3
+                special_forces_min = 100
+                monthly_population = 5
+
+            }
+
+            ai_will_do = {
+
+                factor = 0
+
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+ }

@@ -1,0 +1,26 @@
+opinion_modifiers = {
+	
+
+	##### SANCTION MODIFIERS
+	light_sanction_opinion = {
+		trade = no
+		value = -50
+		years = 2
+	}
+	heavy_sanction_opinion = {
+		trade = no
+		value = -100
+		years = 2
+	}
+	lift_light_sanction_opinion = {
+		trade = no
+		value = 40
+		months = 6
+	}
+	lift_heavy_sanction_opinion = {
+		trade = no
+		value = 75
+		months = 6
+	}
+	
+}
