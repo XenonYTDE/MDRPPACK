@@ -189,10 +189,10 @@ ideas = {
         city_state = {
 
             available = {
-                num_of_controlled_states < 5
+                num_of_controlled_states < 3
             }
 
-            cost = 50
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -208,6 +208,40 @@ ideas = {
                 #production_speed_radar_station_factor #= #3
                 special_forces_min = 100
                 monthly_population = 5
+
+            }
+
+            ai_will_do = {
+
+                factor = 0
+
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        region_state = {
+
+            available = {
+                num_of_controlled_states < 5
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                global_building_slots_factor = 4
+                industrial_capacity_factory = 1.5
+                industrial_capacity_dockyard = 1.5
+                conscription_factor = 0.15
+                production_speed_buildings_factor = 2.5
+                #production_speed_infrastructure_factor #= #2
+                #production_speed_bunker_factor = #3
+                #production_speed_coastal_bunker_factor #= #3
+                #production_speed_anti_air_building_factor #= #3
+                #production_speed_radar_station_factor #= #3
+                special_forces_min = 75
+                monthly_population = 3.5
 
             }
 
