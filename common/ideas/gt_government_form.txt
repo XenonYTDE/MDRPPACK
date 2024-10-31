@@ -189,7 +189,7 @@ ideas = {
         city_state = {
 
             available = {
-                num_of_controlled_states < 2
+                num_of_controlled_states < 5
             }
 
             cost = 50
