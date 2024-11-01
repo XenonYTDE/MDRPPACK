@@ -352,6 +352,7 @@ ideas = {
                 conversion_cost_civ_to_mil_factor = +2.0
                 conversion_cost_mil_to_civ_factor = -2.0
                 min_export = -0.25
+                war_support_factor = -0.15
             }
 
             ai_will_do = {
