@@ -1,0 +1,7 @@
+﻿l_english:
+  MDET_RULES: "Millennium Dawn: Expanded Tech (MDET) Rules"
+  RULE_MDET_ENABLE_FANTASY_TITLE: "Enable Fantasy Research"
+  RULE_MDET_ENABLE_FANTASY_YES: "Yes"
+  RULE_MDET_ENABLE_FANTASY_YES_DESC: "Enables fantasy research and units such as titans"
+  RULE_MDET_ENABLE_FANTASY_NO: "No"
+  RULE_MDET_ENABLE_FANTASY_NO_DESC: "Disables fantasy research and units"

@@ -1,0 +1,1472 @@
+#Written by Hiddengearz
+##########################################Anti-Air###################################
+technologies = {
+	@1965 = 0
+	@1985 = 2
+	@2005 = 4
+	@2025 = 6
+	@2035 = 8
+	@2045 = 10
+	@2055 = 12
+	@2065 = 14
+	@2075 = 16
+	@2085 = 18
+	@2095 = 20
+	@2105 = 22
+	#Y Axis
+	@row1 = -4
+	@row2 = 0
+	@row3 = 4
+	@row4 = 8
+	@row5 = 12
+	@row6 = 16
+	@row7 = 20
+	#1965
+	nsb_Anti_Air_0 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_Anti_Air_0"
+		}
+		allow_branch = {
+			has_dlc = "No Step Back"
+		}
+		enable_equipments = {
+			Anti_Air_0
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen1
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_0
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 1965
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @1965
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	#1985
+	nsb_Anti_Air_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_Anti_Air_1"
+		}
+		enable_equipments = {
+			Anti_Air_1
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen2
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1985
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @1985
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_L_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2005
+	nsb_Anti_Air_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_Anti_Air_2"
+		}
+		enable_equipments = {
+			Anti_Air_2
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen3
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.6
+		start_year = 2005
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2005
+			}
+		}
+		categories = {
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2005.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2002.01.01
+			}
+		}
+	}
+	#2025
+	nsb_Anti_Air_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_Anti_Air_3"
+		}
+		enable_equipments = {
+			Anti_Air_3
+			guided_missile_equipment_3
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen4
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.7
+		start_year = 2025
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2025
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2025.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2020.01.01
+			}
+		}
+	}
+	#2035
+	nsb_Anti_Air_4 = {
+		enable_equipments = {
+			Anti_Air_4
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen5
+		}
+		research_cost = 1.5
+		start_year = 2035
+		path = {
+			leads_to_tech = nsb_AA_upgrade_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2035
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2035.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2030.01.01
+			}
+		}
+	}
+	#2045
+	nsb_Anti_Air_5 = {
+		enable_equipments = {
+			Anti_Air_5
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen6
+		}
+		research_cost = 1.5
+		start_year = 2045
+		path = {
+			leads_to_tech = nsb_AA_upgrade_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2045
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2045.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2040.01.01
+			}
+		}
+	}
+	#2055
+	nsb_Anti_Air_6 = {
+		enable_equipments = {
+			Anti_Air_6
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen7
+		}
+		research_cost = 1.5
+		start_year = 2055
+		path = {
+			leads_to_tech = nsb_AA_upgrade_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2055
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2055.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2050.01.01
+			}
+		}
+	}
+	#2065
+	nsb_Anti_Air_7 = {
+		enable_equipments = {
+			Anti_Air_7
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen8
+		}
+		research_cost = 1.5
+		start_year = 2065
+		path = {
+			leads_to_tech = nsb_AA_upgrade_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2065
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2065.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2060.01.01
+			}
+		}
+	}
+	#2075
+	nsb_Anti_Air_8 = {
+		enable_equipments = {
+			Anti_Air_8
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen9
+		}
+		research_cost = 1.5
+		start_year = 2075
+		path = {
+			leads_to_tech = nsb_AA_upgrade_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2075
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2075.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2070.01.01
+			}
+		}
+	}
+	#2085
+	nsb_Anti_Air_9 = {
+		enable_equipments = {
+			Anti_Air_9
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen10
+		}
+		research_cost = 1.5
+		start_year = 2085
+		path = {
+			leads_to_tech = nsb_AA_upgrade_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2085
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2085.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2080.01.01
+			}
+		}
+	}
+	#2095
+	nsb_Anti_Air_10 = {
+		enable_equipments = {
+			Anti_Air_10
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen11
+		}
+		research_cost = 1.5
+		start_year = 2095
+		path = {
+			leads_to_tech = nsb_AA_upgrade_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2095
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2095.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2090.01.01
+			}
+		}
+	}
+	#2105
+	nsb_Anti_Air_11 = {
+		enable_equipments = {
+			Anti_Air_11
+		}
+		enable_equipment_modules = {
+			aa_launchers_gen12
+		}
+		research_cost = 1.5
+		start_year = 2105
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 12
+				y = @2105
+			}
+		}
+		categories = {
+			Cat_INF
+			Cat_AA
+			Cat_L_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2105.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2100.01.01
+			}
+		}
+	}
+	#1965
+	nsb_SP_Anti_Air_0 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_SP_Anti_Air_0"
+			give_ai_spaa_template_0 = yes
+		}
+		enable_equipments = {
+			spaa_hull_0
+			guided_missile_equipment_1
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_1
+			spaa_auxiliary_autocannon_1
+			spaa_auxiliary_heavy_autocannon_1
+			spaa_coax_machinegun_1
+			spaa_battlestation_gen1
+			spaa_light_autocannon1
+			spaa_autocannon_1
+			spaa_missiles_1
+			spaa_short_range_missiles_1
+			spaa_chassis_truck_gen0
+			spaa_chassis_afv_gen0
+			spaa_chassis_tank_gen0
+			spaa_optical_guidance_gen1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @1965
+			}
+		}
+		research_cost = 2
+		start_year = 1965
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#1985
+	nsb_SP_Anti_Air_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_SP_Anti_Air_1"
+			give_ai_spaa_template_1 = yes
+		}
+		enable_equipments = {
+			spaa_hull_1
+			guided_missile_equipment_2
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_2
+			spaa_auxiliary_autocannon_2
+			spaa_auxiliary_heavy_autocannon_2
+			spaa_battlestation_gen2
+			spaa_light_autocannon2
+			spaa_autocannon_2
+			spaa_missiles_2
+			spaa_short_range_missiles_2
+			spaa_chassis_truck_gen1
+			spaa_chassis_afv_gen1
+			spaa_chassis_tank_gen1
+			spaa_optical_guidance_gen2
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @1985
+			}
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.2
+		start_year = 1985
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2005
+	nsb_SP_Anti_Air_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_SP_Anti_Air_2"
+			give_ai_spaa_template_2 = yes
+		}
+		enable_equipments = {
+			spaa_hull_2
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_3
+			spaa_auxiliary_autocannon_3
+			spaa_auxiliary_heavy_autocannon_3
+			spaa_battlestation_gen3
+			spaa_light_autocannon3
+			spaa_autocannon_3
+			spaa_missiles_3
+			spaa_short_range_missiles_3
+			spaa_chassis_truck_gen2
+			spaa_chassis_afv_gen2
+			spaa_chassis_tank_gen2
+			spaa_optical_guidance_gen3
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2.4
+		start_year = 2005
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2005
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2005.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2002.01.01
+			}
+		}
+	}
+	#2025
+	nsb_SP_Anti_Air_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_SP_Anti_Air_3"
+			give_ai_spaa_template_3 = yes
+		}
+		enable_equipments = {
+			spaa_hull_3
+			guided_missile_equipment_4
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_4
+			spaa_auxiliary_autocannon_4
+			spaa_auxiliary_heavy_autocannon_4
+			spaa_battlestation_gen4
+			spaa_light_autocannon4
+			spaa_autocannon_4
+			spaa_missiles_4
+			spaa_short_range_missiles_4
+			spaa_chassis_truck_gen3
+			spaa_chassis_afv_gen3
+			spaa_chassis_tank_gen3
+			spaa_optical_guidance_gen4
+		}
+		path = {
+			leads_to_tech = nsb_AA_upgrade_4
+			research_cost_coeff = 1
+		}
+		research_cost = 2.6
+		start_year = 2025
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2025
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2025.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2020.01.01
+			}
+		}
+	}
+	#2035
+	nsb_SP_Anti_Air_4 = {
+		on_research_complete = {
+			give_ai_spaa_template_4 = yes
+		}
+		enable_equipments = {
+			spaa_hull_4
+			guided_missile_equipment_5
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_5
+			spaa_auxiliary_autocannon_5
+			spaa_auxiliary_heavy_autocannon_5
+			spaa_battlestation_gen5
+			spaa_light_autocannon5
+			spaa_autocannon_5
+			spaa_missiles_5
+			spaa_short_range_missiles_5
+			spaa_long_range_missiles_5
+			spaa_chassis_truck_gen4
+			spaa_chassis_afv_gen4
+			spaa_chassis_tank_gen4
+			spaa_optical_guidance_gen5
+		}
+		research_cost = 2.7
+		start_year = 2035
+		path = {
+			leads_to_tech = nsb_AA_upgrade_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2035
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2035.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2030.01.01
+			}
+		}
+	}
+	#2045
+	nsb_SP_Anti_Air_5 = {
+		on_research_complete = {
+			# give_ai_spaa_template_5 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_5
+			guided_missile_equipment_6
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_6
+			spaa_auxiliary_autocannon_6
+			spaa_auxiliary_heavy_autocannon_6
+			spaa_battlestation_gen6
+			spaa_light_autocannon6
+			spaa_autocannon_6
+			spaa_missiles_6
+			spaa_short_range_missiles_6
+			spaa_long_range_missiles_6
+			spaa_chassis_truck_gen5
+			spaa_chassis_afv_gen5
+			spaa_chassis_tank_gen5
+			spaa_optical_guidance_gen6
+		}
+		research_cost = 2.7
+		start_year = 2045
+		path = {
+			leads_to_tech = nsb_AA_upgrade_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2045
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2045.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2040.01.01
+			}
+		}
+	}
+	#2055
+	nsb_SP_Anti_Air_6 = {
+		on_research_complete = {
+			# give_ai_spaa_template_6 = yes
+			give_ai_spaa_template_5 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_6
+			spaa_hull_5
+			guided_missile_equipment_7
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_7
+			spaa_auxiliary_autocannon_7
+			spaa_auxiliary_heavy_autocannon_7
+			spaa_battlestation_gen7
+			spaa_light_autocannon7
+			spaa_autocannon_7
+			spaa_missiles_7
+			spaa_short_range_missiles_7
+			spaa_long_range_missiles_7
+			spaa_chassis_truck_gen6
+			spaa_chassis_afv_gen6
+			spaa_chassis_tank_gen6
+			spaa_optical_guidance_gen7
+		}
+		research_cost = 2.7
+		start_year = 2055
+		path = {
+			leads_to_tech = nsb_AA_upgrade_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2055
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2055.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2050.01.01
+			}
+		}
+	}
+	#2065
+	nsb_SP_Anti_Air_7 = {
+		on_research_complete = {
+			# give_ai_spaa_template_7 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_7
+			guided_missile_equipment_8
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_8
+			spaa_auxiliary_autocannon_8
+			spaa_auxiliary_heavy_autocannon_8
+			spaa_battlestation_gen8
+			spaa_light_autocannon8
+			spaa_autocannon_8
+			spaa_missiles_8
+			spaa_short_range_missiles_8
+			spaa_long_range_missiles_8
+			spaa_chassis_truck_gen7
+			spaa_chassis_afv_gen7
+			spaa_chassis_tank_gen7
+			spaa_optical_guidance_gen8
+		}
+		research_cost = 2.7
+		start_year = 2065
+		path = {
+			leads_to_tech = nsb_AA_upgrade_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2065
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2065.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2060.01.01
+			}
+		}
+	}
+	#2075
+	nsb_SP_Anti_Air_8 = {
+		on_research_complete = {
+			# give_ai_spaa_template_8 = yes
+			give_ai_spaa_template_6 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_8
+			spaa_hull_6
+			guided_missile_equipment_9
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_9
+			spaa_auxiliary_autocannon_9
+			spaa_auxiliary_heavy_autocannon_9
+			spaa_battlestation_gen9
+			spaa_light_autocannon9
+			spaa_autocannon_9
+			spaa_missiles_9
+			spaa_short_range_missiles_9
+			spaa_long_range_missiles_9
+			spaa_chassis_truck_gen8
+			spaa_chassis_afv_gen8
+			spaa_chassis_tank_gen8
+			spaa_optical_guidance_gen9
+		}
+		research_cost = 2.7
+		start_year = 2075
+		path = {
+			leads_to_tech = nsb_AA_upgrade_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2075
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2075.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2070.01.01
+			}
+		}
+	}
+	#2085
+	nsb_SP_Anti_Air_9 = {
+		on_research_complete = {
+			# give_ai_spaa_template_9 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_9
+			guided_missile_equipment_10
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_10
+			spaa_auxiliary_autocannon_10
+			spaa_auxiliary_heavy_autocannon_10
+			spaa_battlestation_gen10
+			spaa_light_autocannon10
+			spaa_autocannon_10
+			spaa_missiles_10
+			spaa_short_range_missiles_10
+			spaa_long_range_missiles_10
+			spaa_chassis_truck_gen9
+			spaa_chassis_afv_gen9
+			spaa_chassis_tank_gen9
+			spaa_optical_guidance_gen10
+		}
+		research_cost = 2.7
+		start_year = 2085
+		path = {
+			leads_to_tech = nsb_AA_upgrade_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2085
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2085.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2080.01.01
+			}
+		}
+	}
+	#2095
+	nsb_SP_Anti_Air_10 = {
+		on_research_complete = {
+			# give_ai_spaa_template_10 = yes
+			give_ai_spaa_template_7 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_10
+			spaa_hull_7
+			guided_missile_equipment_11
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_11
+			spaa_auxiliary_autocannon_11
+			spaa_auxiliary_heavy_autocannon_11
+			spaa_battlestation_gen11
+			spaa_light_autocannon11
+			spaa_autocannon_11
+			spaa_missiles_11
+			spaa_short_range_missiles_11
+			spaa_long_range_missiles_11
+			spaa_chassis_truck_gen10
+			spaa_chassis_afv_gen10
+			spaa_chassis_tank_gen10
+			spaa_optical_guidance_gen11
+		}
+		research_cost = 2.7
+		start_year = 2095
+		path = {
+			leads_to_tech = nsb_AA_upgrade_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2095
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2095.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2090.01.01
+			}
+		}
+	}
+	#2105
+	nsb_SP_Anti_Air_11 = {
+		on_research_complete = {
+			# give_ai_spaa_template_11 = yes
+			give_ai_spaa_template_8 = yes
+		}
+		enable_equipments = {
+			# spaa_hull_11
+			spaa_hull_8
+			guided_missile_equipment_12
+		}
+		enable_equipment_modules = {
+			spaa_support_missile_system_12
+			spaa_auxiliary_autocannon_12
+			spaa_auxiliary_heavy_autocannon_12
+			spaa_battlestation_gen12
+			spaa_light_autocannon12
+			spaa_autocannon_12
+			spaa_missiles_12
+			spaa_short_range_missiles_12
+			spaa_long_range_missiles_12
+			spaa_chassis_truck_gen11
+			spaa_chassis_afv_gen11
+			spaa_chassis_tank_gen11
+			spaa_optical_guidance_gen12
+		}
+		research_cost = 2.7
+		start_year = 2105
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 8
+				y = @2105
+			}
+		}
+		categories = {
+			Cat_SP_AA
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2105.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2100.01.01
+			}
+		}
+	}
+	#1985
+	nsb_AA_upgrade_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_1"
+		}
+		category_all_infantry = {
+			air_attack = 0.01
+		}
+		category_tanks = {
+			air_attack = 0.01
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1980
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @1985
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2005
+	nsb_AA_upgrade_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_2"
+		}
+		category_all_infantry = {
+			air_attack = 0.03
+		}
+		category_tanks = {
+			air_attack = 0.03
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2000
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2005
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2025
+	nsb_AA_upgrade_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_3"
+		}
+		category_all_infantry = {
+			air_attack = 0.02
+		}
+		category_tanks = {
+			air_attack = 0.02
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2025
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2025
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2035
+	nsb_AA_upgrade_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_4"
+		}
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2035
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2035
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2040
+	nsb_AA_upgrade_5 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2040
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2045
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2050
+	nsb_AA_upgrade_6 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2050
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2055
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2060
+	nsb_AA_upgrade_7 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2060
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2065
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2070
+	nsb_AA_upgrade_8 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2070
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2075
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2080
+	nsb_AA_upgrade_9 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_9
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_9
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2080
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2085
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2090
+	nsb_AA_upgrade_10 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_10
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2090
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2095
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#2100
+	nsb_AA_upgrade_11 = {
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = nsb_Anti_Air_11
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nsb_SP_Anti_Air_11
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 2100
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 1.5
+		folder = {
+			name = artillery_folder
+			position = {
+				x = 10
+				y = @2105
+			}
+		}
+		categories = {
+			Cat_AA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

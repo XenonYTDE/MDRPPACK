@@ -1,0 +1,940 @@
+equipment_modules = {
+    helicopter_turbine_engine_gen6 = {
+        abbreviation = "hte6"
+        category = helicopter_turbine_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_turbine_engine_gen5
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 2.25 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 2.25 }
+        add_stats = {
+            build_cost_ic = 14.4
+            fuel_consumption = 20.0
+            maximum_speed = 90.0
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_turbine_engine_gen7 = {
+        abbreviation = "hte7"
+        category = helicopter_turbine_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_turbine_engine_gen6
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 2.25 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 2.25 }
+        add_stats = {
+            build_cost_ic = 16
+            fuel_consumption = 22.0
+            maximum_speed = 100.0
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_turbine_engine_gen8 = {
+        abbreviation = "hte8"
+        category = helicopter_turbine_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_turbine_engine_gen7
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 2.25 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 2.25 }
+        add_stats = {
+            build_cost_ic = 17.6
+            fuel_consumption = 24.0
+            maximum_speed = 110.0
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_turbine_engine_gen9 = {
+        abbreviation = "hte9"
+        category = helicopter_turbine_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_turbine_engine_gen8
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 2.25 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 2.25 }
+        add_stats = {
+            build_cost_ic = 19.2
+            fuel_consumption = 26.0
+            maximum_speed = 120.0
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_turbine_engine_gen10 = {
+        abbreviation = "hte10"
+        category = helicopter_turbine_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_turbine_engine_gen9
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 2.25 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 2.25 }
+        add_stats = {
+            build_cost_ic = 20.8
+            fuel_consumption = 28.0
+            maximum_speed = 130.0
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_piston_engine_gen6 = {
+        abbreviation = "hpe6"
+        category = helicopter_piston_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_piston_engine_gen5
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 1.75 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 1.75 }
+        add_stats = {
+            build_cost_ic = 7.2
+            fuel_consumption = 14.5
+            maximum_speed = 67.5
+            reliability = -0.2
+        }
+        multiply_stats = {
+            breakthrough = -0.175
+            defense = -0.175
+        }
+        xp_cost = 3
+    }
+    helicopter_piston_engine_gen7 = {
+        abbreviation = "hpe7"
+        category = helicopter_piston_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_piston_engine_gen6
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 1.75 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 1.75 }
+        add_stats = {
+            build_cost_ic = 8
+            fuel_consumption = 16.0
+            maximum_speed = 75.0
+            reliability = -0.2
+        }
+        multiply_stats = {
+            breakthrough = -0.15
+            defense = -0.15
+        }
+        xp_cost = 3
+    }
+    helicopter_piston_engine_gen8 = {
+        abbreviation = "hpe8"
+        category = helicopter_piston_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_piston_engine_gen7
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 1.75 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 1.75 }
+        add_stats = {
+            build_cost_ic = 8.8
+            fuel_consumption = 17.5
+            maximum_speed = 82.5
+            reliability = -0.2
+        }
+        multiply_stats = {
+            breakthrough = -0.125
+            defense = -0.125
+        }
+        xp_cost = 3
+    }
+    helicopter_piston_engine_gen9 = {
+        abbreviation = "hpe9"
+        category = helicopter_piston_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_piston_engine_gen8
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 1.75 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 1.75 }
+        add_stats = {
+            build_cost_ic = 9.6
+            fuel_consumption = 19.0
+            maximum_speed = 90.0
+            reliability = -0.2
+        }
+        multiply_stats = {
+            breakthrough = -0.1
+            defense = -0.1
+        }
+        xp_cost = 3
+    }
+    helicopter_piston_engine_gen10 = {
+        abbreviation = "hpe10"
+        category = helicopter_piston_engine_type
+        sfx = sfx_ui_sd_module_engine
+        parent = helicopter_piston_engine_gen9
+        can_convert_from = { module_category = helicopter_turbine_engine_type convert_cost_ic = 1.75 }
+        can_convert_from = { module_category = helicopter_piston_engine_type convert_cost_ic = 1.75 }
+        add_stats = {
+            build_cost_ic = 10.4
+            fuel_consumption = 20.5
+            maximum_speed = 97.5
+            reliability = -0.2
+        }
+        multiply_stats = {
+            breakthrough = -0.075
+            defense = -0.075
+        }
+        xp_cost = 3
+    }
+    helicopter_gun_pod_gen6 = {
+        abbreviation = "hgg6"
+        category = helicopter_gun_pods_type
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_gun_pod_gen5
+        add_stats = {
+            build_cost_ic = 2.16
+            soft_attack = 13.75
+            reliability = -0.05
+            maximum_speed = -1.1
+        }
+        xp_cost = 3
+    }
+    helicopter_gun_pod_gen7 = {
+        abbreviation = "hgg7"
+        category = helicopter_gun_pods_type
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_gun_pod_gen6
+        add_stats = {
+            build_cost_ic = 2.4
+            soft_attack = 15.5
+            reliability = -0.05
+            maximum_speed = -1.0
+        }
+        xp_cost = 3
+    }
+    helicopter_gun_pod_gen8 = {
+        abbreviation = "hgg8"
+        category = helicopter_gun_pods_type
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_gun_pod_gen7
+        add_stats = {
+            build_cost_ic = 2.64
+            soft_attack = 17.25
+            reliability = -0.05
+            maximum_speed = -0.9
+        }
+        xp_cost = 3
+    }
+    helicopter_gun_pod_gen9 = {
+        abbreviation = "hgg9"
+        category = helicopter_gun_pods_type
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_gun_pod_gen8
+        add_stats = {
+            build_cost_ic = 2.88
+            soft_attack = 19.0
+            reliability = -0.05
+            maximum_speed = -0.8
+        }
+        xp_cost = 3
+    }
+    helicopter_gun_pod_gen10 = {
+        abbreviation = "hgg10"
+        category = helicopter_gun_pods_type
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_gun_pod_gen9
+        add_stats = {
+            build_cost_ic = 3.12
+            soft_attack = 20.75
+            reliability = -0.05
+            maximum_speed = -0.7
+        }
+        xp_cost = 3
+    }
+    helicopter_aa_missile_gen4 = {
+        abbreviation = "ham4"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_aa_missile_gen3
+        add_stats = {
+            build_cost_ic = 4.8
+            air_attack = 10.0
+            reliability = -0.05
+            maximum_speed = -1.5
+        }
+        xp_cost = 3
+    }
+    helicopter_aa_missile_gen5 = {
+        abbreviation = "ham5"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_aa_missile_gen4
+        add_stats = {
+            build_cost_ic = 5.6
+            air_attack = 12.0
+            reliability = -0.05
+            maximum_speed = -1.0
+        }
+        xp_cost = 3
+    }
+    helicopter_aa_missile_gen6 = {
+        abbreviation = "ham6"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_aa_missile_gen5
+        add_stats = {
+            build_cost_ic = 6.4
+            air_attack = 14.0
+            reliability = -0.05
+            maximum_speed = -0.5
+        }
+        xp_cost = 3
+    }
+    helicopter_aa_missile_gen7 = {
+        abbreviation = "ham7"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_aa_missile_gen6
+        add_stats = {
+            build_cost_ic = 7.2
+            air_attack = 16.0
+            reliability = -0.05
+            maximum_speed = 0.0
+        }
+        xp_cost = 3
+    }
+    helicopter_aa_missile_gen8 = {
+        abbreviation = "ham8"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_aa_missile_gen7
+        add_stats = {
+            build_cost_ic = 8
+            air_attack = 18.0
+            reliability = -0.05
+            maximum_speed = 0.5
+        }
+        xp_cost = 3
+    }
+    helicopter_drones_gen4 = {
+        abbreviation = "hdg4"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_drones_gen3
+        add_stats = {
+            build_cost_ic = 8.4
+            soft_attack = 11.0
+            hard_attack = 30.0
+            reliability = -0.15
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_drones_gen5 = {
+        abbreviation = "hdg5"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_drones_gen4
+        add_stats = {
+            build_cost_ic = 9.6
+            soft_attack = 13.0
+            hard_attack = 35.0
+            reliability = -0.1
+            maximum_speed = -1.0
+        }
+        xp_cost = 3
+    }
+    helicopter_drones_gen6 = {
+        abbreviation = "hdg6"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_drones_gen5
+        add_stats = {
+            build_cost_ic = 10.8
+            soft_attack = 15.0
+            hard_attack = 40.0
+            reliability = -0.05
+            maximum_speed = 0.0
+        }
+        xp_cost = 3
+    }
+    helicopter_drones_gen7 = {
+        abbreviation = "hdg7"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_drones_gen6
+        add_stats = {
+            build_cost_ic = 12
+            soft_attack = 17.0
+            hard_attack = 45.0
+            reliability = 0.0
+            maximum_speed = 1.0
+        }
+        xp_cost = 3
+    }
+    helicopter_drones_gen8 = {
+        abbreviation = "hdg8"
+        category = helicopter_wing_armament
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_drones_gen7
+        add_stats = {
+            build_cost_ic = 13.2
+            soft_attack = 19.0
+            hard_attack = 50.0
+            reliability = 0.05
+            maximum_speed = 2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_armor_gen4 = {
+        abbreviation = "hea4"
+        category = helicopter_armor_type
+        sfx = sfx_ui_sd_module_sonar
+        parent = helicopter_armor_gen3
+        add_stats = {
+            defense = 2.5
+            breakthrough = 2.5
+            reliability = 0.25
+        }
+        multiply_stats = {
+            build_cost_ic = 0.2
+            maximum_speed = -0.1
+            hardness = 0.25
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_armor_gen5 = {
+        abbreviation = "hea5"
+        category = helicopter_armor_type
+        sfx = sfx_ui_sd_module_sonar
+        parent = helicopter_armor_gen4
+        add_stats = {
+            defense = 3.0
+            breakthrough = 3.0
+            reliability = 0.3
+        }
+        multiply_stats = {
+            build_cost_ic = 0.24
+            maximum_speed = -0.1
+            hardness = 0.3
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_armor_gen6 = {
+        abbreviation = "hea6"
+        category = helicopter_armor_type
+        sfx = sfx_ui_sd_module_sonar
+        parent = helicopter_armor_gen5
+        add_stats = {
+            defense = 3.5
+            breakthrough = 3.5
+            reliability = 0.35
+        }
+        multiply_stats = {
+            build_cost_ic = 0.28
+            maximum_speed = -0.1
+            hardness = 0.35
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_armor_gen7 = {
+        abbreviation = "hea7"
+        category = helicopter_armor_type
+        sfx = sfx_ui_sd_module_sonar
+        parent = helicopter_armor_gen6
+        add_stats = {
+            defense = 4.0
+            breakthrough = 4.0
+            reliability = 0.4
+        }
+        multiply_stats = {
+            build_cost_ic = 0.32
+            maximum_speed = -0.1
+            hardness = 0.4
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_armor_gen8 = {
+        abbreviation = "hea8"
+        category = helicopter_armor_type
+        sfx = sfx_ui_sd_module_sonar
+        parent = helicopter_armor_gen7
+        add_stats = {
+            defense = 4.5
+            breakthrough = 4.5
+            reliability = 0.45
+        }
+        multiply_stats = {
+            build_cost_ic = 0.36
+            maximum_speed = -0.1
+            hardness = 0.45
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            aluminium = 1.0
+        }
+    }
+    helicopter_light_nose_gun_gen4 = {
+        abbreviation = "lng4"
+        category = helicopter_light_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_light_nose_gun_gen3
+        add_stats = {
+            build_cost_ic = 2
+            soft_attack = 10.0
+        }
+        xp_cost = 3
+    }
+    helicopter_light_nose_gun_gen5 = {
+        abbreviation = "lng5"
+        category = helicopter_light_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_light_nose_gun_gen4
+        add_stats = {
+            build_cost_ic = 2.4
+            soft_attack = 12.0
+        }
+        xp_cost = 3
+    }
+    helicopter_light_nose_gun_gen6 = {
+        abbreviation = "lng6"
+        category = helicopter_light_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_light_nose_gun_gen5
+        add_stats = {
+            build_cost_ic = 2.8
+            soft_attack = 14.0
+        }
+        xp_cost = 3
+    }
+    helicopter_light_nose_gun_gen7 = {
+        abbreviation = "lng7"
+        category = helicopter_light_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_light_nose_gun_gen6
+        add_stats = {
+            build_cost_ic = 3.2
+            soft_attack = 16.0
+        }
+        xp_cost = 3
+    }
+    helicopter_light_nose_gun_gen8 = {
+        abbreviation = "lng8"
+        category = helicopter_light_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_light_nose_gun_gen7
+        add_stats = {
+            build_cost_ic = 3.6
+            soft_attack = 18.0
+        }
+        xp_cost = 3
+    }
+    helicopter_medium_nose_gun_gen4 = {
+        abbreviation = "mng4"
+        category = helicopter_medium_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_medium_nose_gun_gen3
+        add_stats = {
+            build_cost_ic = 4.8
+            soft_attack = 15.0
+            hard_attack = 5.0
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_medium_nose_gun_gen5 = {
+        abbreviation = "mng5"
+        category = helicopter_medium_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_medium_nose_gun_gen4
+        add_stats = {
+            build_cost_ic = 5.6
+            soft_attack = 17.5
+            hard_attack = 6.0
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_medium_nose_gun_gen6 = {
+        abbreviation = "mng6"
+        category = helicopter_medium_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_medium_nose_gun_gen5
+        add_stats = {
+            build_cost_ic = 6.4
+            soft_attack = 20.0
+            hard_attack = 7.0
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_medium_nose_gun_gen7 = {
+        abbreviation = "mng7"
+        category = helicopter_medium_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_medium_nose_gun_gen6
+        add_stats = {
+            build_cost_ic = 7.2
+            soft_attack = 22.5
+            hard_attack = 8.0
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_medium_nose_gun_gen8 = {
+        abbreviation = "mng8"
+        category = helicopter_medium_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_medium_nose_gun_gen7
+        add_stats = {
+            build_cost_ic = 8
+            soft_attack = 25.0
+            hard_attack = 9.0
+            maximum_speed = -2.0
+        }
+        xp_cost = 3
+    }
+    helicopter_heavy_nose_gun_gen4 = {
+        abbreviation = "mng4"
+        category = helicopter_heavy_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_heavy_nose_gun_gen3
+        add_stats = {
+            build_cost_ic = 7.6
+            soft_attack = 17.5
+            hard_attack = 12.0
+            maximum_speed = -4.0
+        }
+        xp_cost = 3
+    }
+    helicopter_heavy_nose_gun_gen5 = {
+        abbreviation = "mng5"
+        category = helicopter_heavy_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_heavy_nose_gun_gen4
+        add_stats = {
+            build_cost_ic = 8.8
+            soft_attack = 20.0
+            hard_attack = 14.0
+            maximum_speed = -4.0
+        }
+        xp_cost = 3
+    }
+    helicopter_heavy_nose_gun_gen6 = {
+        abbreviation = "mng6"
+        category = helicopter_heavy_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_heavy_nose_gun_gen5
+        add_stats = {
+            build_cost_ic = 10
+            soft_attack = 22.5
+            hard_attack = 16.0
+            maximum_speed = -4.0
+        }
+        xp_cost = 3
+    }
+    helicopter_heavy_nose_gun_gen7 = {
+        abbreviation = "mng7"
+        category = helicopter_heavy_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_heavy_nose_gun_gen6
+        add_stats = {
+            build_cost_ic = 11.2
+            soft_attack = 25.0
+            hard_attack = 18.0
+            maximum_speed = -4.0
+        }
+        xp_cost = 3
+    }
+    helicopter_heavy_nose_gun_gen8 = {
+        abbreviation = "mng8"
+        category = helicopter_heavy_nose_gun
+        sfx = sfx_ui_sd_module_turret
+        parent = helicopter_heavy_nose_gun_gen7
+        add_stats = {
+            build_cost_ic = 12.4
+            soft_attack = 27.5
+            hard_attack = 20.0
+            maximum_speed = -4.0
+        }
+        xp_cost = 3
+    }
+    active_defence_system_gen3 = {
+        abbreviation = "ads3"
+        category = helicopter_active_defence_type
+        sfx = sfx_ui_sd_module_turret
+        parent = active_defence_system_gen2
+        add_stats = {
+            build_cost_ic = 4.8
+            defense = 14.0
+            breakthrough = 14.0
+            reliability = 0.3
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    active_defence_system_gen4 = {
+        abbreviation = "ads4"
+        category = helicopter_active_defence_type
+        sfx = sfx_ui_sd_module_turret
+        parent = active_defence_system_gen3
+        add_stats = {
+            build_cost_ic = 5.6
+            defense = 18.0
+            breakthrough = 18.0
+            reliability = 0.35
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    active_defence_system_gen5 = {
+        abbreviation = "ads5"
+        category = helicopter_active_defence_type
+        sfx = sfx_ui_sd_module_turret
+        parent = active_defence_system_gen4
+        add_stats = {
+            build_cost_ic = 6.4
+            defense = 22.0
+            breakthrough = 22.0
+            reliability = 0.4
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    active_defence_system_gen6 = {
+        abbreviation = "ads6"
+        category = helicopter_active_defence_type
+        sfx = sfx_ui_sd_module_turret
+        parent = active_defence_system_gen5
+        add_stats = {
+            build_cost_ic = 7.2
+            defense = 26.0
+            breakthrough = 26.0
+            reliability = 0.45
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    active_defence_system_gen7 = {
+        abbreviation = "ads7"
+        category = helicopter_active_defence_type
+        sfx = sfx_ui_sd_module_turret
+        parent = active_defence_system_gen6
+        add_stats = {
+            build_cost_ic = 8
+            defense = 30.0
+            breakthrough = 30.0
+            reliability = 0.5
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    sensors_and_avionics_gen_6 = {
+        abbreviation = "saa6"
+        category = helicopter_sensor_and_avionics_type
+        sfx = sfx_ui_sd_module_turret
+        parent = sensors_and_avionics_gen_5
+        add_stats = {
+            reliability = 0.12
+        }
+        multiply_stats = {
+            build_cost_ic = 0.28
+            defense = 0.35
+            breakthrough = 0.35
+            hard_attack = 0.35
+            soft_attack = 0.35
+        }
+        xp_cost = 3
+    }
+    sensors_and_avionics_gen_7 = {
+        abbreviation = "saa7"
+        category = helicopter_sensor_and_avionics_type
+        sfx = sfx_ui_sd_module_turret
+        parent = sensors_and_avionics_gen_6
+        add_stats = {
+            reliability = 0.14
+        }
+        multiply_stats = {
+            build_cost_ic = 0.32
+            defense = 0.4
+            breakthrough = 0.4
+            hard_attack = 0.4
+            soft_attack = 0.4
+        }
+        xp_cost = 3
+    }
+    sensors_and_avionics_gen_8 = {
+        abbreviation = "saa8"
+        category = helicopter_sensor_and_avionics_type
+        sfx = sfx_ui_sd_module_turret
+        parent = sensors_and_avionics_gen_7
+        add_stats = {
+            reliability = 0.16
+        }
+        multiply_stats = {
+            build_cost_ic = 0.36
+            defense = 0.45
+            breakthrough = 0.45
+            hard_attack = 0.45
+            soft_attack = 0.45
+        }
+        xp_cost = 3
+    }
+    sensors_and_avionics_gen_9 = {
+        abbreviation = "saa9"
+        category = helicopter_sensor_and_avionics_type
+        sfx = sfx_ui_sd_module_turret
+        parent = sensors_and_avionics_gen_8
+        add_stats = {
+            reliability = 0.18
+        }
+        multiply_stats = {
+            build_cost_ic = 0.4
+            defense = 0.5
+            breakthrough = 0.5
+            hard_attack = 0.5
+            soft_attack = 0.5
+        }
+        xp_cost = 3
+    }
+    sensors_and_avionics_gen_10 = {
+        abbreviation = "saa10"
+        category = helicopter_sensor_and_avionics_type
+        sfx = sfx_ui_sd_module_turret
+        parent = sensors_and_avionics_gen_9
+        add_stats = {
+            reliability = 0.2
+        }
+        multiply_stats = {
+            build_cost_ic = 0.44
+            defense = 0.55
+            breakthrough = 0.55
+            hard_attack = 0.55
+            soft_attack = 0.55
+        }
+        xp_cost = 3
+    }
+    stealth_modification_gen4 = {
+        abbreviation = "hsm4"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen3
+        add_stats = {
+            defense = 10.0
+            breakthrough = 10.0
+            reliability = 0.5
+        }
+        multiply_stats = {
+            build_cost_ic = 0.04
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    stealth_modification_gen5 = {
+        abbreviation = "hsm5"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen4
+        add_stats = {
+            defense = 12.0
+            breakthrough = 12.0
+            reliability = 0.6
+        }
+        multiply_stats = {
+            build_cost_ic = 0.08
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    stealth_modification_gen6 = {
+        abbreviation = "hsm6"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen5
+        add_stats = {
+            defense = 14.0
+            breakthrough = 14.0
+            reliability = 0.7
+        }
+        multiply_stats = {
+            build_cost_ic = 0.36
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    stealth_modification_gen7 = {
+        abbreviation = "hsm7"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen6
+        add_stats = {
+            defense = 16.0
+            breakthrough = 16.0
+            reliability = 0.8
+        }
+        multiply_stats = {
+            build_cost_ic = 0.12
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    stealth_modification_gen8 = {
+        abbreviation = "hsm8"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen7
+        add_stats = {
+            defense = 18.0
+            breakthrough = 18.0
+            reliability = 0.9
+        }
+        multiply_stats = {
+            build_cost_ic = 0.16
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+    stealth_modification_gen9 = {
+        abbreviation = "hsm9"
+        category = helicopter_stealth_module
+        sfx = sfx_ui_sd_module_turret
+        parent = stealth_modification_gen8
+        add_stats = {
+            defense = 20.0
+            breakthrough = 20.0
+            reliability = 1.0
+        }
+        multiply_stats = {
+            build_cost_ic = 0.2
+        }
+        xp_cost = 3
+        build_cost_resources = {
+            chromium = 1.0
+        }
+    }
+}

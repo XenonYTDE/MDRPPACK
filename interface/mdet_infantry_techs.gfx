@@ -1,0 +1,130 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_infantry_weapons7_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons8_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons9_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons10_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons11_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons12_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons13_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_infantry_weapons14_medium"
+        textureFile = "gfx/interface/technologies/GEN/INF/FUTURERIFLE2.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment6_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment7_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment8_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment9_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment10_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment11_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment12_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_command_control_equipment13_medium"
+        textureFile = "gfx/interface/technologies/Generic/Command_Control/CC2035.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2030_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2040_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2050_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2060_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2070_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2080_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2090_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_body_armor_2100_medium"
+        textureFile = "gfx/interface/technologies/Generic/body_armor/body_armor4.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces6_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces7_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces8_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces9_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces10_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces11_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces12_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+    spriteType = {
+        name = "GFX_special_forces13_medium"
+        textureFile = "gfx/interface/technologies/Generic/special_forces/special_forces6.dds"
+    }
+}

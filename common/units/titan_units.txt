@@ -1,0 +1,280 @@
+sub_units = {
+    assault_titan_bat = {
+		sprite = MD4_medium_armor
+		map_icon_category = armored
+        special_forces = yes
+		priority = 5
+		active = yes
+		ai_priority = 5
+		type = { armor }
+		group = armor
+		categories = { category_tanks category_front_line category_all_armor category_army category_non_militia category_titan }
+		combat_width = 8
+		need = { titan_hull = 4 command_control_equipment = 60 }
+        affects_speed = yes
+        essential = { titan_hull }
+		manpower = 480
+		max_organisation = 60
+		max_strength = 320
+		default_morale = 0.2
+		training_time = 180
+        suppression = 0.1
+		weight = 3
+		entrenchment = 0
+		supply_consumption = 0.24
+        can_be_parachuted = yes
+		transport = titan_hull
+		plains = { attack = 0.2 defence = 0.1 }
+		desert = { attack = 0.2 defence = 0.1 }
+		forest = { attack = -0.1 defence = 0.1 }
+		hills = { attack = -0.1 defence = 0.1 }
+		mountain = { attack = -0.15 defence = -0.15 }
+		jungle = { attack = -0.15 defence = -0.15 }
+		marsh = { attack = -0.15 defence = -0.1 }
+		urban = { attack = 0 defence = 0.25 }
+		supercity = { attack = 0.1 defence = 0.15 }
+		river = { attack = -0.1 defence = 0.1 }
+		amphibious = { attack = -0.1 defence = 0.1 }
+	}
+    artillery_titan_bat = {
+		sprite = MD4_medium_armor
+		map_icon_category = armored
+        special_forces = yes
+		priority = 5
+		active = yes
+		ai_priority = 5
+		type = { armor }
+		group = armor
+		categories = { category_tanks category_front_line category_all_armor category_army category_non_militia category_titan }
+		combat_width = 8
+		need = { artillery_titan_hull = 4 command_control_equipment = 60 }
+        affects_speed = yes
+        essential = { artillery_titan_hull }
+		manpower = 480
+		max_organisation = 60
+		max_strength = 320
+		default_morale = 0.2
+		training_time = 180
+        suppression = 0.1
+		weight = 3
+		entrenchment = 0
+		supply_consumption = 0.24
+        can_be_parachuted = yes
+		transport = artillery_titan_hull
+		plains = { attack = 0.2 defence = 0.1 }
+		desert = { attack = 0.2 defence = 0.1 }
+		forest = { attack = -0.1 defence = 0.1 }
+		hills = { attack = -0.1 defence = 0.1 }
+		mountain = { attack = -0.15 defence = -0.15 }
+		jungle = { attack = -0.15 defence = -0.15 }
+		marsh = { attack = -0.15 defence = -0.1 }
+		urban = { attack = 0 defence = 0.25 }
+		supercity = { attack = 0.1 defence = 0.15 }
+		river = { attack = -0.1 defence = 0.1 }
+		amphibious = { attack = -0.1 defence = 0.1 }
+	}
+    heavy_titan_bat = {
+		sprite = MD4_medium_armor
+		map_icon_category = armored
+        special_forces = yes
+		priority = 5
+		active = yes
+		ai_priority = 5
+		type = { armor }
+		group = armor
+		categories = { category_tanks category_front_line category_all_armor category_army category_non_militia category_titan }
+		combat_width = 8
+		need = { heavy_titan_hull = 4 command_control_equipment = 60 }
+        affects_speed = yes
+        essential = { heavy_titan_hull }
+		manpower = 480
+		max_organisation = 60
+		max_strength = 320
+		default_morale = 0.2
+		training_time = 180
+        suppression = 0.1
+		weight = 3
+		entrenchment = 0
+		supply_consumption = 0.24
+        can_be_parachuted = yes
+		transport = heavy_titan_hull
+		plains = { attack = 0 defence = 0.3 }
+		desert = { attack = 0 defence = 0.3 }
+		forest = { attack = -0.3 defence = 0.3 }
+		hills = { attack = -0.3 defence = 0.3 }
+		mountain = { attack = -0.35 defence = 0.05 }
+		jungle = { attack = -0.35 defence = 0.05 }
+		marsh = { attack = -0.35 defence = 0.1 }
+		urban = { attack = 0 defence = 0.45 }
+		supercity = { attack = -0.1 defence = 0.35 }
+		river = { attack = -0.3 defence = 0.3 }
+		amphibious = { attack = -0.3 defence = 0.3 }
+	}
+    titan_recon_comp = {
+        sprite = MD4_medium_armor
+        map_icon_category = armored
+        special_forces = yes
+        priority = 5
+        ai_priority = 5
+        active = yes
+        type = { armor support }
+        group = support
+        categories = { category_tanks category_all_recon category_support_battalions category_army category_titan }
+        combat_width = 4
+        need = { titan_hull = 2 command_control_equipment = 24 }
+        manpower = 160
+        max_organisation = 55
+        default_morale = 0.2
+        max_strength = 160
+        training_time = 180
+        weight = 1.5
+        recon = 8
+        initiative = 0.25
+        supply_consumption = 0.12
+        can_be_parachuted = yes
+        battalion_mult = {
+            category = category_titan
+            suppression = 0.2
+            soft_attack = -0.02
+            hard_attack = -0.02
+            breakthrough = -0.02
+            defense = -0.02
+        }
+        transport = titan_hull
+        same_support_type = recon
+    }
+    titan_engineer_comp = {
+        sprite = MD4_medium_armor
+        map_icon_category = armored
+        special_forces = yes
+        priority = 5
+        ai_priority = 5
+        active = yes
+        type = { armor support }
+        group = support
+        categories = { category_tanks category_all_recon category_support_battalions category_army category_titan }
+        combat_width = 4
+        need = { titan_hull = 2 command_control_equipment = 24 }
+        manpower = 160
+        max_organisation = 55
+        default_morale = 0.2
+        max_strength = 160
+        training_time = 180
+        weight = 1.5
+        entrenchment = 16
+        supply_consumption = 0.12
+        can_be_parachuted = yes
+        battalion_mult = {
+            category = category_titan
+            soft_attack = -0.02
+            hard_attack = -0.02
+            breakthrough = -0.02
+            defense = -0.02
+            entrenchment = 1
+        }
+        transport = titan_hull
+        plains = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		desert = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		forest = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		hills = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		mountain = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		jungle = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		marsh = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		urban = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		supercity = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		river = { movement = 0.1 attack = 0.1 defence = 0.1 }
+		amphibious = { movement = 0.1 attack = 0.1 defence = 0.1 }
+        same_support_type = flame
+    }
+    titan_support_comp = {
+        sprite = MD4_medium_armor
+        map_icon_category = armored
+        special_forces = yes
+        priority = 5
+        ai_priority = 5
+        active = yes
+        type = { armor support }
+        group = support
+        categories = { category_tanks category_all_recon category_support_battalions category_army category_titan }
+        combat_width = 4
+        need = { titan_hull = 2 command_control_equipment = 24 }
+        manpower = 160
+        max_organisation = 55
+        default_morale = 0.2
+        max_strength = 160
+        training_time = 180
+        weight = 1.5
+        supply_consumption = 0.12
+        casualty_trickleback = 0.3
+        experience_loss_factor = -0.4
+        supply_consumption_factor = -0.25
+        fuel_consumption_factor = -0.2
+        can_be_parachuted = yes
+        battalion_mult = {
+            category = category_titan
+            soft_attack = -0.02
+            hard_attack = -0.02
+            breakthrough = -0.02
+            defense = -0.02
+        }
+        transport = titan_hull
+    }
+    titan_bombardment_comp = {
+        sprite = MD4_medium_armor
+        map_icon_category = armored
+        special_forces = yes
+        priority = 5
+        ai_priority = 5
+        active = yes
+        type = { armor support }
+        group = support
+        categories = { category_tanks category_all_recon category_support_battalions category_army category_titan }
+        combat_width = 4
+        need = { artillery_titan_hull = 2 command_control_equipment = 24 }
+        manpower = 160
+        max_organisation = 55
+        default_morale = 0.2
+        max_strength = 160
+        training_time = 180
+        weight = 1.5
+        supply_consumption = 0.12
+        can_be_parachuted = yes
+        battalion_mult = {
+            category = category_titan
+            soft_attack = -0.02
+            hard_attack = -0.02
+            breakthrough = -0.02
+            defense = -0.02
+        }
+        transport = artillery_titan_hull
+    }
+    titan_breakthrough_comp = {
+        sprite = MD4_medium_armor
+        map_icon_category = armored
+        special_forces = yes
+        priority = 5
+        ai_priority = 5
+        active = yes
+        type = { armor support }
+        group = support
+        categories = { category_tanks category_all_recon category_support_battalions category_army category_titan }
+        combat_width = 4
+        need = { heavy_titan_hull = 2 command_control_equipment = 24 }
+        manpower = 160
+        max_organisation = 55
+        default_morale = 0.2
+        max_strength = 160
+        training_time = 180
+        weight = 1.5
+        supply_consumption = 0.12
+        can_be_parachuted = yes
+        battalion_mult = {
+            category = category_titan
+            soft_attack = -0.02
+            hard_attack = -0.02
+            breakthrough = -0.02
+            defense = -0.02
+        }
+        transport = heavy_titan_hull
+    }
+}
