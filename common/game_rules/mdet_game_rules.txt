@@ -1,0 +1,17 @@
+# Enables Titans
+mdet_enable_fantasy = {
+    name = "RULE_MDET_ENABLE_FANTASY_TITLE"
+    required_dlc = "No Step Back"
+    group = "MDET_RULES"
+    icon = "GFX_production_licenses"
+    option = {
+        name = yes
+        text = "RULE_MDET_ENABLE_FANTASY_YES"
+        desc = "RULE_MDET_ENABLE_FANTASY_YES_DESC"
+    }
+    default = {
+        name = no
+        text = "RULE_MDET_ENABLE_FANTASY_NO"
+        desc = "RULE_MDET_ENABLE_FANTASY_NO_DESC"
+    }
+}

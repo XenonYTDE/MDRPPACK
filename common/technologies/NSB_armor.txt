@@ -1,0 +1,4033 @@
+technologies = {
+	@1945 = -4
+	@1965 = -2
+	@1970 = -1
+	@1975 = 0
+	@1985 = 2
+	@1995 = 4
+	@2005 = 6
+	@2015 = 8
+	@2025 = 10
+	@2035 = 12
+	@2045 = 14
+	@2055 = 16
+	@2065 = 18
+	@2075 = 20
+	@2085 = 22
+	@2095 = 24
+	@2105 = 26
+	@2110 = 28
+	@row1 = -4
+	@row2 = 0
+	@row3 = 3
+	@row4 = 5
+	@row5 = 8
+	@row6 = 10
+	@row7 = 12
+	@row8 = 15
+	@row9 = 17
+	@row10 = 19
+	@row11 = 21
+	@row12 = 25
+	@row13 = 29
+	@row14 = 31
+	@row15 = 33
+	@row16 = 35
+	@row17 = 37
+	@row18 = 39
+	@row19 = 41
+	mbt_tech = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech"
+			give_ai_mbt_template_0 = yes
+		}
+		enable_equipments = {
+			mbt_hull_0
+		}
+		enable_equipment_modules = {
+			tank_torsion_bar_suspension
+			tank_base_tank_turret
+			tank_soviet_turret
+			tank_oscillating_turret
+			tank_no_turret
+			tank_steel_armor_gen1
+			manual_loading
+			automatic_loading
+			revolver_magazine
+			chassis_tank_gen0
+		}
+		enable_subunits = {
+			armor_Bat
+			armor_Comp
+		}
+		path = {
+			leads_to_tech = mbt_tech_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.05
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	mbt_tech_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_1"
+			give_ai_mbt_template_1 = yes
+		}
+		enable_equipments = {
+			mbt_hull_1
+		}
+		enable_equipment_modules = {
+			tank_pneumatic_suspension
+			wet_ammo_storage
+			chassis_tank_gen1
+		}
+		path = {
+			leads_to_tech = mbt_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.1
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	mbt_tech_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_2"
+			give_ai_mbt_template_2 = yes
+		}
+		enable_equipments = {
+			mbt_hull_2
+		}
+		enable_equipment_modules = {
+			tank_steel_armor_gen2
+			chassis_tank_gen2
+		}
+		path = {
+			leads_to_tech = mbt_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	# 2015
+	mbt_tech_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_3"
+			give_ai_mbt_template_3 = yes
+		}
+		enable_equipments = {
+			mbt_hull_3
+		}
+		enable_equipment_modules = {
+			tank_unmanned_turret
+			tank_steel_armor_gen3
+			chassis_tank_gen3
+			wet_ammo_storage_2
+		}
+		path = {
+			leads_to_tech = mbt_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.3
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	mbt_tech_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_4"
+			give_ai_mbt_template_4 = yes
+		}
+		enable_equipments = {
+			mbt_hull_4
+			chassis_tank_gen4
+		}
+		enable_equipment_modules = {
+			tank_steel_armor_gen4
+			wet_ammo_storage_3
+		}
+		path = {
+			leads_to_tech = mbt_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	mbt_tech_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_5"
+			give_ai_mbt_template_5 = yes
+			give_ai_mbt_template_5_heavy = yes
+		}
+		enable_equipments = {
+			mbt_hull_5
+			chassis_tank_gen5
+		}
+		enable_equipment_modules = {
+			tank_unmanned_turret_2
+			automatic_loading_2
+			tank_steel_armor_gen5
+			wet_ammo_storage_4
+		}
+		path = {
+			leads_to_tech = mbt_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	mbt_tech_6 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_6"
+			give_ai_mbt_template_6 = yes
+			give_ai_mbt_template_6_heavy = yes
+		}
+		enable_equipments = {
+			mbt_hull_6
+			chassis_tank_gen6
+			tank_steel_armor_gen6
+		}
+		enable_equipment_modules = {
+			wet_ammo_storage_5
+		}
+		path = {
+			leads_to_tech = mbt_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	mbt_tech_7 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_7"
+			give_ai_mbt_template_7 = yes
+			give_ai_mbt_template_7_heavy = yes
+		}
+		enable_equipments = {
+			mbt_hull_7
+			chassis_tank_gen7
+		}
+		enable_equipment_modules = {
+			tank_unmanned_turret_3
+			automatic_loading_3
+			tank_steel_armor_gen7
+			wet_ammo_storage_6
+		}
+		path = {
+			leads_to_tech = mbt_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	mbt_tech_8 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech mbt_tech_8"
+			give_ai_mbt_template_8 = yes
+			give_ai_mbt_template_8_heavy = yes
+		}
+		enable_equipments = {
+			mbt_hull_8
+			chassis_tank_gen8
+		}
+		enable_equipment_modules = {
+			tank_unmanned_turret_4
+			automatic_loading_4
+			tank_steel_armor_gen8
+			wet_ammo_storage_7
+		}
+		research_cost = 1.4
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	tank_components_tech = {
+		enable_equipment_modules = {
+			tank_battlestation_1
+			afv_battlestation_1
+			art_battlestation_gen1
+			additional_machine_guns
+			smoke_launchers
+		}
+		path = {
+			leads_to_tech = tank_components_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	tank_components_tech_2 = {
+		enable_equipment_modules = {
+			tank_battlestation_2
+			afv_battlestation_2
+			art_battlestation_gen2
+		}
+		path = {
+			leads_to_tech = tank_components_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.64
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	tank_components_tech_3 = {
+		enable_equipment_modules = {
+			tank_battlestation_3
+			afv_battlestation_3
+			smoke_launchers_2
+			art_battlestation_gen3
+		}
+		path = {
+			leads_to_tech = tank_components_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	tank_components_tech_4 = {
+		enable_equipment_modules = {
+			tank_battlestation_4
+			afv_battlestation_4
+			hardkill_system_gen1
+			art_battlestation_gen4
+		}
+		path = {
+			leads_to_tech = tank_components_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.76
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	tank_components_tech_5 = {
+		enable_equipment_modules = {
+			hardkill_system_gen2
+			tank_battlestation_5
+			afv_battlestation_5
+			art_battlestation_gen5
+			smoke_launchers_3
+		}
+		path = {
+			leads_to_tech = tank_components_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	tank_components_tech_6 = {
+		enable_equipment_modules = {
+			hardkill_system_gen3
+			tank_battlestation_6
+			afv_battlestation_6
+			art_battlestation_gen6
+			smoke_launchers_4
+		}
+		path = {
+			leads_to_tech = tank_components_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	tank_components_tech_7 = {
+		enable_equipment_modules = {
+			hardkill_system_gen4
+			tank_battlestation_7
+			afv_battlestation_7
+			art_battlestation_gen7
+			smoke_launchers_5
+		}
+		path = {
+			leads_to_tech = tank_components_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	tank_components_tech_8 = {
+		enable_equipment_modules = {
+			hardkill_system_gen5
+			tank_battlestation_8
+			afv_battlestation_8
+			art_battlestation_gen8
+			smoke_launchers_6
+		}
+		path = {
+			leads_to_tech = tank_components_tech_9
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	tank_components_tech_9 = {
+		enable_equipment_modules = {
+			hardkill_system_gen6
+			tank_battlestation_9
+			afv_battlestation_9
+			art_battlestation_gen9
+			smoke_launchers_7
+		}
+		research_cost = 0.8
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	era_tech = {
+		enable_equipment_modules = {
+			reactive_armor_gen1
+		}
+		path = {
+			leads_to_tech = era_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	era_tech_2 = {
+		enable_equipment_modules = {
+			reactive_armor_gen2
+		}
+		path = {
+			leads_to_tech = era_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.55
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	era_tech_3 = {
+		enable_equipment_modules = {
+			reactive_armor_gen3
+		}
+		path = {
+			leads_to_tech = era_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2025
+	era_tech_4 = {
+		enable_equipment_modules = {
+			reactive_armor_gen4
+		}
+		path = {
+			leads_to_tech = era_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2045
+	era_tech_5 = {
+		enable_equipment_modules = {
+			reactive_armor_gen5
+		}
+		path = {
+			leads_to_tech = era_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2065
+	era_tech_6 = {
+		enable_equipment_modules = {
+			reactive_armor_gen6
+		}
+		path = {
+			leads_to_tech = era_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2085
+	era_tech_7 = {
+		enable_equipment_modules = {
+			reactive_armor_gen7
+		}
+		path = {
+			leads_to_tech = era_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	era_tech_8 = {
+		enable_equipment_modules = {
+			reactive_armor_gen8
+		}
+		path = {
+			leads_to_tech = era_tech_9
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	era_tech_9 = {
+		enable_equipment_modules = {
+			reactive_armor_gen9
+		}
+		research_cost = 0.7
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	armor_tech = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen1
+			afv_composite_armor_gen1
+			spaced_armor_gen1
+		}
+		path = {
+			leads_to_tech = armor_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = era_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	armor_tech_2 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen2
+			afv_composite_armor_gen2
+			spaced_armor_gen2
+		}
+		path = {
+			leads_to_tech = armor_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	armor_tech_3 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen3
+			afv_composite_armor_gen3
+			spaced_armor_gen3
+		}
+		path = {
+			leads_to_tech = armor_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.75
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	armor_tech_4 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen4
+			afv_composite_armor_gen4
+			spaced_armor_gen4
+		}
+		path = {
+			leads_to_tech = armor_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	armor_tech_5 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen5
+			afv_composite_armor_gen5
+			spaced_armor_gen5
+		}
+		path = {
+			leads_to_tech = armor_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	armor_tech_6 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen6
+			afv_composite_armor_gen6
+			spaced_armor_gen6
+		}
+		path = {
+			leads_to_tech = armor_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	armor_tech_7 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen7
+			afv_composite_armor_gen7
+			spaced_armor_gen7
+		}
+		path = {
+			leads_to_tech = armor_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	armor_tech_8 = {
+		enable_equipment_modules = {
+			tank_composite_armor_gen8
+			afv_composite_armor_gen8
+			spaced_armor_gen8
+		}
+		research_cost = 0.9
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen1
+			afv_gasoline_engine_gen1
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_1
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech_2 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen2
+			afv_gasoline_engine_gen2
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.55
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech_3 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen3
+			afv_gasoline_engine_gen3
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech_4 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen4
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.65
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech_5 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen5
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	diesel_engine_tech_6 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen6
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.75
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	diesel_engine_tech_7 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen7
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2045
+	diesel_engine_tech_8 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen8
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_9
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	diesel_engine_tech_9 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen9
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_10
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2065
+	diesel_engine_tech_10 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen10
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_11
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	diesel_engine_tech_11 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen11
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_12
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2085
+	diesel_engine_tech_12 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen12
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_13
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	diesel_engine_tech_13 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen13
+		}
+		path = {
+			leads_to_tech = diesel_engine_tech_14
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2105
+	diesel_engine_tech_14 = {
+		enable_equipment_modules = {
+			tank_diesel_engine_gen14
+		}
+		research_cost = 0.8
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen1
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech_2 = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen2
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.55
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech_3 = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen3
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech_4 = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen4
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.65
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech_5 = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen5
+		}
+		path = {
+			leads_to_tech = turbine_engine_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	turbine_engine_tech_6 = {
+		enable_equipment_modules = {
+			tank_gas_turbine_engine_gen6
+		}
+		research_cost = 0.75
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	electric_engine_tech_1 = {
+		enable_equipment_modules = {
+			tank_aux_engine
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.4
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	electric_engine_tech_2 = {
+		enable_equipment_modules = {
+			tank_aux_engine_2
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	electric_engine_tech_3 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen1
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	electric_engine_tech_4 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen2
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	electric_engine_tech_5 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen3
+			tank_aux_engine_3
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2065
+	electric_engine_tech_6 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen4
+			tank_aux_engine_4
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	electric_engine_tech_7 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen5
+			tank_aux_engine_5
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2085
+	electric_engine_tech_8 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen6
+			tank_aux_engine_6
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_9
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	electric_engine_tech_9 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen7
+			tank_aux_engine_7
+		}
+		path = {
+			leads_to_tech = electric_engine_tech_10
+			research_cost_coeff = 1
+		}
+		research_cost = 0.9
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2105
+	electric_engine_tech_10 = {
+		enable_equipment_modules = {
+			tank_electric_engine_gen8
+			tank_aux_engine_8
+		}
+		research_cost = 0.9
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row7
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	small_medium_gun_tech = {
+		enable_equipment_modules = {
+			tank_small_cannon
+			tank_small_medium_cannon
+			afv_small_medium_cannon
+			light_tank_low_velocity_gun_1
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = medium_gun_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1945
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1945
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	small_medium_gun_tech_2 = {
+		enable_equipment_modules = {
+			tank_small_cannon_2
+			afv_small_medium_cannon_2
+			tank_small_medium_cannon_2
+			light_tank_low_velocity_gun_2
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	small_medium_gun_tech_3 = {
+		enable_equipment_modules = {
+			tank_small_cannon_3
+			afv_small_medium_cannon_3
+			tank_small_medium_cannon_3
+			light_tank_low_velocity_gun_3
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2025
+	small_medium_gun_tech_4 = {
+		enable_equipment_modules = {
+			tank_small_cannon_4
+			afv_small_medium_cannon_4
+			tank_small_medium_cannon_4
+			light_tank_low_velocity_gun_4
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2045
+	small_medium_gun_tech_5 = {
+		enable_equipment_modules = {
+			tank_small_cannon_5
+			afv_small_medium_cannon_5
+			tank_small_medium_cannon_5
+			light_tank_low_velocity_gun_5
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2065
+	small_medium_gun_tech_6 = {
+		enable_equipment_modules = {
+			tank_small_cannon_6
+			afv_small_medium_cannon_6
+			tank_small_medium_cannon_6
+			light_tank_low_velocity_gun_6
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2085
+	small_medium_gun_tech_7 = {
+		enable_equipment_modules = {
+			tank_small_cannon_7
+			afv_small_medium_cannon_7
+			tank_small_medium_cannon_7
+			light_tank_low_velocity_gun_7
+		}
+		path = {
+			leads_to_tech = small_medium_gun_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2105
+	small_medium_gun_tech_8 = {
+		enable_equipment_modules = {
+			tank_small_cannon_8
+			afv_small_medium_cannon_8
+			tank_small_medium_cannon_8
+			light_tank_low_velocity_gun_8
+		}
+		research_cost = 0.7
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row8
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	medium_gun_tech = {
+		enable_equipment_modules = {
+			tank_medium_cannon
+			tank_longer_gun
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	medium_gun_tech_2 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_2
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = large_gun_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	medium_gun_tech_3 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_3
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	medium_gun_tech_4 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_4
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	medium_gun_tech_5 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_5
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	medium_gun_tech_6 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_6
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	medium_gun_tech_7 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_7
+		}
+		path = {
+			leads_to_tech = medium_gun_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	medium_gun_tech_8 = {
+		enable_equipment_modules = {
+			tank_medium_cannon_8
+		}
+		research_cost = 0.7
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	large_gun_tech = {
+		enable_equipment_modules = {
+			tank_large_cannon
+		}
+		path = {
+			leads_to_tech = large_gun_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	large_gun_tech_2 = {
+		enable_equipment_modules = {
+			tank_large_cannon_2
+		}
+		path = {
+			leads_to_tech = large_gun_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	large_gun_tech_3 = {
+		enable_equipment_modules = {
+			tank_large_cannon_3
+		}
+		path = {
+			leads_to_tech = large_gun_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	large_gun_tech_4 = {
+		enable_equipment_modules = {
+			tank_large_cannon_4
+		}
+		path = {
+			leads_to_tech = large_gun_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	large_gun_tech_5 = {
+		enable_equipment_modules = {
+			tank_large_cannon_5
+		}
+		path = {
+			leads_to_tech = large_gun_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	large_gun_tech_6 = {
+		enable_equipment_modules = {
+			tank_large_cannon_6
+		}
+		path = {
+			leads_to_tech = large_gun_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	large_gun_tech_7 = {
+		enable_equipment_modules = {
+			tank_large_cannon_7
+		}
+		research_cost = 0.7
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	very_large_gun_tech = {
+		enable_equipment_modules = {
+			tank_very_large_cannon
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 2005
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2005
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	very_large_gun_tech_2 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_2
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2035
+	very_large_gun_tech_3 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_3
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2055
+	very_large_gun_tech_4 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_4
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2075
+	very_large_gun_tech_5 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_5
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2095
+	very_large_gun_tech_6 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_6
+		}
+		path = {
+			leads_to_tech = very_large_gun_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	#2110
+	very_large_gun_tech_7 = {
+		enable_equipment_modules = {
+			tank_very_large_cannon_7
+		}
+		research_cost = 0.7
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_TANKS
+			Cat_MBT
+		}
+	}
+	afv_tech = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech"
+			give_ai_afv_template_0 = yes
+		}
+		enable_equipments = {
+			apc_hull_0
+			ifv_hull_0
+			light_tank_hull_0
+		}
+		enable_equipment_modules = {
+			afv_base_turret
+			afv_no_turret
+			afv_unmanned_turret
+			afv_machine_gun
+			afv_steel_armor_gen1
+			afv_alum_armor_gen1
+			afv_coax_machine_gun
+			afv_torsion_bar_suspension
+			afv_tracked_suspension
+			afv_additional_machine_guns
+			afv_gun_ports
+			afv_reverse_doors
+			afv_mine_protection
+			chassis_afv_gen0
+			chassis_wheeled_afv_gen0
+			chassis_tracked_afv_gen0
+		}
+		enable_subunits = {
+			Mech_Inf_Bat
+			Arm_Inf_Bat
+			Mech_Air_Inf_Bat
+			Arm_Air_Inf_Bat
+			Mech_Marine_Bat
+			Arm_Marine_Bat
+			armor_Bat
+			armor_Comp
+			Mech_Recce_Comp
+			Arm_Recce_Comp
+			H_Engi_Comp
+			Arm_Air_assault_Bat
+		}
+		path = {
+			leads_to_tech = afv_tech_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.05
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	afv_tech_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_1"
+			give_ai_afv_template_1 = yes
+		}
+		enable_equipments = {
+			apc_hull_1
+			ifv_hull_1
+		}
+		enable_equipment_modules = {
+			double_cannons
+			chassis_afv_gen1
+			chassis_wheeled_afv_gen1
+			chassis_tracked_afv_gen1
+		}
+		path = {
+			leads_to_tech = afv_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.1
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	afv_tech_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_2"
+			give_ai_afv_template_2 = yes
+		}
+		enable_equipments = {
+			apc_hull_2
+			ifv_hull_2
+		}
+		enable_equipment_modules = {
+			afv_steel_armor_gen2
+			afv_alum_armor_gen2
+			chassis_afv_gen2
+			chassis_wheeled_afv_gen2
+			chassis_tracked_afv_gen2
+		}
+		path = {
+			leads_to_tech = afv_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	afv_tech_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_3"
+			give_ai_afv_template_3 = yes
+		}
+		enable_equipments = {
+			apc_hull_3
+			ifv_hull_3
+		}
+		enable_equipment_modules = {
+			afv_steel_armor_gen3
+			afv_alum_armor_gen3
+			chassis_afv_gen3
+			chassis_wheeled_afv_gen3
+			chassis_tracked_afv_gen3
+		}
+		path = {
+			leads_to_tech = afv_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.3
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	#2035
+	afv_tech_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_4"
+			give_ai_afv_template_4 = yes
+		}
+		enable_equipments = {
+			apc_hull_4
+			ifv_hull_4
+		}
+		enable_equipment_modules = {
+			chassis_afv_gen4
+			chassis_wheeled_afv_gen4
+			chassis_tracked_afv_gen4
+			afv_steel_armor_gen4
+		}
+		path = {
+			leads_to_tech = afv_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	#2055
+	afv_tech_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_5"
+			give_ai_afv_template_5 = yes
+		}
+		enable_equipments = {
+			apc_hull_5
+			ifv_hull_5
+		}
+		enable_equipment_modules = {
+			chassis_afv_gen5
+			chassis_wheeled_afv_gen5
+			chassis_tracked_afv_gen5
+			afv_unmanned_turret_2
+			afv_steel_armor_gen5
+		}
+		path = {
+			leads_to_tech = afv_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	#2075
+	afv_tech_6 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_6"
+			give_ai_afv_template_6 = yes
+		}
+		enable_equipments = {
+			apc_hull_6
+			ifv_hull_6
+		}
+		enable_equipment_modules = {
+			chassis_afv_gen6
+			chassis_wheeled_afv_gen6
+			chassis_tracked_afv_gen6
+			afv_steel_armor_gen6
+		}
+		path = {
+			leads_to_tech = afv_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	#2095
+	afv_tech_7 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_7"
+			give_ai_afv_template_7 = yes
+		}
+		enable_equipments = {
+			apc_hull_7
+			ifv_hull_7
+		}
+		enable_equipment_modules = {
+			chassis_afv_gen7
+			chassis_wheeled_afv_gen7
+			chassis_tracked_afv_gen7
+			afv_unmanned_turret_3
+			afv_steel_armor_gen7
+		}
+		path = {
+			leads_to_tech = afv_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	#2110
+	afv_tech_8 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech afv_tech_8"
+			give_ai_afv_template_8 = yes
+		}
+		enable_equipments = {
+			apc_hull_8
+			ifv_hull_8
+		}
+		enable_equipment_modules = {
+			chassis_afv_gen8
+			chassis_wheeled_afv_gen8
+			chassis_tracked_afv_gen8
+			afv_unmanned_turret_4
+			afv_steel_armor_gen8
+		}
+		research_cost = 1.4
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_APC
+			Cat_IFV
+		}
+	}
+	light_tank_tech = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech"
+			give_ai_light_tank_template_0 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_0
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen0
+			light_tank_afv_automatic_loading
+		}
+		enable_subunits = {
+			L_arm_Bat
+			armor_Recce_Comp
+		}
+		path = {
+			leads_to_tech = light_tank_tech_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.05
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	light_tank_tech_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_1"
+			give_ai_light_tank_template_1 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_1
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen1
+		}
+		path = {
+			leads_to_tech = light_tank_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.1
+		start_year = 1975
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1975
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	light_tank_tech_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_2"
+			give_ai_light_tank_template_2 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_2
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen2
+		}
+		path = {
+			leads_to_tech = light_tank_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1995
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1995
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	light_tank_tech_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_3"
+			give_ai_light_tank_template_3 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_3
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen3
+		}
+		path = {
+			leads_to_tech = light_tank_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.3
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	#2035
+	light_tank_tech_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_4"
+			give_ai_light_tank_template_4 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_4
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen4
+		}
+		path = {
+			leads_to_tech = light_tank_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2035
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2035
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	#2055
+	light_tank_tech_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_5"
+			give_ai_light_tank_template_5 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_5
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen5
+		}
+		path = {
+			leads_to_tech = light_tank_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2055
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2055
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	#2075
+	light_tank_tech_6 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_6"
+			give_ai_light_tank_template_6 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_6
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen6
+		}
+		path = {
+			leads_to_tech = light_tank_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2075
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2075
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	#2095
+	light_tank_tech_7 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_7"
+			give_ai_light_tank_template_7 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_7
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen7
+		}
+		path = {
+			leads_to_tech = light_tank_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 2095
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2095
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	#2110
+	light_tank_tech_8 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech light_tank_tech_8"
+			give_ai_light_tank_template_8 = yes
+		}
+		enable_equipments = {
+			light_tank_hull_8
+		}
+		enable_equipment_modules = {
+			chassis_light_tank_gen8
+		}
+		research_cost = 1.4
+		start_year = 2110
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2110
+				y = @row17
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+		}
+	}
+	small_autocannon_tech = {
+		enable_equipment_modules = {
+			small_autocannon
+			afv_coax_autocannon
+			apc_small_autocannon
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	small_autocannon_tech_2 = {
+		enable_equipment_modules = {
+			small_autocannon_2
+			afv_coax_autocannon_2
+			apc_small_autocannon_2
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	small_autocannon_tech_3 = {
+		enable_equipment_modules = {
+			small_autocannon_3
+			afv_coax_autocannon_3
+			apc_small_autocannon_3
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2025
+	small_autocannon_tech_4 = {
+		enable_equipment_modules = {
+			small_autocannon_4
+			afv_coax_autocannon_4
+			apc_small_autocannon_4
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2045
+	small_autocannon_tech_5 = {
+		enable_equipment_modules = {
+			small_autocannon_5
+			afv_coax_autocannon_5
+			apc_small_autocannon_5
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2065
+	small_autocannon_tech_6 = {
+		enable_equipment_modules = {
+			small_autocannon_6
+			afv_coax_autocannon_6
+			apc_small_autocannon_6
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2085
+	small_autocannon_tech_7 = {
+		enable_equipment_modules = {
+			small_autocannon_7
+			afv_coax_autocannon_7
+			apc_small_autocannon_7
+		}
+		path = {
+			leads_to_tech = small_autocannon_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2105
+	small_autocannon_tech_8 = {
+		enable_equipment_modules = {
+			small_autocannon_8
+			afv_coax_autocannon_8
+			apc_small_autocannon_8
+		}
+		research_cost = 0.7
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row13
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	big_autocannon_tech = {
+		enable_equipment_modules = {
+			big_autocannon
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	big_autocannon_tech_2 = {
+		enable_equipment_modules = {
+			big_autocannon_2
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	big_autocannon_tech_3 = {
+		enable_equipment_modules = {
+			big_autocannon_3
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2025
+	big_autocannon_tech_4 = {
+		enable_equipment_modules = {
+			big_autocannon_4
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2045
+	big_autocannon_tech_5 = {
+		enable_equipment_modules = {
+			big_autocannon_5
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2065
+	big_autocannon_tech_6 = {
+		enable_equipment_modules = {
+			big_autocannon_6
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2085
+	big_autocannon_tech_7 = {
+		enable_equipment_modules = {
+			big_autocannon_7
+		}
+		path = {
+			leads_to_tech = big_autocannon_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2105
+	big_autocannon_tech_8 = {
+		enable_equipment_modules = {
+			big_autocannon_8
+		}
+		research_cost = 0.7
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	assault_gun_tech = {
+		enable_equipment_modules = {
+			afv_assault_gun
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_2
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1965
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1965
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	assault_gun_tech_2 = {
+		enable_equipment_modules = {
+			afv_assault_gun_2
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_3
+			research_cost_coeff = 1
+		}
+		research_cost = 0.6
+		start_year = 1985
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @1985
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	assault_gun_tech_3 = {
+		enable_equipment_modules = {
+			afv_assault_gun_3
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_4
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2015
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2015
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2025
+	assault_gun_tech_4 = {
+		enable_equipment_modules = {
+			afv_assault_gun_4
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2025
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2025
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2045
+	assault_gun_tech_5 = {
+		enable_equipment_modules = {
+			afv_assault_gun_5
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2045
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2065
+	assault_gun_tech_6 = {
+		enable_equipment_modules = {
+			afv_assault_gun_6
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2065
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2065
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2085
+	assault_gun_tech_7 = {
+		enable_equipment_modules = {
+			afv_assault_gun_7
+		}
+		path = {
+			leads_to_tech = assault_gun_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 0.7
+		start_year = 2085
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2085
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+	#2105
+	assault_gun_tech_8 = {
+		enable_equipment_modules = {
+			afv_assault_gun_8
+		}
+		research_cost = 0.7
+		start_year = 2105
+		folder = {
+			name = nsb_armour_folder
+			position = {
+				x = @2105
+				y = @row15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		categories = {
+			Cat_ARMOR
+			Cat_AFV
+			Cat_IFV
+		}
+	}
+}

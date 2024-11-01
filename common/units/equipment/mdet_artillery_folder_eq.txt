@@ -1,0 +1,604 @@
+equipments = {
+    #ART 2045
+    artillery_5 = {
+        year = 2045
+        archetype = artillery_equipment
+        parent = artillery_4
+        priority = 5
+        visual_level = 2
+        reliability = 0.95 #+0.025
+        maximum_speed = 19 #+1
+        defense = 18.5 #+1.5
+        breakthrough = 14.5 #+1.5
+        hardness = 0
+        armor_value = 0
+        soft_attack = 62 #+7
+        hard_attack = 19 #+3
+        ap_attack = 51 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 15.38 #+2.89
+        resources = { steel = 4 }
+    }
+    #ART 2055
+    artillery_6 = {
+        year = 2055
+        archetype = artillery_equipment
+        parent = artillery_5
+        priority = 5
+        visual_level = 2
+        reliability = 0.975 #+0.025
+        maximum_speed = 20 #+1
+        defense = 20 #+1.5
+        breakthrough = 16 #+1.5
+        hardness = 0
+        armor_value = 0
+        soft_attack = 69 #+7
+        hard_attack = 22 #+3
+        ap_attack = 57 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 18.27 #+2.89
+        resources = { steel = 4 }
+    }
+    #ART 2065
+    artillery_7 = {
+        year = 2065
+        archetype = artillery_equipment
+        parent = artillery_6
+        priority = 5
+        visual_level = 2
+        reliability = 1 #+0.025
+        maximum_speed = 20.5 #+0.5
+        defense = 21.5 #+1.5
+        breakthrough = 17.5 #+1.5
+        hardness = 0
+        armor_value = 0
+        soft_attack = 76 #+7
+        hard_attack = 25 #+3
+        ap_attack = 63 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 21.16 #+2.89
+        resources = { steel = 4 }
+    }
+    #ART 2075
+    artillery_8 = {
+        year = 2075
+        archetype = artillery_equipment
+        parent = artillery_7
+        priority = 5
+        visual_level = 2
+        reliability = 1.025 #+0.025
+        maximum_speed = 21 #+0.5
+        defense = 22 #+1
+        breakthrough = 18.5 #+1
+        hardness = 0
+        armor_value = 0
+        soft_attack = 82 #+6
+        hard_attack = 28 #+3
+        ap_attack = 69 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 24.05 #+2.89
+        resources = { steel = 5 }
+    }
+    #ART 2085
+    artillery_9 = {
+        year = 2085
+        archetype = artillery_equipment
+        parent = artillery_8
+        priority = 5
+        visual_level = 2
+        reliability = 1.05 #+0.025
+        maximum_speed = 21.5 #+0.5
+        defense = 23.5 #+1.5
+        breakthrough = 19.5 #+1
+        hardness = 0
+        armor_value = 0
+        soft_attack = 88 #+6
+        hard_attack = 31 #+3
+        ap_attack = 75 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 26.94 #+2.89
+        resources = { steel = 5 }
+    }
+    #ART 2095
+    artillery_10 = {
+        year = 2095
+        archetype = artillery_equipment
+        parent = artillery_9
+        priority = 5
+        visual_level = 2
+        reliability = 1.075 #+0.025
+        maximum_speed = 22 #+0.5
+        defense = 25 #+1.5
+        breakthrough = 20.5 #+1
+        hardness = 0
+        armor_value = 0
+        soft_attack = 93 #+5
+        hard_attack = 34 #+3
+        ap_attack = 81 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 29.83 #+2.89
+        resources = { steel = 5 }
+    }
+    #ART 2105
+    artillery_11 = {
+        year = 2105
+        archetype = artillery_equipment
+        parent = artillery_10
+        priority = 5
+        visual_level = 2
+        reliability = 1.1 #+0.025
+        maximum_speed = 22.5 #+0.5
+        defense = 26.5 #+1.5
+        breakthrough = 21.5 #+1
+        hardness = 0
+        armor_value = 0
+        soft_attack = 98 #+5
+        hard_attack = 37 #+3
+        ap_attack = 87 #+4
+        air_attack = 0
+        lend_lease_cost = 4
+        build_cost_ic = 32.72 #+2.89
+        resources = { steel = 6 }
+    }
+    #ATGM 2045
+    Anti_tank_5 = {
+        year = 2045
+        archetype = L_AT_Equipment
+        parent = Anti_tank_4
+        priority = 5
+        visual_level = 2
+        reliability = 0.925 #+0.025
+        soft_attack = 8 #+1
+        hard_attack = 10 #+1
+        ap_attack = 40.5 #+3
+        air_attack = 0
+        defense = 8 #+1
+        breakthrough = 7 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 2.52 #+0.38
+        resources = { steel = 3 chromium = 2 tungsten = 1 }
+    }
+    #ATGM 2055
+    Anti_tank_6 = {
+        year = 2055
+        archetype = L_AT_Equipment
+        parent = Anti_tank_5
+        priority = 5
+        visual_level = 2
+        reliability = 0.95 #+0.025
+        soft_attack = 9 #+1
+        hard_attack = 11 #+1
+        ap_attack = 45 #+3
+        air_attack = 0
+        defense = 9 #+1
+        breakthrough = 8 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 2.9 #+0.38
+        resources = { steel = 3 chromium = 3 tungsten = 1 }
+    }
+    #ATGM 2065
+    Anti_tank_7 = {
+        year = 2065
+        archetype = L_AT_Equipment
+        parent = Anti_tank_6
+        priority = 5
+        visual_level = 2
+        reliability = 0.975 #+0.025
+        soft_attack = 10 #+1
+        hard_attack = 12 #+1
+        ap_attack = 49.5 #+3
+        air_attack = 0
+        defense = 10 #+1
+        breakthrough = 9 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 3.28 #+0.38
+        resources = { steel = 4 chromium = 3 tungsten = 1 }
+    }
+    #ATGM 2075
+    Anti_tank_8 = {
+        year = 2075
+        archetype = L_AT_Equipment
+        parent = Anti_tank_7
+        priority = 5
+        visual_level = 2
+        reliability = 1 #+0.025
+        soft_attack = 11 #+1
+        hard_attack = 13 #+1
+        ap_attack = 54 #+3
+        air_attack = 0
+        defense = 11 #+1
+        breakthrough = 10 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 3.66 #+0.38
+        resources = { steel = 4 chromium = 3 tungsten = 1 }
+    }
+    #ATGM 2085
+    Anti_tank_9 = {
+        year = 2085
+        archetype = L_AT_Equipment
+        parent = Anti_tank_8
+        priority = 5
+        visual_level = 2
+        reliability = 1.025 #+0.025
+        soft_attack = 12 #+1
+        hard_attack = 14 #+1
+        ap_attack = 60 #+4
+        air_attack = 0
+        defense = 12 #+1
+        breakthrough = 11 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 4.04 #+0.38
+        resources = { steel = 5 chromium = 3 tungsten = 1 }
+    }
+    #ATGM 2095
+    Anti_tank_10 = {
+        year = 2095
+        archetype = L_AT_Equipment
+        parent = Anti_tank_9
+        priority = 5
+        visual_level = 2
+        reliability = 1.05 #+0.025
+        soft_attack = 13 #+1
+        hard_attack = 15 #+1
+        ap_attack = 67.5 #+5
+        air_attack = 0
+        defense = 13 #+1
+        breakthrough = 12 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 4.42 #+0.38
+        resources = { steel = 5 chromium = 3 tungsten = 1 }
+    }
+    #ATGM 2105
+    Anti_tank_11 = {
+        year = 2105
+        archetype = L_AT_Equipment
+        parent = Anti_tank_10
+        priority = 5
+        visual_level = 2
+        reliability = 1.075 #+0.025
+        soft_attack = 14 #+1
+        hard_attack = 16 #+1
+        ap_attack = 75 #+5
+        air_attack = 0
+        defense = 14 #+1
+        breakthrough = 13 #+1
+        hardness = 0
+        armor_value = 0
+        lend_lease_cost = 1
+        build_cost_ic = 4.8 #+0.38
+        resources = { steel = 6 chromium = 3 tungsten = 1 }
+    }
+    #Mounted ATGM 2045
+    Heavy_Anti_tank_5 = {
+        year = 2045
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_4
+        priority = 5
+        visual_level = 2
+        reliability = 0.925 #+0.025
+        maximum_speed = 13 #+1
+        soft_attack = 0
+        hard_attack = 13 #+1
+        ap_attack = 60 #+4
+        air_attack = 0
+        defense = 7 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 5.75 #+0.25
+        resources = { steel = 3 chromium = 1 }
+    }
+    #Mounted ATGM 2055
+    Heavy_Anti_tank_6 = {
+        year = 2055
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_5
+        priority = 5
+        visual_level = 2
+        reliability = 0.95 #+0.025
+        maximum_speed = 14 #+1
+        soft_attack = 0
+        hard_attack = 14 #+1
+        ap_attack = 66 #+4
+        air_attack = 0
+        defense = 8 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 6 #+0.25
+        resources = { steel = 3 chromium = 1 }
+    }
+    #Mounted ATGM 2065
+    Heavy_Anti_tank_7 = {
+        year = 2065
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_6
+        priority = 5
+        visual_level = 2
+        reliability = 0.975 #+0.025
+        maximum_speed = 15 #+1
+        soft_attack = 0
+        hard_attack = 15 #+1
+        ap_attack = 73.5 #+5
+        air_attack = 0
+        defense = 9 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 6.25 #+0.25
+        resources = { steel = 4 chromium = 1 }
+    }
+    #Mounted ATGM 2075
+    Heavy_Anti_tank_8 = {
+        year = 2075
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_7
+        priority = 5
+        visual_level = 2
+        reliability = 1 #+0.025
+        maximum_speed = 16 #+1
+        soft_attack = 0
+        hard_attack = 16 #+1
+        ap_attack = 81 #+5
+        air_attack = 0
+        defense = 10 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 6.5 #+0.25
+        resources = { steel = 4 chromium = 1 }
+    }
+    #Mounted ATGM 2085
+    Heavy_Anti_tank_9 = {
+        year = 2085
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_8
+        priority = 5
+        visual_level = 2
+        reliability = 1.025 #+0.025
+        maximum_speed = 17 #+1
+        soft_attack = 0
+        hard_attack = 17 #+1
+        ap_attack = 90 #+6
+        air_attack = 0
+        defense = 11 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 6.75 #+0.25
+        resources = { steel = 5 chromium = 1 }
+    }
+    #Mounted ATGM 2095
+    Heavy_Anti_tank_10 = {
+        year = 2095
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_9
+        priority = 5
+        visual_level = 2
+        reliability = 1.05 #+0.025
+        maximum_speed = 18 #+1
+        soft_attack = 0
+        hard_attack = 18 #+1
+        ap_attack = 99 #+6
+        air_attack = 0
+        defense = 12 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 7 #+0.25
+        resources = { steel = 5 chromium = 1 }
+    }
+    #Mounted ATGM 2105
+    Heavy_Anti_tank_11 = {
+        year = 2105
+        archetype = H_AT_Equipment
+        parent = Heavy_Anti_tank_10
+        priority = 5
+        visual_level = 2
+        reliability = 1.075 #+0.025
+        maximum_speed = 19 #+1
+        soft_attack = 0
+        hard_attack = 19 #+1
+        ap_attack = 108 #+6
+        air_attack = 0
+        defense = 13 #+1
+        breakthrough = 0
+        hardness = 0
+        armor_value = 0
+        build_cost_ic = 7.25 #+0.25
+        resources = { steel = 6 chromium = 1 }
+    }
+    #MANPADS 2045
+    Anti_Air_5 = {
+		year = 2045
+		archetype = AA_Equipment
+		parent = Anti_Air_4
+		priority = 5
+		visual_level = 2
+		air_attack = 2.25 #+0.25
+		build_cost_ic = 3.21 #+0.71
+		resources = { steel = 3 tungsten = 1 chromium = 1 }
+	}
+    #MANPADS 2055
+    Anti_Air_6 = {
+        year = 2055
+        archetype = AA_Equipment
+        parent = Anti_Air_5
+        priority = 5
+        visual_level = 2
+        air_attack = 2.5 #+0.25
+        build_cost_ic = 3.92 #+0.71
+        resources = { steel = 3 tungsten = 1 chromium = 1 }
+    }
+    #MANPADS 2065
+    Anti_Air_7 = {
+        year = 2065
+        archetype = AA_Equipment
+        parent = Anti_Air_6
+        priority = 5
+        visual_level = 2
+        air_attack = 2.75 #+0.25
+        build_cost_ic = 4.63 #+0.71
+        resources = { steel = 4 tungsten = 1 chromium = 1 }
+    }
+    #MANPADS 2075
+    Anti_Air_8 = {
+        year = 2075
+        archetype = AA_Equipment
+        parent = Anti_Air_7
+        priority = 5
+        visual_level = 2
+        air_attack = 3 #+0.25
+        build_cost_ic = 5.34 #+0.71
+        resources = { steel = 4 tungsten = 1 chromium = 1 }
+    }
+    #MANPADS 2085
+    Anti_Air_9 = {
+        year = 2085
+        archetype = AA_Equipment
+        parent = Anti_Air_8
+        priority = 5
+        visual_level = 2
+        air_attack = 3.25 #+0.25
+        build_cost_ic = 6.05 #+0.71
+        resources = { steel = 4 tungsten = 2 chromium = 1 }
+    }
+    #MANPADS 2095
+    Anti_Air_10 = {
+        year = 2095
+        archetype = AA_Equipment
+        parent = Anti_Air_9
+        priority = 5
+        visual_level = 2
+        air_attack = 3.5 #+0.25
+        build_cost_ic = 6.76 #+0.71
+        resources = { steel = 5 tungsten = 2 chromium = 1 }
+    }
+    #MANPADS 2105
+    Anti_Air_11 = {
+        year = 2105
+        archetype = AA_Equipment
+        parent = Anti_Air_10
+        priority = 5
+        visual_level = 2
+        air_attack = 3.75 #+0.25
+        build_cost_ic = 7.47 #+0.71
+        resources = { steel = 5 tungsten = 2 chromium = 1 }
+    }
+    #2045 Guided Missile
+    guided_missile_equipment_6 = {
+		archetype = guided_missile_equipment
+		parent = guided_missile_equipment_5
+		is_buildable = no
+		one_use_only = yes
+		sprite = missile_default
+		air_range = 1600 #+200
+		maximum_speed = 2200
+		air_agility = 130
+		air_attack = 40
+		air_defence = 0
+		# build_cost_ic = 44
+	}
+    #2055 Guided Missile
+    guided_missile_equipment_7 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_6
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 1800 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+    #2065 Guided Missile
+    guided_missile_equipment_8 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_7
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 2000 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+    #2075 Guided Missile
+    guided_missile_equipment_9 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_8
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 2200 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+    #2085 Guided Missile
+    guided_missile_equipment_10 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_9
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 2400 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+    #2095 Guided Missile
+    guided_missile_equipment_11 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_10
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 2600 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+    #2105 Guided Missile
+    guided_missile_equipment_12 = {
+        archetype = guided_missile_equipment
+        parent = guided_missile_equipment_11
+        is_buildable = no
+        one_use_only = yes
+        sprite = missile_default
+        air_range = 2800 #+200
+        maximum_speed = 2200
+        air_agility = 130
+        air_attack = 40
+        air_defence = 0
+        # build_cost_ic = 44
+    }
+}
