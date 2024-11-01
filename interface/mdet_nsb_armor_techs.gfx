@@ -1,0 +1,266 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mbt_tech_5_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/MBT7.dds"
+	}
+	spriteType = {
+		name = "GFX_mbt_tech_6_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/MBT7.dds"
+	}
+	spriteType = {
+		name = "GFX_mbt_tech_7_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/MBT7.dds"
+	}
+	spriteType = {
+		name = "GFX_mbt_tech_8_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/MBT7.dds"
+	}
+	spriteType = {
+		name = "GFX_tank_components_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_battlestation_6.dds"
+	}
+	spriteType = {
+		name = "GFX_tank_components_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_battlestation_7.dds"
+	}
+	spriteType = {
+		name = "GFX_tank_components_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_battlestation_8.dds"
+	}
+	spriteType = {
+		name = "GFX_tank_components_tech_9_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_battlestation_9.dds"
+	}
+	spriteType = {
+		name = "GFX_era_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/reactive_armor_gen5.dds"
+	}
+	spriteType = {
+		name = "GFX_era_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/reactive_armor_gen6.dds"
+	}
+	spriteType = {
+		name = "GFX_era_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/reactive_armor_gen7.dds"
+	}
+	spriteType = {
+		name = "GFX_era_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/reactive_armor_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_era_tech_9_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/reactive_armor_gen9.dds"
+	}
+	spriteType = {
+		name = "GFX_armor_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_composite_armor_gen5.dds"
+	}
+	spriteType = {
+		name = "GFX_armor_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_composite_armor_gen6.dds"
+	}
+	spriteType = {
+		name = "GFX_armor_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_composite_armor_gen7.dds"
+	}
+	spriteType = {
+		name = "GFX_armor_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_composite_armor_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_9_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen9.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_10_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen10.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_11_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen11.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_12_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen12.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_13_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen13.dds"
+	}
+	spriteType = {
+		name = "GFX_diesel_engine_tech_14_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_diesel_engine_gen14.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen3.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen4.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen5.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen6.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_9_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen7.dds"
+	}
+	spriteType = {
+		name = "GFX_electric_engine_tech_10_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_electric_engine_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_small_medium_gun_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_small_medium_cannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_small_medium_gun_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_small_medium_cannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_small_medium_gun_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_small_medium_cannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_small_medium_gun_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_small_medium_cannon_8.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_gun_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_medium_cannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_gun_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_medium_cannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_gun_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_medium_cannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_gun_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_medium_cannon_8.dds"
+	}
+	spriteType = {
+		name = "GFX_large_gun_tech_4_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_large_cannon_4.dds"
+	}
+	spriteType = {
+		name = "GFX_large_gun_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_large_cannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_large_gun_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_large_cannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_large_gun_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_large_cannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_very_large_gun_tech_4_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_very_large_cannon_4.dds"
+	}
+	spriteType = {
+		name = "GFX_very_large_gun_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_very_large_cannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_very_large_gun_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_very_large_cannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_very_large_gun_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/tank_very_large_cannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_afv_tech_5_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/IFV8.dds"
+	}
+	spriteType = {
+		name = "GFX_afv_tech_6_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/IFV8.dds"
+	}
+	spriteType = {
+		name = "GFX_afv_tech_7_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/IFV8.dds"
+	}
+	spriteType = {
+		name = "GFX_afv_tech_8_medium"
+		textureFile = "gfx/interface/technologies/Generic/NSB_AFV/IFV8.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_tech_5_medium"
+		textureFile = "gfx/interface/technologies/SOV/LAND/REC5.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_tech_6_medium"
+		textureFile = "gfx/interface/technologies/SOV/LAND/REC5.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_tech_7_medium"
+		textureFile = "gfx/interface/technologies/SOV/LAND/REC5.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_tech_8_medium"
+		textureFile = "gfx/interface/technologies/SOV/LAND/REC5.dds"
+	}
+	spriteType = {
+		name = "GFX_small_autocannon_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/small_autocannon_gen5.dds"
+	}
+	spriteType = {
+		name = "GFX_small_autocannon_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/small_autocannon_gen6.dds"
+	}
+	spriteType = {
+		name = "GFX_small_autocannon_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/small_autocannon_gen7.dds"
+	}
+	spriteType = {
+		name = "GFX_small_autocannon_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/small_autocannon_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_big_autocannon_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/big_autocannon_gen5.dds"
+	}
+	spriteType = {
+		name = "GFX_big_autocannon_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/big_autocannon_gen6.dds"
+	}
+	spriteType = {
+		name = "GFX_big_autocannon_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/big_autocannon_gen7.dds"
+	}
+	spriteType = {
+		name = "GFX_big_autocannon_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/big_autocannon_gen8.dds"
+	}
+	spriteType = {
+		name = "GFX_assault_gun_tech_5_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/afv_coax_autocannon_5.dds"
+	}
+	spriteType = {
+		name = "GFX_assault_gun_tech_6_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/afv_coax_autocannon_6.dds"
+	}
+	spriteType = {
+		name = "GFX_assault_gun_tech_7_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/afv_coax_autocannon_7.dds"
+	}
+	spriteType = {
+		name = "GFX_assault_gun_tech_8_medium"
+		textureFile = "gfx/interface/technologies/mdet/module_technologies/afv_coax_autocannon_8.dds"
+	}
+}

@@ -1,0 +1,172 @@
+generic_titan_equipment_organization = {
+    icon = GFX_idea_generic_tank_manufacturer_1
+	name = generic_mio_titan_org
+    allowed = { has_game_rule = { rule = mdet_enable_fantasy option = yes } }
+    ai_will_do = { factor = 10 }
+    equipment_type = { mio_cat_titans }
+    research_categories = { cat_titan }
+    research_bonus = 0.05
+    tree_header_text = {
+        text = mio_header_titan_eq_production_header
+		x = 2
+    }
+    tree_header_text = {
+        text = mio_header_titan_eq_attack_header
+		x = 6
+    }
+    tree_header_text = {
+        text = mio_header_titan_eq_defense_header
+		x = 10
+    }
+    initial_trait = {
+        name = generic_mio_titan_org_initial_trait
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.05
+        }
+    }
+    trait = {
+        token = generic_mio_titan_org_production_trait_1
+        name = generic_mio_titan_org_production_trait_1
+        icon = GFX_generic_mio_trait_icon_reliability
+        position = { x = 2 y = 0 }
+        equipment_bonus = { reliability = 0.05 build_cost_ic = -0.03 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_production_trait_2
+        name = generic_mio_titan_org_production_trait_2
+        icon = GFX_generic_mio_trait_icon_reliability
+        all_parents = { generic_mio_titan_org_production_trait_1 }
+        relative_position_id = generic_mio_titan_org_production_trait_1
+        position = { x = 0 y = 1 }
+        equipment_bonus = { reliability = 0.05 build_cost_ic = -0.03 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_production_trait_3
+        name = generic_mio_titan_org_production_trait_3
+        icon = GFX_generic_mio_trait_icon_reliability
+        all_parents = { generic_mio_titan_org_production_trait_2 }
+        relative_position_id = generic_mio_titan_org_production_trait_2
+        position = { x = 0 y = 1 }
+        equipment_bonus = { reliability = 0.05 build_cost_ic = -0.03 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 military_industrial_organization_task_capacity = 1 }
+    }
+    trait = {
+        token = generic_mio_titan_org_production_trait_4
+        name = generic_mio_titan_org_production_trait_4
+        icon = GFX_generic_mio_trait_icon_reliability
+        all_parents = { generic_mio_titan_org_production_trait_3 }
+        relative_position_id = generic_mio_titan_org_production_trait_3
+        position = { x = 0 y = 1 }
+        equipment_bonus = { reliability = 0.05 build_cost_ic = -0.03 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_production_trait_5
+        name = generic_mio_titan_org_production_trait_5
+        icon = GFX_generic_mio_trait_icon_reliability
+        all_parents = { generic_mio_titan_org_production_trait_4 }
+        relative_position_id = generic_mio_titan_org_production_trait_4
+        position = { x = 0 y = 1 }
+        equipment_bonus = { reliability = 0.05 build_cost_ic = -0.03 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+        production_bonus = { production_capacity_factor = 0.1 }
+    }
+    trait = {
+        token = generic_mio_titan_org_attack_trait_1
+        name = generic_mio_titan_org_attack_trait_1
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        position = { x = 6 y = 0 }
+        equipment_bonus = { soft_attack = 0.02 hard_attack = 0.02 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_attack_trait_2
+        name = generic_mio_titan_org_attack_trait_2
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        all_parents = { generic_mio_titan_org_attack_trait_1 }
+        relative_position_id = generic_mio_titan_org_attack_trait_1
+        position = { x = 0 y = 1 }
+        equipment_bonus = { soft_attack = 0.02 hard_attack = 0.02 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_attack_trait_3
+        name = generic_mio_titan_org_attack_trait_3
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        all_parents = { generic_mio_titan_org_attack_trait_2 }
+        relative_position_id = generic_mio_titan_org_attack_trait_2
+        position = { x = 0 y = 1 }
+        equipment_bonus = { soft_attack = 0.02 hard_attack = 0.02 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 military_industrial_organization_task_capacity = 1 }
+    }
+    trait = {
+        token = generic_mio_titan_org_attack_trait_4
+        name = generic_mio_titan_org_attack_trait_4
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        all_parents = { generic_mio_titan_org_attack_trait_3 }
+        relative_position_id = generic_mio_titan_org_attack_trait_3
+        position = { x = 0 y = 1 }
+        equipment_bonus = { soft_attack = 0.02 hard_attack = 0.02 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_attack_trait_5
+        name = generic_mio_titan_org_attack_trait_5
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        all_parents = { generic_mio_titan_org_attack_trait_4 }
+        relative_position_id = generic_mio_titan_org_attack_trait_4
+        position = { x = 0 y = 1 }
+        equipment_bonus = { soft_attack = 0.04 hard_attack = 0.04 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_defense_trait_1
+        name = generic_mio_titan_org_defense_trait_1
+        icon = GFX_generic_mio_trait_icon_soft_attack
+        position = { x = 10 y = 0 }
+        equipment_bonus = { breakthrough = 0.02 defense = 0.05 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_defense_trait_2
+        name = generic_mio_titan_org_defense_trait_2
+        icon = GFX_generic_mio_trait_icon_defense
+        all_parents = { generic_mio_titan_org_defense_trait_1 }
+        relative_position_id = generic_mio_titan_org_defense_trait_1
+        position = { x = 0 y = 1 }
+        equipment_bonus = { breakthrough = 0.02 defense = 0.05 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_defense_trait_3
+        name = generic_mio_titan_org_defense_trait_3
+        icon = GFX_generic_mio_trait_icon_defense
+        all_parents = { generic_mio_titan_org_defense_trait_2 }
+        relative_position_id = generic_mio_titan_org_defense_trait_2
+        position = { x = 0 y = 1 }
+        equipment_bonus = { breakthrough = 0.02 defense = 0.05 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 military_industrial_organization_task_capacity = 1 }
+    }
+    trait = {
+        token = generic_mio_titan_org_defense_trait_4
+        name = generic_mio_titan_org_defense_trait_4
+        icon = GFX_generic_mio_trait_icon_defense
+        all_parents = { generic_mio_titan_org_defense_trait_3 }
+        relative_position_id = generic_mio_titan_org_defense_trait_3
+        position = { x = 0 y = 1 }
+        equipment_bonus = { breakthrough = 0.02 defense = 0.05 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+    trait = {
+        token = generic_mio_titan_org_defense_trait_5
+        name = generic_mio_titan_org_defense_trait_5
+        icon = GFX_generic_mio_trait_icon_defense
+        all_parents = { generic_mio_titan_org_defense_trait_4 }
+        relative_position_id = generic_mio_titan_org_defense_trait_4
+        position = { x = 0 y = 1 }
+        equipment_bonus = { breakthrough = 0.04 defense = 0.1 }
+        organization_modifier = { military_industrial_organization_funds_gain = 0.03 }
+    }
+}

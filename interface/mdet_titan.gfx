@@ -1,0 +1,962 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_titan_hull_0_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_titan_hull_1_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_titan_hull_2_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_titan_hull_3_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_titan_hull_4_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_titan_hull_5_medium"
+		textureFile = "gfx/interface/technologies/equipment/titan_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_assault_titan_bat_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_assault_titan_bat_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_artillery_titan_bat_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_artillery_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_artillery_titan_bat_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_titan_bat_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_titan_bat_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_recon_comp_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_recon_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_recon_comp_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_engineer_comp_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_engineer_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_engineer_comp_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_support_comp_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_support_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_support_comp_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_bombardment_comp_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_artillery_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_bombardment_comp_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_breakthrough_comp_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_titan_breakthrough_comp_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_titan_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TC_titan_blueprint_overlay"
+		textureFile = "gfx/interface/equipmentdesigner/titan_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_artillery_titan_frame_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_assault_titan_frame_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_heavy_titan_frame_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_fission_core_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_fusion_core_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_turbine_core_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_bipedal_configuration_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_multipedal_configuration_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_lam_configuration_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_shotgun_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_assault_rifle_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_railgun_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_missile_launcher_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_cannon_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_chainsaw_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_secondary_rifle_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_grenade_launcher_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_rocket_launcher_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_tesla_chainsword_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_light_armor_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_medium_armor_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_category"
+		textureFile = "gfx/interface/technologies/modules/mdet_module_categories/EQ_MOD_CAT_titan_heavy_armor_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_artillery_titan_frame_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/artillery_titan_frame_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_titan_frame_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/assault_titan_frame_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_titan_frame_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/heavy_titan_frame_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fission_core_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fission_core_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_fusion_core_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_fusion_core_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_turbine_core_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_turbine_core_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_bipedal_configuration_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_multipedal_configuration_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_multipedal_configuration_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_lam_configuration_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_lam_configuration_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_shotgun_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_shotgun_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_assault_rifle_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_railgun_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_railgun_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_missile_launcher_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_missile_launcher_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_cannon_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_cannon_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_chainsaw_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_chainsaw_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_secondary_rifle_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_secondary_rifle_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_grenade_launcher_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_grenade_launcher_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_rocket_launcher_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_rocket_launcher_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_tesla_chainsword_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_tesla_chainsword_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_light_armor_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_medium_armor_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_medium_armor_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_1"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_2"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_3"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_4"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_5"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_titan_heavy_armor_6"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { 
+		name = "GFX_titan_research_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_heavy_armor_1.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_1_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_1.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_2_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_2.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_3_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_3.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_4_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_4.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_5_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_5.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_weapons_6_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_assault_rifle_6.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_1_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_1.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_2_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_2.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_3_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_3.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_4_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_4.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_5_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_5.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_modifications_6_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_bipedal_configuration_6.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_1_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_1.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_2_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_2.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_3_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_3.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_4_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_4.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_5_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_5.png"
+	}
+	spriteType = { 
+		name = "GFX_titan_defense_6_medium"
+		textureFile = "gfx/interface/technologies/modules/mdet_modules/titan_light_armor_6.png"
+	}
+}

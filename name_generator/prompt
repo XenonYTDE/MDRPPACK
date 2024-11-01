@@ -1,0 +1,109 @@
+I am trying to generate names for a mod for the game Hearts of Iron 4 (HOI4)
+Please generate names for military equipment for Canada (CAN)
+Name Generation:
+- Use current equipment from that country to generate names. For example, Spain developed the `CS-70` MANPATS system in 2023, so future MANPATS systems might be called `CS-81`, `CS-95`, etc.
+- If a country doesn't have existing equipment for a certain category, use a combination of the country's name and the equipment category in that country's native/official language as a prefix,, and a random number as the model code.
+    For example:
+        Thailand anti tank example:
+            Using Thailand's country name: TH
+            In Thai, MANPATS might be translated to ระบบต้านทางถล่มพลังงานที่นำไปใช้ได้โดยมนุษย์ (rabop tan thang thalom phalang ngaan thi nam pai chai dai doy mansayam)
+            Use the starting characters of the first 2 words: RT
+            Random number: 82
+            Final equipment name: `Anti_tank_5: "THRT 82"`
+        Indian infantry weapons (assault rifle) example:
+            Using India's country name: IN
+            In Hindi, assault rifle might be translated as "हमला बंदूक" (hamla bandook)
+            Use the starting characters of the first 2 words: HB
+            Random number: 48
+            Final equipment name: `infantry_weapons11: "INHB-48"`
+Instructions:
+- Use that Canada's native/official language
+- Convert name to latin characters
+- list them out in a code block (MUST include country tag):
+    ```
+        GER_Anti_tank_5: "RGW 150"
+        GER_Anti_tank_6: "RGW 220"
+        GER_Anti_tank_7: "RGW 230"
+        GER_Anti_tank_8: "RGW 261"
+        GER_Anti_tank_9: "RGW 290"
+        GER_Anti_tank_10: "RGW 303"
+        GER_Anti_tank_11: "RGW 380"
+        ...
+    ```
+
+```
+Anti_tank_5: "ATGM 2045"
+Anti_tank_6: "ATGM 2055"
+Anti_tank_7: "ATGM 2065"
+Anti_tank_8: "ATGM 2075"
+Anti_tank_9: "ATGM 2085"
+Anti_tank_10: "ATGM 2095"
+Anti_tank_11: "ATGM 2105"
+Heavy_Anti_tank_5: "Mounted ATGM 2045"
+Heavy_Anti_tank_6: "Mounted ATGM 2055"
+Heavy_Anti_tank_7: "Mounted ATGM 2065"
+Heavy_Anti_tank_8: "Mounted ATGM 2075"
+Heavy_Anti_tank_9: "Mounted ATGM 2085"
+Heavy_Anti_tank_10: "Mounted ATGM 2095"
+Heavy_Anti_tank_11: "Mounted ATGM 2105"
+artillery_5: "ART 2045"
+artillery_6: "ART 2055"
+artillery_7: "ART 2065"
+artillery_8: "ART 2075"
+artillery_9: "ART 2085"
+artillery_10: "ART 2095"
+artillery_11: "ART 2105"
+Anti_Air_5: "MANPADS 2045"
+Anti_Air_6: "MANPADS 2055"
+Anti_Air_7: "MANPADS 2065"
+Anti_Air_8: "MANPADS 2075"
+Anti_Air_9: "MANPADS 2085"
+Anti_Air_10: "MANPADS 2095"
+Anti_Air_11: "MANPADS 2105"
+transport_helicopter6: "TRA Helicopter 2055"
+transport_helicopter7: "TRA Helicopter 2075"
+transport_helicopter8: "TRA Helicopter 2095"
+transport_helicopter9: "TRA Helicopter 2105"
+transport_helicopter10: "TRA Helicopter 2115"
+infantry_weapons8: "Small Arms 2045"
+infantry_weapons9: "Small Arms 2055"
+infantry_weapons10: "Small Arms 2065"
+infantry_weapons11: "Small Arms 2075"
+infantry_weapons12: "Small Arms 2085"
+infantry_weapons13: "Small Arms 2095"
+infantry_weapons14: "Small Arms 2105"
+command_control_equipment7: "C6I Equipment"
+command_control_equipment8: "C6ISTAR Equipment"
+command_control_equipment9: "C7I Equipment"
+command_control_equipment10: "C7ISTAR Equipment"
+command_control_equipment11: "C8I Equipment"
+command_control_equipment12: "C8ISTAR Equipment"
+command_control_equipment13: "C9I Equipment"
+util_vehicle_8: "Utility Vehicle 2045"
+util_vehicle_9: "Utility Vehicle 2055"
+util_vehicle_10: "Utility Vehicle 2065"
+util_vehicle_11: "Utility Vehicle 2075"
+util_vehicle_12: "Utility Vehicle 2085"
+util_vehicle_13: "Utility Vehicle 2095"
+util_vehicle_14: "Utility Vehicle 2105"
+```
+
+From wikipedia, answer the following regarding Ethiopia's armed forces in english (in elaborate detail regarding the history and development of that military equipment):
+Only give answer for those developed and made in the country
+What MANPATS are in use or in development?
+What Mounted ATGM are in use or in development?
+What artillery are in use or in development?
+What anti air are in use or in development?
+What transport helicopters are in use or in development?
+What assault rifles are in use or in development?
+What command control equipment are in use or in development?
+What utility vehicles are in use or in development?
+In the country's official/native language, translate these (into latin character pronunciation if possible):
+- MANPATS
+- Mounted ATGM
+- artillery
+- anti air
+- transport helicopters
+- assault rifles
+- command control equipment
+- utility vehicles

@@ -1,0 +1,1187 @@
+mdet_get_mbt_heavy_templates = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mdet_mbt_template_5_heavy
+			}
+			has_tech = mbt_tech_5
+			has_tech = very_large_gun_tech_4
+		}
+		give_ai_mbt_template_5_heavy = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mdet_mbt_template_6_heavy
+			}
+			has_tech = mbt_tech_6
+			has_tech = very_large_gun_tech_5
+		}
+		give_ai_mbt_template_5_heavy = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mdet_mbt_template_7_heavy
+			}
+			has_tech = mbt_tech_7
+			has_tech = very_large_gun_tech_6
+		}
+		give_ai_mbt_template_5_heavy = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = mdet_mbt_template_8_heavy
+			}
+			has_tech = mbt_tech_8
+			has_tech = very_large_gun_tech_7
+		}
+		give_ai_mbt_template_5_heavy = yes
+	}
+}
+get_default_mbt_armor_upgrade_num = {
+	if = { limit = { OR = { tag = SOV tag = CHI tag = JAP tag = NKO } } set_variable = { mdet_mbt_template_upgrade_num = 3 } } else_if = { limit = { OR = { tag = GER tag = ITA tag = FRA tag = KOR } } set_variable = { mdet_mbt_template_upgrade_num = 4 } } else_if = { limit = { tag = USA } set_variable = { mdet_mbt_template_upgrade_num = 5 } } else = { set_variable = { mdet_mbt_template_upgrade_num = 4 } }
+}
+get_default_mbt_heavy_armor_upgrade_num = {
+	if = { limit = { OR = { tag = SOV tag = CHI tag = JAP tag = NKO } } set_variable = { mdet_mbt_template_upgrade_num = 6 } } else_if = { limit = { OR = { tag = GER tag = ITA tag = FRA tag = KOR } } set_variable = { mdet_mbt_template_upgrade_num = 8 } } else_if = { limit = { tag = USA } set_variable = { mdet_mbt_template_upgrade_num = 10 } } else = { set_variable = { mdet_mbt_template_upgrade_num = 8 } }
+}
+give_ai_mbt_template_5 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# Name comes from default variant name
+					# 2055
+					type = mbt_hull_5
+					modules = {
+						main_armament_slot = tank_large_cannon_4
+						turret_type_slot = tank_unmanned_turret_2
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_composite_armor_gen5
+						engine_type_slot = tank_diesel_engine_gen9
+						reload_type_slot = automatic_loading_2
+						special_type_slot_1 = wet_ammo_storage_4
+						special_type_slot_2 = hardkill_system_gen3
+						special_type_slot_3 = smoothbore_atgm_gen7
+						special_type_slot_4 = tank_battlestation_6
+						special_type_slot_5 = spaced_armor_gen5
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_5_heavy = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_heavy_armor_upgrade_num = yes
+		set_country_flag = mdet_mbt_template_5_heavy
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						OR = { tag = CAN tag = USA tag = MEX tag = BRA tag = CHL tag = ARG tag = SPR tag = ENG tag = FRA tag = GER tag = ITA tag = SWE tag = TUR tag = SOV tag = SAU tag = PER tag = ISR tag = EGY tag = NIG tag = ETH tag = SAF tag = RAJ tag = PAK tag = CHI tag = KOR tag = JAP tag = IND tag = AST tag = SIA }
+					}
+					create_equipment_variant = {
+						type = mbt_hull_5
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_4
+							turret_type_slot = tank_unmanned_turret_2
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen5
+							engine_type_slot = tank_diesel_engine_gen9
+							reload_type_slot = automatic_loading_2
+							special_type_slot_1 = wet_ammo_storage_4
+							special_type_slot_2 = hardkill_system_gen3
+							special_type_slot_3 = smoothbore_atgm_gen7
+							special_type_slot_4 = tank_battlestation_6
+							special_type_slot_5 = reactive_armor_gen5
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Heavy MBT 2055"
+						type = mbt_hull_5
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_4
+							turret_type_slot = tank_unmanned_turret_2
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen5
+							engine_type_slot = tank_diesel_engine_gen9
+							reload_type_slot = automatic_loading_2
+							special_type_slot_1 = wet_ammo_storage_4
+							special_type_slot_2 = hardkill_system_gen3
+							special_type_slot_3 = smoothbore_atgm_gen7
+							special_type_slot_4 = tank_battlestation_6
+							special_type_slot_5 = reactive_armor_gen5
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_6 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2075
+					type = mbt_hull_6
+					modules = {
+						main_armament_slot = tank_large_cannon_5
+						turret_type_slot = tank_unmanned_turret_2
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_composite_armor_gen6
+						engine_type_slot = tank_diesel_engine_gen11
+						reload_type_slot = automatic_loading_2
+						special_type_slot_1 = wet_ammo_storage_5
+						special_type_slot_2 = hardkill_system_gen4
+						special_type_slot_3 = smoothbore_atgm_gen9
+						special_type_slot_4 = tank_battlestation_7
+						special_type_slot_5 = spaced_armor_gen6
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_6_heavy = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_heavy_armor_upgrade_num = yes
+		set_country_flag = mdet_mbt_template_6_heavy
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						OR = { tag = CAN tag = USA tag = MEX tag = BRA tag = CHL tag = ARG tag = SPR tag = ENG tag = FRA tag = GER tag = ITA tag = SWE tag = TUR tag = SOV tag = SAU tag = PER tag = ISR tag = EGY tag = NIG tag = ETH tag = SAF tag = RAJ tag = PAK tag = CHI tag = KOR tag = JAP tag = IND tag = AST tag = SIA }
+					}
+					create_equipment_variant = {
+						type = mbt_hull_6
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_5
+							turret_type_slot = tank_unmanned_turret_2
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen6
+							engine_type_slot = tank_diesel_engine_gen11
+							reload_type_slot = automatic_loading_2
+							special_type_slot_1 = wet_ammo_storage_5
+							special_type_slot_2 = hardkill_system_gen4
+							special_type_slot_3 = smoothbore_atgm_gen9
+							special_type_slot_4 = tank_battlestation_7
+							special_type_slot_5 = reactive_armor_gen6
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Heavy MBT 2075"
+						type = mbt_hull_6
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_5
+							turret_type_slot = tank_unmanned_turret_2
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen6
+							engine_type_slot = tank_diesel_engine_gen11
+							reload_type_slot = automatic_loading_2
+							special_type_slot_1 = wet_ammo_storage_5
+							special_type_slot_2 = hardkill_system_gen4
+							special_type_slot_3 = smoothbore_atgm_gen9
+							special_type_slot_4 = tank_battlestation_7
+							special_type_slot_5 = reactive_armor_gen6
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_7 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2095
+					type = mbt_hull_7
+					modules = {
+						main_armament_slot = tank_large_cannon_6
+						turret_type_slot = tank_unmanned_turret_3
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_composite_armor_gen7
+						engine_type_slot = tank_diesel_engine_gen13
+						reload_type_slot = automatic_loading_3
+						special_type_slot_1 = tank_aux_engine_7
+						special_type_slot_2 = hardkill_system_gen5
+						special_type_slot_3 = smoothbore_atgm_gen11
+						special_type_slot_4 = tank_battlestation_8
+						special_type_slot_5 = spaced_armor_gen7
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_7_heavy = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_heavy_armor_upgrade_num = yes
+		set_country_flag = mdet_mbt_template_7_heavy
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						OR = { tag = CAN tag = USA tag = MEX tag = BRA tag = CHL tag = ARG tag = SPR tag = ENG tag = FRA tag = GER tag = ITA tag = SWE tag = TUR tag = SOV tag = SAU tag = PER tag = ISR tag = EGY tag = NIG tag = ETH tag = SAF tag = RAJ tag = PAK tag = CHI tag = KOR tag = JAP tag = IND tag = AST tag = SIA }
+					}
+					create_equipment_variant = {
+						type = mbt_hull_7
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_6
+							turret_type_slot = tank_unmanned_turret_3
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen7
+							engine_type_slot = tank_diesel_engine_gen13
+							reload_type_slot = automatic_loading_3
+							special_type_slot_1 = tank_aux_engine_7
+							special_type_slot_2 = hardkill_system_gen5
+							special_type_slot_3 = smoothbore_atgm_gen11
+							special_type_slot_4 = tank_battlestation_8
+							special_type_slot_5 = reactive_armor_gen7
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Heavy MBT 2095"
+						type = mbt_hull_7
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_6
+							turret_type_slot = tank_unmanned_turret_3
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen7
+							engine_type_slot = tank_diesel_engine_gen13
+							reload_type_slot = automatic_loading_3
+							special_type_slot_1 = tank_aux_engine_7
+							special_type_slot_2 = hardkill_system_gen5
+							special_type_slot_3 = smoothbore_atgm_gen11
+							special_type_slot_4 = tank_battlestation_8
+							special_type_slot_5 = reactive_armor_gen7
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_8 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2110
+					type = mbt_hull_8
+					modules = {
+						main_armament_slot = tank_large_cannon_7
+						turret_type_slot = tank_unmanned_turret_4
+						suspension_type_slot = tank_torsion_bar_suspension
+						armor_type_slot = tank_composite_armor_gen8
+						engine_type_slot = tank_diesel_engine_gen14
+						reload_type_slot = automatic_loading_4
+						special_type_slot_1 = tank_aux_engine_8
+						special_type_slot_2 = hardkill_system_gen6
+						special_type_slot_3 = smoothbore_atgm_gen12
+						special_type_slot_4 = tank_battlestation_9
+						special_type_slot_5 = spaced_armor_gen8
+					}
+					upgrades = {
+						tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_mbt_template_8_heavy = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_heavy_armor_upgrade_num = yes
+		set_country_flag = mdet_mbt_template_7_heavy
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						OR = { tag = CAN tag = USA tag = MEX tag = BRA tag = CHL tag = ARG tag = SPR tag = ENG tag = FRA tag = GER tag = ITA tag = SWE tag = TUR tag = SOV tag = SAU tag = PER tag = ISR tag = EGY tag = NIG tag = ETH tag = SAF tag = RAJ tag = PAK tag = CHI tag = KOR tag = JAP tag = IND tag = AST tag = SIA }
+					}
+					create_equipment_variant = {
+						type = mbt_hull_8
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_7
+							turret_type_slot = tank_unmanned_turret_4
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen8
+							engine_type_slot = tank_diesel_engine_gen14
+							reload_type_slot = automatic_loading_4
+							special_type_slot_1 = tank_aux_engine_8
+							special_type_slot_2 = hardkill_system_gen6
+							special_type_slot_3 = smoothbore_atgm_gen12
+							special_type_slot_4 = tank_battlestation_9
+							special_type_slot_5 = reactive_armor_gen8
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Heavy MBT 2110"
+						type = mbt_hull_8
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_very_large_cannon_7
+							turret_type_slot = tank_unmanned_turret_4
+							suspension_type_slot = tank_torsion_bar_suspension
+							armor_type_slot = tank_composite_armor_gen8
+							engine_type_slot = tank_diesel_engine_gen14
+							reload_type_slot = automatic_loading_4
+							special_type_slot_1 = tank_aux_engine_8
+							special_type_slot_2 = hardkill_system_gen6
+							special_type_slot_3 = smoothbore_atgm_gen12
+							special_type_slot_4 = tank_battlestation_9
+							special_type_slot_5 = reactive_armor_gen8
+						}
+						upgrades = {
+							tank_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+						}
+						icon = [template_icon]
+					}
+				}
+			}
+			template_icon = "[THIS.MDET_GetMbtTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+get_default_afv_armor_upgrade_num = {
+	if = { limit = { OR = { tag = SOV tag = CHI tag = JAP tag = NKO } } set_variable = { mdet_apc_template_upgrade_num = 3 } set_variable = { mdet_ifv_template_upgrade_num = 3 } } else_if = { limit = { OR = { tag = GER tag = ITA tag = FRA tag = KOR } } set_variable = { mdet_apc_template_upgrade_num = 4 } set_variable = { mdet_ifv_template_upgrade_num = 4 } } else_if = { limit = { tag = USA } set_variable = { mdet_apc_template_upgrade_num = 5 } set_variable = { mdet_ifv_template_upgrade_num = 5 } } else = { set_variable = { mdet_apc_template_upgrade_num = 4 } set_variable = { mdet_ifv_template_upgrade_num = 4 } }
+}
+give_ai_afv_template_5 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		get_default_afv_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2055
+					type = apc_hull_5
+					modules = {
+						main_armament_slot = apc_small_autocannon_5
+						turret_type_slot = afv_unmanned_turret_2
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen5
+						engine_type_slot = tank_electric_engine_gen3
+						special_type_slot_replacement = afv_additional_machine_guns
+						special_type_slot_1 = spaced_armor_gen5
+						special_type_slot_2 = smoke_launchers_4
+						special_type_slot_3 = afv_atgm_gen7
+						special_type_slot_4 = afv_battlestation_6
+						special_type_slot_5 = reactive_armor_gen5
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+				create_equipment_variant = {
+					# 2055
+					type = ifv_hull_5
+					modules = {
+						main_armament_slot = afv_assault_gun_5
+						turret_type_slot = afv_unmanned_turret_2
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen5
+						engine_type_slot = tank_electric_engine_gen3
+						special_armament_type_slot = afv_coax_machine_gun_4
+						special_type_slot_1 = spaced_armor_gen5
+						special_type_slot_2 = smoke_launchers_4
+						special_type_slot_3 = afv_atgm_gen7
+						special_type_slot_4 = afv_battlestation_6
+						special_type_slot_5 = reactive_armor_gen5
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+			}
+			template_afv_icon = "[THIS.MDET_GetApcTemplateIcon]"
+			template_ifv_icon = "[THIS.MDET_GetIfvTemplateIcon]"
+			template_afv_armor_upgrade_lvl = "[?mdet_apc_template_upgrade_num|.0]"
+			template_ifv_armor_upgrade_lvl = "[?mdet_ifv_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_afv_template_6 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		get_default_afv_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2075
+					type = apc_hull_6
+					modules = {
+						main_armament_slot = apc_small_autocannon_6
+						turret_type_slot = afv_unmanned_turret_2
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen6
+						engine_type_slot = tank_electric_engine_gen5
+						special_type_slot_replacement = afv_additional_machine_guns
+						special_type_slot_1 = spaced_armor_gen6
+						special_type_slot_2 = smoke_launchers_5
+						special_type_slot_3 = afv_atgm_gen9
+						special_type_slot_4 = afv_battlestation_7
+						special_type_slot_5 = reactive_armor_gen6
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+				create_equipment_variant = {
+					# 2075
+					type = ifv_hull_6
+					modules = {
+						main_armament_slot = afv_assault_gun_6
+						turret_type_slot = afv_unmanned_turret_2
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen6
+						engine_type_slot = tank_electric_engine_gen5
+						special_armament_type_slot = afv_coax_machine_gun_4
+						special_type_slot_1 = spaced_armor_gen6
+						special_type_slot_2 = smoke_launchers_5
+						special_type_slot_3 = afv_atgm_gen9
+						special_type_slot_4 = afv_battlestation_7
+						special_type_slot_5 = reactive_armor_gen6
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+			}
+			template_afv_icon = "[THIS.MDET_GetApcTemplateIcon]"
+			template_ifv_icon = "[THIS.MDET_GetIfvTemplateIcon]"
+			template_afv_armor_upgrade_lvl = "[?mdet_apc_template_upgrade_num|.0]"
+			template_ifv_armor_upgrade_lvl = "[?mdet_ifv_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_afv_template_7 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		get_default_afv_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2095
+					type = apc_hull_7
+					modules = {
+						main_armament_slot = apc_small_autocannon_7
+						turret_type_slot = afv_unmanned_turret_3
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen7
+						engine_type_slot = tank_electric_engine_gen7
+						special_type_slot_replacement = afv_additional_machine_guns
+						special_type_slot_1 = spaced_armor_gen7
+						special_type_slot_2 = smoke_launchers_6
+						special_type_slot_3 = afv_atgm_gen11
+						special_type_slot_4 = afv_battlestation_8
+						special_type_slot_5 = reactive_armor_gen7
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+				create_equipment_variant = {
+					# 2095
+					type = ifv_hull_7
+					modules = {
+						main_armament_slot = afv_assault_gun_7
+						turret_type_slot = afv_unmanned_turret_3
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen7
+						engine_type_slot = tank_electric_engine_gen7
+						special_armament_type_slot = afv_coax_machine_gun_4
+						special_type_slot_1 = spaced_armor_gen7
+						special_type_slot_2 = smoke_launchers_6
+						special_type_slot_3 = afv_atgm_gen11
+						special_type_slot_4 = afv_battlestation_8
+						special_type_slot_5 = reactive_armor_gen7
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+			}
+			template_afv_icon = "[THIS.MDET_GetApcTemplateIcon]"
+			template_ifv_icon = "[THIS.MDET_GetIfvTemplateIcon]"
+			template_afv_armor_upgrade_lvl = "[?mdet_apc_template_upgrade_num|.0]"
+			template_ifv_armor_upgrade_lvl = "[?mdet_ifv_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_afv_template_8 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		get_default_afv_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2110
+					type = apc_hull_8
+					modules = {
+						main_armament_slot = apc_small_autocannon_8
+						turret_type_slot = afv_unmanned_turret_4
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen8
+						engine_type_slot = tank_electric_engine_gen8
+						special_type_slot_replacement = afv_additional_machine_guns
+						special_type_slot_1 = spaced_armor_gen8
+						special_type_slot_2 = smoke_launchers_7
+						special_type_slot_3 = afv_atgm_gen12
+						special_type_slot_4 = afv_battlestation_9
+						special_type_slot_5 = reactive_armor_gen8
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+				create_equipment_variant = {
+					# 2110
+					type = ifv_hull_8
+					modules = {
+						main_armament_slot = afv_assault_gun_8
+						turret_type_slot = afv_unmanned_turret_4
+						suspension_type_slot = afv_torsion_bar_suspension
+						armor_type_slot = afv_composite_armor_gen8
+						engine_type_slot = tank_electric_engine_gen8
+						special_armament_type_slot = afv_coax_machine_gun_4
+						special_type_slot_1 = spaced_armor_gen8
+						special_type_slot_2 = smoke_launchers_7
+						special_type_slot_3 = afv_atgm_gen12
+						special_type_slot_4 = afv_battlestation_9
+						special_type_slot_5 = reactive_armor_gen8
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_afv_armor_upgrade_lvl]
+					}
+					icon = [template_afv_icon]
+				}
+			}
+			template_afv_icon = "[THIS.MDET_GetApcTemplateIcon]"
+			template_ifv_icon = "[THIS.MDET_GetIfvTemplateIcon]"
+			template_afv_armor_upgrade_lvl = "[?mdet_apc_template_upgrade_num|.0]"
+			template_ifv_armor_upgrade_lvl = "[?mdet_ifv_template_upgrade_num|.0]"
+		}
+	}
+}
+get_default_spg_armor_upgrade_num = {
+	if = { limit = { OR = { tag = SOV tag = CHI tag = JAP tag = NKO } } set_variable = { mdet_spg_template_upgrade_num = 3 } } else_if = { limit = { OR = { tag = GER tag = ITA tag = FRA tag = KOR } } set_variable = { mdet_spg_template_upgrade_num = 4 } } else_if = { limit = { tag = USA } set_variable = { mdet_spg_template_upgrade_num = 5 } } else = { set_variable = { mdet_spg_template_upgrade_num = 4 } }
+}
+give_ai_spg_template_5 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_spg_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2055
+					type = spart_hull_5
+					modules = {
+						arty_main_armament_slot = art_med_gun_gen7
+						chassis_type_slot = chassis_tank_gen5
+						engine_type_slot = tank_electric_engine_gen3
+						conversion_type_slot = empty
+						special_type_slot_1 = support_ammo_medium_gen5
+						special_type_slot_2 = heat_ammo_gun_medium_gen5
+						special_type_slot_3 = rocket_assisted_ammo_gun_medium_gen5
+						special_type_slot_4 = art_battlestation_gen6
+					}
+					upgrades = {
+						art_nsb_fire_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpgTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_spg_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_spg_template_6 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_spg_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2075
+					type = spart_hull_6
+					modules = {
+						arty_main_armament_slot = art_med_gun_gen9
+						chassis_type_slot = chassis_tank_gen6
+						engine_type_slot = tank_electric_engine_gen5
+						conversion_type_slot = empty
+						special_type_slot_1 = support_ammo_medium_gen7
+						special_type_slot_2 = heat_ammo_gun_medium_gen7
+						special_type_slot_3 = rocket_assisted_ammo_gun_medium_gen7
+						special_type_slot_4 = art_battlestation_gen7
+					}
+					upgrades = {
+						art_nsb_fire_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpgTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_spg_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_spg_template_7 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_spg_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2095
+					type = spart_hull_7
+					modules = {
+						arty_main_armament_slot = art_med_gun_gen11
+						chassis_type_slot = chassis_tank_gen7
+						engine_type_slot = tank_electric_engine_gen7
+						conversion_type_slot = empty
+						special_type_slot_1 = support_ammo_medium_gen9
+						special_type_slot_2 = heat_ammo_gun_medium_gen9
+						special_type_slot_3 = rocket_assisted_ammo_gun_medium_gen9
+						special_type_slot_4 = art_battlestation_gen8
+					}
+					upgrades = {
+						art_nsb_fire_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpgTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_spg_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_spg_template_8 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_spg_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2105
+					type = spart_hull_8
+					modules = {
+						arty_main_armament_slot = art_med_gun_gen12
+						chassis_type_slot = chassis_tank_gen8
+						engine_type_slot = tank_electric_engine_gen8
+						conversion_type_slot = empty
+						special_type_slot_1 = support_ammo_medium_gen10
+						special_type_slot_2 = heat_ammo_gun_medium_gen10
+						special_type_slot_3 = rocket_assisted_ammo_gun_medium_gen10
+						special_type_slot_4 = art_battlestation_gen9
+					}
+					upgrades = {
+						art_nsb_fire_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpgTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_spg_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_light_tank_template_5 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2055
+					type = light_tank_hull_5
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_5
+						turret_type_slot = tank_unmanned_turret_2
+						chassis_type_slot = chassis_wheeled_afv_gen5
+						engine_type_slot = tank_diesel_engine_gen9
+						armor_type_slot = afv_composite_armor_gen5
+						reload_type_slot = automatic_loading_2
+						special_armament_type_slot = additional_machine_guns
+						special_type_slot_1 = reactive_armor_gen5
+						special_type_slot_2 = smoke_launchers_4
+						special_type_slot_3 = afv_atgm_gen7
+						special_type_slot_4 = afv_battlestation_6
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetLTTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_light_tank_template_6 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2075
+					type = light_tank_hull_6
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_6
+						turret_type_slot = tank_unmanned_turret_2
+						chassis_type_slot = chassis_wheeled_afv_gen6
+						engine_type_slot = tank_diesel_engine_gen11
+						armor_type_slot = afv_composite_armor_gen6
+						reload_type_slot = automatic_loading_2
+						special_armament_type_slot = additional_machine_guns
+						special_type_slot_1 = reactive_armor_gen6
+						special_type_slot_2 = smoke_launchers_5
+						special_type_slot_3 = afv_atgm_gen9
+						special_type_slot_4 = afv_battlestation_7
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetLTTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_light_tank_template_7 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2095
+					type = light_tank_hull_7
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_7
+						turret_type_slot = tank_unmanned_turret_3
+						chassis_type_slot = chassis_wheeled_afv_gen7
+						engine_type_slot = tank_diesel_engine_gen13
+						armor_type_slot = afv_composite_armor_gen7
+						reload_type_slot = automatic_loading_3
+						special_armament_type_slot = additional_machine_guns
+						special_type_slot_1 = reactive_armor_gen7
+						special_type_slot_2 = smoke_launchers_6
+						special_type_slot_3 = afv_atgm_gen11
+						special_type_slot_4 = afv_battlestation_8
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetLTTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_light_tank_template_8 = {
+	if = {
+		limit = { is_ai = yes }
+		get_default_mbt_armor_upgrade_num = yes
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2110
+					type = light_tank_hull_8
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon_8
+						turret_type_slot = tank_unmanned_turret_4
+						chassis_type_slot = chassis_wheeled_afv_gen8
+						engine_type_slot = tank_diesel_engine_gen14
+						armor_type_slot = afv_composite_armor_gen8
+						reload_type_slot = automatic_loading_4
+						special_armament_type_slot = additional_machine_guns
+						special_type_slot_1 = reactive_armor_gen8
+						special_type_slot_2 = smoke_launchers_7
+						special_type_slot_3 = afv_atgm_gen12
+						special_type_slot_4 = afv_battlestation_9
+					}
+					upgrades = {
+						afv_nsb_armor_upgrade = [template_armor_upgrade_lvl]
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetLTTemplateIcon]"
+			template_armor_upgrade_lvl = "[?mdet_mbt_template_upgrade_num|.0]"
+		}
+	}
+}
+give_ai_spaa_template_5 = {
+	if = {
+		limit = { is_ai = yes }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2055
+					type = spaa_hull_5
+					parent_version = 0
+					modules = {
+						main_armament_slot = spaa_long_range_missiles_7
+						chassis_type_slot = spaa_chassis_tank_gen6
+						engine_type_slot = tank_diesel_engine_gen9
+						radar_type_slot = spaa_off_vehicle_radar_gen6
+						spaa_secondary_armament = spaa_coax_machinegun_1
+						special_type_slot_1 = hardkill_system_gen3
+						special_type_slot_2 = spaced_armor_gen5
+						special_type_slot_3 = reactive_armor_gen5
+						special_type_slot_4 = spaa_battlestation_gen7
+					}
+					upgrades = {
+						spaa_nsb_fire_upgrade = 5
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpaaTemplateIcon]"
+		}
+	}
+}
+give_ai_spaa_template_6 = {
+	if = {
+		limit = { is_ai = yes }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2075
+					type = spaa_hull_6
+					parent_version = 0
+					modules = {
+						main_armament_slot = spaa_long_range_missiles_8
+						chassis_type_slot = spaa_chassis_tank_gen8
+						engine_type_slot = tank_diesel_engine_gen11
+						radar_type_slot = spaa_off_vehicle_radar_gen8
+						spaa_secondary_armament = spaa_coax_machinegun_1
+						special_type_slot_1 = hardkill_system_gen4
+						special_type_slot_2 = spaced_armor_gen6
+						special_type_slot_3 = reactive_armor_gen6
+						special_type_slot_4 = spaa_battlestation_gen8
+					}
+					upgrades = {
+						spaa_nsb_fire_upgrade = 5
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpaaTemplateIcon]"
+		}
+	}
+}
+give_ai_spaa_template_7 = {
+	if = {
+		limit = { is_ai = yes }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2095
+					type = spaa_hull_7
+					parent_version = 0
+					modules = {
+						main_armament_slot = spaa_long_range_missiles_10
+						chassis_type_slot = spaa_chassis_tank_gen10
+						engine_type_slot = tank_diesel_engine_gen13
+						radar_type_slot = spaa_off_vehicle_radar_gen9
+						spaa_secondary_armament = spaa_coax_machinegun_1
+						special_type_slot_1 = hardkill_system_gen5
+						special_type_slot_2 = spaced_armor_gen7
+						special_type_slot_3 = reactive_armor_gen7
+						special_type_slot_4 = spaa_battlestation_gen10
+					}
+					upgrades = {
+						spaa_nsb_fire_upgrade = 5
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpaaTemplateIcon]"
+		}
+	}
+}
+give_ai_spaa_template_8 = {
+	if = {
+		limit = { is_ai = yes }
+		meta_effect = {
+			text = {
+				create_equipment_variant = {
+					# 2105
+					type = spaa_hull_8
+					parent_version = 0
+					modules = {
+						main_armament_slot = spaa_long_range_missiles_11
+						chassis_type_slot = spaa_chassis_tank_gen11
+						engine_type_slot = tank_diesel_engine_gen14
+						radar_type_slot = spaa_off_vehicle_radar_gen10
+						spaa_secondary_armament = spaa_coax_machinegun_1
+						special_type_slot_1 = hardkill_system_gen6
+						special_type_slot_2 = spaced_armor_gen8
+						special_type_slot_3 = reactive_armor_gen8
+						special_type_slot_4 = spaa_battlestation_gen11
+					}
+					upgrades = {
+						spaa_nsb_fire_upgrade = 5
+					}
+					icon = [template_icon]
+				}
+			}
+			template_icon = "[THIS.MDET_GetSpaaTemplateIcon]"
+		}
+	}
+}
+give_ai_helicopter_template_5 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		create_equipment_variant = {
+			type = attack_helicopter_hull_5
+			parent_version = 0
+			modules = {
+				helicopter_inner_hardpoint = helicopter_multiple_atgm_gen7
+				nose_gun_type_slot = helicopter_medium_nose_gun_gen4
+				armor_type_slot = helicopter_armor_gen4
+				engine_type_slot = helicopter_turbine_engine_gen6
+				defence_type_slot = flare_launchers1
+				sensor_and_avionics_slot = sensors_and_avionics_gen_6
+				helicopter_middle_hardpoint_1 = helicopter_heavy_atgm_gen7
+				special_defensive_type_slot_1 = active_defence_system_gen3
+				helicopter_middle_hardpoint_2 = helicopter_rocket_pod_gen7
+				helicopter_outer_hardpoint_1 = helicopter_rocket_pod_gen7
+				special_defensive_type_slot_2 = stealth_modification_gen3
+			}
+			upgrades = {
+				helicopter_nsb_upgrade = 5
+			}
+			icon = "GFX_USA_attack_helicopter5_medium"
+		}
+	}
+}
+give_ai_helicopter_template_6 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		create_equipment_variant = {
+			type = attack_helicopter_hull_6
+			parent_version = 0
+			modules = {
+				helicopter_inner_hardpoint = helicopter_multiple_atgm_gen9
+				nose_gun_type_slot = helicopter_medium_nose_gun_gen5
+				armor_type_slot = helicopter_armor_gen5
+				engine_type_slot = helicopter_turbine_engine_gen7
+				defence_type_slot = flare_launchers2
+				sensor_and_avionics_slot = sensors_and_avionics_gen_7
+				helicopter_middle_hardpoint_1 = helicopter_heavy_atgm_gen9
+				special_defensive_type_slot_1 = active_defence_system_gen4
+				helicopter_middle_hardpoint_2 = helicopter_rocket_pod_gen9
+				helicopter_outer_hardpoint_1 = helicopter_rocket_pod_gen9
+				special_defensive_type_slot_2 = stealth_modification_gen4
+			}
+			upgrades = {
+				helicopter_nsb_upgrade = 5
+			}
+			icon = "GFX_USA_attack_helicopter5_medium"
+		}
+	}
+}
+give_ai_helicopter_template_7 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		create_equipment_variant = {
+			type = attack_helicopter_hull_7
+			parent_version = 0
+			modules = {
+				helicopter_inner_hardpoint = helicopter_multiple_atgm_gen11
+				nose_gun_type_slot = helicopter_medium_nose_gun_gen6
+				armor_type_slot = helicopter_armor_gen6
+				engine_type_slot = helicopter_turbine_engine_gen8
+				defence_type_slot = flare_launchers3
+				sensor_and_avionics_slot = sensors_and_avionics_gen_8
+				helicopter_middle_hardpoint_1 = helicopter_heavy_atgm_gen11
+				special_defensive_type_slot_1 = active_defence_system_gen5
+				helicopter_middle_hardpoint_2 = helicopter_rocket_pod_gen11
+				helicopter_outer_hardpoint_1 = helicopter_rocket_pod_gen11
+				special_defensive_type_slot_2 = stealth_modification_gen5
+			}
+			upgrades = {
+				helicopter_nsb_upgrade = 5
+			}
+			icon = "GFX_USA_attack_helicopter5_medium"
+		}
+	}
+}
+give_ai_helicopter_template_8 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		create_equipment_variant = {
+			type = attack_helicopter_hull_8
+			parent_version = 0
+			modules = {
+				helicopter_inner_hardpoint = helicopter_multiple_atgm_gen12
+				nose_gun_type_slot = helicopter_medium_nose_gun_gen7
+				armor_type_slot = helicopter_armor_gen7
+				engine_type_slot = helicopter_turbine_engine_gen9
+				defence_type_slot = flare_launchers4
+				sensor_and_avionics_slot = sensors_and_avionics_gen_9
+				helicopter_middle_hardpoint_1 = helicopter_heavy_atgm_gen12
+				special_defensive_type_slot_1 = active_defence_system_gen6
+				helicopter_middle_hardpoint_2 = helicopter_rocket_pod_gen12
+				helicopter_outer_hardpoint_1 = helicopter_rocket_pod_gen12
+				special_defensive_type_slot_2 = stealth_modification_gen7
+			}
+			upgrades = {
+				helicopter_nsb_upgrade = 5
+			}
+			icon = "GFX_USA_attack_helicopter5_medium"
+		}
+	}
+}
+give_ai_helicopter_template_9 = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		create_equipment_variant = {
+			type = attack_helicopter_hull_9
+			parent_version = 0
+			modules = {
+				helicopter_inner_hardpoint = helicopter_multiple_atgm_gen12
+				nose_gun_type_slot = helicopter_medium_nose_gun_gen8
+				armor_type_slot = helicopter_armor_gen8
+				engine_type_slot = helicopter_turbine_engine_gen10
+				defence_type_slot = flare_launchers4
+				sensor_and_avionics_slot = sensors_and_avionics_gen_10
+				helicopter_middle_hardpoint_1 = helicopter_heavy_atgm_gen12
+				special_defensive_type_slot_1 = active_defence_system_gen7
+				helicopter_middle_hardpoint_2 = helicopter_rocket_pod_gen12
+				helicopter_outer_hardpoint_1 = helicopter_rocket_pod_gen12
+				special_defensive_type_slot_2 = stealth_modification_gen7
+			}
+			upgrades = {
+				helicopter_nsb_upgrade = 5
+			}
+			icon = "GFX_USA_attack_helicopter5_medium"
+		}
+	}
+}
