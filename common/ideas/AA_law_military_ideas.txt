@@ -2749,7 +2749,10 @@ ideas = {
 				factor = 0
 				modifier = {
 					add = 1
-					has_idea = superpower
+					OR = {
+						has_idea = superpower
+						has_idea = global_hegemony
+					}
 				}
 			}
 		}

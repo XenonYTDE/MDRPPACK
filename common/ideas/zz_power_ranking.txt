@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		global_hegemony = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea global_hegemony" }
-			picture = GFX_idea_superpower
+			picture = GFX_idea_global_hegemony
 			allowed = { always = no }
 			rule = { can_create_factions = yes }
 			modifier = {
