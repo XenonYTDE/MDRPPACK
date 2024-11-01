@@ -5,10 +5,6 @@ ideas = {
 
        rapid_population_growth = {
            available = {
-               OR = {
-                   has_government = democratic
-                   has_government = neutrality
-               }
            }
 
            level = 1
