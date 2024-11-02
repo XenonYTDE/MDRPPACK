@@ -9,6 +9,7 @@ equipments = {
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 2000
+		supply_consumption = 2.5
 		module_slots = {
 			titan_frame_slot = {
 				required = yes
@@ -132,6 +133,7 @@ equipments = {
 		archetype = titan_hull
 		priority = 2000
 		module_slots = inherit
+		supply_consumption = 2.5
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade
@@ -154,6 +156,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 88
 		lend_lease_cost = 4
+		supply_consumption = 3.0
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade
@@ -176,6 +179,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 110
 		lend_lease_cost = 4
+		supply_consumption = 3.5
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade
@@ -198,6 +202,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 134
 		lend_lease_cost = 4
+		supply_consumption = 4.0
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade
@@ -220,6 +225,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 160
 		lend_lease_cost = 4
+		supply_consumption = 4.5
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade
@@ -242,6 +248,7 @@ equipments = {
 		hardness = 0.8
 		armor_value = 188
 		lend_lease_cost = 4
+		supply_consumption = 5.0
 		upgrades = {
 			titan_armor_upgrade
 			titan_agility_upgrade

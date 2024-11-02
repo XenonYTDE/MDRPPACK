@@ -1,4 +1,3 @@
-NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.5
 NDefines.NDiplomacy.IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0.0			-- 0.3, ideology limit required to join faction
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 0.5						-- 0.2, When you pass in a peace deal you gain this percent of your original score
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 20							-- 13, Default days before an event times out if not scripted
@@ -24,8 +23,6 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for rem
 
 
 -- MP Optimisation
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.GAME_SPEED_SECONDS = { 1.0, 0.25, 0.1, 0.05, 0.0 }
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 	NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 10
