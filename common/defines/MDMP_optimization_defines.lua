@@ -49,7 +49,6 @@ NDefines.NMilitary.COMMAND_POWER_GAIN = 0.05                -- Reduce command po
 NDefines.NMilitary.COMMAND_POWER_MAX = 100                  -- Set maximum command power.
 NDefines.NMilitary.COMMAND_POWER_REGENERATION_RATE = 0.01   -- Reduce command power regeneration rate.
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.4              -- Increase base compliance growth.
-NDefines.NCountry.POLITICAL_POWER_CAP = 1000                -- Set maximum political power.
 NDefines.NCountry.FUEL_CAPACITY_DEFAULT_HOURS = 720         -- Set default fuel capacity in hours.
 NDefines.NCountry.FUEL_GAIN_PER_OIL = 0.1                   -- Reduce fuel gain per oil.
 NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_STATE = 0.1        -- Reduce fuel gain per oil from state.
