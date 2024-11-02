@@ -1,0 +1,22 @@
+leader_traits = {
+	Confucianism = {
+		improve_relations_maintain_cost_factor = -0.5
+		neutrality_acceptance = 50
+		democratic_acceptance = 25
+		communism_acceptance = 25
+	}
+	Achieving_Ren = {
+		stability_factor = 0.05
+		stability_weekly = 0.002
+	}
+	Confucian_Self_Improvement = {
+		research_speed_factor = 0.10
+	}
+	Invisible = {
+		max_organisation = 10
+	}
+	Bing_Chilling = {
+		communism_acceptance = 50
+		stability_factor = 0.05
+	}
+}
