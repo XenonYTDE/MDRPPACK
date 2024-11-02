@@ -504,7 +504,7 @@ set_leader_CHI = {
 				ideology = Neutral_Autocracy
 				traits = {
 					Invisible
-					Bing _Chilling
+					Bing_Chilling
 				}
 			}
 
