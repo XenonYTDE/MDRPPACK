@@ -1,0 +1,3 @@
+CHI_kong_flag_change = {
+	icon = GFX_category_icon
+}

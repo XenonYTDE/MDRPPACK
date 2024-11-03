@@ -38,8 +38,10 @@
  RULE_YES_MERGE_CENTRAL_AMERICA_DESC:0 "Merges Central America"
  RULE_NO_MERGE_CENTRAL_AMERICA_DESC:0 "Keeps Central America The Same" 
  
-#Misc Rules
-MDOptimization_Misc_RULES:0 "MD Optimization Misc Custom Rules"
+#Hypermerge
+ RULE_HYPERMERGE:0 "Hypermerge"
+ RULE_YES_HYPERMERGE_DESC:0 "Merges 100+ nations in the World. §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_NO_HYPERMERGE_DESC:0 "Keeps Everything The Same"
 
 #Merge Asia
  RULE_MERGE_ASIA:0 "Merge Asia"
