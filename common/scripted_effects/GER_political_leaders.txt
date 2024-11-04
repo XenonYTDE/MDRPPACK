@@ -407,6 +407,13 @@ set_leader_GER = {
 				name = "Adolf Drippler"
 				picture = "Adolf_Drippler.dds"
 				ideology = Nat_Fascism
+				traits = {
+					argentinian
+					austrian_painter
+					artist
+					the_old_fuehrer
+					protector_of_german_culture
+				}
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Fascism_leader = 1 } }
@@ -526,6 +533,7 @@ set_leader_GER = {
 					argentinian
 					austrian_painter
 					artist
+					the_old_fuehrer
 				}
 			}
 
