@@ -28,7 +28,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_advisor_cost_factor = -0.20
+				laws_cost_factor = -0.20
 			}
 		}	
 	}
@@ -64,7 +64,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.5
-				compliance_growth = 0.1
+				compliance_growth = 0.15
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 			}
 		}	
@@ -115,7 +115,7 @@ ideas = {
 				stability_weekly = 0.001
 
 				#political_power_gain = 0.5
-				compliance_growth = 0.1
+				compliance_growth = 0.15
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 				
 				political_power_gain = 0.8
@@ -356,6 +356,9 @@ ideas = {
 			}
 			research_bonus = {
 				industry = 0.05
+			}
+			research_bonus = {
+				electronics = 0.15
 			}
 		}	
 	}
