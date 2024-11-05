@@ -1,0 +1,48 @@
+scripted_gui = {
+	league_of_nations_new_voting_alert_window = {
+		context_type = player_context
+
+		window_name = "league_of_nations_new_voting_alert_window"
+
+		visible = {
+			is_ai = no
+			is_league_of_nations_voting_active = yes
+			is_league_of_nations_member = yes
+			NOT = { is_league_of_nations_voting_initiator = yes }
+			NOT = { is_league_of_nations_voting_target = yes }
+			NOT = { has_league_of_nations_voting_vote_yes = yes }
+			NOT = { has_league_of_nations_voting_vote_no = yes }
+			has_variable = show_league_of_nations_new_voting_alert
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_league_of_nations_new_voting_alert
+			}
+			goto_button_click = {
+				clear_variable = show_league_of_nations_new_voting_alert
+				set_variable = { show_league_of_nations_window = 1 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	league_of_nations_trade_view_alert_window = {
+		context_type = player_context
+
+		window_name = "league_of_nations_trade_view_alert_window"
+		parent_window_token = trade_tab
+
+		visible = {
+			is_ai = no
+			check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+}

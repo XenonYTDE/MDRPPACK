@@ -1,0 +1,45 @@
+defined_text = {
+	name = GetLeagueOfNationsMapModeTooltip
+
+	text = {
+		trigger = {
+			is_league_of_nations_leader = yes
+		}
+		localization_key = lon_mapmode_tt_leader
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_member = yes
+		}
+		localization_key = lon_mapmode_tt_member
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = lon_mapmode_tt_no_member
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsMapModeTooltipDelayed
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_initiator = yes
+		}
+		localization_key = lon_mapmode_tt_starter_of_voting
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_target = yes
+		}
+		localization_key = lon_mapmode_tt_target_of_voting
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}

@@ -1,0 +1,462 @@
+﻿add_namespace = league_of_nations_news_events
+
+# New League of Nations Leader elected
+news_event = {
+	id = league_of_nations_news_events.1
+	title = league_of_nations_news_events.EVTNAME1
+	desc = league_of_nations_news_events.EVTDESC1
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events1.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events1.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# No-Confidence Vote
+news_event = {
+	id = league_of_nations_news_events.3
+	title = league_of_nations_news_events.EVTNAME3
+	desc = league_of_nations_news_events.EVTDESC3
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events3.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events3.EVTOPT1 executed"
+		trigger = {
+			tag = ROOT
+		}
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = league_of_nations_news_events3.EVTOPT2
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events3.EVTOPT2 executed"
+		trigger = {
+			NOT = { tag = ROOT }
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# FROM declined invite into League of Nations
+news_event = {
+	id = league_of_nations_news_events.4
+	title = league_of_nations_news_events.EVTNAME4
+	desc = league_of_nations_news_events.EVTDESC4
+	picture = GFX_news_event_oon
+
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events4.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events4.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Joined League of Nations
+news_event = {
+	id = league_of_nations_news_events.5
+	title = league_of_nations_news_events.EVTNAME5
+	desc = league_of_nations_news_events.EVTDESC5
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events5.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events5.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Country left League of Nations
+news_event = {
+	id = league_of_nations_news_events.6
+	title = league_of_nations_news_events.EVTNAME6
+	desc = league_of_nations_news_events.EVTDESC6
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events6.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events6.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations dissolved by war
+news_event = {
+	id = league_of_nations_news_events.7
+	title = league_of_nations_news_events.EVTNAME7
+	desc = league_of_nations_news_events.EVTDESC7
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events7.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events7.EVTOPT1 executed"
+		trigger = {
+			OR = {
+				tag = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = league_of_nations_news_events7.EVTOPT2
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events7.EVTOPT1 executed"
+		trigger = {
+			NOT = { tag = ROOT }
+			NOT = { is_in_faction_with = ROOT }
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Voting in League of Nations council against us
+news_event = {
+	id = league_of_nations_news_events.8
+	title = league_of_nations_news_events.EVTNAME8
+	desc = league_of_nations_news_events.EVTDESC8
+	picture = GFX_news_event_oon
+
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events8.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events8.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# ROOT accepted League of Nations' ultimatum
+news_event = {
+	id = league_of_nations_news_events.9
+	title = league_of_nations_news_events.EVTNAME9
+	desc = {
+		trigger = {
+			ROOT = {
+				OR = {
+					NOT = { check_variable = { global.league_of_nations_voting_type = 2 } }
+					NOT = { has_variable = declared_war_on_target }
+				}
+				OR = {
+					NOT = { check_variable = { global.league_of_nations_voting_type = 3 } }
+					NOT = { has_variable = last_annexed_country }
+				}
+				NOT = { check_variable = { global.league_of_nations_voting_type = 4 } }
+				NOT = { check_variable = { global.league_of_nations_voting_type = 5 } }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC9.1
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 2 }
+				has_variable = declared_war_on_target
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC9.2
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 3 }
+				has_variable = last_annexed_country
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC9.3
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 4 }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC9.4
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 5 }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC9.5
+	}
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events9.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events9.EVTOPT1 executed"
+		trigger = {
+			tag = ROOT
+		}
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = league_of_nations_news_events9.EVTOPT2
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events9.EVTOPT2 executed"
+		trigger = {
+			NOT = { tag = ROOT }
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# ROOT declined League of Nations' ultimatum
+news_event = {
+	id = league_of_nations_news_events.10
+	title = league_of_nations_news_events.EVTNAME10
+	desc = {
+		trigger = {
+			ROOT = {
+				OR = {
+					NOT = { check_variable = { global.league_of_nations_voting_type = 2 } }
+					NOT = { has_variable = declared_war_on_target }
+				}
+				OR = {
+					NOT = { check_variable = { global.league_of_nations_voting_type = 3 } }
+					NOT = { has_variable = last_annexed_country }
+				}
+				NOT = { check_variable = { global.league_of_nations_voting_type = 4 } }
+				NOT = { check_variable = { global.league_of_nations_voting_type = 5 } }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC10.1
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 2 }
+				has_variable = declared_war_on_target
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC10.2
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 3 }
+				has_variable = last_annexed_country
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC10.3
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 4 }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC10.4
+	}
+	desc = {
+		trigger = {
+			ROOT = {
+				check_variable = { global.league_of_nations_voting_type = 5 }
+			}
+		}
+		text = league_of_nations_news_events.EVTDESC10.5
+	}
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events10.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events10.EVTOPT1 executed"
+		trigger = {
+			tag = ROOT
+		}
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = league_of_nations_news_events10.EVTOPT2
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events10.EVTOPT2 executed"
+		trigger = {
+			NOT = { tag = ROOT }
+		}
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting failed
+news_event = {
+	id = league_of_nations_news_events.11
+	title = league_of_nations_news_events.EVTNAME11
+	desc = league_of_nations_news_events.EVTDESC11
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events11.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events11.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "trade"
+news_event = {
+	id = league_of_nations_news_events.12
+	title = league_of_nations_news_events.EVTNAME12
+	desc = league_of_nations_news_events.EVTDESC12
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events12.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events12.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "war"
+news_event = {
+	id = league_of_nations_news_events.13
+	title = league_of_nations_news_events.EVTNAME13
+	desc = league_of_nations_news_events.EVTDESC13
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events13.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events13.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "kick"
+news_event = {
+	id = league_of_nations_news_events.14
+	title = league_of_nations_news_events.EVTNAME14
+	desc = league_of_nations_news_events.EVTDESC14
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events14.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events14.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "coalition"
+news_event = {
+	id = league_of_nations_news_events.15
+	title = league_of_nations_news_events.EVTNAME15
+	desc = league_of_nations_news_events.EVTDESC15
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events15.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events15.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "embargo on luxury goods"
+news_event = {
+	id = league_of_nations_news_events.16
+	title = league_of_nations_news_events.EVTNAME16
+	desc = league_of_nations_news_events.EVTDESC16
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events16.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events16.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations Voting successful: Sanction type "economic sanctions"
+news_event = {
+	id = league_of_nations_news_events.17
+	title = league_of_nations_news_events.EVTNAME17
+	desc = league_of_nations_news_events.EVTDESC17
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events17.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events17.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+	}
+}
+
+# League of Nations rejected membership application
+news_event = {
+	id = league_of_nations_news_events.18
+	title = league_of_nations_news_events.EVTNAME18
+	desc = league_of_nations_news_events.EVTDESC18
+	picture = GFX_news_event_oon
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = league_of_nations_news_events18.EVTOPT1
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events18.EVTOPT1 executed"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			tag = ROOT
+		}
+	}
+
+	option = {
+		name = league_of_nations_news_events18.EVTOPT2
+		log = "[GetDateText]: [This.GetName]: league_of_nations_news_events18.EVTOPT2 executed"
+		ai_chance = { factor = 100 }
+
+		trigger = {
+			NOT = { tag = ROOT }
+		}
+	}
+}

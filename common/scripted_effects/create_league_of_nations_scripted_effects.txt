@@ -1,0 +1,1813 @@
+create_league_of_nations_effect = {
+	set_global_flag = league_of_nations_created
+	clear_array = global.league_of_nations_reforms_array
+	add_to_array = { global.league_of_nations_reforms_array = 1 }
+	add_to_array = { global.league_of_nations_reforms_array = 0 }
+	add_to_array = { global.league_of_nations_reforms_array = 2 }
+	add_to_array = { global.league_of_nations_reforms_array = 3 }
+	add_to_array = { global.league_of_nations_reforms_array = 4 }
+	add_to_array = { global.league_of_nations_reforms_array = 5 }
+	add_to_array = { global.league_of_nations_reforms_array = 6 }
+	add_to_array = { global.league_of_nations_reforms_array = 0 }
+	add_to_array = { global.league_of_nations_reforms_array = 7 }
+	add_to_array = { global.league_of_nations_reforms_array = 8 }
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = enable_league_of_nations_at_start
+				option = ENABLE
+			}
+		}
+		if = {
+			limit = {
+				date > 1999.01.01
+			}
+			# Joining of countries:
+			if = {
+				limit = {
+					date > 2000.01.01
+				}
+				# Founding Members:
+				if = {
+					limit = {
+						country_exists = AST
+					}
+					AST = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ARG
+					}
+					ARG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BLR
+					}
+					BLR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BEL
+					}
+					BEL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+						
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BOL
+					}
+					BOL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BRA
+					}
+					BRA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ENG
+					}
+					ENG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = VEN
+					}
+					VEN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HAI
+					}
+					HAI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GUA
+					}
+					GUA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HON
+					}
+					HON = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GRE
+					}
+					GRE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DEN
+					}
+					DEN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DOM
+					}
+					DOM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = EGY
+					}
+					EGY = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = RAJ
+					}
+					RAJ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = IRQ
+					}
+					IRQ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PER
+					}
+					PER = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CAN
+					}
+					CAN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CHI
+					}
+					CHI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = COL
+					}
+					COL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = COS
+					}
+					COS = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CUB
+					}
+					CUB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LIB
+					}
+					LIB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LEB
+					}
+					LEB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LUX
+					}
+					LUX = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MEX
+					}
+					MEX = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HOL
+					}
+					HOL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NIC
+					}
+					NIC = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NZL
+					}
+					NZL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NOR
+					}
+					NOR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PAN
+					}
+					PAN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PAR
+					}
+					PAR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PRU
+					}
+					PRU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = POL
+					}
+					POL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ELS
+					}
+					ELS = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SAU
+					}
+					SAU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SYR
+					}
+					SYR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = USA
+					}
+					USA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SOV
+					}
+					SOV = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TUR
+					}
+					TUR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UKR
+					}
+					UKR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = URG
+					}
+					URG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PHI
+					}
+					PHI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FRA
+					}
+					FRA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CZE
+					}
+					CZE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SLO
+					}
+					SLO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CHL
+					}
+					CHL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ECU
+					}
+					ECU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ETH
+					}
+					ETH = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SER
+					}
+					SER = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FYR
+					}
+					FYR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BOS
+					}
+					BOS = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CRO
+					}
+					CRO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SLV
+					}
+					SLV = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SAF
+					}
+					SAF = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = AFG
+					}
+					AFG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ICE
+					}
+					ICE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SIA
+					}
+					SIA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = YEM
+					}
+					YEM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PAK
+					}
+					PAK = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BRM
+					}
+					BRM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ISR
+					}
+					ISR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = IND
+					}
+					IND = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = AUS
+					}
+					AUS = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ALB
+					}
+					ALB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BUL
+					}
+					BUL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = HUN
+					}
+					HUN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = JOR
+					}
+					JOR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = IRE
+					}
+					IRE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SPR
+					}
+					SPR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ITA
+					}
+					ITA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CBD
+					}
+					CBD = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LBA
+					}
+					LBA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NEP
+					}
+					NEP = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = POR
+					}
+					POR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ROM
+					}
+					ROM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FIN
+					}
+					FIN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SRI
+					}
+					SRI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MOR
+					}
+					MOR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SUD
+					}
+					SUD = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TUN
+					}
+					TUN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = JAP
+					}
+					JAP = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GAH
+					}
+					GAH = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAY
+					}
+					MAY = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GUI
+					}
+					GUI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CDI
+					}
+					CDI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BFA
+					}
+					BFA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GAB
+					}
+					GAB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BEN
+					}
+					BEN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+						
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CAM
+					}
+					CAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CYP
+					}
+					CYP = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CNG
+					}
+					CNG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DRC
+					}
+					DRC = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAD
+					}
+					MAD = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NGR
+					}
+					NGR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SOM
+					}
+					SOM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TOG
+					}
+					TOG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CAR
+					}
+					CAR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CHA
+					}
+					CHA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAL
+					}
+					MAL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SEN
+					}
+					SEN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NIG
+					}
+					NIG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SIE
+					}
+					SIE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAU
+					}
+					MAU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MON
+					}
+					MON = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TNZ
+					}
+					TNZ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BUR
+					}
+					BUR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = RWA
+					}
+					RWA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TRI
+					}
+					TRI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = JAM
+					}
+					JAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ALG
+					}
+					ALG = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UGA
+					}
+					UGA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KUW
+					}
+					KUW = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KEN
+					}
+					KEN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ZAM
+					}
+					ZAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MLW
+					}
+					MLW = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MLT
+					}
+					MLT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GAM
+					}
+					GAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MLD
+					}
+					MLD = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SIN
+					}
+					SIN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GUY
+					}
+					GUY = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BOT
+					}
+					BOT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LES
+					}
+					LES = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BAR
+					}
+					BAR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MRT
+					}
+					MRT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SWA
+					}
+					SWA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = EGU
+					}
+					EGU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FIJ
+					}
+					FIJ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BHR
+					}
+					BHR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BHU
+					}
+					BHU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = QAT
+					}
+					QAT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = OMA
+					}
+					OMA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UAE
+					}
+					UAE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GER
+					}
+					GER = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BAH
+					}
+					BAH = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BAN
+					}
+					BAN = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GUB
+					}
+					GUB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GRA
+					}
+					GRA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = VER
+					}
+					VER = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MOZ
+					}
+					MOZ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SAO
+					}
+					SAO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PAP
+					}
+					PAP = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = COM
+					}
+					COM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SUR
+					}
+					SUR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SEY
+					}
+					SEY = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = AGL
+					}
+					AGL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SAM
+					}
+					SAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = VIE
+					}
+					VIE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DJI
+					}
+					DJI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SOL
+					}
+					SOL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DMI
+					}
+					DMI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = STL
+					}
+					STL = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ZIM
+					}
+					ZIM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = STV
+					}
+					STV = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BLZ
+					}
+					BLZ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = STK
+					}
+					STK = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BRU
+					}
+					BRU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NAM
+					}
+					NAM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LIC
+					}
+					LIC = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NKO
+					}
+					NKO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LAT
+					}
+					LAT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LIT
+					}
+					LIT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MIC
+					}
+					MIC = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KOR
+					}
+					KOR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = EST
+					}
+					EST = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = AZE
+					}
+					AZE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ARM
+					}
+					ARM = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KAZ
+					}
+					KAZ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KYR
+					}
+					KYR = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MLV
+					}
+					MLV = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SMA
+					}
+					SMA = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TAJ
+					}
+					TAJ = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TRK
+					}
+					TRK = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UZB
+					}
+					UZB = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GEO
+					}
+					GEO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ADO
+					}
+					ADO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MNC
+					}
+					MNC = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ERI
+					}
+					ERI = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SWE
+					}
+					SWE = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						country_exists = LAO
+					}
+					LAO = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						date > 2011.07.14
+						country_exists = SSU
+					}
+					SSU = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+				if = {
+					limit = {
+						date > 2006.06.28
+						country_exists = MNT
+					}
+					MNT = {
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+					}
+				}
+
+
+				# Set leader:
+				if = {
+					limit = {
+						has_game_rule = { rule = league_of_nations_rule_stab_quarter option = USA_STAB }
+					}
+					USA = {
+						set_league_of_nations_leader = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = league_of_nations_rule_stab_quarter option = SOV_STAB }
+					}
+					SOV = {
+						set_league_of_nations_leader = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = league_of_nations_rule_stab_quarter option = ENG_STAB }
+					}
+					ENG = {
+						set_league_of_nations_leader = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = league_of_nations_rule_stab_quarter option = FRA_STAB }
+					}
+					FRA = {
+						set_league_of_nations_leader = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = league_of_nations_rule_stab_quarter option = CHI_STAB }
+					}
+					CHI = {
+						set_league_of_nations_leader = yes
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { league_of_nations_exists = yes }
+						any_country = {
+							is_league_of_nations_member = yes
+						}
+					}
+					random_country = {
+						limit = {
+							is_league_of_nations_member = yes
+						}
+						set_league_of_nations_leader = yes
+					}
+				}
+				set_variable = { global.last_lon_election_date = global.year }
+				add_to_variable = { global.last_lon_election_date = -3 }
+				set_league_of_nations_global_election_time = yes
+
+				# Set first voting regarding Italian-Ethopian War:
+				if = {
+					limit = {
+						date > 1935.10.03
+						date < 1936.05.09
+						is_historical_focus_on = yes
+						country_exists = ETH
+						country_exists = ITA
+						ITA = {
+							has_war_with = ETH
+						}
+						NOT = { is_league_of_nations_voting_active = yes }
+						NOT = { is_league_of_nations_election_active = yes }
+					}
+					ITA = {
+						set_temp_variable = { threat_change = 1 }
+						set_league_of_nations_last_threat_static_change = yes
+						set_variable = { declared_war_on_target = ETH.id }
+						set_country_flag = ITA_ETH_war_add_aggressiveness
+						ETH = {
+							start_league_of_nations_voting_against_prev = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						date > 1936.05.08
+						is_historical_focus_on = yes
+					}
+					add_to_variable = { global.num_of_total_successful_league_of_nations_votings = 1 }
+				}
+				if = {
+					limit = {
+						any_country = {
+							is_league_of_nations_member = yes
+						}
+					}
+					every_country = {
+						limit = {
+							is_league_of_nations_member = yes
+							any_other_country = {
+								is_league_of_nations_member = yes
+								NOT = { has_country_flag = league_of_nations_opinion_set_for_@PREV }
+							}
+						}
+						every_other_country = {
+							limit = {
+								is_league_of_nations_member = yes
+								NOT = { has_country_flag = league_of_nations_opinion_set_for_@PREV }
+							}
+							add_opinion_modifier = {
+								target = PREV
+								modifier = league_of_nations_member_opinion
+							}
+							set_country_flag = league_of_nations_opinion_set_for_@PREV
+						}
+					}
+
+					# Set Focus at start:
+					if = {
+						limit = {
+							date > 1939.08.13
+						}
+						var:global.league_of_nations_leader = {
+						}
+					}
+				}
+			}
+		}
+	}
+}

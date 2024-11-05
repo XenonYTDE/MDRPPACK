@@ -1,0 +1,122 @@
+unique_id = league_of_nations_achievements
+
+lon_achievement_unite_the_league = {
+	possible = {
+		game_rules_allow_achievements = yes
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_reforms_active_tt
+		}
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_unite_the_league_tt
+			has_cosmetic_tag = LEAGUE_OF_NATIONS_COSMETIC_TAG
+		}
+	}
+
+	ribbon = {
+		frames = { 1 2 1 1 }
+		colors = {
+			{ 3 97 164 1.0 }
+			{ 4 118 202 1.0 }
+			{ 255 255 255 1.0 }
+			{ 211.0 181.0 128.0 1.0 }
+		}
+	}
+}
+
+lon_achievement_now_this_is_an_alliance = {
+	possible = {
+		game_rules_allow_achievements = yes
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_reforms_active_tt
+		}
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_now_this_is_an_alliance_tt
+			is_in_array = { global.completed_league_of_nations_reforms = 7 }
+		}
+		is_faction_leader = yes
+		num_faction_members > 4
+	}
+
+	ribbon = {
+		frames = { 1 1 1 2 }
+		colors = {
+			{ 4 118 202 1.0 }
+			{ 3 97 164 1.0 }
+			{ 211.0 181.0 128.0 1.0 }
+			{ 255 255 255 1.0 }
+		}
+	}
+}
+
+lon_achievement_winner_winner_chicken_dinner = {
+	possible = {
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		is_league_of_nations_leader = yes
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_winner_winner_chicken_dinner_tt
+			has_country_flag = lon_achievement_winner_winner_chicken_dinner
+		}
+	}
+
+	ribbon = {
+		frames = { 1 1 1 1 }
+		colors = {
+			{ 4 118 202 1.0 }
+			{ 150 50 100 1.0 }
+			{ 255 255 255 1.0 }
+			{ 3 97 164 1.0 }
+		}
+	}
+}
+
+lon_achievement_and_you_think_i_care = {
+	possible = {
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		date > 1937.1.1
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_and_you_think_i_care_tt
+			is_league_of_nations_voting_target = yes
+		}
+	}
+
+	ribbon = {
+		frames = { 1 2 2 1 }
+		colors = {
+			{ 190 0 0 1.0 }
+			{ 250 130 0 1.0 }
+			{ 0 0 0 1.0 }
+			{ 0 0 0 0.0 }
+		}
+	}
+}
+
+lon_achievement_what_are_you_gonna_do = {
+	possible = {
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		is_not_league_of_nations_leader = yes
+		custom_trigger_tooltip = {
+			tooltip = lon_achievement_what_are_you_gonna_do_tt
+			has_country_flag = lon_achievement_what_are_you_gonna_do
+		}
+	}
+
+	ribbon = {
+		frames = { 1 1 1 2 }
+		colors = {
+			{ 130 130 0 1.0 }
+			{ 150 200 0 1.0 }
+			{ 150 200 0 1.0 }
+			{ 130 130 0 1.0 }
+		}
+	}
+}

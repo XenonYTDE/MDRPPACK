@@ -1,0 +1,90 @@
+scripted_gui = {
+	league_of_nations_threat_own_window = {
+		context_type = player_context
+
+		window_name = "league_of_nations_threat_own_window"
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			league_of_nations_exists = yes
+		}
+
+		effects = {
+			threat_list_button_click = {
+				if = {
+					limit = {
+						has_variable = show_league_of_nations_threat_list_window
+					}
+					clear_variable = show_league_of_nations_threat_list_window
+				}
+				else = {
+					set_variable = { show_league_of_nations_threat_list_window = 1 }
+				}
+			}
+		}
+
+		triggers = {
+			background_high_threat_visible = {
+				set_temp_variable = { threat_value = 50 }
+				has_league_of_nations_threat_level = yes
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	league_of_nations_threat_list_window = {
+		context_type = player_context
+
+		window_name = "league_of_nations_threat_list_window"
+
+		visible = {
+			is_ai = no
+			has_variable = show_league_of_nations_threat_list_window
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = show_league_of_nations_threat_list_window
+			}
+			entry_flag_click = {
+				capital_scope = {
+					ROOT = {
+						goto_state = PREV
+					}
+				}
+			}
+		}
+
+		triggers = {
+			no_threats_info_visible = {
+				check_variable = { global.league_of_nations_threat_countries_array^num < 1 }
+			}
+			entry_position_visible = {
+				set_temp_variable = { position_temp = i }
+				add_to_temp_variable = { position_temp = 1 }
+			}
+		}
+
+		dynamic_lists = {
+			threat_countries_list_gridbox = {
+				array = global.league_of_nations_threat_countries_array
+				entry_container = "[This.GetThreatListEntryContainer]"
+				change_scope = yes
+			}
+		}
+
+		properties = {
+			entry_flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+}

@@ -1,0 +1,5 @@
+spriteTypes = {
+	#OON
+	SpriteType = { name = "GFX_unit_L_OON_Inf_Bat_icon_medium" texturefile = "gfx/interface/counters/divisions_large/OON.dds" noOfFrames = 2 }
+	SpriteType = { name = "GFX_unit_L_OON_Inf_Bat_icon_medium_white" texturefile = "gfx/interface/counters/divisions_small/onmap_unit_l_oon_inf_bat_icon.dds" noOfFrames = 2 }
+}
