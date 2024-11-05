@@ -52,16 +52,37 @@ ideas = {
 					ep_taxation_policy_cost_factor = -0.15
 					ep_trade_tariffs_cost_factor = -0.15
 					ep_war_bonds_cost_factor = -0.15
-					gf_command_structur_cost_factor = -0.15
+					gf_command_structure_cost_factor = -0.15
 					gf_logistics_system_cost_factor = -0.15
 					gf_marine_role_cost_factor = -0.15
 					gf_officer_training_cost_factor = -0.15
 					gf_paratropper_role_cost_factor = -0.15
+					gf_special_forces_cost_factor = -0.15
 					gp_gender_equality_cost_factor = -0.15
-					gp_minority_rights_cost_factor = -0.15	
+					gp_minority_rights_cost_factor = -0.15
+					gp_national_ideas_cost_factor = -0.15
+					gp_press_law_cost_factor = -0.15
+					gp_public_meetings_cost_factor = -0.15
+					gt_government_form_cost_factor = -0.15
+					gt_head_of_state_cost_factor = -0.15
+					gt_judiciary_cost_factor = -0.15
+					ip_construction_focus_cost_factor = -0.15
+					ip_economic_base_cost_factor = -0.15
+					ip_resource_efforts_cost_factor = -0.15
+					is_firearm_regulation_cost_factor = -0.15
+					is_penal_system_cost_factor = -0.15
+					is_state_security_cost_factor = -0.15
+					is_trade_unions_cost_factor = -0.15
+					mj_branch_rivarly_cost_factor = -0.15
+					mj_code_of_ethics_cost_factor = -0.15
+					mj_female_service_cost_factor = -0.15
+					mj_non_core_manpower_cost_factor = -0.15
+					mj_training_quality_cost_factor = -0.15
+					mj_volunteer_forces_cost_factor = -0.15
 				}
 		}	
 	}
+}
 	country = {
 		NIDEAS_IDEA_GROUP1_SPIRIT4 = {
 			picture = nideas_spirit_political

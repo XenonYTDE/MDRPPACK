@@ -1112,6 +1112,9 @@
  CHI.anarchist_communism: "£CHI_left_wing_radical Revolutionary Committee of the Chinese Kuomintang"
  CHI.anarchist_communism_icon: "£CHI_left_wing_radical"
  CHI.anarchist_communism_desc: "Left Wing Radical - RCCK is one of nine members that comprise the Chinese United Front. It advocates for the Three Principles of the People, Left-Wing nationalism, and democratic socialism. The party is seen as second in status to the CPC and is thus allowed the largest numbers of seats in the People's Political Consultative Conference. Furtheremore, they are one of the only minor parties allowed to operate and maintain assets."
+ CHI.neutral_autocracy: "£CHI_neutral_autocracy Bing Chilling Autocracy"
+ CHI.neutral_autocracy_icon: "£CHI_neutral_autocracy"
+ CHI.neutral_autocracy_desc: "Bing Chilling Autocracy - John Xina has risen to claim his supposed rightful place as China's sole ruler."
  ###salafist
  CHI.Caliphate: "£CHI_salafist_jihadism Turkistan Islamic Party"
  CHI.Caliphate_icon: "£CHI_salafist_jihadism"
