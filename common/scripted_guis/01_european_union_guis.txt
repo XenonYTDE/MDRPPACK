@@ -5472,6 +5472,20 @@ scripted_gui = {
 						tooltip = eu_candidates_considering
 						NOT = { has_global_flag = considering_current_canidates }
 					}
+					
+				}
+				else_if = {
+					limit = { check_variable = { v = 701 } }
+					has_political_power > 300
+					custom_trigger_tooltip = {
+						tooltip = no_ongoing_expansion_tt
+						check_variable = { global.EU_expansion_check = 0 }
+					}
+					custom_trigger_tooltip = {
+						tooltip = eu_candidates_considering
+						NOT = { has_global_flag = considering_current_canidates }
+					}
+					
 				}
 				else_if = { limit = { check_variable = { v = 611 } }
 					has_political_power > 300
@@ -5626,6 +5640,9 @@ scripted_gui = {
 					hidden_effect = { add_political_power = -300 }
 				}
 				else_if = { limit = { check_variable = { v = 610 } }
+					hidden_effect = { add_political_power = -300 }
+				}
+				else_if = { limit = { check_variable = { v = 701 } }
 					hidden_effect = { add_political_power = -300 }
 				}
 				else_if = { limit = { check_variable = { v = 611 } }
