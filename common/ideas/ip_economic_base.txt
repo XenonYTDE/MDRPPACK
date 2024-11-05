@@ -46,7 +46,6 @@ ideas = {
                     has_idea = communal_economy
                 }
                 num_of_civilian_factories > 10
-                num_of_civilian_factories < 30
             }
 
             modifier = {
