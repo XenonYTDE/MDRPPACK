@@ -146,7 +146,7 @@ ideas = {
                 resistance_damage_to_garrison = -0.20
                 max_command_power = 10
                 compliance_growth = -0.05
-                stability_factor = -0.10
+                stability_factor = -0.05
             }
 
             ai_will_do = {
