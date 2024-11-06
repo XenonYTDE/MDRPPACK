@@ -1,0 +1,213 @@
+defined_text = {
+	name = GetLeagueOfNationsThreatRateReasons
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_league_of_nations_threat_rate_reasons
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsThreatRateReasonWarPeace
+
+	text = {
+		trigger = {
+			check_variable = { league_of_nations_threat_from_war_peace = -0.5 }
+			set_temp_variable = { threat_weekly_change_value_temp = league_of_nations_threat_from_war_peace }
+		}
+		localization_key = string_league_of_nations_threat_rate_reason_peace
+	}
+	text = {
+		trigger = {
+			check_variable = { league_of_nations_threat_from_war_peace = -0.1 }
+			set_temp_variable = { threat_weekly_change_value_temp = league_of_nations_threat_from_war_peace }
+		}
+		localization_key = string_league_of_nations_threat_rate_reason_defensive_war
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsThreatRateReasonOffensiveWar
+
+	text = {
+		trigger = {
+			check_variable = { league_of_nations_threat_from_offensive_war = 0.5 }
+			set_temp_variable = { threat_weekly_change_value_temp = league_of_nations_threat_from_offensive_war }
+		}
+		localization_key = string_league_of_nations_threat_rate_reason_war_against_member
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { league_of_nations_threat_from_offensive_war = 0.65 }
+				check_variable = { league_of_nations_threat_from_offensive_war = 0.75 }
+			}
+			set_temp_variable = { threat_weekly_change_value_temp = league_of_nations_threat_from_offensive_war }
+		}
+		localization_key = string_league_of_nations_threat_rate_reason_volunteers
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetIfThereAreLeagueOfNationsThreatRateReasons
+
+	text = {
+		trigger = {
+			check_variable = { league_of_nations_threat_from_war_peace = 0 }
+			check_variable = { league_of_nations_threat_from_offensive_war = 0 }
+		}
+		localization_key = string_league_of_nations_threat_rate_no_reasons
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsThreatLastStaticChange
+
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 1 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 10 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_declared_war
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 2 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = league_of_nations_threat_from_annexation }
+		}
+		localization_key = string_league_of_nations_threat_static_change_annexation
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 3 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 5 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_puppeting
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 4 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = -50 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_capitulation
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 5 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = -100 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_lost_war
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 6 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = -5 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_liberated_nation
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 7 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 5 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_civil_war
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 8 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = league_of_nations_threat_from_state_annexations }
+		}
+		localization_key = string_league_of_nations_threat_static_change_annexed_state
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 9 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 3 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_justified_wargoal
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 10 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = -7 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_league_of_nations_voting
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 11 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 7 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_league_of_nations_rejected_ultimatum
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 12 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = 3 }
+		}
+		localization_key = string_league_of_nations_threat_static_change_league_of_nations_peacefully_annexed_state
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_change = 13 }
+			has_league_of_nations_last_threat_static_change = yes
+			set_temp_variable = { threat_change_value_temp = league_of_nations_threat_from_dropping_nuke }
+		}
+		localization_key = string_league_of_nations_threat_static_change_dropped_nuke
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsThreatCoalitionExplanation
+
+	text = {
+		trigger = {
+			NOT = { has_global_flag = league_of_nations_rule_reforms_disabled }
+		}
+		localization_key = string_league_of_nations_threat_coalition_explanation
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}

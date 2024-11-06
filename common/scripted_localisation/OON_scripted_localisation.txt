@@ -1,0 +1,213 @@
+defined_text = {
+	name = OON_gensec_portrait
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_annani
+		}
+		localization_key = GFX_annan_portrait
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_ban_ki_moon
+		}
+		localization_key = GFX_ban_portrait
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_turk
+		}
+		localization_key = GFX_turk_portrait
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_bokova
+		}
+		localization_key = GFX_bokova_portrait
+	}
+}
+
+defined_text = {
+	name = OON_gensek_flag
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_annani
+		}
+		localization_key = GFX_annan_flag
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_ban_ki_moon
+		}
+		localization_key = GFX_ban_flag
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_turk
+		}
+		localization_key = GFX_turk_flag
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_bokova
+		}
+		localization_key = GFX_bokova_flag
+	}
+}
+
+defined_text = {
+	name = OON_flag
+	text = {
+		trigger = {
+			has_game_rule = { rule = league_of_nations_rule_stab_quarter option = USA_STAB }
+		}
+		localization_key = [USA.GetFlag]
+	}
+	text = {
+		trigger = {
+			has_game_rule = { rule = league_of_nations_rule_stab_quarter option = SOV_STAB }
+		}
+		localization_key = [SOV.GetFlag]
+	}
+	text = {
+		trigger = {
+			has_game_rule = { rule = league_of_nations_rule_stab_quarter option = ENG_STAB }
+		}
+		localization_key = [ENG.GetFlag]
+	}
+	text = {
+		trigger = {
+			has_game_rule = { rule = league_of_nations_rule_stab_quarter option = FRA_STAB }
+		}
+		localization_key = [FRA.GetFlag]
+	}
+	text = {
+		trigger = {
+			has_game_rule = { rule = league_of_nations_rule_stab_quarter option = CHI_STAB }
+		}
+		localization_key = [CHI.GetFlag]
+	}
+}
+defined_text = {
+	name = OON_election_date
+	text = {
+		trigger = {
+			date > 2000.1.2
+		}
+		localization_key = OON_election_date_1
+	}
+}
+defined_text = {
+	name = OON_gensek_name_loc
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_annani
+		}
+		localization_key = OON_gensek_annani
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_ban_ki_moon
+		}
+		localization_key = OON_gensek_ban_ki_moon
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_turk
+		}
+		localization_key = OON_gensek_danilo_turk
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_bokova
+		}
+		localization_key = OON_gensek_irina_bokova
+	}
+}
+defined_text = {
+	name = OON_gensek_bio_loc
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_annani
+		}
+		localization_key = OON_gensek_annani_bio
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_ban_ki_moon
+		}
+		localization_key = OON_gensek_ban_ki_moon_bio
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_turk
+		}
+		localization_key = OON_gensek_turk_bio
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_bokova
+		}
+		localization_key = OON_gensek_bokova_bio
+	}
+}
+defined_text = {
+	name = OON_gensek_modifiers
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_annani
+		}
+		localization_key = OON_annan_modifiers
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_ban_ki_moon
+		}
+		localization_key = OON_ban_ki_moon_modifiers
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_turk
+		}
+		localization_key = OON_danilo_turk_modifiers
+	}
+	text = {
+		trigger = {
+			has_country_flag = OON_gensek_bokova
+		}
+		localization_key = OON_irina_bokova_modifiers
+	}
+}
+defined_text = {
+	name = GetLeagueOfNationsMemberSupportedLeaderFlag
+
+	text = {
+		trigger = {
+			has_variable = elected_country_for_lon_leader
+		}
+		localization_key = " ([?elected_country_for_lon_leader.GetFlag])"
+	}
+}
+defined_text = {
+	name = GetJoinLeagueOfNationsTooltip
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = { 
+					has_idea = Non_State_Actor
+					has_idea = Lacks_International_Recognition
+				}
+			}
+		}
+		localization_key = oon_join_trigger_one
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_idea = Non_State_Actor
+				has_idea = Lacks_International_Recognition
+			}
+		}
+		localization_key = oon_join_trigger_two
+	}
+}

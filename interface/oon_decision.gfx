@@ -1,0 +1,114 @@
+spriteTypes = {
+	spritetype = {
+		name = "GFX_annan_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/annan.dds"
+	}
+	spritetype = {
+		name = "GFX_ban_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/ban.dds"
+	}
+	spritetype = {
+		name = "GFX_turk_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/turk.dds"
+	}
+	spritetype = {
+		name = "GFX_bokova_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/bokova.dds"
+	}
+	spritetype = {
+		name = "GFX_guterres_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/guterres.dds"
+	}
+	spritetype = {
+		name = "GFX_clark_portrait"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/clark.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_annan_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/annan_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_ban_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/ban_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_turk_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/turk_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_bokova_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/bokova_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_guterres_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/guterres_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_idea_clark_gensek"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/clark_idea.dds"
+	}
+	spritetype = {
+		name = "GFX_elections"
+		texturefile = "gfx/event_pictures/elections_oon.dds"
+	}
+	spritetype = {
+		name = "GFX_civilians"
+		texturefile = "gfx/event_pictures/civilians.dds"
+	}
+	spritetype = {
+		name = "GFX_peacekeeping_mission_picture"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/missions/peacekeeping_mission_picture.dds"
+	}
+	spritetype = {
+		name = "GFX_peacekeeping_mission_icon"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/missions/peacekeeping_missions_icon.dds"
+	}
+	spritetype = {
+		name = "GFX_reforms_picture"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/reforms/reforms_picture.dds"
+	}
+	spritetype = {
+		name = "GFX_oon_headquarters_icon"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/reforms/oon_headquarters_icon.dds"
+	}
+	spritetype = {
+		name = "GFX_flag_texture"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/reforms/flag_texture.tga"
+	}
+	spritetype = {
+		name = "GFX_annan_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/annan_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_ban_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/ban_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_turk_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/turk_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_bokova_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/bokova_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_guterres_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/guterres_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_clark_flag"
+		texturefile = "gfx/interface/decisions/decision_categories/oon/elections/clark_flag.dds"
+	}
+	spritetype = {
+		name = "GFX_gensek_flag_frame"
+		texturefile = "gfx/interface/oon_gensek_flag_frame.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_oon"
+		texturefile = "gfx/event_pictures/news_event_oon.dds"
+	}
+	spritetype = {
+		name = "GFX_oon_reform_idea"
+		texturefile = "gfx/interface/ideas/oon_reform_idea.dds"
+	}
+}

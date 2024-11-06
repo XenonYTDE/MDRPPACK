@@ -51,10 +51,6 @@ NDefines.NCountry.FUEL_GAIN_PER_OIL = 0.1                   -- Reduce fuel gain 
 NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_STATE = 0.1        -- Reduce fuel gain per oil from state.
 NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_BUILDING = 0.1     -- Reduce fuel gain per oil from building.
 
-NDefines.NTechnology.BASE_TECH_COST = 100                   -- Increase base tech cost to slow down tech progression.
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2     -- Increase year ahead penalty factor for tech.
-NDefines.NTechnology.BASE_TECH_COST_FACTOR = 1.5            -- Increase tech cost factor.
-
 NDefines.NSupply.SUPPLY_CACHE_CAPACITY = 100                -- Set supply cache capacity.
 NDefines.NSupply.SUPPLY_CACHE_GAIN = 0.1                    -- Reduce supply cache gain.
 NDefines.NSupply.SUPPLY_CACHE_CONSUMPTION = 0.1             -- Reduce supply cache consumption.

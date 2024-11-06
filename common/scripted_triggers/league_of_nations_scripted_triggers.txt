@@ -1,0 +1,209 @@
+# usage:
+## league_of_nations_exists = yes
+league_of_nations_exists = {
+	has_variable = global.league_of_nations_leader
+	country_exists = var:global.league_of_nations_leader
+}
+
+# usage:
+## is_league_of_nations_leader = yes
+is_league_of_nations_leader = {
+	custom_trigger_tooltip = {
+		tooltip = IS_LEAGUE_OF_NATIONS_LEADER_TT
+		has_variable = global.league_of_nations_leader
+		tag = var:global.league_of_nations_leader
+	}
+}
+
+# usage:
+## is_not_league_of_nations_leader = yes
+is_not_league_of_nations_leader = {
+	custom_trigger_tooltip = {
+		tooltip = IS_NOT_LEAGUE_OF_NATIONS_LEADER_TT
+		OR = {
+			NOT = { has_variable = global.league_of_nations_leader }
+			NOT = { tag = var:global.league_of_nations_leader }
+		}
+	}
+}
+
+# usage:
+## is_league_of_nations_member = yes
+is_league_of_nations_member = {
+	custom_trigger_tooltip = {
+		tooltip = IS_LEAGUE_OF_NATIONS_MEMBER_TT
+		is_in_array = { global.league_of_nations_members_array = THIS.id }
+	}
+}
+
+# usage:
+## is_league_of_nations_voting_active = yes
+is_league_of_nations_voting_active = {
+	has_global_flag = league_of_nations_voting
+}
+
+# usage:
+## is_league_of_nations_historial_voting_in_queue = yes
+is_league_of_nations_historial_voting_in_queue = {
+	OR = {
+		has_global_flag = GER_anschluss_voting_in_queue
+		has_global_flag = SOV_FIN_voting_in_queue
+	}
+}
+
+# usage:
+## is_league_of_nations_voting_initiator = yes
+is_league_of_nations_voting_initiator = {
+	has_variable = global.league_of_nations_voting_initiator
+	tag = var:global.league_of_nations_voting_initiator
+}
+
+# usage:
+## is_league_of_nations_voting_target = yes
+is_league_of_nations_voting_target = {
+	has_variable = global.league_of_nations_voting_target
+	tag = var:global.league_of_nations_voting_target
+}
+
+# usage:
+## has_league_of_nations_voting_vote_yes = yes
+has_league_of_nations_voting_vote_yes = {
+	is_in_array = { global.league_of_nations_voting_votes_yes = THIS.id }
+}
+
+# usage:
+## has_league_of_nations_voting_vote_no = yes
+has_league_of_nations_voting_vote_no = {
+	is_in_array = { global.league_of_nations_voting_votes_no = THIS.id }
+}
+
+# usage:
+## is_league_of_nations_election_active = yes
+is_league_of_nations_election_active = {
+	has_global_flag = league_of_nations_election
+}
+
+# usage:
+## has_league_of_nations_noconfidence_vote = yes
+has_league_of_nations_noconfidence_vote = {
+	has_country_flag = voted_in_noconfidence_vote
+}
+
+# usage:
+## set_temp_variable = { threat_value = 10 }
+## has_league_of_nations_threat_level = yes
+has_league_of_nations_threat_level = {
+	NOT = { check_variable = { league_of_nations_generated_threat < threat_value } }
+}
+
+# usage:
+## set_temp_variable = { num_votings = 1 }
+## has_num_of_successful_league_of_nations_votings = yes
+has_num_of_successful_league_of_nations_votings = {
+	custom_trigger_tooltip = {
+		tooltip = HAS_NUM_OF_SUCCESSFUL_LEAGUE_OF_NATIONS_VOTINGS_TT
+		NOT = { check_variable = { global.num_of_total_successful_league_of_nations_votings < num_votings } }
+	}
+}
+
+# usage:
+## set_temp_variable = { num_elections = 1 }
+## has_num_of_won_league_of_nations_elections = yes
+has_num_of_won_league_of_nations_elections = {
+	custom_trigger_tooltip = {
+		tooltip = HAS_NUM_OF_WON_LEAGUE_OF_NATIONS_ELECTIONS_TT
+		NOT = { check_variable = { num_of_won_league_of_nations_elections < num_elections } }
+	}
+}
+
+# usage:
+## set_temp_variable = { threat_change = 1 }
+## has_league_of_nations_last_threat_static_change = yes
+has_league_of_nations_last_threat_static_change = {
+	has_country_flag = last_league_of_nations_threat_static_change
+	check_variable = { last_league_of_nations_threat_static_change = threat_change }
+}
+
+# usage:
+## has_any_league_of_nations_voting_sanction_vote = yes
+has_any_league_of_nations_voting_sanction_vote = {
+	OR = {
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_1_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 1 }
+		}
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_2_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 2 }
+		}
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_3_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 3 }
+		}
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_4_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 4 }
+		}
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_5_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 5 }
+		}
+		AND = {
+			is_in_array = { global.league_of_nations_voting_sanction_6_supporters = THIS.id }
+			set_temp_variable = { sanction_type = 6 }
+		}
+	}
+#	below throws errors for AI, hence done manually for now
+#	any_of = {
+#		array = global.league_of_nations_voting_possible_sanctions_array
+#		value = value_temp
+#		index = index_temp
+#		set_temp_variable = { sanction_type = value_temp }
+#		has_league_of_nations_voting_sanction_vote = yes
+#	}
+}
+
+# usage:
+## set_temp_variable = { sanction_type = 1 }
+## has_league_of_nations_voting_sanction_vote = yes
+has_league_of_nations_voting_sanction_vote = {
+	meta_trigger = {
+		text = {
+			is_in_array = { global.league_of_nations_voting_sanction_[SANCTION]_supporters = THIS.id }
+		}
+		SANCTION = "[?sanction_type]"
+	}
+}
+
+# usage:
+## voting_against_this_would_have_valid_sanction_choice = yes
+voting_against_this_would_have_valid_sanction_choice = {
+	OR = {
+		check_variable = { league_of_nations_trade_sanctions_array^num < 10 }
+		any_other_country = {
+			is_league_of_nations_member = yes
+			NOT = { has_wargoal_against = PREV }
+		}
+		is_league_of_nations_member = yes
+		AND = {
+			set_temp_variable = { threat_value = 50 }
+			has_league_of_nations_threat_level = yes
+			NOT = { has_idea = league_of_nations_defense_pact_target }
+		}
+		AND = {
+			OR = {
+				has_war = yes
+				any_other_country = {
+					PREV = {
+						OR = {
+							has_wargoal_against = PREV
+							is_justifying_wargoal_against = PREV
+						}
+					}
+				}
+			}
+			NOT = { has_idea = league_of_nations_luxury_goods_embargo_idea }
+		}
+		NOT = { has_idea = league_of_nations_economic_sanctions_idea }
+	}
+}
