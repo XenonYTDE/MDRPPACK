@@ -1,0 +1,180 @@
+league_of_nations_leader_election_scorer = {
+	targets = {
+		target_array = global.league_of_nations_members_array
+		score = {
+			base = 1
+
+			# Negative:
+			modifier = {
+				has_capitulated = yes
+				add = -1000
+			}
+			modifier = {
+				is_subject = yes
+				add = -1000
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				has_war_with = FROM
+				add = -1000
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				is_league_of_nations_leader = yes
+				FROM = {
+					has_league_of_nations_noconfidence_vote = yes
+				}
+				add = -1000
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				NOT = { has_government = FROM }
+				FROM = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				add = -50
+			}
+
+			# Positive:
+			modifier = {
+				NOT = { tag = FROM }
+				is_major = yes
+				add = 5
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				is_league_of_nations_leader = yes
+				FROM = {
+					NOT = { has_league_of_nations_noconfidence_vote = yes }
+				}
+				add = 5
+			}
+			modifier = {
+				tag = FROM
+				add = 10
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				has_government = FROM
+				add = 10
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				is_in_faction_with = FROM
+				is_faction_leader = yes
+				add = 10
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				is_in_faction_with = FROM
+				add = 20
+			}
+			modifier = {
+				tag = FROM
+				is_league_of_nations_leader = yes
+				add = 25
+			}
+			modifier = {
+				tag = FROM
+				num_subjects > 0
+				any_subject_country = {
+					is_league_of_nations_member = yes
+				}
+				add = 30
+			}
+			modifier = {
+				tag = FROM
+				is_major = yes
+				add = 30
+			}
+			modifier = {
+				tag = FROM
+				is_major = no
+				OR = {
+					AND = {
+						NOT = { check_variable = { elected_country_for_lon_leader = FROM.id } }
+						check_variable = { num_of_votes_for_lon_election > 0 }
+					}
+					check_variable = { num_of_votes_for_lon_election > 1 }
+				}
+				add = 50
+			}
+			modifier = {
+				tag = FROM
+				is_major = yes
+				OR = {
+					AND = {
+						NOT = { check_variable = { elected_country_for_lon_leader = FROM.id } }
+						check_variable = { num_of_votes_for_lon_election > 0 }
+					}
+					check_variable = { num_of_votes_for_lon_election > 1 }
+				}
+				add = 100
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				FROM = {
+					is_subject = yes
+					is_subject_of = PREV
+				}
+				OR = {
+					NOT = { has_variable = elected_country_for_lon_leader }
+					check_variable = { elected_country_for_lon_leader = THIS.id }
+				}
+				add = 500
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				FROM = {
+					is_subject = yes
+					NOT = { is_subject_of = PREV }
+					overlord = {
+						has_variable = elected_country_for_lon_leader
+						check_variable = { elected_country_for_lon_leader = PREV.PREV }
+					}
+				}
+				add = 500
+			}
+
+			# Dynamic:
+			modifier = {
+				NOT = { tag = FROM }
+				FROM = {
+					set_temp_variable = { ai_election_value = opinion@PREV }
+					if = {
+						limit = {
+							check_variable = { ai_election_value > 0 }
+						}
+						divide_temp_variable = { ai_election_value = 2 }
+					}
+				}
+				add = ai_election_value
+			}
+			modifier = {
+				NOT = { tag = FROM }
+				set_temp_variable = { threat_value = 1 }
+				has_league_of_nations_threat_level = yes
+				set_temp_variable = { ai_election_threat_value = league_of_nations_generated_threat }
+				multiply_temp_variable = { ai_election_threat_value = -1.5 }
+				add = ai_election_threat_value
+			}
+
+			# Multiplicative:
+			modifier = {
+				NOT = { tag = FROM }
+				is_league_of_nations_leader = yes
+				FROM = {
+					NOT = { has_league_of_nations_noconfidence_vote = yes }
+				}
+				check_variable = { global.days_til_next_league_of_nations_election < 10 }
+				set_temp_variable = { num_of_total_members_of_league_of_nation = global.league_of_nations_members_array^num }
+				divide_temp_variable = { num_of_total_members_of_league_of_nation = 2 }
+				check_variable = { global.num_of_league_of_nations_noconfidence_votes > num_of_total_members_of_league_of_nation }
+				factor = 0.25
+			}
+		}
+	}
+}

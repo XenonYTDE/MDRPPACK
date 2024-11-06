@@ -1,0 +1,248 @@
+ideas = {
+	country = {
+		league_of_nations_lon_member_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = { is_league_of_nations_member = yes }
+			}
+
+			removal_cost = -1
+
+			picture = member_of_league_of_nations_idea_icon
+			#picture = generic_morale_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+
+		league_of_nations_defense_pact_target = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = anti_soviet_pact
+		}
+
+		league_of_nations_luxury_goods_embargo_idea = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = civilian_economy
+
+			modifier = {
+				war_support_weekly = -0.02
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1
+			}
+
+			on_remove = {
+				clr_country_flag = recently_had_league_of_nations_sanction_embargoes_on_luxury_goods
+				set_country_flag = { flag = recently_had_league_of_nations_sanction_embargoes_on_luxury_goods days = 100 value = 1 }
+			}
+		}
+
+		league_of_nations_economic_sanctions_idea = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = civilian_economy
+
+			modifier = {
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.3
+				political_power_cost = 0.1
+			}
+
+			on_remove = {
+				clr_country_flag = recently_had_league_of_nations_sanction_economic_sanctions
+				set_country_flag = { flag = recently_had_league_of_nations_sanction_economic_sanctions days = 100 value = 1 }
+			}
+		}
+
+		league_of_nations_give_up_nukes_idea = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				nuclear_production = -10
+				nuclear_production_factor = -10
+			}
+		}
+	
+		OON_annani_idea = {
+			name = OON_annani_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_annani_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = annan_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_annan_modifiers
+				hidden_modifier = {
+					#Cultural liberal:
+					political_power_factor = 0.1
+					stability_factor = 0.05
+					#Supported by Rafsanjani:
+					health_cost_multiplier_modifier = -0.1
+					#Economic liberal:
+					war_support_factor = -0.05
+				}
+			}
+		}
+		
+		OON_danilo_turk_idea = {
+			name = OON_danilo_turk_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_danilo_turk_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = turk_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_danilo_turk_modifiers
+				hidden_modifier = {
+					social_cost_multiplier_modifier = 0.1
+					corruption_cost_factor = -0.1
+					stability_factor = 0.05
+					research_speed_factor = 0.05
+				}
+			}
+		}
+		
+		OON_ban_ki_moon_idea = {
+			name = OON_ban_ki_moon_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_ban_ki_moon_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = ban_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_ban_ki_moon_modifiers
+				hidden_modifier = {
+					opinion_gain_monthly_factor = 0.15
+					trade_opinion_factor = 0.05
+					bureaucracy_cost_multiplier_modifier = -0.1
+					monthly_population = 0.05
+				}
+			}
+		}
+
+		OON_irina_bokova_idea = {
+			name = OON_irina_bokova_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_irina_bokova_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = bokova_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_irina_bokova_modifiers
+				hidden_modifier = {
+					opinion_gain_monthly_factor = 0.15
+					political_power_factor = 0.1
+					education_cost_multiplier_modifier = 0.05
+					research_speed_factor = 0.05
+				}
+			}
+		}
+
+		OON_antonio_guterres_idea = {
+			name = OON_antonio_guterres_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_antonio_guterres_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = bokova_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_antonio_guterres_modifiers
+				hidden_modifier = {
+					opinion_gain_monthly_factor = 0.15
+					political_power_factor = 0.1
+					education_cost_multiplier_modifier = 0.05
+					research_speed_factor = 0.05
+				}
+			}
+		}
+
+		OON_helen_clark_idea = {
+			name = OON_helen_clark_name
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OON_helen_clark_idea" }
+
+			allowed = { is_league_of_nations_member = yes }
+
+			picture = bokova_gensek
+
+			cancel = { is_league_of_nations_member = no }
+
+			modifier = {
+				custom_modifier_tooltip = OON_helen_clark_modifiers
+				hidden_modifier = {
+					opinion_gain_monthly_factor = 0.15
+					political_power_factor = 0.1
+					education_cost_multiplier_modifier = 0.05
+					research_speed_factor = 0.05
+				}
+			}
+		}
+	}
+}

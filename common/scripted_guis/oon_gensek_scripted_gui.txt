@@ -1,0 +1,12 @@
+scripted_gui = {
+	OON_gensek_info_GUI = {
+		window_name = "OON_gensek_info_decision_GUI"
+		context_type = decision_category
+
+		properties = {
+			GFX_annan_portrait_icon = {
+				image = "[OON_gensec_portrait]"
+			}
+		}
+	}
+}

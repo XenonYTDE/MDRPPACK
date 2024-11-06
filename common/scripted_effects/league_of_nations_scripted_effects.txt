@@ -1,0 +1,1260 @@
+# usage:
+## set_league_of_nations_leader = yes
+set_league_of_nations_leader = {
+	custom_effect_tooltip = SET_LEAGUE_OF_NATIONS_LEADER_TT
+	hidden_effect = {
+		if = {
+			limit = {
+				league_of_nations_exists = yes
+			}
+			var:global.league_of_nations_leader = {
+				unset_league_of_nations_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_league_of_nations_member = yes }
+			}
+			add_to_league_of_nations = yes
+		}
+		set_variable = { global.league_of_nations_leader = THIS.id }
+		add_ideas = league_of_nations_leader_idea
+	}
+}
+
+# usage:
+## unset_league_of_nations_leader = yes
+unset_league_of_nations_leader = {
+	hidden_effect = {
+		if = {
+			limit = {
+				is_league_of_nations_leader = yes
+			}
+			country_event = { id = league_of_nations_events.0 } # remove ideas
+			clear_variable = global.league_of_nations_leader
+		}
+	}
+}
+
+# usage:
+## add_to_league_of_nations = yes
+add_to_league_of_nations = {
+	if = {
+		limit = {
+			NOT = { is_league_of_nations_member = yes }
+		}
+		custom_effect_tooltip = ADD_TO_LEAGUE_OF_NATIONS_TT
+		hidden_effect = {
+			add_to_array = { global.league_of_nations_members_array = THIS.id }
+			every_other_country = {
+				limit = {
+					is_league_of_nations_member = yes
+				}
+				add_opinion_modifier = {
+					target = PREV
+					modifier = league_of_nations_member_opinion
+				}
+				reverse_add_opinion_modifier = {
+					target = PREV
+					modifier = league_of_nations_member_opinion
+				}
+			}
+			add_ideas = league_of_nations_lon_member_idea
+			set_variable = { OON_limit_countries_somali = 0 }
+			set_variable = { OON_limit_countries_congo = 0 }
+			set_variable = { OON_limit_countries_angola = 0 }
+			set_country_flag = OON_gensek_annani
+			set_temp_variable = { election_time = 2555 }
+			activate_mission = OON_selecting_sec_gen
+			add_ideas = OON_annani_idea
+			add_dynamic_modifier = { modifier = OON_reforms_modifier }
+			if = {
+				limit = {
+					has_game_rule = { rule = league_of_nations_rule_stab_quarter option = USA_STAB }
+				}
+				769 = { add_dynamic_modifier = { modifier = OON_headquarters } }
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = league_of_nations_rule_stab_quarter option = SOV_STAB }
+				}
+				652 = { add_dynamic_modifier = { modifier = OON_headquarters } }
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = league_of_nations_rule_stab_quarter option = ENG_STAB }
+				}
+				13 = { add_dynamic_modifier = { modifier = OON_headquarters } }
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = league_of_nations_rule_stab_quarter option = FRA_STAB }
+				}
+				56 = { add_dynamic_modifier = { modifier = OON_headquarters } }
+			}
+			else_if = {
+				limit = {
+					has_game_rule = { rule = league_of_nations_rule_stab_quarter option = CHI_STAB }
+				}
+				547 = { add_dynamic_modifier = { modifier = OON_headquarters } }
+			}
+			set_variable = {
+				var = vote_annani
+				value = 0
+				tooltip = set_var_to_100_tt
+			}
+			set_variable = {
+				var = vote_ban
+				value = 0
+				tooltip = set_var_to_100_tt
+			}
+			set_variable = {
+				var = vote_turk
+				value = 0
+				tooltip = set_var_to_100_tt
+			}
+			set_variable = {
+				var = vote_irina
+				value = 0
+				tooltip = set_var_to_100_tt
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+					}
+				}
+				every_other_country = {
+					limit = {
+						check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+					}
+					PREV = {
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_1
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_2
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_3
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_4
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_5
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_6
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_7
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_8
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_9
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_10
+						}
+					}
+					for_loop_effect = {
+						start = 0
+						end = league_of_nations_trade_sanctions_array^num
+						value = value_temp
+						set_temp_variable = { temp = value_temp }
+						add_to_temp_variable = { temp = 1 }
+						PREV = {
+							meta_effect = {
+								text = {
+									add_opinion_modifier = {
+										target = PREV
+										modifier = league_of_nations_trade_sanction_modifier_[MODIFIER]
+									}
+								}
+								MODIFIER = "[?temp]"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# usage:
+## remove_from_league_of_nations = yes
+remove_from_league_of_nations = {
+	if = {
+		limit = {
+			is_league_of_nations_member = yes
+		}
+		custom_effect_tooltip = REMOVE_FROM_LEAGUE_OF_NATIONS_TT
+		hidden_effect = {
+			country_event = { id = league_of_nations_events.1 } # remove ideas
+			remove_from_array = { global.league_of_nations_members_array = THIS.id }
+			every_other_country = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = league_of_nations_member_opinion
+				}
+				PREV = {
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = league_of_nations_member_opinion
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_league_of_nations_noconfidence_vote = yes
+				}
+				remove_league_of_nations_noconfidence_vote = yes
+			}
+			if = {
+				limit = {
+					is_league_of_nations_voting_active = yes
+				}
+				remove_league_of_nations_voting_vote = yes
+				for_each_loop = {
+					array = global.league_of_nations_voting_possible_sanctions_array
+					set_temp_variable = { sanction_type = v }
+					remove_league_of_nations_voting_sanction_vote = yes
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_1
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_2
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_3
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_4
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_5
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_6
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_7
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_8
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_9
+						has_opinion_modifier = league_of_nations_trade_sanction_modifier_10
+					}
+				}
+				every_other_country = {
+					PREV = {
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_1
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_2
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_3
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_4
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_5
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_6
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_7
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_8
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_9
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = league_of_nations_trade_sanction_modifier_10
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_league_of_nations_leader = yes
+				}
+				unset_league_of_nations_leader = yes
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						has_variable = elected_country_for_lon_leader
+						check_variable = { elected_country_for_lon_leader = PREV.id }
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_variable = elected_country_for_lon_leader
+						check_variable = { elected_country_for_lon_leader = PREV.id }
+					}
+				}
+			}
+		}
+	}
+}
+
+# usage:
+## start_league_of_nations_voting_against_prev = yes
+start_league_of_nations_voting_against_prev = {
+	hidden_effect = {
+		clear_variable = show_league_of_nations_start_voting_window
+		set_global_flag = league_of_nations_voting
+		set_variable = { global.league_of_nations_voting_time = 32 }
+		set_variable = { global.league_of_nations_voting_initiator = THIS.id }
+		PREV = {
+			set_variable = { global.league_of_nations_voting_target = THIS.id }
+			news_event = { id = league_of_nations_news_events.8 }
+		}
+		if = {
+			limit = {
+				PREV = {
+					check_variable = { league_of_nations_trade_sanctions_array^num < 10 }
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 1 }
+		}
+		if = {
+			limit = {
+				PREV = {
+					any_other_country = {
+						is_league_of_nations_member = yes
+						NOT = { has_wargoal_against = PREV }
+					}
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 2 }
+		}
+		if = {
+			limit = {
+				PREV = {
+					is_league_of_nations_member = yes
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 3 }
+		}
+		else_if = {
+			limit = {
+				PREV = {
+					set_temp_variable = { threat_value = 50 }
+					has_league_of_nations_threat_level = yes
+					NOT = { has_idea = league_of_nations_defense_pact_target }
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 4 }
+		}
+		if = {
+			limit = {
+				PREV = {
+					OR = {
+						has_war = yes
+						any_other_country = {
+							PREV = {
+								OR = {
+									has_wargoal_against = PREV
+									is_justifying_wargoal_against = PREV
+								}
+							}
+						}
+					}
+					NOT = { has_idea = league_of_nations_luxury_goods_embargo_idea }
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 5 }
+		}
+		if = {
+			limit = {
+				PREV = {
+					NOT = { has_idea = league_of_nations_economic_sanctions_idea }
+				}
+			}
+			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 6 }
+		}
+		every_other_country = {
+			limit = {
+				is_ai = no
+				NOT = { tag = var:global.league_of_nations_voting_target }
+				is_league_of_nations_member = yes
+			}
+			set_variable = { show_league_of_nations_new_voting_alert = 1 }
+		}
+		set_variable = { global.league_of_nations_voting_type = 1 }
+		PREV = {
+			if = {
+				limit = {
+					set_temp_variable = { threat_change = 1 }
+					has_league_of_nations_last_threat_static_change = yes
+					has_variable = declared_war_on_target
+					has_war_with = var:declared_war_on_target
+				}
+				set_variable = { global.league_of_nations_voting_type = 2 }
+				var:declared_war_on_target = {
+					set_variable = { global.league_of_nations_voting_junior_target = THIS.id }
+				}
+			}
+			else_if = {
+				limit = {
+					set_temp_variable = { threat_change = 2 }
+					has_league_of_nations_last_threat_static_change = yes
+					has_variable = last_annexed_country
+					NOT = { country_exists = var:last_annexed_country }
+				}
+				set_variable = { global.league_of_nations_voting_type = 3 }
+				var:last_annexed_country = {
+					set_variable = { global.league_of_nations_voting_junior_target = THIS.id }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							set_temp_variable = { threat_change = 8 }
+							has_league_of_nations_last_threat_static_change = yes
+						}
+						AND = {
+							set_temp_variable = { threat_change = 12 }
+							has_league_of_nations_last_threat_static_change = yes
+						}
+					}
+					any_owned_state = {
+						has_state_flag = recently_annexed_state
+						has_variable = previous_owner
+					}
+				}
+				set_variable = { global.league_of_nations_voting_type = 4 }
+				every_owned_state = {
+					limit = {
+						has_state_flag = recently_annexed_state
+						has_variable = previous_owner
+					}
+					set_state_flag = states_to_give_back_in_league_of_nations_voting
+				}
+			}
+			else_if = {
+				limit = {
+					set_temp_variable = { threat_change = 13 }
+					has_league_of_nations_last_threat_static_change = yes
+				}
+				set_variable = { global.league_of_nations_voting_type = 5 }
+			}
+		}
+	}
+}
+
+# usage:
+## end_league_of_nations_voting = yes
+end_league_of_nations_voting = {
+	hidden_effect = {
+		set_temp_variable = { cooldown_time = 50 }
+		set_league_of_nations_global_cooldown_til_next_voting = yes
+		if = {
+			limit = {
+				country_exists = var:global.league_of_nations_voting_target
+				check_variable = { global.league_of_nations_voting_votes_yes^num > global.league_of_nations_voting_votes_no^num }
+			}
+			add_to_variable = { global.num_of_total_successful_league_of_nations_votings = 1 }
+			set_variable = { global.league_of_nations_voting_sanction_type = 1 }
+			set_temp_variable = { league_of_nations_voting_sanction_votes = 0 }
+			for_each_loop = {
+				array = global.league_of_nations_voting_possible_sanctions_array
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								check_variable = { global.league_of_nations_voting_sanction_[SANCTION]_supporters^num > league_of_nations_voting_sanction_votes }
+							}
+							set_temp_variable = { league_of_nations_voting_sanction_votes = global.league_of_nations_voting_sanction_[SANCTION]_supporters^num }
+							set_variable = { global.league_of_nations_voting_sanction_type = v }
+						}
+					}
+					SANCTION = "[?v]"
+				}
+			}
+			var:global.league_of_nations_voting_target = {
+				set_temp_variable = { cooldown_time = 150 }
+				set_league_of_nations_cooldown_til_next_voting_against_this = yes
+			}
+			if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 1 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						add_league_of_nations_trade_sanction = yes
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.12 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 2 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						for_each_scope_loop = {
+							array = global.league_of_nations_members_array
+							tooltip = EVERY_LEAGUE_OF_NATIONS_MEMBER_SCOPE
+							create_wargoal = {
+								type = liberate_wargoal
+								target = PREV
+								expire = 185
+							}
+						}
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.13 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 3 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						remove_from_league_of_nations = yes
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.14 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 4 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						add_timed_idea = {
+							idea = league_of_nations_defense_pact_target
+							days = 182
+						}
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.15 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 5 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						add_timed_idea = {
+							idea = league_of_nations_luxury_goods_embargo_idea
+							days = 105
+						}
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.16 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { global.league_of_nations_voting_sanction_type = 6 }
+				}
+				var:global.league_of_nations_voting_target = {
+					if = {
+						limit = {
+							check_variable = { global.league_of_nations_voting_type = 1 }
+						}
+						add_timed_idea = {
+							idea = league_of_nations_economic_sanctions_idea
+							days = 105
+						}
+						set_temp_variable = { threat_value = -7 }
+						change_league_of_nations_threat_value = yes
+						set_temp_variable = { threat_change = 10 }
+						set_league_of_nations_last_threat_static_change = yes
+						news_event = { id = league_of_nations_news_events.17 }
+						clear_flags_and_vars_after_league_of_nations_voting = yes
+					}
+					else = {
+						set_global_flag = league_of_nations_voting_waiting_for_response
+						country_event = { id = league_of_nations_events.6 }
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					country_exists = var:global.league_of_nations_voting_target
+				}
+				var:global.league_of_nations_voting_target = {
+					set_temp_variable = { cooldown_time = 100 }
+					set_league_of_nations_cooldown_til_next_voting_against_this = yes
+					news_event = { id = league_of_nations_news_events.11 }
+					add_to_variable = { num_of_failed_league_of_nations_votings_against_us = 1 }
+				}
+			}
+			clear_flags_and_vars_after_league_of_nations_voting = yes
+		}
+	}
+}
+
+# usage:
+## clear_flags_and_vars_after_league_of_nations_voting = yes
+clear_flags_and_vars_after_league_of_nations_voting = {
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_variable = show_league_of_nations_new_voting_alert
+			}
+			clear_variable = show_league_of_nations_new_voting_alert
+		}
+		var:global.league_of_nations_voting_target = {
+			clear_variable = last_annexed_country
+		}
+		every_state = {
+			limit = {
+				has_state_flag = states_to_give_back_in_league_of_nations_voting
+			}
+			clr_state_flag = states_to_give_back_in_league_of_nations_voting
+		}
+		for_each_loop = {
+			array = global.league_of_nations_voting_possible_sanctions_array
+			meta_effect = {
+				text = {
+					clear_array = global.league_of_nations_voting_sanction_[SANCTION]_supporters
+				}
+				SANCTION = "[?v]"
+			}
+		}
+		clear_array = global.league_of_nations_voting_possible_sanctions_array
+		clear_array = global.league_of_nations_voting_votes_yes
+		clear_array = global.league_of_nations_voting_votes_no
+		clear_variable = global.league_of_nations_voting_time
+		clear_variable = global.league_of_nations_voting_initiator
+		clear_variable = global.league_of_nations_voting_target
+		clear_variable = global.league_of_nations_voting_type
+		clear_variable = global.league_of_nations_voting_sanction_type
+		clear_variable = global.league_of_nations_voting_junior_target
+		clr_global_flag = league_of_nations_voting_waiting_for_response
+		clr_global_flag = league_of_nations_voting
+	}
+}
+
+# usage:
+## set_league_of_nations_voting_vote_yes = yes
+set_league_of_nations_voting_vote_yes = {
+	if = {
+		limit = {
+			NOT = { has_league_of_nations_voting_vote_yes = yes }
+			NOT = { has_league_of_nations_voting_vote_no = yes }
+		}
+		add_to_array = { global.league_of_nations_voting_votes_yes = THIS.id }
+	}
+}
+
+# usage:
+## set_league_of_nations_voting_vote_no = yes
+set_league_of_nations_voting_vote_no = {
+	if = {
+		limit = {
+			NOT = { has_league_of_nations_voting_vote_yes = yes }
+			NOT = { has_league_of_nations_voting_vote_no = yes }
+		}
+		add_to_array = { global.league_of_nations_voting_votes_no = THIS.id }
+	}
+}
+
+# usage:
+## remove_league_of_nations_voting_vote = yes
+remove_league_of_nations_voting_vote = {
+	if = {
+		limit = {
+			has_league_of_nations_voting_vote_yes = yes
+		}
+		remove_from_array = { global.league_of_nations_voting_votes_yes = THIS.id }
+	}
+	if = {
+		limit = {
+			has_league_of_nations_voting_vote_no = yes
+		}
+		remove_from_array = { global.league_of_nations_voting_votes_no = THIS.id }
+	}
+}
+
+# usage:
+## set_temp_variable = { sanction_type = 1 }
+## set_league_of_nations_voting_sanction_vote = yes
+set_league_of_nations_voting_sanction_vote = {
+	set_temp_variable = { sanction_type_temp = sanction_type }
+	if = {
+		limit = {
+			NOT = { has_any_league_of_nations_voting_sanction_vote = yes }
+		}
+		set_temp_variable = { sanction_type = sanction_type_temp }
+		meta_effect = {
+			text = {
+				add_to_array = { global.league_of_nations_voting_sanction_[SANCTION]_supporters = THIS.id }
+			}
+			SANCTION = "[?sanction_type]"
+		}
+	}
+}
+
+# usage:
+## set_temp_variable = { sanction_type = 1 }
+## remove_league_of_nations_voting_sanction_vote = yes
+remove_league_of_nations_voting_sanction_vote = {
+	meta_effect = {
+		text = {
+			if = {
+				limit = {
+					has_league_of_nations_voting_sanction_vote = yes
+				}
+				remove_from_array = { global.league_of_nations_voting_sanction_[SANCTION]_supporters = THIS.id }
+			}
+		}
+		SANCTION = "[?sanction_type]"
+	}
+}
+
+# usage:
+## set_league_of_nations_noconfidence_vote = yes
+set_league_of_nations_noconfidence_vote = {
+	if = {
+		limit = {
+			NOT = { has_league_of_nations_noconfidence_vote = yes }
+		}
+		set_country_flag = voted_in_noconfidence_vote
+		add_to_variable = { global.num_of_league_of_nations_noconfidence_votes = 1 }
+	}
+}
+
+# usage:
+## remove_league_of_nations_noconfidence_vote = yes
+remove_league_of_nations_noconfidence_vote = {
+	if = {
+		limit = {
+			has_league_of_nations_noconfidence_vote = yes
+		}
+		clr_country_flag = voted_in_noconfidence_vote
+		subtract_from_variable = { global.num_of_league_of_nations_noconfidence_votes = 1 }
+	}
+}
+
+# usage:
+## set_temp_variable = { threat_value = 10 }
+## set_league_of_nations_threat_value = yes
+set_league_of_nations_threat_value = {
+	custom_effect_tooltip = SET_LEAGUE_OF_NATIONS_THREAT_VALUE_TT
+	hidden_effect = {
+		set_variable = { league_of_nations_generated_threat = threat_value }
+		clamp_variable = {
+			var = league_of_nations_generated_threat
+			min = 0
+			max = 100
+		}
+		if = {
+			limit = {
+				check_variable = { league_of_nations_generated_threat = 0 }
+				is_in_array = { global.league_of_nations_threat_countries_array = THIS.id }
+			}
+			remove_from_array = { global.league_of_nations_threat_countries_array = THIS.id }
+		}
+		else_if = {
+			limit = {
+				check_variable = { league_of_nations_generated_threat > 0 }
+				NOT = { is_in_array = { global.league_of_nations_threat_countries_array = THIS.id } }
+			}
+			add_to_array = { global.league_of_nations_threat_countries_array = THIS.id }
+		}
+		update_league_of_nations_threat_countries_list = yes
+	}
+}
+
+# usage:
+## set_temp_variable = { threat_value = 10 }
+## change_league_of_nations_threat_value = yes
+change_league_of_nations_threat_value = {
+	if = {
+		limit = {
+			league_of_nations_exists = yes
+		}
+		custom_effect_tooltip = CHANGE_LEAGUE_OF_NATIONS_THREAT_VALUE_TT
+		hidden_effect = {
+			add_to_variable = { league_of_nations_generated_threat = threat_value }
+			clamp_variable = {
+				var = league_of_nations_generated_threat
+				min = 0
+				max = 100
+			}
+			if = {
+				limit = {
+					check_variable = { league_of_nations_generated_threat = 0 }
+					is_in_array = { global.league_of_nations_threat_countries_array = THIS.id }
+				}
+				remove_from_array = { global.league_of_nations_threat_countries_array = THIS.id }
+			}
+			else_if = {
+				limit = {
+					check_variable = { league_of_nations_generated_threat > 0 }
+					NOT = { is_in_array = { global.league_of_nations_threat_countries_array = THIS.id } }
+				}
+				add_to_array = { global.league_of_nations_threat_countries_array = THIS.id }
+			}
+			update_league_of_nations_threat_countries_list = yes
+		}
+	}
+	else = {
+		set_temp_variable = { threat_value = 0 }
+		set_league_of_nations_threat_value = yes
+	}
+}
+
+# usage:
+## update_league_of_nations_threat_countries_list = yes
+update_league_of_nations_threat_countries_list = {
+	hidden_effect = {
+		if = {
+			limit = {
+				any_country = {
+					check_variable = { league_of_nations_generated_threat = 0 }
+					is_in_array = { global.league_of_nations_threat_countries_array = THIS.id }
+				}
+			}
+			every_country = {
+				limit = {
+					check_variable = { league_of_nations_generated_threat = 0 }
+					is_in_array = { global.league_of_nations_threat_countries_array = THIS.id }
+				}
+				remove_from_array = { global.league_of_nations_threat_countries_array = THIS.id }
+			}
+		}
+		if = {
+			limit = {
+				any_country = {
+					check_variable = { league_of_nations_generated_threat > 0 }
+					NOT = { is_in_array = { global.league_of_nations_threat_countries_array = THIS.id } }
+				}
+			}
+			every_country = {
+				limit = {
+					check_variable = { league_of_nations_generated_threat > 0 }
+					NOT = { is_in_array = { global.league_of_nations_threat_countries_array = THIS.id } }
+				}
+				add_to_array = { global.league_of_nations_threat_countries_array = THIS.id }
+			}
+		}
+		for_loop_effect = {
+			start = 1
+			end = global.league_of_nations_threat_countries_array^num
+			value = value_temp
+			set_temp_variable = { var = j value = value_temp }
+			set_temp_variable = { var = j_minus value = j }
+			subtract_from_temp_variable = { var = j_minus value = 1 }
+			while_loop_effect = {
+				limit = {
+					var:global.league_of_nations_threat_countries_array^j_minus = {
+						set_temp_variable = { j_minus_threat = league_of_nations_generated_threat }
+					}
+					var:global.league_of_nations_threat_countries_array^j = {
+						set_temp_variable = { j_threat = league_of_nations_generated_threat }
+					}
+					check_variable = { j > 0 }
+					check_variable = { j_minus_threat < j_threat }
+				}
+				# swap j-1 with j if value of j-1 < j
+				set_temp_variable = { var = temp value = global.league_of_nations_threat_countries_array^j }
+				set_variable = { var = global.league_of_nations_threat_countries_array^j value = global.league_of_nations_threat_countries_array^j_minus }
+				set_variable = { var = global.league_of_nations_threat_countries_array^j_minus value = temp }
+				subtract_from_temp_variable = { var = j value = 1 }
+				subtract_from_temp_variable = { var = j_minus value = 1 }
+			}
+		}
+	}
+}
+
+# usage:
+## add_league_of_nations_trade_sanction = yes
+add_league_of_nations_trade_sanction = {
+	if = {
+		limit = {
+			check_variable = { league_of_nations_trade_sanctions_array^num < 10 }
+		}
+		custom_effect_tooltip = ADD_LEAGUE_OF_NATIONS_TRADE_SANCTION_TT
+		hidden_effect = {
+			add_to_array = { league_of_nations_trade_sanctions_array = 36 }
+			every_other_country = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_1
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_2
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_3
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_4
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_5
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_6
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_7
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_8
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_9
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_10
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = league_of_nations_trade_sanctions_array^num
+				value = value_temp
+				set_temp_variable = { temp = value_temp }
+				add_to_temp_variable = { temp = 1 }
+				every_other_country = {
+					limit = {
+						is_league_of_nations_member = yes
+					}
+					meta_effect = {
+						text = {
+							add_opinion_modifier = {
+								target = ROOT
+								modifier = league_of_nations_trade_sanction_modifier_[MODIFIER]
+							}
+						}
+						MODIFIER = "[?temp]"
+					}
+				}
+			}
+		}
+	}
+}
+
+# usage:
+## remove_league_of_nations_trade_sanction = yes
+remove_league_of_nations_trade_sanction = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+				is_in_array = { league_of_nations_trade_sanctions_array = 0 }
+			}
+			for_loop_effect = {
+				start = 0
+				end = 10
+				break = break_temp
+				if = {
+					limit = {
+						is_in_array = { league_of_nations_trade_sanctions_array = 0 }
+					}
+					remove_from_array = { league_of_nations_trade_sanctions_array = 0 }
+				}
+				else = {
+					set_temp_variable = { break_temp = 1 }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { check_variable = { league_of_nations_trade_sanctions_array^num > 0 } }
+				}
+				clear_array = league_of_nations_trade_sanctions_array
+			}
+			every_other_country = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_1
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_2
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_3
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_4
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_5
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_6
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_7
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_8
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_9
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_10
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+				}
+				for_loop_effect = {
+					start = 0
+					end = league_of_nations_trade_sanctions_array^num
+					value = value_temp
+					set_temp_variable = { temp = value_temp }
+					add_to_temp_variable = { temp = 1 }
+					every_other_country = {
+						limit = {
+							is_league_of_nations_member = yes
+						}
+						meta_effect = {
+							text = {
+								add_opinion_modifier = {
+									target = ROOT
+									modifier = league_of_nations_trade_sanction_modifier_[MODIFIER]
+								}
+							}
+							MODIFIER = "[?temp]"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# usage:
+## force_remove_league_of_nations_trade_sanction = yes
+force_remove_league_of_nations_trade_sanction = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = { league_of_nations_trade_sanctions_array^num > 0 }
+			}
+			clear_array = league_of_nations_trade_sanctions_array
+			every_other_country = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_1
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_2
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_3
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_4
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_5
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_6
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_7
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_8
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_9
+				}
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = league_of_nations_trade_sanction_modifier_10
+				}
+			}
+		}
+	}
+}
+
+# usage:
+## set_temp_variable = { threat_change = 1 }
+## set_league_of_nations_last_threat_static_change = yes
+set_league_of_nations_last_threat_static_change = {
+	if = {
+		limit = {
+			has_country_flag = last_league_of_nations_threat_static_change
+		}
+		clr_country_flag = last_league_of_nations_threat_static_change
+	}
+	set_country_flag = { flag = last_league_of_nations_threat_static_change days = 62 value = 1 }
+	set_variable = { last_league_of_nations_threat_static_change = threat_change }
+}
+
+# usage:
+## set_temp_variable = { cooldown_time = 100 }
+## set_league_of_nations_cooldown_til_next_voting_against_this = yes
+set_league_of_nations_cooldown_til_next_voting_against_this = {
+	if = {
+		limit = {
+			has_country_flag = cooldown_for_league_of_nations_voting_flag
+		}
+		clr_country_flag = cooldown_for_league_of_nations_voting_flag
+	}
+	meta_effect = {
+		text = {
+			set_country_flag = { flag = cooldown_for_league_of_nations_voting_flag days = [COOLDOWN] value = 1 }
+		}
+		COOLDOWN = "[?cooldown_time]"
+	}
+	multiply_temp_variable = { cooldown_time = 0.024 }
+	set_variable = { cooldown_for_league_of_nations_voting_date = global.date }
+	add_to_variable = { cooldown_for_league_of_nations_voting_date = cooldown_time }
+}
+
+# usage:
+## set_temp_variable = { cooldown_time = 31 }
+## set_league_of_nations_global_cooldown_til_next_voting = yes
+set_league_of_nations_global_cooldown_til_next_voting = {
+	if = {
+		limit = {
+			has_global_flag = time_til_next_possible_league_of_nations_voting_flag
+		}
+		clr_global_flag = time_til_next_possible_league_of_nations_voting_flag
+	}
+	meta_effect = {
+		text = {
+			set_global_flag = { flag = time_til_next_possible_league_of_nations_voting_flag days = [COOLDOWN] value = 1 }
+		}
+		COOLDOWN = "[?cooldown_time]"
+	}
+	multiply_temp_variable = { cooldown_time = 0.024 }
+	set_variable = { global.time_til_next_possible_league_of_nations_voting_date = global.date }
+	add_to_variable = { global.time_til_next_possible_league_of_nations_voting_date = cooldown_time }
+}
+
+# usage:
+## set_temp_variable = { election_time = 1 }
+## set_league_of_nations_global_election_time = yes
+set_league_of_nations_global_election_time = {
+	set_variable = { global.days_til_next_league_of_nations_election = election_time }
+	multiply_temp_variable = { election_time = 0.024 }
+	set_variable = { global.league_of_nations_next_election_date = global.date }
+	add_to_variable = { global.league_of_nations_next_election_date = election_time }
+}
+
+set_league_of_nations_AI_election_targets = {
+	if = {
+		limit = {
+			is_ai = yes
+			is_league_of_nations_member = yes
+			NOT = { has_global_flag = league_of_nations_election }
+		}
+		get_highest_scored_country_temp = {
+			scorer = league_of_nations_leader_election_scorer
+			var = ai_vote_target
+		}
+	}
+}

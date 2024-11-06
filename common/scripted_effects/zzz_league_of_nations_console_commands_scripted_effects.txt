@@ -1,0 +1,55 @@
+##############################################
+########## Console / Debug Commands ##########
+##############################################
+d_set_lon_button_position = {
+	FROM = {
+		set_variable = { league_of_nations_button_position_x = args^0 }
+		set_variable = { league_of_nations_button_position_y = args^1 }
+		log = "League of Nations Button moved to:"
+		log = "   X: [?league_of_nations_button_position_x|0Y]"
+		log = "   Y: [?league_of_nations_button_position_y|0Y]"
+	}
+}
+
+d_add_lon_threat = {
+	if = {
+		limit = {
+			exists = yes
+		}
+		set_temp_variable = { threat_value = args^0?10 }
+		change_league_of_nations_threat_value = yes
+		log = CHANGE_LEAGUE_OF_NATIONS_THREAT_VALUE_TT
+	}
+	else = {
+		log = "Wrong scope! Select a country by right clicking it."
+	}
+}
+
+d_print_lon_election_targets = {
+	if = {
+		limit = {
+			exists = yes
+		}
+		if = {
+			limit = {
+				is_league_of_nations_member = yes
+			}
+			get_sorted_scored_countries_temp = {
+				scorer = league_of_nations_leader_election_scorer
+				array = sorted_countries_list
+				scores = sorted_countries_scores
+			}
+			log = D_PRINT_LON_ELECTION_TARGETS_TT
+			for_each_loop = {
+				array = sorted_countries_list
+				log = D_PRINT_LON_ELECTION_TARGETS_TT_2
+			}
+		}
+		else = {
+			log = "[This.GetName] is not a member of the League of Nations."
+		}
+	}
+	else = {
+		log = "Wrong scope! Select a country by right clicking it."
+	}
+}

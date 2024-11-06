@@ -1,0 +1,501 @@
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeName
+
+	text = {
+		trigger = {
+			set_temp_variable = { sanction_type = v }
+			always = yes
+		}
+		localization_key = "[This.GetLeagueOfNationsVotingSanctionTypeNameOtherContext]"
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeNameOtherContext
+
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 1 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_1_NAME
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 2 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_2_NAME
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 3 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_3_NAME
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 4 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_4_NAME
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 5 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_5_NAME
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 6 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_6_NAME
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeTooltip
+
+	text = {
+		trigger = {
+			set_temp_variable = { sanction_type = v }
+			always = yes
+		}
+		localization_key = "[This.GetLeagueOfNationsVotingSanctionTypeTooltipOtherContext]"
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeTooltipOtherContext
+
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 1 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_1_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 2 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_2_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 3 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_3_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 4 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_4_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 5 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_5_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { sanction_type = 6 }
+		}
+		localization_key = LEAGUE_OF_NATIONS_VOTING_SANCTION_TYPE_6_TT
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeTooltipDelayed
+
+	text = {
+		trigger = {
+			has_any_league_of_nations_voting_sanction_vote = yes
+		}
+		localization_key = league_of_nations_cannot_vote_because_already_voted_for_any_sanction_type
+	}
+	text = {
+		trigger = {
+			check_variable = { global.league_of_nations_voting_time < 1 }
+		}
+		localization_key = league_of_nations_cannot_vote_because_time_limit_has_ended
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = league_of_nations_can_vote_for_sanction_type
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingSanctionTypeNumOfVotes
+
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = {
+					set_temp_variable = { num_of_votes_for_sanction_type = global.league_of_nations_voting_sanction_[SANCTION]_supporters^num }
+				}
+				SANCTION = "[?v]"
+			}
+		}
+		localization_key = "[?num_of_votes_for_sanction_type]"
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingDesc
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			check_variable = { global.league_of_nations_voting_type = 2 }
+		}
+		localization_key = league_of_nations_current_voting_active_declared_war
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			check_variable = { global.league_of_nations_voting_type = 3 }
+		}
+		localization_key = league_of_nations_current_voting_active_country_annexation
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			check_variable = { global.league_of_nations_voting_type = 4 }
+		}
+		localization_key = league_of_nations_current_voting_active_state_annexation
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			check_variable = { global.league_of_nations_voting_type = 5 }
+		}
+		localization_key = league_of_nations_current_voting_active_nuke_drop
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+		}
+		localization_key = league_of_nations_current_voting_active
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = league_of_nations_current_voting_inactive
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingDescTooltip
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+		}
+		localization_key = league_of_nations_current_voting_active_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = league_of_nations_current_voting_inactive_tt
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVoteTooltip
+
+	text = {
+		trigger = {
+			NOT = { is_league_of_nations_member = yes }
+		}
+		localization_key = league_of_nations_cannot_vote_because_is_not_a_member
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_initiator = yes
+		}
+		localization_key = league_of_nations_cannot_vote_because_we_started_voting
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_target = yes
+		}
+		localization_key = league_of_nations_cannot_vote_because_we_are_target
+	}
+	text = {
+		trigger = {
+			has_league_of_nations_voting_vote_yes = yes
+		}
+		localization_key = league_of_nations_cannot_vote_because_already_voted_yes
+	}
+	text = {
+		trigger = {
+			has_league_of_nations_voting_vote_no = yes
+		}
+		localization_key = league_of_nations_cannot_vote_because_already_voted_no
+	}
+	text = {
+		trigger = {
+			check_variable = { global.league_of_nations_voting_time < 1 }
+		}
+		localization_key = league_of_nations_cannot_vote_because_time_limit_has_ended
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = league_of_nations_can_vote
+	}
+}
+
+defined_text = {
+	name = GetStartLeagueOfNationsVotingOnThisCountryTooltip
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_is_a_voting_already
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_historial_voting_in_queue = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_soon_will_be_a_voting
+	}
+	text = {
+		trigger = {
+			OR = {
+				is_league_of_nations_election_active = yes
+				NOT = { check_variable = { global.days_til_next_league_of_nations_election > 70 } }
+			}
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_is_an_election_soon
+	}
+	text = {
+		trigger = {
+			has_country_flag = cooldown_for_league_of_nations_voting_flag
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_recently_there_was_a_voting_for_this_country
+	}
+	text = {
+		trigger = {
+			has_global_flag = time_til_next_possible_league_of_nations_voting_flag
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_recently_there_was_a_voting
+	}
+	text = {
+		trigger = {
+			is_subject = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_is_a_subject
+	}
+	text = {
+		trigger = {
+			NOT = { voting_against_this_would_have_valid_sanction_choice = yes }
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_no_possible_sanctions
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_leader = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_target_is_leader_of_league_of_nations
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { threat_value = 10 }
+			NOT = { has_league_of_nations_threat_level = yes }
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_target_has_not_created_enough_wt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = start_league_of_nations_voting_tt
+	}
+}
+
+defined_text = {
+	name = GetStartLeagueOfNationsVotingTooltip
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_is_a_voting_already
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_historial_voting_in_queue = yes
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_soon_will_be_a_voting
+	}
+	text = {
+		trigger = {
+			OR = {
+				is_league_of_nations_election_active = yes
+				NOT = { check_variable = { global.days_til_next_league_of_nations_election > 70 } }
+			}
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_there_is_an_election_soon
+	}
+	text = {
+		trigger = {
+			NOT = { is_league_of_nations_member = yes }
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_not_a_member
+	}
+	text = {
+		trigger = {
+			has_global_flag = time_til_next_possible_league_of_nations_voting_flag
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_recently_there_was_a_voting
+	}
+	text = {
+		trigger = {
+			NOT = {
+				any_other_country = {
+					NOT = { is_league_of_nations_leader = yes }
+					is_subject = no
+					voting_against_this_would_have_valid_sanction_choice = yes
+					NOT = { has_country_flag = cooldown_for_league_of_nations_voting_flag }
+					set_temp_variable = { threat_value = 10 }
+					has_league_of_nations_threat_level = yes
+				}
+			}
+		}
+		localization_key = cannot_start_league_of_nations_voting_because_no_possible_target
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = start_league_of_nations_voting_against_anyone_tt
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingLikelySanctionTypeAtTheEnd
+
+	text = {
+		trigger = {
+			set_temp_variable = { sanction_type = 1 }
+			set_temp_variable = { sanction_type_votes = 0 }
+			all_of = {
+				array = global.league_of_nations_voting_possible_sanctions_array
+				value = value_temp
+				index = index_temp
+				meta_trigger = {
+					text = {
+						if = {
+							limit = {
+								check_variable = { global.league_of_nations_voting_sanction_[SANCTION]_supporters^num > sanction_type_votes }
+							}
+							set_temp_variable = { sanction_type_votes = global.league_of_nations_voting_sanction_[SANCTION]_supporters^num }
+							set_temp_variable = { sanction_type = value_temp }
+						}
+					}
+					SANCTION = "[?value_temp]"
+				}
+			}
+			always = yes
+		}
+		localization_key = "[This.GetLeagueOfNationsVotingSanctionTypeNameOtherContext]"
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsMemberVotingDecisionIfVotingActive
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			has_league_of_nations_voting_vote_yes = yes
+		}
+		localization_key = string_country_decision_in_voting_is_yes
+	}
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+			has_league_of_nations_voting_vote_no = yes
+		}
+		localization_key = string_country_decision_in_voting_is_no
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsMemberVotingDecision
+
+	text = {
+		trigger = {
+			has_any_league_of_nations_voting_sanction_vote = yes
+		}
+		localization_key = "[This.GetLeagueOfNationsVotingSanctionTypeNameOtherContext]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "/"
+	}
+}
+
+defined_text = {
+	name = GetIfLeagueOfNationsVotingIsOnGoing
+
+	text = {
+		trigger = {
+			is_league_of_nations_voting_active = yes
+		}
+		localization_key = league_of_nations_voting_ongoing_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetLeagueOfNationsVotingTimeShortText
+
+	text = {
+		trigger = {
+			has_global_flag = league_of_nations_voting_waiting_for_response
+		}
+		localization_key = string_league_of_nations_voting_remain_time_waiting
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_league_of_nations_voting_remain_time
+	}
+}
