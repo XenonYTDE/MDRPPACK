@@ -1344,6 +1344,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Western_Autocracy_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Western_Autocracy > 0 }
+		}
+		localization_key = SOV_Western_Autocracy_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Western_Autocracy_PG
 	text = {
 		trigger = {
@@ -1829,6 +1838,15 @@ defined_text = {
 			check_variable = { SLV.MEP_conservatism > 0 }
 		}
 		localization_key = SLV_conservatism_loc_key
+	}
+}
+defined_text = {
+	name = SOV_conservatism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_conservatism > 0 }
+		}
+		localization_key = SOV_conservatism_loc_key
 	}
 }
 defined_text = {
@@ -2320,6 +2338,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_liberalism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_liberalism > 0 }
+		}
+		localization_key = SOV_liberalism_loc_key
+	}
+}
+defined_text = {
 	name = SPR_liberalism_PG
 	text = {
 		trigger = {
@@ -2805,6 +2832,15 @@ defined_text = {
 			check_variable = { SLV.MEP_socialism > 0 }
 		}
 		localization_key = SLV_socialism_loc_key
+	}
+}
+defined_text = {
+	name = SOV_socialism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_socialism > 0 }
+		}
+		localization_key = SOV_socialism_loc_key
 	}
 }
 defined_text = {
@@ -3296,6 +3332,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Communist-State_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Communist-State > 0 }
+		}
+		localization_key = SOV_Communist-State_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Communist-State_PG
 	text = {
 		trigger = {
@@ -3784,6 +3829,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_anarchist_communism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_anarchist_communism > 0 }
+		}
+		localization_key = SOV_anarchist_communism_loc_key
+	}
+}
+defined_text = {
 	name = SPR_anarchist_communism_PG
 	text = {
 		trigger = {
@@ -4248,6 +4302,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Conservative > 0 }
 		}
 		localization_key = SLV_Conservative_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Conservative_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Conservative > 0 }
+		}
+		localization_key = SOV_Conservative_loc_key
 	}
 }
 defined_text = {
@@ -4739,6 +4802,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Autocracy_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Autocracy > 0 }
+		}
+		localization_key = SOV_Autocracy_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Autocracy_PG
 	text = {
 		trigger = {
@@ -5224,6 +5296,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Mod_Vilayat_e_Faqih > 0 }
 		}
 		localization_key = SLV_Mod_Vilayat_e_Faqih_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Mod_Vilayat_e_Faqih_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Mod_Vilayat_e_Faqih > 0 }
+		}
+		localization_key = SOV_Mod_Vilayat_e_Faqih_loc_key
 	}
 }
 defined_text = {
@@ -5715,6 +5796,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Vilayat_e_Faqih_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Vilayat_e_Faqih > 0 }
+		}
+		localization_key = SOV_Vilayat_e_Faqih_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Vilayat_e_Faqih_PG
 	text = {
 		trigger = {
@@ -6203,6 +6293,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Kingdom_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Kingdom > 0 }
+		}
+		localization_key = SOV_Kingdom_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Kingdom_PG
 	text = {
 		trigger = {
@@ -6676,6 +6775,12 @@ defined_text = {
 	name = SLV_Caliphate_PG
 	text = { trigger = { check_variable = { SLV.MEP_Caliphate > 0 } }
 		localization_key = SLV_Caliphate_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Caliphate_PG
+	text = { trigger = { check_variable = { SOV.MEP_Caliphate > 0 } }
+		localization_key = SOV_Caliphate_loc_key
 	}
 }
 defined_text = {
@@ -7155,6 +7260,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Neutral_Muslim_Brotherhood > 0 }
 		}
 		localization_key = SLV_Neutral_Muslim_Brotherhood_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Neutral_Muslim_Brotherhood_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_Muslim_Brotherhood > 0 }
+		}
+		localization_key = SOV_Neutral_Muslim_Brotherhood_loc_key
 	}
 }
 defined_text = {
@@ -7646,6 +7760,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Neutral_Autocracy_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_Autocracy > 0 }
+		}
+		localization_key = SOV_Neutral_Autocracy_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Neutral_Autocracy_PG
 	text = {
 		trigger = {
@@ -8131,6 +8254,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Neutral_conservatism > 0 }
 		}
 		localization_key = SLV_Neutral_conservatism_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Neutral_conservatism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_conservatism > 0 }
+		}
+		localization_key = SOV_Neutral_conservatism_loc_key
 	}
 }
 defined_text = {
@@ -8622,6 +8754,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_oligarchism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_oligarchism > 0 }
+		}
+		localization_key = SOV_oligarchism_loc_key
+	}
+}
+defined_text = {
 	name = SPR_oligarchism_PG
 	text = {
 		trigger = {
@@ -9107,6 +9248,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Neutral_Libertarian > 0 }
 		}
 		localization_key = SLV_Neutral_Libertarian_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Neutral_Libertarian_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_Libertarian > 0 }
+		}
+		localization_key = SOV_Neutral_Libertarian_loc_key
 	}
 }
 defined_text = {
@@ -9598,6 +9748,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Neutral_green_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_green > 0 }
+		}
+		localization_key = SOV_Neutral_green_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Neutral_green_PG
 	text = {
 		trigger = {
@@ -10083,6 +10242,15 @@ defined_text = {
 			check_variable = { SLV.MEP_neutral_Social > 0 }
 		}
 		localization_key = SLV_neutral_Social_loc_key
+	}
+}
+defined_text = {
+	name = SOV_neutral_Social_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_neutral_Social > 0 }
+		}
+		localization_key = SOV_neutral_Social_loc_key
 	}
 }
 defined_text = {
@@ -10574,6 +10742,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Neutral_Communism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Neutral_Communism > 0 }
+		}
+		localization_key = SOV_Neutral_Communism_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Neutral_Communism_PG
 	text = {
 		trigger = {
@@ -11059,6 +11236,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Nat_Populism > 0 }
 		}
 		localization_key = SLV_Nat_Populism_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Nat_Populism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Nat_Populism > 0 }
+		}
+		localization_key = SOV_Nat_Populism_loc_key
 	}
 }
 defined_text = {
@@ -11550,6 +11736,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Nat_Fascism_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Nat_Fascism > 0 }
+		}
+		localization_key = SOV_Nat_Fascism_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Nat_Fascism_PG
 	text = {
 		trigger = {
@@ -12038,6 +12233,15 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SOV_Nat_Autocracy_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Nat_Autocracy > 0 }
+		}
+		localization_key = SOV_Nat_Autocracy_loc_key
+	}
+}
+defined_text = {
 	name = SPR_Nat_Autocracy_PG
 	text = {
 		trigger = {
@@ -12523,6 +12727,15 @@ defined_text = {
 			check_variable = { SLV.MEP_Monarchist > 0 }
 		}
 		localization_key = SLV_Monarchist_loc_key
+	}
+}
+defined_text = {
+	name = SOV_Monarchist_PG
+	text = {
+		trigger = {
+			check_variable = { SOV.MEP_Monarchist > 0 }
+		}
+		localization_key = SOV_Monarchist_loc_key
 	}
 }
 defined_text = {
