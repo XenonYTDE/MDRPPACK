@@ -47,6 +47,9 @@
  CIVREMOVE:0 "§HRemove 1 Civillian Factory§!\nClicking this button will remove a civillian factory from the selected state.\n\n"
  CIVREMOVE_DELAYED:0 ""
 
+ JOIN_FACTION:0 "Force Join Faction"
+ JOIN_FACTION_DELAYED:0 "Force the selected country to join a faction. First select the country you want to join a faction, then click on any member of the target faction."
+
  ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to the selected state's owner.\n\n"
  
  ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"

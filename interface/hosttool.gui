@@ -129,7 +129,16 @@ guiTypes = {
 			pdx_tooltip = "FREE_COUNTRY"
 			pdx_tooltip_delayed = "FREE_COUNTRY_DELAYED"
 		}
-
+		
+		buttonType = {
+			name = "join_faction" 
+			position = {x=520 y=190}    
+			spriteType = "GFX_global_diplorequest_icons"
+			frame = 13
+			pdx_tooltip = "JOIN_FACTION"
+			pdx_tooltip_delayed = "JOIN_FACTION_DELAYED"
+		}
+		
 		buttonType = {
 			name = "transfer_hostool" 
 			position = {x=465 y=254}	
