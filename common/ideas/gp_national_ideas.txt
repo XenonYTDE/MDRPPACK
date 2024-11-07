@@ -6,10 +6,6 @@ ideas = {
 
         planning_stage = {
 
-            available = {
-                has_stability > 0.30
-            }
-
             cost = 100
             removal_cost = -1
 
@@ -35,13 +31,8 @@ ideas = {
         }
 
         efficient_beaurocracy = {
-            
-            available = {
-                has_stability > 0.50
-                has_war_support > 0.20
-            }
 
-            cost = 100
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -76,7 +67,7 @@ ideas = {
                 
             }
             
-            cost = 150
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -118,12 +109,12 @@ ideas = {
            
             available = {
                 OR = {
-                has_war_support > 0.70
+                has_war_support > 0.50
                 has_government = nationalist
                 }
             }
             
-            cost = 100
+            cost = 200
             removal_cost = -1
 
             modifier = {
@@ -153,18 +144,10 @@ ideas = {
         gp_nationalism = {
             
             available = {
-                OR = {
-                    AND = {
-                     has_war_support > 0.60
-                     has_stability > 0.40
-                    }
-                    
                     has_government = nationalist
-                    
                 }
-            }
 
-            cost = 150
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -199,14 +182,20 @@ ideas = {
             
             available = {
                 has_intelligence_agency = yes
-                threat > 0.4
             }
+
+            cost = 250
+            removal_cost = -1
 
             modifier = {
 				operative_slot = 1
 				operation_cost = -0.30
 				operation_outcome = 0.3
 				own_operative_capture_chance_factor = -0.15
+                civilian_intel_factor = 0.10
+                army_intel_factor = 0.10
+                navy_intel_factor = 0.10
+                airforce_intel_factor = 0.10
 			}
 
 
@@ -222,5 +211,4 @@ ideas = {
             cancel_if_invalid = no
         }
     }
- }
-
+}

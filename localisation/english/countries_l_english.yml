@@ -2873,6 +2873,9 @@
  CHI_nationalist: "Empire of China"
  CHI_nationalist_DEF: "Empire of China"
  CHI_nationalist_ADJ: "Chinese Empire"
+ CHI_liberalism: "Confucian China"
+ CHI_liberalism_DEF: "Confucian China"
+ CHI_liberalism_ADJ: "Confucian"
 
  CHL_fascism: "Chile"
  CHL_fascism_DEF: "Chile"

@@ -1592,7 +1592,6 @@ ideas = {
 					threat > 0.4
 					any_country = {
 						is_justifying_wargoal_against = ROOT # Experimenting on THIS vs ROOT
-						strength_ratio = { tag = ROOT ratio > 2.0 } # 2x stronger than THIS
 					}
 				}
 				if = {
@@ -1629,11 +1628,15 @@ ideas = {
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				stability_factor = -0.40
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_offices_factor = -0.10
+				production_speed_buildings_factor = -0.05
 				war_stability_factor = 0.40
 				mil_facs_worker_requirement_modifier = 1.25
 				military_factories_productivity = 1.25
 				dockyard_productivity = 1.25
 				total_workforce_modifier = -0.125 #mobilized people can't work
+				return_on_investment_modifier = -0.015
 				custom_modifier_tooltip = the_military_add_30_tt
 			}
 
@@ -1769,10 +1772,9 @@ ideas = {
 				}
 				OR = {
 					has_war = yes
-					threat > 0.6
+					threat > 0.5
 					any_country = {
-						is_justifying_wargoal_against = THIS
-						strength_ratio = { tag = THIS ratio > 2.0 } # 2x stronger than THIS
+						is_justifying_wargoal_against = THIS # 2x stronger than THIS
 					}
 				}
 				if = {
@@ -1799,12 +1801,16 @@ ideas = {
 				industrial_capacity_dockyard = 1.0
 				production_speed_arms_factory_factor = 0.4
 				production_speed_dockyard_factor = 0.4
-				stability_factor = -0.45
+				stability_factor = -0.50
 				war_stability_factor = 0.45
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_offices_factor = -0.25
+				production_speed_buildings_factor = -0.10
 				mil_facs_worker_requirement_modifier = 2
 				military_factories_productivity = 2
 				dockyard_productivity = 2
 				total_workforce_modifier = -0.2 #mobilized people can't work
+				return_on_investment_modifier = -0.025
 				custom_modifier_tooltip = the_military_add_35_tt
 			}
 
@@ -2077,10 +2083,6 @@ ideas = {
 			level = 2
 
 			available = {
-				OR  = { 
-					has_stability > 0.49
-					has_war_support > 0.49
-				}
 				if = {
 					limit = {
 						OR = {
@@ -2192,10 +2194,6 @@ ideas = {
 			level = 1
 
 			available = {
-				OR  = { 
-					has_stability > 0.69
-					has_war_support > 0.69
-				}
 				if = {
 					limit = {
 						OR = {
@@ -2435,10 +2433,6 @@ ideas = {
 				OR = {
 					has_idea = draft_army
 				}
-				OR  = { 
-					has_stability > 0.89
-					has_war_support > 0.89
-				}
 				if = {
 					limit = {
 						OR = {
@@ -2505,7 +2499,6 @@ ideas = {
 			available = {
 				NOT = {
 					has_idea = the_military
-					is_in_faction = yes
 				}
 				if = {
 					limit = {
@@ -2743,13 +2736,17 @@ ideas = {
 				guarantee_tension = 0.10
 				join_faction_tension = 0.15
 				generate_wargoal_tension = 0.15
+				enemy_justify_war_goal_time = -0.15
 			}
 
 			ai_will_do = {
 				factor = 0
 				modifier = {
 					add = 1
-					has_idea = superpower
+					OR = {
+						has_idea = superpower
+						has_idea = global_hegemony
+					}
 				}
 			}
 		}
@@ -2760,11 +2757,6 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			available = {
-				#has_autocratic_government = yes
-				OR = {
-					has_government = nationalist
-					has_government = fascism
-				}
 				if = {
 					limit = {
 						OR = {
@@ -2790,6 +2782,7 @@ ideas = {
 				guarantee_tension = 0.0
 				join_faction_tension = 0.0
 				generate_wargoal_tension = 0.0
+				enemy_justify_war_goal_time = -0.30
 			}
 
 			ai_will_do = {

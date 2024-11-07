@@ -25,9 +25,6 @@ resources_expansion_category = {
 					amount > 0
 				}
 			}
-			NOT = { has_decision = small_oil_expansion }
-			NOT = { has_decision = medium_oil_expansion }
-			NOT = { has_decision = huge_oil_expansion }
 		}
 
 		remove_effect = {
@@ -50,7 +47,7 @@ resources_expansion_category = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 180
+		days_remove = 270
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -71,9 +68,6 @@ resources_expansion_category = {
 					amount > 9
 				}
 			}
-			NOT = { has_decision = small_oil_expansion }
-			NOT = { has_decision = medium_oil_expansion }
-			NOT = { has_decision = huge_oil_expansion }
 		}
 
 		remove_effect = {
@@ -96,7 +90,7 @@ resources_expansion_category = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 180
+		days_remove = 360
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -117,9 +111,6 @@ resources_expansion_category = {
 					amount > 49
 				}
 			}
-			NOT = { has_decision = small_oil_expansion }
-			NOT = { has_decision = medium_oil_expansion }
-			NOT = { has_decision = huge_oil_expansion }
 		}
 
 		remove_effect = {
