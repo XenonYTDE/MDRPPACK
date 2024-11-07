@@ -4329,11 +4329,10 @@ EU_apply_for_membership_category = {
 			}
 			has_country_flag = EU_candidate
 			NOT = { has_war = yes }
-			NOT = { check_variable = { 
-				var = THIS.eurosceptic
-				value = 0.10
-				compare = more_than
-			} }
+			custom_trigger_tooltip = {
+				tooltip =  EU_Eurosceptism_less_than_10_tt
+				check_variable = { THIS.eurosceptic < 0.10 }
+			}
 		}
 
 		visible = {

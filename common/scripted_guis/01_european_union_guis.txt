@@ -5460,6 +5460,18 @@ scripted_gui = {
 					limit = { check_variable = { v = 701 } }
 					has_political_power > 300
 					custom_trigger_tooltip = {
+						tooltip = 2013_enlargement_pass_tt
+						is_in_array = { global.EU_passed_votes = 603 }
+					}
+					custom_trigger_tooltip = {
+						tooltip = BLR_enlargement_pass_tt
+						is_in_array = { global.EU_passed_votes = 610 }
+					}
+					custom_trigger_tooltip = {
+						tooltip = black_sea_enlargement_pass_tt
+						is_in_array = { global.EU_passed_votes = 607 }
+					}
+					custom_trigger_tooltip = {
 						tooltip = no_ongoing_expansion_tt
 						check_variable = { global.EU_expansion_check = 0 }
 					}
