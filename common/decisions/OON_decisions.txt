@@ -710,6 +710,7 @@ OON_peacekeeping_missions = {
 				has_idea = large_power
 				has_idea = great_power
 				has_idea = superpower
+				has_idea = global_hegemony
 			}
 			custom_trigger_tooltip = {
 				tooltip = is_top_influencer_somali
@@ -786,6 +787,7 @@ OON_peacekeeping_missions = {
 				has_idea = large_power
 				has_idea = great_power
 				has_idea = superpower
+				has_idea = global_hegemony
 			}
 			custom_trigger_tooltip = {
 				tooltip = is_top_influencer_congo
@@ -859,6 +861,7 @@ OON_peacekeeping_missions = {
 				has_idea = large_power
 				has_idea = great_power
 				has_idea = superpower
+				has_idea = global_hegemony
 			}
 			custom_trigger_tooltip = {
 				tooltip = is_top_influencer_angola
