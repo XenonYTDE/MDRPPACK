@@ -600,7 +600,6 @@ scripted_gui = {
 						limit = { is_ai = yes }
 						OR = {
 							check_variable = { THIS.eurosceptic > 0.60 }
-							EU_external_sov_chi_influence_50 = yes
 						}
 					}
 				}
@@ -3233,10 +3232,6 @@ scripted_gui = {
 						gov_is_EUexiteer = yes
 					}
 					modifier = {
-						add = 25
-						EU_external_sov_chi_influence_50 = yes
-					}
-					modifier = {
 						add = -25
 						has_government = democratic
 					}
@@ -3265,7 +3260,6 @@ scripted_gui = {
 								check_variable = { THIS.eurosceptic < 0.50 }
 								has_elections = yes
 							}
-							NOT = { EU_external_sov_chi_influence_50 = yes }
 						}
 					}
 				}
@@ -4614,10 +4608,6 @@ scripted_gui = {
 					check_variable = { global.current_active_vote_disp = 0 }
 				}
 				custom_trigger_tooltip = {
-					tooltip = EU_no_external_sov_chi_influence_15_tt
-					EU_external_sov_chi_influence_15 = no
-				}
-				custom_trigger_tooltip = {
 					tooltip = no_high_sceptics_tt
 					NOT = {
 						check_variable = {
@@ -4645,10 +4635,6 @@ scripted_gui = {
 							is_in_array = { array = global.EU_active_vote_rejecters value = ROOT }
 						}
 					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = EU_no_external_sov_chi_influence_15_tt
-					EU_external_sov_chi_influence_15 = no
 				}
 				THIS = { is_ai = yes }
 				ROOT = {
@@ -5104,10 +5090,6 @@ scripted_gui = {
 				custom_trigger_tooltip = {
 					tooltip = no_active_agenda
 					check_variable = { global.current_active_agenda_disp = 0 }
-				}
-				custom_trigger_tooltip = {
-					tooltip = EU_no_external_sov_chi_influence_15_tt
-					EU_external_sov_chi_influence_15 = no
 				}
 				if = { limit = { check_variable = { v = 002 } }
 					has_political_power > 100

@@ -3321,7 +3321,6 @@ EU_exit_category = {
 						has_elections = no
 						check_variable = { THIS.eurosceptic < 0.50 }
 					}
-					EU_external_sov_chi_influence_50 = yes
 				}
 			}
 		}
@@ -4330,16 +4329,17 @@ EU_apply_for_membership_category = {
 			}
 			has_country_flag = EU_candidate
 			NOT = { has_war = yes }
-			custom_trigger_tooltip = {
-				tooltip = EU_no_external_sov_chi_influence_15_tt
-				EU_external_sov_chi_influence_15 = no
-			}
+			NOT = { check_variable = { 
+				var = THIS.eurosceptic
+				value = 0.10
+				compare = more_than
+			} }
 		}
 
 		visible = {
 			has_country_flag = EU_potential
 			NOT = { has_idea = EU_member }
-		}
+				}
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete EU_apply_for_membership"
@@ -4557,5 +4557,6 @@ EU_apply_for_membership_category = {
 		ai_will_do = {
 			factor = 100
 		}
+		
 	}
 }

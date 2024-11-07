@@ -68,6 +68,25 @@
  RULE_YES_REMOVE_OCEANIA_DESC:0 "Removes Oceania"
  RULE_NO_REMOVE_OCEANIA_DESC:0 "Keeps Oceania The Same" 
 
+#Merge Scandinavia#
+ RULE_MERGE_SCANDINAVIA:0 "Merge Scandinavia"
+ RULE_NOR_MERGE_SCANDINAVIA_DESC:0 "Merge into Norway"
+ RULE_SWE_MERGE_SCANDINAVIA_DESC:0 "Merge into Sweden"
+ RULE_FIN_MERGE_SCANDINAVIA_DESC:0 "Merge into Finland"
+ RULE_NO_MERGE_SCANDINAVIA_DESC:0 "Keeps Scandinavia The Same"
+ RULE_OPTION_NOR:0 "Norway"
+ RULE_OPTION_SWE:0 "Sweden"
+ RULE_OPTION_FIN:0 "Finland"
+
+#Merge Baltics#
+ RULE_MERGE_BALTICS:0 "Merge Baltics"
+ RULE_EST_MERGE_BALTICS_DESC:0 "Merge into Estonia"
+ RULE_LAT_MERGE_BALTICS_DESC:0 "Merge into Latvia"
+ RULE_LIT_MERGE_BALTICS_DESC:0 "Merge into Lithuania"
+ RULE_NO_MERGE_BALTICS_DESC:0 "Keeps Baltic States The Same"
+ RULE_OPTION_EST:0 "Estonia"
+ RULE_OPTION_LAT:0 "Latvia"
+ RULE_OPTION_LIT:0 "Lithuania"
 
 #Disable AI#
  RULE_DISABLE_AI_NATIONS:0 "Disable AI Nations"

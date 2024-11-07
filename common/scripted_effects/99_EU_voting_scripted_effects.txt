@@ -35,16 +35,6 @@ EU_update_AI_general_voting_modifiers = {
 	if = { limit = { check_variable = { var = THIS.eurosceptic value = 0.7 compare = greater_than_or_equals } }
 		add_to_temp_variable = { var = EU_AI_focus_modifier_yes_vote value = -20 }
 	}
-	# if China or Russia have significant influence, AI will not support measures
-	if = { limit = { EU_external_sov_chi_influence_15 = yes }
-		add_to_temp_variable = { var = EU_AI_focus_modifier_yes_vote value = -100 }
-	}
-	if = { limit = { EU_external_sov_chi_influence_10 = yes }
-		add_to_temp_variable = { var = EU_AI_focus_modifier_yes_vote value = -50 }
-	}
-	if = { limit = { EU_external_sov_chi_influence_5 = yes }
-		add_to_temp_variable = { var = EU_AI_focus_modifier_yes_vote value = -25 }
-	}
 
 	if = {
 		limit = { is_subject = yes }
