@@ -27,6 +27,7 @@ ideas = {
                 mobilization_speed = -0.20
                 training_time_factor = 0.20
                 minimum_training_level = 0.20
+                max_command_power = -50
             }
 
             ai_will_do = {

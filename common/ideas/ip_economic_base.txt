@@ -4,9 +4,6 @@ ideas = {
         use_list_view = yes
 
         agrarian_base = {
-            available = {
-                num_of_civilian_factories < 20
-            }
 
             removal_cost = 0
 
@@ -49,7 +46,6 @@ ideas = {
                     has_idea = communal_economy
                 }
                 num_of_civilian_factories > 10
-                num_of_civilian_factories < 30
             }
 
             modifier = {
@@ -80,7 +76,6 @@ ideas = {
 
         small_business = {
             available = {
-                num_of_civilian_factories > 25
                 NOT = {
                     has_idea = planned_economy
                 }
@@ -113,11 +108,6 @@ ideas = {
         natural_resources = {
             available = {
                 num_of_civilian_factories > 20
-                OR = {
-                    has_idea = export_focus
-                    has_idea = free_trade
-                    has_idea = rentier_state
-                }
             }
 
             modifier = {
@@ -145,7 +135,6 @@ ideas = {
 
         business_and_enterprise = {
             available = {
-                num_of_civilian_factories > 35
                 NOT = {
                     has_idea = planned_economy
                     has_idea = state_capitalism
@@ -186,9 +175,6 @@ ideas = {
         }
 
         industry_manufacturing = {
-            available = {
-                num_of_factories > 50
-            }
 
             modifier = {
                 political_power_factor = -0.10

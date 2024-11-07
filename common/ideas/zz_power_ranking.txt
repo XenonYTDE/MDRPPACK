@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		global_hegemony = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea global_hegemony" }
-			picture = GFX_idea_superpower
+			picture = GFX_idea_global_hegemony
 			allowed = { always = no }
 			rule = { can_create_factions = yes }
 			modifier = {
@@ -47,6 +47,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.6
 				political_power_factor = 0.6
+				production_speed_buildings_factor = 0.05
 				migration_rate_value_factor = 0.20
 				foreign_influence_modifier = 0.50
 				foreign_influence_defense_modifier = 0.50
@@ -86,6 +87,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.50
 				political_power_factor = 0.50
+				production_speed_buildings_factor = 0.10
 				join_faction_tension = 0.05
 				migration_rate_value_factor = 0.15
 				foreign_influence_modifier = 0.40
@@ -126,6 +128,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.4
 				political_power_factor = 0.4
+				production_speed_buildings_factor = 0.15
 				join_faction_tension = 0.10
 				migration_rate_value_factor = 0.10
 				foreign_influence_modifier = 0.30
@@ -165,6 +168,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.25
 				join_faction_tension = 0.15
 				migration_rate_value_factor = 0.05
 				foreign_influence_modifier = 0.20
@@ -203,6 +207,7 @@ ideas = {
 			picture = GFX_idea_minor_power
 			allowed = { always = no }
 			modifier = {
+				production_speed_buildings_factor = 0.50
 				join_faction_tension = 0.20
 				foreign_influence_modifier = 0.10
 				foreign_influence_defense_modifier = 0.10
@@ -216,6 +221,7 @@ ideas = {
 			allowed = { always = no }
 			modifier = {
 				political_power_factor = -0.20
+				production_speed_buildings_factor = 0.75
 				join_faction_tension = 0.25
 				foreign_influence_modifier = -0.25
 				foreign_influence_defense_modifier = -0.25
@@ -273,8 +279,12 @@ ideas = {
 			allowed = { always = no }
 
 			modifier = {
+				production_speed_dockyard_factor = 0.15
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
 				foreign_influence_home_continent_modifier = 0.05
 				navy_personnel_cost_multiplier_modifier = -0.05
+				experience_gain_navy_factor = 0.05
 			}
 		}
 	}
