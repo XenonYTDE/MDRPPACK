@@ -28,61 +28,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				laws_cost_factor = -0.20
-				hidden_modifier = {
-					economic_cycles_cost_factor = -0.15
-					corruption_cost_factor = -0.15
-					internal_factions_cost_factor = -0.15
-					bureaucracy_cost_factor = -0.15
-					Military_Spending_cost_factor = -0.15
-					crime_fighting_cost_factor = -0.15
-					education_budget_cost_factor = -0.15
-					health_budget_cost_factor = -0.15
-					social_budget_cost_factor = -0.15
-					trade_laws_cost_factor = -0.15
-					Conscription_Law_cost_factor = -0.15
-					Military_Status_Women_cost_factor = -0.15
-					Foreign_Intervention_Law_cost_factor = -0.15
-					Officer_Training_Law_cost_factor = -0.15
-					tax_rate_change_multiplier_modifier = -0.15
-					migration_laws_cost_factor = -0.15
-					ep_economic_model_cost_factor = -0.15
-					ep_foreign_investments_cost_factor = -0.15
-					ep_subsidization_cost_factor = -0.15
-					ep_taxation_policy_cost_factor = -0.15
-					ep_trade_tariffs_cost_factor = -0.15
-					ep_war_bonds_cost_factor = -0.15
-					gf_command_structure_cost_factor = -0.15
-					gf_logistics_system_cost_factor = -0.15
-					gf_marine_role_cost_factor = -0.15
-					gf_officer_training_cost_factor = -0.15
-					gf_paratropper_role_cost_factor = -0.15
-					gf_special_forces_cost_factor = -0.15
-					gp_gender_equality_cost_factor = -0.15
-					gp_minority_rights_cost_factor = -0.15
-					gp_national_ideas_cost_factor = -0.15
-					gp_press_law_cost_factor = -0.15
-					gp_public_meetings_cost_factor = -0.15
-					gt_government_form_cost_factor = -0.15
-					gt_head_of_state_cost_factor = -0.15
-					gt_judiciary_cost_factor = -0.15
-					ip_construction_focus_cost_factor = -0.15
-					ip_economic_base_cost_factor = -0.15
-					ip_resource_efforts_cost_factor = -0.15
-					is_firearm_regulation_cost_factor = -0.15
-					is_penal_system_cost_factor = -0.15
-					is_state_security_cost_factor = -0.15
-					is_trade_unions_cost_factor = -0.15
-					mj_branch_rivalry_cost_factor = -0.15
-					mj_code_of_ethics_cost_factor = -0.15
-					mj_female_service_cost_factor = -0.15
-					mj_non_core_manpower_cost_factor = -0.15
-					mj_training_quality_cost_factor = -0.15
-					mj_volunteer_forces_cost_factor = -0.15
-				}
+				political_advisor_cost_factor = -0.20
+			}
 		}	
 	}
-}
 	country = {
 		NIDEAS_IDEA_GROUP1_SPIRIT4 = {
 			picture = nideas_spirit_political
@@ -115,7 +64,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.5
-				compliance_growth = 0.15
+				compliance_growth = 0.1
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 			}
 		}	
@@ -157,7 +106,7 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.20
+				political_advisor_cost_factor = -0.20
 				
 				#political_power_gain = 0.3
 				
@@ -166,7 +115,7 @@ ideas = {
 				stability_weekly = 0.001
 
 				#political_power_gain = 0.5
-				compliance_growth = 0.15
+				compliance_growth = 0.1
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 				
 				political_power_gain = 0.8
@@ -184,7 +133,7 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.20
+				political_advisor_cost_factor = -0.20
 				
 				#political_power_gain = 0.3
 				
@@ -407,9 +356,6 @@ ideas = {
 			}
 			research_bonus = {
 				industry = 0.05
-			}
-			research_bonus = {
-				electronics = 0.15
 			}
 		}	
 	}

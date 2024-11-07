@@ -93,8 +93,8 @@ merge_central_america = {
 }
 ####Misc Rules####
 merge_asia = {
-	name = "Merge Asia"
-	group = "MDOptimization_RULES"
+	name = "RULE_MERGE_ASIA"
+	group = "MDOptimization_Misc_RULES"
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
@@ -109,7 +109,7 @@ merge_asia = {
 }
 remove_arabia = {
 	name = "RULE_REMOVE_ARABIA"
-	group = "MDOptimization_RULES"
+	group = "MDOptimization_Misc_RULES"
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
@@ -124,7 +124,7 @@ remove_arabia = {
 }
 merge_arabia = {
 	name = "RULE_MERGE_ARABIA"
-	group = "MDOptimization_RULES"
+	group = "MDOptimization_Misc_RULES"
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
@@ -139,7 +139,7 @@ merge_arabia = {
 }
 merge_oceania = {
 	name = "RULE_MERGE_OCEANIA"
-	group = "MDOptimization_RULES"
+	group = "MDOptimization_Misc_RULES"
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
@@ -154,7 +154,7 @@ merge_oceania = {
 }
 remove_oceania = {
 	name = "RULE_REMOVE_OCEANIA"
-	group = "MDOptimization_RULES"
+	group = "MDOptimization_Misc_RULES"
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
@@ -165,71 +165,6 @@ remove_oceania = {
 		name = no
 		text = "RULE_OPTION_NO"
 		desc = "RULE_NO_REMOVE_OCEANIA_DESC"
-	}
-}
-merge_scandinavia = {
-	name = "RULE_MERGE_SCANDINAVIA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = nor
-		text = "RULE_OPTION_NOR"
-		desc = "RULE_NOR_MERGE_SCANDINAVIA_DESC"
-	}
-	option = {
-		name = swe
-		text = "RULE_OPTION_SWE"
-		desc = "RULE_SWE_MERGE_SCANDINAVIA_DESC"
-	}
-	option = {
-		name = fin
-		text = "RULE_OPTION_FIN"
-		desc = "RULE_FIN_MERGE_SCANDINAVIA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_MERGE_SCANDINAVIA_DESC"
-	}
-}
-merge_baltics = {
-	name = "RULE_MERGE_BALTICS"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = est
-		text = "RULE_OPTION_EST"
-		desc = "RULE_EST_MERGE_BALTICS_DESC"
-	}
-	option = {
-		name = lat
-		text = "RULE_OPTION_LAT"
-		desc = "RULE_LAT_MERGE_BALTICS_DESC"
-	}
-	option = {
-		name = lit
-		text = "RULE_OPTION_LIT"
-		desc = "RULE_LIT_MERGE_BALTICS_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_MERGE_BALTICS_DESC"
-	}
-}
-hypermerge = {
-	name = "RULE_HYPERMERGE"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_HYPERMERGE_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_HYPERMERGE_DESC"
 	}
 } 
 ####DISABLE-AI####

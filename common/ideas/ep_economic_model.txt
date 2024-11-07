@@ -46,14 +46,14 @@ ideas = {
             modifier = {
                 monthly_population = 0.5
                 stability_factor = 0.5
-                local_resources_factor = 2.5
-                industrial_capacity_factory = 2.5
-                research_speed_factor = 2.5
-                production_speed_buildings_factor = 2.5
+                local_resources_factor = 5.0
+                industrial_capacity_factory = 3.0
+                research_speed_factor = 5.0
+                production_speed_buildings_factor = 5.0
                 production_factory_efficiency_gain_factor = 2.5
                 production_factory_max_efficiency_factor = 2.5
                 production_factory_start_efficiency_factor = 2.5
-                industrial_capacity_dockyard = 2.5
+                industrial_capacity_dockyard = 3.0
                 mil_facs_worker_requirement_modifier = -0.9
                 civ_facs_worker_requirement_modifier = -0.9
                 dockyard_worker_requirement_modifier = -0.9
@@ -137,6 +137,11 @@ ideas = {
         }
 
         laisezz_faire = {
+            available = {
+                NOT = {
+                    has_government = communism
+                }
+            }
 
             level = 7
 
@@ -144,13 +149,13 @@ ideas = {
                 political_power_factor = 0.10
                 local_resources_factor = -0.05
                 consumer_goods_factor = -0.10
-                stability_factor = -0.10
-                production_speed_buildings_factor = -0.15
+                stability_factor = -0.05
+                production_speed_buildings_factor = -0.10
                 production_factory_max_efficiency_factor = 0.05
                 research_speed_factor = 0.10
                 industrial_capacity_factory = 0.10
                 industrial_capacity_dockyard = 0.20
-                min_export = 0.10
+                min_export = 0.15
             }
 
             ai_will_do = {
@@ -177,6 +182,7 @@ ideas = {
         welfare_capitalism = {
             available = {
                 NOT = {
+                    has_government = communism
                     has_government = nationalist
                 }
             }

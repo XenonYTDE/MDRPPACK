@@ -23,7 +23,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_slot_mj_branch_rivalry"
+		name = "GFX_idea_slot_mj_branch_rivarly"
 		texturefile = "gfx\\interface\\idea_slot_army.dds"
 	}
 
@@ -127,31 +127,31 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_no_training.dds"
 	}
 
-    #mj_branch_rivalry #5slots
+    #mj_branch_rivarly #5slots
 
     spriteType = {
 		name = "GFX_idea_army_dominant"
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_army_dominant.dds"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_army_dominant.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_army_strengthened"
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_army_strengthened.dds"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_army_strengthened.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_balanced_rivalry"
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_balanced_rivalry.dds"
+		name = "GFX_idea_balanced_rivarly"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_balanced_rivarly.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_strengthened"
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_navy_strengthened.dds"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_navy_strengthened.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_dominant"
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_navy_dominant.dds"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_navy_dominant.dds"
 	}
 
 	#mj_volunteer_forces #3slots

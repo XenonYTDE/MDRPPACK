@@ -1,6 +1,6 @@
 ideas = {
 
-    mj_branch_rivalry = {
+    mj_branch_rivarly = {
         law = yes
         use_list_view = yes
 
@@ -73,7 +73,7 @@ ideas = {
             cancel_if_invalid = no
         }
 
-        balanced_rivalry = {
+        balanced_rivarly = {
 
             available = {
 
