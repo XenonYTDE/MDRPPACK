@@ -20,5 +20,6 @@ leader_traits = {
 
 	the_old_fuehrer = {
 		stability_weekly_factor = 0.001
+        nationalist_drift = 0.20
 	}
 }
