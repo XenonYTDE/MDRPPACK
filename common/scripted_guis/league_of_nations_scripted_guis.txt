@@ -531,7 +531,7 @@ scripted_gui = {
 			}
 		}
 
-		ai_test_interval = 24
+		ai_test_interval = 48
 		ai_test_variance = 0.2
 
 		ai_check = {

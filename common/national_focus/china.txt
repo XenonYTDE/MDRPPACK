@@ -12676,6 +12676,7 @@ focus_tree = {
 				OR = {
 					is_historical_focus_on = no
 					has_idea = superpower
+					has_idea = global_hegemony
 				}
 			}
 		}
@@ -16284,7 +16285,10 @@ focus_tree = {
 		mutually_exclusive = { focus = CHI_Favor_Multipolarity }
 
 		available = {
-			has_idea = superpower
+			OR = {
+				has_idea = superpower
+				has_idea = global_hegemony
+			}
 			NOT = { has_government = democratic }
 		}
 
