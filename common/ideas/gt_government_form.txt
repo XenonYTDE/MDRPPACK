@@ -196,7 +196,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                global_building_slots_factor = 3
+                global_building_slots_factor = 5
                 industrial_capacity_factory = 2
                 industrial_capacity_dockyard = 2
                 conscription_factor = 0.20
@@ -241,7 +241,7 @@ ideas = {
                 #production_speed_anti_air_building_factor #= #3
                 #production_speed_radar_station_factor #= #3
                 special_forces_min = 25
-                monthly_population = 2.5
+                monthly_population = 3
 
             }
 
