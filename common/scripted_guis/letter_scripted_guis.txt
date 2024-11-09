@@ -31,20 +31,6 @@ scripted_gui = {
 				}
 			}
 			send_insult_diplo_action_button_click_enabled = {
-				# OR = {
-					# NOT = { has_global_flag = starting_player_voting_for_stability_and_wt_influencing }
-					# has_global_flag = starting_player_voting_for_stability_and_wt_influencing_finished
-				# }
-				#OR = {
-				#	NOT = { has_country_flag = recently_insulted_by_@ROOT }
-				#	has_country_flag = {
-				#		flag = recently_insulted_by_@ROOT
-				#		days > 1
-				#	}
-				#}
-				#ROOT = {
-				#	NOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 } }
-				#}
 			}
 			send_insult_diplo_action_selected_button_visible = {
 				ROOT = {
@@ -56,104 +42,6 @@ scripted_gui = {
 		ai_enabled = {
 			always = no
 		}
-		
-		# ai_test_interval = 4380
-		# ai_test_variance = 0.1
-		
-		# ai_check = {
-			# is_subject = no
-			# has_war = no
-			# NOT = { has_idea = neutrality_idea }
-			# any_neighbor_country = {
-				# is_subject = no
-				# OR = {
-					# NOT = { has_country_flag = recently_insulted_by_@ROOT }
-					# has_country_flag = {
-						# flag = recently_insulted_by_@ROOT
-						# days > 1
-					# }
-				# }
-				# OR = {
-					# AND = {
-						# NOT = { has_government = ROOT }
-						# NOT = { has_government = neutrality }
-						# NOT = { has_wargoal_against = ROOT }
-					# }
-					# is_justifying_wargoal_against = ROOT
-				# }
-				# ROOT = {
-					# has_opinion = {
-						# target = PREV
-						# value < -20
-					# }
-					# OR = {
-						# NOT = { has_government = neutrality }
-						# AND = {
-							# has_country_flag = recently_insulted_by_@PREV
-							# has_country_flag = {
-								# flag = recently_insulted_by_@PREV
-								# days < 1
-							# }
-						# }
-					# }
-				# }
-			# }
-		# }
-		
-		# ai_test_scopes = test_neighbouring_countries
-		
-		# ai_check_scope = {
-			# is_subject = no
-			# OR = {
-				# NOT = { has_country_flag = recently_insulted_by_@ROOT }
-				# has_country_flag = {
-					# flag = recently_insulted_by_@ROOT
-					# days > 1
-				# }
-			# }
-			# OR = {
-				# AND = {
-					# NOT = { has_government = ROOT }
-					# NOT = { has_government = neutrality }
-					# NOT = { has_wargoal_against = ROOT }
-				# }
-				# is_justifying_wargoal_against = ROOT
-			# }
-			# ROOT = {
-				# has_opinion = {
-					# target = PREV
-					# value < -20
-				# }
-				# OR = {
-					# NOT = { has_government = neutrality }
-					# AND = {
-						# has_country_flag = recently_insulted_by_@PREV
-						# has_country_flag = {
-							# flag = recently_insulted_by_@PREV
-							# days < 1
-						# }
-					# }
-				# }
-			# }
-		# }
-		
-		# ai_weights = {
-			# send_insult_diplo_action_button_click = {
-				# ai_will_do = {
-					# factor = 1
-				# }
-			# }
-			# send_insult_diplo_action_selected_button_click = {
-				# ai_will_do = {
-					# factor = 0
-				# }
-			# }
-			# close_button_click = {
-				# ai_will_do = {
-					# factor = 0
-				# }
-			# }
-		# }
 	}
 
 	letter_popup_sender = {
@@ -169,13 +57,6 @@ scripted_gui = {
 			cancel_button_click = {
 				clear_variable = selected_country_to_insult
 				clear_generated_insults_cache = yes
-				# if = {
-					# limit = {
-						# NOT = { has_country_flag = has_sent_a_randomized_insult }
-						# has_country_flag = randomized_insult
-					# }
-					# clr_country_flag = randomized_insult
-				# }
 				if = {
 					limit = {
 						NOT = { has_country_flag = has_sent_a_written_insult }
@@ -185,7 +66,6 @@ scripted_gui = {
 				}
 			}
 			send_button_click = {
-				#set_variable = { last_insult_sent_this_amount_of_days_ago = 2 }
 				var:selected_country_to_insult = {
 					send_insult_effect = yes
 					if = {
@@ -195,24 +75,6 @@ scripted_gui = {
 						remove_from_array = { insulters = ROOT.id }
 					}
 					add_to_array = { insulters = ROOT.id }
-					#if = {
-					#	limit = {
-					#		has_country_flag = recently_insulted_by_@ROOT
-					#	}
-					#	clr_country_flag = recently_insulted_by_@ROOT
-					#}
-					#else_if = {
-					#	limit = {
-					#		ROOT = {
-					#			NOT = { has_country_flag = custom_achievement_insulted_back }
-					#			has_country_flag = recently_insulted_by_@PREV
-					#		}
-					#	}
-						# ROOT = {
-							# set_country_flag = custom_achievement_insulted_back	# custom achievement
-						# }
-					#}
-					#set_country_flag = recently_insulted_by_@ROOT
 					if = {
 						limit = {
 							ROOT = { check_variable = { show_write_insult_menu < 1 } }
@@ -237,99 +99,10 @@ scripted_gui = {
 				}
 				clear_variable = selected_country_to_insult
 				clear_generated_insults_cache = yes
-				
-				# if = {
-					# limit = {
-						# NOT = { has_country_flag = has_sent_a_randomized_insult }
-						# has_country_flag = randomized_insult
-					# }
-					# set_country_flag = has_sent_a_randomized_insult	# custom achievement
-				# }
-				# if = {
-					# limit = {
-						# NOT = { has_country_flag = has_sent_navy_seals_insult }
-						# check_variable = { chosen_type_of_insult = 100 }
-					# }
-					# set_country_flag = has_sent_navy_seals_insult	# custom achievement
-				# }
-				# if = {
-					# limit = {
-						# NOT = { has_country_flag = has_sent_a_written_insult }
-						# has_country_flag = written_insult
-					# }
-					# set_country_flag = has_sent_a_written_insult	# custom achievement
-				# }
-			}
-			
-			# Stuff for Writing Insults
-			write_insult_button_click = {
-				set_temp_variable = { show = 1 }
-				subtract_from_temp_variable = { show = show_write_insult_menu }
-				set_variable = { show_write_insult_menu = show }
-				if = {
-					limit = {
-						check_variable = { show_write_insult_menu > 0 }
-					}
-					clear_variable = chosen_type_of_insult
-					clear_variable = show_insuls_list_window
-					clear_array = valid_insults_list_array
-					# if = {
-						# limit = {
-							# NOT = { has_country_flag = has_sent_a_randomized_insult }
-							# has_country_flag = randomized_insult
-						# }
-						# clr_country_flag = randomized_insult
-					# }
-					if = {
-						limit = {
-							NOT = { has_country_flag = has_sent_a_written_insult }
-							NOT = { has_country_flag = written_insult }
-						}
-						set_country_flag = written_insult
-					}
-				}
-				# else_if = {
-					# limit = {
-						# always = yes
-					# }
-					# set_variable = { chosen_type_of_insult = last_randomized_insults^0 }
-					# clear_array = written_type_of_insult_array
-					# clear_variable = show_save_insuls_window
-					# var:selected_country_to_insult = {
-						# ROOT = {
-							# randomize_insult_button_effect = yes
-						# }
-					# }
-					# if = {
-						# limit = {
-							# NOT = { has_country_flag = has_sent_a_randomized_insult }
-							# NOT = { has_country_flag = randomized_insult }
-						# }
-						# set_country_flag = randomized_insult
-					# }
-					# if = {
-						# limit = {
-							# NOT = { has_country_flag = has_sent_a_written_insult }
-							# has_country_flag = written_insult
-						# }
-						# clr_country_flag = written_insult
-					# }
-				# }
 			}
 			write_insult_button_right_click = {
 				clear_array = written_type_of_insult_array
 			}
-			# save_insult_button_click = {
-				# set_temp_variable = { show = 1 }
-				# subtract_from_temp_variable = { show = show_save_insuls_window }
-				# set_variable = { show_save_insuls_window = show }
-				# if = {
-					# limit = {
-						# check_variable = { saved_written_insults_array^num < 1 }
-					# }
-					# add_to_array = { array = saved_written_insults_array value = 0 index = 0 }
-				# }
-			# }
 			button_0_click = {
 				add_to_array = { written_type_of_insult_array = -10 }
 			}
@@ -557,16 +330,7 @@ scripted_gui = {
 			send_button_click_enabled = {
 				custom_trigger_tooltip = {
 					#tooltip = ROOT_COULD_INSULT_TARGET_NORMALLY_TOO
-					#NOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 } }
-					#var:selected_country_to_insult = {
-					#	OR = {
-					#		NOT = { has_country_flag = recently_insulted_by_@ROOT }
-					#		has_country_flag = {
-					#			flag = recently_insulted_by_@ROOT
-					#			days > 1
-					#		}
-					#	}
-					#}
+					#NOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 }
 					OR = {
 						AND = {
 							check_variable = { show_write_insult_menu < 1 }
@@ -579,10 +343,6 @@ scripted_gui = {
 					}
 				}
 			}
-			# randomize_insult_button_click_enabled = {
-				# NOT = { has_country_flag = currently_randomizing_insult }
-				# check_variable = { show_write_insult_menu < 1 }
-			# }
 			write_insult_button_right_click_enabled = {
 				check_variable = { show_write_insult_menu > 0 }
 			}
@@ -893,68 +653,6 @@ scripted_gui = {
 		ai_enabled = {
 			always = no
 		}
-		
-		# ai_test_interval = 24
-		# ai_test_variance = 0.2
-		
-		# ai_check = {
-			# always = no
-		# }
-		
-		# ai_weights = {
-			# send_button_click = {
-				# ai_will_do = {
-					# factor = 1
-					# modifier = {
-						# var:selected_country_to_insult = {
-							# OR = {
-								# AND = {
-									# has_country_flag = recently_insulted_by_@ROOT
-									# NOT = {
-										# has_country_flag = {
-											# flag = recently_insulted_by_@ROOT
-											# days > 1
-										# }
-									# }
-								# }
-							# }
-						# }
-						# factor = 0
-					# }
-				# }
-			# }
-			# cancel_button_click = {
-				# ai_will_do = {
-					# factor = 0
-					# modifier = {
-						# var:selected_country_to_insult = {
-							# OR = {
-								# AND = {
-									# has_country_flag = recently_insulted_by_@ROOT
-									# NOT = {
-										# has_country_flag = {
-											# flag = recently_insulted_by_@ROOT
-											# days > 1
-										# }
-									# }
-								# }
-							# }
-						# }
-						# add = 100
-					# }
-				# }
-			# }
-			# randomize_insult_button_click = {
-				# ai_will_do = {
-					# factor = 0
-				# }
-			# }
-			# write_insult_button_click = {
-				# ai_will_do = {
-					# factor = 0
-				# }
-			# }
-		# }
 	}
 	
 	letter_popup_sender_left_side_panel = {
@@ -978,184 +676,6 @@ scripted_gui = {
 			always = yes
 		}
 	}
-	
-	# letter_save_insults_window = {
-		# context_type = player_context
-		
-		# window_name = "letter_save_insults_window"
-		# parent_window_name = "letter_popup_sender_right_side_panel_instance"
-		
-		# visible = {
-			# check_variable = { show_save_insuls_window > 0 }
-		# }
-		
-		# effects = {
-			# insult_save_button_click = {
-				# if = {
-					# limit = {
-						# check_variable = { v = 0 }
-						# check_variable = { written_type_of_insult_array^num > 0 }
-					# }
-					# set_temp_variable = { new_value_temp = 1 }
-					# while_loop_effect = {
-						# limit = {
-							# is_in_array = { saved_written_insults_array = new_value_temp }
-						# }
-						# break = break_temp
-						# add_to_temp_variable = { new_value_temp = 1 }
-						# if = {
-							# limit = {
-								# check_variable = { new_value_temp > 100 }
-							# }
-							# set_temp_variable = { break_temp = 1 }
-						# }
-					# }
-					# if = {
-						# limit = {
-							# is_in_array = { saved_written_insults_array = new_value_temp }
-						# }
-						# for_each_loop = {
-							# array = saved_written_insults_array
-							# add_to_temp_array = { saved_written_insults_array_temp = v }
-						# }
-						# for_loop_effect = {
-							# start = 1
-							# end = saved_written_insults_array_temp^num
-							# value = v
-							# set_temp_variable = { var = j value = v }
-							# set_temp_variable = { var = j_minus value = j }
-							# subtract_from_temp_variable = { var = j_minus value = 1 }
-							# while_loop_effect = {
-								# limit = {
-									# check_variable = { j > 0 }
-									# check_variable = { saved_written_insults_array_temp^j_minus < saved_written_insults_array_temp^j }
-								# }
-								# # swap j-1 with j if value of j-1 < j
-								# set_temp_variable = { var = temp value = saved_written_insults_array_temp^j }
-								# set_temp_variable = { var = saved_written_insults_array_temp^j value = saved_written_insults_array_temp^j_minus }
-								# set_temp_variable = { var = saved_written_insults_array_temp^j_minus value = temp }
-								# subtract_from_temp_variable = { var = j value = 1 }
-								# subtract_from_temp_variable = { var = j_minus value = 1 }
-							# }
-						# }
-						# set_temp_variable = { temp = saved_written_insults_array_temp^0 }
-						# add_to_temp_variable = { temp = 1 }
-					# }
-					# else  ={
-						# set_temp_variable = { temp = new_value_temp }
-					# }
-					# add_to_array = { saved_written_insults_array = temp }
-					# for_each_loop = {
-						# array = written_type_of_insult_array
-						# meta_effect = {
-							# text = {
-								# add_to_array = { saved_written_insults_array_text_[SAVE] = v }
-							# }
-							# SAVE = "[?temp]"
-						# }
-					# }
-				# }
-				# else_if = {
-					# limit = {
-						# check_variable = { written_type_of_insult_array^num > 0 }
-					# }
-					# set_temp_variable = { temp = v }
-					# meta_effect = {
-						# text = {
-							# clear_array = saved_written_insults_array_text_[SAVE]
-						# }
-						# SAVE = "[?temp]"
-					# }
-					# for_each_loop = {
-						# array = written_type_of_insult_array
-						# meta_effect = {
-							# text = {
-								# add_to_array = { saved_written_insults_array_text_[SAVE] = v }
-							# }
-							# SAVE = "[?temp]"
-						# }
-					# }
-				# }
-			# }
-			# insult_save_button_right_click = {
-				# clear_array = written_type_of_insult_array
-				# meta_effect = {
-					# text = {
-						# for_each_loop = {
-							# array = saved_written_insults_array_text_[LOAD]
-							# add_to_array = { written_type_of_insult_array = v }
-						# }
-					# }
-					# LOAD = "[?v]"
-				# }
-			# }
-			# insult_save_button_control_right_click = {
-				# meta_effect = {
-					# text = {
-						# clear_array = saved_written_insults_array_text_[SAVE]
-					# }
-					# SAVE = "[?v]"
-				# }
-				# remove_from_array = { saved_written_insults_array = v }
-			# }
-		# }
-		
-		# triggers = {
-			# insult_save_button_click_enabled = {
-				# OR = {
-					# NOT = { check_variable = { v = 0 } }
-					# check_variable = { written_type_of_insult_array^num > 0 }
-				# }
-			# }
-			# insult_save_button_right_click_enabled = {
-				# NOT = { check_variable = { v = 0 } }
-			# }
-			# insult_save_button_control_right_click_enabled = {
-				# NOT = { check_variable = { v = 0 } }
-			# }
-		# }
-		
-		# dynamic_lists = {
-			# saved_insults_gridbox = {
-				# array = saved_written_insults_array
-				# entry_container = saved_insults_entry
-			# }
-		# }
-	# }
-	
-	# letter_insults_list_window = {
-		# context_type = player_context
-		
-		# window_name = "letter_insults_list_window"
-		# parent_window_name = "letter_popup_sender_left_side_panel_instance"
-		
-		# visible = {
-			# check_variable = { show_insuls_list_window > 0 }
-		# }
-		
-		# effects = {
-			# use_insult_button_click = {
-				# set_variable = { chosen_type_of_insult = v }
-				# clear_variable = show_insuls_list_window
-				# clear_array = valid_insults_list_array
-				# if = {
-					# limit = {
-						# NOT = { has_country_flag = has_sent_a_randomized_insult }
-						# has_country_flag = randomized_insult
-					# }
-					# clr_country_flag = randomized_insult
-				# }
-			# }
-		# }
-		
-		# dynamic_lists = {
-			# insults_list_gridbox = {
-				# array = valid_insults_list_array
-				# entry_container = insults_list_entry
-			# }
-		# }
-	# }
-	
 	letter_popup_receiver = {
 		context_type = player_context
 		
@@ -1172,7 +692,6 @@ scripted_gui = {
 					clear_variable = type_of_received_insult_@PREV
 					clear_array = received_written_type_of_insult_array_@PREV
 					remove_from_array = { insulters = PREV.id }
-					# randomize_insult_button_effect = yes
 				}
 			}
 			ok_button_click = {
@@ -1186,23 +705,6 @@ scripted_gui = {
 		
 		triggers = {
 			insult_back_button_click_enabled = {
-				#custom_trigger_tooltip = {
-					#tooltip = ROOT_COULD_INSULT_TARGET_NORMALLY_TOO
-					#OR = {
-					#	NOT = { has_global_flag = starting_player_voting_for_stability_and_wt_influencing }
-					#	has_global_flag = starting_player_voting_for_stability_and_wt_influencing_finished
-					#}
-					#OR = {
-					#	NOT = { has_country_flag = recently_insulted_by_@ROOT }
-					#	has_country_flag = {
-					#		flag = recently_insulted_by_@ROOT
-					#		days > 1
-					#	}
-					#}
-					#ROOT = {
-					#	NOT = { check_variable = { last_insult_sent_this_amount_of_days_ago > 0 } }
-					#}
-				#}
 			}
 			insult_entry_visible = {
 				NOT = { check_variable = { ROOT.received_written_type_of_insult_array_@THIS^num > 0 } }
@@ -1217,31 +719,11 @@ scripted_gui = {
 				array = insulters
 				entry_container = letter_popup_receiver_entry
 				change_scope = yes
-				
-				# ai_weights = {
-					# insult_back_button_click = {
-						# ai_will_do = {
-							# factor = 0
-						# }
-					# }
-					# ok_button_click = {
-						# ai_will_do = {
-							# factor = 1
-						# }
-					# }
-				# }
 			}
 		}
 		
 		ai_enabled = {
 			always = no
 		}
-		
-		# ai_test_interval = 24
-		# ai_test_variance = 0.2
-		
-		# ai_check = {
-			# always = no
-		# }
 	}
 }

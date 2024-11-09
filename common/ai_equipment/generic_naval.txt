@@ -4034,6 +4034,7 @@ generic_helicopter_operator = {
 				has_idea = large_power
 				has_idea = great_power
 				has_idea = superpower
+				has_idea = global_hegemony
 			}
 		}
 		modifier = {
