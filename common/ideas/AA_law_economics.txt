@@ -330,7 +330,7 @@ ideas = {
 				stability_factor = 0.02
 				productivity_growth_modifier = 2
 				maximum_migration_rate_value = 0.15
-				return_on_investment_modifier = 0.003
+				return_on_investment_modifier = 0.005
 			}
 
 			ai_will_do = {
@@ -422,7 +422,7 @@ ideas = {
 				stability_factor = 0.04
 				productivity_growth_modifier = 3
 				maximum_migration_rate_value = 0.25
-				return_on_investment_modifier = 0.005
+				return_on_investment_modifier = 0.01
 			}
 			ai_will_do = {
 				factor = 1
