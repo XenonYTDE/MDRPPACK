@@ -6,7 +6,6 @@ ideas = {
         monarch = {
             available = {
                 has_government = nationalist
-                has_government = neutrality
             }
 
             cost = 200
