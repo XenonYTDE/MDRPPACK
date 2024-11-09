@@ -30869,4 +30869,7 @@ focus_tree = {
 		}
 	}
 
+shared_focus = USoE001
+shared_focus = POTEF001
+
 }
