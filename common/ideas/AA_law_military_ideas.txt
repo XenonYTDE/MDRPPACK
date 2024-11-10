@@ -2369,6 +2369,10 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			available = {
+
+				NOT = {
+					has_idea = service_prohibited
+				}
 				OR = {
 					has_idea = volunteer_army
 					has_idea = partial_draft_army
@@ -2436,6 +2440,10 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			available = {
+
+				NOT = {
+					has_idea = service_prohibited
+				}
 				OR = {
 					has_idea = draft_army
 				}

@@ -8,6 +8,10 @@ ideas = {
         equal_service = {
 
             available = {
+
+                NOT = {
+                    has_idea = no_women_in_military
+                }
                 
                 OR = {
                     has_idea = affirmative_actionF
@@ -61,6 +65,7 @@ ideas = {
                 NOT = {
                     has_idea = no_legal_protections
                     has_idea = patriarchal_society
+                    has_idea = no_women_in_military
                 }
             }
 
@@ -99,6 +104,7 @@ ideas = {
                 NOT = {
                     has_idea = affirmative_actionF
                     has_idea = full_equality
+                    has_idea = no_women_in_military
                 }
             }
 
@@ -131,7 +137,6 @@ ideas = {
                 NOT = {
                     has_idea = affirmative_actionF
                     has_idea = full_equality
-                    has_idea = no_women_in_military
                 }
             }
 
