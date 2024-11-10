@@ -2310,6 +2310,12 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			available = {
+				NOT = {
+					has_idea = non_combat_roles
+					has_idea = support_roles
+					has_idea = equal_service
+				}
+
 				if = {
 					limit = {
 						OR = {
@@ -2354,7 +2360,7 @@ ideas = {
 					has_government = fascism
 				}
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 		}
 
 		volunteer_women = {
