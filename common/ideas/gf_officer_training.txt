@@ -41,7 +41,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         major_officer_training = {
@@ -76,7 +76,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         junior_officer_training = {
@@ -107,7 +107,7 @@ ideas = {
                 
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         foreign_officer_missions = {
@@ -158,7 +158,7 @@ ideas = {
                 
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

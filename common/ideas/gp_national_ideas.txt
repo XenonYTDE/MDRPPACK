@@ -27,7 +27,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         efficient_beaurocracy = {
@@ -138,7 +138,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         gp_nationalism = {
@@ -208,7 +208,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

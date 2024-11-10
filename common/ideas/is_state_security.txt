@@ -36,7 +36,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         counter_terrorism_operatives = {
@@ -65,7 +65,7 @@ ideas = {
                 base = 20
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
 
         }
 
@@ -94,7 +94,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         sassy_secret_police = {

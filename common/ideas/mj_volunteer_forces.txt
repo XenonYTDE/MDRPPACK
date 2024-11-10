@@ -53,7 +53,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         small_force = {
@@ -95,7 +95,7 @@ ideas = {
 
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         no_volunteers = {
@@ -130,7 +130,7 @@ ideas = {
 
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

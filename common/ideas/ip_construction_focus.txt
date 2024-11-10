@@ -23,7 +23,7 @@ ideas = {
                 base = 20
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         military_buildings = {

@@ -135,8 +135,10 @@ ideas = {
             
             available = {
                 NOT = {
-                    has_idea = affirmative_actionF
+                    has_idea = affirmative_action
                     has_idea = full_equality
+                    has_idea = drafted_women
+                    has_idea = volunteer_women
                 }
             }
 

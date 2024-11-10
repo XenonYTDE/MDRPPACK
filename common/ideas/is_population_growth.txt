@@ -51,7 +51,7 @@ ideas = {
                }
            }
 
-           cancel_if_invalid = no
+           cancel_if_invalid = yes
        }
 
        standard_growth = {
@@ -72,7 +72,7 @@ ideas = {
                }
            }
 
-           cancel_if_invalid = no
+           cancel_if_invalid = yes
        }
 
        national_purity = {

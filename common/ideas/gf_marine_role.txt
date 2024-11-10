@@ -27,7 +27,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         marine_navy_command = {
@@ -54,7 +54,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         marine_spec_ops_command = {
@@ -77,7 +77,7 @@ ideas = {
                 
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

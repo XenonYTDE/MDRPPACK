@@ -40,7 +40,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         army_strengthened = {
@@ -70,7 +70,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         balanced_rivalry = {
@@ -92,7 +92,7 @@ ideas = {
                 base = 40
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         navy_strengthened = {
@@ -133,7 +133,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         navy_dominant = {
@@ -182,7 +182,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }
