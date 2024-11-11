@@ -21,15 +21,6 @@ ideas = {
                 war_support_weekly = -0.050
             }
 
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    surrender_progress > 0.70
-                    add = 100
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -50,15 +41,6 @@ ideas = {
                 war_support_factor = -0.05
             }
 
-            ai_will_do = {
-                base = 40
-
-                modifier = {
-                    surrender_progress > 30
-                    add = 10
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -77,15 +59,6 @@ ideas = {
                 #consumer_goods_factor #= #0.10
                 #war_support_weekly #= #0.025
                 war_support_factor = 0.05
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    enemies_strength_ratio < 0.20
-                    add = 40
-                }
             }
 
             cancel_if_invalid = yes

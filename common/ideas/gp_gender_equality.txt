@@ -28,25 +28,6 @@ ideas = {
 
             }
 
-            ai_will_do = {
-
-                base = 10
-
-                modifier = {
-                    has_government = democratic
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 60
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -69,26 +50,6 @@ ideas = {
                 base_migration_rate_value = 0.15
              }
 
-             ai_will_do = {
-
-                base = 20
-
-                modifier = {
-                    has_government = democratic
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 30
-                }
-
-                modifier = {
-                    factor = 3
-                }
-
-             }
-
              cancel_if_invalid = yes
         }
 
@@ -106,30 +67,6 @@ ideas = {
                 monthly_population = 0.05
                 stability_factor = 0.02
                 industrial_capacity_factory = 0.025
-            }
-
-            ai_will_do = {
-
-                base = 30
-
-                modifier = {
-                    has_government = democratic
-                    add = 15
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    factor = 40
-                }
-
-                modifier = {
-                    has_government = nationalist
-                    add = 10
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
@@ -153,26 +90,7 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.10
                 production_factory_efficiency_gain_factor = -0.05
             }
-            
-            ai_will_do = {
 
-                base = 20
-
-                modifier = {
-                    has_government = neutrality
-                    add = 30
-                }
-
-                modifier = {
-                    has_government = nationalist
-                    add = 50
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
-            
             cancel_if_invalid = yes
         }
 
@@ -192,25 +110,6 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.15
                 production_factory_efficiency_gain_factor = -0.10
 
-            }
-
-            ai_will_do = {
-
-                base = 10
-
-                modifier = {
-                    has_government = nationalist
-                    add = 90
-                }
-
-                modifier = {
-                    has_government = neutrality 
-                    add = 10
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
