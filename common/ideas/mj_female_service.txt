@@ -104,7 +104,6 @@ ideas = {
                 NOT = {
                     has_idea = affirmative_actionF
                     has_idea = full_equality
-                    has_idea = no_women_in_military
                 }
             }
 
