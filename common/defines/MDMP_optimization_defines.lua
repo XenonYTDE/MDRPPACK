@@ -1,68 +1,96 @@
--- ai
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 10000       -- Increase interval to reduce calculations.
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 10000       -- Increase interval to reduce calculations.
-NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 10000      -- Increase interval to reduce calculations.
-NDefines.NAI.HOURS_BETWEEN_ENCIRCLEMENT_DISCOVERY = 24 -- Increase interval to reduce calculations.
-NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 60000000     -- Increase interval to reduce calculations.
-NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 60000000 -- Increase interval to reduce calculations.
-NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 336000 -- Increase interval to reduce calculations.
-NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 60       -- Increase interval to reduce calculations.
-NDefines.NAI.MICRO_POCKET_SIZE = 0                          -- Keep as is for efficiency.
-NDefines.NAI.DAYS_BETWEEN_AIR_PRIORITIES_UPDATE = 20000     -- Increase interval to reduce calculations.
-NDefines.NAI.DIPLOMACY_RECALCULATE_INTERVAL = 2000          -- Increase interval to reduce calculations.
-NDefines.NAI.PLAN_ACTIVATION_SUPERIORITY_AGGRO = 2.0        -- Keep as is.
-NDefines.NAI.PLAN_VALUE_TO_EXECUTE = -1.0                   -- Keep as is.
-NDefines.NAI.HOUR_BETWEEN_ENEMY_ARMY_CHECKS = 1           -- Increase interval to reduce calculations.
-NDefines.NAI.MINIMUM_EQUIPMENT_TO_ASK_LEND_LEASE = 0.5      -- Keep as is.
+-- AI Optimization (NAI section - only affects AI)
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 10000
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 10000
+NDefines.NAI.DAYS_BETWEEN_CHECK_BEST_EQUIPMENT = 10000
+NDefines.NAI.HOURS_BETWEEN_ENCIRCLEMENT_DISCOVERY = 24
+NDefines.NAI.AI_UPDATE_ROLES_FREQUENCY_HOURS = 60000000
+NDefines.NAI.UPDATE_SUPPLY_MOTORIZATION_FREQUENCY_HOURS = 60000000
+NDefines.NAI.UPDATE_SUPPLY_BOTTLENECKS_FREQUENCY_HOURS = 336000
+NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 60
+NDefines.NAI.MICRO_POCKET_SIZE = 0
+NDefines.NAI.DAYS_BETWEEN_AIR_PRIORITIES_UPDATE = 20000
+NDefines.NAI.DIPLOMACY_RECALCULATE_INTERVAL = 2000
+NDefines.NAI.PLAN_ACTIVATION_SUPERIORITY_AGGRO = 2.0
+NDefines.NAI.PLAN_VALUE_TO_EXECUTE = -1.0
+NDefines.NAI.HOUR_BETWEEN_ENEMY_ARMY_CHECKS = 1
+NDefines.NAI.MINIMUM_EQUIPMENT_TO_ASK_LEND_LEASE = 0.5
 
-NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = 0              -- Keep as is.
-NDefines.NTrade.RELATION_TRADE_FACTOR = 1                   -- Keep as is.
-NDefines.NTrade.DISTANCE_TRADE_FACTOR = -0.02               -- Keep as is.
-NDefines.NTrade.PARTY_SUPPORT_TRADE_FACTOR = 50             -- Keep as is.
+-- AI Politics & Laws (only affects AI behavior)
+NDefines.NAI.POLITICAL_IDEA_MIN_SCORE = 0.1                             -- NEW: Minimum score for AI to consider political ideas
+NDefines.NAI.DIPLOMACY_IMPROVE_RELATION_COST_FACTOR = 100              -- NEW: AI less likely to spam improve relations
+NDefines.NAI.DIPLOMACY_ACCEPT_VOLUNTEERS_BASE = 50                     -- NEW: Base value for AI accepting volunteers
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 50                        -- NEW: Base value for AI accepting attaches
+NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 1.5                         -- NEW: AI penalty for ahead of time research
 
--- QOL
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000              -- Increase lag days for lower speed to reduce desync.
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60                      -- Increase lag days for pause to reduce desync.
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 3                    -- Reduce combat log months to reduce save file size.
-NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 5                     -- Reduce message timeout days to clear messages faster.
-NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.1, 0.0 } -- Keep as is for better performance.
-NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3    -- Keep as is.
--- NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 20            -- Keep commented out.
--- Defines.NGame.MAX_EFFECT_ITERATION = 100                 -- Keep commented out.
+-- Trade and Embargo Settings
+NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = 0
+NDefines.NTrade.RELATION_TRADE_FACTOR = 1
+NDefines.NTrade.DISTANCE_TRADE_FACTOR = -0.02
+NDefines.NTrade.BASE_TRADE_FACTOR = 50                                -- NEW: Base trade factor increased
+NDefines.NTrade.PARTY_SUPPORT_TRADE_FACTOR = 20                       -- NEW: Reduced from 50 for better balance
 
-NDefines.NCountry.EVENT_PROCESS_OFFSET = 120                -- Increase event process offset for better performance.
-NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0.05           -- Reduce country score multiplier.
-NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0.05              -- Reduce army score multiplier.
-NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0.05              -- Reduce navy score multiplier.
+-- Game Performance and MP Optimization
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100                              -- NEW: Increased from 60 for MP
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 3
+NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 5
+NDefines.NGame.GAME_SPEED_SECONDS = { 1.0, 0.25, 0.1, 0.05, 0.0 }   -- NEW: MP optimized speeds
+NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3
+NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 20                            -- NEW: Increased from 13
+NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 1001                    -- NEW: Increased for more complex scripts
 
--- Visibility of enemy divisions
-NDefines.NMilitary.DIVISION_VISIBILITY = 100.0              -- Ensure divisions are visible.
-NDefines.NMilitary.DIVISION_DETECTION_CHANCE = 100.0        -- Ensure divisions are detected.
-NDefines.NMilitary.DIVISION_DETECTION_RADIUS = 1000.0       -- Increase detection radius.
+-- Country Settings
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 30                         -- NEW: Reduced for better MP performance
+NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0.05
+NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0.05
+NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0.05
+NDefines.NCountry.POLITICAL_POWER_UPPER_CAP = 5000                 -- NEW: Increased PP cap
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 500                     -- NEW: Increased command power cap
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.01             -- NEW: Base population growth
+NDefines.NCountry.FUEL_CAPACITY_DEFAULT_HOURS = 720
+NDefines.NCountry.FUEL_GAIN_PER_OIL = 0.2
+NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_STATE = 0.2
+NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_BUILDING = 0.2
 
--- Additional Optimizations
-NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 0.1                -- Reduce base army experience gain.
-NDefines.NMilitary.ARMY_EXP_GAIN = 0.05                     -- Reduce army experience gain.
-NDefines.NMilitary.DIVISION_ORG_LOSS_FACTOR = 0.5           -- Reduce division organization loss.
-NDefines.NMilitary.DIVISION_STRENGTH_LOSS_FACTOR = 0.5      -- Reduce division strength loss.
-NDefines.NMilitary.COMMAND_POWER_GAIN = 0.05                -- Reduce command power gain.
-NDefines.NMilitary.COMMAND_POWER_MAX = 100                  -- Set maximum command power.
-NDefines.NMilitary.COMMAND_POWER_REGENERATION_RATE = 0.01   -- Reduce command power regeneration rate.
-NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.4              -- Increase base compliance growth.
-NDefines.NCountry.FUEL_CAPACITY_DEFAULT_HOURS = 720         -- Set default fuel capacity in hours.
-NDefines.NCountry.FUEL_GAIN_PER_OIL = 0.1                   -- Reduce fuel gain per oil.
-NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_STATE = 0.1        -- Reduce fuel gain per oil from state.
-NDefines.NCountry.FUEL_GAIN_PER_OIL_FROM_BUILDING = 0.1     -- Reduce fuel gain per oil from building.
+-- Military Settings
+NDefines.NMilitary.DIVISION_VISIBILITY = 100.0
+NDefines.NMilitary.DIVISION_DETECTION_CHANCE = 100.0
+NDefines.NMilitary.DIVISION_DETECTION_RADIUS = 1000.0
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2500                    
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2500                 
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2500                      
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0        
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0        
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0          
 
-NDefines.NTechnology.BASE_TECH_COST = 100                   -- Increase base tech cost to slow down tech progression.
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2     -- Increase year ahead penalty factor for tech.
-NDefines.NTechnology.BASE_TECH_COST_FACTOR = 1.5            -- Increase tech cost factor.
+-- Division/Ship Production
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0           -- NEW: Free equipment designing
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0       -- NEW: Free equipment designing
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0       -- NEW: Free equipment designing
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0        -- NEW: Free equipment designing
 
-NDefines.NSupply.SUPPLY_CACHE_CAPACITY = 100                -- Set supply cache capacity.
-NDefines.NSupply.SUPPLY_CACHE_GAIN = 0.1                    -- Reduce supply cache gain.
-NDefines.NSupply.SUPPLY_CACHE_CONSUMPTION = 0.1             -- Reduce supply cache consumption.
+-- Politics & Laws
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.75           -- NEW: Increased from 2.0
+NDefines.NPolitics.ARMY_LEADER_COST = 25
+NDefines.NPolitics.NAVY_LEADER_COST = 25
 
-NDefines.NMarket.INTERNATIONAL_MARKET_BASE_FACTOR = 0.5     -- Reduce international market base factor.
-NDefines.NMarket.INTERNATIONAL_MARKET_TRADE_FACTOR = 0.5    -- Reduce international market trade factor.
-NDefines.NMarket.INTERNATIONAL_MARKET_RESOURCE_FACTOR = 0.5 -- Reduce international market resource factor.
+-- Diplomacy
+NDefines.NDiplomacy.IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0.0        -- NEW: Removed ideology restrictions
+NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 1.35             -- NEW: Better peace deals
+NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 0.5                  -- NEW: Better peace deals
 
+-- Market
+NDefines.NMarket.MAX_CIV_FACTORIES_PER_CONTRACT = 15            -- NEW: Increased from default
+NDefines.NMarket.INTERNATIONAL_MARKET_BASE_FACTOR = 0.75
+NDefines.NMarket.INTERNATIONAL_MARKET_TRADE_FACTOR = 0.75
+NDefines.NMarket.INTERNATIONAL_MARKET_RESOURCE_FACTOR = 0.75
+
+-- Supply System
+NDefines.NSupply.SUPPLY_CACHE_CAPACITY = 100
+NDefines.NSupply.SUPPLY_CACHE_GAIN = 0.2
+NDefines.NSupply.SUPPLY_CACHE_CONSUMPTION = 0.2
+
+-- Graphics Optimization for MP
+NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 10            -- NEW: MP optimization
+NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200  -- NEW: MP optimization
+NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0  -- NEW: MP optimization
