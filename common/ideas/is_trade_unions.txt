@@ -20,20 +20,6 @@ ideas = {
                 industrial_capacity_dockyard = -0.05
             }
 
-            ai_will_do = {
-                base = 40
-
-                modifier = {
-                    has_government = democratic
-                    add = 80
-                }
-
-                modifier = {
-                    has_idea = welfare_capitalism
-                    add = 40
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -52,26 +38,6 @@ ideas = {
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
             }
-
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    has_government = neutrality
-                    add = 30
-                }
-
-                modifier = {
-                    has_idea = planned_economy
-                    add = 70
-                }
-
-                modifier = {
-                    has_government = nationalist
-                    add = 50
-                }
-            }
-
             cancel_if_invalid = yes 
         }
 
@@ -91,25 +57,6 @@ ideas = {
                 production_factory_efficiency_gain_factor = -0.15
                 industrial_capacity_factory = 0.075
                 industrial_capacity_dockyard = 0.075
-            }
-
-            ai_will_do = {
-                base = 30
-                
-                modifier = {
-                    has_government = neutrality
-                    add = 20
-                }
-
-                modifier = {
-                    has_idea = rentier_state
-                    add = 50
-                }
-
-                modifier = {
-                    has_idea = laisezz_faire
-                    add = 40
-                }
             }
 
             cancel_if_invalid = yes
@@ -132,25 +79,6 @@ ideas = {
                 production_factory_efficiency_gain_factor = 0.15
                 industrial_capacity_factory = -0.05
                 industrial_capacity_dockyard = -0.05
-            }
-            
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_idea = syndicalist_markets
-                    add = 400
-                }
-
-                modifier = {
-                    has_idea = communal_economy
-                    add = 200
-                }
-
-                modifier = {
-                    has_idea = welfare_capitalism
-                    add = 10
-                }
             }
 
             cancel_if_invalid = yes

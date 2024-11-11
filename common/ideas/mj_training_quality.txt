@@ -26,22 +26,6 @@ ideas = {
                 minimum_training_level = 0.20
                 max_command_power = -50
             }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    is_major = yes
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = military_head
-                    add = 30
-                }
-                
-            }
-
             cancel_if_invalid = yes
         }
 
