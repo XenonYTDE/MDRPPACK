@@ -1,0 +1,9511 @@
+# Author(s): Londinimum, BlueHunter, Angriest Bird, Simone
+technologies = {
+	#Years (x-axis)
+	@1945 = -1
+	@1965 = 3
+	@1970 = 5.5
+	@1975 = 8
+	@1980 = 10.5
+	@1985 = 13
+	@1990 = 15.5
+	@1995 = 18
+	@2000 = 20.5
+	@2005 = 23
+	@2010 = 25.5
+	@2015 = 28
+	@2020 = 30.5
+	@2025 = 33
+	@2030 = 35.5
+	@2035 = 38
+	@2040 = 40.5
+	@2045 = 43
+	@2050 = 45.5
+	@2053 = 46.75
+	@2055 = 48
+	@2060 = 50.5
+	@2065 = 53
+	@2070 = 55.5
+	@2075 = 58
+	@2080 = 60.5
+	@2083 = 61.75
+	@2085 = 63
+	@2090 = 65.5
+	@2095 = 68
+	@2098 = 69
+	@2100 = 70.5
+	@2105 = 73
+	@2110 = 75.5
+	@2115 = 78
+	#Rows (y-axis)
+	@row1 = -2
+	@row2 = 0
+	@row3 = 2
+	@row4 = 4
+	@row5 = 6
+	@row55 = 7
+	@row6 = 8
+	@row65 = 9
+	@row7 = 10
+	@row75 = 11
+	@row8 = 12
+	@row85 = 13
+	@row9 = 14.1
+	@row95 = 15
+	@row10 = 16
+	@row105 = 17
+	@row11 = 18
+	@row115 = 19
+	@row12 = 20
+	@row125 = 21
+	@row13 = 22
+	@row135 = 23
+	@row14 = 24
+	@row145 = 25
+	@row15 = 26
+	@row155 = 27
+	@row16 = 28
+	@row165 = 29
+	@row17 = 30
+	@row175 = 31
+	@row18 = 32
+	@row185 = 33
+	@row19 = 34
+	@row195 = 35
+	@row20 = 36
+	@row205 = 37
+	@row21 = 38
+	@row215 = 39
+	@row22 = 40
+	@row225 = 41
+	@row23 = 42
+	@row24 = 44
+	@row25 = 46
+	@row26 = 48
+	@row27 = 50
+	#Corvette Hulls
+	corvette_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech corvette_hull_1"
+		}
+		enable_equipments = {
+			corvette_hull_1
+		}
+		path = {
+			leads_to_tech = corvette_hull_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		research_cost = 1.3
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 5
+				num_of_naval_factories < 5
+			}
+			modifier = {
+				factor = 1.25
+				is_major = no
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_idea = non_power
+					has_idea = minor_power
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_idea = regional_power
+			}
+			modifier = {
+				#Don't waste time if not costal
+				factor = 0
+				any_owned_state = {
+					is_coastal = no
+				}
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	corvette_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech corvette_hull_2"
+		}
+		enable_equipments = {
+			corvette_hull_2
+		}
+		path = {
+			leads_to_tech = corvette_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.6
+		start_year = 1980
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	corvette_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech corvette_hull_3"
+		}
+		enable_equipments = {
+			corvette_hull_3
+		}
+		path = {
+			leads_to_tech = corvette_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.9
+		start_year = 1995
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	corvette_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech corvette_hull_4"
+		}
+		enable_equipments = {
+			corvette_hull_4
+		}
+		path = {
+			leads_to_tech = corvette_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2.3
+		start_year = 2010
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2010
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	corvette_hull_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech corvette_hull_5"
+		}
+		enable_equipments = {
+			corvette_hull_5
+		}
+		path = {
+			leads_to_tech = corvette_hull_6
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2040
+	corvette_hull_6 = {
+		enable_equipments = {
+			corvette_hull_6
+		}
+		research_cost = 2.7
+		start_year = 2040
+		path = {
+			leads_to_tech = corvette_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2055
+	corvette_hull_7 = {
+		enable_equipments = {
+			corvette_hull_7
+		}
+		research_cost = 2.7
+		start_year = 2055
+		path = {
+			leads_to_tech = corvette_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2070
+	corvette_hull_8 = {
+		enable_equipments = {
+			corvette_hull_8
+		}
+		research_cost = 2.7
+		start_year = 2070
+		path = {
+			leads_to_tech = corvette_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2085
+	corvette_hull_9 = {
+		enable_equipments = {
+			corvette_hull_9
+		}
+		research_cost = 2.7
+		start_year = 2085
+		path = {
+			leads_to_tech = corvette_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2100
+	corvette_hull_10 = {
+		enable_equipments = {
+			corvette_hull_10
+		}
+		research_cost = 2.7
+		start_year = 2100
+		path = {
+			leads_to_tech = corvette_hull_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	#2110
+	corvette_hull_11 = {
+		enable_equipments = {
+			corvette_hull_11
+		}
+		research_cost = 2.7
+		start_year = 2110
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row1
+				y = @2110
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2109.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CORVETTE
+		}
+	}
+	frigate_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech frigate_hull_1"
+		}
+		enable_equipments = {
+			frigate_hull_1
+		}
+		path = {
+			leads_to_tech = frigate_hull_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		research_cost = 1.5
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	frigate_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech frigate_hull_2"
+		}
+		enable_equipments = {
+			frigate_hull_2
+		}
+		path = {
+			leads_to_tech = frigate_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.7
+		start_year = 1980
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	frigate_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech frigate_hull_3"
+		}
+		enable_equipments = {
+			frigate_hull_3
+		}
+		path = {
+			leads_to_tech = frigate_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1995
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	frigate_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech frigate_hull_4"
+		}
+		enable_equipments = {
+			frigate_hull_4
+		}
+		path = {
+			leads_to_tech = frigate_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2.4
+		start_year = 2010
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2010
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	frigate_hull_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech frigate_hull_5"
+		}
+		enable_equipments = {
+			frigate_hull_5
+		}
+		path = {
+			leads_to_tech = frigate_hull_6
+			research_cost_coeff = 1
+		}
+		research_cost = 2.6
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2040
+	frigate_hull_6 = {
+		enable_equipments = {
+			frigate_hull_6
+		}
+		research_cost = 3
+		start_year = 2040
+		path = {
+			leads_to_tech = frigate_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2055
+	frigate_hull_7 = {
+		enable_equipments = {
+			frigate_hull_7
+		}
+		research_cost = 3
+		start_year = 2055
+		path = {
+			leads_to_tech = frigate_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2070
+	frigate_hull_8 = {
+		enable_equipments = {
+			frigate_hull_8
+		}
+		research_cost = 3
+		start_year = 2070
+		path = {
+			leads_to_tech = frigate_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2085
+	frigate_hull_9 = {
+		enable_equipments = {
+			frigate_hull_9
+		}
+		research_cost = 3
+		start_year = 2085
+		path = {
+			leads_to_tech = frigate_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2100
+	frigate_hull_10 = {
+		enable_equipments = {
+			frigate_hull_10
+		}
+		research_cost = 3
+		start_year = 2100
+		path = {
+			leads_to_tech = frigate_hull_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	#2110
+	frigate_hull_11 = {
+		enable_equipments = {
+			frigate_hull_11
+		}
+		research_cost = 3
+		start_year = 2110
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row2
+				y = @2110
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2109.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_FRIGATE
+		}
+	}
+	destroyer_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech destroyer_hull_1"
+		}
+		enable_equipments = {
+			destroyer_hull_1
+		}
+		path = {
+			leads_to_tech = destroyer_hull_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		research_cost = 1.7
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row3
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	destroyer_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech destroyer_hull_2"
+		}
+		enable_equipments = {
+			destroyer_hull_2
+		}
+		path = {
+			leads_to_tech = destroyer_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row3
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	destroyer_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech destroyer_hull_3"
+		}
+		enable_equipments = {
+			destroyer_hull_3
+		}
+		path = {
+			leads_to_tech = destroyer_hull_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = stealth_destroyer_hull_1
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 2005
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row3
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	destroyer_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech destroyer_hull_4"
+		}
+		enable_equipments = {
+			destroyer_hull_4
+		}
+		path = {
+			leads_to_tech = destroyer_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2.9
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2045
+	destroyer_hull_5 = {
+		enable_equipments = {
+			destroyer_hull_5
+		}
+		research_cost = 3.3
+		start_year = 2045
+		path = {
+			leads_to_tech = destroyer_hull_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2060
+	destroyer_hull_6 = {
+		enable_equipments = {
+			destroyer_hull_6
+		}
+		research_cost = 3.3
+		start_year = 2060
+		path = {
+			leads_to_tech = destroyer_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2075
+	destroyer_hull_7 = {
+		enable_equipments = {
+			destroyer_hull_7
+		}
+		research_cost = 3.3
+		start_year = 2075
+		path = {
+			leads_to_tech = destroyer_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2090
+	destroyer_hull_8 = {
+		enable_equipments = {
+			destroyer_hull_8
+		}
+		research_cost = 3.3
+		start_year = 2090
+		path = {
+			leads_to_tech = destroyer_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2105
+	destroyer_hull_9 = {
+		enable_equipments = {
+			destroyer_hull_9
+		}
+		research_cost = 3.3
+		start_year = 2105
+		path = {
+			leads_to_tech = destroyer_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2115
+	destroyer_hull_10 = {
+		enable_equipments = {
+			destroyer_hull_10
+		}
+		research_cost = 3.3
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 1
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	stealth_destroyer_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech stealth_destroyer_hull_1"
+		}
+		enable_equipments = {
+			stealth_destroyer_hull_1
+		}
+		path = {
+			leads_to_tech = stealth_destroyer_hull_2
+			research_cost_coeff = 1
+		}
+		research_cost = 3.1
+		start_year = 2015
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	stealth_destroyer_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech stealth_destroyer_hull_2"
+		}
+		enable_equipments = {
+			stealth_destroyer_hull_2
+		}
+		path = {
+			leads_to_tech = stealth_destroyer_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 3.4
+		start_year = 2030
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2030
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2045
+	stealth_destroyer_hull_3 = {
+		enable_equipments = {
+			stealth_destroyer_hull_3
+		}
+		research_cost = 4
+		start_year = 2045
+		path = {
+			leads_to_tech = stealth_destroyer_hull_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2060
+	stealth_destroyer_hull_4 = {
+		enable_equipments = {
+			stealth_destroyer_hull_4
+		}
+		research_cost = 4
+		start_year = 2060
+		path = {
+			leads_to_tech = stealth_destroyer_hull_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2075
+	stealth_destroyer_hull_5 = {
+		enable_equipments = {
+			stealth_destroyer_hull_5
+		}
+		research_cost = 4
+		start_year = 2075
+		path = {
+			leads_to_tech = stealth_destroyer_hull_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2090
+	stealth_destroyer_hull_6 = {
+		enable_equipments = {
+			stealth_destroyer_hull_6
+		}
+		research_cost = 4
+		start_year = 2090
+		path = {
+			leads_to_tech = stealth_destroyer_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2105
+	stealth_destroyer_hull_7 = {
+		enable_equipments = {
+			stealth_destroyer_hull_7
+		}
+		research_cost = 4
+		start_year = 2105
+		path = {
+			leads_to_tech = stealth_destroyer_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	#2115
+	stealth_destroyer_hull_8 = {
+		enable_equipments = {
+			stealth_destroyer_hull_8
+		}
+		research_cost = 4
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = 3
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_DESTROYER
+		}
+	}
+	cruiser_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech cruiser_hull_1"
+		}
+		enable_equipments = {
+			cruiser_hull_1
+		}
+		sub_technologies = {
+			tech_battleship_hull_1
+		}
+		path = {
+			leads_to_tech = cruiser_hull_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		research_cost = 1.9
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1964.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	cruiser_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech cruiser_hull_2"
+		}
+		enable_equipments = {
+			cruiser_hull_2
+		}
+		path = {
+			leads_to_tech = cruiser_hull_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1984.1.1
+			}
+		}
+		research_cost = 1
+		start_year = 1985
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2005
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	cruiser_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech cruiser_hull_3"
+		}
+		enable_equipments = {
+			cruiser_hull_3
+		}
+		sub_technologies = {
+			battleship_hull_2
+		}
+		path = {
+			leads_to_tech = cruiser_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 2.9
+		start_year = 2005
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	cruiser_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech cruiser_hull_4"
+		}
+		enable_equipments = {
+			cruiser_hull_4
+		}
+		path = {
+			leads_to_tech = cruiser_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 3.1
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2045
+	cruiser_hull_5 = {
+		enable_equipments = {
+			cruiser_hull_5
+		}
+		sub_technologies = {
+			battleship_hull_3
+		}
+		research_cost = 3.5
+		start_year = 2045
+		path = {
+			leads_to_tech = cruiser_hull_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2060
+	cruiser_hull_6 = {
+		enable_equipments = {
+			cruiser_hull_6
+		}
+		sub_technologies = {
+			battleship_hull_4
+		}
+		research_cost = 3.5
+		start_year = 2060
+		path = {
+			leads_to_tech = cruiser_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2075
+	cruiser_hull_7 = {
+		enable_equipments = {
+			cruiser_hull_7
+		}
+		sub_technologies = {
+			battleship_hull_4
+		}
+		research_cost = 3.5
+		start_year = 2075
+		path = {
+			leads_to_tech = cruiser_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2090
+	cruiser_hull_8 = {
+		enable_equipments = {
+			cruiser_hull_8
+		}
+		sub_technologies = {
+			battleship_hull_5
+		}
+		research_cost = 3.5
+		start_year = 2090
+		path = {
+			leads_to_tech = cruiser_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2105
+	cruiser_hull_9 = {
+		enable_equipments = {
+			cruiser_hull_9
+		}
+		sub_technologies = {
+			battleship_hull_5
+		}
+		research_cost = 3.5
+		start_year = 2105
+		path = {
+			leads_to_tech = cruiser_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2115
+	cruiser_hull_10 = {
+		enable_equipments = {
+			cruiser_hull_10
+		}
+		sub_technologies = {
+			battleship_hull_6
+		}
+		research_cost = 3.5
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row4
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	tech_battleship_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech battleship_hull_1"
+		}
+		enable_equipments = {
+			battleship_hull_1
+			battle_cruiser_hull_1
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_1
+		}
+		research_cost = 3
+		start_year = 1965
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1964.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	battleship_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech battleship_hull_2"
+		}
+		enable_equipments = {
+			battleship_hull_2
+			battle_cruiser_hull_2
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_2
+		}
+		research_cost = 3
+		start_year = 1985
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1984.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	battleship_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech battleship_hull_3"
+		}
+		enable_equipments = {
+			battleship_hull_3
+			battle_cruiser_hull_3
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_3
+		}
+		research_cost = 3
+		start_year = 2015
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2060
+	battleship_hull_4 = {
+		enable_equipments = {
+			battleship_hull_4
+			battle_cruiser_hull_4
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_4
+		}
+		research_cost = 3
+		start_year = 2060
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2090
+	battleship_hull_5 = {
+		enable_equipments = {
+			battleship_hull_5
+			battle_cruiser_hull_5
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_5
+		}
+		research_cost = 3
+		start_year = 2090
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	#2115
+	battleship_hull_6 = {
+		enable_equipments = {
+			battleship_hull_6
+			battle_cruiser_hull_6
+		}
+		enable_equipment_modules = {
+			module_heavy_guns_6
+		}
+		research_cost = 3
+		start_year = 2115
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_N_CRUISER
+			Cat_M_Cruiser
+		}
+	}
+	aircraft_carrier_engineering = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech aircraft_carrier_engineering"
+		}
+		enable_equipment_modules = {
+			module_flight_deck_1
+			module_flight_deck_2
+			module_flight_deck_3
+			module_flight_deck_4
+			module_flight_deck_5
+			module_flight_deck_6
+			module_flight_deck_7
+			module_flight_deck_8
+			module_flight_deck_9
+			module_flight_deck_10
+			module_light_flight_deck_1
+			module_light_flight_deck_2
+			module_light_flight_deck_3
+		}
+		path = {
+			leads_to_tech = aircraft_heli_engineering_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = carrier_hull_1
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		research_cost = 2
+		start_year = 1945
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row55
+				y = @1945
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	helicopter_operator_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech helicopter_operator_hull_1"
+		}
+		enable_equipments = {
+			helicopter_operator_hull_1
+		}
+		path = {
+			leads_to_tech = aircraft_heli_engineering_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1970
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @1970
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	helicopter_operator_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech helicopter_operator_hull_2"
+		}
+		enable_equipments = {
+			helicopter_operator_hull_2
+		}
+		path = {
+			leads_to_tech = aircraft_heli_engineering_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2.8
+		start_year = 1995
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	helicopter_operator_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech helicopter_operator_hull_3"
+		}
+		enable_equipments = {
+			helicopter_operator_hull_3
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 3.3
+		start_year = 2020
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2020
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2045
+	helicopter_operator_hull_4 = {
+		enable_equipments = {
+			helicopter_operator_hull_4
+		}
+		research_cost = 4
+		start_year = 2045
+		path = {
+			leads_to_tech = aircraft_heli_engineering_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2060
+	helicopter_operator_hull_5 = {
+		enable_equipments = {
+			helicopter_operator_hull_5
+		}
+		research_cost = 4
+		start_year = 2060
+		path = {
+			leads_to_tech = helicopter_operator_hull_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2075
+	helicopter_operator_hull_6 = {
+		enable_equipments = {
+			helicopter_operator_hull_6
+		}
+		research_cost = 4
+		start_year = 2075
+		path = {
+			leads_to_tech = aircraft_heli_engineering_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2090
+	helicopter_operator_hull_7 = {
+		enable_equipments = {
+			helicopter_operator_hull_7
+		}
+		research_cost = 4
+		start_year = 2090
+		path = {
+			leads_to_tech = aircraft_heli_engineering_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2105
+	helicopter_operator_hull_8 = {
+		enable_equipments = {
+			helicopter_operator_hull_8
+		}
+		research_cost = 4
+		start_year = 2105
+		path = {
+			leads_to_tech = helicopter_operator_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2115
+	helicopter_operator_hull_9 = {
+		enable_equipments = {
+			helicopter_operator_hull_9
+		}
+		research_cost = 4
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	aircraft_heli_engineering_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech aircraft_heli_engineering_1"
+		}
+		enable_equipment_modules = {
+			module_helipads_1
+			module_light_helipad_1
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_1
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			early_helicopter = 1
+		}
+		research_cost = 2
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	aircraft_heli_engineering_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech aircraft_heli_engineering_2"
+		}
+		enable_equipment_modules = {
+			module_helipads_2
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = 12.5
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	aircraft_heli_engineering_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech aircraft_heli_engineering_3"
+		}
+		enable_equipment_modules = {
+			module_helipads_3
+			module_light_helipad_2
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2005
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2055
+	aircraft_heli_engineering_4 = {
+		enable_equipment_modules = {
+			module_helipads_4
+			module_light_helipad_3
+			module_fuel_tank_2
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2053
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2085
+	aircraft_heli_engineering_5 = {
+		enable_equipment_modules = {
+			module_helipads_5
+			module_light_helipad_4
+			module_fuel_tank_3
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_7
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2083
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2100
+	aircraft_heli_engineering_6 = {
+		enable_equipment_modules = {
+			module_helipads_6
+			module_light_helipad_5
+			module_fuel_tank_4
+		}
+		path = {
+			leads_to_tech = helicopter_operator_hull_8
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2100
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row5
+				y = @2098
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	carrier_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech carrier_hull_1"
+		}
+		enable_equipments = {
+			carrier_hull_1
+		}
+		path = {
+			leads_to_tech = carrier_hull_2
+			research_cost_coeff = 1
+		}
+		research_cost = 5
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	carrier_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech carrier_hull_2"
+		}
+		enable_equipments = {
+			carrier_hull_2
+		}
+		path = {
+			leads_to_tech = carrier_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 5.3
+		start_year = 1985
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	carrier_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech carrier_hull_3"
+		}
+		enable_equipments = {
+			carrier_hull_3
+		}
+		path = {
+			leads_to_tech = carrier_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 5.8
+		start_year = 2005
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	carrier_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech carrier_hull_4"
+		}
+		enable_equipments = {
+			carrier_hull_4
+		}
+		path = {
+			leads_to_tech = carrier_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 6.2
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2045
+	carrier_hull_5 = {
+		enable_equipments = {
+			carrier_hull_5
+		}
+		research_cost = 6.6
+		start_year = 2045
+		path = {
+			leads_to_tech = carrier_hull_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aircraft_carrier_engineering_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2060
+	carrier_hull_6 = {
+		enable_equipments = {
+			carrier_hull_6
+		}
+		research_cost = 6.6
+		start_year = 2060
+		path = {
+			leads_to_tech = carrier_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2075
+	carrier_hull_7 = {
+		enable_equipments = {
+			carrier_hull_7
+		}
+		research_cost = 6.6
+		start_year = 2075
+		path = {
+			leads_to_tech = carrier_hull_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aircraft_carrier_engineering_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2090
+	carrier_hull_8 = {
+		enable_equipments = {
+			carrier_hull_8
+		}
+		research_cost = 6.6
+		start_year = 2090
+		path = {
+			leads_to_tech = carrier_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2105
+	carrier_hull_9 = {
+		enable_equipments = {
+			carrier_hull_9
+		}
+		research_cost = 6.6
+		start_year = 2105
+		path = {
+			leads_to_tech = carrier_hull_10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aircraft_carrier_engineering_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2115
+	carrier_hull_10 = {
+		enable_equipments = {
+			carrier_hull_10
+		}
+		research_cost = 6.6
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row6
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_CARRIER
+			Cat_CV
+			Cat_N_CV
+		}
+	}
+	#2055
+	aircraft_carrier_engineering_2 = {
+		enable_equipment_modules = {
+			module_flight_deck_future_1
+			module_flight_deck_future_2
+			module_flight_deck_future_3
+			module_flight_deck_future_4
+			module_flight_deck_future_5
+			module_light_flight_deck_future_1
+			module_light_flight_deck_future_2
+		}
+		research_cost = 2
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row65
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2085
+	aircraft_carrier_engineering_3 = {
+		enable_equipment_modules = {
+			module_flight_deck_future_6
+			module_flight_deck_future_7
+			module_flight_deck_future_8
+			module_flight_deck_future_9
+			module_flight_deck_future_10
+			module_light_flight_deck_future_3
+			module_light_flight_deck_future_4
+		}
+		research_cost = 2
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row65
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	#2110
+	aircraft_carrier_engineering_4 = {
+		enable_equipment_modules = {
+			module_flight_deck_future_11
+			module_flight_deck_future_12
+			module_flight_deck_future_13
+			module_flight_deck_future_14
+			module_flight_deck_future_15
+			module_light_flight_deck_future_5
+			module_light_flight_deck_future_6
+		}
+		research_cost = 2
+		start_year = 2110
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row65
+				y = @2110
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SURFACE_SHIP
+			Cat_LHA
+			Cat_LPD
+		}
+	}
+	tech_submarine_engineering = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_submarine_engineering"
+		}
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_submarine_engineering_1
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_naval_systems_engineering = 1
+		}
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		research_cost = 2.7
+		start_year = 1945
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row8
+				y = @1945
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	tech_submarine_engineering_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_submarine_engineering"
+		}
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power2
+		}
+		path = {
+			leads_to_tech = tech_submarine_engineering_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.7
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	tech_submarine_engineering_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_submarine_engineering"
+		}
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power3
+		}
+		path = {
+			leads_to_tech = tech_submarine_engineering_3
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		research_cost = 2.7
+		start_year = 1990
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	tech_submarine_engineering_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_submarine_engineering"
+		}
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power4
+		}
+		path = {
+			leads_to_tech = tech_submarine_engineering_4
+			research_cost_coeff = 1
+		}
+		research_cost = 2.7
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2040
+	tech_submarine_engineering_4 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power5
+		}
+		research_cost = 2.7
+		start_year = 2040
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_submarine_engineering_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2055
+	tech_submarine_engineering_5 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power6
+		}
+		research_cost = 2.7
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_submarine_engineering_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2070
+	tech_submarine_engineering_6 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power7
+		}
+		research_cost = 2.7
+		start_year = 2070
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_submarine_engineering_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2085
+	tech_submarine_engineering_7 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power8
+		}
+		research_cost = 2.7
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_submarine_engineering_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2100
+	tech_submarine_engineering_8 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power9
+		}
+		research_cost = 2.7
+		start_year = 2100
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_submarine_engineering_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	#2115
+	tech_submarine_engineering_9 = {
+		enable_equipment_modules = {
+			module_sub_diesel_electric_power10
+		}
+		research_cost = 2.7
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row9
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+		}
+	}
+	attack_submarine_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech attack_submarine_hull_1"
+		}
+		enable_equipments = {
+			attack_submarine_hull_1
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.7
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	attack_submarine_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech attack_submarine_hull_2"
+		}
+		enable_equipments = {
+			attack_submarine_hull_2
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 1980
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	attack_submarine_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech attack_submarine_hull_3"
+		}
+		enable_equipments = {
+			attack_submarine_hull_3
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 3.2
+		start_year = 1995
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	attack_submarine_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech attack_submarine_hull_4"
+		}
+		enable_equipments = {
+			attack_submarine_hull_4
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 3.5
+		start_year = 2010
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2010
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	attack_submarine_hull_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech attack_submarine_hull_5"
+		}
+		enable_equipments = {
+			attack_submarine_hull_5
+		}
+		path = {
+			leads_to_tech = attack_submarine_hull_6
+			research_cost_coeff = 1
+		}
+		research_cost = 3.9
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2040
+	attack_submarine_hull_6 = {
+		enable_equipments = {
+			attack_submarine_hull_6
+		}
+		research_cost = 4.3
+		start_year = 2040
+		path = {
+			leads_to_tech = attack_submarine_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2055
+	attack_submarine_hull_7 = {
+		enable_equipments = {
+			attack_submarine_hull_7
+		}
+		research_cost = 4.3
+		start_year = 2055
+		path = {
+			leads_to_tech = attack_submarine_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2070
+	attack_submarine_hull_8 = {
+		enable_equipments = {
+			attack_submarine_hull_8
+		}
+		research_cost = 4.3
+		start_year = 2070
+		path = {
+			leads_to_tech = attack_submarine_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2085
+	attack_submarine_hull_9 = {
+		enable_equipments = {
+			attack_submarine_hull_9
+		}
+		research_cost = 4.3
+		start_year = 2085
+		path = {
+			leads_to_tech = attack_submarine_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2100
+	attack_submarine_hull_10 = {
+		enable_equipments = {
+			attack_submarine_hull_10
+		}
+		research_cost = 4.3
+		start_year = 2100
+		path = {
+			leads_to_tech = attack_submarine_hull_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2115
+	attack_submarine_hull_11 = {
+		enable_equipments = {
+			attack_submarine_hull_11
+		}
+		research_cost = 4.3
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row75
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_ATT_SUB
+			Cat_M_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	missile_submarine_hull_1 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech missile_submarine_hull_1"
+		}
+		enable_equipments = {
+			missile_submarine_hull_1
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.7
+		start_year = 1965
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	missile_submarine_hull_2 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech missile_submarine_hull_2"
+		}
+		enable_equipments = {
+			missile_submarine_hull_2
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	missile_submarine_hull_3 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech missile_submarine_hull_3"
+		}
+		enable_equipments = {
+			missile_submarine_hull_3
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_4
+			research_cost_coeff = 1
+		}
+		research_cost = 2.2
+		start_year = 1995
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	missile_submarine_hull_4 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech missile_submarine_hull_4"
+		}
+		enable_equipments = {
+			missile_submarine_hull_4
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 2010
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2010
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	missile_submarine_hull_5 = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech missile_submarine_hull_5"
+		}
+		enable_equipments = {
+			missile_submarine_hull_5
+		}
+		path = {
+			leads_to_tech = missile_submarine_hull_6
+			research_cost_coeff = 1
+		}
+		research_cost = 2.9
+		start_year = 2025
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2040
+	missile_submarine_hull_6 = {
+		enable_equipments = {
+			missile_submarine_hull_6
+		}
+		research_cost = 3.3
+		start_year = 2040
+		path = {
+			leads_to_tech = missile_submarine_hull_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2055
+	missile_submarine_hull_7 = {
+		enable_equipments = {
+			missile_submarine_hull_7
+		}
+		research_cost = 3.3
+		start_year = 2055
+		path = {
+			leads_to_tech = missile_submarine_hull_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2070
+	missile_submarine_hull_8 = {
+		enable_equipments = {
+			missile_submarine_hull_8
+		}
+		research_cost = 3.3
+		start_year = 2070
+		path = {
+			leads_to_tech = missile_submarine_hull_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2085
+	missile_submarine_hull_9 = {
+		enable_equipments = {
+			missile_submarine_hull_9
+		}
+		research_cost = 3.3
+		start_year = 2085
+		path = {
+			leads_to_tech = missile_submarine_hull_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2100
+	missile_submarine_hull_10 = {
+		enable_equipments = {
+			missile_submarine_hull_10
+		}
+		research_cost = 3.3
+		start_year = 2100
+		path = {
+			leads_to_tech = missile_submarine_hull_11
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#2115
+	missile_submarine_hull_11 = {
+		enable_equipments = {
+			missile_submarine_hull_11
+		}
+		research_cost = 3.3
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row85
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+		}
+		categories = {
+			Cat_NAVAL_EQP
+			Cat_SUB
+			Cat_D_SUB
+			Cat_NUKE_SUB
+		}
+	}
+	#Core Technology for Ships
+	tech_naval_systems_engineering = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_naval_systems_engineering"
+		}
+		enable_equipment_modules = {
+			module_fuel_tank
+			module_surface_oil_power
+		}
+		path = {
+			leads_to_tech = tech_power_systems
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_nuclear_power_systems
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_combat_support_systems
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1945
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @1945
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_power_systems = {
+		enable_equipment_modules = {
+			module_surface_diesel_power
+			module_light_surface_diesel_power
+		}
+		path = {
+			leads_to_tech = tech_power_systems_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_power_systems_1 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power
+			module_light_surface_jet_turbine_power
+		}
+		path = {
+			leads_to_tech = tech_power_systems_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1995
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_power_systems_2 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power2
+			module_light_surface_jet_turbine_power2
+		}
+		path = {
+			leads_to_tech = tech_power_systems_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2015		## checked
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2040
+	tech_power_systems_3 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power3
+			module_light_surface_jet_turbine_power3
+		}
+		research_cost = 1
+		start_year = 2040
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_power_systems_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2055
+	tech_power_systems_4 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power4
+			module_light_surface_jet_turbine_power4
+		}
+		research_cost = 1
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_power_systems_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2054.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2070
+	tech_power_systems_5 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power5
+			module_light_surface_jet_turbine_power5
+		}
+		research_cost = 1
+		start_year = 2070
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_power_systems_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2069.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2085
+	tech_power_systems_6 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power6
+			module_light_surface_jet_turbine_power6
+		}
+		research_cost = 1
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_power_systems_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2084.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2100
+	tech_power_systems_7 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power7
+			module_light_surface_jet_turbine_power7
+		}
+		research_cost = 1
+		start_year = 2100
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_power_systems_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2099.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2115
+	tech_power_systems_8 = {
+		enable_equipment_modules = {
+			module_surface_jet_turbine_power8
+			module_light_surface_jet_turbine_power8
+		}
+		research_cost = 1
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row10
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2114.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_nuclear_power_systems = {
+		enable_equipment_modules = {
+			module_surface_early_reactor_power
+			module_sub_early_reactor_power
+		}
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1965		#CHECKED
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	tech_nuclear_power_systems_1 = {
+		enable_equipment_modules = {
+			module_surface_adv_reactor_power
+			module_sub_adv_reactor_power
+		}
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1990
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	tech_nuclear_power_systems_2 = {
+		enable_equipment_modules = {
+			module_surface_mod_reactor_power
+			module_sub_mod_reactor_power
+			module_light_surface_early_reactor_power
+		}
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2040
+	tech_nuclear_power_systems_3 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power
+			module_sub_fut_reactor_power
+			module_light_surface_mod_reactor_power
+		}
+		research_cost = 1.25
+		start_year = 2040
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2055
+	tech_nuclear_power_systems_4 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power2
+			module_sub_fut_reactor_power2
+			module_light_surface_fut_reactor_power
+		}
+		research_cost = 1.25
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2070
+	tech_nuclear_power_systems_5 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power3
+			module_sub_fut_reactor_power3
+			module_light_surface_fut_reactor_power2
+		}
+		research_cost = 1.25
+		start_year = 2070
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2085
+	tech_nuclear_power_systems_6 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power4
+			module_sub_fut_reactor_power4
+			module_light_surface_fut_reactor_power3
+		}
+		research_cost = 1.25
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2100
+	tech_nuclear_power_systems_7 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power5
+			module_sub_fut_reactor_power5
+			module_light_surface_fut_reactor_power4
+		}
+		research_cost = 1.25
+		start_year = 2100
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_nuclear_power_systems_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	#2115
+	tech_nuclear_power_systems_8 = {
+		enable_equipment_modules = {
+			module_surface_fut_reactor_power6
+			module_sub_fut_reactor_power6
+			module_light_surface_fut_reactor_power5
+		}
+		research_cost = 1.25
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row105
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+			Cat_NAVAL_reactors
+		}
+	}
+	tech_combat_support_systems = {
+		enable_equipment_modules = {
+			module_radar_1
+			module_sonar_1
+			spaa_radar_gen1
+			spaa_off_vehicle_radar_gen1
+		}
+		path = {
+			leads_to_tech = tech_combat_radar
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_combat_sonar
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_fire_control
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row12
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_fire_control = {
+		enable_equipment_modules = {
+			module_analog_fire_control
+		}
+		path = {
+			leads_to_tech = tech_fire_control_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_fire_control_1 = {
+		enable_equipment_modules = {
+			module_digital_integrated_fire_control
+		}
+		path = {
+			leads_to_tech = tech_fire_control_2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			computing2 = 1
+		}
+		research_cost = 1
+		start_year = 1990
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_fire_control_2 = {
+		enable_equipment_modules = {
+			module_advanced_integrated_missile_radar_control
+		}
+		path = {
+			leads_to_tech = tech_fire_control_3
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			computing3 = 1
+		}
+		research_cost = 1
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2040
+	tech_fire_control_3 = {
+		enable_equipment_modules = {
+			module_futuristic_integrated_missile_radar_control
+		}
+		dependencies = {
+			computing4 = 1
+		}
+		research_cost = 1
+		start_year = 2040
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_fire_control_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2040
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2055
+	tech_fire_control_4 = {
+		enable_equipment_modules = {
+			module_future_fire_control1
+		}
+		dependencies = {
+			future_computing1 = 1
+		}
+		research_cost = 1
+		start_year = 2055
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_fire_control_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2055
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2070
+	tech_fire_control_5 = {
+		enable_equipment_modules = {
+			module_future_fire_control2
+		}
+		dependencies = {
+			future_computing2 = 1
+		}
+		research_cost = 1
+		start_year = 2070
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_fire_control_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2070
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2085
+	tech_fire_control_6 = {
+		enable_equipment_modules = {
+			module_future_fire_control3
+		}
+		dependencies = {
+			future_computing3 = 1
+		}
+		research_cost = 1
+		start_year = 2085
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_fire_control_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2085
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2100
+	tech_fire_control_7 = {
+		enable_equipment_modules = {
+			module_future_fire_control4
+		}
+		dependencies = {
+			future_computing4 = 1
+		}
+		research_cost = 1
+		start_year = 2100
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_fire_control_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2115
+	tech_fire_control_8 = {
+		enable_equipment_modules = {
+			module_future_fire_control5
+		}
+		dependencies = {
+			future_computing5 = 1
+		}
+		research_cost = 1
+		start_year = 2115
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row11
+				y = @2115
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_radar = {
+		enable_equipment_modules = {
+			module_radar_2
+			spaa_radar_gen2
+			spaa_off_vehicle_radar_gen2
+		}
+		path = {
+			leads_to_tech = tech_combat_radar_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1980
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_radar_1 = {
+		enable_equipment_modules = {
+			module_radar_3
+			module_esm_1
+			module_sub_esm_1
+		}
+		path = {
+			leads_to_tech = tech_combat_radar_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1995
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_radar_2 = {
+		enable_equipment_modules = {
+			module_radar_4
+			spaa_radar_gen3
+			spaa_off_vehicle_radar_gen3
+		}
+		path = {
+			leads_to_tech = tech_combat_radar_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2005
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_radar_3 = {
+		enable_equipment_modules = {
+			module_radar_5
+			module_esm_2
+			module_sub_esm_2
+			spaa_radar_gen4
+			spaa_off_vehicle_radar_gen4
+		}
+		path = {
+			leads_to_tech = tech_combat_radar_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2020
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2020
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_radar_4 = {
+		enable_equipment_modules = {
+			module_radar_6
+			spaa_radar_gen5
+			spaa_off_vehicle_radar_gen5
+		}
+		path = {
+			leads_to_tech = tech_combat_radar_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_combat_radar_5 = {
+		enable_equipment_modules = {
+			module_radar_7
+			module_esm_3
+			module_sub_esm_3
+			spaa_radar_gen6
+			spaa_off_vehicle_radar_gen6
+		}
+		research_cost = 1
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_radar_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_combat_radar_6 = {
+		enable_equipment_modules = {
+			module_radar_8
+			module_esm_4
+			module_sub_esm_4
+			spaa_radar_gen7
+			spaa_off_vehicle_radar_gen7
+		}
+		research_cost = 1
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_radar_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_combat_radar_7 = {
+		enable_equipment_modules = {
+			module_radar_9
+			module_esm_5
+			module_sub_esm_5
+			spaa_radar_gen8
+			spaa_off_vehicle_radar_gen8
+		}
+		research_cost = 1
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_radar_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_combat_radar_8 = {
+		enable_equipment_modules = {
+			module_radar_10
+			module_esm_6
+			module_sub_esm_6
+			spaa_radar_gen9
+			spaa_off_vehicle_radar_gen9
+		}
+		research_cost = 1
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_radar_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_combat_radar_9 = {
+		enable_equipment_modules = {
+			module_radar_11
+			module_esm_7
+			module_sub_esm_7
+			spaa_radar_gen10
+			spaa_off_vehicle_radar_gen10
+		}
+		research_cost = 1
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_radar_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row115
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_sonar = {
+		enable_equipment_modules = {
+			module_sonar_2
+		}
+		path = {
+			leads_to_tech = tech_combat_sonar_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1980
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @1980
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_sonar_1 = {
+		enable_equipment_modules = {
+			module_sonar_3
+		}
+		naval_mines_damage_factor = 0.1		#BOOM
+		path = {
+			leads_to_tech = tech_combat_sonar_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1995
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @1995
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_sonar_2 = {
+		enable_equipment_modules = {
+			module_sonar_4
+		}
+		path = {
+			leads_to_tech = tech_combat_sonar_3
+			research_cost_coeff = 1
+		}
+		naval_mines_damage_factor = 0.1		#BOOM
+		research_cost = 1
+		start_year = 2005
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_sonar_3 = {
+		enable_equipment_modules = {
+			module_sonar_5
+		}
+		path = {
+			leads_to_tech = tech_combat_sonar_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2020
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2020
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_combat_sonar_4 = {
+		enable_equipment_modules = {
+			module_sonar_6
+		}
+		path = {
+			leads_to_tech = tech_combat_sonar_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_combat_sonar_5 = {
+		enable_equipment_modules = {
+			module_sonar_7
+		}
+		research_cost = 1
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_sonar_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_combat_sonar_6 = {
+		enable_equipment_modules = {
+			module_sonar_8
+		}
+		research_cost = 1
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_sonar_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_combat_sonar_7 = {
+		enable_equipment_modules = {
+			module_sonar_9
+		}
+		research_cost = 1
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_sonar_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_combat_sonar_8 = {
+		enable_equipment_modules = {
+			module_sonar_10
+		}
+		research_cost = 1
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_sonar_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_combat_sonar_9 = {
+		enable_equipment_modules = {
+			module_sonar_11
+		}
+		research_cost = 1
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_combat_sonar_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row125
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_early_naval_weapon_systems = {
+		enable_equipment_modules = {
+			module_76mm_battery
+			module_100mm_battery
+			module_127mm_battery
+			module_152mm_battery
+			spaa_naval_cannon_1
+		}
+		on_research_complete_limit = {
+			ROOT = {
+				num_of_naval_factories > 0
+			}
+		}
+		path = {
+			leads_to_tech = tech_naval_weapon_systems
+			research_cost_coeff = 1
+		}
+		research_cost = 0.5
+		start_year = 1945
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @1945
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_naval_weapon_systems = {
+		enable_equipment_modules = {
+			module_anti_submarine_mortar
+		}
+		enable_equipment_modules = {
+			module_minelaying
+			module_mineclearing
+		}
+		path = {
+			leads_to_tech = tech_light_guns
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_127mm_guns
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_torpedoes
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_missile_systems
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_light_guns = {
+		enable_equipment_modules = {
+			module_76mm_gun_1
+			spaa_naval_cannon_2
+		}
+		path = {
+			leads_to_tech = tech_light_guns_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_light_guns_1 = {
+		enable_equipment_modules = {
+			module_76mm_gun_2
+			spaa_naval_cannon_3
+		}
+		path = {
+			leads_to_tech = tech_light_guns_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_rail_guns
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_light_guns_2 = {
+		enable_equipment_modules = {
+			module_76mm_gun_3
+			spaa_naval_cannon_4
+		}
+		path = {
+			leads_to_tech = tech_light_guns_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2025
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_light_guns_3 = {
+		enable_equipment_modules = {
+			module_76mm_gun_4
+			spaa_naval_cannon_5
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_light_guns_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_light_guns_4 = {
+		enable_equipment_modules = {
+			module_76mm_gun_5
+			spaa_naval_cannon_6
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_light_guns_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_light_guns_5 = {
+		enable_equipment_modules = {
+			module_76mm_gun_6
+			spaa_naval_cannon_7
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_light_guns_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_light_guns_6 = {
+		enable_equipment_modules = {
+			module_76mm_gun_7
+			spaa_naval_cannon_8
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_light_guns_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_light_guns_7 = {
+		enable_equipment_modules = {
+			module_76mm_gun_8
+			spaa_naval_cannon_9
+		}
+		research_cost = 1.25
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_light_guns_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row135
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_rail_guns = {
+		enable_equipment_modules = {
+			module_railgun_1
+		}
+		path = {
+			leads_to_tech = tech_rail_guns_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_rail_guns_1 = {
+		enable_equipment_modules = {
+			module_railgun_2
+		}
+		path = {
+			leads_to_tech = tech_rail_guns_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2025
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_rail_guns_2 = {
+		enable_equipment_modules = {
+			module_railgun_3
+		}
+		path = {
+			leads_to_tech = tech_rail_guns_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_rail_guns_3 = {
+		enable_equipment_modules = {
+			module_railgun_4
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_rail_guns_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_rail_guns_4 = {
+		enable_equipment_modules = {
+			module_railgun_5
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_rail_guns_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_rail_guns_5 = {
+		enable_equipment_modules = {
+			module_railgun_6
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_rail_guns_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_rail_guns_6 = {
+		enable_equipment_modules = {
+			module_railgun_7
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_rail_guns_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_rail_guns_7 = {
+		enable_equipment_modules = {
+			module_railgun_8
+		}
+		research_cost = 1.25
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_rail_guns_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row14
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_127mm_guns = {
+		enable_equipment_modules = {
+			module_127mm_guns_1
+		}
+		path = {
+			leads_to_tech = tech_127mm_guns_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_127mm_guns_1 = {
+		enable_equipment_modules = {
+			module_127mm_guns_2
+		}
+		path = {
+			leads_to_tech = tech_127mm_guns_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_rail_guns
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_127mm_guns_2 = {
+		enable_equipment_modules = {
+			module_127mm_guns_3
+		}
+		path = {
+			leads_to_tech = tech_127mm_guns_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2025
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_127mm_guns_3 = {
+		enable_equipment_modules = {
+			module_127mm_guns_4
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_132mm_guns_1
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_132mm_guns_1 = {
+		enable_equipment_modules = {
+			module_132mm_guns_1
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_132mm_guns_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_132mm_guns_2 = {
+		enable_equipment_modules = {
+			module_132mm_guns_2
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_145mm_guns_1
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_145mm_guns_1 = {
+		enable_equipment_modules = {
+			module_145mm_guns_1
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_145mm_guns_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_145mm_guns_2 = {
+		enable_equipment_modules = {
+			module_145mm_guns_2
+		}
+		research_cost = 1.25
+		start_year = 2105
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row145
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system = {
+		enable_equipment_modules = {
+			module_chain_gun
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1970
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @1970
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system_1 = {
+		enable_equipment_modules = {
+			module_ciws_1
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system_2 = {
+		enable_equipment_modules = {
+			module_ciws_2
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1990
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system_3 = {
+		enable_equipment_modules = {
+			module_ciws_3
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2005
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2005
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system_4 = {
+		enable_equipment_modules = {
+			module_ciws_4
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2020
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2020
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_point_defense_system_5 = {
+		enable_equipment_modules = {
+			module_ciws_5
+		}
+		path = {
+			leads_to_tech = tech_point_defense_system_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_point_defense_system_6 = {
+		enable_equipment_modules = {
+			module_ciws_6
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_point_defense_system_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_point_defense_system_7 = {
+		enable_equipment_modules = {
+			module_ciws_7
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_point_defense_system_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_point_defense_system_8 = {
+		enable_equipment_modules = {
+			module_ciws_8
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_point_defense_system_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_point_defense_system_9 = {
+		enable_equipment_modules = {
+			module_ciws_9
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_point_defense_system_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_point_defense_system_10 = {
+		enable_equipment_modules = {
+			module_ciws_10
+		}
+		research_cost = 1.25
+		start_year = 2105
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row155
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_missile_systems = {
+		path = {
+			leads_to_tech = tech_turret_missiles_aa
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_vls_surface
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_vls_aa
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1970
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row18
+				y = @1970
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_surface = {
+		enable_equipment_modules = {
+			module_asm_1
+			module_anti_submarine_missile_1
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_surface_1 = {
+		enable_equipment_modules = {
+			module_asm_2
+			module_anti_submarine_missile_2
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_surface_2 = {
+		enable_equipment_modules = {
+			module_asm_3
+			module_anti_submarine_missile_3
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_surface_3 = {
+		enable_equipment_modules = {
+			module_asm_4
+			module_anti_submarine_missile_4
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_surface_4 = {
+		enable_equipment_modules = {
+			module_asm_5
+			module_anti_submarine_missile_5
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2030
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2030
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_turret_missiles_surface_5 = {
+		enable_equipment_modules = {
+			module_asm_6
+			module_anti_submarine_missile_6
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_turret_missiles_surface_6 = {
+		enable_equipment_modules = {
+			module_asm_7
+			module_anti_submarine_missile_7
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_turret_missiles_surface_7 = {
+		enable_equipment_modules = {
+			module_asm_8
+			module_anti_submarine_missile_8
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_turret_missiles_surface_8 = {
+		enable_equipment_modules = {
+			module_asm_9
+			module_anti_submarine_missile_9
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_surface_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_turret_missiles_surface_9 = {
+		enable_equipment_modules = {
+			module_asm_10
+			module_anti_submarine_missile_10
+		}
+		research_cost = 1.25
+		start_year = 2105
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row165
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_aa = {
+		enable_equipment_modules = {
+			module_aa_missiles_1
+			module_ram_1
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_aa_1 = {
+		enable_equipment_modules = {
+			module_aa_missiles_2
+			module_ram_2
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_aa_2 = {
+		enable_equipment_modules = {
+			module_aa_missiles_3
+			module_ram_3
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_aa_3 = {
+		enable_equipment_modules = {
+			module_aa_missiles_4
+			module_ram_4
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_turret_missiles_aa_4 = {
+		enable_equipment_modules = {
+			module_aa_missiles_5
+			module_ram_5
+		}
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2030
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2030
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_turret_missiles_aa_5 = {
+		enable_equipment_modules = {
+			module_aa_missiles_6
+			module_ram_6
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_turret_missiles_aa_6 = {
+		enable_equipment_modules = {
+			module_aa_missiles_7
+			module_ram_7
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_turret_missiles_aa_7 = {
+		enable_equipment_modules = {
+			module_aa_missiles_8
+			module_ram_8
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_turret_missiles_aa_8 = {
+		enable_equipment_modules = {
+			module_aa_missiles_9
+			module_ram_9
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_turret_missiles_aa_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_turret_missiles_aa_9 = {
+		enable_equipment_modules = {
+			module_aa_missiles_10
+			module_ram_10
+		}
+		research_cost = 1.25
+		start_year = 2105
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row175
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_surface = {
+		enable_equipment_modules = {
+			module_vls_lam_1
+			module_vls_sub_lam_1
+			module_vls_asm_1
+			module_vls_sub_asm_1
+		}
+		path = {
+			leads_to_tech = tech_vls_surface_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_surface_1 = {
+		enable_equipment_modules = {
+			module_vls_asm_2
+			module_vls_sub_asm_2
+		}
+		path = {
+			leads_to_tech = tech_vls_surface_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_surface_2 = {
+		enable_equipment_modules = {
+			module_vls_asm_3
+			module_vls_lam_2
+			module_vls_sub_asm_3
+			module_vls_sub_lam_2
+		}
+		path = {
+			leads_to_tech = tech_vls_surface_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_surface_3 = {
+		enable_equipment_modules = {
+			module_vls_asm_4
+			module_vls_lam_3
+			module_vls_sub_asm_4
+			module_vls_sub_lam_3
+		}
+		path = {
+			leads_to_tech = tech_vls_surface_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_surface_4 = {
+		enable_equipment_modules = {
+			module_vls_asm_5
+			module_vls_lam_4
+			module_vls_sub_asm_5
+			module_vls_sub_lam_4
+		}
+		path = {
+			leads_to_tech = tech_vls_surface_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2030
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2030
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_vls_surface_5 = {
+		enable_equipment_modules = {
+			module_vls_asm_6
+			module_vls_lam_5
+			module_vls_sub_asm_6
+			module_vls_sub_lam_5
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_surface_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_vls_surface_6 = {
+		enable_equipment_modules = {
+			module_vls_asm_7
+			module_vls_lam_6
+			module_vls_sub_asm_7
+			module_vls_sub_lam_6
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_surface_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_vls_surface_7 = {
+		enable_equipment_modules = {
+			module_vls_asm_8
+			module_vls_lam_7
+			module_vls_sub_asm_8
+			module_vls_sub_lam_7
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_surface_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_vls_surface_8 = {
+		enable_equipment_modules = {
+			module_vls_asm_9
+			module_vls_lam_8
+			module_vls_sub_asm_9
+			module_vls_sub_lam_8
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_surface_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_vls_surface_9 = {
+		enable_equipment_modules = {
+			module_vls_asm_10
+			module_vls_lam_9
+			module_vls_sub_asm_10
+			module_vls_sub_lam_9
+		}
+		research_cost = 1.25
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_surface_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row185
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_aa = {
+		enable_equipment_modules = {
+			module_vls_sam_1
+		}
+		path = {
+			leads_to_tech = tech_vls_aa_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_aa_1 = {
+		enable_equipment_modules = {
+			module_vls_sam_2
+		}
+		path = {
+			leads_to_tech = tech_vls_aa_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_aa_2 = {
+		enable_equipment_modules = {
+			module_vls_sam_3
+		}
+		path = {
+			leads_to_tech = tech_vls_aa_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_aa_3 = {
+		enable_equipment_modules = {
+			module_vls_sam_4
+		}
+		path = {
+			leads_to_tech = tech_vls_aa_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_vls_aa_4 = {
+		enable_equipment_modules = {
+			module_vls_sam_5
+		}
+		path = {
+			leads_to_tech = tech_vls_aa_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2030
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2030
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_vls_aa_5 = {
+		enable_equipment_modules = {
+			module_vls_sam_6
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_aa_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_vls_aa_6 = {
+		enable_equipment_modules = {
+			module_vls_sam_7
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_aa_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_vls_aa_7 = {
+		enable_equipment_modules = {
+			module_vls_sam_8
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_aa_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_vls_aa_8 = {
+		enable_equipment_modules = {
+			module_vls_sam_9
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_aa_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_vls_aa_9 = {
+		enable_equipment_modules = {
+			module_vls_sam_10
+		}
+		research_cost = 1.25
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_vls_aa_10
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row195
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_torpedoes = {
+		enable_equipment_modules = {
+			module_torpedoes_1
+			module_anti_ship_torpedoes_1
+		}
+		path = {
+			leads_to_tech = tech_torpedoes_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1975
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @1975
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_torpedoes_1 = {
+		enable_equipment_modules = {
+			module_torpedoes_2
+			module_anti_ship_torpedoes_2
+		}
+		path = {
+			leads_to_tech = tech_torpedoes_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1990
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_torpedoes_2 = {
+		enable_equipment_modules = {
+			module_torpedoes_3
+			module_anti_ship_torpedoes_3
+		}
+		path = {
+			leads_to_tech = tech_torpedoes_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2010
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2010
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_torpedoes_3 = {
+		enable_equipment_modules = {
+			module_torpedoes_4
+			module_anti_ship_torpedoes_4
+		}
+		path = {
+			leads_to_tech = tech_torpedoes_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2020
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2020
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_torpedoes_4 = {
+		enable_equipment_modules = {
+			module_torpedoes_5
+			module_anti_ship_torpedoes_5
+		}
+		path = {
+			leads_to_tech = tech_torpedoes_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_torpedoes_5 = {
+		enable_equipment_modules = {
+			module_torpedoes_6
+			module_anti_ship_torpedoes_6
+		}
+		research_cost = 1.25
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_torpedoes_6
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_torpedoes_6 = {
+		enable_equipment_modules = {
+			module_torpedoes_7
+			module_anti_ship_torpedoes_7
+		}
+		research_cost = 1.25
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_torpedoes_7
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_torpedoes_7 = {
+		enable_equipment_modules = {
+			module_torpedoes_8
+			module_anti_ship_torpedoes_8
+		}
+		research_cost = 1.25
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_torpedoes_8
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_torpedoes_8 = {
+		enable_equipment_modules = {
+			module_torpedoes_9
+			module_anti_ship_torpedoes_9
+		}
+		research_cost = 1.25
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_torpedoes_9
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_torpedoes_9 = {
+		enable_equipment_modules = {
+			module_torpedoes_10
+			module_anti_ship_torpedoes_10
+		}
+		research_cost = 1.25
+		start_year = 2105
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row21
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	# Landing Craft
+	tech_mtg_landing_craft = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_landing_craft"
+		}
+		transport_capacity = -0.2
+		naval_invasion_capacity = 4
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		path = {
+			leads_to_tech = tech_mtg_amphibious_assault_ship
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1965
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @1965
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_amphibious_assault_ship = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_amphibious_assault_ship"
+		}
+		invasion_preparation = -0.25
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		naval_invasion_capacity = 3
+		path = {
+			leads_to_tech = tech_mtg_air_cushioned_landing_craft
+			research_cost_coeff = 1
+		}
+		research_cost = 1.4
+		start_year = 1985
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @1985
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_air_cushioned_landing_craft = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_air_cushioned_landing_craft"
+		}
+		transport_capacity = -0.25
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		path = {
+			leads_to_tech = tech_mtg_modern_landing_craft
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1990
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @1990
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_modern_landing_craft = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_modern_landing_craft"
+		}
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		path = {
+			leads_to_tech = tech_mtg_specialized_protective_equipment
+			research_cost_coeff = 1
+		}
+		research_cost = 1.7
+		start_year = 2000
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2000
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_specialized_protective_equipment = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_specialized_protective_equipment"
+		}
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = tech_mtg_advanced_landing_craft
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 2015
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2015
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_advanced_landing_craft = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_advanced_landing_craft"
+		}
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		path = {
+			leads_to_tech = tech_mtg_landing_craft_ai_systems
+			research_cost_coeff = 1
+		}
+		research_cost = 2.2
+		start_year = 2025
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2025
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	tech_mtg_landing_craft_ai_systems = {
+		on_research_complete = {
+			log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_landing_craft_ai_systems"
+		}
+		invasion_preparation = -0.25
+		transport_capacity = -0.5
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		path = {
+			leads_to_tech = tech_mtg_smart_landing_craft
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			machine_learning = 1
+		}
+		research_cost = 2.4
+		start_year = 2035
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2035
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2045
+	tech_mtg_smart_landing_craft = {
+		invasion_preparation = -0.25
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		research_cost = 3
+		start_year = 2045
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_mtg_future_landing_craft_1
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2045
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2060
+	tech_mtg_future_landing_craft_1 = {
+		invasion_preparation = -0.25
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		research_cost = 3
+		start_year = 2060
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_mtg_future_landing_craft_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2060
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2059.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2075
+	tech_mtg_future_landing_craft_2 = {
+		invasion_preparation = -0.25
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		research_cost = 3
+		start_year = 2075
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_mtg_future_landing_craft_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2074.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2090
+	tech_mtg_future_landing_craft_3 = {
+		invasion_preparation = -0.25
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		research_cost = 3
+		start_year = 2090
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		path = {
+			leads_to_tech = tech_mtg_future_landing_craft_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2090
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2089.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+	#2105
+	tech_mtg_future_landing_craft_4 = {
+		invasion_preparation = -0.25
+		naval_invasion_capacity = 3
+		amphibious_invasion = 0.05
+		amphibious_invasion_defence = 0.05
+		research_cost = 3
+		start_year = 2105
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1
+		folder = {
+			name = mtgnavalfolder
+			position = {
+				x = @row22
+				y = @2105
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2104.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+		}
+		categories = {
+			Cat_NAVAL_MISC
+		}
+	}
+}
