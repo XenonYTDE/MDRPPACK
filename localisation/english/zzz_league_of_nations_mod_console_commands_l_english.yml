@@ -1,9 +1,0 @@
-﻿l_english:
- # Console Commands:
- d_set_lon_button_position_DESC: "Sets the position of the button to open the §YLeague of Nations§! window. The default position \nis §YX: 0§!, §YY: 0§!. Use negative values to move it up or to the left. \n§YUsage: set_lon_button_position <x value> <y value>§!"
-
- d_print_lon_election_targets_DESC: "Prints the list of targets for election to the League of Nations leader with their respective score. \nRight click a country to select it as the target. \n§YUsage: print_lon_election_targets§!"
- D_PRINT_LON_ELECTION_TARGETS_TT: "Election Targets of §Y[This.GetName]§!:"
- D_PRINT_LON_ELECTION_TARGETS_TT_2: " - [?v.GetName] (§Y[?sorted_countries_scores^i]§!)"
-
- d_add_lon_threat_DESC: "Adds the specified amount of aggressiveness to the selected country. \nRight click a country to select it as the target. \n§YUsage: add_lon_threat <value>§! If not specified, the value used is 10%."
