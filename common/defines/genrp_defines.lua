@@ -23,7 +23,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for rem
 
 
 -- MP Optimisation
-NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.1, 0.0 } -- Keep as is for better performance.
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.3, 0.2, 0.15 }
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 	NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 10
 	NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200
