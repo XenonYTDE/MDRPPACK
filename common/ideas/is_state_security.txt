@@ -27,15 +27,6 @@ ideas = {
                 airforce_intel_to_others = 5
             }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    has_government = democratic
-                    add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -60,11 +51,6 @@ ideas = {
                 navy_intel_to_others = 3
                 airforce_intel_to_others = 3
             }
-
-            ai_will_do = {
-                base = 20
-            }
-
             cancel_if_invalid = yes
 
         }
@@ -80,18 +66,6 @@ ideas = {
 
             modifier = {
 
-            }
-
-            ai_will_do = {
-                base = 40
-
-                modifier = {
-                    has_government = neutrality
-                    NOT = {
-                        has_country_leader_ideology = anarchism
-                    }
-                    add = 40
-                }
             }
 
             cancel_if_invalid = yes
@@ -119,32 +93,6 @@ ideas = {
                 intelligence_agency_defense = 0.30
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_country_leader_ideology = stalinism
-                    add = 60
-                }
-
-                modifier = {
-                    has_country_leader_ideology = nazism
-                    add = 60
-                }
-
-                modifier = {
-                    OR = {
-                        tag = GER 
-                        tag = SOV 
-                    }
-
-                    NOT = {
-                        has_government = democratic
-                    }
-                    add = 20
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -170,20 +118,6 @@ ideas = {
                 army_intel_to_others = -1
                 navy_intel_to_others = -1
                 airforce_intel_to_others = -1
-            }
-
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    has_idea = military_head
-                    add = 50
-                }
-
-                modifier = {
-                    has_government = fascism
-                    add = 30
-                }
             }
             
             cancel_if_invalid = yes

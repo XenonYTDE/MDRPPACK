@@ -22,20 +22,6 @@
                 stability_factor = -0.10
             }
 
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_government = nationalist
-                    add = 20
-                }
-
-                modifier = {
-                    has_idea = racial_hierarchy
-                    add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -56,17 +42,6 @@
                 industry_free_repair_factor = 0.40
             }
             
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    has_government = communism
-                    tag = SOV 
-                    add = 70
-                }
-
-            }
-            
             cancel_if_invalid = yes
         }
 
@@ -81,10 +56,6 @@
             modifier = {
                 political_power_factor = 0.05
                 stability_factor = 0.05
-            }
-
-            ai_will_do = {
-                base = 40
             }
 
             cancel_if_invalid = yes
@@ -106,31 +77,6 @@
                 political_power_factor = 0.10
                 research_speed_factor = 0.10
             }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = democratic
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = welfare_capitalism 
-                    add = 40
-                }
-                
-                modifier = {
-                    has_idea = workers_council
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = communal_council
-                    add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
     }
