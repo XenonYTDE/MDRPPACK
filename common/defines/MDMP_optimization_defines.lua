@@ -21,8 +21,11 @@ NDefines.NTrade.DISTANCE_TRADE_FACTOR = -0.02               -- Keep as is.
 NDefines.NTrade.PARTY_SUPPORT_TRADE_FACTOR = 50             -- Keep as is.
 
 -- QOL
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000              -- Increase lag days for lower speed to reduce desync.
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60                      -- Increase lag days for pause to reduce desync.
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 3                    -- Reduce combat log months to reduce save file size.
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 5                     -- Reduce message timeout days to clear messages faster.
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.1, 0.0 } -- Keep as is for better performance.
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3    -- Keep as is.
 -- NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 20            -- Keep commented out.
 -- Defines.NGame.MAX_EFFECT_ITERATION = 100                 -- Keep commented out.
@@ -58,3 +61,4 @@ NDefines.NSupply.SUPPLY_CACHE_CONSUMPTION = 0.1             -- Reduce supply cac
 NDefines.NMarket.INTERNATIONAL_MARKET_BASE_FACTOR = 0.5     -- Reduce international market base factor.
 NDefines.NMarket.INTERNATIONAL_MARKET_TRADE_FACTOR = 0.5    -- Reduce international market trade factor.
 NDefines.NMarket.INTERNATIONAL_MARKET_RESOURCE_FACTOR = 0.5 -- Reduce international market resource factor.
+
