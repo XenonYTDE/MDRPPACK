@@ -680,6 +680,7 @@ technologies = {
 	}
 	titan_defense_1 = {
 		start_year = 2035
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_1
 			titan_multipedal_configuration_1
@@ -713,6 +714,7 @@ technologies = {
 	}
 	titan_defense_2 = {
 		start_year = 2060
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_2
 			titan_multipedal_configuration_2
@@ -746,6 +748,7 @@ technologies = {
 	}
 	titan_defense_3 = {
 		start_year = 2085
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_3
 			titan_multipedal_configuration_3
@@ -779,6 +782,7 @@ technologies = {
 	}
 	titan_defense_4 = {
 		start_year = 2110
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_4
 			titan_multipedal_configuration_4
@@ -812,6 +816,7 @@ technologies = {
 	}
 	titan_defense_5 = {
 		start_year = 2135
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_5
 			titan_multipedal_configuration_5
@@ -845,6 +850,7 @@ technologies = {
 	}
 	titan_defense_6 = {
 		start_year = 2160
+		research_cost = 1.5
 		enable_equipment_modules = {
 			titan_bipedal_configuration_6
 			titan_multipedal_configuration_6
