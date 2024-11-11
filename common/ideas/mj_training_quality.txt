@@ -7,7 +7,7 @@ ideas = {
         advanced_training = {
 
             available = {
-
+                
             }
 
             level = 3
@@ -48,7 +48,6 @@ ideas = {
         extensive_training = {
             
             available = {
-
             }
 
             level = 2
