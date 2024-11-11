@@ -32,6 +32,11 @@ NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0.05           -- Reduce country sc
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0.05              -- Reduce army score multiplier.
 NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0.05              -- Reduce navy score multiplier.
 
+-- Visibility of enemy divisions
+NDefines.NMilitary.DIVISION_VISIBILITY = 100.0              -- Ensure divisions are visible.
+NDefines.NMilitary.DIVISION_DETECTION_CHANCE = 100.0        -- Ensure divisions are detected.
+NDefines.NMilitary.DIVISION_DETECTION_RADIUS = 1000.0       -- Increase detection radius.
+
 -- Additional Optimizations
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 0.1                -- Reduce base army experience gain.
 NDefines.NMilitary.ARMY_EXP_GAIN = 0.05                     -- Reduce army experience gain.
