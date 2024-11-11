@@ -19,15 +19,6 @@ ideas = {
                 special_forces_cap = 0.20
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    
-                }
-                
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -48,15 +39,6 @@ ideas = {
                 special_forces_training_time_factor = 0.10
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    tag = GER 
-                    add = 40
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -73,16 +55,6 @@ ideas = {
                 special_forces_no_supply_grace = 180
                 special_forces_training_time_factor = 0.20
                 send_volunteer_size = 1
-            }
-
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    num_faction_members > 10
-                    is_faction_leader = yes
-                    add = 30
-                }
             }
 
             cancel_if_invalid = yes

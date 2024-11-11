@@ -25,24 +25,6 @@ ideas = {
                 base_migration_rate_value = 0.30
             }
 
-            ai_will_do = { 
-                base = 10
-                
-                modifier = {
-                    has_government = democratic
-                    add = 30
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 70
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -64,22 +46,6 @@ ideas = {
                 base_migration_rate_value = 0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    OR = {
-                        has_government = democratic
-                        has_government = communism
-                    }
-                    add = 40
-                } 
-                
-                modifier = {
-                    factor = 3
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -94,24 +60,6 @@ ideas = {
                 non_core_manpower = 0.05
                 stability_factor = 0.025
                 #resistance_damage_to_garrison #= #-0.15
-            }
-
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    has_government = neutrality
-                    add = 70
-                }
-
-                modifier = {
-                    has_government = democratic
-                    add = 20
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
@@ -134,31 +82,6 @@ ideas = {
                 base_migration_rate_value = -0.25
             }
 
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    has_government = neutrality
-                    add = 30
-                }
-
-                modifier = {
-                    has_government = fascism
-                    add = 60
-                }
-
-                modifier = {
-                    has_government = democratic
-                    original_tag = ENG
-                    add = 30
-                }
-
-                modifier = {
-                    factor = 3
-                }
-
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -176,31 +99,6 @@ ideas = {
                 stability_factor = -0.05
                 resistance_damage_to_garrison = 0.40
                 base_migration_rate_value = -0.75
-            }
-
-            ai_will_do = {
-                base = 1
-
-                modifier = {
-                    has_government = nationalist
-                    add = 80
-                }
-
-                modifier = {
-                  has_government = nationalist
-                  original_tag = GER
-                  add = 100
-                }
-
-                modifier = {
-                    has_government = fascism
-                    original_tag = JAP
-                    add = 100
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
