@@ -153,23 +153,6 @@ ideas = {
                 min_export = 0.10
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = neutrality
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = nationalist
-                    add = 20
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
 
             cancel_if_invalid = yes
         }
@@ -194,24 +177,6 @@ ideas = {
                 consumer_goods_factor = 0.10
             }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    has_government = democratic
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 10
-                }
-
-                modifier = {
-                    factor = 3
-                }          
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -231,12 +196,6 @@ ideas = {
                 min_export = 0.05
             }
 
-            ai_will_do = {
-                base = 40
-                modifier = {
-                    factor = 3
-                }
-            }
 
             cancel_if_invalid = yes
         }
@@ -260,24 +219,6 @@ ideas = {
                 research_speed_factor = -0.025
                 industrial_capacity_factory = 0.05
                 min_export = -0.10
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = nationalist
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 10
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
@@ -306,24 +247,6 @@ ideas = {
                 min_export = -0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = nationalist
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 80
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
-            
             cancel_if_invalid = yes
         }
 
@@ -350,19 +273,6 @@ ideas = {
                 war_support_factor = -0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = communism
-                    add = 20
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -384,19 +294,6 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.10
                 research_speed_factor = 0.05
                 min_export = 0.05
-            }
-
-            ai_will_do = {
-                base = 20
-                
-                modifier = {
-                    has_government = communism
-                    add = 40
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes

@@ -35,21 +35,6 @@ ideas = {
 
             research_bonus = { industry = 0.15 }
 
-            ai_will_do = {
-
-                base = 20
-
-                modifier = {
-                    
-                    OR = {
-                        has_idea = laisezz_faire
-                        has_idea = rentier_state
-                    }
-
-                    add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -78,17 +63,6 @@ ideas = {
 
             research_bonus = { industry = 0.075 }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-
-                    has_idea = welfare_capitalism
-                    add = 20
-
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -107,15 +81,6 @@ ideas = {
             }
 
             research_bonus = { industry = -0.05 }
-
-            ai_will_do = { 
-                base = 40
-
-                modifier = {
-                    has_idea = syndicalist_markets
-                    add = 40
-                }
-            }
 
             cancel_if_invalid = yes
         }
@@ -156,28 +121,6 @@ ideas = {
 
            research_bonus = { industry = -0.075 }
 
-           ai_will_do = {
-            base = 30
-
-            modifier = {
-                
-                OR = {
-
-                    has_idea = mixed_market 
-                    has_idea = state_capitalism
-                }
-
-                add = 50
-            }
-
-            modifier = {
-                
-                has_idea = syndicalist_markets
-
-                add = 20
-            }
-          }
-
           cancel_if_invalid = yes
         }
 
@@ -217,21 +160,6 @@ ideas = {
             }
 
             research_bonus = { industry = -0.15 }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    
-                    OR = {
-
-                        has_idea = state_capitalism
-                        has_idea = planned_economy
-
-                    }
-                    add = 40
-                }
-            }
 
             cancel_if_invalid = yes
         }   
