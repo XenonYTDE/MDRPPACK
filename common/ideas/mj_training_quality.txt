@@ -7,9 +7,6 @@ ideas = {
         advanced_training = {
 
             available = {
-                NOT = {
-                    #has_idea = disarmed_nation
-                    amount_manpower_in_deployment_queue > 10000
                 }
             }
 
@@ -51,9 +48,6 @@ ideas = {
         extensive_training = {
             
             available = {
-                  NOT = {
-                    amount_manpower_in_deployment_queue > 10000
-                  }
             }
 
             level = 2
