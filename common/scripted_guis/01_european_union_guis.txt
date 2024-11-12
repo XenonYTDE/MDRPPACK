@@ -61,7 +61,7 @@ scripted_gui = {
 			}
 		}
 		# Test Interval
-		ai_test_interval = 168
+		ai_test_interval = 72
 		ai_max_weight_taken_per_test = 1
 
 		properties = {
@@ -4573,7 +4573,7 @@ scripted_gui = {
 				influence_on_all_other_EU_members_3_percent = yes
 			}
 		}
-		ai_test_interval = 168 # 7 Days
+		ai_test_interval = 72 # 7 Days
 		ai_max_weight_taken_per_test = 1
 
 		triggers = {
@@ -5067,7 +5067,7 @@ scripted_gui = {
 			check_variable = { global.current_active_agenda_disp = 0 }
 			NOT = { has_country_flag = delay_next_parliament_vote }
 		}
-		ai_test_interval = 168 # 7 Days
+		ai_test_interval = 72 # 7 Days
 		ai_max_weight_taken_per_test = 1
 
 		triggers = {
