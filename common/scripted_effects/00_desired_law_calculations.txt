@@ -256,9 +256,6 @@ recalculate_bureaucracy_desire = {
 	else_if = { limit = { has_idea = superpower }
 		add_to_temp_variable = { bureaucracy_law_desire = 12.0 } # Superpower wants bureau_04
 	}
-	else_if = { limit = { has_idea = global_hegemony }
-		add_to_temp_variable = { bureaucracy_law_desire = 12.0 } # Global Hegemony wants bureau_04
-	}
 	# Add modifier based upon completed focuses
 	if = { limit = { has_completed_focus = AFG_decentralization }
 		subtract_from_temp_variable = { bureaucracy_law_desire = 3.0 }
@@ -2827,10 +2824,6 @@ recalculate_defence_spending_desire = {
 	}
 	else_if = {
 		limit = { has_idea = superpower }
-		add_to_temp_variable = { defence_spending_desire = 12 }
-	}
-	else_if = {
-		limit = { has_idea = global_hegemony }
 		add_to_temp_variable = { defence_spending_desire = 12 }
 	}
 

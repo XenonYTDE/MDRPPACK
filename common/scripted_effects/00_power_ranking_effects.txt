@@ -283,7 +283,6 @@ get_percentage_of_global_factories = {
 # Determine what kind of power they are
 determine_power_ranking = {
 	remove_ideas = {
-		global_hegemony
 		superpower
 		great_power
 		large_power
@@ -294,9 +293,6 @@ determine_power_ranking = {
 	}
 	if = { limit = { check_variable = { percentage_of_global_factories < 0.002 } }
 		add_ideas = non_power
-	}
-	else_if = { limit = { check_variable = { percentage_of_global_factories > 0.30 } }
-		add_ideas = global_hegemony
 	}
 	else_if = { limit = { check_variable = { percentage_of_global_factories > 0.15 } }
 		add_ideas = superpower

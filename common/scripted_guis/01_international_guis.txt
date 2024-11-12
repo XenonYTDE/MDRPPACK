@@ -1245,7 +1245,6 @@ scripted_gui = {
 				if = {
 					limit = {
 						OR = {
-							has_idea = global_hegemony
 							has_idea = superpower
 							has_idea = great_power
 							has_idea = large_power
@@ -2568,10 +2567,7 @@ scripted_gui = {
 							modifier = {
 								add = 5
 								is_in_array = { global.PMC_buffs = v }
-								OR = { 
-									has_idea = superpower
-									has_idea = global_hegemony
-								}
+								has_idea = superpower
 							}
 							modifier = {
 								add = 5
@@ -2610,10 +2606,7 @@ scripted_gui = {
 							modifier = {
 								add = 0
 								is_in_array = { global.PMC_buffs = v }
-								OR = { 
-									has_idea = superpower
-									has_idea = global_hegemony
-								}
+								has_idea = superpower
 							}
 							modifier = {
 								add = 0
@@ -2652,10 +2645,7 @@ scripted_gui = {
 							modifier = {
 								add = 5
 								is_in_array = { global.PMC_buffs = v }
-								OR = { 
-									has_idea = superpower
-									has_idea = global_hegemony
-								}
+								has_idea = superpower
 							}
 							modifier = {
 								add = 5
@@ -3210,7 +3200,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3242,7 +3231,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3274,7 +3262,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3349,7 +3336,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3388,7 +3374,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3420,7 +3405,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3453,7 +3437,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3525,7 +3508,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3601,7 +3583,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3792,7 +3773,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3825,7 +3805,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -3909,7 +3888,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -4035,7 +4013,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -4093,7 +4070,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -4151,7 +4127,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {
@@ -4209,7 +4184,6 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = global_hegemony
 							}
 						}
 						add_timed_idea = {

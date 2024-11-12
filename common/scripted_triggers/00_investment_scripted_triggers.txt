@@ -542,19 +542,6 @@ check_for_investment_project_limits = {
 	custom_trigger_tooltip = {
 		ROOT = {
 			if = {
-				limit = { has_idea = global_hegemony }
-				count_triggers = {
-					amount = 1
-					NOT = { has_country_flag = state_owned_investments_project_one }
-					NOT = { has_country_flag = state_owned_investments_project_two }
-					NOT = { has_country_flag = state_owned_investments_project_three }
-					NOT = { has_country_flag = state_owned_investments_project_four }
-					NOT = { has_country_flag = state_owned_investments_project_five }
-					NOT = { has_country_flag = state_owned_investments_project_six }
-					NOT = { has_country_flag = state_owned_investments_project_seven }
-				}
-			}
-			else_if = {
 				limit = { has_idea = superpower }
 				count_triggers = {
 					amount = 1

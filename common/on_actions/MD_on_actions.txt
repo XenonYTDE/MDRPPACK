@@ -32,7 +32,6 @@ on_actions = {
 						has_idea = large_power
 						has_idea = great_power
 						has_idea = superpower
-						has_idea = global_hegemony
 					}
 
 					# wait for apc-ifv stuff to merge
@@ -460,7 +459,6 @@ on_actions = {
 									has_idea = large_power
 									has_idea = great_power
 									has_idea = superpower
-									has_idea = global_hegemony
 								}
 							}
 
