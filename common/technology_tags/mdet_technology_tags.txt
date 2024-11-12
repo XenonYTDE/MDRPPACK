@@ -1,9 +1,0 @@
-technology_categories = {
-    cat_titan
-}
-technology_folders = {
-    titan_folder = {
-        ledger = army
-        available = { has_game_rule = { rule = mdet_enable_fantasy option = yes } }
-    }
-}

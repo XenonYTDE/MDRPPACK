@@ -1,4 +1,0 @@
-Build_industry_building = {
-	icon = GFX_decision_generic_construction
-	priority = 10
-}
