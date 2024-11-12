@@ -55,7 +55,6 @@ scripted_gui = {
 		ai_enabled = { NOT = { has_global_flag = GAME_RULE_eu_disabled } }
 		ai_check = {
 			OR = {
-				has_idea = global_hegemony
 				has_idea = superpower
 				has_idea = great_power
 				is_in_array = { global.EU_member = THIS.id }

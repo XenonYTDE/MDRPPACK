@@ -1286,7 +1286,6 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = global_hegemony
 				has_idea = superpower
 				has_idea = great_power
 				has_idea = large_power
@@ -1303,7 +1302,6 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = global_hegemony
 				has_idea = superpower
 				has_idea = great_power
 				has_idea = large_power
@@ -1319,7 +1317,6 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = global_hegemony
 				has_idea = superpower
 				has_idea = great_power
 			}
@@ -1333,10 +1330,7 @@ state_owned_concurrent_investment_limit_implement = {
 	if = {
 		limit = {
 			check_variable = { b = 0 }
-			OR = {
-				has_idea = superpower
-				has_idea = global_hegemony
-			}
+			has_idea = superpower
 			NOT = { has_country_flag = state_owned_investments_project_six }
 		}
 		set_country_flag = { flag = state_owned_investments_project_six value = 1 days = 120 }

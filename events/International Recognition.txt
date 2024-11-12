@@ -39,10 +39,6 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
 		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = -150
-		}
 		log = "[GetDateText]: [This.GetName]: recognition.1.a executed"
 	}
 }
@@ -81,10 +77,6 @@ news_event = {
 		else_if = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
-		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = 150
 		}
 		log = "[GetDateText]: [This.GetName]: recognition.2.a executed"
 	}
@@ -126,10 +118,6 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
 		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = -150
-		}
 		log = "[GetDateText]: [This.GetName]: recognition.3.a executed"
 	}
 }
@@ -169,10 +157,6 @@ news_event = {
 		else_if = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
-		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = 150
 		}
 		log = "[GetDateText]: [This.GetName]: recognition.4.a executed"
 	}
@@ -214,10 +198,6 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
 		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = 150
-		}
 		log = "[GetDateText]: [This.GetName]: recognition.5.a executed"
 	}
 }
@@ -257,10 +237,6 @@ news_event = {
 		else_if = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
-		}
-		else_if = {
-			limit = { FROM = { has_idea = global_hegemony } }
-			add_political_power = -150
 		}
 		log = "[GetDateText]: [This.GetName]: recognition.6.a executed"
 	}

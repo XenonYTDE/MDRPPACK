@@ -1,43 +1,5 @@
 ideas = {
 	country = {
-		global_hegemony = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea global_hegemony" }
-			picture = GFX_idea_global_hegemony
-			allowed = { always = no }
-			rule = { can_create_factions = yes }
-			modifier = {
-				political_power_gain = 1.0
-				political_power_factor = 1.0
-				migration_rate_value_factor = 0.50
-				foreign_influence_modifier = 0.75
-				foreign_influence_defense_modifier = 0.75
-				foreign_influence_auto_influence_cap_modifier = 5
-				interest_rate_multiplier_modifier = -2.5
-				custom_modifier_tooltip = global_hegemony_tt
-				hidden_modifier = {
-					corruption_cost_factor = 1.25
-					economic_cycles_cost_factor = 1.25
-					internal_factions_cost_factor = 1.25
-					bureaucracy_cost_factor = 1.25
-					Military_Spending_cost_factor = 1.25
-					crime_fighting_cost_factor = 1.25
-					education_budget_cost_factor = 1.25
-					health_budget_cost_factor = 1.25
-					social_budget_cost_factor = 1.25
-					trade_laws_cost_factor = 1.25
-					Conscription_Law_cost_factor = 1.25
-					Military_Status_Women_cost_factor = 1.25
-					Foreign_Intervention_Law_cost_factor = 1.25
-					Officer_Training_Law_cost_factor = 1.25
-					materiel_manufacturer_cost_factor = 1.25
-					tank_manufacturer_cost_factor = 1.25
-					aircraft_manufacturer_cost_factor = 1.25
-					naval_manufacturer_cost_factor = 1.25
-					tax_rate_change_multiplier_modifier = 1.25
-					migration_laws_cost_factor = 1.25
-				}
-			}
-		}
 
 		superpower = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea superpower" }

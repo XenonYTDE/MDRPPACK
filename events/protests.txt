@@ -235,7 +235,6 @@ country_event = {
 		random_other_country = {
 			limit = {
 				OR = {
-					has_idea = global_hegemony
 					has_idea = superpower
 					has_idea = great_power
 				}
@@ -279,7 +278,6 @@ country_event = {
 				random_other_country = {
 					limit = {
 						OR = {
-							has_idea = global_hegemony
 							has_idea = superpower
 							has_idea = great_power
 						}

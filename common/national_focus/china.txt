@@ -12676,7 +12676,6 @@ focus_tree = {
 				OR = {
 					is_historical_focus_on = no
 					has_idea = superpower
-					has_idea = global_hegemony
 				}
 			}
 		}
@@ -16287,7 +16286,6 @@ focus_tree = {
 		available = {
 			OR = {
 				has_idea = superpower
-				has_idea = global_hegemony
 			}
 			NOT = { has_government = democratic }
 		}
