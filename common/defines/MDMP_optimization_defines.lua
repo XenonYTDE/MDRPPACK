@@ -70,7 +70,6 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0       
 
 -- Politics & Laws
-NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.75 
 NDefines.NPolitics.ARMY_LEADER_COST = 25
 NDefines.NPolitics.NAVY_LEADER_COST = 25
 
