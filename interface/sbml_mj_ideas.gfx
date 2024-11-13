@@ -1,0 +1,174 @@
+spriteTypes = {
+
+	#military jurisdiction
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_code_of_ethics"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_non_core_manpower"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_female_service"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_training_quality"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_branch_rivarly"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_mj_volunteer_forces"
+		texturefile = "gfx\\interface\\idea_slot_army.dds"
+	}
+    
+
+
+    #mj_code_of_ethics #5slots
+
+    spriteType = {
+		name = "GFX_idea_strict_ethics"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_strict_ethics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_code_of_honour"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_code_of_honour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_supervision"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_no_supervision.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_merciless"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_merciless.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_encouraged_brutality"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_encouraged_brutality.dds"
+	}
+
+	#mj_non_core_manpower #3slots
+
+    spriteType = {
+		name = "GFX_idea_non_core_recruitment_prohibited"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_non_core_recruitment_prohibited.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_segregated_regiments"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_segregated_regiments.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_integrated_manpower"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_integrated_manpower.dds"
+	}
+
+	#mj_female_service #4slots
+
+    spriteType = {
+		name = "GFX_idea_equal_service"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_equal_service.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_support_roles"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_support_roles.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_non_combat_roles"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_non_combat_roles.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_service_prohibited"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_service_prohibited.dds"
+	}
+
+	#mj_training_quality #5slots
+
+    spriteType = {
+		name = "GFX_idea_advanced_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_advanced_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_extensive_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_extensive_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_basic_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_minimal_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_minimal_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_training"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_no_training.dds"
+	}
+
+    #mj_branch_rivarly #5slots
+
+    spriteType = {
+		name = "GFX_idea_army_dominant"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_army_dominant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_army_strengthened"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_army_strengthened.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_balanced_rivarly"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_balanced_rivarly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_navy_strengthened"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_navy_strengthened.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_navy_dominant"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivarly\\_navy_dominant.dds"
+	}
+
+	#mj_volunteer_forces #3slots
+
+    spriteType = {
+		name = "GFX_idea_large_volunteer_force"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_large_volunteer_force.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_small_force"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_small_force.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_volunteers"
+		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_no_volunteers.dds"
+	}
+
+}

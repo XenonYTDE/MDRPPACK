@@ -1,0 +1,18 @@
+defined_text = {
+	name = GetBorderWarAllowedTooltip
+	text = {
+		trigger = {
+			ROOT = {
+				has_variable = next_border_war_allowed_in_this_many_days
+				check_variable = { next_border_war_allowed_in_this_many_days > 0 }
+			}
+		}
+		localization_key = string_border_war_allowed_in_this_many_days
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}

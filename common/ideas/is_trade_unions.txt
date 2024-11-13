@@ -1,0 +1,159 @@
+ideas = {
+    is_trade_unions = {
+        law = yes
+        use_list_view = yes
+
+        trade_unions_allowed = {
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            level = 1
+
+            modifier = {
+                stability_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.10
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
+
+            ai_will_do = {
+                base = 40
+
+                modifier = {
+                    has_government = democratic
+                    add = 80
+                }
+
+                modifier = {
+                    has_idea = welfare_capitalism
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        state_controlled_unions_allowed = {
+            available = {
+                NOT = {
+                    has_government = democratic
+                }
+            }
+
+            level = 2
+
+            modifier = {
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.075
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
+
+            ai_will_do = {
+                base = 30
+
+                modifier = {
+                    has_government = neutrality
+                    add = 30
+                }
+
+                modifier = {
+                    has_idea = planned_economy
+                    add = 70
+                }
+
+                modifier = {
+                    has_government = nationalist
+                    add = 50
+                }
+            }
+
+            cancel_if_invalid = yes 
+        }
+
+        trade_unions_banned = {
+            available = {
+                NOT = {
+                    has_government = democratic
+                    has_government = communism
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                stability_factor = -0.05
+                production_factory_max_efficiency_factor = -0.10
+                production_factory_efficiency_gain_factor = -0.15
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+            }
+
+            ai_will_do = {
+                base = 30
+                
+                modifier = {
+                    has_government = neutrality
+                    add = 20
+                }
+
+                modifier = {
+                    has_idea = pog_rentier_state
+                    add = 50
+                }
+
+                modifier = {
+                    has_idea = laisezz_faire
+                    add = 40
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        worker_organs = {
+            available = {
+                OR = {
+                    has_idea = syndicalist_markets
+                    has_idea = communal_economy
+                    has_idea = welfare_capitalism
+                }
+            }
+
+            level = 2
+
+            modifier = {
+                political_power_factor = 0.05
+                production_factory_max_efficiency_factor = 0.10
+                production_factory_efficiency_gain_factor = 0.15
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
+            
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+                    has_idea = syndicalist_markets
+                    add = 400
+                }
+
+                modifier = {
+                    has_idea = communal_economy
+                    add = 200
+                }
+
+                modifier = {
+                    has_idea = welfare_capitalism
+                    add = 10
+                }
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

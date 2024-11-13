@@ -1,0 +1,434 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_possible_country = {
+
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = europe
+							 
+						}
+						
+					}
+					owner = {
+						set_country_flag = europeancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = asia
+							   
+						}
+					}
+					owner = {
+						set_country_flag = asiancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = australia
+							   
+						}
+					}
+					owner = {
+						set_country_flag = oceaniancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = middle_east
+							   
+						}
+					}
+					owner = {
+						set_country_flag = middleeasterncountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = africa
+							   
+						}
+					}
+					owner = {
+						set_country_flag = africancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = south_america
+							   
+						}
+					}
+					owner = {
+						set_country_flag = southamericancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = north_america
+							   
+						}
+					}
+					owner = {
+						set_country_flag = northamericancountry
+					}
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = north_america
+								owner = {
+									is_ai = yes
+									has_country_flag = northamericancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = north_america
+						owner = {
+							has_country_flag = northamericancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = south_america
+								owner = {
+									is_ai = yes
+									has_country_flag = southamericancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = south_america
+						owner = {
+							has_country_flag = southamericancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = europe
+								owner = {
+									is_ai = yes
+									has_country_flag = europeancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = europe
+						owner = {
+							has_country_flag = europeancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = australia
+								owner = {
+									is_ai = yes
+									has_country_flag = oceaniancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = australia
+						owner = {
+							has_country_flag = oceaniancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = asia
+								owner = {
+									is_ai = yes
+									has_country_flag = asiancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = asia
+						owner = {
+							has_country_flag = asiancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = africa
+								owner = {
+									is_ai = yes
+									has_country_flag = africancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = africa
+						owner = {
+							has_country_flag = africancountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = middle_east
+								owner = {
+									is_ai = yes
+									has_country_flag = middleeasterncountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = middle_east
+						owner = {
+							has_country_flag = middleeasterncountry
+						}
+					}
+				}
+				add_core_of = owner
+			}
+		}
+	}
+}

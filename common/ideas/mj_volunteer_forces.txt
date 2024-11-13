@@ -1,0 +1,136 @@
+ideas = {
+
+    mj_volunteer_forces = {
+        law = yes
+        use_list_view = yes
+
+        large_volunteer_force = {
+
+            available = {
+                num_divisions > 7
+            }
+            cost = 50
+            #level #= #3
+            
+            removal_cost = 0
+
+            modifier = {
+                political_power_factor = -0.10
+                send_volunteers_tension = -0.50
+                send_volunteer_divisions_required = -0.50
+                send_volunteer_size = 5
+                air_volunteer_cap = 10
+            }
+
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+                    has_government = communism
+                    num_divisions > 30
+                    add = 40
+                }
+
+                modifier = {
+                    num_faction_members > 5
+                    is_faction_leader = yes
+                    add = 40
+                }
+
+                modifier = {
+                    tag =  SWE
+                    add = 40
+                }
+
+                modifier = {
+                    is_major = yes
+                    add = 10
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 10
+                }
+            }
+
+            cancel_if_invalid = no
+        }
+
+        small_force = {
+
+            available = {
+                num_divisions > 5
+            }
+            cost = 50
+            #level #= #2
+            
+            removal_cost = 0
+
+            modifier = {
+                political_power_factor = -0.05
+                send_volunteers_tension = -0.25
+                send_volunteer_divisions_required = -0.25
+                send_volunteer_size = 3
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                   is_major = no
+                   has_government = communism
+                   add = 20
+                }
+
+                modifier = {
+                    num_faction_members > 3
+                    is_faction_leader = yes
+                    add = 20
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 30
+                }
+
+            }
+
+            cancel_if_invalid = no
+        }
+
+        no_volunteers = {
+              
+            available = {
+
+              }
+              
+            cost = 50
+            #level #= #1
+            
+            removal_cost = 0
+
+            modifier = {
+                  political_power_factor = 0.10
+                  send_volunteer_divisions_required = 10
+            }
+
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+
+                    NOT = {
+                        has_government = communism
+                    }
+
+                    tag = SWI
+                    add = 10
+                }
+                
+
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}

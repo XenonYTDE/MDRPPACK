@@ -1,0 +1,6 @@
+REMOVE_AI_LIMITER = {
+    visible = {
+        is_ai = no
+    }
+    icon = GFX_category_icon
+}

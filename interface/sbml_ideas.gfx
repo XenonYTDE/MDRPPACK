@@ -1,0 +1,192 @@
+spriteTypes = {
+    #government_policies
+    spriteType = {
+		name = "GFX_idea_slot_gp_national_ideas"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gp_press_law"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gp_immigration_policy"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gp_minority_rights"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gp_gender_equality"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_gp_public_meetings"
+		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
+	}
+     
+	#national_ideas
+
+	spriteType = {
+		name = "GFX_idea_planning_stage"
+		texturefile = "gfx\\interface\\ideas\\idea_planning_stage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_efficient_beaurocracy"
+		texturefile = "gfx\\interface\\ideas\\idea_efficient_beaurocracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bolstering_of_partisans"
+		texturefile = "gfx\\interface\\ideas\\idea_bolstering_of_partisans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mobilization"
+		texturefile = "gfx\\interface\\ideas\\idea_mobilization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_gp_nationalism"
+		texturefile = "gfx\\interface\\ideas\\idea_nationalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_covert_ops"
+		texturefile = "gfx\\interface\\ideas\\idea_covert_ops.dds"
+	}
+
+
+    #gp_press_law
+    
+    spriteType = {
+		name = "GFX_idea_state_press"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_state_press.dds"
+	}
+     
+    spriteType = {
+		name = "GFX_idea_semi_independent_press"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_limited_censorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_free_press"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_free_press.dds"
+	}
+    
+    
+
+    #gp_immigration_policy
+
+	 spriteType = {
+		name = "GFX_idea_open_borders"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_open_borders.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_citizenship"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_citizenship.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_limited_citizenship"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_limited_citizenship.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_strict_immigration_controls"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_strict_immigration_controls.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_closed_borders"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_closed_borders.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_political_refugees"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_political_refugees.dds"
+	}
+    
+
+	#gp_minority_rights
+
+	 spriteType = {
+		name = "GFX_idea_affirmative_action"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_affirmative_action.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_significant_rights"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_significant_rights.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_neutral_stance"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_neutral_stance.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_racial_segregation"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_racial_segregation.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_racial_hierarchy"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_racial_hierarchy.dds"
+	}
+
+	
+	#gp_gender_equality
+
+	 spriteType = {
+		name = "GFX_idea_affirmative_actionF"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_affirmative_actionF.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_full_equality"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_full_equality.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_limited_womens_rights"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_limited_womens_rights.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_no_legal_protections"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_no_legal_protections.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_patriarchal_society"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_patriarchal_society.dds"
+	}
+
+
+	#gp_public_meetings
+
+	 spriteType = {
+		name = "GFX_idea_allowed"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_allowed.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_monitored"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_monitored.dds"
+	}
+
+	 spriteType = {
+		name = "GFX_idea_banned"
+		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_banned.dds"
+	}
+
+}   
+    

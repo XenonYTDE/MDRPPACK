@@ -1,0 +1,70 @@
+ideas = {
+
+    ip_resource_efforts = {
+        law = yes
+        use_list_view = yes
+
+        synthetic_fuel = {
+
+            available = {
+
+            }
+
+            modifier = {
+                army_fuel_consumption_factor = -0.05
+                navy_fuel_consumption_factor = -0.05
+                air_fuel_consumption_factor = -0.05
+            }
+
+            ai_will_do = {
+                base = 20
+                
+                modifier = {
+                    fuel_ratio < 0.5
+                    has_war = yes
+                    add = 60
+                }
+            }
+
+        }
+
+        alternative_materials = {
+
+            available = {
+
+            }
+
+            modifier = {
+                #production_oil_factor #= #0.10 #this would give synthetic oil +10%
+                production_factory_max_efficiency_factor = -0.05
+                production_lack_of_resource_penalty_factor = -0.20
+            }
+
+            ai_will_do = {
+                base = 0
+            }
+        }
+
+        extraction_programs = {
+            
+            available = {
+
+            }
+
+            modifier = {
+                industrial_capacity_factory = -0.05
+                production_speed_buildings_factor = -0.05
+                local_resources_factor = 0.15
+            }
+
+            ai_will_do = {
+                base = 10
+                
+                modifier = {
+                    has_idea = pog_rentier_state
+                    add = 40
+                }
+            }
+        }
+    }
+}

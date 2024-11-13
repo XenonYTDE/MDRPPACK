@@ -1,0 +1,215 @@
+spriteTypes = {
+
+
+	#economic policies
+
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_economic_model"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_taxation_policy"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_trade_tariffs"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_foreign_investments"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_war_bonds"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_subsidization"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+
+	#ep_economic_model
+
+	spriteType = {
+		name = "GFX_idea_post_scarcity"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\post_scarcity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_pog_rentier_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_rentier_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_laisezz_faire"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_laisezz_faire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_welfare_capitalism"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_welfare_capitalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mixed_market"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_mixed_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_state_capitalism"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_state_capitalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_pllanned_economy"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_planned_economy.dds"
+	}
+    
+	spriteType = {
+		name = "GFX_idea_communal_economy"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_communal_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_syndicalist_markets"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_syndicalist_markets.dds"
+	}
+
+
+
+	#ep_taxation_policy
+
+
+	spriteType = {
+		name = "GFX_idea_very_high_taxation"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_very_high_taxation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_high_taxation"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_high_taxation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_standard_taxation"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_standard_taxation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_low_taxation"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_low_taxation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_very_low_taxation"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_very_low_taxation.dds"
+	}
+    
+	spriteType = {
+		name = "GFX_idea_mutual_aid"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_mutual_aid.dds" 
+	}
+
+
+	#ep_trade_tariffs 
+
+
+	spriteType = {
+		name = "GFX_idea_no_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_no_trade_tariffs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_low_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_low_trade_tariffs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_average_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_average_trade_tariffs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_high_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_high_trade_tariffs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_extreme_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_extreme_trade_tariffs.dds"
+	}
+
+
+	#ep_foreign_investments
+
+
+	spriteType = {
+		name = "GFX_idea_foreign_investments_encouraged"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_encouraged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_investments_allowed"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_allowed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_investments_regulated"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_regulated.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_investments_banned"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_banned.dds"
+	}
+
+
+	#ep_war_bonds
+
+
+	spriteType = {
+		name = "GFX_idea_force_bonds_buying"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_force_bonds_buying.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bonds_welcome"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_bonds_welcome.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_bonds_selling"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_no_bonds_selling.dds"
+	}
+    
+    
+    #ep_subsidization
+
+    
+    spriteType = {
+		name = "GFX_idea_military_spending"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_military_spending.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_industrial_subsidies"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_industrial_subsidies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_encourage_foreign_investment"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_encourage_foreign_investment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_scientific_grants"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_scientific_grants.dds"
+	}
+}

@@ -1,0 +1,18 @@
+### Coring Button
+
+allow_coring_button = {
+	name = allow_coring_button
+	group = other_gamerules_group
+	default = {
+		name = allow_coring_button_option_yes
+		text = "allow_coring_button_option_yes"
+		desc = "allow_coring_button_option_yes_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = allow_coring_button_option_no
+		text = "allow_coring_button_option_no"
+		desc = "allow_coring_button_option_no_desc"
+		allow_achievements = yes
+	}
+}

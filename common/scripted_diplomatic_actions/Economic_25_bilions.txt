@@ -1,0 +1,75 @@
+scripted_diplomatic_actions = {
+	Send_economic_aid_25_bilions = {
+		icon = 1
+
+		cost = 25
+
+		allowed = {
+			always = yes
+			ROOT = { 
+				has_political_power > 10
+			}
+			ROOT = {
+				check_variable = { treasury > 24.9 }
+			}
+		}
+
+		visible = {
+		}
+
+		selectable = {
+			ROOT = { 
+				has_political_power > 10
+			}
+		}
+
+		can_be_sent = {
+		}
+
+		requires_acceptance = yes
+
+		show_acceptance_on_action_button = yes
+
+		send_description = SEND_ECONOMIC_AID_25_BILIONS_LOC
+		
+		on_sent_effect = {
+				set_country_flag = {
+					flag = diplomatic_action_cooldown
+					value = 1
+					days = 30
+				}
+			}
+
+		complete_effect = {	
+			THIS = {
+				add_opinion_modifier = { target = ROOT modifier = mutual_improvement_relations.3 }
+				reverse_add_opinion_modifier = { target = ROOT modifier = mutual_improvement_relations.3 }
+			}
+			ROOT = {
+				set_temp_variable = { treasury_change = -25 }
+				modify_treasury_effect = yes
+			}
+			set_temp_variable = { treasury_change = 25 }
+			modify_treasury_effect = yes	
+		}
+
+		reject_effect = {
+		}
+
+		accept_title = SEND_ECONOMIC_AID_25_BILIONS_ACCEPT_TT
+		accept_description = SEND_ECONOMIC_AID_25_BILIONS_ACCEPT_DESC
+		reject_title = SEND_ECONOMIC_AID_25_BILIONS_REJECT_TT
+		reject_description = SEND_ECONOMIC_AID_25_BILIONS_REJECT_DESC		
+
+		ai_acceptance = {
+			base = 0
+		}
+
+		ai_desire = { 
+			modifier = {
+				has_country_flag = diplomatic_action_cooldown
+				add = -1
+			}
+		}			
+	}
+}
