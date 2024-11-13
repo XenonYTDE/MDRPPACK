@@ -106,7 +106,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = battleship
+   				archetype = battleship
 								}
 				   }
 			}
@@ -160,7 +160,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = heavy_frigate
+   				archetype = heavy_frigate
 								}
 				   }
 			}
