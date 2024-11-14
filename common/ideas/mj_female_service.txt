@@ -1,0 +1,106 @@
+ideas = {
+
+    mj_female_service = {
+        law = yes
+        use_list_view = yes
+        
+
+        equal_service = {
+
+            available = {
+
+                NOT = {
+                    has_idea = no_women_in_military
+                }
+                
+                OR = {
+                    has_idea = affirmative_actionF
+                    has_idea = full_equality
+                }
+            }
+
+            level = 4
+
+            modifier = {
+                political_power_factor = -0.05
+                war_support_factor = 0.05
+                stability_factor = 0.05
+                conscription_factor = 0.25
+                total_workforce_modifier = -0.25
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        support_roles = {
+
+            available = {
+                
+                NOT = {
+                    has_idea = no_legal_protections
+                    has_idea = patriarchal_society
+                    has_idea = no_women_in_military
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                political_power_factor = -0.025
+                stability_factor = 0.05
+                conscription_factor = 0.10
+                training_time_army_factor =  -0.05
+                army_morale_factor = 0.05
+                experience_loss_factor = -0.05
+                total_workforce_modifier = -0.10
+            }
+            cancel_if_invalid = yes
+        }
+
+        non_combat_roles = {
+
+            available = {
+                NOT = {
+                    has_idea = affirmative_actionF
+                    has_idea = full_equality
+                }
+            }
+
+            level = 1
+
+            modifier = {
+                stability_factor = -0.025
+                conscription_factor = 0.05
+                attrition = -0.10
+                total_workforce_modifier = -0.05
+            }
+
+            research_bonus = {hospital_tech = 0.25}
+
+
+            cancel_if_invalid = yes
+        }
+
+        service_prohibited = {
+            
+            available = {
+                NOT = {
+                    has_idea = affirmative_action
+                    has_idea = full_equality
+                    has_idea = drafted_women
+                    has_idea = volunteer_women
+                }
+            }
+
+            level =  2
+
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = -0.05
+                drift_defence_factor = 0.05
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

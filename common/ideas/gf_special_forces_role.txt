@@ -1,0 +1,63 @@
+ideas = {
+
+    gf_special_forces_role = {
+        law = yes
+        use_list_view = yes
+
+        army_support = {
+
+            available = {
+
+            }
+            
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_attack_factor = -0.10
+                special_forces_defence_factor = -0.10
+                special_forces_cap = 0.20
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        special_operations = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_attack_factor = 0.10
+                special_forces_defence_factor = 0.10
+                special_forces_cap = -0.05
+                special_forces_out_of_supply_factor = -0.30
+                special_forces_training_time_factor = 0.10
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        foreign_conflicts = {
+
+            available = {
+
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                special_forces_no_supply_grace = 180
+                special_forces_training_time_factor = 0.20
+                send_volunteer_size = 1
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

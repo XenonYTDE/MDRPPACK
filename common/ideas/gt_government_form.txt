@@ -1,0 +1,149 @@
+ideas = {
+
+    gt_government_form = {
+        law = yes
+        use_list_view = yes
+
+        unitary_state = {
+
+            available = {
+
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+            }
+            
+            cancel_if_invalid = yes
+        }
+
+        devolved_unitary_state = {
+
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                compliance_growth = 0.10
+                resistance_growth = -0.20
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        sassy_federated_state = {
+
+            available = {
+                NOT = {
+                    has_government = nationalist
+                }
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                #political_power_factor = 0.05
+                war_support_factor = -0.10
+                global_building_slots_factor = 0.10
+                resistance_target = -0.10
+                resistance_decay = 0.20
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        communal_state = {
+
+            available = {
+                OR = {
+                has_government = communism
+              }
+            }
+            
+            
+
+            cost = 200 
+            removal_cost = -1
+            
+
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = -0.10
+                war_support_factor = -0.15
+                compliance_growth = 0.15
+                resistance_damage_to_garrison = -0.40
+                #required_garrison_factor #= #-0.10
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        city_state = {
+
+            available = {
+                num_of_controlled_states < 3
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                global_building_slots_factor = 5
+                industrial_capacity_factory = 2
+                industrial_capacity_dockyard = 2
+                conscription_factor = 0.20
+                production_speed_buildings_factor = 3
+                #production_speed_infrastructure_factor #= #2
+                #production_speed_bunker_factor = #3
+                #production_speed_coastal_bunker_factor #= #3
+                #production_speed_anti_air_building_factor #= #3
+                #production_speed_radar_station_factor #= #3
+                special_forces_min = 50
+                monthly_population = 5
+
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        region_state = {
+
+            available = {
+                num_of_controlled_states < 5
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                global_building_slots_factor = 1.5
+                industrial_capacity_factory = 1.0
+                industrial_capacity_dockyard = 1.0
+                conscription_factor = 0.15
+                production_speed_buildings_factor = 2.0
+                #production_speed_infrastructure_factor #= #2
+                #production_speed_bunker_factor = #3
+                #production_speed_coastal_bunker_factor #= #3
+                #production_speed_anti_air_building_factor #= #3
+                #production_speed_radar_station_factor #= #3
+                special_forces_min = 25
+                monthly_population = 3
+
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+ }

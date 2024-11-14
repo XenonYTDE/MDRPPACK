@@ -153,7 +153,7 @@ scripted_gui = {
 			}
 		}
 		
-		ai_test_interval = 72
+		ai_test_interval = 336
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 		
@@ -5736,7 +5736,7 @@ scripted_gui = {
 			}
 		}
 
-		ai_test_interval = 72
+		ai_test_interval = 168
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 

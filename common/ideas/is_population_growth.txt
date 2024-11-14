@@ -1,0 +1,125 @@
+ideas = {
+    is_population_growth = {
+       law = yes
+       use_list_view = yes
+
+       rapid_population_growth = {
+           available = {
+           }
+
+           level = 1
+
+           modifier = {
+               political_power_factor = -0.10
+               monthly_population = 0.50
+               consumer_goods_factor = 0.10
+               stability_factor = -0.05
+           }
+
+           cancel_if_invalid = yes
+       }
+
+       encourage_growth = {
+           available = {
+           }
+
+           level = 2
+
+           modifier = {
+               political_power_factor = -0.05
+               monthly_population = 0.30
+               consumer_goods_factor = 0.05
+           }
+
+           cancel_if_invalid = yes
+       }
+
+       standard_growth = {
+           available = {
+           }
+
+           level = 3
+
+           modifier = {
+               monthly_population = 0.15
+           }
+
+           cancel_if_invalid = yes
+       }
+
+       national_purity = {
+           available = {
+               has_government = nationalist
+           }
+
+           level = 4
+
+           modifier = {
+               political_power_factor = -0.05
+               monthly_population = 0.10
+               stability_factor = 0.05
+               war_support_factor = 0.05
+               drift_defence_factor = 0.05
+           }
+
+           cancel_if_invalid = yes
+       }
+
+       controlled_birth_rates = {
+           available = {
+               NOT = {
+                   has_government = democratic
+               }
+           }
+
+           level = 5
+
+           modifier = {
+               political_power_factor = 0.05
+               monthly_population = 0.05
+               stability_factor = -0.05
+           } 
+
+           cancel_if_invalid = yes
+       }
+
+       population_control = {
+           available = {
+               NOT = {
+                   has_government = democratic
+               }
+           }
+
+           level = 6
+
+           modifier = {
+               political_power_factor = 0.10
+               monthly_population = -0.30
+               stability_factor = -0.10
+               consumer_goods_factor = -0.05
+           }
+
+           cancel_if_invalid = yes
+       }
+
+       one_child_policyy = {
+           available = {
+               NOT = {
+                   has_government = democratic
+               }
+           }
+
+           level = 7
+
+           modifier = {
+               political_power_factor = 0.15
+               monthly_population = -0.50
+               stability_factor = -0.15
+               consumer_goods_factor = -0.10
+               drift_defence_factor = 0.10
+           }
+
+           cancel_if_invalid = yes
+       }
+    }
+}

@@ -56,6 +56,104 @@ scripted_gui = {
 		ai_enabled = {
 			always = no
 		}
+		
+		# ai_test_interval = 4380
+		# ai_test_variance = 0.1
+		
+		# ai_check = {
+			# is_subject = no
+			# has_war = no
+			# NOT = { has_idea = neutrality_idea }
+			# any_neighbor_country = {
+				# is_subject = no
+				# OR = {
+					# NOT = { has_country_flag = recently_insulted_by_@ROOT }
+					# has_country_flag = {
+						# flag = recently_insulted_by_@ROOT
+						# days > 1
+					# }
+				# }
+				# OR = {
+					# AND = {
+						# NOT = { has_government = ROOT }
+						# NOT = { has_government = neutrality }
+						# NOT = { has_wargoal_against = ROOT }
+					# }
+					# is_justifying_wargoal_against = ROOT
+				# }
+				# ROOT = {
+					# has_opinion = {
+						# target = PREV
+						# value < -20
+					# }
+					# OR = {
+						# NOT = { has_government = neutrality }
+						# AND = {
+							# has_country_flag = recently_insulted_by_@PREV
+							# has_country_flag = {
+								# flag = recently_insulted_by_@PREV
+								# days < 1
+							# }
+						# }
+					# }
+				# }
+			# }
+		# }
+		
+		# ai_test_scopes = test_neighbouring_countries
+		
+		# ai_check_scope = {
+			# is_subject = no
+			# OR = {
+				# NOT = { has_country_flag = recently_insulted_by_@ROOT }
+				# has_country_flag = {
+					# flag = recently_insulted_by_@ROOT
+					# days > 1
+				# }
+			# }
+			# OR = {
+				# AND = {
+					# NOT = { has_government = ROOT }
+					# NOT = { has_government = neutrality }
+					# NOT = { has_wargoal_against = ROOT }
+				# }
+				# is_justifying_wargoal_against = ROOT
+			# }
+			# ROOT = {
+				# has_opinion = {
+					# target = PREV
+					# value < -20
+				# }
+				# OR = {
+					# NOT = { has_government = neutrality }
+					# AND = {
+						# has_country_flag = recently_insulted_by_@PREV
+						# has_country_flag = {
+							# flag = recently_insulted_by_@PREV
+							# days < 1
+						# }
+					# }
+				# }
+			# }
+		# }
+		
+		# ai_weights = {
+			# send_insult_diplo_action_button_click = {
+				# ai_will_do = {
+					# factor = 1
+				# }
+			# }
+			# send_insult_diplo_action_selected_button_click = {
+				# ai_will_do = {
+					# factor = 0
+				# }
+			# }
+			# close_button_click = {
+				# ai_will_do = {
+					# factor = 0
+				# }
+			# }
+		# }
 	}
 
 	letter_popup_sender = {
@@ -71,6 +169,13 @@ scripted_gui = {
 			cancel_button_click = {
 				clear_variable = selected_country_to_insult
 				clear_generated_insults_cache = yes
+				# if = {
+					# limit = {
+						# NOT = { has_country_flag = has_sent_a_randomized_insult }
+						# has_country_flag = randomized_insult
+					# }
+					# clr_country_flag = randomized_insult
+				# }
 				if = {
 					limit = {
 						NOT = { has_country_flag = has_sent_a_written_insult }
@@ -90,6 +195,24 @@ scripted_gui = {
 						remove_from_array = { insulters = ROOT.id }
 					}
 					add_to_array = { insulters = ROOT.id }
+					#if = {
+					#	limit = {
+					#		has_country_flag = recently_insulted_by_@ROOT
+					#	}
+					#	clr_country_flag = recently_insulted_by_@ROOT
+					#}
+					#else_if = {
+					#	limit = {
+					#		ROOT = {
+					#			NOT = { has_country_flag = custom_achievement_insulted_back }
+					#			has_country_flag = recently_insulted_by_@PREV
+					#		}
+					#	}
+						# ROOT = {
+							# set_country_flag = custom_achievement_insulted_back	# custom achievement
+						# }
+					#}
+					#set_country_flag = recently_insulted_by_@ROOT
 					if = {
 						limit = {
 							ROOT = { check_variable = { show_write_insult_menu < 1 } }
@@ -114,6 +237,28 @@ scripted_gui = {
 				}
 				clear_variable = selected_country_to_insult
 				clear_generated_insults_cache = yes
+				
+				# if = {
+					# limit = {
+						# NOT = { has_country_flag = has_sent_a_randomized_insult }
+						# has_country_flag = randomized_insult
+					# }
+					# set_country_flag = has_sent_a_randomized_insult	# custom achievement
+				# }
+				# if = {
+					# limit = {
+						# NOT = { has_country_flag = has_sent_navy_seals_insult }
+						# check_variable = { chosen_type_of_insult = 100 }
+					# }
+					# set_country_flag = has_sent_navy_seals_insult	# custom achievement
+				# }
+				# if = {
+					# limit = {
+						# NOT = { has_country_flag = has_sent_a_written_insult }
+						# has_country_flag = written_insult
+					# }
+					# set_country_flag = has_sent_a_written_insult	# custom achievement
+				# }
 			}
 			
 			# Stuff for Writing Insults
@@ -143,7 +288,33 @@ scripted_gui = {
 						set_country_flag = written_insult
 					}
 				}
-				
+				# else_if = {
+					# limit = {
+						# always = yes
+					# }
+					# set_variable = { chosen_type_of_insult = last_randomized_insults^0 }
+					# clear_array = written_type_of_insult_array
+					# clear_variable = show_save_insuls_window
+					# var:selected_country_to_insult = {
+						# ROOT = {
+							# randomize_insult_button_effect = yes
+						# }
+					# }
+					# if = {
+						# limit = {
+							# NOT = { has_country_flag = has_sent_a_randomized_insult }
+							# NOT = { has_country_flag = randomized_insult }
+						# }
+						# set_country_flag = randomized_insult
+					# }
+					# if = {
+						# limit = {
+							# NOT = { has_country_flag = has_sent_a_written_insult }
+							# has_country_flag = written_insult
+						# }
+						# clr_country_flag = written_insult
+					# }
+				# }
 			}
 			write_insult_button_right_click = {
 				clear_array = written_type_of_insult_array
