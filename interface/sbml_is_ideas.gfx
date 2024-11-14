@@ -4,27 +4,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_is_penal_system"
-		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_population_growth"
-		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_trade_unions"
-		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_state_security"
-		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_firearm_regulation"
-		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
 
 
@@ -36,22 +36,22 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_penal_slavery"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_slavery.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_slavery.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_labour"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_labour.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_labour.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_incarceration"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_incarceration.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_incarceration.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_rehabilitation"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_rehabilitation.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_rehabilitation.dds"
 	}
 
 
@@ -61,35 +61,35 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_rapid_population_growth"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_encourage_growth.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
 	}
 
     spriteType = {
 		name = "GFX_idea_encourage_growth"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_encourage_growth.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_standard_growth"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_standard_growth.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_standard_growth.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_controlled_birth_rates"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_controlled_birth_rates.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_controlled_birth_rates.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_pog_national_purity"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_pog_national_purity.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_pog_national_purity.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_population_control"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_controlled_birth_rates.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_controlled_birth_rates.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_one_child_policyy"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\one_child_policy.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
 	}
 
 
@@ -99,22 +99,22 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_trade_unions_allowed"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_trade_unions_allowed.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_trade_unions_allowed.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_state_controlled_unions_allowed"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_state_controlled_unions_allowed.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_state_controlled_unions_allowed.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_trade_unions_banned"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_trade_unions_banned.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_trade_unions_banned.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_worker_organs"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_worker_organs.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_worker_organs.dds"
 	}
 
 
@@ -122,27 +122,27 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_police_only"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_police_only.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_police_only.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_counter_terrorism_operatives"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_counter_terrorism_operatives.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_counter_terrorism_operatives.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_gendarmerie"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_gendarmerie.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_gendarmerie.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_sassy_secret_police"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_secret_police.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_secret_police.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_military_policing"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_military_policing.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_military_policing.dds"
 	}
 
 
@@ -153,22 +153,22 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_firearms_ownership_banned"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_ownership_banned.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_ownership_banned.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_firearms_harsh_licenses"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_harsh_licenses.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_harsh_licenses.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_firearms_licenses"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_licenses.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_licenses.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_right_to_bear_arms"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_right_to_bear_arms.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_right_to_bear_arms.dds"
 	}
 
 }
