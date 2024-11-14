@@ -1,0 +1,167 @@
+ideas = {
+
+    ep_trade_tariffs = {
+        law = yes
+        use_list_view = yes
+
+        no_trade_tariffs = {
+
+            available = {
+
+                OR = {
+                    has_idea = laisezz_faire
+                    has_idea = pog_rentier_state
+                    has_idea = welfare_capitalism
+                }
+            }
+
+            level = 5
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.10
+                industrial_capacity_factory = -0.10
+                license_purchase_cost = -0.50
+                license_production_speed = 0.25
+                production_speed_arms_factory_factor = -0.05
+                production_speed_industrial_complex_factor = -0.05
+                production_speed_dockyard_factor = -0.05
+                receiving_investment_cost_modifier = -0.25
+                investment_duration_modifier = -0.25
+                trade_opinion_factor = 0.25
+                return_on_investment_modifier = 0.01
+                international_market_income_modifier = -0.5
+            }
+
+            research_bonus = { industry = 0.15 }
+
+            cancel_if_invalid = yes
+        }
+
+        low_trade_tariffs = {
+
+            available = {
+
+            }
+
+            level = 4
+
+            modifier = {
+                consumer_goods_factor = -0.025
+                production_factory_efficiency_gain_factor = -0.05
+                industrial_capacity_factory = -0.05
+                license_purchase_cost = -0.25
+                license_production_speed = 0.13
+                production_speed_arms_factory_factor = -0.02
+                production_speed_dockyard_factor = -0.02
+                receiving_investment_cost_modifier = -0.10
+                investment_duration_modifier = -0.10
+                trade_opinion_factor = 0.10
+                return_on_investment_modifier = 0.005
+                international_market_income_modifier = -0.25
+            }
+
+            research_bonus = { industry = 0.075 }
+
+            cancel_if_invalid = yes
+        }
+
+        average_trade_tariffs = {
+
+            available = {
+
+            }
+            
+            cost = 50
+            level = 3
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.05
+                
+            }
+
+            research_bonus = { industry = -0.05 }
+
+            cancel_if_invalid = yes
+        }
+
+        high_trade_tariffs = {
+
+            available = {
+
+                NOT = {
+
+                    OR = {
+                     
+                    has_idea = laisezz_faire
+                    has_idea = pog_rentier_state
+
+                    }
+                }
+            }
+
+            level = 2
+
+            modifier = {
+                consumer_goods_factor = 0.025
+                production_factory_efficiency_gain_factor = 0.05
+                industrial_capacity_factory = 0.05
+                license_purchase_cost = 0.10
+                license_production_speed = -0.12
+                production_speed_industrial_complex_factor = 0.025
+                production_speed_arms_factory_factor = 0.025
+                production_speed_dockyard_factor = 0.04
+                production_speed_fuel_silo_factor = 0.05
+                receiving_investment_cost_modifier = 0.10
+                investment_duration_modifier = 0.10
+                trade_opinion_factor = -0.10
+                return_on_investment_modifier = -0.005
+                international_market_income_modifier = 0.25
+           }
+
+           research_bonus = { industry = -0.075 }
+
+          cancel_if_invalid = yes
+        }
+
+        extreme_trade_tariffs = {
+
+            available = {
+
+                NOT = {
+
+                    OR = {
+                        has_idea = laisezz_faire
+                        has_idea = pog_rentier_state
+                        has_idea = welfare_capitalism
+                    }
+
+                }
+            }
+
+            level = 1
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                stability_factor = -0.025
+                production_factory_efficiency_gain_factor = 0.10
+                industrial_capacity_factory = 0.10
+                license_purchase_cost = 0.50
+                license_production_speed = -0.30
+                production_speed_industrial_complex_factor = 0.05
+                production_speed_arms_factory_factor = 0.05
+                production_speed_dockyard_factor = 0.08
+                production_speed_fuel_silo_factor = 0.10
+                receiving_investment_cost_modifier = 0.25
+                investment_duration_modifier = 0.25
+                trade_opinion_factor = -0.25
+                return_on_investment_modifier = -0.01
+                international_market_income_modifier = 0.50
+            }
+
+            research_bonus = { industry = -0.15 }
+
+            cancel_if_invalid = yes
+        }   
+    }
+}

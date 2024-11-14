@@ -61,7 +61,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = attack_submarine
+   				archetype = attack_submarine
 								}
 				   }
 			} 
@@ -70,7 +70,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = missile_submarine
+   				archetype = missile_submarine
 								}
 				   }
 			}
@@ -79,7 +79,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = destroyer
+   				archetype = destroyer
 								}
 				   }
 			}
@@ -88,7 +88,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = carrier
+   				archetype = carrier
 								}
 				   }
 			}
@@ -97,7 +97,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = frigate
+   				archetype = frigate
 								}
 				   }
 			}
@@ -106,7 +106,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = battleship
+   				archetype = battleship
 								}
 				   }
 			}
@@ -115,7 +115,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = battle_cruiser
+   				archetype = battle_cruiser
 								}
 				   }
 			}
@@ -124,7 +124,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = helicopter_operator
+   				archetype = helicopter_operator
 								}
 				   }
 			}
@@ -133,7 +133,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = corvette
+   				archetype = corvette
 								}
 				   }
 			}
@@ -142,7 +142,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = cruiser
+   				archetype = cruiser
 								}
 				   }
 			}
@@ -151,7 +151,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = stealth_destroyer
+   				archetype = stealth_destroyer
 								}
 				   }
 			}
@@ -160,7 +160,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = heavy_frigate
+   				archetype = heavy_frigate
 								}
 				   }
 			}
@@ -169,15 +169,10 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				type = patrol_boat
+   				archetype = patrol_boat
 								}
 				   }
 			}
-		}
-
-
-		properties = {
-
 		}
 	}
 }

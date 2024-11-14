@@ -15,7 +15,7 @@ leader_traits = {
 		research_speed_factor = 0.10
 	}
 	Invisible = {
-		max_organisation = 10
+		enemy_army_bonus_air_superiority_factor = -0.15
 	}
 	Bing_Chilling = {
 		communism_acceptance = 50

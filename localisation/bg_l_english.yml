@@ -96,8 +96,8 @@
  post_scarcity_desc:0 "Post-scarcity is an economic theory in which most goods can be produced in great abundance with minimal human labor needed, so that they become available to all very cheaply or even freely."
  50_per_capita_or_more_tt:0 "More than $$§Y50§!k GDP per Capita (Current: $$§Y[?ROOT.gdp_per_capita]§!k)"
  productivity_requirement_tt:0 "More than §Y1,750§! Productivity (Current: §Y[?ROOT.overall_productivity]§!)"
- rentier_state:0 "Rentier State"
- rentier_state_desc:0 "A rentier state is a state which derives all or a substantial portion of its national revenues from the rent paid by foreign individuals, concerns or governments."
+ pog_rentier_state:0 "Rentier State"
+ pog_rentier_state_desc:0 "A rentier state is a state which derives all or a substantial portion of its national revenues from the rent paid by foreign individuals, concerns or governments."
  laisezz_faire:0 "Laisezz Faire"
  laisezz_faire_desc:0 ""Laisezz Faire" is a type of economic system in which transactions between private groups of people are free from any form of economic interventionism."
  welfare_capitalism:0 "Welfare Capitalism"
@@ -134,20 +134,20 @@
 
 
 
- #ep_trade_tarrifs
+ #ep_trade_tariffs
 
- ep_trade_tarrifs:0 "Trade Tarrifs"
+ ep_trade_tariffs:0 "Trade tariffs"
 
- no_trade_tarrifs:0 "No Tarrifs"
- no_trade_tarrifs_desc:0 "The state imposes no tarrifs on imported goods."
- low_trade_tarrifs:0 "Low Tarrifs"
- low_trade_tarrifs_desc:0 "The state imposes a low amount of tarrifs on imported goods."
- average_trade_tarrifs:0 "Average Tarrifs"
- average_trade_tarrifs_desc:0 "The state imposes a fair amount of tarrifs on imported goods."
- high_trade_tarrifs:0 "High Tarrifs" 
- high_trade_tarrifs_desc:0 "The state imposes a high amount of tarrifs on imported goods."
- extreme_trade_tarrifs:0 "Extreme Tarrifs"
- extreme_trade_tarrifs_desc:0 "The state imposes an extreme amount of tarrifs on imported goods."
+ no_trade_tariffs:0 "No tariffs"
+ no_trade_tariffs_desc:0 "The state imposes no tariffs on imported goods."
+ low_trade_tariffs:0 "Low tariffs"
+ low_trade_tariffs_desc:0 "The state imposes a low amount of tariffs on imported goods."
+ average_trade_tariffs:0 "Average tariffs"
+ average_trade_tariffs_desc:0 "The state imposes a fair amount of tariffs on imported goods."
+ high_trade_tariffs:0 "High tariffs" 
+ high_trade_tariffs_desc:0 "The state imposes a high amount of tariffs on imported goods."
+ extreme_trade_tariffs:0 "Extreme tariffs"
+ extreme_trade_tariffs_desc:0 "The state imposes an extreme amount of tariffs on imported goods."
 
 
 #ep_foreign_investment
@@ -248,8 +248,6 @@ communal_state:0 "Communal State"
 communal_state_desc:0 "Communes are an organizational community with social cohesion derived from a shared culture. As a governing community, a commune often entails some degree of local governance, communal ownership, and cultural cohesion."
 city_state:0 "City State"
 city_state_desc:0 "A city-state is an independent sovereign city which serves as the center of political, economic, and cultural life over its contiguous territory."
-region_state:0 "Regional State"
-region_state:0:desc "A regional state is a state that is divided into regions, each with its own government and laws. The regions are not sovereign states, but they are granted a degree of autonomy by the central government."
 
 
 #welfare_policies

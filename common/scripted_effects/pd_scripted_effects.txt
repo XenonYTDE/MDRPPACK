@@ -531,20 +531,4 @@ execute_peace_deal = {
 			}
 		}
 	}
-	# Disarm nation
-	if = {
-		limit = { 
-			ROOT = { has_country_flag = pd_disarm }
-		}
-		var:giver = {
-			add_timed_idea = {
-				idea = peace_disarmed_nation
-				days = 720
-			}
-			add_timed_idea = {
-				idea = peace_civilian_economy
-				days = 720
-			}
-		}
-	}
 }

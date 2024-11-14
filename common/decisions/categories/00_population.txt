@@ -1,4 +1,0 @@
-PI_decision_category = {
-	icon = resource_production
-	priority = 10
-}

@@ -15,7 +15,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_slot_ep_trade_tarrifs"
+		name = "GFX_idea_slot_ep_trade_tariffs"
 		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
 	}
 
@@ -43,8 +43,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_rentier_state"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_rentier_state.dds"
+		name = "GFX_idea_pog_rentier_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_pog_rentier_state.dds"
 	}
 
 	spriteType = {
@@ -118,32 +118,32 @@ spriteTypes = {
 	}
 
 
-	#ep_trade_tarrifs 
+	#ep_trade_tariffs 
 
 
 	spriteType = {
-		name = "GFX_idea_no_trade_tarrifs"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_no_trade_tarrifs.dds"
+		name = "GFX_idea_no_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_no_trade_tariffs.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_low_trade_tarrifs"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_low_trade_tarrifs.dds"
+		name = "GFX_idea_low_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_low_trade_tariffs.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_average_trade_tarrifs"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_average_trade_tarrifs.dds"
+		name = "GFX_idea_average_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_average_trade_tariffs.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_high_trade_tarrifs"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_high_trade_tarrifs.dds"
+		name = "GFX_idea_high_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_high_trade_tariffs.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_extreme_trade_tarrifs"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_extreme_trade_tarrifs.dds"
+		name = "GFX_idea_extreme_trade_tariffs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tariffs\\_extreme_trade_tariffs.dds"
 	}
 
 

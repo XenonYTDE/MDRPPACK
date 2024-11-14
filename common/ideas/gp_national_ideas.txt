@@ -13,19 +13,6 @@ ideas = {
                 #political_power_gain = 0.20
                 political_power_cost = -0.20
             }
-            
-             ai_will_do = {
-                base = 40
-                modifier = {
-                    political_power_daily < 0.80
-                    add = 40
-                }
-
-                modifier = {
-                    date < 1937.01.01
-                    factor = 10
-                }
-            }
 
             cancel_if_invalid = yes
         }
@@ -41,14 +28,6 @@ ideas = {
                 local_resources_factor = 0.05
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.05
-            }
-
-            ai_will_do = {
-               base = 40
-               modifier = {
-                has_stability < 0.60
-                add = 40
-               } 
             }
 
             cancel_if_invalid = yes
@@ -80,27 +59,6 @@ ideas = {
 				resistance_growth_on_our_occupied_states = 0.2
 				
             }
-
-            ai_will_do {
-                base = 0
-
-                modifier = {
-                    has_defensive_war = yes
-                    add = 50
-                }
-
-                modifier = {
-                    surrender_progress > 0.8
-                    add = 100
-                }
-
-                modifier = {
-                    has_government = democratic
-					has_capitulated = yes
-					has_war = yes
-                    add = 80
-                }
-            }
             
             cancel_if_invalid = yes
         }   
@@ -123,21 +81,6 @@ ideas = {
                 training_time_factor = -0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_war_support > 0.60
-                    ai_wants_divisions > 5
-                    add = 80
-                }
-
-                modifier = {
-                    manpower_per_military_factory < 10000
-                     add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -157,22 +100,6 @@ ideas = {
                 drift_defence_factor = 0.05
                 justify_war_goal_time = -0.10
                 
-            }
-
-            ai_will_do = {
-                base = 15
-
-                modifier = {
-                    has_government = fascism 
-                    add = 60
-                    
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 40
-                }
-
             }
 
             cancel_if_invalid = yes
@@ -197,16 +124,6 @@ ideas = {
                 navy_intel_factor = 0.10
                 airforce_intel_factor = 0.10
 			}
-
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    agency_upgrade_number > 10
-                    add = 50
-                }
-            }
 
             cancel_if_invalid = yes
         }

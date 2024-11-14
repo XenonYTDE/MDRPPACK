@@ -80,8 +80,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_national_purity"
-		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_national_purity.dds"
+		name = "GFX_idea_pog_national_purity"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_pog_national_purity.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_population_control"

@@ -153,19 +153,12 @@ scripted_gui = {
 			}
 		}
 		
-		ai_test_interval = 336
+		ai_test_interval = 300
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 		
 		ai_enabled = {
-			if = {
-				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
-				always = yes
-			}
-			if = {
-				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
-				always = no
-			}
+            always = yes
 		}
 		
 		ai_check = {
@@ -5743,19 +5736,12 @@ scripted_gui = {
 			}
 		}
 
-		ai_test_interval = 168
+		ai_test_interval = 100
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 
 		ai_enabled = {
-			if = {
-				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
-				always = yes
-			}
-			if = {
-				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
-				always = no
-			}
+			always = yes
 		}
 		ai_check = {
 			has_political_power > 99

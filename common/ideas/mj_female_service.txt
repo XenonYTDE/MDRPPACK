@@ -29,32 +29,6 @@ ideas = {
                 total_workforce_modifier = -0.25
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = communism
-                    add = 80
-                }
-
-                modifier = {
-                    has_government = communism
-                    tag = SOV 
-                    add = 400
-                }
-
-                modifier = {
-                    has_idea = affirmative_actionF
-                    add = 60    
-                }
-
-                modifier = {
-                    has_idea = full_equality
-                    add = 40
-                }
-                
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -80,21 +54,6 @@ ideas = {
                 experience_loss_factor = -0.05
                 total_workforce_modifier = -0.10
             }
-
-            ai_will_do = {
-                base = 30 
-
-                modifier = {
-                    has_idea = limited_womens_rights
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = democratic
-                    add = 10
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -118,14 +77,6 @@ ideas = {
 
             research_bonus = {hospital_tech = 0.25}
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_idea = no_legal_protections
-                    add = 20
-                }
-            }
 
             cancel_if_invalid = yes
         }
@@ -147,25 +98,6 @@ ideas = {
                 political_power_factor = 0.05
                 stability_factor = -0.05
                 drift_defence_factor = 0.05
-            }
-
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    has_government = fascism
-                    add = 100
-                }
-
-                modifier = {
-                    has_idea = patriarchal_society
-                    add = 100
-                }
-
-                modifier = {
-                    has_idea = no_legal_protections
-                    add = 70
-                }
             }
 
             cancel_if_invalid = yes

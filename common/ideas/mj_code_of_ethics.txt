@@ -30,25 +30,6 @@ ideas = {
                 add_command_power = -10
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = democratic
-                    add  = 50
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 30
-                }
-
-                modifier  = {
-                    has_government = nationalist
-                    add = -20
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -78,25 +59,6 @@ ideas = {
                 add_command_power = -5
             }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    has_government = democratic
-                    add = 60
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = fascism
-                    add = -30
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -113,15 +75,6 @@ ideas = {
                 resistance_damage_to_garrison = -0.05
                 experience_gain_army_unit_factor = 0.05
                 experience_gain_factor = 0.05
-            }
-
-            ai_will_do = {
-                base = 40
-
-                modifier = {
-                    has_government = communism
-                    add = 10
-                }
             }
 
             cancel_if_invalid = yes
@@ -149,15 +102,6 @@ ideas = {
                 stability_factor = -0.05
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = fascism
-                    add = 60
-                }
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -182,15 +126,6 @@ ideas = {
                 compliance_growth = -0.10
                 max_command_power = 20
                 stability_factor = -0.10
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_government = fascism
-                    add = 60
-                }
             }
 
             cancel_if_invalid = yes

@@ -20,30 +20,6 @@ ideas = {
                 #required_garrison_factor #= #-0.08
                 monthly_population = 0.15
             }
-
-            ai_will_do = {
-                base = 40
-
-                modifier = {
-                    OR = {
-                        has_country_leader_ideology = stalinism
-                        has_country_leader_ideology = leninism
-                        has_country_leader_ideology = marxism
-                        has_country_leader_ideology = liberalism
-                    }
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = welfare_capitalism
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = democratic
-                    add = 20
-                }
-            }
         }
 
         firearms_harsh_licenses = {
@@ -62,20 +38,6 @@ ideas = {
                 monthly_population = -0.05
 
             }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_country_leader_ideology = conservatism
-                    add = 40
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 40
-                }
-            }
         }
 
         firearms_licenses = {
@@ -89,20 +51,6 @@ ideas = {
             modifier = {
                 stability_factor = 0.05
                 monthly_population = -0.10
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_country_leader_ideology = conservatism
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 20
-                }
             }
         }
 
@@ -122,21 +70,6 @@ ideas = {
                 resistance_activity = 0.15
                 #required_garrison_factor #= #0.05
                 monthly_population = -0.15
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    tag = USA
-                    add = 200
-                }
-
-                modifier = {
-                    has_country_leader_ideology = anarchism
-                    add = 200
-                }
-                
             }
         }
     }

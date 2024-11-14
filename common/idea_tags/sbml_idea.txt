@@ -27,7 +27,7 @@ idea_categories = {
 	economic_policies = {
 		slot = ep_economic_model 
 		slot = ep_taxation_policy
-		slot = ep_trade_tarrifs
+		slot = ep_trade_tariffs
 		slot = ep_foreign_investments
 		slot = ep_war_bonds
 		slot = ep_subsidization
@@ -72,6 +72,7 @@ idea_categories = {
 		slot = is_population_growth
 		slot = is_trade_unions
 		slot = is_firearm_regulation
+		slot = is_state_security
 
 		ledger = civilian
 		

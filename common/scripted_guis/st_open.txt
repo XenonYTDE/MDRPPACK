@@ -1,7 +1,7 @@
 scripted_gui = {
 
 	st_open = {
-		context_type = player_context
+		context_type = diplomatic_action
 
 		window_name = "st_open_container"
 

@@ -15,18 +15,6 @@ ideas = {
                consumer_goods_factor = 0.10
                stability_factor = -0.05
            }
-           
-           ai_will_do = {
-               base = 5
-               modifier = {
-                   is_major = no
-                   add = 10
-               }
-               modifier = {
-                   has_stability < 0.5
-                   factor = 0
-               }
-           }
 
            cancel_if_invalid = yes
        }
@@ -42,14 +30,6 @@ ideas = {
                monthly_population = 0.30
                consumer_goods_factor = 0.05
            }
-           
-           ai_will_do = {
-               base = 10
-               modifier = {
-                   is_major = no
-                   add = 20
-               }
-           }
 
            cancel_if_invalid = yes
        }
@@ -64,18 +44,10 @@ ideas = {
                monthly_population = 0.15
            }
 
-           ai_will_do = {
-               base = 40
-               modifier = {
-                   has_government = democratic 
-                   add = 20
-               }
-           }
-
            cancel_if_invalid = yes
        }
 
-       national_purity = {
+       pog_national_purity = {
            available = {
                has_government = nationalist
            }
@@ -88,18 +60,6 @@ ideas = {
                stability_factor = 0.05
                war_support_factor = 0.05
                drift_defence_factor = 0.05
-           }
-
-           ai_will_do = {
-               base = 0
-               modifier = {
-                   has_government = nationalist
-                   add = 60
-               }
-               modifier = {
-                   has_government = nationalist
-                   add = 100
-               }
            }
 
            cancel_if_invalid = yes
@@ -118,19 +78,7 @@ ideas = {
                political_power_factor = 0.05
                monthly_population = 0.05
                stability_factor = -0.05
-           }
-
-           ai_will_do = {
-               base = 10
-               modifier = {
-                   has_government = nationalist
-                   add = 10
-               }
-               modifier = {
-                   has_idea = chairman
-                   add = 20
-               }
-           }   
+           } 
 
            cancel_if_invalid = yes
        }
@@ -151,14 +99,6 @@ ideas = {
                consumer_goods_factor = -0.05
            }
 
-           ai_will_do = {
-               base = 0
-               modifier = {
-                   has_government = communism
-                   add = 20
-               }
-           }
-
            cancel_if_invalid = yes
        }
 
@@ -177,14 +117,6 @@ ideas = {
                stability_factor = -0.15
                consumer_goods_factor = -0.10
                drift_defence_factor = 0.10
-           }
-
-           ai_will_do = {
-               base = 0
-               modifier = {
-                   has_government = communism
-                   add = 30
-               }
            }
 
            cancel_if_invalid = yes

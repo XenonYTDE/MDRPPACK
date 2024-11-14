@@ -22,37 +22,6 @@ ideas = {
                 air_volunteer_cap = 15
             }
 
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_government = communism
-                    num_divisions > 30
-                    add = 40
-                }
-
-                modifier = {
-                    num_faction_members > 5
-                    is_faction_leader = yes
-                    add = 40
-                }
-
-                modifier = {
-                    tag =  SWE
-                    add = 40
-                }
-
-                modifier = {
-                    is_major = yes
-                    add = 10
-                }
-
-                modifier = {
-                    has_government = democratic
-                    add = 10
-                }
-            }
-
             cancel_if_invalid = yes
         }
 

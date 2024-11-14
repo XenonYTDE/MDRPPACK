@@ -16,10 +16,6 @@ ideas = {
                 can_create_factions = yes
                 can_join_factions = yes
             }
-
-            modifier = {
-
-            }
         }
     }
 }

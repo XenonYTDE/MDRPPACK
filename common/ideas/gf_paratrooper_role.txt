@@ -17,10 +17,6 @@ ideas = {
                 paradrop_organization_factor = 0.25
             }
 
-            ai_will_do = {
-                base = 20
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -37,15 +33,6 @@ ideas = {
                 paratrooper_aa_defense = 0.25
                 paratrooper_weight_factor = -0.10
                 air_fuel_consumption_factor = -0.10
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    tag =  USA 
-                    add = 10
-                }
             }
             
             cancel_if_invalid = yes
@@ -64,10 +51,6 @@ ideas = {
                 extra_paratrooper_supply_grace = 120
                 paratroopers_special_forces_contribution_factor = -0.10
 
-            }
-
-            ai_will_do = {
-                base = 20
             }
 
             cancel_if_invalid = yes
