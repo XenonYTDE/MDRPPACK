@@ -44,7 +44,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_pog_rentier_state"
-		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_rentier_state.dds"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_pog_rentier_state.dds"
 	}
 
 	spriteType = {

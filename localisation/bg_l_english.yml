@@ -136,18 +136,18 @@
 
  #ep_trade_tariffs
 
- ep_trade_tariffs:0 "Trade Tarrifs"
+ ep_trade_tariffs:0 "Trade tariffs"
 
- no_trade_tariffs:0 "No Tarrifs"
- no_trade_tariffs_desc:0 "The state imposes no tarrifs on imported goods."
- low_trade_tariffs:0 "Low Tarrifs"
- low_trade_tariffs_desc:0 "The state imposes a low amount of tarrifs on imported goods."
- average_trade_tariffs:0 "Average Tarrifs"
- average_trade_tariffs_desc:0 "The state imposes a fair amount of tarrifs on imported goods."
- high_trade_tariffs:0 "High Tarrifs" 
- high_trade_tariffs_desc:0 "The state imposes a high amount of tarrifs on imported goods."
- extreme_trade_tariffs:0 "Extreme Tarrifs"
- extreme_trade_tariffs_desc:0 "The state imposes an extreme amount of tarrifs on imported goods."
+ no_trade_tariffs:0 "No tariffs"
+ no_trade_tariffs_desc:0 "The state imposes no tariffs on imported goods."
+ low_trade_tariffs:0 "Low tariffs"
+ low_trade_tariffs_desc:0 "The state imposes a low amount of tariffs on imported goods."
+ average_trade_tariffs:0 "Average tariffs"
+ average_trade_tariffs_desc:0 "The state imposes a fair amount of tariffs on imported goods."
+ high_trade_tariffs:0 "High tariffs" 
+ high_trade_tariffs_desc:0 "The state imposes a high amount of tariffs on imported goods."
+ extreme_trade_tariffs:0 "Extreme tariffs"
+ extreme_trade_tariffs_desc:0 "The state imposes an extreme amount of tariffs on imported goods."
 
 
 #ep_foreign_investment

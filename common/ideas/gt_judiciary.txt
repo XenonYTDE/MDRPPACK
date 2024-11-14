@@ -8,7 +8,7 @@ ideas = {
 
             available = {
                 NOT = {
-                    has_idea = rentier_state
+                    has_idea = pog_rentier_state
                 }
                 OR = {
                     has_idea = prime_minister
@@ -91,7 +91,7 @@ ideas = {
             available = {
 
                 OR = {
-                    has_idea = rentier_state
+                    has_idea = pog_rentier_state
                     has_idea = laisezz_faire
                     has_idea = state_capitalism
                     has_idea = mixed_market

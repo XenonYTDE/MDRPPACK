@@ -465,7 +465,8 @@ ideas = {
 			available = {
 				OR = {
 					has_elections = no
-					NOT = { has_idea = rentier_state }
+					NOT = { has_idea = rentier_state 
+							has_idea = pog_rentier_state }
 				}
 				OR = {
 					has_autocratic_government = yes
@@ -560,7 +561,8 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			available = {
-				NOT = { has_idea = rentier_state }
+				NOT = { has_idea = rentier_state 
+						has_idea = pog_rentier_state }
 				if = {
 					limit = {
 						OR = {
@@ -637,7 +639,8 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			available = {
-				NOT = { has_idea = rentier_state }
+				NOT = { has_idea = rentier_state 
+						has_idea = pog_rentier_state}
 				if = {
 					limit = {
 						OR = {
