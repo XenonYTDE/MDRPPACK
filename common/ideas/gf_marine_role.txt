@@ -18,16 +18,7 @@ ideas = {
                 amphibious_invasion = 0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    tag =  JAP 
-                    add = 40
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         marine_navy_command = {
@@ -45,16 +36,8 @@ ideas = {
                 naval_invasion_capacity = 5
             }
 
-            ai_will_do = {
-                base = 20
 
-                modifier = {
-                    tag =  USA 
-                    add = 40
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         marine_spec_ops_command = {
@@ -72,12 +55,7 @@ ideas = {
                 naval_invasion_capacity = 1
             }
 
-            ai_will_do = {
-                base = 20
-                
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

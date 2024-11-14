@@ -17,11 +17,7 @@ ideas = {
                 paradrop_organization_factor = 0.25
             }
 
-            ai_will_do = {
-                base = 20
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         para_air_command = {
@@ -38,17 +34,8 @@ ideas = {
                 paratrooper_weight_factor = -0.10
                 air_fuel_consumption_factor = -0.10
             }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    tag =  USA 
-                    add = 10
-                }
-            }
             
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         para_spec_ops_command = {
@@ -66,11 +53,7 @@ ideas = {
 
             }
 
-            ai_will_do = {
-                base = 20
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

@@ -13,7 +13,7 @@ resources_expansion_category = {
 		custom_cost_text = cost_25_0
 
 		complete_effect = {
-			set_temp_variable = { treasury_change = -10 }
+			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
 		}
 

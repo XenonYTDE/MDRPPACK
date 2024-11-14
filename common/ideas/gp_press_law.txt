@@ -21,21 +21,6 @@ ideas = {
                 justify_war_goal_time = -0.1
                 drift_defence_factor = 0.2
             }
-
-            ai_will_do = {
-                
-                base = 10
-                
-                modifier = {
-                    has_government = nationalist
-                    add = 60
-                }
-
-                modifier = {
-                    factor = 3
-                }
-            
-            }
           
             cancel_if_invalid = yes
         }
@@ -54,22 +39,6 @@ ideas = {
                 war_support_factor = 0.05
                 justify_war_goal_time = -0.05
                 drift_defence_factor = 0.1
-            }
-
-            ai_will_do = {
-                base = 10
-
-                modifier = {
-                    OR = {
-                        has_government = nationalist
-                        has_government = neutrality
-                    }
-                    add = 40
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes
@@ -91,19 +60,6 @@ ideas = {
                 war_support_factor = -0.10
                 justify_war_goal_time = 0.1
                 drift_defence_factor = -0.10
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_government = democratic
-                    add = 100
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
             cancel_if_invalid = yes

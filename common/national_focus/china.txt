@@ -16284,7 +16284,9 @@ focus_tree = {
 		mutually_exclusive = { focus = CHI_Favor_Multipolarity }
 
 		available = {
-			has_idea = superpower
+			OR = {
+				has_idea = superpower
+			}
 			NOT = { has_government = democratic }
 		}
 

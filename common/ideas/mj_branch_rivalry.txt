@@ -1,6 +1,6 @@
 ideas = {
 
-    mj_branch_rivarly = {
+    mj_branch_rivalry = {
         law = yes
         use_list_view = yes
 
@@ -30,17 +30,7 @@ ideas = {
                 add_command_power = -5
             }
 
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    num_of_naval_factories < 5
-                    add = 70
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         army_strengthened = {
@@ -61,19 +51,10 @@ ideas = {
                 air_doctrine_cost_factor = -0.05
             }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    num_of_naval_factories < 20
-                    add = 70
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
-        balanced_rivarly = {
+        balanced_rivalry = {
 
             available = {
 
@@ -88,11 +69,7 @@ ideas = {
                 experience_gain_air_factor = 0.025
             }
 
-            ai_will_do = {
-                base = 40
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         navy_strengthened = {
@@ -114,26 +91,7 @@ ideas = {
                 air_doctrine_cost_factor = -0.05
             }
 
-            ai_will_do = {
-                base = 30
-
-                modifier = {
-                    num_of_naval_factories > 30
-                    add = 40
-                }
-
-                modifier = {
-                    num_of_naval_factories > 30
-                    
-                    OR = {
-                        tag = ENG 
-                        tag = JAP 
-                    }
-                    add = 100
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         navy_dominant = {
@@ -163,26 +121,7 @@ ideas = {
                 add_command_power = -5
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    num_of_naval_factories > 50
-                    add = 60
-                }
-
-                modifier = {
-                    num_of_naval_factories > 60
-                    
-                    OR = {
-                        tag = ENG 
-                        tag = JAP 
-                    }
-                    add = 200
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
 }

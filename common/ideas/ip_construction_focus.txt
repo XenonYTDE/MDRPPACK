@@ -19,11 +19,7 @@ ideas = {
 		        production_speed_offices_factor = 0.25
             }
 
-            ai_will_do = {
-                base = 20
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         military_buildings = {
@@ -38,14 +34,11 @@ ideas = {
                 production_speed_buildings_factor = -0.15
                 production_speed_arms_factory_factor = 0.25
                 production_speed_dockyard_factor = 0.25
-		        production_speed_missile_defense_station_factor = 0.35
-		        production_speed_TEL_base_factor = 0.35
-		        production_speed_missile_silo_factor = 0.35
+                production_speed_missile_defense_station_factor = 0.35
+                production_speed_TEL_base_factor = 0.35
+                production_speed_missile_silo_factor = 0.35
             }
 
-            ai_will_do = {
-                base = 20
-            }
         }
 
         defense_focus = {
@@ -57,15 +50,11 @@ ideas = {
             removal_cost = 0
 
             modifier = {
-		production_speed_buildings_factor = -0.15
-		production_speed_bunker_factor = 0.35
-		production_speed_coastal_bunker_factor = 0.35
-		production_speed_anti_air_building_factor = 0.35
-		production_speed_missile_defense_station_factor = 0.35
-            }
-
-            ai_will_do = {
-                base = 0
+                production_speed_buildings_factor = -0.15
+                production_speed_bunker_factor = 0.35
+                production_speed_coastal_bunker_factor = 0.35
+                production_speed_anti_air_building_factor = 0.35
+                production_speed_missile_defense_station_factor = 0.35
             }
     
         }
@@ -79,23 +68,20 @@ ideas = {
             removal_cost = 0
 
             modifier = {
-		production_speed_buildings_factor = -0.15
-		production_speed_infrastructure_factor = 0.25
-		production_speed_internet_station_factor = 0.25
-		production_speed_air_base_factor = 0.25
-		production_speed_supply_node_factor = 0.35
-		production_speed_naval_base_factor = 0.35
-		production_speed_rail_way_factor = 0.35
-		production_speed_radar_station_factor = 0.65
-		production_speed_synthetic_refinery_factor = 0.30
-		production_speed_fossil_powerplant_factor = 0.30
-		production_speed_nuclear_reactor_factor = 0.30
-		production_speed_fuel_silo_factor = 0.35
+                production_speed_buildings_factor = -0.15
+                production_speed_infrastructure_factor = 0.25
+                production_speed_internet_station_factor = 0.25
+                production_speed_air_base_factor = 0.25
+                production_speed_supply_node_factor = 0.35
+                production_speed_naval_base_factor = 0.35
+                production_speed_rail_way_factor = 0.35
+                production_speed_radar_station_factor = 0.65
+                production_speed_synthetic_refinery_factor = 0.30
+                production_speed_fossil_powerplant_factor = 0.30
+                production_speed_nuclear_reactor_factor = 0.30
+                production_speed_fuel_silo_factor = 0.35
             }
 
-            ai_will_do = {
-                base = 20
-            }
         }
     }
 }

@@ -44,7 +44,7 @@ idea_categories = {
 		slot = mj_non_core_manpower
 		slot = mj_female_service
 		slot = mj_training_quality
-		slot = mj_branch_rivarly
+		slot = mj_branch_rivalry
 		slot = mj_volunteer_forces
 
 		ledger = civilian

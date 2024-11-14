@@ -17,22 +17,8 @@ ideas = {
                 industrial_capacity_factory = -0.10
                 industrial_capacity_dockyard = -0.20
                 research_speed_factor = -0.10
-		agriculture_tax_modifier = 0.15
-		population_tax_income_multiplier_modifier = 0.05
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    is_major = yes
-                    add = -20
-                }
-
-                modifier = {
-                    num_of_civilian_factories < 10
-                    add = 60
-                }
+                agriculture_tax_modifier = 0.15
+                population_tax_income_multiplier_modifier = 0.05
             }
 
             cancel_if_invalid = yes
@@ -46,7 +32,6 @@ ideas = {
                     has_idea = communal_economy
                 }
                 num_of_civilian_factories > 10
-                num_of_civilian_factories < 30
             }
 
             modifier = {
@@ -54,22 +39,8 @@ ideas = {
                 consumer_goods_factor = -0.05
                 global_building_slots_factor = 0.15
                 production_speed_infrastructure_factor = 0.05
-		office_park_income_tax_modifier = 0.10
-		return_on_investment_modifier = 0.005
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_idea = laisezz_faire
-                    add = 20
-                }
-
-                modifier = {
-                    has_idea = pog_rentier_state
-                    add = 10
-                }
+                office_park_income_tax_modifier = 0.10
+                return_on_investment_modifier = 0.005
             }
 
             cancel_if_invalid = yes
@@ -77,7 +48,6 @@ ideas = {
 
         small_business = {
             available = {
-                num_of_civilian_factories > 25
                 NOT = {
                     has_idea = planned_economy
                 }
@@ -86,22 +56,8 @@ ideas = {
             modifier = {
                 global_building_slots_factor = 0.20
                 production_speed_industrial_complex_factor = 0.10
-		corporate_tax_income_multiplier_modifier = 0.05
-		civilian_industry_tax_modifier = 0.15
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_idea = welfare_capitalism
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = syndicalist_markets
-                    add = 40
-                }
+                corporate_tax_income_multiplier_modifier = 0.05
+                civilian_industry_tax_modifier = 0.15
             }
 
             cancel_if_invalid = yes
@@ -119,17 +75,8 @@ ideas = {
                 min_export = 0.10
                 production_speed_synthetic_refinery_factor = 0.20
                 production_speed_industrial_complex_factor = -0.10
-		civilian_industry_tax_modifier = 0.05
-		corporate_tax_income_multiplier_modifier = 0.05
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_idea = pog_rentier_state
-                    add = 80
-                }
+                civilian_industry_tax_modifier = 0.05
+                corporate_tax_income_multiplier_modifier = 0.05
             }
 
             cancel_if_invalid = yes
@@ -137,7 +84,6 @@ ideas = {
 
         business_and_enterprise = {
             available = {
-                num_of_civilian_factories > 35
                 NOT = {
                     has_idea = planned_economy
                     has_idea = state_capitalism
@@ -151,31 +97,14 @@ ideas = {
                 production_speed_infrastructure_factor = 0.15
                 production_speed_dockyard_factor = 0.15
                 production_speed_industrial_complex_factor = 0.05
-		corporate_tax_income_multiplier_modifier = 0.05
-		office_park_income_tax_modifier = 0.10
-            }
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_idea = mixed_market
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = syndicalist_markets
-                    add = 20
-                }
+                corporate_tax_income_multiplier_modifier = 0.05
+                office_park_income_tax_modifier = 0.10
             }
             
             cancel_if_invalid = yes
         }
 
         industry_manufacturing = {
-            available = {
-                num_of_factories > 50
-            }
 
             modifier = {
                 political_power_factor = -0.10
@@ -187,27 +116,8 @@ ideas = {
                 production_speed_industrial_complex_factor = 0.10
                 production_speed_fuel_silo_factor = 0.15
                 production_speed_nuclear_reactor_factor = 0.10
-		military_industry_tax_modifier = 0.15
-		dockyard_income_tax_modifier = 0.15
-            }
-
-            ai_will_do = {
-                base = 0
-
-                modifier = {
-                    has_idea = planned_economy
-                    add = 60
-                }
-
-                modifier = {
-                    has_idea = state_capitalism
-                    add = 40
-                }
-
-                modifier = {
-                    has_idea = mixed_market
-                    add = 10
-                }
+                military_industry_tax_modifier = 0.15
+                dockyard_income_tax_modifier = 0.15
             }
 
             cancel_if_invalid = yes

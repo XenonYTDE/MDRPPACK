@@ -6,10 +6,6 @@ ideas = {
 
         planning_stage = {
 
-            available = {
-                has_stability > 0.30
-            }
-
             cost = 100
             removal_cost = -1
 
@@ -17,31 +13,13 @@ ideas = {
                 #political_power_gain = 0.20
                 political_power_cost = -0.20
             }
-            
-             ai_will_do = {
-                base = 40
-                modifier = {
-                    political_power_daily < 0.80
-                    add = 40
-                }
 
-                modifier = {
-                    date < 1937.01.01
-                    factor = 10
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         efficient_beaurocracy = {
-            
-            available = {
-                has_stability > 0.50
-                has_war_support > 0.20
-            }
 
-            cost = 100
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -50,14 +28,6 @@ ideas = {
                 local_resources_factor = 0.05
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.05
-            }
-
-            ai_will_do = {
-               base = 40
-               modifier = {
-                has_stability < 0.60
-                add = 40
-               } 
             }
 
             cancel_if_invalid = yes
@@ -76,7 +46,7 @@ ideas = {
                 
             }
             
-            cost = 150
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -89,27 +59,6 @@ ideas = {
 				resistance_growth_on_our_occupied_states = 0.2
 				
             }
-
-            ai_will_do {
-                base = 0
-
-                modifier = {
-                    has_defensive_war = yes
-                    add = 50
-                }
-
-                modifier = {
-                    surrender_progress > 0.8
-                    add = 100
-                }
-
-                modifier = {
-                    has_government = democratic
-					has_capitulated = yes
-					has_war = yes
-                    add = 80
-                }
-            }
             
             cancel_if_invalid = yes
         }   
@@ -118,12 +67,12 @@ ideas = {
            
             available = {
                 OR = {
-                has_war_support > 0.70
+                has_war_support > 0.50
                 has_government = nationalist
                 }
             }
             
-            cost = 100
+            cost = 200
             removal_cost = -1
 
             modifier = {
@@ -132,39 +81,16 @@ ideas = {
                 training_time_factor = -0.15
             }
 
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    has_war_support > 0.60
-                    ai_wants_divisions > 5
-                    add = 80
-                }
-
-                modifier = {
-                    manpower_per_military_factory < 10000
-                     add = 60
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
 
         gp_nationalism = {
             
             available = {
-                OR = {
-                    AND = {
-                     has_war_support > 0.60
-                     has_stability > 0.40
-                    }
-                    
                     has_government = nationalist
-                    
                 }
-            }
 
-            cost = 150
+            cost = 250
             removal_cost = -1
 
             modifier = {
@@ -176,22 +102,6 @@ ideas = {
                 
             }
 
-            ai_will_do = {
-                base = 15
-
-                modifier = {
-                    has_government = fascism 
-                    add = 60
-                    
-                }
-
-                modifier = {
-                    has_government = neutrality
-                    add = 40
-                }
-
-            }
-
             cancel_if_invalid = yes
         }
 
@@ -199,28 +109,23 @@ ideas = {
             
             available = {
                 has_intelligence_agency = yes
-                threat > 0.4
             }
+
+            cost = 250
+            removal_cost = -1
 
             modifier = {
 				operative_slot = 1
 				operation_cost = -0.30
 				operation_outcome = 0.3
 				own_operative_capture_chance_factor = -0.15
+                civilian_intel_factor = 0.10
+                army_intel_factor = 0.10
+                navy_intel_factor = 0.10
+                airforce_intel_factor = 0.10
 			}
 
-
-            ai_will_do = {
-                base = 20
-
-                modifier = {
-                    agency_upgrade_number > 10
-                    add = 50
-                }
-            }
-
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
         }
     }
- }
-
+}

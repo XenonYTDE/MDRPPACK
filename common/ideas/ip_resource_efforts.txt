@@ -16,16 +16,6 @@ ideas = {
                 air_fuel_consumption_factor = -0.05
             }
 
-            ai_will_do = {
-                base = 20
-                
-                modifier = {
-                    fuel_ratio < 0.5
-                    has_war = yes
-                    add = 60
-                }
-            }
-
         }
 
         alternative_materials = {
@@ -40,9 +30,6 @@ ideas = {
                 production_lack_of_resource_penalty_factor = -0.20
             }
 
-            ai_will_do = {
-                base = 0
-            }
         }
 
         extraction_programs = {
@@ -57,14 +44,6 @@ ideas = {
                 local_resources_factor = 0.15
             }
 
-            ai_will_do = {
-                base = 10
-                
-                modifier = {
-                    has_idea = pog_rentier_state
-                    add = 40
-                }
-            }
         }
     }
 }

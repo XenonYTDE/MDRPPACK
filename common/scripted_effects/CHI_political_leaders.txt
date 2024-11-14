@@ -57,11 +57,13 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Wang Bingzhang"
-				picture = "Wang_Wentao_communist.dds"
+				name = "The Spirit of Confucius"
+				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
-					western_liberalism
+					Confucianism
+					Achieving_Ren
+					Confucian_Self_Improvement
 				}
 			}
 
@@ -73,11 +75,13 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Liu Xiaobo"
-				picture = "Liu_Xiaobo.dds"
+				name = "The Spirit of Confucius"
+				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
-					western_liberalism
+					Confucianism
+					Achieving_Ren
+					Confucian_Self_Improvement
 				}
 			}
 
@@ -487,6 +491,25 @@ set_leader_CHI = {
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Communist-State_leader = 1 } }
+			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+		}
+	}
+	else_if = { limit = { has_country_flag = set_Neutral_Autocracy }
+		if = { limit = { check_variable = { Neutral_Autocracy_leader = 0 } }
+			add_to_variable = { Neutral_Autocracy_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "John Xina"
+				picture = "John_Xina.dds"
+				ideology = Neutral_Autocracy
+				traits = {
+					Invisible
+					Bing_Chilling
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Neutral_Autocracy_leader = 1 } }
 			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
 		}
 	}
