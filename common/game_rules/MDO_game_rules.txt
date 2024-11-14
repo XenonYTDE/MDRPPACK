@@ -1,0 +1,250 @@
+###SOUTH-AMERICA####
+remove_south_america = {
+	name = "RULE_REMOVE_SOUTH_AMERICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_REMOVE_SOUTH_AMERICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_REMOVE_SOUTH_AMERICA_DESC"
+	}
+}
+merge_south_america = {
+	name = "RULE_MERGE_SOUTH_AMERICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_SOUTH_AMERICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_SOUTH_AMERICA_DESC"
+	}
+}
+####AFRICA####
+remove_africa = {
+	name = "RULE_REMOVE_AFRICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_REMOVE_AFRICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_REMOVE_AFRICA_DESC"
+	}
+}
+merge_africa = {
+	name = "RULE_MERGE_AFRICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_AFRICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_AFRICA_DESC"
+	}
+}
+####Central America####
+remove_central_america = {
+	name = "RULE_REMOVE_CENTRAL_AMERICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_REMOVE_CENTRAL_AMERICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_REMOVE_CENTRAL_AMERICA_DESC"
+	}
+}
+merge_central_america = {
+	name = "RULE_MERGE_CENTRAL_AMERICA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_CENTRAL_AMERICA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_CENTRAL_AMERICA_DESC"
+	}
+}
+####Misc Rules####
+merge_asia = {
+	name = "Merge Asia"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_ASIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_ASIA_DESC"
+	}
+}
+remove_arabia = {
+	name = "RULE_REMOVE_ARABIA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_REMOVE_ARABIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_REMOVE_ARABIA_DESC"
+	}
+}
+merge_arabia = {
+	name = "RULE_MERGE_ARABIA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_ARABIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_ARABIA_DESC"
+	}
+}
+merge_oceania = {
+	name = "RULE_MERGE_OCEANIA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_OCEANIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_OCEANIA_DESC"
+	}
+}
+remove_oceania = {
+	name = "RULE_REMOVE_OCEANIA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_REMOVE_OCEANIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_REMOVE_OCEANIA_DESC"
+	}
+}
+merge_scandinavia = {
+	name = "RULE_MERGE_SCANDINAVIA"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = nor
+		text = "RULE_OPTION_NOR"
+		desc = "RULE_NOR_MERGE_SCANDINAVIA_DESC"
+	}
+	option = {
+		name = swe
+		text = "RULE_OPTION_SWE"
+		desc = "RULE_SWE_MERGE_SCANDINAVIA_DESC"
+	}
+	option = {
+		name = fin
+		text = "RULE_OPTION_FIN"
+		desc = "RULE_FIN_MERGE_SCANDINAVIA_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_SCANDINAVIA_DESC"
+	}
+}
+merge_baltics = {
+	name = "RULE_MERGE_BALTICS"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = est
+		text = "RULE_OPTION_EST"
+		desc = "RULE_EST_MERGE_BALTICS_DESC"
+	}
+	option = {
+		name = lat
+		text = "RULE_OPTION_LAT"
+		desc = "RULE_LAT_MERGE_BALTICS_DESC"
+	}
+	option = {
+		name = lit
+		text = "RULE_OPTION_LIT"
+		desc = "RULE_LIT_MERGE_BALTICS_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_BALTICS_DESC"
+	}
+}
+hypermerge = {
+	name = "RULE_HYPERMERGE"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_HYPERMERGE_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_HYPERMERGE_DESC"
+	}
+} 
+####DISABLE-AI####
+disable_ai_nations = {
+	name = "RULE_DISABLE_AI_NATIONS"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_DISABLE_AI_NATIONS_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_DISABLE_AI_NATIONS_DESC"
+	}
+}

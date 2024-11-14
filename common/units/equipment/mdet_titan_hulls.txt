@@ -1,0 +1,317 @@
+equipments = {
+	titan_hull = {
+		year = 1922
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_modern_tank_equipment
+		type = armor
+		type_override = titan_frame_slot
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+		supply_consumption = 2.5
+		module_slots = {
+			titan_frame_slot = {
+				required = yes
+				allowed_module_categories = {
+					assault_titan_frame_category
+					artillery_titan_frame_category
+					heavy_titan_frame_category
+				}
+			}
+			power_core_slot = {
+				required = yes
+				allowed_module_categories = {
+					titan_turbine_core_category
+					titan_fission_core_category
+					titan_fusion_core_category
+				}
+			}
+			configuration_slot = {
+				required = yes
+				allowed_module_categories = {
+					titan_bipedal_configuration_category
+					titan_multipedal_configuration_category
+					titan_lam_configuration_category
+				}
+			}
+			left_main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					# titan_shotgun_category
+					# titan_assault_rifle_category
+					# titan_railgun_category
+					# titan_missile_launcher_category
+					# titan_cannon_category
+					# titan_chainsaw_category
+				}
+			}
+			left_secondary_armament_slot = {
+				required = no
+				allowed_module_categories = {
+					titan_secondary_rifle_category
+					titan_grenade_launcher_category
+					titan_rocket_launcher_category
+					titan_tesla_chainsword_category
+				}
+			}
+			left_tertiary_armament_slot = {
+				required = no
+				allowed_module_categories = {
+					titan_secondary_rifle_category
+					titan_grenade_launcher_category
+					titan_rocket_launcher_category
+					titan_tesla_chainsword_category
+				}
+			}
+			right_main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					# titan_shotgun_category
+					# titan_assault_rifle_category
+					# titan_railgun_category
+					# titan_missile_launcher_category
+					# titan_cannon_category
+					# titan_chainsaw_category
+				}
+			}
+			right_secondary_armament_slot = {
+				required = no
+				allowed_module_categories = {
+					titan_secondary_rifle_category
+					titan_grenade_launcher_category
+					titan_rocket_launcher_category
+					titan_tesla_chainsword_category
+				}
+			}
+			right_tertiary_armament_slot = {
+				required = no
+				allowed_module_categories = {
+					titan_secondary_rifle_category
+					titan_grenade_launcher_category
+					titan_rocket_launcher_category
+					titan_tesla_chainsword_category
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					titan_light_armor_category
+					titan_medium_armor_category
+					titan_heavy_armor_category
+				}
+			}
+		}
+		default_modules = {
+			titan_frame_slot = empty
+			power_core_slot = empty
+			configuration_slot = empty
+			left_main_armament_slot = empty
+			left_secondary_armament_slot = empty
+			left_tertiary_armament_slot = empty
+			right_main_armament_slot = empty
+			right_secondary_armament_slot = empty
+			right_tertiary_armament_slot = empty
+			armor_type_slot = empty
+		}
+		fuel_consumption = 0
+		maximum_speed = 4
+		build_cost_ic = 12
+		reliability = 1.6
+		hardness = 0.8
+		lend_lease_cost = 4
+		resources = {
+			steel = 1
+		}
+		manpower = 3
+	}
+	titan_hull_0 = {
+		abbreviation = "ttn0"
+		derived_variant_name = titan_equipment_0
+		visual_level = 0
+		year = 2035
+		archetype = titan_hull
+		priority = 2000
+		module_slots = inherit
+		supply_consumption = 2.5
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+	titan_hull_1 = {
+		abbreviation = "ttn1"
+		derived_variant_name = titan_equipment_1
+		visual_level = 1
+		year = 2060
+		archetype = titan_hull
+		parent = titan_hull_0
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4
+		build_cost_ic = 18
+		reliability = 1.8
+		hardness = 0.8
+		armor_value = 88
+		lend_lease_cost = 4
+		supply_consumption = 3.0
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+	titan_hull_2 = {
+		abbreviation = "ttn2"
+		derived_variant_name = titan_equipment_2
+		visual_level = 2
+		year = 2085
+		archetype = titan_hull
+		parent = titan_hull_1
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4
+		build_cost_ic = 27
+		reliability = 2
+		hardness = 0.8
+		armor_value = 110
+		lend_lease_cost = 4
+		supply_consumption = 3.5
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+	titan_hull_3 = {
+		abbreviation = "ttn3"
+		derived_variant_name = titan_equipment_3
+		visual_level = 3
+		year = 2110
+		archetype = titan_hull
+		parent = titan_hull_2
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4
+		build_cost_ic = 40
+		reliability = 2.2
+		hardness = 0.8
+		armor_value = 134
+		lend_lease_cost = 4
+		supply_consumption = 4.0
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+	titan_hull_4 = {
+		abbreviation = "ttn4"
+		derived_variant_name = titan_equipment_4
+		visual_level = 4
+		year = 2135
+		archetype = titan_hull
+		parent = titan_hull_3
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4
+		build_cost_ic = 60
+		reliability = 2.4
+		hardness = 0.8
+		armor_value = 160
+		lend_lease_cost = 4
+		supply_consumption = 4.5
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+	titan_hull_5 = {
+		abbreviation = "ttn5"
+		derived_variant_name = titan_equipment_5
+		visual_level = 5
+		year = 2160
+		archetype = titan_hull
+		parent = titan_hull_4
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4
+		build_cost_ic = 90
+		reliability = 2.6
+		hardness = 0.8
+		armor_value = 188
+		lend_lease_cost = 4
+		supply_consumption = 5.0
+		upgrades = {
+			titan_armor_upgrade
+			titan_agility_upgrade
+			titan_ordnance_upgrade
+			titan_energy_core_upgrade
+		}
+	}
+}
+
+duplicate_archetypes = {
+	artillery_titan_hull = {
+		archetype = titan_hull
+		type = {
+			armor
+			artillery
+		}
+		for_each = {
+			variant_name = {
+				find_and_replace = {
+					"hull"
+					"equipment"
+				}
+			}
+			hardness = {
+				set = 0.7
+			}
+		}
+	}
+	heavy_titan_hull = {
+		archetype = titan_hull
+		type = {
+			armor
+			anti_tank
+		}
+		for_each = {
+			variant_name = {
+				find_and_replace = {
+					"hull"
+					"equipment"
+				}
+			}
+			hardness = {
+				set = 0.9
+			}
+		}
+	}
+}
+
+# search_filters = {
+# 	name = assault_titans
+# 	values = {
+# 		titan_hull
+# 	}
+# }
+# search_filters = {
+# 	name = artillery_titans
+# 	values = {
+# 		artillery_titan_hull
+# 	}
+# }
+# search_filters = {
+# 	name = heavy_titans
+# 	values = {
+# 		heavy_titan_hull
+# 	}
+# }

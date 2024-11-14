@@ -1,0 +1,7 @@
+mio_cat_titans = {
+    equipment_type = {
+        titan_hull
+        artillery_titan_hull
+        heavy_titan_hull
+    }
+}

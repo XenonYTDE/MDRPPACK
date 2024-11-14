@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		####DISABLE-AI####
+		disabled_ai_nation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ai_great_depression
+
+			
+			modifier = {
+				consumer_goods_factor = 2.0
+				political_power_factor = -10.0
+				line_change_production_efficiency_factor = -5
+				conscription_factor = -1.0
+				conscription = -1
+				min_export = 1.0
+				trade_opinion_factor = -1.0
+				disabled_ideas = 1
+				ai_get_ally_desire_factor = -1000.0
+				ai_license_acceptance = -1.0
+				ai_desired_divisions_factor = -1.0
+				industrial_capacity_dockyard = -5
+				industrial_capacity_factory = -5
+				production_factory_max_efficiency_factor = -5
+				production_factory_start_efficiency_factor = -1
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+﻿l_english:
+######################
+###   GAME RULES   ###
+######################
+
+ gr:0 "§OGeneric RP§!"
+
+### Enable National Ideas
+ gr_nideas:0 "National Ideas"
+ gr_nideas_enable_y:0 "Enabled"
+ gr_nideas_enable_y_desc:0 "Enables the National Ideas interface, a selection of 9 Idea Groups that can further specialise your country."
+ gr_nideas_enable_n:0 "Disabled"
+ gr_nideas_enable_n_desc:0 "Disables the National Ideas interface."
+ gr_NIDEAS_DISABLED_TT:0 "§HNational Ideas§! has been disabled"
+
+
+### Enable State Interactions
+ gr_state_interactions:0 "State Interactions"
+ gr_state_interactions_enable_y:0 "Enabled"
+ gr_state_interactions_enable_y_desc:0 "Enables State Interactions, a range of ways you can interact with yours or others states from coring to building factories."
+ gr_state_interactions_enable_n:0 "Disabled"
+ gr_state_interactions_enable_n_desc:0 "Disables State Interactions."
+
+
+### Enable State Interactions: Coring
+ gr_state_interactions_core:0 "State Interactions: Coring"
+ gr_state_interactions_core_enable_y:0 "Enabled"
+ gr_state_interactions_core_enable_y_desc:0 "Enables the options to core and uncore your owned states."
+ gr_state_interactions_core_enable_n:0 "Disabled"
+ gr_state_interactions_core_enable_n_desc:0 "Disables the options to core and uncore your owned states."
+
+
+### Enable State Interactions: Resource Extraction
+ gr_state_interactions_re:0 "State Interactions: Resource Extraction"
+ gr_state_interactions_re_enable_y:0 "Enabled"
+ gr_state_interactions_re_enable_y_desc:0 "Enables the option to spend money to extract more resources from owned states."
+ gr_state_interactions_re_enable_n:0 "Disabled"
+ gr_state_interactions_re_enable_n_desc:0 "Disables the option to spend money to extract more resources from owned states."
+
+
+### Enable State Interactions: Industrial Expansion
+ gr_state_interactions_ie:0 "State Interactions: Industrial Expansion"
+ gr_state_interactions_ie_1:0 "16 times"
+ gr_state_interactions_ie_1_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 16 times."
+ gr_state_interactions_ie_2:0 "8 times"
+ gr_state_interactions_ie_2_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 8 times."
+ gr_state_interactions_ie_3:0 "4 times"
+ gr_state_interactions_ie_3_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 4 times."
+ gr_state_interactions_ie_4:0 "Disabled"
+ gr_state_interactions_ie_4_desc:0 "Disables the option to spend money to expand states' industrial capacity (building slots)."
+
+
+### Enable State Interactions: Construct Buildings
+ gr_state_interactions_cb:0 "State Interactions: Construct Buildings"
+ gr_state_interactions_cb_enable_y:0 "Enabled"
+ gr_state_interactions_cb_enable_y_desc:0 "Enables the options to spend money to construct buildings in owned states."
+ gr_state_interactions_cb_enable_n:0 "Disabled"
+ gr_state_interactions_cb_enable_n_desc:0 "Disables the options to spend money to construct buildings in owned states."
+
+
+### Enable State Interactions: Events
+ gr_state_interactions_events:0 "State Interactions: Events"
+ gr_state_interactions_events_enable_y:0 "Enabled"
+ gr_state_interactions_events_enable_y_desc:0 "Enables news events for various interactions such as the State Transfer and Claim Tool, notifying all players what has been used and how."
+ gr_state_interactions_events_enable_n:0 "Disabled"
+ gr_state_interactions_events_enable_n_desc:0 "Disables news events."
+
+
+### Enable State Transfer Tool
+ gr_stt:0 "State Transfer Tool"
+ gr_stt_enable_y:0 "Enabled (excludes Subjects)"
+ gr_stt_enable_y_desc:0 "Enables the State Transfer Tool for your owned states only."
+ gr_stt_enable_ys:0 "Enabled (includes Subjects)"
+ gr_stt_enable_ys_desc:0 "Enables the State Transfer Tool for your owned states and your subject's owned states only."
+ gr_stt_enable_n:0 "Disabled"
+ gr_stt_enable_n_desc:0 "Disables the State Transfer Tool."
+
+######################

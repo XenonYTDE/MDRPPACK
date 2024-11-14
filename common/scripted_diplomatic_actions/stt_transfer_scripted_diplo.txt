@@ -1,0 +1,36 @@
+scripted_diplomatic_actions = {
+	diplo_ship_transfer = {
+	visible = {
+	always = yes
+	}
+	     complete_effect = {
+	ROOT = {
+    		meta_effect = {
+        		text = {
+       		 transfer_ship = {
+                	    prefer_name = "Transfer"
+                	    type = [TYPE]
+               	    target = PREV
+            }
+        }
+        TYPE = "[This.GetShipTransferType]"
+    }
+}
+                        }
+	can_be_sent = {
+		ROOT = { has_navy_size = {
+	 		   size > 0
+			}
+		}
+	  	}
+cost = 35
+	send_scripted_gui = ship_transfer_GUI
+	requires_acceptance = no
+	can_be_accepted = {
+		always = yes
+		}
+		ai_desire = {
+		base = -10
+		}
+		}
+}
