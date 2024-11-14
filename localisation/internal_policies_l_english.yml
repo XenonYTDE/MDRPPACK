@@ -1,0 +1,67 @@
+﻿l_english:
+
+internal_policies:0 "Internal Policies"
+
+
+is_penal_system:0 "Penal System"
+is_population_growth:0 "Population Growth"
+is_trade_unions:0 "Trade Unions"
+is_state_security:0 "State Security"
+is_firearm_regulation:0 "Firearms Regulation"
+
+
+penal_slavery:0 "Penal Slavery"
+penal_slavery_desc:0 "The state employs a more brutal type of penal labour in the form of slavery."
+penal_labour:0 "Penal Labour"
+penal_labour_desc:0 "Penal labour is a term for various kinds of forced labour in which prisoners are required to perform, typically manual labour."
+penal_incarceration:0 "Incarceration"
+penal_incarceration_desc:0 "Prisoners are imprisoned and serve a sentence due to offences commited."
+penal_rehabilitation:0 "Rehabilitation"
+penal_rehabilitation_desc:0 "Rehabilitation is the process of re-educating and preparing those who have committed a crime, to re-enter society. Typically, the goal is to address the underlying root causes of crime in order to ensure inmates will be able to live a crime-free lifestyle once they are released from prison."
+
+rapid_population_growth:0 "Rapid Population Growth"
+rapid_population_growth_desc:0 "The state encourages population growth through various programs."
+encourage_growth:0 "Encourage Growth"
+encourage_growth_desc:0 "The state encourages population growth through various programs."
+standard_growth:0 "Standard Growth"
+standard_growth_desc:0 "The state does not involve itself in the growth of population."
+controlled_birth_rates:0 "Controlled Birth Rates"
+controlled_birth_rates_desc:0 "The states controls and sets the rates of birth."
+pog_national_purity:0 "National Purity"
+pog_national_purity_desc:0 "The state enforces Blood quantum laws."
+population_control:0 "Population Control"
+population_control_desc:0 "The state enforces population control measures."
+one_child_policyy:0 "One Child Policy"
+one_child_policyy_desc:0 "The state enforces a one child policy."
+
+
+trade_unions_allowed:0 "Trade Unions Allowed"
+trade_unions_allowed_desc:0 "Trade unions and the participation of workers in such organisations is legal."
+state_controlled_unions_allowed:0 "State Controlled Allowed" 
+state_controlled_unions_allowed_desc:0 "Only trade unions that are controlled by the state are legal."
+trade_unions_banned:0 "Trade Unions Banned"
+trade_unions_banned_desc:0 "All forms of trade organisations are banned."
+worker_organs:0 "Worker's Organisations"
+worker_organs_desc:0 "The market is dominated by trade unions, syndicates and/or cooperatives."
+
+
+police_only:0 "Police"
+police_only_desc:0 "Law is enforced by typical police organisations."
+counter_terrorism_operatives:0 "Counter Terrorism Operatives"
+counter_terrorism_operatives_desc:0 "Special units are formed to combat terror."
+gendarmerie:0 "Gendarmerie"
+gendarmerie_desc:0 "A gendarmerie is a military force with law enforcement duties among the civilian population."
+sassy_secret_police:0 "Secret Police"
+sassy_secret_police_desc:0 "A secret police is present to combat dissidents and political opponents."
+military_policing:0 "Military Policing"
+military_policing_desc:0 "Policing is placed solely on the hands of the armed forces."
+
+
+firearms_ownership_banned:0 "Firearms Ownership Banned"
+firearms_ownership_banned_desc:0 "Private ownership of firearms is wholly banned."
+firearms_harsh_licenses:0 "Harsh Licenses"
+firearms_harsh_licenses_desc:0 "Private ownership of firearms is allowed, but only under strict licensing."
+firearms_licenses:0 "Licenses"
+firearms_licenses_desc:0 "Private ownership of firearms is allowed, but only under licensing"
+right_to_bear_arms:0 "Right to Bear Arms"
+right_to_bear_arms_desc:0 "Private ownership of firearms is allowed with minimal legal regulation."

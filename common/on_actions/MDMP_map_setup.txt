@@ -1,0 +1,643 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_south_america
+						option = yes
+					}
+				}
+				GUY = {
+					annex_country = { target = SUR transfer_troops = no }
+
+
+					every_state = {
+						limit = {		
+							is_controlled_by = GUY
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = GUY }
+							}
+							add_core_of = GUY
+						}
+					}
+				}
+			
+				PRU = {
+					annex_country = { target = ECU transfer_troops = no }
+
+
+					every_state = {
+						limit = {		
+							is_controlled_by = PRU
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = PRU }
+							}
+							add_core_of = PRU
+						}
+					}
+				}	
+
+				BOL = {
+					annex_country = { target = PAR transfer_troops = no }
+
+
+					every_state = {
+						limit = {		
+							is_controlled_by = BOL
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = BOL }
+							}
+							add_core_of = BOL
+						}
+					}
+				}	
+
+				ARG = {
+					annex_country = { target = CHL transfer_troops = no }
+
+
+					every_state = {
+						limit = {		
+							is_controlled_by = ARG
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = ARG }
+							}
+							add_core_of = ARG
+						}
+					}
+				}	
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_africa
+						option = yes
+					}
+				}
+				SUD = {
+					annex_country = { target = SSU transfer_troops = no }
+
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = SUD
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = SUD }
+							}
+							add_core_of = SUD
+						}
+					}
+				}
+				
+				ERI = {
+					annex_country = { target = DJI transfer_troops = no }
+
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = ERI
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = ERI }
+							}
+							add_core_of = ERI
+						}
+					}
+				}
+				
+				SOM = {
+					annex_country = { target = SML transfer_troops = no }
+					annex_country = { target = PUN transfer_troops = no }
+					annex_country = { target = SWS transfer_troops = no }
+					annex_country = { target = SNA transfer_troops = no }
+					annex_country = { target = JUB transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = SOM
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = SOM }
+							}
+							add_core_of = SOM
+						}
+					}
+				}
+				
+				ZAM = {
+					annex_country = { target = MLW transfer_troops = no }
+
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = ZAM
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = ZAM }
+							}
+							add_core_of = ZAM
+						}
+					}
+				}
+				
+				NIG = {
+					annex_country = { target = EGU transfer_troops = no }
+					annex_country = { target = CAM transfer_troops = no }
+					annex_country = { target = BEN transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = NIG
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = NIG }
+							}
+							add_core_of = NIG
+						}
+					}
+				}
+				
+				CDI = {
+					annex_country = { target = GAH transfer_troops = no }
+					annex_country = { target = TOG transfer_troops = no }
+					annex_country = { target = LIB transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = CDI
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = CDI }
+							}
+							add_core_of = CDI
+						}
+					}
+				}
+
+				LIB = {
+					annex_country = { target = AFR transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = LIB
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = LIB }
+							}
+							add_core_of = LIB
+						}
+					}
+				}
+
+
+				GUI = {
+					annex_country = { target = SIE transfer_troops = no }
+					annex_country = { target = LUR transfer_troops = no }					
+					annex_country = { target = GUB transfer_troops = no }
+					annex_country = { target = AFR transfer_troops = no }					
+					annex_country = { target = LIB transfer_troops = no }	
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = GUI
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = GUI }
+							}
+							add_core_of = GUI
+						}
+					}
+				}
+
+				
+				MAL = {
+					annex_country = { target = BFA transfer_troops = no }		
+					annex_country = { target = MAU transfer_troops = no }
+					annex_country = { target = GAM transfer_troops = no }	
+					annex_country = { target = SEN transfer_troops = no }					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = MAL
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = MAL }
+							}
+							add_core_of = MAL
+						}
+					}
+				}				
+				
+				MOR = {
+					annex_country = { target = SHA transfer_troops = no }							
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = MOR
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = MOR }
+							}
+							add_core_of = MOR
+						}
+					}
+				}				
+
+				RWA = {
+					annex_country = { target = BUR transfer_troops = no }							
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = RWA
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = RWA }
+							}
+							add_core_of = RWA
+						}
+					}
+				}							
+
+				MAD = {
+					annex_country = { target = COM transfer_troops = no }
+					annex_country = { target = MRT transfer_troops = no }
+
+					every_state = {
+						limit = {		
+							is_controlled_by = MAD
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = MAD }
+							}
+							add_core_of = MAD
+					}
+				}
+			}
+			
+				GAB = {
+					annex_country = { target = CNG transfer_troops = no }
+
+					every_state = {
+						limit = {		
+							is_controlled_by = GAB
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = GAB }
+							}
+							add_core_of = GAB
+					}
+				}
+			}			
+				
+				SAF = {
+					annex_country = { target = NAM transfer_troops = no }
+					annex_country = { target = BOT transfer_troops = no }
+					annex_country = { target = LES transfer_troops = no }
+					annex_country = { target = SWA transfer_troops = no }
+					annex_country = { target = MOZ transfer_troops = no }
+					annex_country = { target = ZIM transfer_troops = no }
+					annex_country = { target = COM transfer_troops = no }
+					annex_country = { target = MRT transfer_troops = no }
+
+					every_state = {
+						limit = {		
+							is_controlled_by = SAF
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = SAF }
+							}
+							add_core_of = SAF
+					}
+				}
+			}
+			FRA = {
+				annex_country = { target = SAO transfer_troops = no }
+		}
+		
+			POR = {
+				annex_country = { target = VER transfer_troops = no }
+			}
+			
+			ENG = {
+				annex_country = { target = SEY transfer_troops = no }
+			}	
+	}
+	
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_central_america
+						option = yes
+					}
+				}
+				GUA = {
+					annex_country = { target = BLZ transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = BLZ
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = BLZ }
+							}
+							add_core_of = BLZ
+						}
+					}
+				}
+			}
+			
+				HON = {
+					annex_country = { target = ELS transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = HON
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = HON }
+							}
+							add_core_of = HON
+						}
+					}
+				}
+
+				PAN = {
+					annex_country = { target = COS transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = PAN
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = PAN }
+							}
+							add_core_of = PAN
+						}
+					}
+				}
+
+				DOM = {
+					annex_country = { target = HAI transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = DOM
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = DOM }
+							}
+							add_core_of = DOM
+						}
+					}
+				}
+
+				TRI = {
+					annex_country = { target = HAI transfer_troops = no }
+					annex_country = { target = GRA transfer_troops = no }
+					annex_country = { target = BAR transfer_troops = no }
+					annex_country = { target = STV transfer_troops = no }
+					annex_country = { target = STL transfer_troops = no }					
+					annex_country = { target = DMI transfer_troops = no }
+					annex_country = { target = STK transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = TRI
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = TRI }
+							}
+							add_core_of = TRI
+						}
+					}
+				}					
+		
+			ENG = {
+				annex_country = { target = BAH transfer_troops = no }
+		}
+		
+			USA = {
+				annex_country = { target = JAM transfer_troops = no }
+		}		
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_asia
+						option = yes
+					}
+				}
+				RAJ = {
+					annex_country = { target = NEP transfer_troops = no }
+					annex_country = { target = NPM transfer_troops = no }
+					annex_country = { target = BHU transfer_troops = no }
+					annex_country = { target = SRI transfer_troops = no }		
+
+					every_state = {
+						limit = {		
+							is_controlled_by = RAJ
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = RAJ }
+							}
+							add_core_of = RAJ
+						}
+					}					
+				}
+				
+				BRM = {
+					annex_country = { target = KAC transfer_troops = no }
+					annex_country = { target = WAA transfer_troops = no }
+					annex_country = { target = SHN transfer_troops = no }
+					annex_country = { target = KAR transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = BRM
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = BRM }
+							}
+							add_core_of = BRM
+						}
+					}							
+				}
+				
+				VIE = {
+					annex_country = { target = LAO transfer_troops = no }
+					annex_country = { target = CBD transfer_troops = no }
+				}	
+
+					every_state = {
+						limit = {		
+							is_controlled_by = VIE
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = VIE }
+							}
+							add_core_of = VIE
+						}
+					}						
+
+				MAY = {
+					annex_country = { target = BRU transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = MAY
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = MAY }
+							}
+							add_core_of = MAY
+						}
+					}	
+
+				KYR = {
+					annex_country = { target = TAJ transfer_troops = no }
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = KYR
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = KYR }
+							}
+							add_core_of = KYR
+						}
+					}						
+				}					
+
+				AST = {
+					annex_country = { target = PAP transfer_troops = no }
+					annex_country = { target = SOL transfer_troops = no }
+					annex_country = { target = FIJ transfer_troops = no }
+					annex_country = { target = MIC transfer_troops = no }
+
+					every_state = {
+						limit = {		
+							is_controlled_by = RAJ
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = RAJ }
+							}
+							add_core_of = RAJ
+						}
+					}							
+				}	
+				
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_arabia
+						option = yes
+					}
+				}
+				SAU = {
+					annex_country = { target = YEM transfer_troops = no }
+					annex_country = { target = OMA transfer_troops = no }
+					annex_country = { target = UAE transfer_troops = no }
+					annex_country = { target = QAT transfer_troops = no }
+					annex_country = { target = BHR transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = SAU
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = SAU }
+							}
+							add_core_of = SAU
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = merge_oceania
+						option = yes
+					}
+				}
+				AST = {
+					annex_country = { target = PAP transfer_troops = no }
+					annex_country = { target = SOL transfer_troops = no }
+					annex_country = { target = MIC transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = AST
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = AST }
+							}
+							add_core_of = AST
+						}
+					}
+				}
+				NZL = {
+					annex_country = { target = FIJ transfer_troops = no }
+					
+					
+					every_state = {
+						limit = {		
+							is_controlled_by = NZL
+						}
+						if = {
+							limit = {
+								NOT = { is_core_of = NZL }
+							}
+							add_core_of = NZL
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

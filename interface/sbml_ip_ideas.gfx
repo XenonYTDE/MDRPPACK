@@ -1,0 +1,102 @@
+spriteTypes = {
+
+	#industrial_policies
+
+	spriteType = {
+		name = "GFX_idea_slot_ip_economic_base"
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ip_construction_focus"
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ip_resource_efforts"
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+	}
+
+
+
+
+	#ip_economic_base #6slots
+
+
+    spriteType = {
+		name = "GFX_idea_agrarian_base"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_agrarian_base.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_banking_tax_heaven"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_banking_tax_heaven.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_small_business"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_small_business.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_natural_resources"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_natural_resources.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_business_and_enterprise"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_business_and_enterprise.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_industry_manufacturing"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_industry_manufacturing.dds"
+	}
+
+
+	#ip_construction_focus #4slots
+
+
+    spriteType = {
+		name = "GFX_idea_industrial_complexes"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_industrial_complexes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_military_buildings"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_military_buildings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_defense_focus"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_defense_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_infrastructure_focus"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_infrastructure_focus.dds"
+	}
+
+
+	#ip_resource_efforts #3slots
+
+
+    spriteType = {
+		name = "GFX_idea_synthetic_fuel"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_synthetic_fuel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_alternative_materials"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_alternative_materials.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_extraction_programs"
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_extraction_programs.dds"
+	}
+
+
+	
+
+}

@@ -1,0 +1,86 @@
+ideas = {
+    ep_subsidization = {
+        law = yes
+        use_list_view = yes
+
+        military_spending = {
+            available = {
+            }
+            
+            cost = 50
+            removal_cost = 0
+            
+            modifier = {
+                consumer_goods_factor = 0.05
+                production_speed_arms_factory_factor = 0.10
+                production_speed_dockyard_factor = 0.05
+                production_speed_bunker_factor = 0.30
+                production_speed_coastal_bunker_factor = 0.30
+                production_speed_anti_air_building_factor = 0.20
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        industrial_subsidies = {
+            available = {
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                production_speed_infrastructure_factor = 0.10
+                production_speed_industrial_complex_factor = 0.10
+                production_speed_supply_node_factor = 0.10
+                production_speed_rail_way_factor = 0.10
+            }
+
+            cancel_if_invalid = yes
+        }
+        
+        encourage_foreign_investment = {
+            available = {
+                NOT = {
+                    has_idea = planned_economy
+                }
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                opinion_gain_monthly_factor = 0.25
+                trade_opinion_factor = 0.25
+                lend_lease_tension = -0.25
+                local_resources = 0.10
+                license_purchase_cost = -0.20
+                license_production_speed = 0.10
+                return_on_investment_modifier = 0.005
+            }
+
+            research_bonus = { industry = 0.05 }
+
+            cancel_if_invalid = yes
+        }
+
+        scientific_grants = {
+            available = {
+            }
+
+            cost = 50
+            removal_cost = 0
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                research_speed_factor = 0.10
+                production_speed_nuclear_reactor_factor = 0.20
+                production_speed_radar_station_factor = 0.35
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

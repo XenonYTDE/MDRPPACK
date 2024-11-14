@@ -1,0 +1,105 @@
+ideas = {
+
+    mj_volunteer_forces = {
+        law = yes
+        use_list_view = yes
+
+        large_volunteer_force = {
+
+            available = {
+                num_divisions > 7
+            }
+            cost = 50
+            #level #= #3
+            
+            removal_cost = 0
+
+            modifier = {
+                political_power_factor = -0.10
+                send_volunteers_tension = -0.75
+                send_volunteer_divisions_required = -0.75
+                send_volunteer_size = 10
+                air_volunteer_cap = 15
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        small_force = {
+
+            available = {
+                num_divisions > 5
+            }
+            cost = 50
+            #level #= #2
+            
+            removal_cost = 0
+
+            modifier = {
+                political_power_factor = -0.05
+                send_volunteers_tension = -0.25
+                send_volunteer_divisions_required = -0.25
+                send_volunteer_size = 3
+            }
+
+            ai_will_do = {
+                base = 20
+
+                modifier = {
+                   is_major = no
+                   has_government = communism
+                   add = 20
+                }
+
+                modifier = {
+                    num_faction_members > 3
+                    is_faction_leader = yes
+                    add = 20
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 30
+                }
+
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        no_volunteers = {
+              
+            available = {
+
+              }
+              
+            cost = 50
+            #level #= #1
+            
+            removal_cost = 0
+
+            modifier = {
+                  political_power_factor = 0.10
+                  send_volunteer_divisions_required = 10
+            }
+
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+
+                    NOT = {
+                        has_government = communism
+                    }
+
+                    tag = SWI
+                    add = 10
+                }
+                
+
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

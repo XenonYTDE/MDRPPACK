@@ -1,0 +1,9 @@
+﻿l_english:
+    # game rules
+ RULE_GROUP_CWC:0 "Core with Compliance"
+    # Coring for AI
+ ALLOW_AI_CORING:0 "Let the AI core with compliance"
+ RULE_ALLOW_AI_CORING:0 "Yes"
+ RULE_ALLOW_AI_CORING_DESC:0 "Allows the AI to core with compliance."
+ RULE_DISABLE_AI_CORING:0 "Player only"
+ RULE_DISABLE_AI_CORING_DESC:0 "Only players can core with compliance."

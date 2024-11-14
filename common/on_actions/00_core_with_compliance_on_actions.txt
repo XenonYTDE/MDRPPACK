@@ -1,0 +1,126 @@
+on_actions = {
+				
+	on_weekly = {
+		effect = {
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+			every_state = {
+				limit = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = allow_ai_coring
+								option = DISABLE_AI_CORING
+							}
+						}
+						owner = {
+							is_ai = no
+						}
+					}
+					compliance > 99
+				}
+				add_core_of = owner
+			}
+		}
+	}
+}

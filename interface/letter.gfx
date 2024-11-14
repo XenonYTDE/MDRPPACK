@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_letter_bg"
+		textureFile = "gfx//interface//letter_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_letter_button"
+		textureFile = "gfx//interface//letter_button.dds"
+	}
+	spriteType = {
+		name = "GFX_letter_button_selected"
+		textureFile = "gfx//interface//letter_button_selected.dds"
+	}
+}

@@ -1,0 +1,340 @@
+﻿l_english:
+ government_policies:0 "Government Policies"
+ government_policies_desc:0 "Test" #only descriptions on laws work
+
+ gp_national_ideas:0 "National Idea"
+ gp_national_ideas_desc:0 "TEST" #does not work
+
+ gp_press_law:0 "Press Law"
+ gp_immigration_policy:0 "Immigration Policy"
+ gp_minority_rights:0 "Minority Rights"
+ gp_gender_equality:0 "Gender Equality"
+ gp_public_meetings:0 "Public Meetings"
+
+
+
+
+
+
+ planning_stage:0 "Planning Stage"
+ planning_stage_desc:0 "Scheming, Planning and Deliberating. Your Government is planning its next move."
+ efficient_beaurocracy:0 "Efficient Bureaucracy"
+ efficient_beaurocracy_desc:0 ""Bureaucracy is the death of any achievement.""  #quotes work!
+ bolstering_of_partisans:0 "Bolstering of Partisans"
+ bolstering_of_partisans_desc:0 ""Where there is oppression, there will be resistance.""
+ mobilization:0 "Mobilization"
+ mobilization_desc:0 ""I have decided to conduct a special military operation.""
+ gp_nationalism:0 "Nationalism"
+ gp_nationalism_desc:0 ""In order to rally people, governments need enemies. If they do not have a real enemy, they will invent one.""
+ covert_ops:0 "Covert-Ops"
+ covert_ops_desc:0 "About as covert as a sledgehammer"
+
+
+ state_press:0 "State Run Press"
+ state_press_desc:0 "The nation's press is wholly run by the state and its mechanisms."
+ semi_independent_press:0 "Semi-Independent Press"
+ semi_independent_press_desc:0 "The nation's press is composed of independent organisations but is passed through the state's censors."
+ free_press:0 "Free Press"
+ free_press_desc:0 "The nation's press is totally independent from the state."
+
+
+ open_borders:0 "Open Borders"
+ open_borders_desc:0 "An open border policy allows anyone to travel to and enter a nation."
+ citizenship:0 "Citizenship"
+ citizenship_desc:0 "Foreigners are allowed to gain citizenship through a naturalization process."
+ limited_citizenship:0 "Limited Citizenship"
+ limited_citizenship_desc:0 "The process of naturalization is gated behind strict requirements."
+ strict_immigration_controls:0 "Strict Immigration Controls"
+ strict_immigration_controls_desc:0 "Immigration to this country is strictly controled."
+ closed_borders:0 "Closed Borders"
+ closed_borders_desc:0 ""Do walls keep others out, or you in?""
+ political_refugees:0 "Political Refugees"
+ political_refugees_desc:0 "A policy on accepting refugees based on their political stature."
+
+
+ affirmative_action:0 "Affirmative Action"
+ affirmative_action_desc:0 "Affirmative action involves sets of policies and practices to include particular groups that were historically discriminated against in areas in which such groups are underrepresented."
+ significant_rights:0 "Significant Rights"
+ significant_rights_desc:0 "Minorities are afforded equal stature to that of other citizens."
+ neutral_stance:0 "Neutral Stance"
+ neutral_stance_desc:0 "The government adopts a neutral stance on the issue of minorities, allowing public perception to influence life instead."
+ racial_segregation:0 "Racial Segregation"
+ racial_segregation_desc:0 "Racial segregation is the separation of people into racial or other ethnic groups in daily life."
+ racial_hierarchy:0 "Racial Hierarchy"
+ racial_hierarchy_desc:0 "A racial hierarchy is a system of stratification that is based on the belief that some racial groups are superior to other racial groups."
+
+
+ affirmative_actionF:0 "Affirmative Action"
+ affirmative_actionF_desc:0 "Gender equality is promoted by the state."
+ full_equality:0 "Full Equality"
+ full_equality_desc:0 "Citizens enjoy full equality regardless of gender."
+ limited_womens_rights:0 "Limited Women's Rights"
+ limited_womens_rights_desc:0 "Women enjoy few rights and legal protections."
+ no_legal_protections:0 "No Legal Protections"
+ no_legal_protections_desc:0 "The state has no legal protections in place for the underrepresented."
+ patriarchal_society:0 "Patriarchal Society" 
+ patriarchal_society_desc:0 "Patriarchy is a social system in which positions of dominance and privilege are primarily held by men."
+
+
+#public meetings 
+
+ allowed:0 "Allowed"
+ allowed_desc:0 "Public meetings amongst citizens are allowed."
+ monitored:0 "Monitored"
+ monitored_desc:0 "Public meetings amongst citizens are allowed, but monitored by the state." 
+ banned:0 "Banned"
+ banned_desc:0 "Public meetings amongst citizens are banned."
+
+
+
+ economic_policies:0 "Economic Policies"
+
+ ep_economic_model:0 "Economic Model"
+
+
+ post_scarcity:0 "Post-Scarcity"
+ post_scarcity_desc:0 "Post-scarcity is an economic theory in which most goods can be produced in great abundance with minimal human labor needed, so that they become available to all very cheaply or even freely."
+ 50_per_capita_or_more_tt:0 "More than $$§Y50§!k GDP per Capita (Current: $$§Y[?ROOT.gdp_per_capita]§!k)"
+ productivity_requirement_tt:0 "More than §Y1,750§! Productivity (Current: §Y[?ROOT.overall_productivity]§!)"
+ pog_rentier_state:0 "Rentier State"
+ pog_rentier_state_desc:0 "A rentier state is a state which derives all or a substantial portion of its national revenues from the rent paid by foreign individuals, concerns or governments."
+ laisezz_faire:0 "Laisezz Faire"
+ laisezz_faire_desc:0 ""Laisezz Faire" is a type of economic system in which transactions between private groups of people are free from any form of economic interventionism."
+ welfare_capitalism:0 "Welfare Capitalism"
+ welfare_capitalism_desc:0 "Welfare capitalism is capitalism that includes social welfare policies and/or the practice of businesses providing welfare services to their employees."
+ mixed_market:0 "Mixed Markets"
+ mixed_market_desc:0 "A mixed economy is an economic system that accepts both private businesses and nationalized government services. A mixed economy also promotes some form of regulation to protect the public, the environment, or the interests of the state."
+ state_capitalism:0 "State Capitalism"
+ state_capitalism_desc:0 "State capitalism is an economic system in which the state undertakes business and commercial economic activity and where the means of production are nationalized as state-owned enterprises."
+ pllanned_economy:0 "Planned Economy"
+ pllanned_economy_desc:0 "A planned economy is a type of economic system where the distribution of goods and services or the investment, production and the allocation of capital goods takes place according to economic plans that are either economy-wide or limited to a category of goods and services."
+ communal_economy:0 "Communal Economy"
+ communal_economy_desc:0 "A communal econmy is a type of economic system where the means of production as well as the distribution of goods and services are controlled and directed by the community enlarge."
+ syndicalist_markets:0 "Syndicalist Markets"
+ syndicalist_markets_desc:0 "Market socialism is a type of economic system involving social ownership of the means of production within the framework of a market economy."
+
+
+
+ ep_taxation_policy:0 "Taxation Policy"
+
+
+
+ very_high_taxation:0 "Very High Taxation"
+ very_high_taxation_desc:0 "The state taxes its citizens at a very large percentage."
+ high_taxation:0 "High Taxation"
+ high_taxation_desc:0 "The state taxes its citizens at a large percentage."
+ standard_taxation:0 "Standard Taxation"
+ standard_taxation_desc:0 "The state taxes its citizens at a fair percentage."
+ low_taxation:0 "Low Taxation"
+ low_taxation_desc:0 "The state taxes its citizens at a low percentage."
+ very_low_taxation:0 "Very Low Taxation"
+ very_low_taxation_desc:0 "The state taxes its citizens at a very low percentage."
+ mutual_aid:0 "Mutual Aid"
+ mutual_aid_desc:0 "Mutual aid is an organisational model where voluntary, collaborative exchanges of resources and services for common benefit take place amongst community members to meet common needs."
+
+
+
+ #ep_trade_tariffs
+
+ ep_trade_tariffs:0 "Trade tariffs"
+
+ no_trade_tariffs:0 "No tariffs"
+ no_trade_tariffs_desc:0 "The state imposes no tariffs on imported goods."
+ low_trade_tariffs:0 "Low tariffs"
+ low_trade_tariffs_desc:0 "The state imposes a low amount of tariffs on imported goods."
+ average_trade_tariffs:0 "Average tariffs"
+ average_trade_tariffs_desc:0 "The state imposes a fair amount of tariffs on imported goods."
+ high_trade_tariffs:0 "High tariffs" 
+ high_trade_tariffs_desc:0 "The state imposes a high amount of tariffs on imported goods."
+ extreme_trade_tariffs:0 "Extreme tariffs"
+ extreme_trade_tariffs_desc:0 "The state imposes an extreme amount of tariffs on imported goods."
+
+
+#ep_foreign_investment
+
+ep_foreign_investments:0 "Foreign Investment"
+
+foreign_investments_encouraged:0 "Foreign Investments Encouraged"
+foreign_investments_encouraged_desc:0 "Foreign investments are encouraged by the state."
+foreign_investments_allowed:0 "Foreign investments Allowed"
+foreign_investments_allowed_desc:0 "Foreign investments are allowed."
+foreign_investments_regulated:0 "Foreign Investments Regulated"
+foreign_investments_regulated_desc:0 "Foreign investments are allowed but regulated."
+foreign_investments_banned:0 "Foreign Investments Banned"
+foreign_investments_banned_desc:0 "Foreign investments are wholly banned."
+
+
+#ep_war_bonds
+
+ep_war_bonds:0 "War Bonds"
+
+force_bonds_buying:0 "Force Bonds Buying"
+force_bonds_buying_desc:0 "The state promotes and directs the purchasing of war bonds."
+bonds_welcome:0 "Bonds Welcome"
+bonds_welcome_desc:0 "The state offers war bonds for purchase."
+no_bonds_selling:0 "No Bonds Selling"
+no_bonds_selling_desc:0 "The state does not offer war bonds for purchase."
+
+
+#ep_subsidization
+
+ep_subsidization:0 "Subsidization"
+
+military_spending:0 "Military Spending"
+military_spending_desc:0 "The state subsidizes the defense sector."
+industrial_subsidies:0 "Industrial Subsidies"
+industrial_subsidies_desc:0 "The state swubsidizes the industrial and manufacturing sector."
+encourage_foreign_investment:0 "Foreign Investment Subsidies"
+encourage_foreign_investment_desc:0 "The state promotes investments of foreign entities."
+scientific_grants:0 "Scientific Grants"
+scientific_grants_desc:0 "The state promotes the field of research and science."
+
+
+ #government_type 
+
+ government_type:0 "Government Formation"
+
+ gt_head_of_state:0 "Executive Branch"
+ gt_judiciary:0 "Judiciary"
+ gt_government_form:0 "Government Structure"
+
+
+
+ #gt_head_of_state
+
+monarch:0 "Monarchy"
+monarch_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication."
+prime_minister:0 "Parliamentary Republic"
+prime_minister_desc:0 "A parliamentary republic is a republic that operates under a parliamentary system of government where the executive branch derives its legitimacy from and is accountable to the legislature."
+president:0 "Presidential Republic"
+president_desc:0 "A presidential system, or single executive system, is a form of government in which a head of government, typically with the title of president, leads an executive branch that is separate from the legislative branch."
+military_head:0 "Military Dictatorship"
+military_head_desc:0 "A military dictatorship, or a military regime, is a type of dictatorship in which power is held by one or more military officers."
+chairman:0 "Chairman of the Party"
+chairman_desc:0 "A chairman or general secretary is the official title of leaders of most Communist political parties. When a Communist party is the ruling party in a Communist-led one-party state, the general secretary is typically the country's de facto leader."
+federal_council:0 "Federal Council"
+federal_council_desc:0 "A Federal Council is a permanent grand coalition government composed of representatives of the country's major parties and regions. It's members serve as the collective head of state and government."
+communal_council:0 "Communal Council"
+communal_council_desc:0 "A Communal council is the legislative body of a government which is comprised of representatives from the nations regions or municipalities. It's members act as a collective legislative and executive body."
+workers_council:0 "Workers Council"
+workers_council_desc:0 "A workers' council is a type of council in a workplace, a locality, or a government made up of workers or of temporary and instantly revocable delegates elected by the workers in a locality's, a region's or a nation's workplaces."
+
+
+
+
+#gt_judiciary
+
+Independent:0 "Independent"
+Independent_desc:0 "Judicial independence means that judges are not subject to pressure and influence and are free to make impartial decisions based solely on fact and law."
+subordinate_to_the_executive:0 "Subordinate to the Executive"
+subordinate_to_the_executive_desc:0 "The executive exercises considerable influence over the administration of the judiciary resulting in the judiciary becoming a subordinate of the executive rather than its own branch."
+politicized:0 "Politicized"
+politicized_desc:0 "The judiciary is organized based on political apointments and fealty to the executive rather than recognized standards of law or justice. The resulting courts resemble show trials rather than legitimate justice."
+corrupt:0 "Corrupt"
+corrupt_desc:0 "The judiciary is corrupt and operates for the benefit of its own members rather than the benefit of law, state or society."
+
+
+
+#gt_government_form
+
+unitary_state:0 "Unitary State"
+unitary_state_desc:0 "A unitary state is a sovereign state governed as a single entity in which the central government is the supreme authority."
+devolved_unitary_state:0 "Devolved Unitary State"
+devolved_unitary_state_desc:0 "Devolution is the statutory delegation of powers from the central government of a sovereign state to govern at a subnational level, such as a regional or local level."
+sassy_federated_state:0 "Federal State"
+sassy_federated_state_desc:0 "A Federal State is a union of semi-autonomous provinces, states or regions below and subordinate to a national government. The constituent regions' responsibilities and level of autonomy are codified either in the constitution or by law. - Some Australian guy"
+#sassy_federated_state_desc:0 "A federated state is a territorial and constitutional community forming part of a federation."
+communal_state:0 "Communal State"
+communal_state_desc:0 "Communes are an organizational community with social cohesion derived from a shared culture. As a governing community, a commune often entails some degree of local governance, communal ownership, and cultural cohesion."
+city_state:0 "City State"
+city_state_desc:0 "A city-state is an independent sovereign city which serves as the center of political, economic, and cultural life over its contiguous territory."
+
+
+#welfare_policies
+
+welfare_policies:0  "Welfare Policies"
+
+wp_labour_laws:0  "Labour Laws"
+wp_healthcare_policy:0 "Healthcare Policy"
+wp_education_policy:0 "Education Policy"
+wp_benefits_policy:0 "Benefits"
+wp_healthcare_focus:0 "Healthcare Focus"
+wp_education_focus:0 "Education Focus"
+
+
+#wp_labour_laws
+
+eight_hour_workday:0 "Eight Hour Workday"
+eight_hour_workday_desc:0 "A maximum limit of eight hours is placed on the workday."
+twelve_hour_workday:0 "Twelve Hour Workday"
+twelve_hour_workday_desc:0 "A maximum limit of twelve hours is placed on the workday."
+fourteen_hour_workday:0 "Fourteen Hour Workday"
+fourteen_hour_workday_desc:0 "A maximum limit of fourteen hours is placed on the workday."
+eighteen_hour_workday:0 "Eighteen Hour Workday"
+eighteen_hour_workday_desc:0 "A maximum limit of eighteen hours is placed on the workday."
+no_work_hour_limits:0 "No Work Hour Limits"
+no_work_hour_limits_desc:0 "No maximum limit is placed on the workday."
+
+#wp_healthcare_policy
+
+comprehensive_healthcare_system:0 "Comprehensive Healthcare System"
+comprehensive_healthcare_system_desc:0 "Citizens enjoy a comprehensive healthcare system."
+standard_healthcare_system:0 "Standard Healthcare System"
+standard_healthcare_system_desc:0 "Citizens enjoy a good healthcare system."
+basic_healthcare_system:0 "Basic Healthcare System"
+basic_healthcare_system_desc:0 "Citizens enjoy the benefits of a healthcare system."
+no_national_healthcare_system:0 "No National Healthcare System"
+no_national_healthcare_system_desc:0 "The state possesses no nationally owned healthcare system."
+
+#wp_education_policy
+
+subsidized_higher_education:0 "Subsidized Higher Education"
+subsidized_higher_education_desc:0 "The state supports and funds higher education."
+subsidized_basic_education:0 "Subsidized Basic Education"
+subsidized_basic_education_desc:0 "The state supports and funds an education system, but does not fund higher education."
+basic_education_system:0 "Basic Education System"
+basic_education_system_desc:0 "The state supports and funds a basic education system."
+no_official_education_system:0 "No Formal Education System"
+no_official_education_system_desc:0 "The state possesses no official education system."
+left_to_the_market:0 "Left to the Market"
+left_to_the_market_desc:0 "Education is left to the hands of private, for profit institutions."
+
+
+#wp_benefits_policy
+
+generous_state_welfare:0 "Generous State Welfare"
+generous_state_welfare_desc:0 "The state supports its citizens with a generous welfare system."
+moderate_state_welfare:0 "Moderate State Welfare"
+moderate_state_welfare_desc:0 "The state supports its citizens with a moderately generous welfare system."
+basic_state_welfare:0 "Basic State Welfare"
+basic_state_welfare_desc:0 "The state supports its citizens with an adequate, but basic welfare system."
+no_state_welfare:0 "No State Welfare"
+no_state_welfare_desc:0 "The state offers no welfare programs to its citizens."
+
+#wp_healthcare_focus
+
+military_hospitals:0 "Military Hospitals"
+military_hospitals_desc:0 "Priority in the healthcare sector is placed on the military affairs."
+research_focus:0 "Research Focus"
+research_focus_desc:0 "Priority in the healthcare sector is placed on funding and facilitating research."
+health_focus:0 "Health Focus"
+health_focus_desc:0 "Priority in the healthcare sector is placed on offering the best available service to the state's citizens."
+
+#wp_education_focus
+
+business_schools:0 "Business Schools"
+business_schools_desc:0 "The education sector specializes in business and finance schools."
+military_academies:0 "Military Academies"
+military_academies_desc:0 "The education sector specializes in military academies of various kinds."
+medical_universities:0 "Medical Universities"
+medical_universities_desc:0 "The education sector specializes in medical universities and research facilities."
+elite_institutions:0 "Elite Institutions"
+elite_institutions_desc:0 "Highly sought after, prestigious schools dominate this nation's higher education."
+propaganda_programs:0 "Propaganda Programs"
+propaganda_programs_desc:0 "Propaganda programs are put in place in order to grow the ruling party's influence and embolden its ideology."
+
+
+
+hospital_tech_research:0 "Field Hospital Research"
+
+
