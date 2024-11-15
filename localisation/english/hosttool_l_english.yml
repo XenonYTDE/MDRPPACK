@@ -48,7 +48,7 @@
  CIVREMOVE_DELAYED:0 ""
 
  JOIN_FACTION:0 "Force Join Faction"
- JOIN_FACTION_DELAYED:0 "Force the selected country to join a faction. First select the country you want to join a faction, then click on any member of the target faction."
+ JOIN_FACTION_DELAYED:0 "Force the selected country to join a faction. First select the country you want to join a faction, then click on the Leader of the target faction."
 
  SELECT_ALL_STATES:0 "Select all states of current country"
 
