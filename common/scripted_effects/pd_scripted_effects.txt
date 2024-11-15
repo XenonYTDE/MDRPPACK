@@ -531,8 +531,6 @@ execute_peace_deal = {
 			}
 		}
 	}
-<<<<<<< HEAD
-=======
 	# Disarm nation
 	if = {
 		limit = { 
@@ -549,5 +547,4 @@ execute_peace_deal = {
 			}
 		}
 	}
->>>>>>> parent of 6f4ab86 (s)
 }

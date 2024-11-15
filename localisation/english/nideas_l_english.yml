@@ -15,11 +15,7 @@
  NIDEAS_IDEA_GROUP1_TAKEN:0 "[?ROOT.idea_group1_taken]/6"
  NIDEAS_IDEA_GROUP1_BUTTON1_TT:0 "§HRegistration Checks§!\n£drift_defence_texticon  Ideology drift defense: §G+25.0%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
  NIDEAS_IDEA_GROUP1_BUTTON2_TT:0 "§HLocal Heroes§!\n£stability_popularity_texticon  Party Popularity Stability Modifier: §G+10.00%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
-<<<<<<< HEAD
  NIDEAS_IDEA_GROUP1_BUTTON3_TT:0 "§HMinisterial Fluidity§!\n£political_advisor_cost_texticon  Laws Cost: §G-15%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
-=======
- NIDEAS_IDEA_GROUP1_BUTTON3_TT:0 "§HMinisterial Fluidity§!\n£political_advisor_cost_texticon  Laws Cost: §G-20%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
->>>>>>> parent of 6f4ab86 (s)
  NIDEAS_IDEA_GROUP1_BUTTON4_TT:0 "§HEfficient Bureaucracy§!\n£political_power_texticon  Daily Political Power Gain: §G+0.30§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!\n\nRequires:\n  §HRegistration Checks§!\n  §HLocal Heroes§!\n  §HMinisterial Fluidity§!"
  NIDEAS_IDEA_GROUP1_BUTTON5_TT:0 "§HBill of Rights§!\n£boost_popularity_texticon  Daily Democracy Support: §G+0.05%§!\n£stability_defensive_texticon  Defensive War Penalty Stability Modifier: §G+20.00%§!\n£stability_texticon  Weekly Stability: §G+0.10%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!\n\nRequires:\n  §HEfficient Bureaucracy§!\n\nBlocks:\n  §HMilitary Junta§!\n  §HIron Fist§!"
  ###NIDEAS_IDEA_GROUP1_BUTTON6_TT:0 "§HBeacon of Liberty§!\n£political_power_texticon  Daily Political Power Gain: §G+0.50§!\n£compliance_gain_texticon  Compliance Growth Speed: §G+10%§!\n£nideas_core_cost_texticon  Coring Cost: §G-25%§!§C[NIDEAS_SCRIPT_LOC_ELECTION_LIBERTY]§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!\n\nRequires:\n  §HBill of Rights§!"
@@ -29,11 +25,7 @@
  NIDEAS_IDEA_GROUP1_BUTTON8_TT:0 "§HIron Fist§!\n£political_power_texticon  Daily Political Power Gain: §G+0.50§!\n£political_violence_damage_texticon  Damage to Garrisons: §G-20.00%§!§C[NIDEAS_SCRIPT_LOC_ELECTION_AUTHORITY]§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!\n\nRequires:\n  §HMilitary Junta§!"
  NIDEAS_IDEA_GROUP1_BUTTON1_COMPLETE_TT:0 "§HRegistration Checks§!\n£drift_defence_texticon  Ideology drift defense: §G+25.0%§!"
  NIDEAS_IDEA_GROUP1_BUTTON2_COMPLETE_TT:0 "§HLocal Heroes§!\n£stability_popularity_texticon  Party Popularity Stability Modifier: §G+25.00%§!"
-<<<<<<< HEAD
  NIDEAS_IDEA_GROUP1_BUTTON3_COMPLETE_TT:0 "§HMinisterial Fluidity§!\n£political_advisor_cost_texticon  Laws Cost: §G-%§!"
-=======
- NIDEAS_IDEA_GROUP1_BUTTON3_COMPLETE_TT:0 "§HMinisterial Fluidity§!\n£political_advisor_cost_texticon  Laws Cost: §G-20%§!"
->>>>>>> parent of 6f4ab86 (s)
  NIDEAS_IDEA_GROUP1_BUTTON4_COMPLETE_TT:0 "§HEfficient Bureaucracy§!\n£political_power_texticon  Daily Political Power Gain: §G+0.30§!"
  NIDEAS_IDEA_GROUP1_BUTTON5_COMPLETE_TT:0 "§HBill of Rights§!\n£boost_popularity_texticon  Daily Democracy Support: §G+0.05%§!\n£stability_defensive_texticon  Defensive War Penalty Stability Modifier: §G+20.00%§!\n£stability_texticon  Weekly Stability: §G+0.10%§!"
  ###NIDEAS_IDEA_GROUP1_BUTTON6_COMPLETE_TT:0 "§HBeacon of Liberty§!\n£political_power_texticon  Daily Political Power Gain: §G+0.50§!\n£compliance_gain_texticon  Compliance Growth Speed: §G+10%§!\n£nideas_core_cost_texticon  Coring Cost: §G-25%§!§C[NIDEAS_SCRIPT_LOC_ELECTION_LIBERTY]§!"
@@ -60,11 +52,7 @@
 
  NIDEAS_IDEA_GROUP1_SPIRIT1:0 "§HPolitical Ideas: Registration Checks§!"
  NIDEAS_IDEA_GROUP1_SPIRIT2:0 "§HPolitical Ideas: Local Heroes§!"
-<<<<<<< HEAD
  NIDEAS_IDEA_GROUP1_SPIRIT3:0 "§HPolitical Ideas: Ministerial Fluidity§!"
-=======
- NIDEAS_IDEA_GROUP1_SPIRIT3:0 "§HPolitical Ideas: Laws Cost§!"
->>>>>>> parent of 6f4ab86 (s)
  NIDEAS_IDEA_GROUP1_SPIRIT4:0 "§HPolitical Ideas: Efficient Bureaucracy§!"
  NIDEAS_IDEA_GROUP1_SPIRIT5:0 "§HPolitical Ideas: Bill of Rights§!"
  NIDEAS_IDEA_GROUP1_SPIRIT6:0 "§HPolitical Ideas: Beacon of Liberty§!"

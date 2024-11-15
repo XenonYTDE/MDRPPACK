@@ -28,12 +28,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-<<<<<<< HEAD
-
-=======
 				laws_cost_factor = -0.20
 				hidden_modifier = {
->>>>>>> parent of 6f4ab86 (s)
 					economic_cycles_cost_factor = -0.15
 					corruption_cost_factor = -0.15
 					internal_factions_cost_factor = -0.15
@@ -60,14 +56,6 @@ ideas = {
 					gf_logistics_system_cost_factor = -0.15
 					gf_marine_role_cost_factor = -0.15
 					gf_officer_training_cost_factor = -0.15
-<<<<<<< HEAD
-					gf_paratrooper_role_cost_factor = -0.15
-					gp_gender_equality_cost_factor = -0.15
-					gp_minority_rights_cost_factor = -0.15
-			}
-		}	
-	}
-=======
 					gf_paratropper_role_cost_factor = -0.15
 					gf_special_forces_cost_factor = -0.15
 					gp_gender_equality_cost_factor = -0.15
@@ -95,7 +83,6 @@ ideas = {
 		}	
 	}
 }
->>>>>>> parent of 6f4ab86 (s)
 	country = {
 		NIDEAS_IDEA_GROUP1_SPIRIT4 = {
 			picture = nideas_spirit_political
@@ -128,11 +115,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.5
-<<<<<<< HEAD
-				compliance_growth = 0.1
-=======
 				compliance_growth = 0.15
->>>>>>> parent of 6f4ab86 (s)
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 			}
 		}	
@@ -174,39 +157,7 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-<<<<<<< HEAD
-				economic_cycles_cost_factor = -0.15
-				corruption_cost_factor = -0.15
-				internal_factions_cost_factor = -0.15
-				bureaucracy_cost_factor = -0.15
-				Military_Spending_cost_factor = -0.15
-				crime_fighting_cost_factor = -0.15
-				education_budget_cost_factor = -0.15
-				health_budget_cost_factor = -0.15
-				social_budget_cost_factor = -0.15
-				trade_laws_cost_factor = -0.15
-				Conscription_Law_cost_factor = -0.15
-				Military_Status_Women_cost_factor = -0.15
-				Foreign_Intervention_Law_cost_factor = -0.15
-				Officer_Training_Law_cost_factor = -0.15
-				tax_rate_change_multiplier_modifier = -0.15
-				migration_laws_cost_factor = -0.15
-				ep_economic_model_cost_factor = -0.15
-				ep_foreign_investments_cost_factor = -0.15
-				ep_subsidization_cost_factor = -0.15
-				ep_taxation_policy_cost_factor = -0.15
-				ep_trade_tariffs_cost_factor = -0.15
-				ep_war_bonds_cost_factor = -0.15
-				gf_command_structure_cost_factor = -0.15
-				gf_logistics_system_cost_factor = -0.15
-				gf_marine_role_cost_factor = -0.15
-				gf_officer_training_cost_factor = -0.15
-				gf_paratrooper_role_cost_factor = -0.15
-				gp_gender_equality_cost_factor = -0.15
-				gp_minority_rights_cost_factor = -0.15
-=======
 				laws_cost_factor = -0.20
->>>>>>> parent of 6f4ab86 (s)
 				
 				#political_power_gain = 0.3
 				
@@ -215,11 +166,7 @@ ideas = {
 				stability_weekly = 0.001
 
 				#political_power_gain = 0.5
-<<<<<<< HEAD
-				compliance_growth = 0.1
-=======
 				compliance_growth = 0.15
->>>>>>> parent of 6f4ab86 (s)
 				#custom_modifier_tooltip = NIDEAS_IDEA_GROUP1_CORING_COST_MODIFIER
 				
 				political_power_gain = 0.8
@@ -237,39 +184,7 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-<<<<<<< HEAD
-					economic_cycles_cost_factor = -0.15
-					corruption_cost_factor = -0.15
-					internal_factions_cost_factor = -0.15
-					bureaucracy_cost_factor = -0.15
-					Military_Spending_cost_factor = -0.15
-					crime_fighting_cost_factor = -0.15
-					education_budget_cost_factor = -0.15
-					health_budget_cost_factor = -0.15
-					social_budget_cost_factor = -0.15
-					trade_laws_cost_factor = -0.15
-					Conscription_Law_cost_factor = -0.15
-					Military_Status_Women_cost_factor = -0.15
-					Foreign_Intervention_Law_cost_factor = -0.15
-					Officer_Training_Law_cost_factor = -0.15
-					tax_rate_change_multiplier_modifier = -0.15
-					migration_laws_cost_factor = -0.15
-					ep_economic_model_cost_factor = -0.15
-					ep_foreign_investments_cost_factor = -0.15
-					ep_subsidization_cost_factor = -0.15
-					ep_taxation_policy_cost_factor = -0.15
-					ep_trade_tariffs_cost_factor = -0.15
-					ep_war_bonds_cost_factor = -0.15
-					gf_command_structure_cost_factor = -0.15
-					gf_logistics_system_cost_factor = -0.15
-					gf_marine_role_cost_factor = -0.15
-					gf_officer_training_cost_factor = -0.15
-					gf_paratrooper_role_cost_factor = -0.15
-					gp_gender_equality_cost_factor = -0.15
-					gp_minority_rights_cost_factor = -0.15
-=======
 				laws_cost_factor = -0.20
->>>>>>> parent of 6f4ab86 (s)
 				
 				#political_power_gain = 0.3
 				
@@ -493,12 +408,9 @@ ideas = {
 			research_bonus = {
 				industry = 0.05
 			}
-<<<<<<< HEAD
-=======
 			research_bonus = {
 				electronics = 0.15
 			}
->>>>>>> parent of 6f4ab86 (s)
 		}	
 	}
 	country = {
@@ -1091,10 +1003,7 @@ ideas = {
 
 			modifier = {
 				experience_gain_army = 0.05
-<<<<<<< HEAD
-=======
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				army_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				max_command_power = -20
@@ -1199,11 +1108,8 @@ ideas = {
 			modifier = {
 				experience_gain_army = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				army_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20
@@ -1237,11 +1143,8 @@ ideas = {
 			modifier = {
 				experience_gain_army = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				army_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20
@@ -1291,10 +1194,7 @@ ideas = {
 
 			modifier = {
 				experience_gain_navy = 0.05
-<<<<<<< HEAD
-=======
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				navy_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				max_command_power = -20
@@ -1394,11 +1294,8 @@ ideas = {
 			modifier = {
 				experience_gain_navy = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				navy_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20
@@ -1428,11 +1325,8 @@ ideas = {
 			modifier = {
 				experience_gain_navy = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				navy_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20
@@ -1477,10 +1371,7 @@ ideas = {
 
 			modifier = {
 				experience_gain_air = 0.05
-<<<<<<< HEAD
-=======
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				air_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				max_command_power = -20
@@ -1581,11 +1472,8 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
 				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				air_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20
@@ -1616,11 +1504,7 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.2
 				command_power_gain = 0.2
-<<<<<<< HEAD
-=======
 				
-				theorist_cost_factor = -0.11
->>>>>>> parent of 6f4ab86 (s)
 				air_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20

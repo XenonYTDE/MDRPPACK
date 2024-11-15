@@ -1,14 +1,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_categories"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_categories.dds"
 		noOfFrames = 22	
 	}
 }
-=======
-		texturefile = "gfx\\interface\\idea_categories.dds"
-		noOfFrames = 22	
-	}
-}
->>>>>>> parent of 6f4ab86 (s)

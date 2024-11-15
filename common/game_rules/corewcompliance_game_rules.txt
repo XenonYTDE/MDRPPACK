@@ -27,8 +27,6 @@
 #  # #  # #   # #         # #    #  #  # #    
  ##  #  # #   # ###     ##  ###  #   ##  #    
 
-<<<<<<< HEAD
-=======
 only_coring_on_starting_continent = {
 	name = "ONLY_ALLOW_CORING_ON_STARTING_CONTINENT"
 	group = "RULE_GROUP_CWC"
@@ -49,7 +47,6 @@ only_coring_on_starting_continent = {
 	}
 }
 
->>>>>>> parent of 6f4ab86 (s)
 allow_ai_coring = {
 	name = "ALLOW_AI_CORING"
 	group = "RULE_GROUP_CWC"

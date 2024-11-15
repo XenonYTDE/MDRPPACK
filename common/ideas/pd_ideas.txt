@@ -1,7 +1,4 @@
 ideas = {
-<<<<<<< HEAD
-	
-=======
 
 	mobilization_laws = {
 		law = yes
@@ -70,7 +67,6 @@ ideas = {
 		}
 	}
 
->>>>>>> parent of 6f4ab86 (s)
 	country = {
 		conditional_surrender = {
 			

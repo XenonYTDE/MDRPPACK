@@ -4,29 +4,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_gt_head_of_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gt_judiciary"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gt_government_form"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
     
 
@@ -35,74 +23,42 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_monarch"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_monarch.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_monarch.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_prime_minister"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_prime_minister.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_prime_minister.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_president"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_president.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_president.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_military_head"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_military_head.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_military_head.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_chairman"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_chairman.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_chairman.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_federal_council"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_federal_council.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_federal_council.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_communal_council"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_communal_council.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_communal_council.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_workers_council"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_head_of_state/_workers_council.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_head_of_state\\_workers_council.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -110,38 +66,22 @@ spriteTypes = {
  
     spriteType = {
 		name = "GFX_idea_Independent"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_judiciary/_independent.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_independent.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_subordinate_to_the_executive"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_judiciary/_subordinate_to_the_executive.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_subordinate_to_the_executive.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_politicized"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_judiciary/_politicized.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_politicized.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_corrupt"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_judiciary/_corrupt.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_judiciary\\_corrupt.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -150,55 +90,31 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_unitary_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_government_form/_unitary_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_unitary_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_devolved_unitary_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_government_form/_devolved_unitary_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_devolved_unitary_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_sassy_federated_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_government_form/_federated_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_federated_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_communal_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_government_form/_communal_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_communal_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_city_state"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_type/gt_government_form/_city_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_city_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_region_state"
-<<<<<<< HEAD
 		textureFile = "gfx/interface/ideas/laws/government_type/gt_government_form/_city_state.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_type\\gt_government_form\\_city_state.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 }

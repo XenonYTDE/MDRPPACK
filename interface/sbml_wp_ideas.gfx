@@ -4,56 +4,32 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_labour_laws"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_healthcare_policy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_education_policy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_benefits_policy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_healthcare_focus"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_wp_education_focus"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
     
     
@@ -61,47 +37,27 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_eight_hour_workday"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_labour_laws/_eight_hour_workday.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_eight_hour_workday.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_twelve_hour_workday"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_labour_laws/_twelve_hour_workday.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_twelve_hour_workday.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_fourteen_hour_workday"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_labour_laws/_fourteen_hour_workday.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_fourteen_hour_workday.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_eighteen_hour_workday"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_labour_laws/_eighteen_hour_workday.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_eighteen_hour_workday.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_work_hour_limits"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_labour_laws/_no_work_hour_limits.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_labour_laws\\_no_work_hour_limits.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -110,38 +66,22 @@ spriteTypes = {
     
 	spriteType = {
 		name = "GFX_idea_comprehensive_healthcare_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_policy/_comprehensive_healthcare_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_comprehensive_healthcare_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_standard_healthcare_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_policy/_standard_healthcare_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_standard_healthcare_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_basic_healthcare_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_policy/_basic_healthcare_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_basic_healthcare_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_national_healthcare_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_policy/_no_national_healthcare_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_policy\\_no_national_healthcare_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -149,47 +89,27 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_subsidized_higher_education"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_policy/_subsidized_higher_education.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_subsidized_higher_education.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_subsidized_basic_education"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_policy/_subsidized_basic_education.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_subsidized_basic_education.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_basic_education_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_policy/_basic_education_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_basic_education_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_official_education_system"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_policy/_no_official_education_system.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_no_official_education_system.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_left_to_the_market"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_policy/_left_to_the_market.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_policy\\_left_to_the_market.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -198,38 +118,22 @@ spriteTypes = {
     
 	spriteType = {
 		name = "GFX_idea_generous_state_welfare"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_benefits_policy/_generous_state_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_generous_state_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_moderate_state_welfare"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_benefits_policy/_moderate_state_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_moderate_state_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_basic_state_welfare"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_benefits_policy/_basic_state_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_basic_state_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_state_welfare"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_benefits_policy/_no_state_welfare.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_benefits_policy\\_no_state_welfare.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -238,29 +142,17 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_military_hospitals"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_focus/_military_hospitals.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_military_hospitals.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_research_focus"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_focus/_research_focus.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_research_focus.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_health_focus"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_healthcare_focus/_health_focus.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_healthcare_focus\\_health_focus.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 	
 
@@ -269,47 +161,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_business_schools"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_focus/_business_schools.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_business_schools.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_military_academies"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_focus/_military_academies.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_military_academies.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_medical_universities"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_focus/_medical_universities.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_medical_universities.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_elite_institutions"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_focus/_elite_institutions.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_elite_institutions.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_propaganda_programs"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/welfare_policies/wp_education_focus/_propaganda_programs.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\welfare_policies\\wp_education_focus\\_propaganda_programs.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 }

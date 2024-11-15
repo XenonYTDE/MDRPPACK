@@ -1,7 +1,4 @@
 on_actions = {
-<<<<<<< HEAD
-				
-=======
 	on_startup = {
 		effect = {
 			every_possible_country = {
@@ -78,7 +75,6 @@ on_actions = {
 			}
 		}
 	}
->>>>>>> parent of 6f4ab86 (s)
 	on_weekly = {
 		effect = {
 			every_state = {
@@ -95,8 +91,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -129,7 +123,6 @@ on_actions = {
 							has_country_flag = northamericancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -147,8 +140,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -181,7 +172,6 @@ on_actions = {
 							has_country_flag = southamericancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -199,8 +189,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -233,7 +221,6 @@ on_actions = {
 							has_country_flag = europeancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -251,8 +238,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -285,7 +270,6 @@ on_actions = {
 							has_country_flag = oceaniancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -303,8 +287,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -337,7 +319,6 @@ on_actions = {
 							has_country_flag = asiancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -355,8 +336,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -389,7 +368,6 @@ on_actions = {
 							has_country_flag = africancountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -407,8 +385,6 @@ on_actions = {
 						}
 					}
 					compliance > 99
-<<<<<<< HEAD
-=======
 					if = {
 						limit = {
 							has_game_rule = {
@@ -441,7 +417,6 @@ on_actions = {
 							has_country_flag = middleeasterncountry
 						}
 					}
->>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}

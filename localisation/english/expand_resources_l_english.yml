@@ -1,10 +1,7 @@
 ﻿l_english:
   resources_expansion_category: "Resources Expansion"
   resources_expansion_category_desc: "We can expand our resource operations by investing a lot of money. This of course requires that we have a deposit of any resource before we can expand it.\nBigger deposits can be expanded more at a time, but the cost for that will be much higher."
-<<<<<<< HEAD
   deposit_discovery: "New Deposit Discovery Expedition"
-=======
->>>>>>> parent of 6f4ab86 (s)
   small_oil_expansion: "Small Petroleum Expansion"
   medium_oil_expansion: "Medium Petroleum Expansion"
   huge_oil_expansion: "Huge Petroleum Expansion"

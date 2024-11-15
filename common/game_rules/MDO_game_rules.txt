@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ###SOUTH-AMERICA####
 remove_south_america = {
 	name = "RULE_REMOVE_SOUTH_AMERICA"
@@ -16,7 +14,6 @@ remove_south_america = {
 		desc = "RULE_NO_REMOVE_SOUTH_AMERICA_DESC"
 	}
 }
->>>>>>> parent of 6f4ab86 (s)
 merge_south_america = {
 	name = "RULE_MERGE_SOUTH_AMERICA"
 	group = "MDOptimization_RULES"
@@ -32,9 +29,6 @@ merge_south_america = {
 		desc = "RULE_NO_MERGE_SOUTH_AMERICA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-=======
 ####AFRICA####
 remove_africa = {
 	name = "RULE_REMOVE_AFRICA"
@@ -51,7 +45,6 @@ remove_africa = {
 		desc = "RULE_NO_REMOVE_AFRICA_DESC"
 	}
 }
->>>>>>> parent of 6f4ab86 (s)
 merge_africa = {
 	name = "RULE_MERGE_AFRICA"
 	group = "MDOptimization_RULES"
@@ -67,9 +60,6 @@ merge_africa = {
 		desc = "RULE_NO_MERGE_AFRICA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-=======
 ####Central America####
 remove_central_america = {
 	name = "RULE_REMOVE_CENTRAL_AMERICA"
@@ -86,7 +76,6 @@ remove_central_america = {
 		desc = "RULE_NO_REMOVE_CENTRAL_AMERICA_DESC"
 	}
 }
->>>>>>> parent of 6f4ab86 (s)
 merge_central_america = {
 	name = "RULE_MERGE_CENTRAL_AMERICA"
 	group = "MDOptimization_RULES"
@@ -102,15 +91,9 @@ merge_central_america = {
 		desc = "RULE_NO_MERGE_CENTRAL_AMERICA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-merge_asia = {
-	name = "RULE_MERGE_ASIA"
-=======
 ####Misc Rules####
 merge_asia = {
 	name = "Merge Asia"
->>>>>>> parent of 6f4ab86 (s)
 	group = "MDOptimization_RULES"
 	icon = "GFX_production_licenses"
 	option = {
@@ -124,9 +107,6 @@ merge_asia = {
 		desc = "RULE_NO_MERGE_ASIA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-=======
 remove_arabia = {
 	name = "RULE_REMOVE_ARABIA"
 	group = "MDOptimization_RULES"
@@ -142,7 +122,6 @@ remove_arabia = {
 		desc = "RULE_NO_REMOVE_ARABIA_DESC"
 	}
 }
->>>>>>> parent of 6f4ab86 (s)
 merge_arabia = {
 	name = "RULE_MERGE_ARABIA"
 	group = "MDOptimization_RULES"
@@ -158,10 +137,6 @@ merge_arabia = {
 		desc = "RULE_NO_MERGE_ARABIA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 6f4ab86 (s)
 merge_oceania = {
 	name = "RULE_MERGE_OCEANIA"
 	group = "MDOptimization_RULES"
@@ -177,9 +152,6 @@ merge_oceania = {
 		desc = "RULE_NO_MERGE_OCEANIA_DESC"
 	}
 }
-<<<<<<< HEAD
-
-=======
 remove_oceania = {
 	name = "RULE_REMOVE_OCEANIA"
 	group = "MDOptimization_RULES"
@@ -260,7 +232,6 @@ hypermerge = {
 		desc = "RULE_NO_HYPERMERGE_DESC"
 	}
 } 
->>>>>>> parent of 6f4ab86 (s)
 ####DISABLE-AI####
 disable_ai_nations = {
 	name = "RULE_DISABLE_AI_NATIONS"

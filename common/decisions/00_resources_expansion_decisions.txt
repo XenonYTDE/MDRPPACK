@@ -98,6 +98,7 @@ resources_expansion_category = {
 		allowed = { always = yes }
 		fire_only_once = no
 		days_remove = 225
+
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -141,6 +142,7 @@ resources_expansion_category = {
 		allowed = { always = yes }
 		fire_only_once = no
 		days_remove = 270
+
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -227,6 +229,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 225
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -270,6 +273,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 270
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -356,6 +360,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 225
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -399,6 +404,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 270
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -485,6 +491,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 225
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -786,6 +793,7 @@ resources_expansion_category = {
 	  allowed = { always = yes }
 	  fire_only_once = no
 	  days_remove = 270
+
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
