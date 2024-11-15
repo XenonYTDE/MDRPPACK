@@ -61,11 +61,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = attack_submarine
-=======
-   				type = attack_submarine
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			} 
@@ -74,11 +70,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = missile_submarine
-=======
-   				type = missile_submarine
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -87,11 +79,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = destroyer
-=======
-   				type = destroyer
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -100,11 +88,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = carrier
-=======
-   				type = carrier
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -113,11 +97,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = frigate
-=======
-   				type = frigate
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -126,11 +106,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = battleship
-=======
-   				type = battleship
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -139,11 +115,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = battle_cruiser
-=======
-   				type = battle_cruiser
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -152,11 +124,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = helicopter_operator
-=======
-   				type = helicopter_operator
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -165,11 +133,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = corvette
-=======
-   				type = corvette
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -178,11 +142,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = cruiser
-=======
-   				type = cruiser
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -191,11 +151,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = stealth_destroyer
-=======
-   				type = stealth_destroyer
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -204,11 +160,7 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = heavy_frigate
-=======
-   				type = heavy_frigate
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
@@ -217,22 +169,10 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-<<<<<<< HEAD
    				archetype = patrol_boat
-=======
-   				type = patrol_boat
->>>>>>> parent of 6f4ab86 (s)
 								}
 				   }
 			}
 		}
-<<<<<<< HEAD
-=======
-
-
-		properties = {
-
-		}
->>>>>>> parent of 6f4ab86 (s)
 	}
 }

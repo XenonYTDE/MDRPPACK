@@ -2,112 +2,64 @@ spriteTypes = {
     #government_policies
     spriteType = {
 		name = "GFX_idea_slot_gp_national_ideas"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gp_press_law"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gp_immigration_policy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gp_minority_rights"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gp_gender_equality"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gp_public_meetings"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_political_advisor.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_political_advisor.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
      
 	#national_ideas
 
 	spriteType = {
 		name = "GFX_idea_planning_stage"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_planning_stage.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_planning_stage.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_efficient_beaurocracy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_efficient_beaurocracy.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_efficient_beaurocracy.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_bolstering_of_partisans"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_bolstering_of_partisans.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_bolstering_of_partisans.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_mobilization"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_mobilization.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_mobilization.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_gp_nationalism"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_nationalism.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_nationalism.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_covert_ops"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/idea_covert_ops.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\idea_covert_ops.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -115,29 +67,17 @@ spriteTypes = {
     
     spriteType = {
 		name = "GFX_idea_state_press"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_press_law/_state_press.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_state_press.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
      
     spriteType = {
 		name = "GFX_idea_semi_independent_press"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_press_law/_limited_censorship.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_limited_censorship.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_free_press"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_press_law/_free_press.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_press_law\\_free_press.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
     
     
@@ -146,56 +86,32 @@ spriteTypes = {
 
 	 spriteType = {
 		name = "GFX_idea_open_borders"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_open_borders.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_open_borders.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_citizenship"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_citizenship.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_citizenship.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_limited_citizenship"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_limited_citizenship.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_limited_citizenship.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_strict_immigration_controls"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_strict_immigration_controls.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_strict_immigration_controls.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_closed_borders"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_closed_borders.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_closed_borders.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_political_refugees"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_immigration_policy/_political_refugees.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_immigration_policy\\_political_refugees.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
     
 
@@ -203,47 +119,27 @@ spriteTypes = {
 
 	 spriteType = {
 		name = "GFX_idea_affirmative_action"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_minority_rights/_affirmative_action.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_affirmative_action.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_significant_rights"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_minority_rights/_significant_rights.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_significant_rights.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_neutral_stance"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_minority_rights/_neutral_stance.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_neutral_stance.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_racial_segregation"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_minority_rights/_racial_segregation.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_racial_segregation.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_racial_hierarchy"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_minority_rights/_racial_hierarchy.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_minority_rights\\_racial_hierarchy.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	
@@ -251,47 +147,27 @@ spriteTypes = {
 
 	 spriteType = {
 		name = "GFX_idea_affirmative_actionF"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_gender_equality/_affirmative_actionF.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_affirmative_actionF.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_full_equality"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_gender_equality/_full_equality.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_full_equality.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_limited_womens_rights"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_gender_equality/_limited_womens_rights.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_limited_womens_rights.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_no_legal_protections"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_gender_equality/_no_legal_protections.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_no_legal_protections.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_patriarchal_society"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_gender_equality/_patriarchal_society.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_gender_equality\\_patriarchal_society.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -299,29 +175,17 @@ spriteTypes = {
 
 	 spriteType = {
 		name = "GFX_idea_allowed"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_public_meetings/_allowed.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_allowed.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_monitored"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_public_meetings/_monitored.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_monitored.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	 spriteType = {
 		name = "GFX_idea_banned"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/government_policies/gp_public_meetings/_banned.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\government_policies\\gp_public_meetings\\_banned.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 }   

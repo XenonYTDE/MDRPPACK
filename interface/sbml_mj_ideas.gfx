@@ -4,295 +4,164 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_mj_code_of_ethics"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_mj_non_core_manpower"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_mj_female_service"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_mj_training_quality"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_mj_branch_rivalry"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
-
-	spriteType = {
-		name = "GFX_idea_slot_mj_volunteer_forces"
-<<<<<<< HEAD
-		texturefile = "gfx/interface/idea_slot_army.dds"
-=======
-		texturefile = "gfx\\interface\\idea_slot_army.dds"
->>>>>>> parent of 6f4ab86 (s)
-	}
-    
-
 
     #mj_code_of_ethics #5slots
 
     spriteType = {
 		name = "GFX_idea_strict_ethics"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_code_of_ethics/_strict_ethics.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_strict_ethics.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_code_of_honour"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_code_of_ethics/_code_of_honour.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_code_of_honour.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_supervision"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_code_of_ethics/_no_supervision.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_no_supervision.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_merciless"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_code_of_ethics/_merciless.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_merciless.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_encouraged_brutality"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_code_of_ethics/_encouraged_brutality.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_code_of_ethics\\_encouraged_brutality.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	#mj_non_core_manpower #3slots
 
     spriteType = {
 		name = "GFX_idea_non_core_recruitment_prohibited"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_non_core_manpower/_non_core_recruitment_prohibited.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_non_core_recruitment_prohibited.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_segregated_regiments"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_non_core_manpower/_segregated_regiments.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_segregated_regiments.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_integrated_manpower"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_non_core_manpower/_integrated_manpower.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_non_core_manpower\\_integrated_manpower.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	#mj_female_service #4slots
 
     spriteType = {
 		name = "GFX_idea_equal_service"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_female_service/_equal_service.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_equal_service.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_support_roles"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_female_service/_support_roles.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_support_roles.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_non_combat_roles"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_female_service/_non_combat_roles.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_non_combat_roles.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_service_prohibited"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_female_service/_service_prohibited.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_female_service\\_service_prohibited.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	#mj_training_quality #5slots
 
     spriteType = {
 		name = "GFX_idea_advanced_training"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_training_quality/_advanced_training.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_advanced_training.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_extensive_training"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_training_quality/_extensive_training.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_extensive_training.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_basic_training"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_training_quality/_basic_training.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_basic_training.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_minimal_training"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_training_quality/_minimal_training.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_minimal_training.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_training"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_training_quality/_no_training.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_training_quality\\_no_training.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
     #mj_branch_rivalry #5slots
 
     spriteType = {
 		name = "GFX_idea_army_dominant"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_branch_rivalry/_army_dominant.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_army_dominant.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_army_strengthened"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_branch_rivalry/_army_strengthened.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_army_strengthened.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_balanced_rivalry"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_branch_rivalry/_balanced_rivalry.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_balanced_rivalry.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_strengthened"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_branch_rivalry/_navy_strengthened.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_navy_strengthened.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_navy_dominant"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_branch_rivalry/_navy_dominant.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_branch_rivalry\\_navy_dominant.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	#mj_volunteer_forces #3slots
 
     spriteType = {
 		name = "GFX_idea_large_volunteer_force"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_volunteer_forces/_large_volunteer_force.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_large_volunteer_force.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_small_force"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_volunteer_forces/_small_force.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_small_force.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_volunteers"
-<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/military_jurisdiction/mj_volunteer_forces/_no_volunteers.dds"
-=======
-		texturefile = "gfx\\interface\\ideas\\laws\\military_jurisdiction\\mj_volunteer_forces\\_no_volunteers.dds"
->>>>>>> parent of 6f4ab86 (s)
 	}
 
 }

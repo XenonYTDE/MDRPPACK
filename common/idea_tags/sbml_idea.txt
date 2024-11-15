@@ -27,11 +27,7 @@ idea_categories = {
 	economic_policies = {
 		slot = ep_economic_model 
 		slot = ep_taxation_policy
-<<<<<<< HEAD
 		slot = ep_trade_tariffs
-=======
-		slot = ep_trade_tarrifs
->>>>>>> parent of 6f4ab86 (s)
 		slot = ep_foreign_investments
 		slot = ep_war_bonds
 		slot = ep_subsidization
