@@ -18,11 +18,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_slot_is_state_security"
-		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_slot_is_firearm_regulation"
 		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
 	}
