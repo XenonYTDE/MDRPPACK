@@ -8,11 +8,7 @@ Build_industry_building = {
 
 		days_re_enable = 0
 
-<<<<<<< HEAD
 		days_remove = 90
-=======
-		days_remove = 120
->>>>>>> parent of 6f4ab86 (s)
 
 		available = {
 			any_owned_state = { free_building_slots = { building = infrastructure size > 1 include_locked = no }}			
@@ -32,11 +28,7 @@ Build_industry_building = {
 		complete_effect = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
-<<<<<<< HEAD
 			multiply_temp_variable = { money_amount = 0.5 }
-=======
-			multiply_temp_variable = { money_amount = 0.6 }
->>>>>>> parent of 6f4ab86 (s)
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
