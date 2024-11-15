@@ -7,8 +7,8 @@ Build_industry_building = {
 		fire_only_once = no
 
 		days_re_enable = 0
-
-		days_remove = 120
+		
+    days_remove = 90
 
 		available = {
 			any_owned_state = { free_building_slots = { building = infrastructure size > 1 include_locked = no }}			
