@@ -10,5 +10,5 @@ dependencies={
 name="wow md modpack poggers"
 picture="thumbnail.png"
 supported_version="1.15.*"
-path="C:/Users/erdez/Documents/Paradox Interactive/Hearts of Iron IV/mod/MDRPPACK"
+path="mod/MDRPPACK"
 remote_file_id="3324592367"
