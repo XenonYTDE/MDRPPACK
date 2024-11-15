@@ -531,4 +531,23 @@ execute_peace_deal = {
 			}
 		}
 	}
+<<<<<<< HEAD
+=======
+	# Disarm nation
+	if = {
+		limit = { 
+			ROOT = { has_country_flag = pd_disarm }
+		}
+		var:giver = {
+			add_timed_idea = {
+				idea = peace_disarmed_nation
+				days = 720
+			}
+			add_timed_idea = {
+				idea = peace_civilian_economy
+				days = 720
+			}
+		}
+	}
+>>>>>>> parent of 6f4ab86 (s)
 }

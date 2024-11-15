@@ -77,7 +77,12 @@ ideas = {
                 consumer_goods_factor = 0.05
                 research_speed_factor = 0.10
                 production_speed_nuclear_reactor_factor = 0.20
+<<<<<<< HEAD
                 production_speed_radar_station_factor = 0.35
+=======
+                production_speed_rocket_site_factor = 0.50
+                production_speed_radar_station_factor = 0.50
+>>>>>>> parent of 6f4ab86 (s)
             }
 
             cancel_if_invalid = yes

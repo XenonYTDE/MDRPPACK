@@ -465,8 +465,12 @@ ideas = {
 			available = {
 				OR = {
 					has_elections = no
+<<<<<<< HEAD
 					NOT = { has_idea = rentier_state 
 							has_idea = pog_rentier_state }
+=======
+					NOT = { has_idea = rentier_state }
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				OR = {
 					has_autocratic_government = yes
@@ -561,8 +565,12 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			available = {
+<<<<<<< HEAD
 				NOT = { has_idea = rentier_state 
 						has_idea = pog_rentier_state }
+=======
+				NOT = { has_idea = rentier_state }
+>>>>>>> parent of 6f4ab86 (s)
 				if = {
 					limit = {
 						OR = {
@@ -639,8 +647,12 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			available = {
+<<<<<<< HEAD
 				NOT = { has_idea = rentier_state 
 						has_idea = pog_rentier_state}
+=======
+				NOT = { has_idea = rentier_state }
+>>>>>>> parent of 6f4ab86 (s)
 				if = {
 					limit = {
 						OR = {

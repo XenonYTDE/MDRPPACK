@@ -1,7 +1,11 @@
 scripted_gui = {
 
 	st_open = {
+<<<<<<< HEAD
 		context_type = diplomatic_action
+=======
+		context_type = player_context
+>>>>>>> parent of 6f4ab86 (s)
 
 		window_name = "st_open_container"
 

@@ -1,15 +1,27 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_letter_bg"
+<<<<<<< HEAD
 		textureFile = "gfx/interface/letter_bg.dds"
+=======
+		textureFile = "gfx//interface//letter_bg.dds"
+>>>>>>> parent of 6f4ab86 (s)
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	spriteType = {
 		name = "GFX_letter_button"
+<<<<<<< HEAD
 		textureFile = "gfx/interface/letter_button.dds"
 	}
 	spriteType = {
 		name = "GFX_letter_button_selected"
 		textureFile = "gfx/interface/letter_button_selected.dds"
+=======
+		textureFile = "gfx//interface//letter_button.dds"
+	}
+	spriteType = {
+		name = "GFX_letter_button_selected"
+		textureFile = "gfx//interface//letter_button_selected.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 }

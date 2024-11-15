@@ -12,7 +12,11 @@ ideas = {
                     OR = {
                         has_idea = communal_economy
                         has_government = communism
+<<<<<<< HEAD
                         has_idea = pog_rentier_state
+=======
+                        has_idea = rentier_state
+>>>>>>> parent of 6f4ab86 (s)
                         has_idea = planned_economy
                     }
                  }

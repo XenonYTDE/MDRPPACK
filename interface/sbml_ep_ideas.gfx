@@ -6,32 +6,57 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_economic_model"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
+=======
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_taxation_policy"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_trade_tariffs"
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
+=======
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_ep_trade_tarrifs"
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_foreign_investments"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
+=======
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_war_bonds"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
+=======
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ep_subsidization"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/Idea_slot_economy.dds"
+=======
+		texturefile = "gfx\\interface\\Idea_slot_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -39,47 +64,84 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_post_scarcity"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/post_scarcity.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_pog_rentier_state"
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_pog_rentier_state.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\post_scarcity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rentier_state"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_rentier_state.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_laisezz_faire"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_laisezz_faire.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_laisezz_faire.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_welfare_capitalism"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_welfare_capitalism.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_welfare_capitalism.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_mixed_market"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_mixed_market.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_mixed_market.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_state_capitalism"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_state_capitalism.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_state_capitalism.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_pllanned_economy"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_planned_economy.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_planned_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
     
 	spriteType = {
 		name = "GFX_idea_communal_economy"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_communal_economy.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_communal_economy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 	
 	spriteType = {
 		name = "GFX_idea_syndicalist_markets"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_economic_model/_syndicalist_markets.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_economic_model\\_syndicalist_markets.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -89,31 +151,52 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_very_high_taxation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_very_high_taxation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_very_high_taxation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_high_taxation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_high_taxation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_high_taxation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_standard_taxation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_standard_taxation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_standard_taxation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_low_taxation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_low_taxation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_low_taxation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_very_low_taxation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_very_low_taxation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_very_low_taxation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
     
 	spriteType = {
 		name = "GFX_idea_mutual_aid"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_taxation_policy/_mutual_aid.dds" 
 	}
 
@@ -144,6 +227,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_extreme_trade_tariffs"
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_trade_tariffs/_extreme_trade_tariffs.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_taxation_policy\\_mutual_aid.dds" 
+	}
+
+
+	#ep_trade_tarrifs 
+
+
+	spriteType = {
+		name = "GFX_idea_no_trade_tarrifs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_no_trade_tarrifs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_low_trade_tarrifs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_low_trade_tarrifs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_average_trade_tarrifs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_average_trade_tarrifs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_high_trade_tarrifs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_high_trade_tarrifs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_extreme_trade_tarrifs"
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_trade_tarrifs\\_extreme_trade_tarrifs.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -152,22 +267,38 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_foreign_investments_encouraged"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_foreign_investments/_foreign_investments_encouraged.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_encouraged.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_foreign_investments_allowed"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_foreign_investments/_foreign_investments_allowed.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_allowed.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_foreign_investments_regulated"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_foreign_investments/_foreign_investments_regulated.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_regulated.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_foreign_investments_banned"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_foreign_investments/_foreign_investments_banned.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_foreign_investments\\_foreign_investments_banned.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -176,17 +307,29 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_force_bonds_buying"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_war_bonds/_force_bonds_buying.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_force_bonds_buying.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_bonds_welcome"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_war_bonds/_bonds_welcome.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_bonds_welcome.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_no_bonds_selling"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_war_bonds/_no_bonds_selling.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_war_bonds\\_no_bonds_selling.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
     
     
@@ -195,21 +338,37 @@ spriteTypes = {
     
     spriteType = {
 		name = "GFX_idea_military_spending"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_subsidization/_military_spending.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_military_spending.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_industrial_subsidies"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_subsidization/_industrial_subsidies.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_industrial_subsidies.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_encourage_foreign_investment"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_subsidization/_encourage_foreign_investment.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_encourage_foreign_investment.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_scientific_grants"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_subsidization/_scientific_grants.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\economic_policies\\ep_subsidization\\_scientific_grants.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 }

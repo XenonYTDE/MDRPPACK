@@ -47,6 +47,14 @@
  CIVREMOVE:0 "§HRemove 1 Civillian Factory§!\nClicking this button will remove a civillian factory from the selected state.\n\n"
  CIVREMOVE_DELAYED:0 ""
 
+<<<<<<< HEAD
+=======
+ JOIN_FACTION:0 "Force Join Faction"
+ JOIN_FACTION_DELAYED:0 "Force the selected country to join a faction. First select the country you want to join a faction, then click on any member of the target faction."
+
+ SELECT_ALL_STATES:0 "Select all states of current country"
+
+>>>>>>> parent of 6f4ab86 (s)
  ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to the selected state's owner.\n\n"
  
  ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
@@ -55,6 +63,7 @@
  host_transfer_states_off:0 "Host Tool: £trigger_yes"
  hosttool_efficency:0 "Temp Efficency"
 
+<<<<<<< HEAD
  CHEAT_SELECT:0   "Select cheat"
  CHEAT1:0   "Add 1 Off-Mil"
  CHEAT2:0   "Remove 1 Off-Mil"
@@ -67,6 +76,8 @@
  CHEAT9:0   "Add 50 Navy XP"
  CHEAT10:0   "Mil Efficency"
   
+=======
+>>>>>>> parent of 6f4ab86 (s)
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "
  

@@ -407,6 +407,16 @@ set_leader_GER = {
 				name = "Adolf Drippler"
 				picture = "Adolf_Drippler.dds"
 				ideology = Nat_Fascism
+<<<<<<< HEAD
+=======
+				traits = {
+					argentinian
+					austrian_painter
+					artist
+					the_old_fuehrer
+					protector_of_german_culture
+				}
+>>>>>>> parent of 6f4ab86 (s)
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Fascism_leader = 1 } }
@@ -522,6 +532,15 @@ set_leader_GER = {
 				name = "Adolf Drippler"
 				picture = "Adolf_Drippler.dds"
 				ideology = Monarchist
+<<<<<<< HEAD
+=======
+				traits = {
+					argentinian
+					austrian_painter
+					artist
+					the_old_fuehrer
+				}
+>>>>>>> parent of 6f4ab86 (s)
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Monarchist_leader = 1 } }

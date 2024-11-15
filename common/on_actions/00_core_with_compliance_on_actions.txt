@@ -1,5 +1,84 @@
 on_actions = {
+<<<<<<< HEAD
 				
+=======
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+					owner = {
+						set_country_flag = europeancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = asia
+						}
+					}
+					owner = {
+						set_country_flag = asiancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = australia
+						}
+					}
+					owner = {
+						set_country_flag = oceaniancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = middle_east
+						}
+					}
+					owner = {
+						set_country_flag = middleeasterncountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = africa
+						}
+					}
+					owner = {
+						set_country_flag = africancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = south_america
+						}
+					}
+					owner = {
+						set_country_flag = southamericancountry
+					}
+				}
+				if = {
+					limit = {
+						capital_scope = {
+							is_on_continent = north_america
+						}
+					}
+					owner = {
+						set_country_flag = northamericancountry
+					}
+				}
+			}
+		}
+	}
+>>>>>>> parent of 6f4ab86 (s)
 	on_weekly = {
 		effect = {
 			every_state = {
@@ -16,6 +95,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = north_america
+								owner = {
+									is_ai = yes
+									has_country_flag = northamericancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = north_america
+						owner = {
+							has_country_flag = northamericancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -33,6 +147,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = south_america
+								owner = {
+									is_ai = yes
+									has_country_flag = southamericancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = south_america
+						owner = {
+							has_country_flag = southamericancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -50,6 +199,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = europe
+								owner = {
+									is_ai = yes
+									has_country_flag = europeancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = europe
+						owner = {
+							has_country_flag = europeancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -67,6 +251,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = australia
+								owner = {
+									is_ai = yes
+									has_country_flag = oceaniancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = australia
+						owner = {
+							has_country_flag = oceaniancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -84,6 +303,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = asia
+								owner = {
+									is_ai = yes
+									has_country_flag = asiancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = asia
+						owner = {
+							has_country_flag = asiancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -101,6 +355,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = africa
+								owner = {
+									is_ai = yes
+									has_country_flag = africancountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = africa
+						owner = {
+							has_country_flag = africancountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}
@@ -118,6 +407,41 @@ on_actions = {
 						}
 					}
 					compliance > 99
+<<<<<<< HEAD
+=======
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
+							}
+						}
+						OR = {
+							AND = {
+								is_on_continent = middle_east
+								owner = {
+									is_ai = yes
+									has_country_flag = middleeasterncountry
+								}
+							}
+							owner = {
+								is_ai = no
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = only_coring_on_starting_continent
+								option = CORE_NO_ONE_CONINENT
+							}
+						}
+						is_on_continent = middle_east
+						owner = {
+							has_country_flag = middleeasterncountry
+						}
+					}
+>>>>>>> parent of 6f4ab86 (s)
 				}
 				add_core_of = owner
 			}

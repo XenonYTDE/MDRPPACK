@@ -4,6 +4,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/state_interactions/state_interactions_bg.dds"
 	}
 	spriteType = {
+<<<<<<< HEAD
+=======
+		name = "GFX_state_interaction_core"
+		textureFile = "gfx/interface/state_interactions/state_interaction_core.dds"
+	}
+	spriteType = {
+		name = "GFX_state_interaction_uncore"
+		textureFile = "gfx/interface/state_interactions/state_interaction_uncore.dds"
+	}
+	spriteType = {
+>>>>>>> parent of 6f4ab86 (s)
 		name = "GFX_state_interaction_move_capital"
 		textureFile = "gfx/interface/state_interactions/state_interaction_move_capital.dds"
 	}

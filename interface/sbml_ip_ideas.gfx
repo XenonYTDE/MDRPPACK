@@ -4,17 +4,29 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_ip_economic_base"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_industrial.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ip_construction_focus"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_industrial.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_ip_resource_efforts"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_industrial.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_industrial.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -25,32 +37,56 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_agrarian_base"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_agrarian_base.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_agrarian_base.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_banking_tax_heaven"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_banking_tax_heaven.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_banking_tax_heaven.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_small_business"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_small_business.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_small_business.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_natural_resources"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_natural_resources.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_natural_resources.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_business_and_enterprise"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_business_and_enterprise.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_business_and_enterprise.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_industry_manufacturing"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_economic_base/_industry_manufacturing.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_economic_base\\_industry_manufacturing.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -59,22 +95,38 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_industrial_complexes"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_construction_focus/_industrial_complexes.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_industrial_complexes.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_military_buildings"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_construction_focus/_military_buildings.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_military_buildings.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_defense_focus"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_construction_focus/_defense_focus.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_defense_focus.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_infrastructure_focus"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_construction_focus/_infrastructure_focus.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_construction_focus\\_infrastructure_focus.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -83,17 +135,29 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_synthetic_fuel"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_resource_efforts/_synthetic_fuel.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_synthetic_fuel.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_alternative_materials"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_resource_efforts/_alternative_materials.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_alternative_materials.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_extraction_programs"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_resource_efforts/_extraction_programs.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\industry_policies\\ip_resource_efforts\\_extraction_programs.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 

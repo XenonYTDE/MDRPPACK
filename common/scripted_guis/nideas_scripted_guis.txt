@@ -153,7 +153,11 @@ scripted_gui = {
 			}
 		}
 		
+<<<<<<< HEAD
 		ai_test_interval = 300
+=======
+		ai_test_interval = 336
+>>>>>>> parent of 6f4ab86 (s)
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 		
@@ -5736,7 +5740,11 @@ scripted_gui = {
 			}
 		}
 
+<<<<<<< HEAD
 		ai_test_interval = 100
+=======
+		ai_test_interval = 168
+>>>>>>> parent of 6f4ab86 (s)
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 

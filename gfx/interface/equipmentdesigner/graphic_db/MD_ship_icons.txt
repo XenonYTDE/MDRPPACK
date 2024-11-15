@@ -1,0 +1,298 @@
+USA = {
+
+
+	destroyer_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/YD2.dds"
+				"gfx/interface/technologies/USA/NAV/D2.dds"
+			}
+			models = {
+				"USA_destroyer_entity"
+			}
+		}
+	}
+        destroyer_hull_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/YD5.dds"
+				"gfx/interface/technologies/USA/NAV/D5.dds"
+			}
+			models = {
+				"USA_destroyer_entity"
+			}
+		}
+	}
+	frigate_hull_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/YF4.dds"
+				"gfx/interface/technologies/USA/NAV/F4.dds"
+			}
+			models = {
+				"USA_destroyer_entity"
+			}
+		}
+	}
+	attack_submarine_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/S3.dds"
+				"gfx/interface/technologies/USA/NAV/YS3.dds"
+			}
+			models = {
+				"USA_attack_submarine_3_entity"
+				"USA_attack_submarine_4_entity"
+			}
+		}
+	}
+	attack_submarine_hull_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/S4.dds"
+				"gfx/interface/technologies/USA/NAV/YS4.dds"
+			}
+			models = {
+				"USA_attack_submarine_4_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/LHA1.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA1.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA12.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/LHA2.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA2.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA2.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/NAV/LHA3.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA3.dds"
+				"gfx/interface/technologies/USA/NAV/YLHA32.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+}	
+
+TUR = {
+helicopter_operator_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/TUR/NAV/YLHA3.dds"
+				"gfx/interface/technologies/TUR/NAV/LHA3.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+}
+SOV = {
+helicopter_operator_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/NAV/YLHA3.dds"
+				"gfx/interface/technologies/SOV/NAV/LHA3.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/NAV/YLHA2.dds"
+				"gfx/interface/technologies/SOV/NAV/LHA2.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/NAV/YLHA1.dds"
+				"gfx/interface/technologies/SOV/NAV/LHA1.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	missile_submarine_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/NAV/SB2.dds"
+				"gfx/interface/technologies/SOV/NAV/YSB2.dds"
+			}
+			models = {
+				"USA_missile_submarine_entity"
+			}
+		}
+	}
+	missile_submarine_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/NAV/SB3.dds"
+				"gfx/interface/technologies/SOV/NAV/YSB3.dds"
+				"gfx/interface/technologies/SOV/NAV/YSB32.dds"
+			}
+			models = {
+				"USA_missile_submarine_entity"
+			}
+		}
+	}
+	corvette_hull_3 = {
+		pool = {
+			icons = {
+			"gfx/interface/technologies/SOV/NAV/K3.dds"
+				"gfx/interface/technologies/SOV/NAV/YK3.dds"
+			}
+			models = {
+				"SOV_corvette_entity"
+			}
+		}
+	}
+	corvette_hull_4 = {
+		pool = {
+			icons = {
+			"gfx/interface/technologies/SOV/NAV/K4.dds"
+				"gfx/interface/technologies/SOV/NAV/YK4.dds"
+			}
+			models = {
+				"SOV_corvette_entity"
+			}
+		}
+	}
+}
+CHI = {
+helicopter_operator_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/YLHA32.dds"
+				"gfx/interface/technologies/CHI/NAV/YLHA3.dds"
+				"gfx/interface/technologies/CHI/NAV/LHA3.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/YLHA2.dds"
+				"gfx/interface/technologies/CHI/NAV/YLHA22.dds"
+				"gfx/interface/technologies/CHI/NAV/LHA2.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/YLHA1.dds"
+				"gfx/interface/technologies/CHI/NAV/LHA1.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	attack_submarine_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/S4.dds"
+				"gfx/interface/technologies/CHI/NAV/YS4.dds"
+			}
+			models = {
+				"SOV_attack_submarine_4_entity"
+			}
+		}
+	}
+	destroyer_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/YD2.dds"
+				"gfx/interface/technologies/CHI/NAV/D2.dds"
+			}
+			models = {
+				"CHI_destroyer_entity"
+			}
+		}
+	}
+	destroyer_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CHI/NAV/YD3.dds"
+				"gfx/interface/technologies/CHI/NAV/D3.dds"
+			}
+			models = {
+				"CHI_destroyer_entity"
+			}
+		}
+	}
+}
+
+KOR = {
+helicopter_operator_hull_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR/NAV/YLHA32.dds"
+				"gfx/interface/technologies/KOR/NAV/YLHA3.dds"
+				"gfx/interface/technologies/KOR/NAV/LHA3.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	helicopter_operator_hull_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR/NAV/YLHA2.dds"
+				"gfx/interface/technologies/KOR/NAV/LHA2.dds"
+			}
+			models = {
+				"USA_helicopter_operator_entity"
+				"USA_sanantonio_entity"
+			}
+		}
+	}
+	}

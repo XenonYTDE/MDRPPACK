@@ -6,6 +6,10 @@
 #ZZZ AI STUFF#
  ai_reduce_spam:0 "AI Rights Law"
  ai_reduce_spam_desc:0 "Only To Serve"
+<<<<<<< HEAD
+=======
+ POLITICS_TOMAS_COPIN_DESC:0 "Its Tomas Copin"
+>>>>>>> parent of 6f4ab86 (s)
 
 #Remove SA#
  RULE_REMOVE_SOUTH_AMERICA:0 "Remove South America"
@@ -37,8 +41,15 @@
  RULE_YES_MERGE_CENTRAL_AMERICA_DESC:0 "Merges Central America"
  RULE_NO_MERGE_CENTRAL_AMERICA_DESC:0 "Keeps Central America The Same" 
  
+<<<<<<< HEAD
 #Misc Rules
 MDOptimization_Misc_RULES:0 "MD Optimization Misc Custom Rules"
+=======
+#Hypermerge
+ RULE_HYPERMERGE:0 "Hypermerge"
+ RULE_YES_HYPERMERGE_DESC:0 "Merges 100+ nations in the World. §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_NO_HYPERMERGE_DESC:0 "Keeps Everything The Same"
+>>>>>>> parent of 6f4ab86 (s)
 
 #Merge Asia
  RULE_MERGE_ASIA:0 "Merge Asia"
@@ -65,6 +76,28 @@ MDOptimization_Misc_RULES:0 "MD Optimization Misc Custom Rules"
  RULE_YES_REMOVE_OCEANIA_DESC:0 "Removes Oceania"
  RULE_NO_REMOVE_OCEANIA_DESC:0 "Keeps Oceania The Same" 
 
+<<<<<<< HEAD
+=======
+#Merge Scandinavia#
+ RULE_MERGE_SCANDINAVIA:0 "Merge Scandinavia"
+ RULE_NOR_MERGE_SCANDINAVIA_DESC:0 "Merge into Norway"
+ RULE_SWE_MERGE_SCANDINAVIA_DESC:0 "Merge into Sweden"
+ RULE_FIN_MERGE_SCANDINAVIA_DESC:0 "Merge into Finland"
+ RULE_NO_MERGE_SCANDINAVIA_DESC:0 "Keeps Scandinavia The Same"
+ RULE_OPTION_NOR:0 "Norway"
+ RULE_OPTION_SWE:0 "Sweden"
+ RULE_OPTION_FIN:0 "Finland"
+
+#Merge Baltics#
+ RULE_MERGE_BALTICS:0 "Merge Baltics"
+ RULE_EST_MERGE_BALTICS_DESC:0 "Merge into Estonia"
+ RULE_LAT_MERGE_BALTICS_DESC:0 "Merge into Latvia"
+ RULE_LIT_MERGE_BALTICS_DESC:0 "Merge into Lithuania"
+ RULE_NO_MERGE_BALTICS_DESC:0 "Keeps Baltic States The Same"
+ RULE_OPTION_EST:0 "Estonia"
+ RULE_OPTION_LAT:0 "Latvia"
+ RULE_OPTION_LIT:0 "Lithuania"
+>>>>>>> parent of 6f4ab86 (s)
 
 #Disable AI#
  RULE_DISABLE_AI_NATIONS:0 "Disable AI Nations"

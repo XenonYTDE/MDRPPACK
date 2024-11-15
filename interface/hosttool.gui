@@ -1,4 +1,5 @@
 guiTypes = {
+<<<<<<< HEAD
 
 	containerWindowType = {
 		name = "hosttool_open_container"
@@ -406,4 +407,199 @@ guiTypes = {
 		#}
 	}
 	}
+=======
+    containerWindowType = {
+        name = "hosttool_open_container"
+        position = { x = -505 y = 4 }
+        Orientation = UPPER_RIGHT
+        buttonType = {
+            name = "tool_open"
+            quadTextureSprite = "GFX_generic_box_96"
+            position = { x = 0 y = 0 }
+            pdx_tooltip = "[ST_TOOLTIP]"
+            clicksound = click_ok
+            oversound = ui_menu_over
+        }
+        
+        instantTextboxType = {
+            name = "title"
+            position = {x=3 y=4}
+            font = "hoi_18mbs"
+            text = "[host_transfer_states_tooltip]"
+            maxWidth = 93
+            maxHeight = 23
+            format = left
+        }
+    }
+        
+    containerWindowType = {
+        name = "hosttool_container"
+        position = {x=1200 y=20}
+        size = { width=500 height=500}
+        
+        fade_time = 300
+        fade_type = linear
+        moveable = yes
+        
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_thin_border2"
+        }
+
+        # Header
+        containerWindowType = {
+            name = "header"
+            position = { x=0 y=0 }
+            size = { width=500 height=50 }
+            
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_header_1"
+            }
+
+            instantTextboxType = {
+                name = "title"
+                position = {x=0 y=15}
+                font = "hoi_24header"
+                text = "HOST TOOL"
+                maxWidth = 500
+                maxHeight = 24
+                format = center
+            }
+        }
+
+        # State Manager Container
+        containerWindowType = {
+            name = "st_state_manager_powers_container"
+            position = {x=20 y=60}
+            size = { width=460 height=100}
+            
+            background = {
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            }
+
+            instantTextboxType = {
+                name = "title"
+                position = {x=0 y=10}
+                font = "hoi_18mbs"
+                text = "[This.GetName]"
+                maxWidth = 460
+                maxHeight = 23
+                format = center
+            }
+            
+            buttonType = {
+				name = "toogle_mark"
+				position = {x=10 y=40}
+				spriteType = "GFX_sort_button_100x29"
+				buttonText = "Mark"
+				buttonFont = "hoi_16mbs"
+				pdx_tooltip = "ST_STATE_MARK_FOR_TRANSFER"
+			}
+
+            buttonType = {
+                name = "clear_all_markings"
+                position = {x=150 y=40}
+                spriteType = "GFX_global_alert_icons"
+                frame = 38
+                pdx_tooltip = "CLEAR_ALL_MARKINGS"
+                scale = .85
+            }
+        }
+
+        # State Info
+        instantTextboxType = {
+            name = "state_owner"
+            position = {x=50 y=170}
+            font = "hoi_18mbs"
+            text = "[This.Owner.GetName]"
+            maxWidth = 400
+            maxHeight = 23
+            format = centre
+        }
+
+        # Administrative Buttons
+        buttonType = {
+            name = "observer"
+            position = {x=20 y=200}
+            spriteType = "GFX_observer_button"
+            pdx_tooltip = "OBSERVER"
+            scale = 0.70
+        }
+        
+        buttonType = {
+            name = "whitepeace"
+            position = {x=90 y=200}
+            spriteType = "GFX_whitepeace_new"
+            scale = 1.8
+            pdx_tooltip = "WHITEPEACE"
+        }
+
+        # Diplomatic Buttons
+        buttonType = {
+            name = "award_states"
+            position = {x=20 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 12
+            pdx_tooltip = "TRANSFER_STATES"
+        }
+        
+        buttonType = {
+            name = "add_cores"
+            position = {x=90 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 6
+            pdx_tooltip = "ADD_CORES"
+        }
+        
+        buttonType = {
+            name = "remove_cores"
+            position = {x=160 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 7
+            pdx_tooltip = "REMOVE_CORES"
+        }
+        
+        buttonType = {
+            name = "annex_country"
+            position = {x=230 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 2
+            pdx_tooltip = "ANNEX_COUNTRY"
+        }
+
+        buttonType = {
+            name = "puppet_country"
+            position = {x=300 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 14
+            pdx_tooltip = "PUPPET_COUNTRY"
+        }
+
+        buttonType = {
+            name = "free_country"
+            position = {x=370 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 1
+            pdx_tooltip = "FREE_COUNTRY"
+        }
+
+        buttonType = {
+            name = "join_faction"
+            position = {x=440 y=250}
+            spriteType = "GFX_global_diplorequest_icons"
+            frame = 13
+            pdx_tooltip = "JOIN_FACTION"
+        }
+
+        buttonType = {
+            name = "transfer_hostool"
+            position = {x=230 y=300}
+            spriteType = "GFX_lobby_player_mapmode_button"
+            pdx_tooltip = "TRANSFER_HOSTOOL"
+            scale = 0.65
+        }
+    }
+>>>>>>> parent of 6f4ab86 (s)
 }

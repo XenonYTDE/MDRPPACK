@@ -1,4 +1,5 @@
 scripted_gui = {
+<<<<<<< HEAD
 
 	tool_open= {
 		context_type = player_context
@@ -27,3 +28,35 @@ scripted_gui = {
 		}
 	}
 }
+=======
+    tool_open = {
+        context_type = player_context
+        window_name = "hosttool_open_container"
+        
+        visible = {
+            has_country_flag = host
+            NOT = { has_country_flag = hidden_switch }
+        }
+
+        effects = {
+            tool_open_click = {
+                if = {
+                    limit = { 
+                        NOT = { has_country_flag = hosttool_enabled }
+                    }
+                    set_country_flag = hosttool_enabled
+                }
+                else = {
+                    clr_country_flag = hosttool_enabled
+                }
+            }
+        }
+        
+        triggers = {
+            tool_open_click_enabled = {
+                always = yes
+            }
+        }
+    }
+}
+>>>>>>> parent of 6f4ab86 (s)

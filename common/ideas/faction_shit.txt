@@ -16,6 +16,13 @@ ideas = {
                 can_create_factions = yes
                 can_join_factions = yes
             }
+<<<<<<< HEAD
+=======
+
+            modifier = {
+
+            }
+>>>>>>> parent of 6f4ab86 (s)
         }
     }
 }

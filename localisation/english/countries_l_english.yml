@@ -2873,6 +2873,12 @@
  CHI_nationalist: "Empire of China"
  CHI_nationalist_DEF: "Empire of China"
  CHI_nationalist_ADJ: "Chinese Empire"
+<<<<<<< HEAD
+=======
+ CHI_liberalism: "Confucian China"
+ CHI_liberalism_DEF: "Confucian China"
+ CHI_liberalism_ADJ: "Confucian"
+>>>>>>> parent of 6f4ab86 (s)
 
  CHL_fascism: "Chile"
  CHL_fascism_DEF: "Chile"

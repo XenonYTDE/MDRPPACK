@@ -4,32 +4,56 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_command_structure"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_logistics_system"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_officer_training"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_special_forces_role"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_marine_role"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_gf_paratrooper_role"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_high_command.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_high_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
     
 
@@ -38,12 +62,20 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_centralized_hierarchy"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_command_structure/_centralized_hierarchy.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_command_structure\\_centralized_hierarchy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_decentralized_democracy"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_command_structure/_decentralized_democracy.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_command_structure\\_decentralized_democracy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -52,12 +84,20 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_push_system"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_logistics_system/_push_system.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_logistics_system\\_push_system.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_pull_system"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_logistics_system/_pull_system.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_logistics_system\\_pull_system.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -66,22 +106,38 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_advanced_officer_training"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_officer_training/_advanced_officer_training.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_advanced_officer_training.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_major_officer_training"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_officer_training/_major_officer_training.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_major_officer_training.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_junior_officer_training"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_officer_training/_junior_officer_training.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_junior_officer_training.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_foreign_officer_missions"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_officer_training/_foreign_officer_missions.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_officer_training\\_foreign_officer_missions.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -90,17 +146,29 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_army_support"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_special_forces_role/_army_support.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_army_support.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_special_operations"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_special_forces_role/_special_operations.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_special_operations.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_foreign_conflicts"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_special_forces_role/_foreign_conflicts.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_special_forces_role\\_foreign_conflicts.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -109,17 +177,29 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_marine_army_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_marine_role/_marine_army_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_army_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_marine_navy_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_marine_role/_marine_navy_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_navy_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_marine_spec_ops_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_marine_role/_marine_spec_ops_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_marine_role\\_marine_spec_ops_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -128,16 +208,28 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_para_army_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_paratrooper_role/_para_army_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_army_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_para_air_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_paratrooper_role/_para_air_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_air_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_para_spec_ops_command"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/general_staff/gf_paratrooper_role/_para_spec_ops_command.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\general_staff\\gf_paratrooper_role\\_para_spec_ops_command.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 }

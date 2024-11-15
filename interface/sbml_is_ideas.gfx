@@ -4,22 +4,43 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_is_penal_system"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_population_growth"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_trade_unions"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_is_state_security"
+		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_is_firearm_regulation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/idea_slot_internal_policies.dds"
+=======
+		texturefile = "gfx\\interface\\idea_slot_internal_policies.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -31,22 +52,38 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_penal_slavery"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_slavery.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_slavery.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_labour"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_labour.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_labour.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_incarceration"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_incarceration.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_incarceration.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_penal_rehabilitation"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_penal_system/_penal_rehabilitation.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_penal_system\\_penal_rehabilitation.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -56,21 +93,34 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_rapid_population_growth"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_encourage_growth.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
     spriteType = {
 		name = "GFX_idea_encourage_growth"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_encourage_growth.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_standard_growth"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_standard_growth.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_standard_growth.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_controlled_birth_rates"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_controlled_birth_rates.dds"
 	}
 
@@ -85,6 +135,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_one_child_policyy"
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_controlled_birth_rates.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_national_purity"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_national_purity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_population_control"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\_controlled_birth_rates.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_one_child_policyy"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_population_growth\\one_child_policy.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -94,22 +160,66 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_trade_unions_allowed"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_trade_unions_allowed.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_trade_unions_allowed.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_state_controlled_unions_allowed"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_state_controlled_unions_allowed.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_state_controlled_unions_allowed.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_trade_unions_banned"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_trade_unions_banned.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_trade_unions_banned.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_worker_organs"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_worker_organs.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_trade_unions\\_worker_organs.dds"
+	}
+
+
+	#is_state_security #5slots
+
+    spriteType = {
+		name = "GFX_idea_police_only"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_police_only.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_counter_terrorism_operatives"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_counter_terrorism_operatives.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_gendarmerie"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_gendarmerie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sassy_secret_police"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_secret_police.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_military_policing"
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_state_security\\_military_policing.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 
@@ -120,22 +230,38 @@ spriteTypes = {
 
     spriteType = {
 		name = "GFX_idea_firearms_ownership_banned"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_ownership_banned.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_ownership_banned.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_firearms_harsh_licenses"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_harsh_licenses.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_harsh_licenses.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_firearms_licenses"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_firearms_licenses.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_firearms_licenses.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 	spriteType = {
 		name = "GFX_idea_right_to_bear_arms"
+<<<<<<< HEAD
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_firearm_regulation/_right_to_bear_arms.dds"
+=======
+		texturefile = "gfx\\interface\\ideas\\laws\\internal_policies\\is_firearm_regulation\\_right_to_bear_arms.dds"
+>>>>>>> parent of 6f4ab86 (s)
 	}
 
 }

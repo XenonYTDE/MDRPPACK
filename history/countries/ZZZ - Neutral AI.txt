@@ -25,4 +25,18 @@ add_ideas = {
 	ai_reduce_spam
 }
 
+<<<<<<< HEAD
+=======
+create_country_leader = {
+	name = "Tomas Copin"
+	desc = "POLITICS_TOMAS_COPIN_DESC"
+	picture = "tomas_copin.dds"
+	expire = "2022.1.1"
+	ideology = Neutral_Autocracy
+	traits = {
+		neutrality_Neutral_Autocracy
+	}
+}
+
+>>>>>>> parent of 6f4ab86 (s)
 
