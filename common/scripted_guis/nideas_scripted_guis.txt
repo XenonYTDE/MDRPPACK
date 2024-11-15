@@ -158,7 +158,14 @@ scripted_gui = {
 		ai_max_weight_taken_per_test = 2
 		
 		ai_enabled = {
-            always = yes
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
+				always = yes
+			}
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
+				always = no
+			}
 		}
 		
 		ai_check = {
@@ -5741,7 +5748,14 @@ scripted_gui = {
 		ai_max_weight_taken_per_test = 2
 
 		ai_enabled = {
-			always = yes
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
+				always = yes
+			}
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
+				always = no
+			}
 		}
 		ai_check = {
 			has_political_power > 99
