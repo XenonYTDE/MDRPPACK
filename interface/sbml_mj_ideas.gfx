@@ -27,6 +27,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/idea_slot_army.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_slot_mj_volunteer_forces"
+		textureFile = "gfx/interface/idea_slot_army.dds"
+	}
+
     #mj_code_of_ethics #5slots
 
     spriteType = {
