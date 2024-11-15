@@ -72,7 +72,6 @@ idea_categories = {
 		slot = is_population_growth
 		slot = is_trade_unions
 		slot = is_firearm_regulation
-		slot = is_state_security
 
 		ledger = civilian
 		
