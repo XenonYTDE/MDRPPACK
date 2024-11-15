@@ -1,5 +1,55 @@
 resources_expansion_category = {
 
+	deposit_discovery = {
+		icon = generic_construction
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 0
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 24.9 }
+		}
+
+		custom_cost_text = cost_25_0
+
+		complete_effect = {
+			set_temp_variable = { treasury_change = -25 }
+			modify_treasury_effect = yes
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				random_list = {
+					10 = { add_resource = {
+							type = oil
+							amount = 1
+					}}
+					10 = { add_resource = {
+						type = tungsten
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = chromium
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = steel
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = aluminium
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = rubber
+						amount = 1
+					}}
+				}
+			}
+		}
+	}
+
 	small_oil_expansion = {
 		icon = oil
 		allowed = { always = yes }
@@ -47,11 +97,7 @@ resources_expansion_category = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-<<<<<<< HEAD
 		days_remove = 225
-=======
-		days_remove = 270
->>>>>>> parent of 6f4ab86 (s)
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -94,11 +140,7 @@ resources_expansion_category = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-<<<<<<< HEAD
 		days_remove = 270
-=======
-		days_remove = 360
->>>>>>> parent of 6f4ab86 (s)
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -162,12 +204,6 @@ resources_expansion_category = {
 	        amount > 0
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_aluminium_expansion }
-			NOT = { has_decision = medium_aluminium_expansion }
-			NOT = { has_decision = huge_aluminium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -190,11 +226,7 @@ resources_expansion_category = {
 	  icon = aluminium
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 225
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -215,12 +247,6 @@ resources_expansion_category = {
 	        amount > 9
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_aluminium_expansion }
-			NOT = { has_decision = medium_aluminium_expansion }
-			NOT = { has_decision = huge_aluminium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -243,11 +269,7 @@ resources_expansion_category = {
 	  icon = aluminium
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 270
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -268,12 +290,6 @@ resources_expansion_category = {
 	        amount > 49
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_aluminium_expansion }
-			NOT = { has_decision = medium_aluminium_expansion }
-			NOT = { has_decision = huge_aluminium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -317,12 +333,6 @@ resources_expansion_category = {
 	        amount > 0
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_rubber_expansion }
-			NOT = { has_decision = medium_rubber_expansion }
-			NOT = { has_decision = huge_rubber_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -345,11 +355,7 @@ resources_expansion_category = {
 	  icon = rubber
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 225
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -370,12 +376,6 @@ resources_expansion_category = {
 	        amount > 9
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_rubber_expansion }
-			NOT = { has_decision = medium_rubber_expansion }
-			NOT = { has_decision = huge_rubber_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -398,11 +398,7 @@ resources_expansion_category = {
 	  icon = rubber
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 270
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -423,12 +419,6 @@ resources_expansion_category = {
 	        amount > 49
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_rubber_expansion }
-			NOT = { has_decision = medium_rubber_expansion }
-			NOT = { has_decision = huge_rubber_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -472,12 +462,6 @@ resources_expansion_category = {
 	        amount > 0
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_tungsten_expansion }
-			NOT = { has_decision = medium_tungsten_expansion }
-			NOT = { has_decision = huge_tungsten_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -500,11 +484,7 @@ resources_expansion_category = {
 	  icon = tungsten
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 225
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -525,12 +505,6 @@ resources_expansion_category = {
 	        amount > 9
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_tungsten_expansion }
-			NOT = { has_decision = medium_tungsten_expansion }
-			NOT = { has_decision = huge_tungsten_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -553,11 +527,7 @@ resources_expansion_category = {
 	  icon = tungsten
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 270
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -578,12 +548,6 @@ resources_expansion_category = {
 	        amount > 49
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_tungsten_expansion }
-			NOT = { has_decision = medium_tungsten_expansion }
-			NOT = { has_decision = huge_tungsten_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -627,12 +591,6 @@ resources_expansion_category = {
 					amount > 0
 				}
 			}
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_steel_expansion }
-			NOT = { has_decision = medium_steel_expansion }
-			NOT = { has_decision = huge_steel_expansion }
->>>>>>> parent of 6f4ab86 (s)
 		}
 
 		remove_effect = {
@@ -655,11 +613,7 @@ resources_expansion_category = {
 		icon = steel
 		allowed = { always = yes }
 		fire_only_once = no
-<<<<<<< HEAD
 		days_remove = 225
-=======
-		days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -680,12 +634,6 @@ resources_expansion_category = {
 					amount > 9
 				}
 			}
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_steel_expansion }
-			NOT = { has_decision = medium_steel_expansion }
-			NOT = { has_decision = huge_steel_expansion }
->>>>>>> parent of 6f4ab86 (s)
 		}
 
 		remove_effect = {
@@ -708,11 +656,7 @@ resources_expansion_category = {
 		icon = steel
 		allowed = { always = yes }
 		fire_only_once = no
-<<<<<<< HEAD
 		days_remove = 270
-=======
-		days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -733,12 +677,6 @@ resources_expansion_category = {
 					amount > 49
 				}
 			}
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_steel_expansion }
-			NOT = { has_decision = medium_steel_expansion }
-			NOT = { has_decision = huge_steel_expansion }
->>>>>>> parent of 6f4ab86 (s)
 		}
 
 		remove_effect = {
@@ -782,12 +720,6 @@ resources_expansion_category = {
 	        amount > 0
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_chromium_expansion }
-			NOT = { has_decision = medium_chromium_expansion }
-			NOT = { has_decision = huge_chromium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -810,11 +742,7 @@ resources_expansion_category = {
 	  icon = chromium
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 225
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -835,12 +763,6 @@ resources_expansion_category = {
 	        amount > 9
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_chromium_expansion }
-			NOT = { has_decision = medium_chromium_expansion }
-			NOT = { has_decision = huge_chromium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
@@ -863,11 +785,7 @@ resources_expansion_category = {
 	  icon = chromium
 	  allowed = { always = yes }
 	  fire_only_once = no
-<<<<<<< HEAD
 	  days_remove = 270
-=======
-	  days_remove = 180
->>>>>>> parent of 6f4ab86 (s)
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -888,12 +806,6 @@ resources_expansion_category = {
 	        amount > 49
 	      }
 	    }
-<<<<<<< HEAD
-=======
-			NOT = { has_decision = small_chromium_expansion }
-			NOT = { has_decision = medium_chromium_expansion }
-			NOT = { has_decision = huge_chromium_expansion }
->>>>>>> parent of 6f4ab86 (s)
 	  }
 
 	  remove_effect = {
