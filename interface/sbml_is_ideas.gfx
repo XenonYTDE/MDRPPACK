@@ -81,7 +81,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_pog_national_purity"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_pog_national_purity.dds"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_national_purity.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_population_control"
@@ -115,34 +115,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_worker_organs"
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_trade_unions/_worker_organs.dds"
-	}
-
-
-	#is_state_security #5slots
-
-    spriteType = {
-		name = "GFX_idea_police_only"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_police_only.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_counter_terrorism_operatives"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_counter_terrorism_operatives.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_gendarmerie"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_gendarmerie.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_sassy_secret_police"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_secret_police.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_military_policing"
-		texturefile = "gfx/interface/ideas/laws/internal_policies/is_state_security/_military_policing.dds"
 	}
 
 

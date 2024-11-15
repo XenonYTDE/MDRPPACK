@@ -44,19 +44,6 @@ trade_unions_banned_desc:0 "All forms of trade organisations are banned."
 worker_organs:0 "Worker's Organisations"
 worker_organs_desc:0 "The market is dominated by trade unions, syndicates and/or cooperatives."
 
-
-police_only:0 "Police"
-police_only_desc:0 "Law is enforced by typical police organisations."
-counter_terrorism_operatives:0 "Counter Terrorism Operatives"
-counter_terrorism_operatives_desc:0 "Special units are formed to combat terror."
-gendarmerie:0 "Gendarmerie"
-gendarmerie_desc:0 "A gendarmerie is a military force with law enforcement duties among the civilian population."
-sassy_secret_police:0 "Secret Police"
-sassy_secret_police_desc:0 "A secret police is present to combat dissidents and political opponents."
-military_policing:0 "Military Policing"
-military_policing_desc:0 "Policing is placed solely on the hands of the armed forces."
-
-
 firearms_ownership_banned:0 "Firearms Ownership Banned"
 firearms_ownership_banned_desc:0 "Private ownership of firearms is wholly banned."
 firearms_harsh_licenses:0 "Harsh Licenses"
