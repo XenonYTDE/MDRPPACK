@@ -1,7 +1,16 @@
 spriteTypes = {
+<<<<<<< Updated upstream
 	spriteType = {
 		name = "GFX_idea_categories"
 		texturefile = "gfx/interface/idea_categories.dds"
 		noOfFrames = 22	
 	}
 }
+=======
+    spriteType = {
+        name = "GFX_idea_categories"
+        texturefile = "gfx/interface/idea_categories.dds"
+        noOfFrames = 22    
+    }
+}
+>>>>>>> Stashed changes
