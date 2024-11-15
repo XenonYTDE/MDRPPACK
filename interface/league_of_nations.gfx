@@ -1,0 +1,222 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_league_of_nations_window"
+		texturefile = "gfx/interface/league_of_nations_window.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_member_list_entry"
+		texturefile = "gfx/interface/league_of_nations_member_list_entry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_member_list_entry_grey"
+		texturefile = "gfx/interface/league_of_nations_member_list_entry_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_member_list_entry_green"
+		texturefile = "gfx/interface/league_of_nations_member_list_entry_green.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_member_list_entry_red"
+		texturefile = "gfx/interface/league_of_nations_member_list_entry_red.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_box_smallest_red_bg"
+		texturefile = "gfx/interface/generic_box_smallest_red_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_icon"
+		texturefile = "gfx/interface/league_of_nations_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_threat_icon"
+		texturefile = "gfx/interface/league_of_nations_threat_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_button"
+		texturefile = "gfx/interface/league_of_nations_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_info_button"
+		texturefile = "gfx/interface/league_of_nations_info_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_blue_close_button"
+		texturefile = "gfx/interface/league_of_nations_blue_close_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_button_blue_box"
+		texturefile = "gfx/interface/league_of_nations_button_blue_box.dds"
+	}
+
+	spriteType = {
+		name = "GFX_start_league_of_nations_voting_button_icon"
+		texturefile = "gfx/interface/start_league_of_nations_voting_button_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_leader_of_league_of_nations_idea_icon"
+		texturefile = "gfx/interface/ideas/leader_of_league_of_nations_idea_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_member_of_league_of_nations_idea_icon"
+		texturefile = "gfx/interface/ideas/member_of_league_of_nations_idea_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_reform_of_league_of_nations_idea_icon"
+		texturefile = "gfx/interface/ideas/reform_of_league_of_nations_idea_icon.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_league_of_nations_vote_button_glow"
+		texturefile = "gfx/interface/league_of_nations_vote_button_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_button_glow_strip"
+		texturefile = "gfx/interface/league_of_nations_button.dds"
+		allwaystransparent = yes
+		animation = {
+			animationmaskfile = "gfx/interface/league_of_nations_button.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 7				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 10 y = 5 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/league_of_nations_button.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 7				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 10 y = 5 }
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_button_with_checkbox"
+		texturefile = "gfx/interface/league_of_nations_button_with_checkbox.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_blue_box"
+		texturefile = "gfx/interface/league_of_nations_blue_box.dds"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_blue_button"
+		texturefile = "gfx/interface/league_of_nations_blue_button.dds"
+	}
+	spriteType = {
+		name = "GFX_league_of_nations_red_button"
+		texturefile = "gfx/interface/league_of_nations_red_button.dds"
+	}
+	spriteType = {
+		name = "GFX_league_of_nations_green_button"
+		texturefile = "gfx/interface/league_of_nations_green_button.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_blue_lon_window"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/tiled_blue_lon_window.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_blue_lon_window_1b_border"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/tiled_blue_lon_window_1b_border.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_blue_lon_window_small"
+		size = { x = 48 y = 48 }
+		textureFile = "gfx/interface/tiled_blue_lon_window_small.dds"
+		borderSize = { x = 2 y = 2 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_green_lon_window_small"
+		size = { x = 48 y = 48 }
+		textureFile = "gfx/interface/tiled_green_lon_window_small.dds"
+		borderSize = { x = 2 y = 2 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_turquoise_lon_window_small"
+		size = { x = 48 y = 48 }
+		textureFile = "gfx/interface/tiled_turquoise_lon_window_small.dds"
+		borderSize = { x = 2 y = 2 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_leader_flag_frame"
+		texturefile = "gfx/interface/league_of_nations_leader_flag_frame.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_league_of_nations_reforms_arrows_icon"
+		texturefile = "gfx/interface/league_of_nations_reforms_arrows_icon.dds"
+		noOfFrames = 2
+	}
+
+	# Event Pictures:
+	spriteType = {
+		name = "GFX_lon_event_picture"
+		texturefile = "gfx/event_pictures/lon_event_picture.dds"
+	}
+
+	# Map Modes:
+	spriteType = {
+		name = "GFX_mapmode_buttons_deselected_small_league_of_nations_map_mode"
+		textureFile = "gfx/interface/mapmodes/mapmode_buttons_deselected_small_league_of_nations_map_mode.dds"
+	}
+	spriteType = {
+		name = "GFX_mapmode_buttons_selected_small_league_of_nations_map_mode"
+		textureFile = "gfx/interface/mapmodes/mapmode_buttons_selected_small_league_of_nations_map_mode.dds"
+	}
+}

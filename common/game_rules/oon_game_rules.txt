@@ -1,0 +1,62 @@
+enable_league_of_nations_at_start = {
+    name = "RULE_ENABLE_LEAGUE_OF_NATIONS_AT_START"
+    group = "LEAGUE_OF_NATIONS_MOD_RULES_GROUP"
+    default = {
+        name = "ENABLE"
+        desc = "ENABLE_LEAGUE_OF_NATIONS_AT_START_DESC"
+        text = "YES"
+        allow_achievements = yes
+    }
+}
+
+league_of_nations_rule_stab_quarter = {
+    name = "RULE_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+    group = "LEAGUE_OF_NATIONS_MOD_RULES_GROUP"
+    default = {
+        name = "USA_STAB"
+        desc = "USA_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER_DESC"
+        text = "USA_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+        allow_achievements = yes
+    }
+    option = {
+        name = "SOV_STAB"
+        desc = "SOV_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER_DESC"
+        text = "SOV_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+        allow_achievements = yes
+    }
+    option = {
+        name = "ENG_STAB"
+        desc = "ENG_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER_DESC"
+        text = "ENG_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+        allow_achievements = yes
+    }
+    option = {
+        name = "FRA_STAB"
+        desc = "FRA_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER_DESC"
+        text = "FRA_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+        allow_achievements = yes
+    }
+    option = {
+        name = "CHI_STAB"
+        desc = "CHI_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER_DESC"
+        text = "CHI_LEAGUE_OF_NATIONS_RULE_STAB_QUARTER"
+        allow_achievements = yes
+    }
+}
+
+league_of_nations_ai_voting = {
+    name = "RULE_LEAGUE_OF_NATIONS_AI_VOTING"
+    group = "LEAGUE_OF_NATIONS_MOD_RULES_GROUP"
+    default = {
+        name = "ENABLE"
+        desc = "ENABLE_LEAGUE_OF_NATIONS_AI_VOTING_DESC"
+        text = "YES"
+        allow_achievements = yes
+    }
+    option = {
+        name = "DISABLE"
+        desc = "DISABLE_LEAGUE_OF_NATIONS_AI_VOTING_DESC"
+        text = "NO"
+        allow_achievements = yes
+    }
+}

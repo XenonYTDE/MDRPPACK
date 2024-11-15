@@ -153,16 +153,19 @@ scripted_gui = {
 			}
 		}
 		
-<<<<<<< HEAD
-		ai_test_interval = 300
-=======
 		ai_test_interval = 336
->>>>>>> parent of 6f4ab86 (s)
 		ai_test_variance = 0.1
 		ai_max_weight_taken_per_test = 2
 		
 		ai_enabled = {
-            always = yes
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
+				always = yes
+			}
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
+				always = no
+			}
 		}
 		
 		ai_check = {
@@ -5745,7 +5748,14 @@ scripted_gui = {
 		ai_max_weight_taken_per_test = 2
 
 		ai_enabled = {
-			always = yes
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = ENABLE } }
+				always = yes
+			}
+			if = {
+				limit = { has_game_rule = { rule = league_of_nations_ai_voting option = DISABLE } }
+				always = no
+			}
 		}
 		ai_check = {
 			has_political_power > 99
