@@ -27,26 +27,6 @@
 #  # #  # #   # #         # #    #  #  # #    
  ##  #  # #   # ###     ##  ###  #   ##  #    
 
-only_coring_on_starting_continent = {
-	name = "ONLY_ALLOW_CORING_ON_STARTING_CONTINENT"
-	group = "RULE_GROUP_CWC"
-	default = {
-		name = DEFAULT_ONLY_CORE_PLAYERS_CONTINENT
-		text = "RULE_ONLY_CORE_PLAYERS_CONTINENT"
-		desc = "RULE_ONLY_CORE_PLAYERS_CONTINENT_DESC"
-	}
-	option = {
-		name = CORE_PLAYERS_AND_AI_CONINENT
-		text = "RULE_CORE_PLAYERS_AND_AI_CONINENT"
-		desc = "RULE_CORE_PLAYERS_AND_AI_CONINENT_DESC"
-	}
-	option = {
-		name = CORE_NO_ONE_CONINENT
-		text = "RULE_CORE_NO_ONE_CONINENT"
-		desc = "RULE_CORE_NO_ONE_CONINENT_DESC"
-	}
-}
-
 allow_ai_coring = {
 	name = "ALLOW_AI_CORING"
 	group = "RULE_GROUP_CWC"
