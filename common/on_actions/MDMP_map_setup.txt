@@ -554,8 +554,6 @@ on_actions = {
 					annex_country = { target = PAP transfer_troops = no }
 					annex_country = { target = SOL transfer_troops = no }
 					annex_country = { target = FIJ transfer_troops = no }
-					annex_country = { target = PLY transfer_troops = no }
-					annex_country = { target = MIC transfer_troops = no }
 
 					every_state = {
 						limit = {		
@@ -610,9 +608,6 @@ on_actions = {
 				AST = {
 					annex_country = { target = PAP transfer_troops = no }
 					annex_country = { target = SOL transfer_troops = no }
-					annex_country = { target = PLY transfer_troops = no }
-					annex_country = { target = MIC transfer_troops = no }
-					
 					
 					every_state = {
 						limit = {		
@@ -1080,19 +1075,19 @@ on_actions = {
 						}
 					}
 				}
-				YUG = {
+				SER = {
 					annex_country = { target = KOS transfer_troops = no }
 					
 					
 					every_state = {
 						limit = {		
-							is_controlled_by = YUG
+							is_controlled_by = SER
 						}
 						if = {
 							limit = {
-								NOT = { is_core_of = YUG }
+								NOT = { is_core_of = SER }
 							}
-							add_core_of = YUG
+							add_core_of = SER
 						}
 					}
 				}
@@ -1504,7 +1499,6 @@ on_actions = {
 					}
 				}
 				ITA = {
-					annex_country = { target = VAT transfer_troops = no }
 					annex_country = { target = SMA transfer_troops = no }
 					
 					
