@@ -1,19 +1,4 @@
 ###SOUTH-AMERICA####
-remove_south_america = {
-	name = "RULE_REMOVE_SOUTH_AMERICA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_REMOVE_SOUTH_AMERICA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_REMOVE_SOUTH_AMERICA_DESC"
-	}
-}
 merge_south_america = {
 	name = "RULE_MERGE_SOUTH_AMERICA"
 	group = "MDOptimization_RULES"
@@ -30,21 +15,6 @@ merge_south_america = {
 	}
 }
 ####AFRICA####
-remove_africa = {
-	name = "RULE_REMOVE_AFRICA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_REMOVE_AFRICA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_REMOVE_AFRICA_DESC"
-	}
-}
 merge_africa = {
 	name = "RULE_MERGE_AFRICA"
 	group = "MDOptimization_RULES"
@@ -61,21 +31,6 @@ merge_africa = {
 	}
 }
 ####Central America####
-remove_central_america = {
-	name = "RULE_REMOVE_CENTRAL_AMERICA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_REMOVE_CENTRAL_AMERICA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_REMOVE_CENTRAL_AMERICA_DESC"
-	}
-}
 merge_central_america = {
 	name = "RULE_MERGE_CENTRAL_AMERICA"
 	group = "MDOptimization_RULES"
@@ -107,21 +62,6 @@ merge_asia = {
 		desc = "RULE_NO_MERGE_ASIA_DESC"
 	}
 }
-remove_arabia = {
-	name = "RULE_REMOVE_ARABIA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_REMOVE_ARABIA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_REMOVE_ARABIA_DESC"
-	}
-}
 merge_arabia = {
 	name = "RULE_MERGE_ARABIA"
 	group = "MDOptimization_RULES"
@@ -150,21 +90,6 @@ merge_oceania = {
 		name = no
 		text = "RULE_OPTION_NO"
 		desc = "RULE_NO_MERGE_OCEANIA_DESC"
-	}
-}
-remove_oceania = {
-	name = "RULE_REMOVE_OCEANIA"
-	group = "MDOptimization_RULES"
-	icon = "GFX_production_licenses"
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_YES_REMOVE_OCEANIA_DESC"
-	}
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_NO_REMOVE_OCEANIA_DESC"
 	}
 }
 merge_scandinavia = {
