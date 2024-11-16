@@ -6,10 +6,6 @@ internal_policies:0 "Internal Policies"
 is_penal_system:0 "Penal System"
 is_population_growth:0 "Population Growth"
 is_trade_unions:0 "Trade Unions"
-<<<<<<< HEAD
-=======
-is_state_security:0 "State Security"
->>>>>>> parent of 6f4ab86 (s)
 is_firearm_regulation:0 "Firearms Regulation"
 
 
@@ -30,13 +26,8 @@ standard_growth:0 "Standard Growth"
 standard_growth_desc:0 "The state does not involve itself in the growth of population."
 controlled_birth_rates:0 "Controlled Birth Rates"
 controlled_birth_rates_desc:0 "The states controls and sets the rates of birth."
-<<<<<<< HEAD
-pog_national_purity:0 "National Purity"
-pog_national_purity_desc:0 "The state enforces Blood quantum laws."
-=======
 national_purity:0 "National Purity"
 national_purity_desc:0 "The state enforces Blood quantum laws."
->>>>>>> parent of 6f4ab86 (s)
 population_control:0 "Population Control"
 population_control_desc:0 "The state enforces population control measures."
 one_child_policyy:0 "One Child Policy"
@@ -52,22 +43,6 @@ trade_unions_banned_desc:0 "All forms of trade organisations are banned."
 worker_organs:0 "Worker's Organisations"
 worker_organs_desc:0 "The market is dominated by trade unions, syndicates and/or cooperatives."
 
-<<<<<<< HEAD
-=======
-
-police_only:0 "Police"
-police_only_desc:0 "Law is enforced by typical police organisations."
-counter_terrorism_operatives:0 "Counter Terrorism Operatives"
-counter_terrorism_operatives_desc:0 "Special units are formed to combat terror."
-gendarmerie:0 "Gendarmerie"
-gendarmerie_desc:0 "A gendarmerie is a military force with law enforcement duties among the civilian population."
-sassy_secret_police:0 "Secret Police"
-sassy_secret_police_desc:0 "A secret police is present to combat dissidents and political opponents."
-military_policing:0 "Military Policing"
-military_policing_desc:0 "Policing is placed solely on the hands of the armed forces."
-
-
->>>>>>> parent of 6f4ab86 (s)
 firearms_ownership_banned:0 "Firearms Ownership Banned"
 firearms_ownership_banned_desc:0 "Private ownership of firearms is wholly banned."
 firearms_harsh_licenses:0 "Harsh Licenses"
