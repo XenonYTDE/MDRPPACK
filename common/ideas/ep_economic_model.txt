@@ -101,7 +101,7 @@ ideas = {
                     rubber > 50
                 }
                 NOT = {
-                    has_government = communism
+                    has_government = democratic
                 }
             }
             
