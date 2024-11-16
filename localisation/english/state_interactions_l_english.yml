@@ -49,3 +49,4 @@
  REQUEST_RESOURCE_RIGHTS_REJECT_DESC:0 "They refused our request to the rights of their resources! We should try to improve relations before asking again."
  request_resource_rights_ai_condition:0 "Is AI"
  request_resource_rights1_opmod:0 "Relation: Resource Rights"
+ STATE_INTERACTIONS_TITLE:0 "State Interactions"
