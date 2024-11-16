@@ -22,5 +22,7 @@ leader_traits = {
 		stability_weekly_factor = 0.001
         nationalist_drift = 0.20
         democratic_drift = -0.20
+        communism_drift = -0.20
+        neutrality_drift = -0.20
 	}
 }
