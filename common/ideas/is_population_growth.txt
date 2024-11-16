@@ -47,11 +47,7 @@ ideas = {
            cancel_if_invalid = yes
        }
 
-<<<<<<< HEAD
        pog_national_purity = {
-=======
-       national_purity = {
->>>>>>> parent of 6f4ab86 (s)
            available = {
                has_government = nationalist
            }
