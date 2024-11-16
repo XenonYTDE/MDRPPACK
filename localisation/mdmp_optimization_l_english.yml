@@ -7,30 +7,15 @@
  ai_reduce_spam:0 "AI Rights Law"
  ai_reduce_spam_desc:0 "Only To Serve"
 
-#Remove SA#
- RULE_REMOVE_SOUTH_AMERICA:0 "Remove South America"
- RULE_YES_REMOVE_SOUTH_AMERICA_DESC:0 "Deletes South America"
- RULE_NO_REMOVE_SOUTH_AMERICA_DESC:0 "Doesn't Delete South America"
-
 #Merge SA#
  RULE_MERGE_SOUTH_AMERICA:0 "Merge South America"
  RULE_YES_MERGE_SOUTH_AMERICA_DESC:0 "Merges South America"
- RULE_NO_MERGE_SOUTH_AMERICA_DESC:0 "Doesn't Merge South America" 
-
-#Remove Africa#
- RULE_REMOVE_AFRICA:0 "Remove Africa"
- RULE_YES_REMOVE_AFRICA_DESC:0 "Deletes Africa"
- RULE_NO_REMOVE_AFRICA_DESC:0 "Keeps Africa"
+ RULE_NO_MERGE_SOUTH_AMERICA_DESC:0 "Doesn't Merge South America"
  
 #Merge Africa#
  RULE_MERGE_AFRICA:0 "Merge Africa"
  RULE_YES_MERGE_AFRICA_DESC:0 "Merges Africa"
  RULE_NO_MERGE_AFRICA_DESC:0 "Keeps The Same Africa"
- 
-#Remove Central America#
- RULE_REMOVE_CENTRAL_AMERICA:0 "Remove Central America"
- RULE_YES_REMOVE_CENTRAL_AMERICA_DESC:0 "Deletes Central America"
- RULE_NO_REMOVE_CENTRAL_AMERICA_DESC:0 "Keeps Central America"
  
 #Merge Central America#
  RULE_MERGE_CENTRAL_AMERICA:0 "Merge Central America"
@@ -47,11 +32,6 @@
  RULE_YES_MERGE_ASIA_DESC:0 "Merges Asia"
  RULE_NO_MERGE_ASIA_DESC:0 "Keeps Asia The Same"
 
-#Remove Arabia#
- RULE_REMOVE_ARABIA:0 "Remove Arabia"
- RULE_YES_REMOVE_ARABIA_DESC:0 "Delete Arabia"
- RULE_NO_REMOVE_ARABIA_DESC:0 "Keep Arabia"
-
 #Merge Arabia#
  RULE_MERGE_ARABIA:0 "Merge Arabia"
  RULE_YES_MERGE_ARABIA_DESC:0 "Merges Arabia"
@@ -60,12 +40,7 @@
 #Merge Oceania#
  RULE_MERGE_OCEANIA:0 "Merge Oceania"
  RULE_YES_MERGE_OCEANIA_DESC:0 "Merges Oceania"
- RULE_NO_MERGE_OCEANIA_DESC:0 "Keeps Oceania The Same" 
- 
-#Remove Oceania#
- RULE_REMOVE_OCEANIA:0 "Remove Oceania"
- RULE_YES_REMOVE_OCEANIA_DESC:0 "Removes Oceania"
- RULE_NO_REMOVE_OCEANIA_DESC:0 "Keeps Oceania The Same" 
+ RULE_NO_MERGE_OCEANIA_DESC:0 "Keeps Oceania The Same"
 
 #Merge Scandinavia#
  RULE_MERGE_SCANDINAVIA:0 "Merge Scandinavia"
