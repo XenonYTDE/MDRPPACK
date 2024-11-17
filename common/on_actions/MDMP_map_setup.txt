@@ -10,7 +10,7 @@ on_actions = {
 					}
 				}
 				GUY = {
-					annex_country = { target = SUR transfer_troops = no }
+					annex_country = { target = SUR transfer_troops = yes }
 
 
 					every_state = {
@@ -27,7 +27,7 @@ on_actions = {
 				}
 			
 				PRU = {
-					annex_country = { target = ECU transfer_troops = no }
+					annex_country = { target = ECU transfer_troops = yes }
 
 
 					every_state = {
@@ -44,7 +44,7 @@ on_actions = {
 				}	
 
 				BOL = {
-					annex_country = { target = PAR transfer_troops = no }
+					annex_country = { target = PAR transfer_troops = yes }
 
 
 					every_state = {
@@ -61,7 +61,7 @@ on_actions = {
 				}	
 
 				ARG = {
-					annex_country = { target = CHL transfer_troops = no }
+					annex_country = { target = CHL transfer_troops = yes }
 
 
 					every_state = {
@@ -87,7 +87,7 @@ on_actions = {
 					}
 				}
 				SUD = {
-					annex_country = { target = SSU transfer_troops = no }
+					annex_country = { target = SSU transfer_troops = yes }
 
 					
 					every_state = {
@@ -104,7 +104,7 @@ on_actions = {
 				}
 				
 				ERI = {
-					annex_country = { target = DJI transfer_troops = no }
+					annex_country = { target = DJI transfer_troops = yes }
 
 					
 					every_state = {
@@ -121,11 +121,11 @@ on_actions = {
 				}
 				
 				SOM = {
-					annex_country = { target = SML transfer_troops = no }
-					annex_country = { target = PUN transfer_troops = no }
-					annex_country = { target = SWS transfer_troops = no }
-					annex_country = { target = SNA transfer_troops = no }
-					annex_country = { target = JUB transfer_troops = no }
+					annex_country = { target = SML transfer_troops = yes }
+					annex_country = { target = PUN transfer_troops = yes }
+					annex_country = { target = SWS transfer_troops = yes }
+					annex_country = { target = SNA transfer_troops = yes }
+					annex_country = { target = JUB transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -141,7 +141,7 @@ on_actions = {
 				}
 				
 				ZAM = {
-					annex_country = { target = MLW transfer_troops = no }
+					annex_country = { target = MLW transfer_troops = yes }
 
 					
 					every_state = {
@@ -158,9 +158,9 @@ on_actions = {
 				}
 				
 				NIG = {
-					annex_country = { target = EGU transfer_troops = no }
-					annex_country = { target = CAM transfer_troops = no }
-					annex_country = { target = BEN transfer_troops = no }
+					annex_country = { target = EGU transfer_troops = yes }
+					annex_country = { target = CAM transfer_troops = yes }
+					annex_country = { target = BEN transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -176,9 +176,9 @@ on_actions = {
 				}
 				
 				CDI = {
-					annex_country = { target = GAH transfer_troops = no }
-					annex_country = { target = TOG transfer_troops = no }
-					annex_country = { target = LIB transfer_troops = no }
+					annex_country = { target = GAH transfer_troops = yes }
+					annex_country = { target = TOG transfer_troops = yes }
+					annex_country = { target = LIB transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -194,7 +194,7 @@ on_actions = {
 				}
 
 				LIB = {
-					annex_country = { target = AFR transfer_troops = no }
+					annex_country = { target = AFR transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -211,11 +211,11 @@ on_actions = {
 
 
 				GUI = {
-					annex_country = { target = SIE transfer_troops = no }
-					annex_country = { target = LUR transfer_troops = no }					
-					annex_country = { target = GUB transfer_troops = no }
-					annex_country = { target = AFR transfer_troops = no }					
-					annex_country = { target = LIB transfer_troops = no }	
+					annex_country = { target = SIE transfer_troops = yes }
+					annex_country = { target = LUR transfer_troops = yes }					
+					annex_country = { target = GUB transfer_troops = yes }
+					annex_country = { target = AFR transfer_troops = yes }					
+					annex_country = { target = LIB transfer_troops = yes }	
 					
 					every_state = {
 						limit = {		
@@ -232,10 +232,10 @@ on_actions = {
 
 				
 				MAL = {
-					annex_country = { target = BFA transfer_troops = no }		
-					annex_country = { target = MAU transfer_troops = no }
-					annex_country = { target = GAM transfer_troops = no }	
-					annex_country = { target = SEN transfer_troops = no }					
+					annex_country = { target = BFA transfer_troops = yes }		
+					annex_country = { target = MAU transfer_troops = yes }
+					annex_country = { target = GAM transfer_troops = yes }	
+					annex_country = { target = SEN transfer_troops = yes }					
 					
 					every_state = {
 						limit = {		
@@ -251,7 +251,7 @@ on_actions = {
 				}				
 				
 				MOR = {
-					annex_country = { target = SHA transfer_troops = no }							
+					annex_country = { target = SHA transfer_troops = yes }							
 					
 					every_state = {
 						limit = {		
@@ -267,7 +267,7 @@ on_actions = {
 				}				
 
 				RWA = {
-					annex_country = { target = BUR transfer_troops = no }							
+					annex_country = { target = BUR transfer_troops = yes }							
 					
 					every_state = {
 						limit = {		
@@ -283,8 +283,8 @@ on_actions = {
 				}							
 
 				MAD = {
-					annex_country = { target = COM transfer_troops = no }
-					annex_country = { target = MRT transfer_troops = no }
+					annex_country = { target = COM transfer_troops = yes }
+					annex_country = { target = MRT transfer_troops = yes }
 
 					every_state = {
 						limit = {		
@@ -300,7 +300,7 @@ on_actions = {
 			}
 			
 				GAB = {
-					annex_country = { target = CNG transfer_troops = no }
+					annex_country = { target = CNG transfer_troops = yes }
 
 					every_state = {
 						limit = {		
@@ -316,14 +316,14 @@ on_actions = {
 			}			
 				
 				SAF = {
-					annex_country = { target = NAM transfer_troops = no }
-					annex_country = { target = BOT transfer_troops = no }
-					annex_country = { target = LES transfer_troops = no }
-					annex_country = { target = SWA transfer_troops = no }
-					annex_country = { target = MOZ transfer_troops = no }
-					annex_country = { target = ZIM transfer_troops = no }
-					annex_country = { target = COM transfer_troops = no }
-					annex_country = { target = MRT transfer_troops = no }
+					annex_country = { target = NAM transfer_troops = yes }
+					annex_country = { target = BOT transfer_troops = yes }
+					annex_country = { target = LES transfer_troops = yes }
+					annex_country = { target = SWA transfer_troops = yes }
+					annex_country = { target = MOZ transfer_troops = yes }
+					annex_country = { target = ZIM transfer_troops = yes }
+					annex_country = { target = COM transfer_troops = yes }
+					annex_country = { target = MRT transfer_troops = yes }
 
 					every_state = {
 						limit = {		
@@ -338,15 +338,15 @@ on_actions = {
 				}
 			}
 			FRA = {
-				annex_country = { target = SAO transfer_troops = no }
+				annex_country = { target = SAO transfer_troops = yes }
 		}
 		
 			POR = {
-				annex_country = { target = VER transfer_troops = no }
+				annex_country = { target = VER transfer_troops = yes }
 			}
 			
 			ENG = {
-				annex_country = { target = SEY transfer_troops = no }
+				annex_country = { target = SEY transfer_troops = yes }
 			}	
 	}
 
@@ -358,7 +358,7 @@ on_actions = {
 					}
 				}
 				GUA = {
-					annex_country = { target = BLZ transfer_troops = no }
+					annex_country = { target = BLZ transfer_troops = yes }
 					
 					
 					every_state = {
@@ -376,7 +376,7 @@ on_actions = {
 			}
 			
 				HON = {
-					annex_country = { target = ELS transfer_troops = no }
+					annex_country = { target = ELS transfer_troops = yes }
 					
 					
 					every_state = {
@@ -393,7 +393,7 @@ on_actions = {
 				}
 
 				PAN = {
-					annex_country = { target = COS transfer_troops = no }
+					annex_country = { target = COS transfer_troops = yes }
 					
 					
 					every_state = {
@@ -410,7 +410,7 @@ on_actions = {
 				}
 
 				DOM = {
-					annex_country = { target = HAI transfer_troops = no }
+					annex_country = { target = HAI transfer_troops = yes }
 					
 					
 					every_state = {
@@ -427,13 +427,13 @@ on_actions = {
 				}
 
 				TRI = {
-					annex_country = { target = HAI transfer_troops = no }
-					annex_country = { target = GRA transfer_troops = no }
-					annex_country = { target = BAR transfer_troops = no }
-					annex_country = { target = STV transfer_troops = no }
-					annex_country = { target = STL transfer_troops = no }					
-					annex_country = { target = DMI transfer_troops = no }
-					annex_country = { target = STK transfer_troops = no }
+					annex_country = { target = HAI transfer_troops = yes }
+					annex_country = { target = GRA transfer_troops = yes }
+					annex_country = { target = BAR transfer_troops = yes }
+					annex_country = { target = STV transfer_troops = yes }
+					annex_country = { target = STL transfer_troops = yes }					
+					annex_country = { target = DMI transfer_troops = yes }
+					annex_country = { target = STK transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -449,11 +449,11 @@ on_actions = {
 				}					
 		
 			ENG = {
-				annex_country = { target = BAH transfer_troops = no }
+				annex_country = { target = BAH transfer_troops = yes }
 		}
 		
 			USA = {
-				annex_country = { target = JAM transfer_troops = no }
+				annex_country = { target = JAM transfer_troops = yes }
 		}		
 
 			if = {
@@ -464,10 +464,10 @@ on_actions = {
 					}
 				}
 				RAJ = {
-					annex_country = { target = NEP transfer_troops = no }
-					annex_country = { target = NPM transfer_troops = no }
-					annex_country = { target = BHU transfer_troops = no }
-					annex_country = { target = SRI transfer_troops = no }		
+					annex_country = { target = NEP transfer_troops = yes }
+					annex_country = { target = NPM transfer_troops = yes }
+					annex_country = { target = BHU transfer_troops = yes }
+					annex_country = { target = SRI transfer_troops = yes }		
 
 					every_state = {
 						limit = {		
@@ -483,10 +483,10 @@ on_actions = {
 				}
 				
 				BRM = {
-					annex_country = { target = KAC transfer_troops = no }
-					annex_country = { target = WAA transfer_troops = no }
-					annex_country = { target = SHN transfer_troops = no }
-					annex_country = { target = KAR transfer_troops = no }
+					annex_country = { target = KAC transfer_troops = yes }
+					annex_country = { target = WAA transfer_troops = yes }
+					annex_country = { target = SHN transfer_troops = yes }
+					annex_country = { target = KAR transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -502,8 +502,8 @@ on_actions = {
 				}
 				
 				VIE = {
-					annex_country = { target = LAO transfer_troops = no }
-					annex_country = { target = CBD transfer_troops = no }
+					annex_country = { target = LAO transfer_troops = yes }
+					annex_country = { target = CBD transfer_troops = yes }
 				}	
 
 					every_state = {
@@ -519,7 +519,7 @@ on_actions = {
 					}						
 
 				MAY = {
-					annex_country = { target = BRU transfer_troops = no }
+					annex_country = { target = BRU transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -535,7 +535,7 @@ on_actions = {
 				}
 
 				KYR = {
-					annex_country = { target = TAJ transfer_troops = no }
+					annex_country = { target = TAJ transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -551,9 +551,9 @@ on_actions = {
 				}					
 
 				AST = {
-					annex_country = { target = PAP transfer_troops = no }
-					annex_country = { target = SOL transfer_troops = no }
-					annex_country = { target = FIJ transfer_troops = no }
+					annex_country = { target = PAP transfer_troops = yes }
+					annex_country = { target = SOL transfer_troops = yes }
+					annex_country = { target = FIJ transfer_troops = yes }
 
 					every_state = {
 						limit = {		
@@ -578,11 +578,11 @@ on_actions = {
 					}
 				}
 				SAU = {
-					annex_country = { target = YEM transfer_troops = no }
-					annex_country = { target = OMA transfer_troops = no }
-					annex_country = { target = UAE transfer_troops = no }
-					annex_country = { target = QAT transfer_troops = no }
-					annex_country = { target = BHR transfer_troops = no }
+					annex_country = { target = YEM transfer_troops = yes }
+					annex_country = { target = OMA transfer_troops = yes }
+					annex_country = { target = UAE transfer_troops = yes }
+					annex_country = { target = QAT transfer_troops = yes }
+					annex_country = { target = BHR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -606,8 +606,8 @@ on_actions = {
 					}
 				}
 				AST = {
-					annex_country = { target = PAP transfer_troops = no }
-					annex_country = { target = SOL transfer_troops = no }
+					annex_country = { target = PAP transfer_troops = yes }
+					annex_country = { target = SOL transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -622,7 +622,7 @@ on_actions = {
 					}
 				}
 				NZL = {
-					annex_country = { target = FIJ transfer_troops = no }
+					annex_country = { target = FIJ transfer_troops = yes }
 					
 					
 					every_state = {
@@ -647,8 +647,8 @@ on_actions = {
 			}
 		}
 		EST = {
-			annex_country = { target = LAT transfer_troops = no }
-			annex_country = { target = LIT transfer_troops = no }
+			annex_country = { target = LAT transfer_troops = yes }
+			annex_country = { target = LIT transfer_troops = yes }
 
 			
 			every_state = {
@@ -672,8 +672,8 @@ on_actions = {
 			}
 		}
 		LAT = {
-			annex_country = { target = EST transfer_troops = no }
-			annex_country = { target = LIT transfer_troops = no }
+			annex_country = { target = EST transfer_troops = yes }
+			annex_country = { target = LIT transfer_troops = yes }
 
 			
 			every_state = {
@@ -697,8 +697,8 @@ on_actions = {
 			}
 		}
 		LIT = {
-			annex_country = { target = LAT transfer_troops = no }
-			annex_country = { target = EST transfer_troops = no }
+			annex_country = { target = LAT transfer_troops = yes }
+			annex_country = { target = EST transfer_troops = yes }
 
 			
 			every_state = {
@@ -725,8 +725,8 @@ on_actions = {
 			}
 		}
 		SWE = {
-			annex_country = { target = NOR transfer_troops = no }
-			annex_country = { target = FIN transfer_troops = no }
+			annex_country = { target = NOR transfer_troops = yes }
+			annex_country = { target = FIN transfer_troops = yes }
 
 
 			every_state = {
@@ -751,8 +751,8 @@ on_actions = {
 					}
 				}
 				NOR = {
-					annex_country = { target = SWE transfer_troops = no }
-					annex_country = { target = FIN transfer_troops = no }
+					annex_country = { target = SWE transfer_troops = yes }
+					annex_country = { target = FIN transfer_troops = yes }
 
 
 					every_state = {
@@ -777,8 +777,8 @@ on_actions = {
 					}
 				}
 				FIN = {
-					annex_country = { target = SWE transfer_troops = no }
-					annex_country = { target = NOR transfer_troops = no }
+					annex_country = { target = SWE transfer_troops = yes }
+					annex_country = { target = NOR transfer_troops = yes }
 
 
 					every_state = {
@@ -802,14 +802,14 @@ on_actions = {
 					}
 				}
 				SAF = {
-					annex_country = { target = LES transfer_troops = no }
-					annex_country = { target = NAM transfer_troops = no }
-					annex_country = { target = BOT transfer_troops = no }
-					annex_country = { target = SWA transfer_troops = no }
-					annex_country = { target = ZIM transfer_troops = no }
-					annex_country = { target = MOZ transfer_troops = no }
-					annex_country = { target = ZAM transfer_troops = no }
-					annex_country = { target = MLW transfer_troops = no }
+					annex_country = { target = LES transfer_troops = yes }
+					annex_country = { target = NAM transfer_troops = yes }
+					annex_country = { target = BOT transfer_troops = yes }
+					annex_country = { target = SWA transfer_troops = yes }
+					annex_country = { target = ZIM transfer_troops = yes }
+					annex_country = { target = MOZ transfer_troops = yes }
+					annex_country = { target = ZAM transfer_troops = yes }
+					annex_country = { target = MLW transfer_troops = yes }
 
 
 					every_state = {
@@ -825,10 +825,10 @@ on_actions = {
 					}
 				}
 				FRA = {
-					annex_country = { target = COM transfer_troops = no }
-					annex_country = { target = SEY transfer_troops = no }
-					annex_country = { target = MRT transfer_troops = no }
-					annex_country = { target = MNC transfer_troops = no }
+					annex_country = { target = COM transfer_troops = yes }
+					annex_country = { target = SEY transfer_troops = yes }
+					annex_country = { target = MRT transfer_troops = yes }
+					annex_country = { target = MNC transfer_troops = yes }
 					
 					
 					every_state = {
@@ -844,12 +844,12 @@ on_actions = {
 					}
 				}
 				TNZ = {
-					annex_country = { target = RWA transfer_troops = no }
-					annex_country = { target = BUR transfer_troops = no }
-					annex_country = { target = MRT transfer_troops = no }
-					annex_country = { target = KEN transfer_troops = no }
-					annex_country = { target = JUB transfer_troops = no }
-					annex_country = { target = UGA transfer_troops = no }
+					annex_country = { target = RWA transfer_troops = yes }
+					annex_country = { target = BUR transfer_troops = yes }
+					annex_country = { target = MRT transfer_troops = yes }
+					annex_country = { target = KEN transfer_troops = yes }
+					annex_country = { target = JUB transfer_troops = yes }
+					annex_country = { target = UGA transfer_troops = yes }
 					
 					
 					every_state = {
@@ -865,13 +865,13 @@ on_actions = {
 					}
 				}
 				ETH = {
-					annex_country = { target = ERI transfer_troops = no }
-					annex_country = { target = DJI transfer_troops = no }
-					annex_country = { target = SML transfer_troops = no }
-					annex_country = { target = PUN transfer_troops = no }
-					annex_country = { target = SOM transfer_troops = no }
-					annex_country = { target = SNA transfer_troops = no }
-					annex_country = { target = SWS transfer_troops = no }
+					annex_country = { target = ERI transfer_troops = yes }
+					annex_country = { target = DJI transfer_troops = yes }
+					annex_country = { target = SML transfer_troops = yes }
+					annex_country = { target = PUN transfer_troops = yes }
+					annex_country = { target = SOM transfer_troops = yes }
+					annex_country = { target = SNA transfer_troops = yes }
+					annex_country = { target = SWS transfer_troops = yes }
 					
 					
 					every_state = {
@@ -887,8 +887,8 @@ on_actions = {
 					}
 				}
 				GAB = {
-					annex_country = { target = CNG transfer_troops = no }
-					annex_country = { target = EGU transfer_troops = no }
+					annex_country = { target = CNG transfer_troops = yes }
+					annex_country = { target = EGU transfer_troops = yes }
 					
 					
 					every_state = {
@@ -904,7 +904,7 @@ on_actions = {
 					}
 				}
 				SUD = {
-					annex_country = { target = SSU transfer_troops = no }
+					annex_country = { target = SSU transfer_troops = yes }
 					
 					
 					every_state = {
@@ -920,8 +920,8 @@ on_actions = {
 					}
 				}
 				CHA = {
-					annex_country = { target = NGR transfer_troops = no }
-					annex_country = { target = CAR transfer_troops = no }
+					annex_country = { target = NGR transfer_troops = yes }
+					annex_country = { target = CAR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -937,10 +937,10 @@ on_actions = {
 					}
 				}
 				NIG = {
-					annex_country = { target = BEN transfer_troops = no }
-					annex_country = { target = CAM transfer_troops = no }
-					annex_country = { target = TOG transfer_troops = no }
-					annex_country = { target = GAH transfer_troops = no }
+					annex_country = { target = BEN transfer_troops = yes }
+					annex_country = { target = CAM transfer_troops = yes }
+					annex_country = { target = TOG transfer_troops = yes }
+					annex_country = { target = GAH transfer_troops = yes }
 					
 					
 					every_state = {
@@ -956,12 +956,12 @@ on_actions = {
 					}
 				}
 				CDI = {
-					annex_country = { target = LUR transfer_troops = no }
-					annex_country = { target = LIB transfer_troops = no }
-					annex_country = { target = GUI transfer_troops = no }
-					annex_country = { target = AFR transfer_troops = no }
-					annex_country = { target = SIE transfer_troops = no }
-					annex_country = { target = GUB transfer_troops = no }
+					annex_country = { target = LUR transfer_troops = yes }
+					annex_country = { target = LIB transfer_troops = yes }
+					annex_country = { target = GUI transfer_troops = yes }
+					annex_country = { target = AFR transfer_troops = yes }
+					annex_country = { target = SIE transfer_troops = yes }
+					annex_country = { target = GUB transfer_troops = yes }
 					
 					
 					every_state = {
@@ -977,10 +977,10 @@ on_actions = {
 					}
 				}
 				MAL = {
-					annex_country = { target = BFA transfer_troops = no }
-					annex_country = { target = MAU transfer_troops = no }
-					annex_country = { target = SEN transfer_troops = no }
-					annex_country = { target = GAM transfer_troops = no }
+					annex_country = { target = BFA transfer_troops = yes }
+					annex_country = { target = MAU transfer_troops = yes }
+					annex_country = { target = SEN transfer_troops = yes }
+					annex_country = { target = GAM transfer_troops = yes }
 					
 					
 					every_state = {
@@ -996,7 +996,7 @@ on_actions = {
 					}
 				}
 				MOR = {
-					annex_country = { target = SHA transfer_troops = no }
+					annex_country = { target = SHA transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1012,7 +1012,7 @@ on_actions = {
 					}
 				}
 				ALG = {
-					annex_country = { target = TUN transfer_troops = no }
+					annex_country = { target = TUN transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1028,7 +1028,7 @@ on_actions = {
 					}
 				}
 				SPR = {
-					annex_country = { target = ADO transfer_troops = no }
+					annex_country = { target = ADO transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1044,7 +1044,7 @@ on_actions = {
 					}
 				}
 				BEL = {
-					annex_country = { target = LUX transfer_troops = no }
+					annex_country = { target = LUX transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1060,7 +1060,7 @@ on_actions = {
 					}
 				}
 				CRO = {
-					annex_country = { target = SLV transfer_troops = no }
+					annex_country = { target = SLV transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1076,7 +1076,7 @@ on_actions = {
 					}
 				}
 				SER = {
-					annex_country = { target = KOS transfer_troops = no }
+					annex_country = { target = KOS transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1092,8 +1092,8 @@ on_actions = {
 					}
 				}
 				GRE = {
-					annex_country = { target = ALB transfer_troops = no }
-					annex_country = { target = FYR transfer_troops = no }
+					annex_country = { target = ALB transfer_troops = yes }
+					annex_country = { target = FYR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1109,9 +1109,9 @@ on_actions = {
 					}
 				}
 				ENG = {
-					annex_country = { target = MLT transfer_troops = no }
-					annex_country = { target = CYP transfer_troops = no }
-					annex_country = { target = TRI transfer_troops = no }
+					annex_country = { target = MLT transfer_troops = yes }
+					annex_country = { target = CYP transfer_troops = yes }
+					annex_country = { target = TRI transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1127,7 +1127,7 @@ on_actions = {
 					}
 				}
 				MLV = {
-					annex_country = { target = PMR transfer_troops = no }
+					annex_country = { target = PMR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1143,7 +1143,7 @@ on_actions = {
 					}
 				}
 				DEN = {
-					annex_country = { target = ICE transfer_troops = no }
+					annex_country = { target = ICE transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1159,7 +1159,7 @@ on_actions = {
 					}
 				}
 				TUR = {
-					annex_country = { target = NCY transfer_troops = no }
+					annex_country = { target = NCY transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1175,13 +1175,13 @@ on_actions = {
 					}
 				}
 				SAU = {
-					annex_country = { target = OMA transfer_troops = no }
-					annex_country = { target = YEM transfer_troops = no }
-					annex_country = { target = UAE transfer_troops = no }
-					annex_country = { target = JOR transfer_troops = no }
-					annex_country = { target = KUW transfer_troops = no }
-					annex_country = { target = QAT transfer_troops = no }
-					annex_country = { target = BHR transfer_troops = no }
+					annex_country = { target = OMA transfer_troops = yes }
+					annex_country = { target = YEM transfer_troops = yes }
+					annex_country = { target = UAE transfer_troops = yes }
+					annex_country = { target = JOR transfer_troops = yes }
+					annex_country = { target = KUW transfer_troops = yes }
+					annex_country = { target = QAT transfer_troops = yes }
+					annex_country = { target = BHR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1197,7 +1197,7 @@ on_actions = {
 					}
 				}
 				IRQ = {
-					annex_country = { target = KUR transfer_troops = no }
+					annex_country = { target = KUR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1213,7 +1213,7 @@ on_actions = {
 					}
 				}
 				ARM = {
-					annex_country = { target = NKR transfer_troops = no }
+					annex_country = { target = NKR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1229,8 +1229,8 @@ on_actions = {
 					}
 				}
 				GEO = {
-					annex_country = { target = SOO transfer_troops = no }
-					annex_country = { target = ABK transfer_troops = no }
+					annex_country = { target = SOO transfer_troops = yes }
+					annex_country = { target = ABK transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1246,7 +1246,7 @@ on_actions = {
 					}
 				}
 				SOV = {
-					annex_country = { target = CHE transfer_troops = no }
+					annex_country = { target = CHE transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1262,9 +1262,9 @@ on_actions = {
 					}
 				}
 				UZB = {
-					annex_country = { target = TAJ transfer_troops = no }
-					annex_country = { target = KYR transfer_troops = no }
-					annex_country = { target = TRK transfer_troops = no }
+					annex_country = { target = TAJ transfer_troops = yes }
+					annex_country = { target = KYR transfer_troops = yes }
+					annex_country = { target = TRK transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1280,10 +1280,10 @@ on_actions = {
 					}
 				}
 				BRM = {
-					annex_country = { target = KAC transfer_troops = no }
-					annex_country = { target = WAA transfer_troops = no }
-					annex_country = { target = SHN transfer_troops = no }
-					annex_country = { target = KAR transfer_troops = no }
+					annex_country = { target = KAC transfer_troops = yes }
+					annex_country = { target = WAA transfer_troops = yes }
+					annex_country = { target = SHN transfer_troops = yes }
+					annex_country = { target = KAR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1299,11 +1299,11 @@ on_actions = {
 					}
 				}
 				RAJ = {
-					annex_country = { target = SRI transfer_troops = no }
-					annex_country = { target = MLD transfer_troops = no }
-					annex_country = { target = NEP transfer_troops = no }
-					annex_country = { target = BHU transfer_troops = no }
-					annex_country = { target = NPM transfer_troops = no }
+					annex_country = { target = SRI transfer_troops = yes }
+					annex_country = { target = MLD transfer_troops = yes }
+					annex_country = { target = NEP transfer_troops = yes }
+					annex_country = { target = BHU transfer_troops = yes }
+					annex_country = { target = NPM transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1319,8 +1319,8 @@ on_actions = {
 					}
 				}
 				VIE = {
-					annex_country = { target = LAO transfer_troops = no }
-					annex_country = { target = CBD transfer_troops = no }
+					annex_country = { target = LAO transfer_troops = yes }
+					annex_country = { target = CBD transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1336,8 +1336,8 @@ on_actions = {
 					}
 				}
 				SIN = {
-					annex_country = { target = MAY transfer_troops = no }
-					annex_country = { target = BRU transfer_troops = no }
+					annex_country = { target = MAY transfer_troops = yes }
+					annex_country = { target = BRU transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1353,18 +1353,18 @@ on_actions = {
 					}
 				}
 				AST = {
-					annex_country = { target = PAU transfer_troops = no }
-					annex_country = { target = MIC transfer_troops = no }
-					annex_country = { target = MAR transfer_troops = no }
-					annex_country = { target = SOL transfer_troops = no }
-					annex_country = { target = NAU transfer_troops = no }
-					annex_country = { target = TUL transfer_troops = no }
-					annex_country = { target = VAN transfer_troops = no }
-					annex_country = { target = FIJ transfer_troops = no }
-					annex_country = { target = NZL transfer_troops = no }
-					annex_country = { target = TON transfer_troops = no }
-					annex_country = { target = KIR transfer_troops = no }
-					annex_country = { target = PAP transfer_troops = no }
+					annex_country = { target = PAU transfer_troops = yes }
+					annex_country = { target = MIC transfer_troops = yes }
+					annex_country = { target = MAR transfer_troops = yes }
+					annex_country = { target = SOL transfer_troops = yes }
+					annex_country = { target = NAU transfer_troops = yes }
+					annex_country = { target = TUL transfer_troops = yes }
+					annex_country = { target = VAN transfer_troops = yes }
+					annex_country = { target = FIJ transfer_troops = yes }
+					annex_country = { target = NZL transfer_troops = yes }
+					annex_country = { target = TON transfer_troops = yes }
+					annex_country = { target = KIR transfer_troops = yes }
+					annex_country = { target = PAP transfer_troops = yes }
 
 					
 					every_state = {
@@ -1380,7 +1380,7 @@ on_actions = {
 					}
 				}
 				USA = {
-					annex_country = { target = SAM transfer_troops = no }
+					annex_country = { target = SAM transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1396,10 +1396,10 @@ on_actions = {
 					}
 				}
 				PAN = {
-					annex_country = { target = BLZ transfer_troops = no }
-					annex_country = { target = GUA transfer_troops = no }
-					annex_country = { target = HON transfer_troops = no }
-					annex_country = { target = NIC transfer_troops = no }
+					annex_country = { target = BLZ transfer_troops = yes }
+					annex_country = { target = GUA transfer_troops = yes }
+					annex_country = { target = HON transfer_troops = yes }
+					annex_country = { target = NIC transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1415,7 +1415,7 @@ on_actions = {
 					}
 				}
 				BRA = {
-					annex_country = { target = URG transfer_troops = no }
+					annex_country = { target = URG transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1431,8 +1431,8 @@ on_actions = {
 					}
 				}
 				ARG = {
-					annex_country = { target = PAR transfer_troops = no }
-					annex_country = { target = CHL transfer_troops = no }
+					annex_country = { target = PAR transfer_troops = yes }
+					annex_country = { target = CHL transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1448,8 +1448,8 @@ on_actions = {
 					}
 				}
 				PRU = {
-					annex_country = { target = ECU transfer_troops = no }
-					annex_country = { target = BOL transfer_troops = no }
+					annex_country = { target = ECU transfer_troops = yes }
+					annex_country = { target = BOL transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1465,9 +1465,9 @@ on_actions = {
 					}
 				}
 				VEN = {
-					annex_country = { target = COL transfer_troops = no }
-					annex_country = { target = GUY transfer_troops = no }
-					annex_country = { target = SUR transfer_troops = no }
+					annex_country = { target = COL transfer_troops = yes }
+					annex_country = { target = GUY transfer_troops = yes }
+					annex_country = { target = SUR transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1483,7 +1483,7 @@ on_actions = {
 					}
 				}
 				POR = {
-					annex_country = { target = VER transfer_troops = no }
+					annex_country = { target = VER transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1499,7 +1499,7 @@ on_actions = {
 					}
 				}
 				ITA = {
-					annex_country = { target = SMA transfer_troops = no }
+					annex_country = { target = SMA transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1515,7 +1515,7 @@ on_actions = {
 					}
 				}
 				CUB = {
-					annex_country = { target = DOM transfer_troops = no }
+					annex_country = { target = DOM transfer_troops = yes }
 					
 					
 					every_state = {
