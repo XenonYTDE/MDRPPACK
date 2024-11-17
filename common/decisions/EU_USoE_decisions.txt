@@ -463,6 +463,7 @@ EU_environmental_imperialism_category = {
 					has_idea = large_power
 					has_idea = great_power
 					has_idea = superpower
+					has_idea = pog_hegemony
 				}
 				synthetic_refinery < num_owned_states
 				OR = {
