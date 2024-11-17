@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+        faction_leader_spirit = {
+            
+            picture = factionspirit
+            
+            allowed = {
+                always = yes
+            }
+            
+            removal_cost = -1
+
+			rule = {
+				can_create_factions = yes
+				can_join_factions = yes
+			}
+            
+            modifier = {
+            }
+        }
+    }
+}
