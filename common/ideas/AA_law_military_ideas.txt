@@ -1636,7 +1636,7 @@ ideas = {
 				military_factories_productivity = 1.25
 				dockyard_productivity = 1.25
 				total_workforce_modifier = -0.125 #mobilized people can't work
-				return_on_investment_modifier = -0.015
+				return_on_investment_modifier = -0.02
 				custom_modifier_tooltip = the_military_add_30_tt
 			}
 
@@ -1810,7 +1810,7 @@ ideas = {
 				military_factories_productivity = 2
 				dockyard_productivity = 2
 				total_workforce_modifier = -0.2 #mobilized people can't work
-				return_on_investment_modifier = -0.025
+				return_on_investment_modifier = -0.03
 				custom_modifier_tooltip = the_military_add_35_tt
 			}
 

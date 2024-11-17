@@ -40,7 +40,7 @@ ideas = {
                 global_building_slots_factor = 0.15
                 production_speed_infrastructure_factor = 0.05
                 office_park_income_tax_modifier = 0.10
-                return_on_investment_modifier = 0.005
+                return_on_investment_modifier = 0.01
             }
 
             cancel_if_invalid = yes
