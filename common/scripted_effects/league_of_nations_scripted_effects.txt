@@ -345,6 +345,8 @@ start_league_of_nations_voting_against_prev = {
 						is_league_of_nations_member = yes
 						NOT = { has_wargoal_against = PREV }
 					}
+					set_temp_variable = { threat_value = 45 }
+					has_league_of_nations_threat_level = yes
 				}
 			}
 			add_to_array = { global.league_of_nations_voting_possible_sanctions_array = 2 }

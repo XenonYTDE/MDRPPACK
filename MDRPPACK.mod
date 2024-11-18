@@ -7,7 +7,7 @@ tags={
 dependencies={
 	"Millennium Dawn: A Modern Day Mod"
 }
-name="wow md modpack poggers - Dev"
+name="wow md modpack poggers"
 picture="thumbnail.png"
 supported_version="1.15.*"
 path="C:/Users/erdez/Documents/Paradox Interactive/Hearts of Iron IV/mod/MDRPPACK"
