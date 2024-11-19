@@ -161,6 +161,7 @@ on_actions = {
 					annex_country = { target = EGU transfer_troops = yes }
 					annex_country = { target = CAM transfer_troops = yes }
 					annex_country = { target = BEN transfer_troops = yes }
+					annex_country = { target = SAO transfer_troops = yes }
 					
 					every_state = {
 						limit = {		
@@ -1186,13 +1187,13 @@ on_actions = {
 					
 					every_state = {
 						limit = {		
-							is_controlled_by = FRA
+							is_controlled_by = SAU
 						}
 						if = {
 							limit = {
-								NOT = { is_core_of = FRA }
+								NOT = { is_core_of = SAU }
 							}
-							add_core_of = FRA
+							add_core_of = SAU
 						}
 					}
 				}
@@ -1500,17 +1501,18 @@ on_actions = {
 				}
 				ITA = {
 					annex_country = { target = SMA transfer_troops = yes }
+					annex_country = { target = HLS transfer_troops = yes }
 					
 					
 					every_state = {
 						limit = {		
-							is_controlled_by = BRM
+							is_controlled_by = ITA
 						}
 						if = {
 							limit = {
-								NOT = { is_core_of = BRM }
+								NOT = { is_core_of = ITA }
 							}
-							add_core_of = BRM
+							add_core_of = ITA
 						}
 					}
 				}
