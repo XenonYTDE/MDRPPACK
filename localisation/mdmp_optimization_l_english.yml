@@ -24,8 +24,13 @@
  
 #Hypermerge
  RULE_HYPERMERGE:0 "Hypermerge"
- RULE_YES_HYPERMERGE_DESC:0 "Merges 100+ nations in the World. §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_YES_HYPERMERGE_DESC:0 "Merges even more countries! §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
  RULE_NO_HYPERMERGE_DESC:0 "Keeps Everything The Same"
+
+#Supermerge
+ RULE_SUPERMERGE:0 "Supermerge"
+ RULE_YES_SUPERMERGE_DESC:0 "Merges 100+ nations in the World. §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_NO_SUPERMERGE_DESC:0 "Keeps Everything The Same"
 
 #Merge Asia
  RULE_MERGE_ASIA:0 "Merge Asia"

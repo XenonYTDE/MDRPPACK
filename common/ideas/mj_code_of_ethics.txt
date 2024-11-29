@@ -20,7 +20,7 @@ ideas = {
                 resistance_growth = -0.20
                 compliance_growth = 0.20
                 resistance_damage_to_garrison = 0.10
-                max_command_power = -10
+                max_command_power = -30
                 experience_gain_army_unit_factor = 0.10
                 experience_gain_factor = 0.10
                 stability_factor = 0.15
@@ -49,7 +49,7 @@ ideas = {
                 resistance_growth = -0.10
                 compliance_growth = 0.10
                 resistance_damage_to_garrison = 0.05
-                max_command_power = -5
+                max_command_power = -15
                 experience_gain_army_unit_factor = 0.05
                 experience_gain_factor = 0.05
                 stability_factor = 0.075
@@ -97,7 +97,7 @@ ideas = {
                 resistance_target = 0.10
                 resistance_growth = 0.20
                 resistance_damage_to_garrison = -0.20
-                max_command_power = 10
+                max_command_power = 15
                 compliance_growth = -0.05
                 stability_factor = -0.05
             }
@@ -124,7 +124,7 @@ ideas = {
                 resistance_growth = 0.25
                 resistance_damage_to_garrison = -0.35
                 compliance_growth = -0.10
-                max_command_power = 20
+                max_command_power = 30
                 stability_factor = -0.10
             }
 

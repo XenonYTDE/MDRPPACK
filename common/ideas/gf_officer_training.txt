@@ -20,7 +20,7 @@ ideas = {
                dig_in_speed_factor = 0.20
                max_planning_factor = 0.10
                planning_speed = 0.10
-               max_command_power = -5
+               max_command_power = -25
             }
 
             on_add = {
