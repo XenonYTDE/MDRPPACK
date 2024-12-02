@@ -1570,7 +1570,6 @@ focus_tree = {
 		y = 3
 		available = {
 			emerging_reactionaries_are_in_power = yes
-			date > 2008.5.7
 		}
 		relative_position_id = SOV_continue_etatist_rise
 		cost = 5
@@ -28049,7 +28048,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_idea = SOV_broken_economy_idea_1
-					has_idea = SOV_broken_economy_idea_1
+					has_idea = SOV_broken_economy_idea_2
 					has_idea = SOV_broken_economy_idea_3
 				}
 			}
@@ -28091,7 +28090,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_idea = SOV_broken_economy_idea_1
-					has_idea = SOV_broken_economy_idea_1
+					has_idea = SOV_broken_economy_idea_2
 					has_idea = SOV_broken_economy_idea_3
 				}
 			}
@@ -28134,7 +28133,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_idea = SOV_broken_economy_idea_1
-					has_idea = SOV_broken_economy_idea_1
+					has_idea = SOV_broken_economy_idea_2
 					has_idea = SOV_broken_economy_idea_3
 				}
 			}
@@ -31768,7 +31767,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_idea = SOV_broken_economy_idea_1
-					has_idea = SOV_broken_economy_idea_1
+					has_idea = SOV_broken_economy_idea_2
 					has_idea = SOV_broken_economy_idea_3
 				}
 			}
