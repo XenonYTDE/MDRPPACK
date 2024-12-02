@@ -55,6 +55,16 @@ spriteTypes = {
 
 
 	spriteType = {
+		name = "GFX_idea_hyper_population_growth"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_massive_population_growth"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_rapid_population_growth"
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/_encourage_growth.dds"
 	}
@@ -84,6 +94,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_one_child_policyy"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stagnating_pop_growth"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_massively_reduced_pop_growth"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_demographic_recession_pop_growth"
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
 	}
 

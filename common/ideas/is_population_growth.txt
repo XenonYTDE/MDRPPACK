@@ -3,11 +3,41 @@ ideas = {
        law = yes
        use_list_view = yes
 
+       hyper_population_growth = {
+        available = {
+        }
+
+        level = 1
+
+        modifier = {
+            political_power_factor = -1.0
+            monthly_population = 2
+            consumer_goods_factor = 0.20
+            stability_factor = -0.20
+        }
+
+        cancel_if_invalid = yes
+    }
+       massive_population_growth = {
+        available = {
+        }
+
+        level = 2
+
+        modifier = {
+            political_power_factor = -0.5
+            monthly_population = 1
+            consumer_goods_factor = 0.15
+            stability_factor = -0.15
+        }
+
+        cancel_if_invalid = yes
+    }
        rapid_population_growth = {
            available = {
            }
 
-           level = 1
+           level = 3
 
            modifier = {
                political_power_factor = -0.25
@@ -23,7 +53,7 @@ ideas = {
            available = {
            }
 
-           level = 2
+           level = 4
 
            modifier = {
                political_power_factor = -0.10
@@ -38,7 +68,7 @@ ideas = {
            available = {
            }
 
-           level = 3
+           level = 5
 
            modifier = {
                monthly_population = 0.15
@@ -52,7 +82,7 @@ ideas = {
                has_government = nationalist
            }
 
-           level = 4
+           level = 6
 
            modifier = {
                political_power_factor = -0.10
@@ -67,12 +97,9 @@ ideas = {
 
        controlled_birth_rates = {
            available = {
-               NOT = {
-                   has_government = democratic
-               }
            }
 
-           level = 5
+           level = 7
 
            modifier = {
                political_power_factor = -0.10
@@ -85,12 +112,9 @@ ideas = {
 
        population_control = {
            available = {
-               NOT = {
-                   has_government = democratic
-               }
            }
 
-           level = 6
+           level = 8
 
            modifier = {
                political_power_factor = -0.15
@@ -104,12 +128,9 @@ ideas = {
 
        one_child_policyy = {
            available = {
-               NOT = {
-                   has_government = democratic
-               }
            }
 
-           level = 7
+           level = 9
 
            modifier = {
                political_power_factor = -0.25
@@ -121,5 +142,53 @@ ideas = {
 
            cancel_if_invalid = yes
        }
+       massively_reduced_pop_growth = {
+        available = {
+        }
+
+        level = 10
+
+        modifier = {
+            political_power_factor = -0.50
+            monthly_population = -1
+            stability_factor = -0.2
+            consumer_goods_factor = -0.10
+            drift_defence_factor = 0.15
+        }
+
+        cancel_if_invalid = yes
+    }
+        stagnating_pop_growth = {
+        available = {
+        }
+
+        level = 11
+
+        modifier = {
+            political_power_factor = -1.00
+            monthly_population = -2
+            stability_factor = -0.35
+            consumer_goods_factor = -0.15
+            drift_defence_factor = 0.20
+        }
+
+        cancel_if_invalid = yes
+    }
+    demographic_recession_pop_growth = {
+        available = {
+        }
+
+        level = 12
+
+        modifier = {
+            political_power_factor = -2.5
+            monthly_population = -5
+            stability_factor = -0.50
+            consumer_goods_factor = -0.20
+            drift_defence_factor = 0.5
+        }
+
+        cancel_if_invalid = yes
+    }
     }
 }
