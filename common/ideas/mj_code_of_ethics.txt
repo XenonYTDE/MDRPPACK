@@ -5,10 +5,6 @@ ideas = {
         use_list_view = yes
         
         strict_ethics = {
-            
-            available = {
-                command_power > 10
-            }
 
             level = 2
 
@@ -34,10 +30,6 @@ ideas = {
         }
 
         code_of_honour = {
-
-            available = {
-                command_power > 5
-            }
 
             level = 1
 
@@ -111,7 +103,6 @@ ideas = {
 
                 NOT = {
                     has_government = democratic
-                    has_government = communism
                 }
             }
 
