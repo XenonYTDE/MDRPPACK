@@ -252,8 +252,6 @@ city_state_desc:0 "A city-state is an independent sovereign city which serves as
 
 region_state:0 "Regional State"
 region_state_desc:0 "A regional state is a state that is divided into regions, each with its own government and laws. The regions are not sovereign states, but they are granted a degree of autonomy by the central government."
-region_state:0 "Regional State"
-region_state:0:desc "A regional state is a state that is divided into regions, each with its own government and laws. The regions are not sovereign states, but they are granted a degree of autonomy by the central government."
 
 
 #welfare_policies

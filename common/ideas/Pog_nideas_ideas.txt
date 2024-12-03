@@ -28,6 +28,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				Laws Cost -15%
 				hidden_modifier = {
 					economic_cycles_cost_factor = -0.15
 					corruption_cost_factor = -0.15
@@ -155,13 +156,12 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.15
-				
 				#political_power_gain = 0.3
 				
 				democratic_drift = 0.05
 				defensive_war_stability_factor = 0.2
 				stability_weekly = 0.001
+				Laws Cost -15%
 
 				#political_power_gain = 0.5
 				compliance_growth = 0.15
@@ -232,13 +232,12 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.15
-				
 				#political_power_gain = 0.3
 				
 				democratic_drift = -0.05
 				offensive_war_stability_factor = 0.2
 				war_support_weekly = 0.001
+				Laws Cost -15%
 				
 				#political_power_gain = 0.5
 				resistance_damage_to_garrison = -0.2

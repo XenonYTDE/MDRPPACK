@@ -69,7 +69,6 @@ ideas = {
                 health_cost_multiplier_modifier = -0.20
 				social_cost_multiplier_modifier = -0.20
                 foreign_influence_modifier = 0.25
-                monthly_population = 0.5
             }
 
             ai_will_do = {

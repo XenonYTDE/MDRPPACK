@@ -553,7 +553,7 @@ Build_industry_building = {
 
 		days_re_enable = 0
 
-		days_remove = 180
+		days_remove = 90
 
 		available = {
 		}
