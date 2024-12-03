@@ -5,6 +5,11 @@
 
  gr:0 "§OGeneric RP§!"
 
+ RULE_OPTION_FREE:0 "Free"
+ RULE_OPTION_NORMAL:0 "Normal"
+ RULE_OPTION_ALLOWED:0 "Allowed"
+ RULE_OPTION_BLOCKED:0 "Blocked"
+
 ### Enable National Ideas
  gr_nideas:0 "National Ideas"
  gr_nideas_enable_y:0 "Enabled"
