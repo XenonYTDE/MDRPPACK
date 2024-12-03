@@ -1,4 +1,4 @@
-foreign_influence = {
+pd_foreign_influence = {
 
     pd_pay_war_reparations = {
         icon = GFX_decision_hol_attract_foreign_investors

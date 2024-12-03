@@ -1,41 +1,27 @@
 ideas = {
-
-	mobilization_laws = {
-		law = yes
-		use_list_view = no
-
-		peace_disarmed_nation = {	
-			picture = disarmed_nation
-			name = disarmed_nation
-			cost = 0
-
-			visible = {
-				always = no
-			}
+	country = {
+		conditional_surrender = {
 			
-			removal_cost = -1
-			level = 8
-			
-			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+			allowed = {
+				always = no # Triggered via event
 			}
 
+			picture = HUN_treaty_of_triannon
+			
 			modifier = {
-				conscription = 0.01
+				ai_join_ally_desire_factor = -3000
+                ai_get_ally_desire_factor = -3000
 			}
-			
-			cancel_if_invalid = no
 
-			allowed_to_remove = {
-				always = no
+            rule = {
+                can_join_factions = no
+                can_create_factions = no
+            }
+	
+			ai_will_do = {
+				factor = 0
 			}
 		}
-	}
-
-	economy = { 
-		law = yes
-		use_list_view = yes
-
 		peace_civilian_economy = {
 			picture = civilian_economy
 			name = civilian_economy
@@ -65,29 +51,30 @@ ideas = {
 				always = no
 			}
 		}
-	}
+		peace_disarmed_nation = {	
+			picture = disarmed_nation
+			name = disarmed_nation
+			cost = 0
 
-	country = {
-		conditional_surrender = {
+			visible = {
+				always = no
+			}
 			
-			allowed = {
-				always = no # Triggered via event
+			removal_cost = -1
+			level = 8
+			
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 			}
 
-			picture = HUN_treaty_of_triannon
-			
 			modifier = {
-				ai_join_ally_desire_factor = -3000
-                ai_get_ally_desire_factor = -3000
+				conscription = 0.01
 			}
+			
+			cancel_if_invalid = no
 
-            rule = {
-                can_join_factions = no
-                can_create_factions = no
-            }
-	
-			ai_will_do = {
-				factor = 0
+			allowed_to_remove = {
+				always = no
 			}
 		}
     }
