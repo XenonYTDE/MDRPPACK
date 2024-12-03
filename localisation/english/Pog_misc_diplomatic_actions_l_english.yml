@@ -1,0 +1,112 @@
+﻿l_english:
+### defense treaties
+ DEFENSE_TREATY1_TITLE:0 "Sign defense treaty"
+ DEFENSE_TREATY1_ACTION_DESC:0 "Offer to sign a mutual defense treaty with this country."
+ DEFENSE_TREATY1_SEND_DESC:0 "Are you sure you want to offer a mutual defense treaty with the\n§Y[From.Getname]?§!\n\nIf they accept, we will be obligated to defend each other!"
+ DEFENSE_TREATY1_RECEIVE_DESC:0 "We have been asked to sign a mutual defense treaty by the\n§Y[Root.Getname]?§!\n\nIf we accept, we will be obligated to defend each other!"
+ DEFENSE_TREATY1_ACCEPT:0 "They Accepted"
+ DEFENSE_TREATY1_ACCEPT_DESC:0 "They accepted our offer and signed a defensive pact with us!"
+ DEFENSE_TREATY1_REJECT:0 "They Refused"
+ DEFENSE_TREATY1_REJECT_DESC:0 "They refused our offer to create a defensive pact. We both stand alone!"
+ DEFENSE_TREATY2_TITLE:0 "Sign defense treaty"
+ DEFENSE_TREATY2_ACTION_DESC:0 "Offer to sign a mutual defense treaty with this country."
+ DEFENSE_TREATY2_SEND_DESC:0 "Are you sure you want to offer a mutual defense treaty with the\n§Y[From.Getname]?§!\n\nIf they accept, we will be obligated to defend each other!"
+ DEFENSE_TREATY2_RECEIVE_DESC:0 "We have been asked to sign a mutual defense treaty by the\n§Y[Root.Getname]?§!\n\nIf we accept, we will be obligated to defend each other!"
+ DEFENSE_TREATY2_ACCEPT:0 "They Accepted"
+ DEFENSE_TREATY2_ACCEPT_DESC:0 "They accepted our offer and signed a defensive pact with us!"
+ DEFENSE_TREATY2_REJECT:0 "They Refused"
+ DEFENSE_TREATY2_REJECT_DESC:0 "They refused our offer to create a defensive pact. We both stand alone!"
+ defense_treaty_ai_condition:0 "Is AI"
+ defense_treaty1_opmod:0 "Defense treaty"
+ defense_treaty2_opmod:0 "Relation: Defense treaty"
+ 
+ DEFENSE_TREATY_BREAK_TITLE:0 "Break defense treaty"
+ DEFENSE_TREATY_BREAK_ACTION_DESC:0 "Break your defense treaty with this country."
+ DEFENSE_TREATY_BREAK_SEND_DESC:0 "Breaking your defense treaty with the\n§Y[From.Getname]?§!\ncould open us up to attack! Are you sure?"
+ DEFENSE_TREATY_BREAK_RECEIVE_DESC:0 "The §Y[Root.Getname]?§! have broken our defense treaty!"
+ defense_treaty_break1_opmod:0 "Defense treaty broken"
+ defense_treaty_break2_opmod:0 "Stabbed in the back"
+ 
+ defense_treaty_war_dec_on_action_tt:0 "Remove §YDefense Treaty§!"
+
+ ### IMPOSE EMBARGO ###
+ CW_EMBARGO_TITLE:0 "Impose embargo"
+ CW_EMBARGO_ACTION_DESC:0 "Imposing an embargo on this country will prevent them from buying resources from us.\n\nIt will not prevent us from buying resources from them, unless they embargo us too.\n\n§YNote:§! You cannot use this option on countries that have the §YClosed Economy§! trade law, since the embargo would not have any effect on them." 
+ CW_EMBARGO_LOC:0 "Are you sure you want to impose an embargo on\n\n§Y[From.Getname]?§!\n\nThis will prevent them from buying resources from us.\nThey may retaliate and embargo us in return."
+ CW_EMBARGO_INITIATED_TITLE:0 "[ROOT.GetAdjective] Embargo"
+ CW_EMBARGO_INITIATED_DESC:0 "§Y[ROOT.GetName]§!\n\nHas decided to impose an embargo on our nation.\n\nWe can no longer buy resources from them. Unless we embargo them too, they are free to buy resources from us."
+ 
+ ### REMOVE EMBARGO ###
+ CW_CANCEL_EMBARGO_TITLE:0 "Remove embargo"
+ CW_CANCEL_EMBARGO_ACTION_DESC:0 "Remove the embargo we have placed on this country.\n\nThis will allow them to buy resources from us again."
+ CW_CANCEL_EMBARGO_LOC:0 "Are you sure you want to remove the embargo on\n\n§Y[From.Getname]?§!\n\nThis will allow them to buy resources from us again.[FROM.UNSC_SANCTIONS_WARNING]"
+ CW_CANCEL_EMBARGO_INITIATED_TITLE:0 "[ROOT.GetAdjective] Embargo Lifted"
+ CW_CANCEL_EMBARGO_INITIATED_DESC:0 "The §Y[ROOT.GetName]§!\n\nHas decided to lift the economic embargo against us.\n\nThis will improve our relations and allow us to buy resources from them.[CW_CHECK_COUNTER_EMBARGO]"
+ CW_WE_ARE_EMBARGO_THEM:0 "\n\n§RNote:§! this will not automatically cancel the embargo we currently have imposed on them!"
+ CW_CHECK_IS_EMBARGOED_BY_US:0 "Is embargoed by us."
+
+ ### EMBARGO INTERFACE ###
+ CW_THEY_EMBARGO_TT:0 "Show [THIS.GetAdjective] Embargo's."
+ CW_THEY_EMBARGO_TTL:0 "Click to see countries that are embargoed by [THIS.GetNameDef]."
+ CW_THEY_EMBARGO_AGAINST_TT:0 "Show Embargo's against [THIS.GetNameDef]."
+ CW_THEY_EMBARGO_AGAINST_TTL:0 "Click to see countries that have an active embargo against [THIS.GetNameDef]."
+ CW_EMBARGO_AGAINST_US:0 "Embargo's Against [THIS.GetNameDef]"
+ CW_OUR_EMBARGOS:0 "[THIS.GetAdjective] Embargo's"
+
+ ### EMBARGO OPINION MODIFIERS ###
+ cw_embargo_trade:0 "Embargoing Us"
+ cw_embargo_relations_target:0 "Embargoing Us"
+ cw_embargo_relations_initiator:0 "Embargoing Them"
+ cw_embargo_lifter:0 "Lifted Embargo"
+
+ ### Recall Volunteers
+ TS_RECALL_DIPLO_TITLE:0 "Recall Volunteers"
+ TS_RECALL_DIPLO_ACTION_DESC:0 "Recall our volunteers from this country." 
+
+ TS_recall_volunteers_LOC:0 "Would you like to recall our volunteers from\n\n§Y[From.Getname]?§!"
+ TS_recall_volunteers_TITLE:0 "[ROOT.GetAdjective] Volunteers Recalled"
+ TS_recall_volunteers_DESC:0 "§Y[ROOT.GetName]§!\n\nHas decided to recall their volunteers."
+ 
+ TS_betrayed_volunteers:0 "Recalled Forces Promised To Us"
+
+# Resource Rights (Diplo Action)
+ REQUEST_RESOURCE_RIGHTS_TITLE:0 "Request resource rights"
+ REQUEST_RESOURCE_RIGHTS_ACTION_DESC:0 "Ask for rights to the resources in one of their states or subject's states.\n\n§RIf they accept, you can choose the state via state interactions.§!"
+ REQUEST_RESOURCE_RIGHTS_SEND_DESC:0 "Asking for resource rights from the\n§Y[From.Getname]§!\nwill give us direct access to the resources in a state of our choice!"
+ REQUEST_RESOURCE_RIGHTS_RECEIVE_DESC:0 "We have been asked to give resource rights to the\n§Y[Root.Getname].§!\n\nIf we accept, they will be free to choose a state with which to exploit!"
+ REQUEST_RESOURCE_RIGHTS_ACCEPT:0 "They Accepted"
+ REQUEST_RESOURCE_RIGHTS_ACCEPT_DESC:0 "They accepted our offer and we can now request the resources in a state of our choice via state interactions!"
+ REQUEST_RESOURCE_RIGHTS_REJECT:0 "They Refused"
+ REQUEST_RESOURCE_RIGHTS_REJECT_DESC:0 "They refused our request to the rights of their resources! We should try to improve relations before asking again."
+ request_resource_rights_ai_condition:0 "Is AI"
+ request_resource_rights1_opmod:0 "Relation: Resource Rights"
+ 
+ #REQUEST_RESOURCE_RIGHTS_BREAK_TITLE:0 "Break trade agreement"
+ #REQUEST_RESOURCE_RIGHTS_BREAK_ACTION_DESC:0 "Break your trade agreement with this country."
+ #REQUEST_RESOURCE_RIGHTS_BREAK_SEND_DESC:0 "Breaking your trade agreement with the\n§Y[From.Getname]?§!\ncould disrupt our trade! Are you sure?"
+ #REQUEST_RESOURCE_RIGHTS_BREAK_RECEIVE_DESC:0 "The §Y[Root.Getname]?§! have broken our trade agreement!"
+ #request_resource_rights_break1_opmod:0 "Broken trade agreement"
+ 
+ #request_resource_rights_war_dec_on_action_tt:0 "Remove §YTrade Agreement§!"
+ 
+
+# Offer Subjugation (Diplo Action)
+ OFFER_SUBJUGATION_TITLE:0 "Offer subjugation"
+ OFFER_SUBJUGATION_ACTION_DESC:0 "Offer to protect them in exchange for their autonomy.\n\n§RIf they accept, they will become your dominion.§!"
+ OFFER_SUBJUGATION_SEND_DESC:0 "Offering to subjugate the\n§Y[From.Getname]§!\nwill grant us dominion over them!"
+ OFFER_SUBJUGATION_RECEIVE_DESC:0 "We have been asked to swear loyalty to the\n§Y[Root.Getname].§!\n\nIf we accept, we will become their dominion and they will be obligated to come to our aid should we need it!"
+ OFFER_SUBJUGATION_ACCEPT:0 "They Accepted"
+ OFFER_SUBJUGATION_ACCEPT_DESC:0 "They accepted our offer of subjugation!"
+ OFFER_SUBJUGATION_REJECT:0 "They Refused"
+ OFFER_SUBJUGATION_REJECT_DESC:0 "They refused our offer of subjugation! We should try to improve relations before asking again."
+ 
+
+# Offer Independence (Diplo Action)
+ OFFER_INDEPENDENCE_TITLE:0 "Offer independence"
+ OFFER_INDEPENDENCE_ACTION_DESC:0 "Offer to grant them complete autonomy. We will no longer be obligated to protect them."
+ OFFER_INDEPENDENCE_SEND_DESC:0 "Offering to grant independence to the\n§Y[From.Getname]§!\nwill set them free if they accept!"
+ OFFER_INDEPENDENCE_RECEIVE_DESC:0 "We have been offered our independence by the\n§Y[Root.Getname].§!\n\nIf we accept, we will be set free but they will no longer be obligated to come to our aid should we need it!\n\n§RNote: Accepting will drop any cosmetic flags, e.g. if you're the British Raj you will become the Republic of India.§!"
+ OFFER_INDEPENDENCE_ACCEPT:0 "They Accepted"
+ OFFER_INDEPENDENCE_ACCEPT_DESC:0 "They accepted our offer of independence!"
+ OFFER_INDEPENDENCE_REJECT:0 "They Refused"
+ OFFER_INDEPENDENCE_REJECT_DESC:0 "They refused our offer of independence!"
