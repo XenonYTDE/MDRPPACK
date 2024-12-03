@@ -1,0 +1,6 @@
+﻿l_english:
+ puppet_integrate_navies:0 "Acquire Subject Navies"
+ puppet_integrate_navies_desc:0 "With close ties bringing our subject states closer to the mother country than ever before, we are in a position to demand the integration of their ships into our own naval forces, extending our reach across the seas." 
+ puppet_integrate_fleet:1 "Integrate the [From.GetAdjective] Fleet"
+ integrated_foreign_ships: "Integrated Foreign Ships"
+ integrated_foreign_ships_desc: "We have recently acquired a large number of foreign ships from one of our subject countries. Our naval staff are currently getting to grips with handling and operating the new vessels."
