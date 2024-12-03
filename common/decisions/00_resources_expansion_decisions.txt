@@ -705,7 +705,7 @@ resources_expansion_category = {
 	  }
 	}
 
-	huge_tungsten_expansion = {
+	massive_tungsten_expansion = {
 		icon = tungsten
 		allowed = { always = yes }
 		fire_only_once = no
