@@ -21,6 +21,7 @@ ideas = {
 					communism_drift = 0.03
 					democracy_drift = 0.03
 					neutrality_drift = 0.03
+					nationalism_drift = 0.03
 				}
 				if = {
 					limit = {
@@ -29,6 +30,7 @@ ideas = {
 					democracy_drift = 0.03
 					neutrality_drift = 0.03
 					fascism_drift = 0.03
+					nationalism_drift = 0.03
 				}
 				if = {
 					limit = {
@@ -37,6 +39,7 @@ ideas = {
 					communism_drift = 0.03
 					neutrality_drift = 0.03
 					fascism_drift = 0.03
+					nationalism_drift = 0.03
 				}
 				if = {
 					limit = {
@@ -45,6 +48,16 @@ ideas = {
 					communism_drift = 0.03
 					democracy_drift = 0.03
 					fascism_drift = 0.03
+					nationalism_drift = 0.03
+				}
+				if = {
+					limit = {
+						has_government = nationalism
+					}
+					communism_drift = 0.03
+					democracy_drift = 0.03
+					fascism_drift = 0.03
+					neutrality_drift = 0.03
 				}
 			}
 			rule = {
