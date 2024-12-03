@@ -1,5 +1,5 @@
 leader_traits = {
-	Confucianism = {
+	confucianism = {
 		improve_relations_maintain_cost_factor = -0.5
 		justify_war_goal_time = 0.20
 		enemy_justify_war_goal_time = 0.15
@@ -7,17 +7,17 @@ leader_traits = {
 		democratic_acceptance = 25
 		communism_acceptance = 25
 	}
-	Achieving_Ren = {
+	achieving_ren = {
 		stability_factor = 0.05
 		stability_weekly = 0.002
 	}
-	Confucian_Self_Improvement = {
+	confucian_self_improvement = {
 		research_speed_factor = 0.10
 	}
-	Invisible = {
+	invisible = {
 		enemy_army_bonus_air_superiority_factor = -0.15
 	}
-	Bing_Chilling = {
+	bing_chilling = {
 		communism_acceptance = 50
 		stability_factor = 0.05
 	}
