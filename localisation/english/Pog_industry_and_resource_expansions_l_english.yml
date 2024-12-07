@@ -73,6 +73,7 @@ SEND_ECONOMIC_AID_25_BILIONS_REJECT_DESC: "Unfortunately [THIS.GetNameWithFlag] 
   resources_expansion_category: "Resources Expansion"
   resources_expansion_category_desc: "We can expand our resource operations by investing a lot of money. This of course requires that we have a deposit of any resource before we can expand it.\nBigger deposits can be expanded more at a time, but the cost for that will be much higher."
   deposit_discovery: "New Deposit Discovery Expedition"
+  deposit_discovery2: "New Deposit Discovery Expedition"
   small_oil_expansion: "Small Petroleum Expansion"
   medium_oil_expansion: "Medium Petroleum Expansion"
   huge_oil_expansion: "Huge Petroleum Expansion"
