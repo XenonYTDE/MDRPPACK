@@ -2293,6 +2293,211 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hyper_fragmentation
+						option = yes
+					}
+				}
+
+				GER = {
+					release = BAY
+				}
+				FRA = {
+					release = COM
+					release = FGU
+				}
+				POL = {
+					release = SIL
+				}
+				SPR = {
+					release = SPA
+					release = GAL
+					release = CAT
+					release = NAV
+					release = CNR
+					release = MOR
+				}
+				POR = {
+					release = GAL
+				}
+				ENG = {
+					release = BAH
+					release = CYP
+					release = STH
+					release = WAS
+					release = SCO
+					release = IRE
+					release = IOM
+				}
+				DEN = {
+					release = FAO
+					release = GRL
+				}
+				UKR = {
+					release = CRM
+					release = ROM
+					release = DPR
+				}
+				MLV = {
+					release = GGZ
+				}
+				SER = {
+					release = VOJ
+					release = MNT
+				}
+				BOS = {
+					release = RSK
+					release = HZG
+				}
+				TUR = {
+					release = KUR
+					release = ALA
+				}
+				GRE = {
+					release = CRE
+				}
+				SOV = {
+					release = JAP
+					release = SOO
+					release = ADY
+					release = ALT
+					release = BSH
+					release = BRY
+					release = CHU
+					release = CKK
+					release = DAG
+					release = ING
+					release = KLM
+					release = KHS
+					release = TUV
+					release = YAK
+					release = KBK
+					release = KAE
+					release = KHM
+					release = KOM
+					release = KCC
+					release = MOV
+					release = NEE
+					release = YAM
+					release = UDM
+					release = MEL
+					release = TAT
+				}
+				UZB = {
+					release = KRP
+				}
+				TAJ = {
+					release = BDA
+				}
+				PER = {
+					release = BLC
+					release = ARA
+					release = LUR
+					release = AZE
+					release = LOR
+					release = KUR
+				}
+				AFG = {
+					release = BLC
+				}
+				PAK = {
+					release = BLC
+				}
+				IRQ = {
+					release = KUR
+				}
+				SYR = {
+					release = KUR
+					release = ALA
+					release = DRU
+				}
+				SAU = {
+					release = HEJ
+					release = NEJ
+				}
+				RAJ = {
+					release = KAS
+					release = LAD
+					release = KAM
+					release = MEG
+					release = MAN
+				}
+				BRM = {
+					release = CHS
+					release = NHN
+					release = ARK
+				}
+				CHI = {
+					release = ETK
+					release = TIB
+				}
+				IND = {
+					release = TIM
+				}
+				ALG = {
+					release = TUA
+				}
+				MAL = {
+					release = TUA
+				}
+				NGR = {
+					release = TUA
+					release = TIE
+				}
+				BFA = {
+					release = TUA
+				}
+				LBA = {
+					release = TUA
+					release = TIE
+				}
+				CHA = {
+					release = TIE
+				}
+				BRA = {
+					release = SPL
+					release = SUL
+				}
+				ARG = {
+					release = PAT
+				}
+				PAN = {
+					release = COS
+				}
+				HON = {
+					release = ELS
+				}
+				MEX = {
+					release = YUC
+					release = RGD
+					release = CAL
+					release = TAM
+					release = TRC
+					release = SLA
+				}
+				USA = {
+					release = HWI
+					release = CUB
+					release = JAM
+					release = KUW
+					release = PTR
+					release = ENG
+					release = ASK
+					release = CAL
+					release = JAP
+					release = NYK
+					release = SAM
+					release = TEX
+					release = UDT
+					release = GLC
+				}
+				CAN = {
+					release = QUE
+					release = CAS
+				}
+			}
 		}
 	}
 }
