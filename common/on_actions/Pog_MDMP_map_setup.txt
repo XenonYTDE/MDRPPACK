@@ -2419,10 +2419,10 @@ on_actions = {
 				}
 				RAJ = {
 					release = KAS
-					release = LAD
 					release = KAM
 					release = MEG
 					release = MAN
+					release = LAD
 				}
 				BRM = {
 					release = CHS
