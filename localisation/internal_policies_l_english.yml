@@ -18,6 +18,8 @@ penal_incarceration_desc:0 "Prisoners are imprisoned and serve a sentence due to
 penal_rehabilitation:0 "Rehabilitation"
 penal_rehabilitation_desc:0 "Rehabilitation is the process of re-educating and preparing those who have committed a crime, to re-enter society. Typically, the goal is to address the underlying root causes of crime in order to ensure inmates will be able to live a crime-free lifestyle once they are released from prison."
 
+hyper_population_growth:0 "Hyper Population Growth"
+massive_population_growth:0 "Massive Population Growth"
 rapid_population_growth:0 "Rapid Population Growth"
 rapid_population_growth_desc:0 "The state encourages population growth through various programs."
 encourage_growth:0 "Encourage Growth"
@@ -32,6 +34,9 @@ population_control:0 "Population Control"
 population_control_desc:0 "The state enforces population control measures."
 one_child_policyy:0 "One Child Policy"
 one_child_policyy_desc:0 "The state enforces a one child policy."
+massively_reduced_pop_growth:0 "Massively Reduced Population Growth"
+stagnating_pop_growth:0 "Population Growth Stagnation"
+demographic_recession_pop_growth:0 "Demographic Recession"
 
 
 trade_unions_allowed:0 "Trade Unions Allowed"

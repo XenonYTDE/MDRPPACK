@@ -61,9 +61,9 @@ set_leader_CHI = {
 				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
-					Confucianism
-					Achieving_Ren
-					Confucian_Self_Improvement
+					confucianism
+					achieving_ren
+					confucian_self_improvement
 				}
 			}
 
@@ -79,9 +79,9 @@ set_leader_CHI = {
 				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
-					Confucianism
-					Achieving_Ren
-					Confucian_Self_Improvement
+					confucianism
+					achieving_ren
+					confucian_self_improvement
 				}
 			}
 

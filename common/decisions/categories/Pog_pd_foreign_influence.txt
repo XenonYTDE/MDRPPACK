@@ -1,0 +1,3 @@
+pd_foreign_influence = {
+	icon = GFX_category_icon
+}

@@ -1,0 +1,21 @@
+﻿l_english:
+ # Defensive Pact
+ SIGN_DEFENSIVE_PACT_TITLE:0 "Sign defensive pact"
+ SIGN_DEFENSIVE_PACT_ACTION_DESC:0 "Ask for them to sign a defensive pact with us."
+ GETRIDOF_DEFENSIVE_PACT_TITLE:0 "Cancel defensive pact"
+ GETRIDOF_DEFENSIVE_PACT_ACTION_DESC:0 "Cancel the defensive pact."
+
+ COALITION_TITLE:0"Offer a Defensive Pact"
+ COALITION_ACTION_DESC:0"Offer the specified country a creation of an Defensive Pact to protect eacht other"
+ loc_pact_accept:0"They Accepted"
+ loc_pact_accept_desc:0"They accepted our offer to create an Defensive Pact. Long live this Treaty"
+ loc_key_reject:0"They Denied"
+ loc_pact_reject_desc:0"They denied our offer to create an Defensive Pact. They shall crumble alone"
+
+ # Compliance Coring
+ RULE_GROUP_CWC:0 "Core with Compliance"
+ ALLOW_AI_CORING:0 "Let the AI core with compliance"
+ RULE_ALLOW_AI_CORING:0 "Yes"
+ RULE_ALLOW_AI_CORING_DESC:0 "Allows the AI to core with compliance."
+ RULE_DISABLE_AI_CORING:0 "Player only"
+ RULE_DISABLE_AI_CORING_DESC:0 "Only players can core with compliance."

@@ -12,44 +12,62 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
-			modifier = {
+
 				if = {
 					limit = {
 						has_government = fascism
 					}
+					modifier = {
 					communism_drift = 0.03
 					democracy_drift = 0.03
 					neutrality_drift = 0.03
+					nationalist_drift = 0.03
+					}
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = communism
 					}
+					modifier = {
 					democracy_drift = 0.03
 					neutrality_drift = 0.03
 					fascism_drift = 0.03
-				}
-				if = {
-					limit = {
-						has_government = democracy
+					nationalist_drift = 0.03
 					}
+				}
+				else_if = {
+					limit = {
+						has_government = democratic
+					}
+					modifier = {
 					communism_drift = 0.03
 					neutrality_drift = 0.03
 					fascism_drift = 0.03
+					nationalist_drift = 0.03
+					}
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = neutrality
 					}
+					modifier = {
 					communism_drift = 0.03
 					democracy_drift = 0.03
 					fascism_drift = 0.03
+					nationalist_drift = 0.03
+					}
 				}
-			}
-			rule = {
-				#can_create_factions = yes #no rules
+				else_if = {
+					limit = {
+						has_government = nationalist
+					}
+					modifier = {
+					communism_drift = 0.03
+					democracy_drift = 0.03
+					fascism_drift = 0.03
+					neutrality_drift = 0.03
+					}
+				}
 			}
 		}
 	}
-}

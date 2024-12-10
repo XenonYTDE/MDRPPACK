@@ -1661,6 +1661,7 @@
  tooltip_EU_parliament_focus_EU701_remove: "Remove §YRussia§! from EP agenda."
  tooltip_EU_parliament_focus_EU611_remove: "Remove §YInternal Enlargement§! from EP agenda."
 
+ tooltip_focus__Majority_trigger: ""
  tooltip_focus_Supermajority_trigger: "We currently have a Supermajority in the EP. (Current: [?global.active_MEP_Support|0G] / [?global.MEP_Supermajority|0Y])"
 
  global_MEP_Western_Autocracy: "[?global.MEP_PG_Western_Autocracy|C0]"

@@ -28,7 +28,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				laws_cost_factor = -0.15
+				Laws Cost -15%
 				hidden_modifier = {
 					economic_cycles_cost_factor = -0.15
 					corruption_cost_factor = -0.15
@@ -56,8 +56,8 @@ ideas = {
 					gf_logistics_system_cost_factor = -0.15
 					gf_marine_role_cost_factor = -0.15
 					gf_officer_training_cost_factor = -0.15
-					gf_paratropper_role_cost_factor = -0.15
-					gf_special_forces_cost_factor = -0.15
+					gf_paratrooper_role_cost_factor = -0.15
+					gf_special_forces_role_cost_factor = -0.15
 					gp_gender_equality_cost_factor = -0.15
 					gp_minority_rights_cost_factor = -0.15
 					gp_national_ideas_cost_factor = -0.15
@@ -71,7 +71,6 @@ ideas = {
 					ip_resource_efforts_cost_factor = -0.15
 					is_firearm_regulation_cost_factor = -0.15
 					is_penal_system_cost_factor = -0.15
-					is_state_security_cost_factor = -0.15
 					is_trade_unions_cost_factor = -0.15
 					mj_branch_rivalry_cost_factor = -0.15
 					mj_code_of_ethics_cost_factor = -0.15
@@ -157,13 +156,12 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.15
-				
 				#political_power_gain = 0.3
 				
 				democratic_drift = 0.05
 				defensive_war_stability_factor = 0.2
 				stability_weekly = 0.001
+				Laws Cost -15%
 
 				#political_power_gain = 0.5
 				compliance_growth = 0.15
@@ -197,8 +195,8 @@ ideas = {
 					gf_logistics_system_cost_factor = -0.15
 					gf_marine_role_cost_factor = -0.15
 					gf_officer_training_cost_factor = -0.15
-					gf_paratropper_role_cost_factor = -0.15
-					gf_special_forces_cost_factor = -0.15
+					gf_paratrooper_role_cost_factor = -0.15
+					gf_special_forces_role_cost_factor = -0.15
 					gp_gender_equality_cost_factor = -0.15
 					gp_minority_rights_cost_factor = -0.15
 					gp_national_ideas_cost_factor = -0.15
@@ -212,7 +210,6 @@ ideas = {
 					ip_resource_efforts_cost_factor = -0.15
 					is_firearm_regulation_cost_factor = -0.15
 					is_penal_system_cost_factor = -0.15
-					is_state_security_cost_factor = -0.15
 					is_trade_unions_cost_factor = -0.15
 					mj_branch_rivalry_cost_factor = -0.15
 					mj_code_of_ethics_cost_factor = -0.15
@@ -235,13 +232,12 @@ ideas = {
 				
 				party_popularity_stability_factor = 0.10
 				
-				laws_cost_factor = -0.15
-				
 				#political_power_gain = 0.3
 				
 				democratic_drift = -0.05
 				offensive_war_stability_factor = 0.2
 				war_support_weekly = 0.001
+				Laws Cost -15%
 				
 				#political_power_gain = 0.5
 				resistance_damage_to_garrison = -0.2
@@ -276,8 +272,8 @@ ideas = {
 					gf_logistics_system_cost_factor = -0.15
 					gf_marine_role_cost_factor = -0.15
 					gf_officer_training_cost_factor = -0.15
-					gf_paratropper_role_cost_factor = -0.15
-					gf_special_forces_cost_factor = -0.15
+					gf_paratrooper_role_cost_factor = -0.15
+					gf_special_forces_role_cost_factor = -0.15
 					gp_gender_equality_cost_factor = -0.15
 					gp_minority_rights_cost_factor = -0.15
 					gp_national_ideas_cost_factor = -0.15
@@ -291,7 +287,6 @@ ideas = {
 					ip_resource_efforts_cost_factor = -0.15
 					is_firearm_regulation_cost_factor = -0.15
 					is_penal_system_cost_factor = -0.15
-					is_state_security_cost_factor = -0.15
 					is_trade_unions_cost_factor = -0.15
 					mj_branch_rivalry_cost_factor = -0.15
 					mj_code_of_ethics_cost_factor = -0.15

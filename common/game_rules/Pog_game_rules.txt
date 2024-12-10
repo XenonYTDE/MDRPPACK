@@ -142,6 +142,21 @@ merge_baltics = {
 		desc = "RULE_NO_MERGE_BALTICS_DESC"
 	}
 }
+supermerge = {
+	name = "RULE_SUPERMERGE"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_SUPERMERGE_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_SUPERMERGE_DESC"
+	}
+} 
 hypermerge = {
 	name = "RULE_HYPERMERGE"
 	group = "MDOptimization_RULES"
@@ -156,7 +171,20 @@ hypermerge = {
 		text = "RULE_OPTION_NO"
 		desc = "RULE_NO_HYPERMERGE_DESC"
 	}
-} 
+}
+hyper_fragmentation = {
+	name = "RULE_HYPERFRAGMENTED"
+	group = MDOptimization_RULES
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+	}
+}
 ####DISABLE-AI####
 disable_ai_nations = {
 	name = "RULE_DISABLE_AI_NATIONS"

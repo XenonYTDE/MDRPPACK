@@ -50,7 +50,6 @@ puppet_integrate_navies = {
 					}
 				}		
 			}	
-			if = {
 				limit = {
 					FROM = {
 						compare_autonomy_state > autonomy_integrated_puppet
@@ -58,7 +57,5 @@ puppet_integrate_navies = {
 				}
 				navy_experience = 0
 				add_political_power = 0
-			}
 		}
-	}	
-}
+	}

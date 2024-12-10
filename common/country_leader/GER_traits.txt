@@ -9,7 +9,7 @@ leader_traits = {
     argentinian = {
         out_of_supply_factor = -0.1
         army_morale_factor = 0.05
-        escape_chance = 0.2
+        own_operative_capture_chance_factor = -0.2
     }
 
     artist = {

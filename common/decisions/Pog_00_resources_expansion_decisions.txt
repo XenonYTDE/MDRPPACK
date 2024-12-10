@@ -50,11 +50,61 @@ resources_expansion_category = {
 		}
 	}
 
+	deposit_discovery2 = {
+		icon = generic_construction
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 0
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 24.9 }
+		}
+
+		custom_cost_text = cost_25_0
+
+		complete_effect = {
+			set_temp_variable = { treasury_change = -25 }
+			modify_treasury_effect = yes
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				random_list = {
+					10 = { add_resource = {
+							type = oil
+							amount = 1
+					}}
+					10 = { add_resource = {
+						type = tungsten
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = chromium
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = steel
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = aluminium
+						amount = 1
+					}}
+					10 = { add_resource = {
+						type = rubber
+						amount = 1
+					}}
+				}
+			}
+		}
+	}
+
 	small_oil_expansion = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 180
+		days_remove = 120
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -97,7 +147,7 @@ resources_expansion_category = {
 		icon = oil
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 225
+		days_remove = 180
 
 		days_re_enable = 0
 
@@ -181,11 +231,55 @@ resources_expansion_category = {
 		}
 	}
 
+	massive_oil_expansion = {
+		icon = oil
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 360
+
+		days_re_enable = 0
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 149.9 }
+		}
+
+		custom_cost_text = cost_150_0
+
+		complete_effect = {
+			set_temp_variable = { treasury_change = -150 }
+			modify_treasury_effect = yes
+		}
+
+		available = {
+			any_owned_state = {
+				has_resources_amount = {
+					resource = oil
+					amount > 99
+				}
+			}
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+							resource = oil
+							amount > 99
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+
 	small_aluminium_expansion = {
 	  icon = aluminium
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 180
+	  days_remove = 120
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -228,7 +322,7 @@ resources_expansion_category = {
 	  icon = aluminium
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 225
+	  days_remove = 180
 
 	  days_re_enable = 0
 
@@ -312,11 +406,55 @@ resources_expansion_category = {
 	  }
 	}
 
+	massive_aluminium_expansion = {
+		icon = aluminium
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 360
+  
+		days_re_enable = 0
+  
+		  custom_cost_trigger = {
+			  check_variable = { treasury > 149.9 }
+		  }
+  
+		  custom_cost_text = cost_150_0
+  
+		  complete_effect = {
+			  set_temp_variable = { treasury_change = -150 }
+			  modify_treasury_effect = yes
+		  }
+  
+		available = {
+		  any_owned_state = {
+			has_resources_amount = {
+			  resource = aluminium
+			  amount > 99
+			}
+		  }
+		}
+  
+		remove_effect = {
+		  random_owned_state = {
+			limit = {
+			  has_resources_amount = {
+				  resource = aluminium
+				  amount > 99
+			  }
+			}
+			add_resource = {
+			  type = aluminium
+			  amount = 8
+			}
+		  }
+		}
+	  }  
+
 	small_rubber_expansion = {
 	  icon = rubber
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 180
+	  days_remove = 120
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -359,7 +497,7 @@ resources_expansion_category = {
 	  icon = rubber
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 225
+	  days_remove = 180
 
 	  days_re_enable = 0
 
@@ -443,11 +581,55 @@ resources_expansion_category = {
 	  }
 	}
 
+	massive_rubber_expansion = {
+		icon = rubber
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove =360
+  
+		days_re_enable = 0
+  
+		  custom_cost_trigger = {
+			  check_variable = { treasury > 149.9 }
+		  }
+  
+		  custom_cost_text = cost_150_0
+  
+		  complete_effect = {
+			  set_temp_variable = { treasury_change = -150 }
+			  modify_treasury_effect = yes
+		  }
+  
+		available = {
+		  any_owned_state = {
+			has_resources_amount = {
+			  resource = rubber
+			  amount > 99
+			}
+		  }
+		}
+  
+		remove_effect = {
+		  random_owned_state = {
+			limit = {
+			  has_resources_amount = {
+				  resource = rubber
+				  amount > 99
+			  }
+			}
+			add_resource = {
+			  type = rubber
+			  amount = 8
+			}
+		  }
+		}
+	  }
+
 	small_tungsten_expansion = {
 	  icon = tungsten
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 180
+	  days_remove = 120
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -490,7 +672,7 @@ resources_expansion_category = {
 	  icon = tungsten
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 225
+	  days_remove = 180
 
 	  days_re_enable = 0
 
@@ -573,11 +755,54 @@ resources_expansion_category = {
 	  }
 	}
 
+	massive_tungsten_expansion = {
+		icon = tungsten
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 0
+  
+		  custom_cost_trigger = {
+			  check_variable = { treasury > 149.9 }
+		  }
+  
+		  custom_cost_text = cost_150_0
+  
+		  complete_effect = {
+			  set_temp_variable = { treasury_change = -150 }
+			  modify_treasury_effect = yes
+		  }
+  
+		available = {
+		  any_owned_state = {
+			has_resources_amount = {
+			  resource = tungsten
+			  amount > 99
+			}
+		  }
+		}
+  
+		remove_effect = {
+		  random_owned_state = {
+			limit = {
+			  has_resources_amount = {
+				  resource = tungsten
+				  amount > 99
+			  }
+			}
+			add_resource = {
+			  type = tungsten
+			  amount = 8
+			}
+		  }
+		}
+	  }
+
 	small_steel_expansion = {
 		icon = steel
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 180
+		days_remove = 120
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -620,7 +845,7 @@ resources_expansion_category = {
 		icon = steel
 		allowed = { always = yes }
 		fire_only_once = no
-		days_remove = 225
+		days_remove = 180
 		days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -702,11 +927,54 @@ resources_expansion_category = {
 		}
 	}
 
+	massive_steel_expansion = {
+		icon = steel
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 360
+		days_re_enable = 0
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 149.9 }
+		}
+
+		custom_cost_text = cost_150_0
+
+		complete_effect = {
+			set_temp_variable = { treasury_change = -150 }
+			modify_treasury_effect = yes
+		}
+
+		available = {
+			any_owned_state = {
+				has_resources_amount = {
+					resource = steel
+					amount > 99
+				}
+			}
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+							resource = steel
+							amount > 99
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
+
 	small_chromium_expansion = {
 	  icon = chromium
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 180
+	  days_remove = 120
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -749,7 +1017,7 @@ resources_expansion_category = {
 	  icon = chromium
 	  allowed = { always = yes }
 	  fire_only_once = no
-	  days_remove = 225
+	  days_remove = 180
 	  days_re_enable = 0
 
 		custom_cost_trigger = {
@@ -831,4 +1099,48 @@ resources_expansion_category = {
 	    }
 	  }
 	}
+
+	massive_chromium_expansion = {
+		icon = chromium
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 360
+  
+		days_re_enable = 0
+  
+		  custom_cost_trigger = {
+			  check_variable = { treasury > 149.9 }
+		  }
+  
+		  custom_cost_text = cost_150_0
+  
+		  complete_effect = {
+			  set_temp_variable = { treasury_change = -150 }
+			  modify_treasury_effect = yes
+		  }
+  
+		available = {
+		  any_owned_state = {
+			has_resources_amount = {
+			  resource = chromium
+			  amount > 99
+			}
+		  }
+		}
+  
+		remove_effect = {
+		  random_owned_state = {
+			limit = {
+			  has_resources_amount = {
+				  resource = chromium
+				  amount > 99
+			  }
+			}
+			add_resource = {
+			  type = chromium
+			  amount = 8
+			}
+		  }
+		}
+	  }
 }

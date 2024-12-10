@@ -10,6 +10,7 @@
   
   # Decisions
   pd_pay_war_reparations:0 "Paying war reparations to [From.GetNameDef]"
+  pd_foreign_influence:0 "Peace Deal Decisions"
   
   # Diplomatic actions
   OFFER_PEACE_DEAL_TITLE:0 "Offer conditional peace"  
