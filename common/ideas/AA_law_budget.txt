@@ -22,6 +22,20 @@ ideas = {
 				}
 				if = {
 					limit = {
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = {
 						OR = {
 							has_idea = bureau_02
 							has_idea = bureau_03
@@ -126,6 +140,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -310,6 +338,20 @@ ideas = {
 				}
 				if = {
 					limit = {
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = {
 						OR = {
 							has_idea = bureau_04
 							has_idea = bureau_05
@@ -471,6 +513,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -650,6 +706,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = bureau_01
@@ -764,6 +834,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -883,6 +967,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -1032,6 +1130,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = police_04
@@ -1177,6 +1289,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -1331,6 +1457,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = police_01
@@ -1470,6 +1610,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = edu_02
@@ -1581,6 +1735,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -1752,6 +1920,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = edu_04
@@ -1907,6 +2089,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -2069,6 +2265,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = edu_01
@@ -2175,6 +2385,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -2299,6 +2523,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -2470,6 +2708,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = health_04
@@ -2636,6 +2888,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = health_05
@@ -2797,6 +3063,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -2969,6 +3249,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = health_01
@@ -3097,6 +3391,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = social_02
@@ -3218,6 +3526,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -3394,6 +3716,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = social_04
@@ -3563,6 +3899,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
@@ -3741,6 +4091,20 @@ ideas = {
 					}
 				}
 				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
+						}
+					}
+				}
+				if = {
 					limit = {
 						OR = {
 							has_idea = social_06
@@ -3911,6 +4275,20 @@ ideas = {
 					NOT = {
 						hidden_trigger = {
 							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { 
+						original_tag = ISR
+						is_ai = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = ISR_parliament_block_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = ISR_parliament_block
 						}
 					}
 				}
