@@ -1186,7 +1186,6 @@ on_actions = {
 					annex_country = { target = YEM transfer_troops = yes }
 					annex_country = { target = UAE transfer_troops = yes }
 					annex_country = { target = JOR transfer_troops = yes }
-					annex_country = { target = KUW transfer_troops = yes }
 					annex_country = { target = QAT transfer_troops = yes }
 					annex_country = { target = BHR transfer_troops = yes }
 					
@@ -1205,6 +1204,7 @@ on_actions = {
 				}
 				IRQ = {
 					annex_country = { target = KUR transfer_troops = yes }
+					annex_country = { target = KUW transfer_troops = yes }
 					
 					
 					every_state = {
@@ -1962,7 +1962,6 @@ on_actions = {
 					annex_country = { target = OMA transfer_troops = yes }
 					annex_country = { target = YEM transfer_troops = yes }
 					annex_country = { target = UAE transfer_troops = yes }
-					annex_country = { target = KUW transfer_troops = yes }
 					annex_country = { target = QAT transfer_troops = yes }
 					annex_country = { target = BHR transfer_troops = yes }
 					
@@ -1981,6 +1980,7 @@ on_actions = {
 				}
 				IRQ = {
 					annex_country = { target = KUR transfer_troops = yes }
+					annex_country = { target = KUW transfer_troops = yes }
 					
 					
 					every_state = {
