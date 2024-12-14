@@ -1,0 +1,67 @@
+
+sp_land_walkers = {
+	specialization = specialization_land
+	#icon = GFX_sp_land_flamethrower_tank ### Automatically hooked-in since the GFX ID matches the project ID.
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 0
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+	
+	project_output = {
+		country_effects = {
+			add_design_template_bonus = {
+				name = sp_land_walker
+				uses = 1
+				cost_factor = 1
+				equipment = walker_chassis
+			}
+
+			add_design_template_bonus = {
+				name = sp_land_walker
+				uses = 2
+				cost_factor = 0.5
+				equipment = walker_chassis
+			}
+
+		}
+		enable_equipments = {
+			walker_chassis_0
+		}
+		enable_subunits = { 
+			walkers_light
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
