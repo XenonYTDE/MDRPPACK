@@ -105,6 +105,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_demographic_decline_pop_growth"
+		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_demographic_recession_pop_growth"
 		texturefile = "gfx/interface/ideas/laws/internal_policies/is_population_growth/one_child_policy.dds"
 	}

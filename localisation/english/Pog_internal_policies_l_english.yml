@@ -36,6 +36,7 @@ one_child_policyy:0 "One Child Policy"
 one_child_policyy_desc:0 "The state enforces a one child policy."
 massively_reduced_pop_growth:0 "Massively Reduced Population Growth"
 stagnating_pop_growth:0 "Population Growth Stagnation"
+demographic_decline_pop_growth:0 "Demographic Decline"
 demographic_recession_pop_growth:0 "Demographic Recession"
 
 
