@@ -174,18 +174,34 @@ ideas = {
 
         cancel_if_invalid = yes
     }
-    demographic_recession_pop_growth = {
+    demographic_decline_pop_growth = {
         available = {
         }
 
         level = 12
 
         modifier = {
+            political_power_factor = -1.5
+            monthly_population = -3
+            stability_factor = -0.40
+            consumer_goods_factor = -0.15
+            drift_defence_factor = 0.30
+        }
+
+        cancel_if_invalid = yes
+    }
+    demographic_recession_pop_growth = {
+        available = {
+        }
+
+        level = 13
+
+        modifier = {
             political_power_factor = -2.5
             monthly_population = -5
             stability_factor = -0.50
             consumer_goods_factor = -0.20
-            drift_defence_factor = 0.5
+            drift_defence_factor = 0.50
         }
 
         cancel_if_invalid = yes
