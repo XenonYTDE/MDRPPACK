@@ -3,7 +3,7 @@ sp_land_walkers = {
 	specialization = specialization_land
 	#icon = GFX_sp_land_flamethrower_tank ### Automatically hooked-in since the GFX ID matches the project ID.
 
-	project_tags = sp_tag_tank
+	project_tags = sp_tag_armored_vehicles
 
 	ai_will_do = {
 		base = 0

@@ -106,12 +106,12 @@ scripted_gui = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
-   				archetype = battleship
+   				archetype = battleship_hull_0
 								}
 				   }
 			}
 
-                Button_7_click_enabled = {
+        Button_7_click_enabled = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
@@ -120,7 +120,7 @@ scripted_gui = {
 				   }
 			}
 
-                Button_8_click_enabled = {
+        Button_8_click_enabled = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
@@ -129,7 +129,7 @@ scripted_gui = {
 				   }
 			}
 
-                Button_9_click_enabled = {
+        Button_9_click_enabled = {
 			ROOT = { 
 				has_navy_size = {
    				size > 0
