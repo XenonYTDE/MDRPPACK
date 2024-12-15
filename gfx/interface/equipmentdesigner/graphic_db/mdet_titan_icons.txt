@@ -190,6 +190,7 @@ default = {
 				"MD4_medium_armor_entity"
         }
     }
+}
         artillery_titan_hull_0 = {
         pool = {
             icons = {

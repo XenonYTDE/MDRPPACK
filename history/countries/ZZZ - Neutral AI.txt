@@ -26,9 +26,9 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Tomas Copin"
+	name = "Adolf Drippler"
 	desc = "POLITICS_TOMAS_COPIN_DESC"
-	picture = "tomas_copin.dds"
+	picture = "Adolf_Drippler.dds"
 	expire = "2022.1.1"
 	ideology = Neutral_Autocracy
 	traits = {
