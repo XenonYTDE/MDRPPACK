@@ -6,7 +6,7 @@ sp_land_walkers = {
 	project_tags = sp_tag_armored_vehicles
 
 	ai_will_do = {
-		base = 0
+		base = 1
 	}
 
 	allowed = {
