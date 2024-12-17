@@ -21,6 +21,10 @@ ideas = {
                 planning_speed = -0.10
             }
 
+            ai_will_do = {
+                base = 100
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -38,6 +42,10 @@ ideas = {
                 supply_combat_penalties_on_core_factor = -0.50
                 attrition = -0.05
                 truck_attrition_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 100
             }
 
             cancel_if_invalid = yes

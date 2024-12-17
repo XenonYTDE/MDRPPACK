@@ -17,6 +17,10 @@ ideas = {
                 war_support_factor = 0.05
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes 
         }
 
@@ -32,6 +36,10 @@ ideas = {
 
             modifier = {
                 political_power_factor = 0.15
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -50,6 +58,10 @@ ideas = {
             modifier = {
                 stability_factor = 0.10
                 war_support_factor = 0.10
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -71,6 +83,10 @@ ideas = {
                 command_power_gain_mult = 0.20
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -86,6 +102,10 @@ ideas = {
                 political_power_factor = 0.10
                 stability_factor = 0.05
                 drift_defence_factor = 0.20
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -111,6 +131,10 @@ ideas = {
                 stability_weekly = 0.0020
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -129,6 +153,10 @@ ideas = {
                 non_core_manpower = 0.50
                 war_support_factor = -0.30
                 compliance_growth = 0.20
+            }
+
+            ai_will_do = {
+                base = 50
             }
             
             cancel_if_invalid = yes
@@ -153,6 +181,10 @@ ideas = {
                 production_factory_start_efficiency_factor = 0.05
                 line_change_production_efficiency_factor = 0.05
                 production_factory_max_efficiency_factor = 0.05
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes

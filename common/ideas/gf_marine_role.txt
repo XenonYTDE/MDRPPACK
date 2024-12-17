@@ -18,6 +18,10 @@ ideas = {
                 amphibious_invasion = 0.15
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -36,6 +40,9 @@ ideas = {
                 naval_invasion_capacity = 5
             }
 
+            ai_will_do = {
+                base = 50
+            }   
 
             cancel_if_invalid = yes
         }
@@ -53,6 +60,10 @@ ideas = {
                 transport_capacity = -0.50
                 extra_marine_supply_grace = 120
                 naval_invasion_capacity = 1
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes

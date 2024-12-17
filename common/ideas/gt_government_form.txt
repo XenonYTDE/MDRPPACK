@@ -17,6 +17,10 @@ ideas = {
                 stability_factor = 0.10
                 war_support_factor = 0.10
             }
+
+            ai_will_do = {
+                base = 50
+            }
             
             cancel_if_invalid = yes
         }
@@ -39,6 +43,10 @@ ideas = {
                 resistance_growth = -0.20
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -59,6 +67,10 @@ ideas = {
                 global_building_slots_factor = 0.10
                 resistance_target = -0.10
                 resistance_decay = 0.20
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -85,6 +97,10 @@ ideas = {
                 compliance_growth = 0.15
                 resistance_damage_to_garrison = -0.40
                 #required_garrison_factor #= #-0.10
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -115,6 +131,10 @@ ideas = {
 
             }
 
+            ai_will_do = {
+                base = 150
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -141,6 +161,10 @@ ideas = {
                 special_forces_min = 25
                 monthly_population = 3
 
+            }
+
+            ai_will_do = {
+                base = 150
             }
 
             cancel_if_invalid = yes

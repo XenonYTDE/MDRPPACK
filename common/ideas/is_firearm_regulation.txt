@@ -20,6 +20,10 @@ ideas = {
                 #required_garrison_factor #= #-0.08
                 monthly_population = 0.15
             }
+
+            ai_will_do = {
+                base = 50
+            }
         }
 
         firearms_harsh_licenses = {
@@ -38,6 +42,10 @@ ideas = {
                 monthly_population = -0.05
 
             }
+
+            ai_will_do = {
+                base = 50
+            }
         }
 
         firearms_licenses = {
@@ -51,6 +59,10 @@ ideas = {
             modifier = {
                 stability_factor = 0.05
                 monthly_population = -0.10
+            }
+
+            ai_will_do = {
+                base = 50
             }
         }
 
@@ -70,6 +82,10 @@ ideas = {
                 resistance_activity = 0.15
                 #required_garrison_factor #= #0.05
                 monthly_population = -0.15
+            }
+
+            ai_will_do = {
+                base = 50
             }
         }
     }

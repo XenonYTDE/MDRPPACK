@@ -10,8 +10,11 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                #political_power_gain = 0.20
                 political_power_cost = -0.20
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -28,6 +31,10 @@ ideas = {
                 local_resources_factor = 0.05
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.05
+            }
+
+            ai_will_do = {
+                base = 100
             }
 
             cancel_if_invalid = yes
@@ -59,6 +66,10 @@ ideas = {
 				resistance_growth_on_our_occupied_states = 0.2
 				
             }
+
+            ai_will_do = {
+                base = 100
+            }
             
             cancel_if_invalid = yes
         }   
@@ -81,6 +92,15 @@ ideas = {
                 training_time_factor = -0.15
             }
 
+            ai_will_do = {
+                base = 50
+
+                modifier = {
+                    has_war = yes
+                    add = 50
+                }
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -100,6 +120,10 @@ ideas = {
                 drift_defence_factor = 0.05
                 justify_war_goal_time = -0.10
                 
+            }
+
+            ai_will_do = {
+                base = 100
             }
 
             cancel_if_invalid = yes
@@ -124,6 +148,10 @@ ideas = {
                 navy_intel_factor = 0.10
                 airforce_intel_factor = 0.10
 			}
+
+            ai_will_do = {
+                base = 50
+            }
 
             cancel_if_invalid = yes
         }

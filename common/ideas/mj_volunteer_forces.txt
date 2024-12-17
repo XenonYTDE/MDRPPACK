@@ -22,6 +22,10 @@ ideas = {
                 air_volunteer_cap = 15
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -43,25 +47,7 @@ ideas = {
             }
 
             ai_will_do = {
-                base = 20
-
-                modifier = {
-                   is_major = no
-                   has_government = communism
-                   add = 20
-                }
-
-                modifier = {
-                    num_faction_members > 3
-                    is_faction_leader = yes
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = democratic
-                    add = 30
-                }
-
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -84,19 +70,7 @@ ideas = {
             }
 
             ai_will_do = {
-                base = 0
-
-                modifier = {
-
-                    NOT = {
-                        has_government = communism
-                    }
-
-                    tag = SWI
-                    add = 10
-                }
-                
-
+                base = 50
             }
 
             cancel_if_invalid = yes

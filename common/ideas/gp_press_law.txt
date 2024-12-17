@@ -21,6 +21,10 @@ ideas = {
                 justify_war_goal_time = -0.1
                 drift_defence_factor = 0.2
             }
+
+            ai_will_do = {
+                base = 50
+            }
           
             cancel_if_invalid = yes
         }
@@ -39,6 +43,10 @@ ideas = {
                 war_support_factor = 0.05
                 justify_war_goal_time = -0.05
                 drift_defence_factor = 0.1
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -60,6 +68,15 @@ ideas = {
                 war_support_factor = -0.10
                 justify_war_goal_time = 0.1
                 drift_defence_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 50
+
+                modifier = {
+                    has_government = democratic
+                    add = 25
+                }
             }
 
             cancel_if_invalid = yes

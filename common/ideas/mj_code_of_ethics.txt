@@ -26,6 +26,10 @@ ideas = {
                 add_command_power = -10
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -51,6 +55,10 @@ ideas = {
                 add_command_power = -5
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -67,6 +75,10 @@ ideas = {
                 resistance_damage_to_garrison = -0.05
                 experience_gain_army_unit_factor = 0.05
                 experience_gain_factor = 0.05
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -94,6 +106,10 @@ ideas = {
                 stability_factor = -0.05
             }
 
+            ai_will_do = {
+                base = 20
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -117,6 +133,10 @@ ideas = {
                 compliance_growth = -0.10
                 max_command_power = 30
                 stability_factor = -0.10
+            }
+
+            ai_will_do = {
+                base = 10
             }
 
             cancel_if_invalid = yes

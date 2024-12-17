@@ -20,7 +20,7 @@ ideas = {
                 has_idea = social_06
                 has_idea = police_05
                 has_idea = edu_05
-                has_idea = bureau_05
+                has_idea = bureau_03
                 custom_trigger_tooltip = {
                     tooltip = 50_per_capita_or_more_tt
                     check_variable = { gdp_per_capita > 49.999 }
@@ -72,7 +72,7 @@ ideas = {
             }
 
             ai_will_do = {
-                base = 100
+                base = 1000
 
                 modifier = {
                     has_government = democratic
@@ -95,11 +95,12 @@ ideas = {
         pog_rentier_state = {
             available = {
                 OR = {
-                    oil > 50
-                    rubber > 50
-                }
-                NOT = {
-                    has_government = democratic
+                    oil > 99
+                    rubber > 99
+                    tungsten > 99
+                    steel > 99
+                    chromium > 99
+                    aluminium > 99
                 }
             }
             
@@ -117,7 +118,7 @@ ideas = {
             }
 
             ai_will_do = {
-                base = 40
+                base = 20
 
                 modifier = {
                     has_government = neutrality
@@ -125,7 +126,15 @@ ideas = {
                 }
 
                 modifier = {
-                    factor = 3
+                    OR = {
+                        oil > 199
+                        rubber > 199
+                        tungsten > 199
+                        steel > 199
+                        chromium > 199
+                        aluminium > 199
+                    }
+                    add = 50
                 }
             }
 
@@ -149,6 +158,9 @@ ideas = {
                 min_export = 0.10
             }
 
+            ai_will_do = { 
+                base = 50
+            }
 
             cancel_if_invalid = yes
         }
@@ -173,6 +185,23 @@ ideas = {
                 consumer_goods_factor = 0.10
             }
 
+            ai_will_do = { 
+                base = 40
+
+                modifier = {
+                    has_government = communism
+                    add = 40
+                }
+                modifier = {
+                    has_government = democratic
+                    add = 40
+                }
+                modifier = {
+                    has_government = neutrality
+                    add = 40
+                }
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -191,7 +220,18 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.05
                 min_export = 0.05
             }
+            ai_will_do = { 
+                base = 50
 
+                modifier = {
+                    has_government = democratic
+                    add = 50
+                }
+                modifier = {
+                    has_government = neutrality
+                    add = 50
+                }
+            }
 
             cancel_if_invalid = yes
         }
@@ -215,6 +255,14 @@ ideas = {
                 research_speed_factor = -0.025
                 industrial_capacity_factory = 0.05
                 min_export = -0.10
+            }
+            ai_will_do = { 
+                base = 40
+                
+                modifier = {
+                    has_government = communism
+                    add = 50
+                }
             }
 
             cancel_if_invalid = yes
@@ -242,6 +290,14 @@ ideas = {
                 conversion_cost_mil_to_civ_factor = -0.10
                 min_export = -0.15
             }
+            ai_will_do = { 
+                base = 20
+
+                modifier = {
+                    has_government = communism
+                    add = 50
+                }
+            }
 
             cancel_if_invalid = yes
         }
@@ -268,6 +324,15 @@ ideas = {
                 min_export = -0.25
                 war_support_factor = -0.15
             }
+            
+            ai_will_do = { 
+                base = 20
+
+                modifier = {
+                    has_government = communism
+                    add = 70
+                }
+            }
 
             cancel_if_invalid = yes
         }
@@ -290,6 +355,14 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.10
                 research_speed_factor = 0.05
                 min_export = 0.05
+            }
+            ai_will_do = { 
+                base = 10
+
+                modifier = {
+                    has_government = communism
+                    add = 50
+                }
             }
 
             cancel_if_invalid = yes
