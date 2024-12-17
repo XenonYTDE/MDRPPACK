@@ -154,28 +154,39 @@ scripted_gui = {
 		}
 		
 		ai_test_interval = 336
-		ai_test_variance = 0.1
-		ai_max_weight_taken_per_test = 2
+		ai_test_variance = 0.5
 		
 		ai_enabled = {
             always = yes
 		}
 		
 		ai_check = {
-			has_political_power > 300
+			OR = {
+				AND = {
+					has_political_power < 100
+					has_country_flag = nideas_open_cflag
+				}
+				AND = {
+					has_political_power > 300
+					NOT = { check_variable = { ROOT.national_ideas_taken = 54 } }
+				}
+				AND = {
+					has_country_flag = nideas_open_cflag
+					check_variable = { ROOT.national_ideas_taken = 54 }
+				}
+			}
 		}
 		
 		ai_weights = {
+
 			nideas_open_button1_click = {
-				weight = 1.0
 				ai_will_do = {
-					factor = 1
-				}
+					base = 50
 			}
+		}
 			nideas_open_button2_click = {
-				weight = 1.0
 				ai_will_do = {
-					factor = 1
+					base = 50
 				}
 			}
 		}
@@ -5736,466 +5747,392 @@ scripted_gui = {
 			}
 		}
 
-		ai_test_interval = 336
-		ai_test_variance = 0.1
-		ai_max_weight_taken_per_test = 2
+		ai_test_interval = 24
+		ai_test_variance = 0.2
 
 		ai_enabled = {
 			always = yes
 		}
+
 		ai_check = {
+			has_country_flag = nideas_open_cflag
 			has_political_power > 99
 		}
 
 		ai_weights = {
 			nideas_idea_group1_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group1_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group1_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group1_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group1_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group1_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group1_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group1_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group2_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group2_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group2_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group2_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group2_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group2_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group2_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group2_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group3_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group3_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group3_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group3_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group3_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group3_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group3_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group3_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group4_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group4_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group4_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group4_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group4_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group4_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group4_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group4_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group5_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group5_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group5_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group6_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group6_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group6_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group6_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group6_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group6_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group6_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group6_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group7_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group7_button9_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group8_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group8_button9_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button1_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 100
 				}
 			}
 			nideas_idea_group9_button2_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button3_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button4_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button5_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button6_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button7_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button8_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 			nideas_idea_group9_button9_available_click = {
-				weight = 2.0
 				ai_will_do = {
-					factor = 1
+					factor = 50
 				}
 			}
 		}
