@@ -38,6 +38,7 @@ ideas = {
                 production_speed_buildings_factor = -0.05
                 drift_defence_factor = -0.30
                 tax_gain_multiplier_modifier = 0.20
+                min_export = -0.10
             }
 
             ai_will_do = {
@@ -78,6 +79,7 @@ ideas = {
                 production_speed_buildings_factor = -0.025
                 drift_defence_factor = -0.15
                 tax_gain_multiplier_modifier = 0.10
+                min_export = -0.05
             }
 
             ai_will_do = {
