@@ -14,6 +14,9 @@ sp_land_walkers = {
 	}
 	
 	available = {
+		FROM = {
+			has_tech = mbt_tech_2
+		}
 	}
 
 	breakthrough_cost = {
