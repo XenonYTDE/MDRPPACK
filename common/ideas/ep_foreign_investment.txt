@@ -36,6 +36,10 @@ ideas = {
                 international_market_income_modifier = 0.40
             }
 
+            ai_will_do = { 
+                base = 100
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -66,6 +70,9 @@ ideas = {
                 return_on_investment_modifier = 0.005
                 international_market_income_modifier = 0.20
             }
+            ai_will_do = { 
+                base = 75
+            }
 
             cancel_if_invalid = yes
         }
@@ -93,6 +100,10 @@ ideas = {
                 production_speed_dockyard_factor = -0.02
                 trade_opinion_factor = -0.05
                 civilian_intel_to_others = -1
+            }
+
+            ai_will_do = { 
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -131,6 +142,10 @@ ideas = {
                 investment_duration_modifier = 0.5
                 return_on_investment_modifier = -0.01
                 international_market_income_modifier = -0.25
+            }
+
+            ai_will_do = { 
+                base = 10 
             }
         }
     }

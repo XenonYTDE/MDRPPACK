@@ -25,6 +25,10 @@ ideas = {
                 base_migration_rate_value = 0.30
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -46,6 +50,10 @@ ideas = {
                 base_migration_rate_value = 0.15
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -60,6 +68,10 @@ ideas = {
                 non_core_manpower = 0.05
                 stability_factor = 0.025
                 #resistance_damage_to_garrison #= #-0.15
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -82,6 +94,10 @@ ideas = {
                 base_migration_rate_value = -0.25
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -99,6 +115,10 @@ ideas = {
                 stability_factor = -0.05
                 resistance_damage_to_garrison = 0.40
                 base_migration_rate_value = -0.75
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes

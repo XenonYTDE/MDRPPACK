@@ -1,4 +1,4 @@
- AI tank design for testing
+# AI tank design for testing
 
 generic_walkers = {
 	category = land

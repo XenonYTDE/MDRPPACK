@@ -16,6 +16,10 @@ ideas = {
                 air_fuel_consumption_factor = -0.05
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
         }
 
         alternative_materials = {
@@ -30,6 +34,10 @@ ideas = {
                 production_lack_of_resource_penalty_factor = -0.20
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
         }
 
         extraction_programs = {
@@ -42,6 +50,10 @@ ideas = {
                 industrial_capacity_factory = -0.05
                 production_speed_buildings_factor = -0.05
                 local_resources_factor = 0.15
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
         }

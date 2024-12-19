@@ -1,5 +1,5 @@
 defined_text = {
-	name = OON_gensec_portrait
+	name = OON_gensek_portrait
 	text = {
 		trigger = {
 			has_country_flag = OON_gensek_annani

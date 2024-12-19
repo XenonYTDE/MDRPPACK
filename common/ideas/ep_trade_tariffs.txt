@@ -35,6 +35,10 @@ ideas = {
 
             research_bonus = { industry = 0.15 }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -63,6 +67,10 @@ ideas = {
 
             research_bonus = { industry = 0.075 }
 
+            ai_will_do = {
+                base = 75
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -81,6 +89,10 @@ ideas = {
             }
 
             research_bonus = { industry = -0.05 }
+
+            ai_will_do = {
+                base = 100
+            }
 
             cancel_if_invalid = yes
         }
@@ -117,9 +129,14 @@ ideas = {
                 trade_opinion_factor = -0.10
                 return_on_investment_modifier = -0.005
                 international_market_income_modifier = 0.25
+                min_export = -0.05
            }
 
            research_bonus = { industry = -0.075 }
+
+           ai_will_do = {
+            base = 75
+        }
 
           cancel_if_invalid = yes
         }
@@ -157,9 +174,14 @@ ideas = {
                 trade_opinion_factor = -0.25
                 return_on_investment_modifier = -0.01
                 international_market_income_modifier = 0.50
+                min_export = -0.10
             }
 
             research_bonus = { industry = -0.15 }
+
+            ai_will_do = {
+                base = 50
+            }
 
             cancel_if_invalid = yes
         }   

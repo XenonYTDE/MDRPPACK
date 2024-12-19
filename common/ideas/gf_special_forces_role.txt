@@ -19,6 +19,10 @@ ideas = {
                 special_forces_cap = 0.20
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -39,6 +43,10 @@ ideas = {
                 special_forces_training_time_factor = 0.10
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -55,6 +63,10 @@ ideas = {
                 special_forces_no_supply_grace = 180
                 special_forces_training_time_factor = 0.20
                 send_volunteer_size = 1
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes

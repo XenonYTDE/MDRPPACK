@@ -5,7 +5,7 @@ scripted_gui = {
 
 		properties = {
 			GFX_annan_portrait_icon = {
-				image = "[OON_gensec_portrait]"
+				image = "[OON_gensek_portrait]"
 			}
 		}
 	}

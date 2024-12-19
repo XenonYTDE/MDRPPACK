@@ -17,6 +17,10 @@ ideas = {
                 stability_factor = 0.10
                 war_support_factor = 0.10
             }
+
+            ai_will_do = {
+                base = 50
+            }
             
             cancel_if_invalid = yes
         }
@@ -39,6 +43,10 @@ ideas = {
                 resistance_growth = -0.20
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -59,6 +67,10 @@ ideas = {
                 global_building_slots_factor = 0.10
                 resistance_target = -0.10
                 resistance_decay = 0.20
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -87,6 +99,10 @@ ideas = {
                 #required_garrison_factor #= #-0.10
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -105,14 +121,14 @@ ideas = {
                 industrial_capacity_dockyard = 2
                 conscription_factor = 0.20
                 production_speed_buildings_factor = 3
-                #production_speed_infrastructure_factor #= #2
-                #production_speed_bunker_factor = #3
-                #production_speed_coastal_bunker_factor #= #3
-                #production_speed_anti_air_building_factor #= #3
-                #production_speed_radar_station_factor #= #3
                 special_forces_min = 50
-                monthly_population = 5
+                monthly_population = 10
+                local_resources_factor = 0.5
 
+            }
+
+            ai_will_do = {
+                base = 150
             }
 
             cancel_if_invalid = yes
@@ -133,14 +149,13 @@ ideas = {
                 industrial_capacity_dockyard = 1.0
                 conscription_factor = 0.15
                 production_speed_buildings_factor = 2.0
-                #production_speed_infrastructure_factor #= #2
-                #production_speed_bunker_factor = #3
-                #production_speed_coastal_bunker_factor #= #3
-                #production_speed_anti_air_building_factor #= #3
-                #production_speed_radar_station_factor #= #3
                 special_forces_min = 25
-                monthly_population = 3
+                monthly_population = 5
+                local_resources_factor = 0.20
+            }
 
+            ai_will_do = {
+                base = 150
             }
 
             cancel_if_invalid = yes

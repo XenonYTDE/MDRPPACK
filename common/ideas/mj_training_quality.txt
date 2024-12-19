@@ -26,6 +26,11 @@ ideas = {
                 minimum_training_level = 0.20
                 max_command_power = -50
             }
+
+            ai_will_do = {
+                base = 100
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -51,24 +56,8 @@ ideas = {
             }
 
             ai_will_do = {
-                base = 30
-
-                modifier = {
-                    is_major = yes
-                    add = 50
-                }
-
-                modifier = {
-                    has_idea = military_head
-                    add = 40
-                }
-
-                modifier = {
-                    is_major = no
-                    ai_wants_divisions > 5
-                    add = -10
-                }
-              }
+                base = 75
+            }
 
               cancel_if_invalid = yes
         }
@@ -99,6 +88,10 @@ ideas = {
                        enemies_strength_ratio > 0.20
                        add = 40
                     }
+                }
+
+                ai_will_do = {
+                    base = 75
                 }
 
                 cancel_if_invalid = yes
@@ -139,34 +132,7 @@ ideas = {
                 }
 
                 ai_will_do = {
-                    base = 20
-
-                    modifier = {
-                        has_war = yes
-                        enemies_strength_ratio > 0.40
-                        add = 40
-                    }
-
-                    modifier = {
-                        is_major = no
-                        surrender_progress > 0.50
-                        casualties_k > 300
-                        add = 100
-                    }
-
-                    modifier = {
-                        is_major = yes
-                        surrender_progress > 0.30
-                        casualties_k > 1000
-                        add = 60
-                    }
-
-                    modifier = {
-                        is_major = yes
-                        surrender_progress > 0.80
-                        casualties_k > 3000
-                        add = 400
-                    }
+                    base = 25
                 }
 
                 cancel_if_invalid = yes
@@ -202,28 +168,7 @@ ideas = {
                 }
 
                 ai_will_do = {
-                    base = 0
-                    
-                    modifier = {
-                        is_major = no
-                        surrender_progress > 0.90
-                        casualties_k > 100
-                        add = 100
-                        
-                    }
-
-                    modifier = {
-                        is_major = yes
-                        surrender_progress > 90
-                        casualties_k > 4000
-                        add = 500
-                    }
-
-                    modifier = {
-                        enemies_strength_ratio > 2
-                        add = 100
-                    }
-
+                    base = 10
                 }
 
                 cancel_if_invalid = yes

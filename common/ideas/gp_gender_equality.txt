@@ -28,6 +28,10 @@ ideas = {
 
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -50,6 +54,10 @@ ideas = {
                 base_migration_rate_value = 0.15
              }
 
+             ai_will_do = {
+                base = 50
+            }
+
              cancel_if_invalid = yes
         }
 
@@ -67,6 +75,10 @@ ideas = {
                 monthly_population = 0.05
                 stability_factor = 0.02
                 industrial_capacity_factory = 0.025
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes
@@ -91,6 +103,10 @@ ideas = {
                 production_factory_efficiency_gain_factor = -0.05
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -110,6 +126,10 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.15
                 production_factory_efficiency_gain_factor = -0.10
 
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
             cancel_if_invalid = yes

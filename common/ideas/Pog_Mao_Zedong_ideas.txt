@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+	mao_zedong_thought = {
+		allowed = { original_tag = CHI }
+		picture = communism5
+		cancel = {
+			NOT = { has_government = communism }
+		}
+		modifier = {
+			stability_factor = 0.02
+			communism_drift = 0.01
+		}
+	}
+	mao_zedong_thought2 = {
+		allowed = { original_tag = CHI }
+		picture = communism5
+		cancel = {
+			NOT = { has_government = communism }
+		}
+		modifier = {
+			stability_factor = 0.05
+			communism_drift = 0.02
+			communism_acceptance = 25
+			justify_war_goal_time = -0.10
+		}
+	}
+	mao_zedong_thought3 = {
+		allowed = { original_tag = CHI }
+		picture = communism5
+		cancel = {
+			NOT = { has_government = communism }
+		}
+		modifier = {
+			stability_factor = 0.04
+			communism_drift = 0.04
+			communism_acceptance = 25
+			production_speed_arms_factory_factor = 0.10
+			justify_war_goal_time = -0.20
+		}
+		}
+	}
+}

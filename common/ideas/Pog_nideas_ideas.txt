@@ -28,7 +28,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				Laws Cost -15%
 				hidden_modifier = {
 					economic_cycles_cost_factor = -0.15
 					corruption_cost_factor = -0.15
@@ -161,7 +160,6 @@ ideas = {
 				democratic_drift = 0.05
 				defensive_war_stability_factor = 0.2
 				stability_weekly = 0.001
-				Laws Cost -15%
 
 				#political_power_gain = 0.5
 				compliance_growth = 0.15
@@ -237,7 +235,6 @@ ideas = {
 				democratic_drift = -0.05
 				offensive_war_stability_factor = 0.2
 				war_support_weekly = 0.001
-				Laws Cost -15%
 				
 				#political_power_gain = 0.5
 				resistance_damage_to_garrison = -0.2
@@ -439,7 +436,7 @@ ideas = {
 
 			modifier = {
 				trade_opinion_factor = 0.25
-				custom_modifier_tooltip = NIDEAS_IDEA_GROUP2_TRADE_AGREEMENT_COST_MODIFIER
+				# custom_modifier_tooltip = NIDEAS_IDEA_GROUP2_TRADE_AGREEMENT_COST_MODIFIER
 				
 				research_sharing_per_country_bonus_factor = 1.0
 				
@@ -447,7 +444,7 @@ ideas = {
 				
 				extra_trade_to_overlord_factor = 0.25
 				autonomy_gain_trade_factor = 0.5
-				custom_modifier_tooltip = NIDEAS_IDEA_GROUP2_DEFENSE_AGREEMENT_COST_MODIFIER
+				# custom_modifier_tooltip = NIDEAS_IDEA_GROUP2_DEFENSE_AGREEMENT_COST_MODIFIER
 				
 				justify_war_goal_time = -0.25
 				civilian_intel_to_others = -10
@@ -1392,8 +1389,6 @@ ideas = {
 			modifier = {
 				experience_gain_navy = 0.2
 				command_power_gain = 0.2
-				
-				theorist_cost_factor = -0.11
 				navy_chief_cost_factor = -0.33
 				high_command_cost_factor = -0.11
 				#max_command_power = -20

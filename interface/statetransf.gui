@@ -176,7 +176,7 @@ guiTypes = {
 			name = "award_states" 
 			position = {x=193 y=20}	
 			shortcut = "ctrl+t"
-			spriteType = "GFX_goal_generic_demand_territory"
+			spriteType = "GFX_global_diplorequest_icons"
 			pdx_tooltip = "AWARD_STATES"
 			pdx_tooltip_delayed = "AWARD_STATES_DELAYED"
 		}

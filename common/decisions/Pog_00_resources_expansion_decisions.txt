@@ -48,6 +48,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 49.9 }
+				add = 50
+			}
+		}
+
 	}
 
 	deposit_discovery2 = {
@@ -98,6 +108,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 49.9 }
+				add = 50
+			}
+		}
+
 	}
 
 	small_oil_expansion = {
@@ -141,6 +161,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 19.9 }
+				add = 50
+			}
+		}
+
 	}
 
 	medium_oil_expansion = {
@@ -185,6 +215,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 49.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	huge_oil_expansion = {
@@ -229,6 +269,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 99.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	massive_oil_expansion = {
@@ -273,6 +323,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 199.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	small_aluminium_expansion = {
@@ -316,6 +376,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 19.9 }
+				add = 50
+		}
+	}
+	
 	}
 
 	medium_aluminium_expansion = {
@@ -360,6 +430,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 49.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	huge_aluminium_expansion = {
@@ -404,6 +484,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 99.9 }
+				add = 50
+		}
+	}
+	
 	}
 
 	massive_aluminium_expansion = {
@@ -448,6 +538,16 @@ resources_expansion_category = {
 			}
 		  }
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 199.9 }
+				add = 50
+			}
+		}
+		
 	  }  
 
 	small_rubber_expansion = {
@@ -491,6 +591,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 19.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	medium_rubber_expansion = {
@@ -535,6 +645,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 49.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	huge_rubber_expansion = {
@@ -579,6 +699,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 99.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	massive_rubber_expansion = {
@@ -623,6 +753,16 @@ resources_expansion_category = {
 			}
 		  }
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 199.9 }
+				add = 50
+			}
+		}
+		
 	  }
 
 	small_tungsten_expansion = {
@@ -666,6 +806,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 19.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	medium_tungsten_expansion = {
@@ -710,6 +860,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 49.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	huge_tungsten_expansion = {
@@ -753,6 +913,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 99.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	massive_tungsten_expansion = {
@@ -796,6 +966,16 @@ resources_expansion_category = {
 			}
 		  }
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 199.9 }
+				add = 50
+			}
+		}
+		
 	  }
 
 	small_steel_expansion = {
@@ -839,6 +1019,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 19.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	medium_steel_expansion = {
@@ -882,6 +1072,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 49.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	huge_steel_expansion = {
@@ -925,6 +1125,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				check_variable = { treasury > 99.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	massive_steel_expansion = {
@@ -968,6 +1178,16 @@ resources_expansion_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 99.9 }
+				add = 50
+			}
+		}
+		
 	}
 
 	small_chromium_expansion = {
@@ -1011,6 +1231,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 19.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	medium_chromium_expansion = {
@@ -1054,6 +1284,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 49.9 }
+			add = 50
+		}
+	}
+	
 	}
 
 	huge_chromium_expansion = {
@@ -1098,6 +1338,16 @@ resources_expansion_category = {
 	      }
 	    }
 	  }
+
+	  ai_will_do = {
+		base = 0
+
+		modifier = {
+			check_variable = { treasury > 99.9 }
+				add = 50
+		}
+	}
+	
 	}
 
 	massive_chromium_expansion = {
@@ -1142,5 +1392,15 @@ resources_expansion_category = {
 			}
 		  }
 		}
+
+		ai_will_do = {
+			base = 0
+	
+			modifier = {
+				check_variable = { treasury > 199.9 }
+				add = 50
+			}
+		}
+		
 	  }
 }

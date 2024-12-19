@@ -19,6 +19,21 @@ ideas = {
                 production_speed_anti_air_building_factor = 0.20
             }
 
+            ai_will_do = { 
+                base = 50
+
+                modifier = {
+                    OR = {
+                        has_idea = defence_05
+                        has_idea = defence_06
+                        has_idea = defence_07
+                        has_idea = defence_08
+                        has_idea = defence_09
+                    }
+                add = 50
+                }
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -35,6 +50,10 @@ ideas = {
                 production_speed_industrial_complex_factor = 0.10
                 production_speed_supply_node_factor = 0.10
                 production_speed_rail_way_factor = 0.10
+            }
+
+            ai_will_do = {
+                base = 75
             }
 
             cancel_if_invalid = yes
@@ -63,6 +82,19 @@ ideas = {
 
             research_bonus = { industry = 0.05 }
 
+            ai_will_do = {
+                base = 50
+                
+                modifier = {
+                    has_idea = foreign_investments_encouraged
+                    add = 25
+                }
+                modifier = {
+                    has_idea = foreign_investments_allowed
+                    add = 10
+                }
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -79,6 +111,10 @@ ideas = {
                 production_speed_nuclear_reactor_factor = 0.20
                 production_speed_rocket_site_factor = 0.50
                 production_speed_radar_station_factor = 0.50
+            }
+
+            ai_will_do = {
+                base = 60
             }
 
             cancel_if_invalid = yes

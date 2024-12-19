@@ -182,7 +182,7 @@ on_actions = {
 						option = USA_STAB
 					}
 				}
-				set_country_flag = USA_STAB
+				USA = { set_country_flag = USA_STAB }
 			}
 			if = {
 				limit = {
@@ -191,7 +191,7 @@ on_actions = {
 						option = SOV_STAB
 					}
 				}
-				set_country_flag = SOV_STAB
+				SOV = { set_country_flag = SOV_STAB }
 			}
 			if = {
 				limit = {
@@ -200,7 +200,7 @@ on_actions = {
 						option = ENG_STAB
 					}
 				}
-				set_country_flag = ENG_STAB
+				ENG = { set_country_flag = ENG_STAB }
 			}
 			if = {
 				limit = {
@@ -209,7 +209,7 @@ on_actions = {
 						option = FRA_STAB
 					}
 				}
-				set_country_flag = FRA_STAB
+				FRA = { set_country_flag = FRA_STAB }
 			}
 			if = {
 				limit = {
@@ -218,7 +218,7 @@ on_actions = {
 						option = CHI_STAB
 					}
 				}
-				set_country_flag = CHI_STAB
+				CHI = { set_country_flag = CHI_STAB }
 			}
 			# create LoN
 			random_country = {

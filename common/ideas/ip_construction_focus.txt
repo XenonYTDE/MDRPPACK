@@ -19,6 +19,10 @@ ideas = {
 		        production_speed_offices_factor = 0.25
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
             cancel_if_invalid = yes
         }
 
@@ -37,6 +41,10 @@ ideas = {
                 production_speed_rocket_site_factor = 0.35
             }
 
+            ai_will_do = {
+                base = 50
+            }
+
         }
 
         defense_focus = {
@@ -52,7 +60,11 @@ ideas = {
                 production_speed_bunker_factor = 0.35
                 production_speed_coastal_bunker_factor = 0.35
                 production_speed_anti_air_building_factor = 0.35
-                production_speed_stronghold_network = 0.25
+                production_speed_stronghold_network_factor = 0.25
+            }
+
+            ai_will_do = {
+                base = 50
             }
     
         }
@@ -78,6 +90,10 @@ ideas = {
                 production_speed_fossil_powerplant_factor = 0.30
                 production_speed_nuclear_reactor_factor = 0.30
                 production_speed_fuel_silo_factor = 0.35
+            }
+
+            ai_will_do = {
+                base = 50
             }
 
         }
