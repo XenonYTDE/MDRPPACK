@@ -18608,5 +18608,86 @@ focus_tree = {
 			base = 1
 		}
 	}
+	
+	# Mao Zedong
+	focus = {
+		id = POG_Spirit_of_Mao_Zedong
+		icon = maoism
+
+		x = 0
+		y = 15
+		relative_position_id = CHI_Chairman_Jiang_Reign
+		cost = 8.58
+		prerequisite = { focus = CHI_Remove_Term_Limits }
+		prerequisite = { focus = CHI_New_Era_PLA }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus POG_Spirit_of_Mao_Zedong executed"
+			create_country_leader = {
+				name = "Spirit of Mao Zedong"
+				desc = POG_MAO_ZEDONG_LEADER_DESC
+				picture = "Pog_Mao_Zedong.dds"
+				expire = "2099.1.1"
+				ideology = Communist-State
+				traits = {
+					emerging_Communist-State
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = POG_Mao_Zedong_Thought_I
+		icon = peoples_republic_of_china
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_Nanjie_Model
+		cost = 5
+		available = { has_completed_focus = POG_Spirit_of_Mao_Zedong }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus POG_Mao_Zedong_Thought_I"
+			add_ideas = mao_zedong_thought
+		}
+	}
+
+	focus = {
+		id = POG_Mao_Zedong_Thought_II
+		icon = communist_party_of_china
+
+		x = 0
+		y = 3
+		relative_position_id = CHI_Nanjie_Model
+		cost = 5
+		prerequisite = { focus = POG_Mao_Zedong_Thought_I }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus POG_Mao_Zedong_Thought_II"
+			remove_ideas = mao_zedong_thought
+			add_ideas = mao_zedong_thought2
+		}
+	}
+
+	focus = {
+		id = POG_Mao_Zedong_Thought_III
+		icon = flames_of_rebellion
+
+		x = 0
+		y = 4
+		relative_position_id = CHI_Nanjie_Model
+		cost = 5
+		prerequisite = { focus = POG_Mao_Zedong_Thought_II }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus POG_Mao_Zedong_Thought_III"
+			remove_ideas = mao_zedong_thought2
+			add_ideas = mao_zedong_thought3
+		}
+	}
 
 }
