@@ -16093,10 +16093,8 @@ focus_tree = {
 			}
 			newline = yes
 			set_cosmetic_tag = GER_fourth_reich
-			
-			news_event = {
-				id = news.556
-				hours = 6
+			country_event = {
+				id = Germany.419
 			}
 		}
 
