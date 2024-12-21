@@ -517,7 +517,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = {
+					limit = { 
 						original_tag = ISR
 						is_ai = no
 					}
