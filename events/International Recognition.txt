@@ -39,7 +39,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = -100
 		}
@@ -82,7 +82,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = 100
 		}
@@ -126,7 +126,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = -100
 		}
@@ -170,7 +170,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = 100
 		}
@@ -214,7 +214,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = 100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = 100
 		}
@@ -258,7 +258,7 @@ news_event = {
 			limit = { FROM = { has_idea = superpower } }
 			add_political_power = -100
 		}
-		else_if = {
+		else_if = { # DO NOT MERGE FROM BASE MD
 			limit = { FROM = { has_idea = pog_hegemony } }
 			add_political_power = -100
 		}

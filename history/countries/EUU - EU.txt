@@ -221,7 +221,7 @@
 	set_variable = { WAS.eurosceptic = 0 }
 	set_variable = { var = WAS.eurosceptic max = 1 }
 	set_variable = { var = WAS.eurosceptic min = 0 }
-	#SOV
+	#SOV # DO NOT MERGE FROM BASE MD
 	set_variable = { SOV.eurosceptic = 0.90 }
 	set_variable = { var = SOV.eurosceptic max = 1}
 	set_variable = { var = SOV.eurosceptic min = 0 }
@@ -313,8 +313,8 @@
 	ADO = { set_country_flag = EU_potential }
 	HLS = { set_country_flag = EU_potential }
 	SMA = { set_country_flag = EU_potential }
-	SOV = { set_country_flag = EU_potential }
-	LIC = { set_country_flag = EU_potential }
+	SOV = { set_country_flag = EU_potential } # DO NOT MERGE FROM BASE MD
+	LIC = { set_country_flag = EU_potential } # DO NOT MERGE FROM BASE MD
 
 	set_country_flag = POTEF_nominee_0
 	set_country_flag = POTEF_nominee_1

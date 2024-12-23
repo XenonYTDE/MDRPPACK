@@ -25,11 +25,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {
@@ -76,11 +76,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {
@@ -127,11 +127,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {
@@ -178,11 +178,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {
@@ -229,11 +229,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {
@@ -280,11 +280,11 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 1
 	}
 
 	ai_overlord_wants_garrison = {

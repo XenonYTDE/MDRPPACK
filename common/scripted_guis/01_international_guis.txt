@@ -1245,7 +1245,7 @@ scripted_gui = {
 				if = {
 					limit = {
 						OR = {
-							has_idea = pog_hegemony
+							has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							has_idea = superpower
 							has_idea = great_power
 							has_idea = large_power
@@ -3201,7 +3201,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3233,7 +3233,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3265,7 +3265,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3340,7 +3340,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3379,7 +3379,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3411,7 +3411,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3444,7 +3444,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3516,7 +3516,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3592,7 +3592,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3783,7 +3783,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3816,7 +3816,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -3900,7 +3900,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -4026,7 +4026,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -4084,7 +4084,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -4142,7 +4142,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {
@@ -4200,7 +4200,7 @@ scripted_gui = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 						add_timed_idea = {

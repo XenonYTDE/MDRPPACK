@@ -1343,7 +1343,7 @@ defined_text = {
 		localization_key = SLV_Western_Autocracy_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Western_Autocracy_PG
 	text = {
 		trigger = {
@@ -1840,7 +1840,7 @@ defined_text = {
 		localization_key = SLV_conservatism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_conservatism_PG
 	text = {
 		trigger = {
@@ -2337,7 +2337,7 @@ defined_text = {
 		localization_key = SLV_liberalism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_liberalism_PG
 	text = {
 		trigger = {
@@ -2834,7 +2834,7 @@ defined_text = {
 		localization_key = SLV_socialism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_socialism_PG
 	text = {
 		trigger = {
@@ -3331,7 +3331,7 @@ defined_text = {
 		localization_key = SLV_Communist-State_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Communist-State_PG
 	text = {
 		trigger = {
@@ -3828,7 +3828,7 @@ defined_text = {
 		localization_key = SLV_anarchist_communism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_anarchist_communism_PG
 	text = {
 		trigger = {
@@ -4304,7 +4304,7 @@ defined_text = {
 		localization_key = SLV_Conservative_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Conservative_PG
 	text = {
 		trigger = {
@@ -4801,7 +4801,7 @@ defined_text = {
 		localization_key = SLV_Autocracy_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Autocracy_PG
 	text = {
 		trigger = {
@@ -5298,7 +5298,7 @@ defined_text = {
 		localization_key = SLV_Mod_Vilayat_e_Faqih_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Mod_Vilayat_e_Faqih_PG
 	text = {
 		trigger = {
@@ -5795,7 +5795,7 @@ defined_text = {
 		localization_key = SLV_Vilayat_e_Faqih_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Vilayat_e_Faqih_PG
 	text = {
 		trigger = {
@@ -6292,7 +6292,7 @@ defined_text = {
 		localization_key = SLV_Kingdom_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Kingdom_PG
 	text = {
 		trigger = {
@@ -6777,7 +6777,7 @@ defined_text = {
 		localization_key = SLV_Caliphate_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Caliphate_PG
 	text = { trigger = { check_variable = { SOV.MEP_Caliphate > 0 } }
 		localization_key = SOV_Caliphate_loc_key
@@ -7262,7 +7262,7 @@ defined_text = {
 		localization_key = SLV_Neutral_Muslim_Brotherhood_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_Muslim_Brotherhood_PG
 	text = {
 		trigger = {
@@ -7759,7 +7759,7 @@ defined_text = {
 		localization_key = SLV_Neutral_Autocracy_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_Autocracy_PG
 	text = {
 		trigger = {
@@ -8256,7 +8256,7 @@ defined_text = {
 		localization_key = SLV_Neutral_conservatism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_conservatism_PG
 	text = {
 		trigger = {
@@ -8753,7 +8753,7 @@ defined_text = {
 		localization_key = SLV_oligarchism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_oligarchism_PG
 	text = {
 		trigger = {
@@ -9250,7 +9250,7 @@ defined_text = {
 		localization_key = SLV_Neutral_Libertarian_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_Libertarian_PG
 	text = {
 		trigger = {
@@ -9747,7 +9747,7 @@ defined_text = {
 		localization_key = SLV_Neutral_green_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_green_PG
 	text = {
 		trigger = {
@@ -10244,7 +10244,7 @@ defined_text = {
 		localization_key = SLV_neutral_Social_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_neutral_Social_PG
 	text = {
 		trigger = {
@@ -10741,7 +10741,7 @@ defined_text = {
 		localization_key = SLV_Neutral_Communism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Neutral_Communism_PG
 	text = {
 		trigger = {
@@ -11238,7 +11238,7 @@ defined_text = {
 		localization_key = SLV_Nat_Populism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Nat_Populism_PG
 	text = {
 		trigger = {
@@ -11735,7 +11735,7 @@ defined_text = {
 		localization_key = SLV_Nat_Fascism_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Nat_Fascism_PG
 	text = {
 		trigger = {
@@ -12232,7 +12232,7 @@ defined_text = {
 		localization_key = SLV_Nat_Autocracy_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD 
 	name = SOV_Nat_Autocracy_PG
 	text = {
 		trigger = {
@@ -12729,7 +12729,7 @@ defined_text = {
 		localization_key = SLV_Monarchist_loc_key
 	}
 }
-defined_text = {
+defined_text = { # DO NOT MERGE FROM BASE MD
 	name = SOV_Monarchist_PG
 	text = {
 		trigger = {
@@ -13329,17 +13329,17 @@ defined_text = {
 	}
 	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
 		localization_key = EU701
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { has_country_flag = focus_EU611_EP_agenda }
 		localization_key = EU611
 	}
 
 	### EU Budget
 	text = { trigger = { has_country_flag = focus_EU_mff_EP_agenda }
-		localization_key = EU_mff
+		localization_key = EU998
 	}
 	text = { trigger = { has_country_flag = focus_EU_budget_EP_agenda }
-		localization_key = EU_budget
+		localization_key = EU999
 	}
 }
 
@@ -13476,17 +13476,17 @@ defined_text = {
 	}
 	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { has_country_flag = focus_EU611_EP_agenda }
 		localization_key = EU_show_available_611_loc_key
 	}
 
 	### EU Budget
 	text = { trigger = { has_country_flag = focus_EU_mff_EP_agenda }
-		localization_key = EU_mff
+		localization_key = EU_show_available_998_loc_key
 	}
 	text = { trigger = { has_country_flag = focus_EU_budget_EP_agenda }
-		localization_key = EU_budget
+		localization_key = EU_show_available_999_loc_key
 	}
 }
 

@@ -3054,7 +3054,7 @@ country_event = {
 		}
 	}
 	
-	option = {
+	option = { # DO NOT MERGE FROM BASE MD
 		name = Germany.218.c
 		log = "[GetDateText]: [This.GetName]: Germany.218.c executed"
 		set_cosmetic_tag = GER_fourth_reich
@@ -3079,7 +3079,7 @@ country_event = {
 		ai_chance = {
 			base = 5
 		}
-	}
+	} # DO NOT MERGE FROM BASE MD
 
 	option = {
 		name = Germany.218.d1
@@ -3242,11 +3242,11 @@ country_event = {
 		}
 		GER = {
 			annex_country = {
-				target = FRA
+				target = FROM
 				transfer_troops = yes
 			}
 		}
-		FRA = { every_core_state = { add_core_of = GER } }
+		FROM = { every_core_state = { add_core_of = GER } }
 		ai_chance = {
 			base = 5
 			modifier = {

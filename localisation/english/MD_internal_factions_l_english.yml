@@ -759,6 +759,6 @@
  internal_factions_events.41.b: "Allow Limited Consul"
  internal_factions_events.41.c: "Deny the Request"
 
-# Poggers Additional Decisions
+ # Poggers Additional Decisions # DO NOT MERGE FROM BASE MD
  cut_taxes_industry_decision: "Cut Taxes on Industries"
  raise_wages_small_medium_business_owners_decision: "Raise Business Wages"

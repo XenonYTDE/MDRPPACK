@@ -1590,7 +1590,7 @@ defined_text = {
 defined_text = {
 	name = maximum_state_owned_investment_projects
 
-	text = {
+	text = { # DO NOT MERGE FROM BASE MD
 		trigger = {
 			ROOT = { has_idea = pog_hegemony }
 		}

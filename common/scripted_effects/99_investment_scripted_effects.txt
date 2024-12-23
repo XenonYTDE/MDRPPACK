@@ -1308,7 +1308,7 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = pog_hegemony
+				has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 				has_idea = superpower
 				has_idea = great_power
 				has_idea = large_power
@@ -1325,7 +1325,7 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = pog_hegemony
+				has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 				has_idea = superpower
 				has_idea = great_power
 				has_idea = large_power
@@ -1341,7 +1341,7 @@ state_owned_concurrent_investment_limit_implement = {
 		limit = {
 			check_variable = { b = 0 }
 			OR = {
-				has_idea = pog_hegemony
+				has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 				has_idea = superpower
 				has_idea = great_power
 			}
@@ -1355,10 +1355,10 @@ state_owned_concurrent_investment_limit_implement = {
 	if = {
 		limit = {
 			check_variable = { b = 0 }
-			OR = {
+			OR = { # DO NOT MERGE FROM BASE MD
 				has_idea = superpower
-				has_idea = pog_hegemony
-			}
+				has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
+			} 
 			NOT = { has_country_flag = state_owned_investments_project_six }
 		}
 		set_country_flag = { flag = state_owned_investments_project_six value = 1 days = 120 }

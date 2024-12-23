@@ -55,14 +55,14 @@ scripted_gui = {
 		ai_enabled = { NOT = { has_global_flag = GAME_RULE_eu_disabled } }
 		ai_check = {
 			OR = {
-				has_idea = pog_hegemony
+				has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 				has_idea = superpower
 				has_idea = great_power
 				is_in_array = { global.EU_member = THIS.id }
 			}
 		}
 		# Test Interval
-		ai_test_interval = 168
+		ai_test_interval = 168 # DO NOT MERGE FROM BASE MD
 		ai_max_weight_taken_per_test = 1
 
 		properties = {
@@ -600,6 +600,7 @@ scripted_gui = {
 						limit = { is_ai = yes }
 						OR = {
 							check_variable = { THIS.eurosceptic > 0.60 }
+							# DO NOT MERGE FROM BASE MD
 						}
 					}
 				}
@@ -3237,6 +3238,10 @@ scripted_gui = {
 						add = 10
 						gov_is_EUexiteer = yes
 					}
+					# DO NOT MERGE FROM BASE MD
+					# DO NOT MERGE FROM BASE MD
+					# DO NOT MERGE FROM BASE MD
+					# DO NOT MERGE FROM BASE MD
 					modifier = {
 						add = -25
 						has_government = democratic
@@ -3266,6 +3271,7 @@ scripted_gui = {
 								check_variable = { THIS.eurosceptic < 0.50 }
 								has_elections = yes
 							}
+							# DO NOT MERGE FROM BASE MD
 						}
 					}
 				}
@@ -4580,7 +4586,7 @@ scripted_gui = {
 				influence_on_all_other_EU_members_3_percent = yes
 			}
 		}
-		ai_test_interval = 168 # 7 Days
+		ai_test_interval = 168 # 7 Days # DO NOT MERGE FROM BASE MD
 		ai_max_weight_taken_per_test = 1
 
 		triggers = {
@@ -4613,6 +4619,10 @@ scripted_gui = {
 					tooltip = no_council_vote_tt
 					check_variable = { global.current_active_vote_disp = 0 }
 				}
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				custom_trigger_tooltip = {
 					tooltip = no_high_sceptics_tt
 					NOT = {
@@ -4642,6 +4652,10 @@ scripted_gui = {
 						}
 					}
 				}
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				THIS = { is_ai = yes }
 				ROOT = {
 					set_temp_variable = { base_pp_cost = 300 }
@@ -5097,6 +5111,10 @@ scripted_gui = {
 					tooltip = no_active_agenda
 					check_variable = { global.current_active_agenda_disp = 0 }
 				}
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				if = { limit = { check_variable = { v = 002 } }
 					has_political_power > 100
 					custom_trigger_tooltip = {
@@ -5461,7 +5479,7 @@ scripted_gui = {
 						NOT = { has_global_flag = considering_current_canidates }
 					}
 					
-				}
+				} # DO NOT MERGE FROM BASE MD
 				else_if = {
 					limit = { check_variable = { v = 701 } }
 					has_political_power > 300
@@ -5644,7 +5662,7 @@ scripted_gui = {
 				}
 				else_if = { limit = { check_variable = { v = 701 } }
 					hidden_effect = { add_political_power = -300 }
-				}
+				} # DO NOT MERGE FROM BASE MD
 				else_if = { limit = { check_variable = { v = 611 } }
 					hidden_effect = { add_political_power = -300 }
 				}

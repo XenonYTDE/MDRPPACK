@@ -1691,6 +1691,7 @@ ideas = {
 					threat > 0.4
 					any_country = {
 						is_justifying_wargoal_against = ROOT # Experimenting on THIS vs ROOT
+						# DO NOT MERGE FROM BASE MD
 					}
 				}
 				if = {
@@ -1727,15 +1728,15 @@ ideas = {
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				stability_factor = -0.40
-				production_speed_industrial_complex_factor = -0.10
-				production_speed_offices_factor = -0.10
-				production_speed_buildings_factor = -0.05
+				production_speed_industrial_complex_factor = -0.10 # DO NOT MERGE FROM BASE MD
+				production_speed_offices_factor = -0.10 # DO NOT MERGE FROM BASE MD
+				production_speed_buildings_factor = -0.05 # DO NOT MERGE FROM BASE MD
 				war_stability_factor = 0.40
 				mil_facs_worker_requirement_modifier = 1.25
 				military_factories_productivity = 1.25
 				dockyard_productivity = 1.25
 				total_workforce_modifier = -0.125 #mobilized people can't work
-				return_on_investment_modifier = -0.02
+				return_on_investment_modifier = -0.02 # DO NOT MERGE FROM BASE MD
 				custom_modifier_tooltip = the_military_add_30_tt
 			}
 
@@ -1882,9 +1883,10 @@ ideas = {
 				}
 				OR = {
 					has_war = yes
-					threat > 0.5
+					threat > 0.5 # DO NOT MERGE FROM BASE MD
 					any_country = {
 						is_justifying_wargoal_against = THIS # 2x stronger than THIS
+						# DO NOT MERGE FROM BASE MD
 					}
 				}
 				if = {
@@ -1911,16 +1913,16 @@ ideas = {
 				industrial_capacity_dockyard = 1.0
 				production_speed_arms_factory_factor = 0.4
 				production_speed_dockyard_factor = 0.4
-				stability_factor = -0.50
+				stability_factor = -0.45
 				war_stability_factor = 0.45
-				production_speed_industrial_complex_factor = -0.25
-				production_speed_offices_factor = -0.25
-				production_speed_buildings_factor = -0.10
+				production_speed_industrial_complex_factor = -0.25 # DO NOT MERGE FROM BASE MD
+				production_speed_offices_factor = -0.25 # DO NOT MERGE FROM BASE MD
+				production_speed_buildings_factor = -0.10 # DO NOT MERGE FROM BASE MD
 				mil_facs_worker_requirement_modifier = 2
 				military_factories_productivity = 2
 				dockyard_productivity = 2
 				total_workforce_modifier = -0.2 #mobilized people can't work
-				return_on_investment_modifier = -0.03
+				return_on_investment_modifier = -0.03 # DO NOT MERGE FROM BASE MD
 				custom_modifier_tooltip = the_military_add_35_tt
 			}
 
@@ -2006,9 +2008,26 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea no_military"
 				custom_effect_tooltip = no_military_TT
 				ingame_update_setup = yes
-				log = "[GetDateText]: [Root.GetName]: add idea no_military"
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 			}
 			available = {
 				if = {
@@ -2029,7 +2048,7 @@ ideas = {
 				army_attack_factor = -0.9
 				army_defence_factor = -0.9
 				personnel_cost_multiplier_modifier = 1.0
-				enemy_justify_war_goal_time = 0.5
+				enemy_justify_war_goal_time = 0.5 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -2193,6 +2212,10 @@ ideas = {
 			level = 2
 
 			available = {
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				if = {
 					limit = {
 						OR = {
@@ -2304,6 +2327,10 @@ ideas = {
 			level = 1
 
 			available = {
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				if = {
 					limit = {
 						OR = {
@@ -2416,16 +2443,16 @@ ideas = {
 
 		no_women_in_military = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea no_women_in_military" }
-
+			# DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
 
 			available = {
+				# DO NOT MERGE FROM BASE MD
 				NOT = {
 					has_idea = non_combat_roles
 					has_idea = support_roles
 					has_idea = equal_service
 				}
-
 				if = {
 					limit = {
 						OR = {
@@ -2476,11 +2503,11 @@ ideas = {
 
 		volunteer_women = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea volunteer_women" }
-
+			# DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
 
 			available = {
-
+				# DO NOT MERGE FROM BASE MD
 				NOT = {
 					has_idea = service_prohibited
 				}
@@ -2548,17 +2575,20 @@ ideas = {
 
 		drafted_women = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea drafted_women" }
-
+			# DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
 			cancel_if_invalid = no
 
 			available = {
-
+				# DO NOT MERGE FROM BASE MD
 				NOT = {
 					has_idea = service_prohibited
 				}
 				OR = {
 					has_idea = draft_army
+					# DO NOT MERGE FROM BASE MD
+					# DO NOT MERGE FROM BASE MD
+					# DO NOT MERGE FROM BASE MD
 				}
 				if = {
 					limit = {
@@ -2627,6 +2657,7 @@ ideas = {
 			available = {
 				NOT = {
 					has_idea = the_military
+					# DO NOT MERGE FROM BASE MD
 				}
 				if = {
 					limit = {
@@ -2653,9 +2684,9 @@ ideas = {
 				guarantee_tension = 0.60
 				join_faction_tension = 0.80
 				generate_wargoal_tension = 0.95
-				enemy_justify_war_goal_time = 0.5
-				army_core_defence_factor = 0.15
-				justify_war_goal_time = 0.5
+				enemy_justify_war_goal_time = 0.5 # DO NOT MERGE FROM BASE MD
+				army_core_defence_factor = 0.15 # DO NOT MERGE FROM BASE MD
+				justify_war_goal_time = 0.5 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -2709,8 +2740,8 @@ ideas = {
 				guarantee_tension = 0.40
 				join_faction_tension = 0.60
 				generate_wargoal_tension = 0.75
-				enemy_justify_war_goal_time = 0.25
-				justify_war_goal_time = 0.25
+				enemy_justify_war_goal_time = 0.25 # DO NOT MERGE FROM BASE MD
+				justify_war_goal_time = 0.25 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -2766,6 +2797,7 @@ ideas = {
 				guarantee_tension = 0.30
 				join_faction_tension = 0.45
 				generate_wargoal_tension = 0.55
+				embargo_threshold_factor = 0.6
 			}
 
 			ai_will_do = {
@@ -2816,6 +2848,7 @@ ideas = {
 				guarantee_tension = 0.20
 				join_faction_tension = 0.25
 				generate_wargoal_tension = 0.35
+				embargo_threshold_factor = 0.4
 			}
 
 			ai_will_do = {
@@ -2864,7 +2897,8 @@ ideas = {
 				guarantee_tension = 0.10
 				join_faction_tension = 0.15
 				generate_wargoal_tension = 0.15
-				enemy_justify_war_goal_time = -0.15
+				embargo_threshold_factor = 0.2
+				enemy_justify_war_goal_time = -0.15 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -2882,6 +2916,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			available = {
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
+				# DO NOT MERGE FROM BASE MD
 				if = {
 					limit = {
 						OR = {
@@ -2900,7 +2939,7 @@ ideas = {
 			cost = 200 #was 350
 			removal_cost = -1
 			level = 6
-
+			# DO NOT MERGE FROM BASE MD
 			modifier = {
 				lend_lease_tension = 0.00
 				send_volunteers_tension = 0.0
