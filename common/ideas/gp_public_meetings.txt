@@ -75,7 +75,7 @@ ideas = {
                 base = 50
 
                 modifier = {
-                    has_idea = nationalist
+                    has_government = nationalist
                     add = 25
                 }
             }

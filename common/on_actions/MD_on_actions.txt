@@ -100,7 +100,7 @@ on_actions = {
 						has_idea = large_power
 						has_idea = great_power
 						has_idea = superpower
-						has_idea = pog_hegemony
+						has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 					}
 
 					# wait for apc-ifv stuff to merge
@@ -539,7 +539,7 @@ on_actions = {
 									has_idea = large_power
 									has_idea = great_power
 									has_idea = superpower
-									has_idea = pog_hegemony
+									has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 								}
 							}
 

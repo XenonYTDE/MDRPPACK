@@ -70,7 +70,7 @@ shared_focus = {
 			original_tag = UKR
 			original_tag = VOJ
 			original_tag = WAS
-			original_tag = SOV
+			original_tag = SOV # DO NOT MERGE FROM BASE MD
 		}
 		NOT = { has_global_flag = GAME_RULE_eu_disabled }
 	}
@@ -5922,8 +5922,8 @@ shared_focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_TFV_AUTONOMY }
 	prerequisite = { focus = POTEF553 }
-	bypass = { any_of_scopes = { array = global.EU_member has_completed_focus = POTEF554 } 
-				SOV = { has_idea =  EU_member } }
+	bypass = { any_of_scopes = { array = global.EU_member has_completed_focus = POTEF554 } # DO NOT MERGE FROM BASE MD
+				SOV = { has_idea =  EU_member } } # DO NOT MERGE FROM BASE MD
 	available = {
 		has_idea = EU_president
 		custom_trigger_tooltip = {

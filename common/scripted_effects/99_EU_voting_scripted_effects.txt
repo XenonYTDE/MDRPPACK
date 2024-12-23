@@ -35,6 +35,16 @@ EU_update_AI_general_voting_modifiers = {
 	if = { limit = { check_variable = { var = THIS.eurosceptic value = 0.7 compare = greater_than_or_equals } }
 		add_to_temp_variable = { var = EU_AI_focus_modifier_yes_vote value = -20 }
 	}
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
+	# DO NOT MERGE FROM BASE MD
 
 	if = {
 		limit = { is_subject = yes }
@@ -1868,7 +1878,7 @@ focus_EU610_QMV_result = {
 		cleanup_european_union_voting_no = yes
 	}
 }
-
+# DO NOT MERGE FROM BASE MD
 #####################
 ####### EU701 #######
 #####################
@@ -1941,6 +1951,17 @@ cleanup_european_union_voting_yes = {
 			clr_country_flag = current_vote_influenced
 		}
 	}
+}
+
+emergency_vote_clear = {
+	set_variable = { global.EUU_recently_failed_vote = global.current_active_vote_disp }
+	set_variable = { global.current_active_vote_disp = 0 }
+	set_variable = { global.EU_active_vote_yes = 0 }
+	set_variable = { global.EU_active_Vote_no = 0 }
+	set_variable = { global.var_EUpopRatioNo = 0 }
+	set_variable = { global.var_EUpopRatioYes = 0 }
+	clear_array = global.EU_active_vote_supporters
+	clear_array = global.EU_active_vote_rejecters
 }
 
 cleanup_european_union_voting_no = {
@@ -2150,7 +2171,7 @@ EU_show_display_effects_for_law = {
 		else_if = { limit = { check_variable = { v = 610 } }
 			custom_effect_tooltip = tooltip_EU_parliament_focus_EU610_EP_agenda_additional
 		}
-		else_if = { limit = { check_variable = { v = 701 } } 
+		else_if = { limit = { check_variable = { v = 701 } } # DO NOT MERGE FROM BASE MD
 			custom_effect_tooltip = tooltip_EU_parliament_focus_EU701_EP_agenda_additional
 		}
 		else_if = { limit = { check_variable = { v = 611 } }

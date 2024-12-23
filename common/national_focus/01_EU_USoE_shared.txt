@@ -157,7 +157,7 @@ shared_focus = {
 		y = 25 #20
 		trigger = { tag = CZE }
 	}
-	offset = {
+	offset = { # DO NOT MERGE FROM BASE MD
 		x = -40 #15
 		y = 19 #20
 		trigger = { tag = SOV }
@@ -218,7 +218,7 @@ shared_focus = {
 			original_tag = UKR
 			original_tag = VOJ
 			original_tag = WAS
-			original_tag = SOV
+			original_tag = SOV # DO NOT MERGE FROM BASE MD
 		}
 		NOT = { has_global_flag = GAME_RULE_eu_disabled }
 	}
@@ -448,7 +448,7 @@ shared_focus = {
 	prerequisite = { focus = USoE100 }
 
 	available = { has_country_flag = USoE }
-
+	# DO NOT MERGE FROM BASE MD
 	bypass = {
 		SOV = {
 			has_idea =  EU_member 
@@ -1371,7 +1371,7 @@ shared_focus = {
 	prerequisite = { focus = USoE320 }
 	mutually_exclusive = { focus = USoE305 }
 	available = { has_country_flag = USoE }
-	bypass = {
+	bypass = { # DO NOT MERGE FROM BASE MD
 		SOV = {
 			has_idea =  EU_member 
 		}

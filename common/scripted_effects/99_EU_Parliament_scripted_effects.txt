@@ -3319,7 +3319,7 @@ set_PG_desire = {
 			set_variable = { PG_desire = -25 } ### gov_strong_resist
 		}
 	}
-	if = {
+	if = { # DO NOT MERGE FROM BASE MD
 		limit = {
 			has_country_flag = focus_EU701_EP_agenda
 		}
@@ -6249,7 +6249,7 @@ set_THIS_desire = {
 			set_variable = { THIS.focus_EU610_desire = -25 } ### gov_strong_resist
 		}
 	}
-	if = {
+	if = { # DO NOT MERGE FROM BASE MD
 		limit = {
 			has_country_flag = focus_EU701_EP_agenda
 		}

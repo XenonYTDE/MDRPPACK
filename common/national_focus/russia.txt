@@ -1670,7 +1670,7 @@ focus_tree = {
 		y = 3
 		available = {
 			emerging_reactionaries_are_in_power = yes
-			date > 2008.5.7
+			# DO NOT MERGE FROM BASE MD
 		}
 		relative_position_id = SOV_continue_etatist_rise
 		cost = 5
@@ -3956,9 +3956,9 @@ focus_tree = {
 				recalculate_party = yes
 				}
 				add_ideas = SOV_communist_opposition_idea_1
-				set_temp_variable = { modify_eurosceptic = -0.03 }
-				set_temp_variable = { modify_eurosceptic_target = ROOT }
-				eurosceptic_change = yes			}
+				set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+				set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+				eurosceptic_change = yes			} # DO NOT MERGE FROM BASE MD
 		ai_will_do = {
 			base = 155
 			modifier = {
@@ -7512,12 +7512,12 @@ focus_tree = {
 						set_temp_variable = { influence_target = SAZ.id }
 						change_influence_percentage = yes
 						country_event = { id = sov_nationalists.11 }
-					}
-					SOV = {
+				}
+				SOV = {
 						country_event = sov_nationalists.50
-						set_autonomy = {
-							target = SAZ
-							autonomy_state = autonomy_governorate_rf
+					set_autonomy = {
+						target = SAZ
+						autonomy_state = autonomy_governorate_rf
 						}
 					}
 				}
@@ -9801,7 +9801,7 @@ focus_tree = {
 				limit = { 
 					NKO = { is_in_faction = no }
 				}
-				NKO = { country_event = sov_nationalists.12 }
+			NKO = { country_event = sov_nationalists.12 }
 			}
 		}
 
@@ -13972,9 +13972,9 @@ focus_tree = {
 			add_to_variable = { SOV_navalny_inner_political_power_factor = 0.05 }
 			add_to_variable = { SOV_navalny_inner_stability_factor = -0.04 }
 			custom_effect_tooltip = SOV_navalny_inner_start2_tt
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14020,9 +14020,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14105,9 +14105,9 @@ focus_tree = {
 			add_to_variable = { SOV_navalny_inner_democratic_drift = 0.01 }
 			add_to_variable = { SOV_navalny_inner_stability_factor = -0.06 }
 			custom_effect_tooltip = SOV_navalny_inner17_tt
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14148,9 +14148,9 @@ focus_tree = {
 			add_to_variable = { SOV_navalny_inner_bureaucracy_cost_multiplier_modifier = -0.05 }
 			add_to_variable = { SOV_navalny_inner_police_cost_multiplier_modifier = 0.04 }
 			custom_effect_tooltip = SOV_navalny_inner18_tt
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14195,9 +14195,9 @@ focus_tree = {
 		}
 			decrease_corruption = yes
 			custom_effect_tooltip = SOV_depoliticize_oligarchs_focus_TT
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT }# DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14245,9 +14245,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14515,9 +14515,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14580,9 +14580,9 @@ focus_tree = {
 			add_to_variable = { SOV_navalny_inner_political_power_factor = 0.05 }
 			add_to_variable = { SOV_navalny_inner_stability_factor = 0.10 }
 			custom_effect_tooltip = SOV_navalny_inner_start_tt
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14647,9 +14647,9 @@ focus_tree = {
 			custom_effect_tooltip = SOV_navalny_inner_start_tt
 			set_country_flag = SOV_union_of_right_forces
 			clr_country_flag = SOV_parnas
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		search_filters = { FOCUS_FILTER_RUSSIA_SPS }
 		ai_will_do = {
@@ -14707,9 +14707,9 @@ focus_tree = {
 			SOV_warcult_script_bad = yes
 			add_to_variable = { SOV_navalny_inner_democratic_drift = 0.05 }
 			custom_effect_tooltip = SOV_navalny_inner7_tt
-			set_temp_variable = { modify_eurosceptic = -0.05 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.05 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
 		ai_will_do = {
@@ -14814,9 +14814,9 @@ focus_tree = {
 				country_event = sov_other.12
 				give_military_access = SOV
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -14864,9 +14864,9 @@ focus_tree = {
 			}
 			NATO_join_via_event = yes
 			SOV_warcult_script_bad = yes
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -15046,9 +15046,9 @@ focus_tree = {
 				add_ai_strategy = { type = protect id = "TRK" value = 200 }
 				add_ai_strategy = { type = protect id = "UZB" value = 200 }
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -15085,9 +15085,9 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_nato_standardization"
 			add_ideas = SOV_idea_nato_standards_military
 			one_random_arms_factory = yes
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -15383,9 +15383,9 @@ focus_tree = {
 			add_to_variable = { SOV_navalny_inner_political_power_gain = 0.05 }
 			add_to_variable = { SOV_navalny_inner_stability_factor = 0.15 }
 			custom_effect_tooltip = SOV_navalny_inner8_tt
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		ai_will_do = {
@@ -15515,9 +15515,9 @@ focus_tree = {
 			increase_exports = yes
 			decrease_healthcare_budget = yes
 			decrease_social_spending = yes
-			set_temp_variable = { modify_eurosceptic = -0.07 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.07 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -15657,9 +15657,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_new_form_of_the_gov"
 			add_political_power = 100
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
 		ai_will_do = {
@@ -15799,9 +15799,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
 		ai_will_do = {
@@ -16263,9 +16263,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_a_pragmatic_approach"
 			add_ideas = SOV_idea_pragmatic_democracy
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -16297,9 +16297,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_democratic_idealism"
 			add_ideas = SOV_idea_democratic_idealism
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -16336,9 +16336,9 @@ focus_tree = {
 				ideology = nationalist
 				popularity = -0.15
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -16464,9 +16464,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -16495,9 +16495,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_honor_victims_of_repression"
 			add_timed_idea = { idea = SOV_liberal_loyalty_idea days = 365 }
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -16529,9 +16529,9 @@ focus_tree = {
 			subtract_from_variable = { party_pop_array^4 = 0.05 }
 			add_popularity = { ideology = communism popularity = -0.05 }
 			recalculate_party = yes
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -16567,9 +16567,9 @@ focus_tree = {
 				popularity = 0.10
 			}
 			set_country_flag = SOV_ebu_detey
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = { base = 1 }
 	}
@@ -19409,7 +19409,7 @@ focus_tree = {
 				emerging_anarchist_communism_are_in_power = yes
 				emerging_autocracy_are_in_power = yes
 				emerging_reactionaries_are_in_power = yes
-			}
+		}
 		}
 
 		completion_reward = {
@@ -19530,7 +19530,7 @@ focus_tree = {
 				emerging_anarchist_communism_are_in_power = yes
 				emerging_autocracy_are_in_power = yes
 				emerging_reactionaries_are_in_power = yes
-			}
+		}
 		}
 		
 		completion_reward = {
@@ -19627,7 +19627,7 @@ focus_tree = {
 				emerging_anarchist_communism_are_in_power = yes
 				emerging_autocracy_are_in_power = yes
 				emerging_reactionaries_are_in_power = yes
-			}
+		}
 		}
 
 		bypass = {
@@ -19681,7 +19681,7 @@ focus_tree = {
 				emerging_anarchist_communism_are_in_power = yes
 				emerging_autocracy_are_in_power = yes
 				emerging_reactionaries_are_in_power = yes
-			}
+		}
 		}
 		
 		completion_reward = {
@@ -19793,7 +19793,7 @@ focus_tree = {
 				emerging_anarchist_communism_are_in_power = yes
 				emerging_autocracy_are_in_power = yes
 				emerging_reactionaries_are_in_power = yes
-			}
+		}
 			
 		}
 
@@ -21327,8 +21327,8 @@ focus_tree = {
 					}
 					country_event = { id = SOV_Global.1 days = 1 }
 				}
-				if = {
-					limit = {
+			if = {
+				limit = {
 						tag = EGY
 						EGY = { NOT = { is_subject_of = SOV } }
 						EGY = { NOT = { is_in_faction_with = SOV } }
@@ -21393,9 +21393,9 @@ focus_tree = {
 						has_idea = ecowas_member_state
 					}
 					country_event = { id = SOV_Global.1 days = 1 }
-				}
-				if = {
-					limit = {
+			}
+			if = {
+				limit = {
 						tag = LBA
 						LBA = { NOT = { is_subject_of = SOV } }
 						LBA = { NOT = { is_in_faction_with = SOV } }
@@ -21610,7 +21610,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_women"
 			if = {
 				limit = { has_idea = no_women_in_military }
-				swap_ideas = {
+			swap_ideas = {
 					remove_idea = no_women_in_military
 					add_idea = drafted_women
 				}
@@ -21790,7 +21790,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}
+		}
 		}
 		ai_will_do = {
 			base = 155
@@ -23425,9 +23425,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.05 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.05 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -24514,9 +24514,9 @@ focus_tree = {
 			custom_effect_tooltip = SOV_kasyanov_start_tt
 			set_country_flag = SOV_parnas
 			clr_country_flag = SOV_union_of_right_forces
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -25670,9 +25670,9 @@ focus_tree = {
 			}
 			set_country_flag = SOV_parnas
 			clr_country_flag = SOV_union_of_right_forces
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -25981,9 +25981,9 @@ focus_tree = {
 			add_stability = 0.05
 			set_country_flag = SOV_parnas
 			clr_country_flag = SOV_union_of_right_forces
-			set_temp_variable = { modify_eurosceptic = -0.07 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.07 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -26151,9 +26151,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -26335,9 +26335,9 @@ focus_tree = {
 			custom_effect_tooltip = SOV_navalny_inner8_tt
 			set_country_flag = SOV_union_of_right_forces
 			clr_country_flag = SOV_parnas
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -26558,9 +26558,9 @@ focus_tree = {
 				limit = { has_idea = SOV_corrupt_oligarchy }
 				remove_ideas = SOV_corrupt_oligarchy
 			}
-			set_temp_variable = { modify_eurosceptic = -0.03 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.03 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -26651,9 +26651,9 @@ focus_tree = {
 			add_ideas = SOV_demonopolisation_reform
 			set_country_flag = SOV_navalny_branch
 			clr_country_flag = SOV_yavlinsky_branch
-			set_temp_variable = { modify_eurosceptic = -0.05 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.05 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -26740,9 +26740,9 @@ focus_tree = {
 				value = -0.20
 				tooltip_side = SOV_west_east_bop_left_side
 			}
-			set_temp_variable = { modify_eurosceptic = -0.07 }
-			set_temp_variable = { modify_eurosceptic_target = ROOT }
-			eurosceptic_change = yes
+			set_temp_variable = { modify_eurosceptic = -0.07 } # DO NOT MERGE FROM BASE MD
+			set_temp_variable = { modify_eurosceptic_target = ROOT } # DO NOT MERGE FROM BASE MD
+			eurosceptic_change = yes # DO NOT MERGE FROM BASE MD
 		}
 		ai_will_do = {
 			base = 155
@@ -32452,7 +32452,7 @@ focus_tree = {
 			NOT = {
 				OR = {
 					has_idea = SOV_broken_economy_idea_1
-					has_idea = SOV_broken_economy_idea_1
+					has_idea = SOV_broken_economy_idea_2
 					has_idea = SOV_broken_economy_idea_3
 				}
 			}

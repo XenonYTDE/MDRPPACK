@@ -404,7 +404,7 @@ set_leader_GER = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Adolf Drippler"
+				name = "Adolf Drippler" # DO NOT MERGE FROM BASE MD
 				picture = "Adolf_Drippler.dds"
 				ideology = Nat_Fascism
 				traits = {
@@ -526,7 +526,7 @@ set_leader_GER = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Adolf Drippler"
+				name = "Adolf Drippler" # DO NOT MERGE FROM BASE MD
 				picture = "Adolf_Drippler.dds"
 				ideology = Monarchist
 				traits = {

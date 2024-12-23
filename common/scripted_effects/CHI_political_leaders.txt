@@ -57,7 +57,7 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "The Spirit of Confucius"
+				name = "The Spirit of Confucius" # DO NOT MERGE FROM BASE MD
 				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
@@ -75,7 +75,7 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "The Spirit of Confucius"
+				name = "The Spirit of Confucius" # DO NOT MERGE FROM BASE MD
 				picture = "Confucius.dds"
 				ideology = liberalism
 				traits = {
@@ -331,7 +331,7 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Emperor Xenon"
+				name = "Emperor Xenon" # DO NOT MERGE FROM BASE MD
 				picture = "Emperor_Xenon.dds"
 				ideology = Monarchist
 				traits = {
@@ -347,7 +347,7 @@ set_leader_CHI = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Emperor Xenon"
+				name = "Emperor Xenon" # DO NOT MERGE FROM BASE MD
 				picture = "Emperor_Xenon.dds"
 				ideology = Monarchist
 				traits = {

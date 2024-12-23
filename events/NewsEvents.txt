@@ -285,7 +285,7 @@ news_event = {
 		log = "[GetDateText]: [This.GetName]: news.91.a executed"
 	}
 }
-news_event = {
+news_event = { # DO NOT MERGE FROM BASE MD
     id = news.556
     title = news.556.t
     desc = news.556.d

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType ={
+		name = "GFX_idea_pog_hegemony"
+		texturefile = "gfx/interface/ideas/politics/global_hegemony.dds"
+	}
+}

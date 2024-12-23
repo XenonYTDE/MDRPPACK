@@ -16093,8 +16093,10 @@ focus_tree = {
 			}
 			newline = yes
 			set_cosmetic_tag = GER_fourth_reich
-			country_event = {
-				id = Germany.419
+			# DO NOT MERGE FROM BASE MD			
+			news_event = {
+				id = news.556
+				hours = 6
 			}
 		}
 

@@ -176,9 +176,9 @@ EU_clear_voting = {
 		clr_global_flag = focus_EU610_voted
 		clr_global_flag = focus_EU610_QMV_voted
 		clr_global_flag = focus_EU610_maj_voted
-		clr_global_flag = focus_EU701_voted
-		clr_global_flag = focus_EU701_QMV_voted
-		clr_global_flag = focus_EU701_maj_voted
+		clr_global_flag = focus_EU701_voted # DO NOT MERGE FROM BASE MD
+		clr_global_flag = focus_EU701_QMV_voted # DO NOT MERGE FROM BASE MD
+		clr_global_flag = focus_EU701_maj_voted # DO NOT MERGE FROM BASE MD
 		clr_global_flag = focus_EU611_voted
 		clr_global_flag = focus_EU611_QMV_voted
 		clr_global_flag = focus_EU611_maj_voted
@@ -2494,7 +2494,7 @@ init_the_european_union = {
 	add_to_array = { global.EU_potential_votes = 608 } # Caucasus Enlargement
 	add_to_array = { global.EU_potential_votes = 609 } # European Economic Area
 	add_to_array = { global.EU_potential_votes = 610 } # Belarus
-	add_to_array = { global.EU_potential_votes = 701 } ################ Russia ##################
+	add_to_array = { global.EU_potential_votes = 701 } # Russia # DO NOT MERGE FROM BASE MD
 	add_to_array = { global.EU_potential_votes = 611 } # Internal Enlargement
 	add_to_array = { global.EU_potential_votes = 110 } # Federalisation of the European Union
 	add_to_array = { global.EU_potential_votes = 111 } # United States of Europe
@@ -2544,7 +2544,7 @@ init_the_european_union = {
 	add_to_array = { global.EU_expansion_laws = 608 }
 	add_to_array = { global.EU_expansion_laws = 609 }
 	add_to_array = { global.EU_expansion_laws = 610 }
-	add_to_array = { global.EU_expansion_laws = 701 }
+	add_to_array = { global.EU_expansion_laws = 701 } # DO NOT MERGE FROM BASE MD
 	add_to_array = { global.EU_expansion_laws = 611 }
 
 	#base voting array for pp calcuations
@@ -2776,7 +2776,7 @@ on_startup_euu_action = {
 			add_to_array = { global.EU_potential_votes = 608 } # Caucasus Enlargement
 			add_to_array = { global.EU_potential_votes = 609 } # European Economic Area
 			add_to_array = { global.EU_potential_votes = 610 } # Belarus
-			add_to_array = { global.EU_potential_votes = 701 } ########## Russia ##########
+			add_to_array = { global.EU_potential_votes = 701 } # Russia # DO NOT MERGE FROM BASE MD
 			add_to_array = { global.EU_potential_votes = 611 } # Internal Enlargement
 			add_to_array = { global.EU_potential_votes = 110 } # Federalisation of the European Union
 			add_to_array = { global.EU_potential_votes = 111 } # United States of Europe
@@ -2893,7 +2893,7 @@ on_startup_euu_action = {
 			add_to_array = { global.EU_potential = MNC }
 			add_to_array = { global.EU_potential = ADO }
 			add_to_array = { global.EU_potential = LIC }
-			add_to_array = { global.EU_potential = SOV }
+			add_to_array = { global.EU_potential = SOV } # DO NOT MERGE FROM BASE MD
 
 			country_event = { id = EUupdate.1 }
 

@@ -235,7 +235,7 @@ country_event = {
 		random_other_country = {
 			limit = {
 				OR = {
-					has_idea = pog_hegemony
+					has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 					has_idea = superpower
 					has_idea = great_power
 				}
@@ -279,7 +279,7 @@ country_event = {
 				random_other_country = {
 					limit = {
 						OR = {
-							has_idea = pog_hegemony
+							has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							has_idea = superpower
 							has_idea = great_power
 						}

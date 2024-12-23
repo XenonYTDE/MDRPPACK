@@ -25,11 +25,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -76,11 +81,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -127,11 +137,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -178,11 +193,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -229,11 +249,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -280,11 +305,16 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		factor = 0.0
+		base = 0
+
+		modifier = {
+			CHI = { has_government = democratic }
+			add = 10
+		}
 	}
 
 	ai_overlord_wants_lower = {
-		factor = 0.0
+		base = 0
 	}
 
 	ai_overlord_wants_garrison = {

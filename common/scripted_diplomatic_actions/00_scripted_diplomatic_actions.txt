@@ -289,32 +289,32 @@ scripted_diplomatic_actions = {
 							}
 						}
 					}
-					OR = {
-						AND = {
-							ROOT = { tag = CHI }
-							THIS = { tag = USA }
-						}
-						AND = {
-							ROOT = { tag = USA }
-							THIS = { tag = CHI }
-						}
-						AND = {
-							ROOT = { tag = NKO }
-							THIS = { tag = KOR }
-						}
-						AND = {
-							ROOT = { tag = KOR }
-							THIS = { tag = NKO }
-						}
-						AND = {
-							ROOT = { tag = JAP }
-							THIS = { tag = NKO }
-						}
-						AND = {
-							ROOT = { tag = NKO }
-							THIS = { tag = JAP }
-						}
+				OR = {
+					AND = {
+						ROOT = { tag = CHI }
+						THIS = { tag = USA }
 					}
+					AND = {
+						ROOT = { tag = USA }
+						THIS = { tag = CHI }
+					}
+					AND = {
+						ROOT = { tag = NKO }
+						THIS = { tag = KOR }
+					}
+					AND = {
+						ROOT = { tag = KOR }
+						THIS = { tag = NKO }
+					}
+					AND = {
+						ROOT = { tag = JAP }
+						THIS = { tag = NKO }
+					}
+					AND = {
+						ROOT = { tag = NKO }
+						THIS = { tag = JAP }
+					}
+				}
 				}
 			}
 		}
@@ -666,7 +666,7 @@ scripted_diplomatic_actions = {
 								has_idea = large_power
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 					}
@@ -676,13 +676,13 @@ scripted_diplomatic_actions = {
 							OR = {
 								has_idea = great_power
 								has_idea = superpower
-								has_idea = pog_hegemony
+								has_idea = pog_hegemony # DO NOT MERGE FROM BASE MD
 							}
 						}
 					}
 					AND = {
 						ROOT = { has_idea = great_power }
-						THIS = { 
+						THIS = { # DO NOT MERGE FROM BASE MD
 							OR = { 
 								has_idea = superpower
 								has_idea = pog_hegemony
@@ -750,7 +750,7 @@ scripted_diplomatic_actions = {
 					}
 				}
 			}
-			modifier = {
+			modifier = { # DO NOT MERGE FROM BASE MD
 				factor = 1.25
 				ROOT = { has_idea = pog_hegemony }
 				THIS = {
@@ -1102,7 +1102,7 @@ scripted_diplomatic_actions = {
 				factor = 0
 				OR = {
 					ROOT = { NOT = { check_variable = { pending_mutual_investment_treaty_offer = 0 } } }
-					ROOT = { check_variable = { interest_rate > 8 } }
+				ROOT = { check_variable = { interest_rate > 8 } }
 					ROOT = { has_political_power < 250 }
 				}
 			}

@@ -1815,9 +1815,9 @@
  CHI.conservatism: "£CHI_conservative Union of Chinese Nationalists"
  CHI.conservatism_icon: "£CHI_conservative"
  CHI.conservatism_desc: "Western Conservative - The Union of Chinese Nationalists, also known as the Chinese Pan-Blue Alliance, is a liberal conservative party that seeks to reunify China. It values liberal democracy and the Three Principles of the People."
- CHI.liberalism: "£CHI_liberal Democracy Party of China"
+ CHI.liberalism: "£CHI_liberal The House of Kong" # DO NOT MERGE FROM BASE MD
  CHI.liberalism_icon: "£CHI_liberal"
- CHI.liberalism_desc: "Liberalism - The Democracy Party of China is banned party in the People's Republic of China. Reformism and liberal democracy are its core values. According to most western sources it is assembled from democracy activists and former student leaders from the Tiananmen Square protests."
+ CHI.liberalism_desc: "Confucian Liberalism - The great Chinese philosopher Confucius stems from the Kong family. Members of the Kong family have held several high-ranking positions during the Imperial Period in China. Confucianists propagate self-improvement and following righteousness in daily lives, social interactions and political actions. The descendants of Confucius and the followers of his ideology have risen up to reform China and spread the ideas of Ren across the globe for a prosperous world." # DO NOT MERGE FROM BASE MD
  CHI.socialism: "£CHI_social_democrat Federation for a Democratic China"
  CHI.socialism_icon: "£CHI_social_democrat"
  CHI.socialism_desc: "Social Democracy - The FDC (Federation for a Democratic China) is a Canada based group that advocates for the democratization of the People's Republic. They are one of the largest pro-democracy movements in China and abroad."

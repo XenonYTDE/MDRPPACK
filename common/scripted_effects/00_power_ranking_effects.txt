@@ -283,7 +283,7 @@ get_percentage_of_global_factories = {
 # Determine what kind of power they are
 determine_power_ranking = {
 	remove_ideas = {
-		pog_hegemony
+		pog_hegemony # DO NOT MERGE FROM BASE MD
 		superpower
 		great_power
 		large_power
@@ -296,7 +296,7 @@ determine_power_ranking = {
 		add_ideas = non_power
 	}
 	else_if = { limit = { check_variable = { percentage_of_global_factories > 0.30 } }
-		add_ideas = pog_hegemony
+		add_ideas = pog_hegemony # DO NOT MERGE FROM BASE MD
 	}
 	else_if = { limit = { check_variable = { percentage_of_global_factories > 0.15 } }
 		add_ideas = superpower

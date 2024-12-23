@@ -120,7 +120,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 701 } }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -257,7 +257,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 701 } }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -394,7 +394,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 701 } }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -532,7 +532,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { global.current_active_agenda_disp = 701 } }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_agenda_disp = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -679,7 +679,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
 		localization_key = EU_show_available_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -826,7 +826,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 701 } }
 		localization_key = EU_show_available_desc_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_desc_611_loc_key
 	}
@@ -976,7 +976,7 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
 		localization_key = EU_show_available_desc_701_loc_key
-	}
+	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 611 } }
 		localization_key = EU_show_available_desc_611_loc_key
 	}
