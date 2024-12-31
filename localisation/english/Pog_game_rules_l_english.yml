@@ -80,4 +80,6 @@
  gr_stt_enable_n:0 "Disabled"
  gr_stt_enable_n_desc:0 "Disables the State Transfer Tool."
 
-######################
+ ### EU one day
+ RULE_OPTION_EU_ONE: "1 Day"
+ RULE_OPTION_EU_ONE_DESC: "Absolutely for testing purposes only."
