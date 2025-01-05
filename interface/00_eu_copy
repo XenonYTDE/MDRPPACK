@@ -1,26 +1,26 @@
 # Based on EU code from Millenium Dawn 
 	# Author(s): AngirestBird, Doolittle
 guiTypes = {
-	# Open the TIC UI
+	# Open the EU UI
 	containerWindowType = {
-		name = "TIC_open_the_main_window"
-		position = { x= 719 y=86 }
+		name = "EU_open_the_eu_scripted_gui_window"
+		position = { x= 719 y=36 }
 
 		buttonType = {
-			name = "TIC_open_the_gui"
-			spriteType = "GFX_tic_open_button"
+			name = "EEU_open_the_eu_gui"
+			spriteType = "GFX_EU_help_button_custom"
 			position = { x=0 y=0 }
-			shortcut = "shift+j"
-			pdx_tooltip = "TIC_gui_tooltip"
-			pdx_tooltip_delayed = "TIC_gui_tooltip_delayed"
+			shortcut = "shift+i"
+			pdx_tooltip = "eu_gui_tooltip"
+			pdx_tooltip_delayed = "eu_gui_tooltip_delayed"
 			scale = 0.9
 		}
 	}
 
 	# The Main UI
 	containerWindowType = {
-		name = "TIC_main_gui"
-		size = { width = 900 height = 700 }
+		name = "EU_main_background_window"
+		size = { width = 659 height = 665 }
 		position = { x = 0 y = 0 }
 		clipping = no
 		orientation = center
@@ -28,21 +28,31 @@ guiTypes = {
 		moveable = yes
 
 		background = {
-			name = "TIC_main_gui_background"
-			quadTextureSprite = "GFX_tic_main_gui_background"
+			name = "EU_main_background_window_screen"
+			quadTextureSprite = "GFX_euro_background_new"
+		}
+
+		instantTextBoxType = {
+			name = "EU_main_background_window_inner_title"
+			position = { x = 180 y = 35 }
+			font = "hoi_36header"
+			maxWidth = 295
+			maxHeight = 18
+			text = "EU_main_background_window_inner_title"
+			format = center
 		}
 
 		buttonType = {
-			name = "TIC_laws_flowchart_button"
+			name = "EU_laws_flowchart_button"
 			position = { x = 575 y = 15 }
 			quadTextureSprite ="GFX_help_button_custom"
 			clicksound = click_default
-			pdx_tooltip = "TIC_MD_LAW_FLOWCHART"
-			pdx_tooltip_delayed = "TIC_MD_LAW_FLOWCHART_DESC"
+			pdx_tooltip = "EU_MD_LAW_FLOWCHART"
+			pdx_tooltip_delayed = "EU_MD_LAW_FLOWCHART_DESC"
 			web_link = "https://gitlab.com/Millennium_Dawn/Millennium_Dawn/-/wikis/uploads/f7648d87fcd84d0ebe3dfcd9596a3ee0/European_Union_Diagram.drawio_6_.png"
 		}
 
-		# Retire the Offices
+		# Top Bar
 		buttonType = {
 			name = "EU_offices_screen"
 			position = { x = 15 y = 105 }
@@ -52,7 +62,6 @@ guiTypes = {
 			format = center
 			pdx_tooltip = "EU_offices_screen_desc"
 		}
-		# Retire the Offices
 		buttonType = {
 			name = "EU_europeanism_screen"
 			position = { x = 140 y = 105 }

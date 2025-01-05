@@ -1,5 +1,14 @@
 ﻿l_english:
+# TIC general
  TIC_gui_tooltip: "§OThe Intercontinental Confederation§! Interface"
  TIC_gui_tooltip_delayed: "Opens the screen that contains all of the information about §OThe International Confederation§! including the Parliament, the Office Holders of the Intercontinental Confederation, the Council of the Intercontinental Confederation, and the TIC Budget."
  TIC_MD_LAW_FLOWCHART: "Opens the §OIntercontinental Confederation§! Flowchart"
  TIC_MD_LAW_FLOWCHART_desc: "You can zoom in on the flowchart while in the screen by double-clicking."
+
+# Upper buttons
+ TIC_upper_button_1_title: "Offices"
+ TIC_upper_button_2_title: "TIC Info"
+ TIC_upper_button_3_title: "Parliament"
+ TIC_upper_button_4_title: "Council"
+ TIC_upper_button_5_title: "Budget"
+ TIC_upper_button_6_title: "Military"

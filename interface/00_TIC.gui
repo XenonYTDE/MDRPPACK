@@ -1,0 +1,114 @@
+# Based on EU code from Millenium Dawn 
+	# Author(s): AngirestBird, Doolittle
+guiTypes = {
+	# Open the TIC UI
+	containerWindowType = {
+		name = "TIC_open_the_main_window"
+		position = { x= 719 y=86 }
+
+		buttonType = {
+			name = "TIC_open_the_gui"
+			spriteType = "GFX_tic_open_button"
+			position = { x=0 y=0 }
+			shortcut = "shift+j"
+			pdx_tooltip = "TIC_gui_tooltip"
+			pdx_tooltip_delayed = "TIC_gui_tooltip_delayed"
+			scale = 0.9
+		}
+	}
+
+	# The Main UI
+	containerWindowType = {
+		name = "TIC_main_background_window"
+		size = { width = 900 height = 700 }
+		position = { x = 0 y = 0 }
+		clipping = no
+		orientation = center
+		origo = center
+		moveable = yes
+
+		# close ui
+		buttonType = {
+			name = "TIC_close_button"
+			position = { x = 865 y = 3 }
+			spriteType = "GFX_closebutton"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "DIPLOMACY_CLOSE"
+			shortcut = "ESCAPE"
+		}
+
+		# main bg
+		background = {
+			name = "TIC_main_gui_background"
+			quadTextureSprite = "GFX_tic_main_gui_background"
+		}
+
+		# guide
+		buttonType = {
+			name = "TIC_laws_flowchart_button"
+			position = { x = 825 y = 30 }
+			quadTextureSprite ="GFX_help_button_custom"
+			clicksound = click_default
+			pdx_tooltip = "TIC_MD_LAW_FLOWCHART"
+			pdx_tooltip_delayed = "TIC_MD_LAW_FLOWCHART_DESC"
+			web_link = "https://gitlab.com/Millennium_Dawn/Millennium_Dawn/-/wikis/uploads/f7648d87fcd84d0ebe3dfcd9596a3ee0/European_Union_Diagram.drawio_6_.png"
+		}
+
+		# upper buttons
+		buttonType = {
+			name = "TIC_upper_button_1" # offices
+			position = { x = 43 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_1_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_2" # offices
+			position = { x = 177 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_2_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_3" # offices
+			position = { x = 311 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_3_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_4" # offices
+			position = { x = 445 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_4_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_5" # offices
+			position = { x = 579 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_5_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_6" # offices
+			position = { x = 713 y = 82 }
+			spriteType = "GFX_tic_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_6_title"
+			format = center
+			pdx_tooltip = "EU_offices_screen_desc"
+		}
+	}
+}

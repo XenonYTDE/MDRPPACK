@@ -14,4 +14,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	spriteType = {
+		name = "GFX_tic_upper_button"
+		texturefile = "gfx/interface/international_confederation/tic_upper_button.dds"
+	}
 }
