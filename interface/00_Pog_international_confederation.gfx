@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tic_open_button"
+		texturefile = "gfx/interface/international_confederation/tic_open_button.dds"
+		legacy_lazy_load = no
+	}
+}

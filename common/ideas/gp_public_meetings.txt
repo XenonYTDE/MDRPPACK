@@ -8,7 +8,7 @@ ideas = {
 
             available = {
                 NOT = {
-                    has_government = nationalism
+                    has_government = nationalist
                 }
             }
 
