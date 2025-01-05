@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	corneredTileSpriteType = {
+		name = "GFX_tic_main_gui_background"
+		size = { x = 900 y = 700 }
+		texturefile = "gfx/interface/international_confederation/tic_main_gui_bg.dds"
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tic_open_button"
+		texturefile = "gfx/interface/international_confederation/tic_open_button.dds"
+		legacy_lazy_load = no
+	}
+	
+}

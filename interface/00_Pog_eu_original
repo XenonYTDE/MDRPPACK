@@ -3,7 +3,7 @@
 guiTypes = {
 	# Open the EU UI
 	containerWindowType = {
-		name = "EEU_open_the_eu_scripted_gui_window"
+		name = "EU_open_the_eu_scripted_gui_window"
 		position = { x= 719 y=36 }
 
 		buttonType = {

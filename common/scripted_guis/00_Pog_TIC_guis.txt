@@ -23,7 +23,7 @@ scripted_gui = {
 				else = {
 					clr_country_flag = new_EU_open
 				}
-				set_country_flag = show_offices_screen
+				set_country_flag = show_TIC_offices_screen
 				update_eu_dirty_variable = yes
 			}
 		}
@@ -38,7 +38,7 @@ scripted_gui = {
 
 	european_union_gui = {
 		context_type = player_context
-		window_name = "EU_main_background_window"
+		window_name = "TIC_main_background_window"
 		dirty = global.EU_dirty_update_var
 
 		visible = {
