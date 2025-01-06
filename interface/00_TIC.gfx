@@ -18,4 +18,9 @@ spriteTypes = {
 		name = "GFX_tic_upper_button"
 		texturefile = "gfx/interface/international_confederation/tic_upper_button.dds"
 	}
+
+	spriteType = {
+		name = "GFX_tic_office_frame"
+		texturefile = "gfx/interface/international_confederation/tic_office_frame.dds"
+	}
 }

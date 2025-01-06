@@ -63,52 +63,576 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_1_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_offices_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_2" # offices
+			name = "TIC_upper_button_2" # info
 			position = { x = 177 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_2_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_info_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_3" # offices
+			name = "TIC_upper_button_3" # parliament
 			position = { x = 311 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_3_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_parliament_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_4" # offices
+			name = "TIC_upper_button_4" # council
 			position = { x = 445 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_4_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_council_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_5" # offices
+			name = "TIC_upper_button_5" # budget
 			position = { x = 579 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_5_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_budget_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_6" # offices
+			name = "TIC_upper_button_6" # legislations
 			position = { x = 713 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_6_title"
 			format = center
-			pdx_tooltip = "EU_offices_screen_desc"
+			pdx_tooltip = "TIC_legislations_tab_desc"
 		}
+
+		# Offices Tab
+
+		containerWindowType = {
+			name = "TIC_offices_tab"
+			position = { x = 0 y = 0}
+
+			# Row 1
+			# Office 1
+			buttonType = {
+				name = "TIC_office_1_flag"
+				position = { x = 109 y = 195 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_1_tt"
+			}
+			buttonType = {
+				name = "TIC_office_1"
+				position = { x = 58 y = 159 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_1_tt"
+				pdx_tooltip_delayed = "TIC_office_1_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_1_text"
+				position = { x = 58 y = 248 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_1_text"
+				pdx_tooltip = "TIC_office_1_tt"
+				pdx_tooltip_delayed = "TIC_office_1_full_tt"
+			}
+
+			# Office 2
+			buttonType = {
+				name = "TIC_office_2_flag"
+				position = { x = 304 y = 195 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_2_tt"
+			}
+			buttonType = {
+				name = "TIC_office_2"
+				position = { x = 253 y = 159 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_2_tt"
+				pdx_tooltip_delayed = "TIC_office_2_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_2_text"
+				position = { x = 253 y = 248 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_2_text"
+				pdx_tooltip = "TIC_office_2_tt"
+				pdx_tooltip_delayed = "TIC_office_2_full_tt"
+			}
+
+			# Office 3
+			buttonType = {
+				name = "TIC_office_3_flag"
+				position = { x = 499 y = 195 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_3_tt"
+			}
+			buttonType = {
+				name = "TIC_office_3"
+				position = { x = 448 y = 159 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_3_tt"
+				pdx_tooltip_delayed = "TIC_office_3_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_3_text"
+				position = { x = 448 y = 248 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_3_text"
+				pdx_tooltip = "TIC_office_3_tt"
+				pdx_tooltip_delayed = "TIC_office_3_full_tt"
+			}
+
+			# Office 4
+			buttonType = {
+				name = "TIC_office_4_flag"
+				position = { x = 694 y = 195 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_4_tt"
+			}
+			buttonType = {
+				name = "TIC_office_4"
+				position = { x = 643 y = 159 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_4_tt"
+				pdx_tooltip_delayed = "TIC_office_4_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_4_text"
+				position = { x = 643 y = 248 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_4_text"
+				pdx_tooltip = "TIC_office_4_tt"
+				pdx_tooltip_delayed = "TIC_office_4_full_tt"
+			}
+
+			# Row 2
+			# Office 5
+			buttonType = {
+				name = "TIC_office_5_flag"
+				position = { x = 109 y = 317 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_5_tt"
+			}
+			buttonType = {
+				name = "TIC_office_5"
+				position = { x = 58 y = 281 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_5_tt"
+				pdx_tooltip_delayed = "TIC_office_5_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_5_text"
+				position = { x = 58 y = 370 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_5_text"
+				pdx_tooltip = "TIC_office_5_tt"
+				pdx_tooltip_delayed = "TIC_office_5_full_tt"
+			}
+
+			# Office 6
+			buttonType = {
+				name = "TIC_office_6_flag"
+				position = { x = 304 y = 317 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_6_tt"
+			}
+			buttonType = {
+				name = "TIC_office_6"
+				position = { x = 253 y = 281 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_6_tt"
+				pdx_tooltip_delayed = "TIC_office_6_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_6_text"
+				position = { x = 253 y = 370 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_6_text"
+				pdx_tooltip = "TIC_office_6_tt"
+				pdx_tooltip_delayed = "TIC_office_6_full_tt"
+			}
+
+			# Office 7
+			buttonType = {
+				name = "TIC_office_7_flag"
+				position = { x = 499 y = 317 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_7_tt"
+			}
+			buttonType = {
+				name = "TIC_office_7"
+				position = { x = 448 y = 281 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_7_tt"
+				pdx_tooltip_delayed = "TIC_office_7_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_7_text"
+				position = { x = 448 y = 370 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_7_text"
+				pdx_tooltip = "TIC_office_7_tt"
+				pdx_tooltip_delayed = "TIC_office_7_full_tt"
+			}
+
+			# Office 8
+			buttonType = {
+				name = "TIC_office_8_flag"
+				position = { x = 694 y = 317 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_8_tt"
+			}
+			buttonType = {
+				name = "TIC_office_8"
+				position = { x = 643 y = 281 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_8_tt"
+				pdx_tooltip_delayed = "TIC_office_8_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_8_text"
+				position = { x = 643 y = 370 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_8_text"
+				pdx_tooltip = "TIC_office_8_tt"
+				pdx_tooltip_delayed = "TIC_office_8_full_tt"
+			}
+
+			# Row 3
+			# Office 9
+			buttonType = {
+				name = "TIC_office_9_flag"
+				position = { x = 109 y = 441 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_9_tt"
+			}
+			buttonType = {
+				name = "TIC_office_9"
+				position = { x = 58 y = 405 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_9_tt"
+				pdx_tooltip_delayed = "TIC_office_9_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_9_text"
+				position = { x = 58 y = 494 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_9_text"
+				pdx_tooltip = "TIC_office_9_tt"
+				pdx_tooltip_delayed = "TIC_office_9_full_tt"
+			}
+
+			# Office 10
+			buttonType = {
+				name = "TIC_office_10_flag"
+				position = { x = 304 y = 441 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_10_tt"
+			}
+			buttonType = {
+				name = "TIC_office_10"
+				position = { x = 253 y = 405 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_10_tt"
+				pdx_tooltip_delayed = "TIC_office_10_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_10_text"
+				position = { x = 253 y = 494 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_10_text"
+				pdx_tooltip = "TIC_office_10_tt"
+				pdx_tooltip_delayed = "TIC_office_10_full_tt"
+			}
+
+			# Office 11
+			buttonType = {
+				name = "TIC_office_11_flag"
+				position = { x = 499 y = 441 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_11_tt"
+			}
+			buttonType = {
+				name = "TIC_office_11"
+				position = { x = 448 y = 405 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_11_tt"
+				pdx_tooltip_delayed = "TIC_office_11_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_11_text"
+				position = { x = 448 y = 494 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_11_text"
+				pdx_tooltip = "TIC_office_11_tt"
+				pdx_tooltip_delayed = "TIC_office_11_full_tt"
+			}
+
+			# Office 12
+			buttonType = {
+				name = "TIC_office_12_flag"
+				position = { x = 694 y = 441 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_12_tt"
+			}
+			buttonType = {
+				name = "TIC_office_12"
+				position = { x = 643 y = 405 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_12_tt"
+				pdx_tooltip_delayed = "TIC_office_12_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_12_text"
+				position = { x = 643 y = 494 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_12_text"
+				pdx_tooltip = "TIC_office_12_tt"
+				pdx_tooltip_delayed = "TIC_office_12_full_tt"
+			}
+			
+			# Row 4
+			# Office 13
+			buttonType = {
+				name = "TIC_office_13_flag"
+				position = { x = 109 y = 563 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_13_tt"
+			}
+			buttonType = {
+				name = "TIC_office_13"
+				position = { x = 58 y = 527 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_13_tt"
+				pdx_tooltip_delayed = "TIC_office_13_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_13_text"
+				position = { x = 58 y = 616 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_13_text"
+				pdx_tooltip = "TIC_office_13_tt"
+				pdx_tooltip_delayed = "TIC_office_13_full_tt"
+			}
+
+			# Office 14
+			buttonType = {
+				name = "TIC_office_14_flag"
+				position = { x = 304 y = 563 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_14_tt"
+			}
+			buttonType = {
+				name = "TIC_office_14"
+				position = { x = 253 y = 527 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_14_tt"
+				pdx_tooltip_delayed = "TIC_office_14_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_14_text"
+				position = { x = 253 y = 616 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_14_text"
+				pdx_tooltip = "TIC_office_14_tt"
+				pdx_tooltip_delayed = "TIC_office_14_full_tt"
+			}
+
+			# Office 15
+			buttonType = {
+				name = "TIC_office_15_flag"
+				position = { x = 499 y = 563 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_15_tt"
+			}
+			buttonType = {
+				name = "TIC_office_15"
+				position = { x = 448 y = 527 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_15_tt"
+				pdx_tooltip_delayed = "TIC_office_15_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_15_text"
+				position = { x = 448 y = 616 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_15_text"
+				pdx_tooltip = "TIC_office_15_tt"
+				pdx_tooltip_delayed = "TIC_office_15_full_tt"
+			}
+
+			# Office 16
+			buttonType = {
+				name = "TIC_office_16_flag"
+				position = { x = 694 y = 563 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_16_tt"
+			}
+			buttonType = {
+				name = "TIC_office_16"
+				position = { x = 643 y = 527 }
+				quadTextureSprite = "GFX_tic_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_16_tt"
+				pdx_tooltip_delayed = "TIC_office_16_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_16_text"
+				position = { x = 643 y = 616 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_16_text"
+				pdx_tooltip = "TIC_office_16_tt"
+				pdx_tooltip_delayed = "TIC_office_16_full_tt"
+			}
+		}
+
 	}
 }
