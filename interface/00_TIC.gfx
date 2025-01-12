@@ -1,9 +1,17 @@
 spriteTypes = {
 
 	corneredTileSpriteType = {
-		name = "GFX_tic_main_gui_background"
+		name = "GFX_tic_main_gui_bg"
 		size = { x = 900 y = 700 }
 		texturefile = "gfx/interface/international_confederation/tic_main_gui_bg.dds"
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tic_main_gui_bg_logo"
+		size = { x = 900 y = 700 }
+		texturefile = "gfx/interface/international_confederation/tic_main_gui_bg_logo.dds"
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
@@ -22,5 +30,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tic_office_frame"
 		texturefile = "gfx/interface/international_confederation/tic_office_frame.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USNA"
+		texturefile = "gfx/flags/USNA.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_TIC_member"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
 	}
 }

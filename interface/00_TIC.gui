@@ -27,7 +27,7 @@ guiTypes = {
 		origo = center
 		moveable = yes
 
-		# close ui
+		# Close UI
 		buttonType = {
 			name = "TIC_close_button"
 			position = { x = 865 y = 3 }
@@ -38,13 +38,13 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 
-		# main bg
+		# Main bg
 		background = {
-			name = "TIC_main_gui_background"
-			quadTextureSprite = "GFX_tic_main_gui_background"
+			name = "TIC_main_gui_bg"
+			quadTextureSprite = "GFX_tic_main_gui_bg_logo"
 		}
 
-		# guide
+		# Guide
 		buttonType = {
 			name = "TIC_laws_flowchart_button"
 			position = { x = 825 y = 30 }
@@ -55,7 +55,7 @@ guiTypes = {
 			web_link = "https://gitlab.com/Millennium_Dawn/Millennium_Dawn/-/wikis/uploads/f7648d87fcd84d0ebe3dfcd9596a3ee0/European_Union_Diagram.drawio_6_.png"
 		}
 
-		# upper buttons
+		# Upper Buttons
 		buttonType = {
 			name = "TIC_upper_button_1" # offices
 			position = { x = 43 y = 82 }
@@ -633,6 +633,6 @@ guiTypes = {
 				pdx_tooltip_delayed = "TIC_office_16_full_tt"
 			}
 		}
-
+		
 	}
 }

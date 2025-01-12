@@ -1,0 +1,91 @@
+ideas = {
+	country = {
+
+		TIC_member = {
+			picture = TIC_member
+
+			on_add = {
+				log = "[GetDateText]: [ROOT.GetName]: add idea TIC_member"
+				add_to_array = { global.TIC_member = THIS }
+			}
+			on_remove = {
+				log = "[GetDateText]: [ROOT.GetName]: remove idea TIC_member"
+				remove_to_array = { global.TIC_member = THIS }
+			}
+
+			modifier = {
+				democratic_drift = 0.03
+				neutrality_drift = 0.03
+				political_power_factor = -0.25
+				war_support_factor = -0.10
+				trade_opinion_factor = 0.25
+				stability_factor = 0.05
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		TIC_council = {
+			picture = TIC_council
+		}
+
+		TIC_parliament = {
+			picture = TIC_parliament
+		}
+
+		TIC_commission = {
+			picture = TIC_commission
+		}
+
+		TIC_bank = {
+			picture = TIC_bank
+		}
+
+		TIC_ecofin = {
+			picture = TIC_ecofin
+		}
+
+		TIC_eneinf = {
+			picture = TIC_eneinf
+		}
+
+		TIC_restec = {
+			picture = TIC_restec
+		}
+
+		TIC_heawel = {
+			picture = TIC_heawel
+		}
+
+		TIC_space = {
+			picture = TIC_space
+		}
+
+		TIC_frontex = {
+			picture = TIC_frontex
+		}
+
+		TIC_court = {
+			picture = TIC_court
+		}
+
+		TIC_isia = {
+			picture = TIC_isia
+		}
+
+		TIC_milcom = {
+			picture = TIC_milcom
+		}
+
+		TIC_secarmy = {
+			picture = TIC_secarmy
+		}
+
+		TIC_secairforce = {
+			picture = TIC_secairforce
+		}
+
+		TIC_navy = {
+			picture = TIC_navy
+		}
+	}
+}

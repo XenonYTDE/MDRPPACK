@@ -23,7 +23,6 @@ scripted_gui = {
 				else = {
 					clr_country_flag = new_TIC_open
 				}
-				set_country_flag = show_TIC_offices_screen
 				update_TIC_dirty_variable = yes
 			}
 		}
@@ -82,6 +81,401 @@ scripted_gui = {
 			TIC_office_14_flag = { image = "[?global.TIC_office_14.GetFlag]" }
 			TIC_office_15_flag = { image = "[?global.TIC_office_15.GetFlag]" }
 			TIC_office_16_flag = { image = "[?global.TIC_office_16.GetFlag]" }
+		}
+
+		triggers = {
+
+			TIC_main_gui_bg_logo_visible = {
+				NOT = {
+					has_country_flag = TIC_offices_tab_open
+					has_country_flag = TIC_info_tab_open
+					has_country_flag = TIC_parliament_tab_open
+					has_country_flag = TIC_council_tab_open
+					has_country_flag = TIC_budget_tab_open
+					has_country_flag = TIC_legislations_tab_open
+				}
+			}
+
+		# Offices
+
+			# Office 1
+			TIC_office_1_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_1_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_1_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 2
+			TIC_office_2_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_2_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_2_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 3
+			TIC_office_3_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_3_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_3_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 4
+			TIC_office_4_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_4_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_4_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 5
+			TIC_office_5_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_5_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_5_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 6
+			TIC_office_6_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_6_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_6_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 7
+			TIC_office_7_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_7_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_7_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 8
+			TIC_office_8_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_8_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_8_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 9
+			TIC_office_9_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_9_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_9_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 10
+			TIC_office_10_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_10_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_10_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 11
+			TIC_office_11_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_11_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_11_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 12
+			TIC_office_12_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_12_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_12_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 13
+			TIC_office_13_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_13_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_13_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 14
+			TIC_office_14_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_14_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_14_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 15
+			TIC_office_15_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_15_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_15_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			# Office 16
+			TIC_office_16_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_16_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_16_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+
+		}
+
+		effects = {
+
+			TIC_close_button_click = {
+				TIC_tab_selection = yes
+				clr_country_flag = new_TIC_open
+			}
+
+			# Open Offices
+			TIC_upper_button_1_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_offices_tab_open
+			}
+			# Open Info
+			TIC_upper_button_2_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_info_tab_open
+			}
+			# Open Parliament
+			TIC_upper_button_3_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_parliament_tab_open
+			}
+			# Open Council
+			TIC_upper_button_4_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_council_tab_open
+			}
+			# Open Budget
+			TIC_upper_button_5_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_budget_tab_open
+			}
+			# Open Legislations
+			TIC_upper_button_6_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_legislations_tab_open
+			}
+
+			# Office Select Effects
+			TIC_office_1_click = {
+				add_timed_idea = {
+					idea = TIC_office_1_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.101
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_2_click = {
+				add_timed_idea = {
+					idea = TIC_office_2_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.102
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_3_click = {
+				add_timed_idea = {
+					idea = TIC_office_3_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.103
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_4_click = {
+				add_timed_idea = {
+					idea = TIC_office_4_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.104
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_5_click = {
+				add_timed_idea = {
+					idea = TIC_office_5_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.105
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_6_click = {
+				add_timed_idea = {
+					idea = TIC_office_6_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.106
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_7_click = {
+				add_timed_idea = {
+					idea = TIC_office_7_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.107
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_8_click = {
+				add_timed_idea = {
+					idea = TIC_office_8_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.108
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_9_click = {
+				add_timed_idea = {
+					idea = TIC_office_9_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.109
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_10_click = {
+				add_timed_idea = {
+					idea = TIC_office_10_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.110
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_11_click = {
+				add_timed_idea = {
+					idea = TIC_office_11_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.111
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_12_click = {
+				add_timed_idea = {
+					idea = TIC_office_12_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.112
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_13_click = {
+				add_timed_idea = {
+					idea = TIC_office_13_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.113
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_14_click = {
+				add_timed_idea = {
+					idea = TIC_office_14_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.114
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_15_click = {
+				add_timed_idea = {
+					idea = TIC_office_15_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.115
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_16_click = {
+				add_timed_idea = {
+					idea = TIC_office_16_idea
+					days = 1825
+				}
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.116
+				}
+				update_TIC_dirty_variable = yes
+			}
 		}
 	}
 }

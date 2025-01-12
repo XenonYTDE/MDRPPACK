@@ -1,0 +1,22 @@
+############################
+### TIC scripted effects ###
+############################
+
+update_TIC_dirty_variable = {
+	if = { limit = { check_variable = { global.TIC_dirty_update_var < 10000 } }
+		add_to_variable = { global.TIC_dirty_update_var = 1 }
+	}
+	else = {
+		set_variable = { global.TIC_dirty_update_var = 1 }
+	}
+}
+
+TIC_tab_selection = {
+	clr_country_flag = TIC_offices_tab_open
+	clr_country_flag = TIC_info_tab_open
+	clr_country_flag = TIC_parliament_tab_open
+	clr_country_flag = TIC_council_tab_open
+	clr_country_flag = TIC_budget_tab_open
+	clr_country_flag = TIC_legislations_tab_open
+	update_TIC_dirty_variable = yes
+}

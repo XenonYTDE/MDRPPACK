@@ -2,3 +2,62 @@
 ### TIC scripted triggers ###
 #############################
 
+TIC_offices_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_offices_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_info_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_info_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_parliament_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_parliament_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_council_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_council_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_budget_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_budget_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_legislations_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_legislations_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
