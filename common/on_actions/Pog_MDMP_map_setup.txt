@@ -2327,13 +2327,45 @@ on_actions = {
 
 				GER = {
 					release = BAY
+					transfer_units_fraction = {
+						target = BAY
+						size = 0.20
+					}
 				}
 				FRA = {
 					release = COM
 					release = FGU
+					transfer_units_fraction = {
+						target = COM
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = FGU
+						size = 0.05
+					}
 				}
 				POL = {
 					release = SIL
+					transfer_units_fraction = {
+						target = SIL
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = KSH
+						size = 0.10
+					}
+				}
+				LAT = {
+					transfer_units_fraction = {
+						target = LAG
+						size = 0.25
+					}
+				}
+				BLR = {
+					transfer_units_fraction = {
+						target = VTB
+						size = 0.10
+					}
 				}
 				SPR = {
 					release = SPA
@@ -2344,11 +2376,35 @@ on_actions = {
 					release = MOR
 					set_temp_variable = { debt_change = -500 }
 						modify_debt_effect = yes
+						transfer_units_fraction = {
+							target = SPA
+							size = 0.08
+						}
+						transfer_units_fraction = {
+							target = GAL
+							size = 0.08
+						}
+						transfer_units_fraction = {
+							target = CAT
+							size = 0.08
+						}
+						transfer_units_fraction = {
+							target = NAV
+							size = 0.08
+						}
+						transfer_units_fraction = {
+							target = CNR
+							size = 0.08
+						}
 				}
 				POR = {
 					release = GAL
 					set_temp_variable = { debt_change = -100 }
 						modify_debt_effect = yes
+						transfer_units_fraction = {
+							target = GAL
+							size = 0.10
+						}
 				}
 				ENG = {
 					release = BAH
@@ -2358,36 +2414,148 @@ on_actions = {
 					release = SCO
 					release = IRE
 					release = IOM
+					transfer_units_fraction = {
+						target = BAH
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = STH
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = WAS
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = SCO
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = IRE
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = IOM
+						size = 0.05
+					}
 				}
 				DEN = {
 					release = FAO
 					release = GRL
+					transfer_units_fraction = {
+						target = FAO
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = GRL
+						size = 0.05
+					}
 				}
 				UKR = {
 					release = CRM
 					release = ROM
 					release = DPR
+					transfer_units_fraction = {
+						target = CRM
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = ROM
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = DPR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = HPR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LPR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = OPR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = PRP
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = VRP
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LRP
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = NOV
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = MLR
+						size = 0.05
+					}
 				}
 				MLV = {
 					release = GGZ
+					transfer_units_fraction = {
+						target = GGZ
+						size = 0.05
+					}
 				}
 				SER = {
 					release = VOJ
 					release = MNT
+					transfer_units_fraction = {
+						target = VOJ
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = MNT
+						size = 0.05
+					}
 				}
 				BOS = {
 					release = RSK
 					release = HZG
+					transfer_units_fraction = {
+						target = RSK
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = HZG
+						size = 0.05
+					}
 				}
 				TUR = {
 					release = KUR
 					release = ALA
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = ALA
+						size = 0.05
+					}
 				}
 				GEO = {
 					release = ADJ
+					transfer_units_fraction = {
+						target = ADJ
+						size = 0.05
+					}
 				}
 				GRE = {
 					release = CRE
+					transfer_units_fraction = {
+						target = CRE
+						size = 0.05
+					}
 				}
 				SOV = {
 					release = JAP
@@ -2420,9 +2588,17 @@ on_actions = {
 				}
 				UZB = {
 					release = KRP
+					transfer_units_fraction = {
+						target = KRP
+						size = 0.10
+					}
 				}
 				TAJ = {
 					release = BDA
+					transfer_units_fraction = {
+						target = BDA
+						size = 0.10
+					}
 				}
 				PER = {
 					release = BLC
@@ -2430,30 +2606,90 @@ on_actions = {
 					release = LUR
 					release = LOR
 					release = KUR
+					transfer_units_fraction = {
+						target = BLC
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = ARA
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LUR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = LOR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.05
+					}
 				}
 				AZE = {
 					release = TLS
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.10
+					}
 				}
 				AFG = {
 					release = BLC
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.10
+					}
 				}
 				PAK = {
 					release = BLC
 					release = KAS
+					transfer_units_fraction = {
+						target = KAS
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = BLC
+						size = 0.10
+					}
 				}
 				IRQ = {
 					release = KUR
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.05
+					}
 				}
 				SYR = {
 					release = KUR
 					release = ALA
 					release = DRU
+					transfer_units_fraction = {
+						target = KUR
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = ALA
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = DRU
+						size = 0.10
+					}
 				}
 				SAU = {
 					release = HEJ
 					release = NEJ
 					set_temp_variable = { debt_change = -175 }
 						modify_debt_effect = yes
+					transfer_units_fraction = {
+						target = HEJ
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = NEJ
+						size = 0.10
+					}
 				}
 				RAJ = {
 					release = KAS
@@ -2463,34 +2699,110 @@ on_actions = {
 					release = LAD
 					release = SIK
 					release = KHA
+					transfer_units_fraction = {
+						target = KAS
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KAM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = MEG
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = MAN
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = LAD
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = SIK
+						size = 0.01
+					}
+					transfer_units_fraction = {
+						target = KHA
+						size = 0.02
+					}
 				}
 				KAS = {
 					release = LAD
+					transfer_units_fraction = {
+						target = LAD
+						size = 0.10
+					}
 				}
 				BRM = {
 					release = CHS
 					release = NHN
 					release = ARK
+					transfer_units_fraction = {
+						target = CHS
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = NHN
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = ARK
+						size = 0.06
+					}
 				}
 				CHI = {
 					release = ETK
 					release = TIB
+					transfer_units_fraction = {
+						target = ETK
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = TIB
+						size = 0.05
+					}
 				}
 				IND = {
 					release = TIM
+					transfer_units_fraction = {
+						target = TIM
+						size = 0.05
+					}
 				}
 				ALG = {
 					release = TUA
+					transfer_units_fraction = {
+						target = TUA
+						size = 0.10
+					}
 				}
 				MAL = {
 					release = TUA
+					transfer_units_fraction = {
+						target = TUA
+						size = 0.10
+					}
 				}
 				NGR = {
 					release = TUA
 					release = TIE
+					transfer_units_fraction = {
+						target = TUA
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = TIE
+						size = 0.10
+					}
 				}
 				BFA = {
 					release = TUA
+					transfer_units_fraction = {
+						target = TUA
+						size = 0.10
+					}
 				}
 				LBA = {
 					release = TUA
@@ -2500,19 +2812,43 @@ on_actions = {
 				}
 				CHA = {
 					release = TIE
+				transfer_units_fraction = {
+					target = TIE
+					size = 0.10
+				}
 				}
 				BRA = {
 					release = SPL
 					release = SUL
+					transfer_units_fraction = {
+						target = SPL
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = SUL
+						size = 0.10
+					}
 				}
 				ARG = {
 					release = PAT
+					transfer_units_fraction = {
+						target = PAT
+						size = 0.10
+					}
 				}
 				PAN = {
 					release = COS
+					transfer_units_fraction = {
+						target = COS
+						size = 0.10
+					}
 				}
 				HON = {
 					release = ELS
+					transfer_units_fraction = {
+						target = ELS
+						size = 0.10
+					}
 				}
 				MEX = {
 					release = YUC
@@ -2540,7 +2876,7 @@ on_actions = {
 					release = TEX
 					release = UDT
 					release = GLC
-					set_temp_variable = { debt_change = -4500 }
+					set_temp_variable = { debt_change = -6000 }
 						modify_debt_effect = yes
 				}
 				CAN = {
@@ -2548,22 +2884,42 @@ on_actions = {
 					release = CAS
 					set_temp_variable = { debt_change = -300 }
 						modify_debt_effect = yes
+					transfer_units_fraction = {
+						target = CAS
+						size = 0.10
+					}
 				}
 				JAP = {
 					release = RYU
+					transfer_units_fraction = {
+						target = RYU
+						size = 0.10
+					}
 				}
 				SUD = {
 					release = DAR
 				}
 				SEN = {
 					release = CSM
+					transfer_units_fraction = {
+						target = CSM
+						size = 0.10
+					}
 				}
 				AGL = {
 					release = CAB
+					transfer_units_fraction = {
+						target = CAB
+						size = 0.10
+					}
 				}
 				ITA = {
 					set_temp_variable = { debt_change = -1500 }
 						modify_debt_effect = yes
+						transfer_units_fraction = {
+							target = SCL
+							size = 0.40
+						}
 				}
 				
 				############################## END OF RELEASING ##############################
@@ -6320,6 +6676,16 @@ on_actions = {
 						set_temp_variable = { treasury_change = 5 }
 						modify_treasury_effect = yes
 				}
+				ROM = {
+					transfer_units_fraction = {
+						target = WLC
+						size = 0.25
+					}
+					transfer_units_fraction = {
+						target = TRA
+						size = 0.25
+					}
+				}
 				FAR = {
 					inherit_technology = SOV
 					add_state_core = 687
@@ -8434,6 +8800,268 @@ on_actions = {
 				}
 
 				############################## END OF INDIVIDUAL TRANSFER ##############################
+
+				USA = {
+					transfer_units_fraction = {
+						target = TEX
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = HWI
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = ASK
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = CAL
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = NYK
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = UDT
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = GLC
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = ARC
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = CMB
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = USB
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = CSA
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = KAN
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = IDH
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = FLA
+						size = 0.06
+					}
+					transfer_units_fraction = {
+						target = NEN
+						size = 0.06
+					}
+				}
+				SOV = {
+					transfer_units_fraction = {
+						target = SOO
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = ADY
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = ALT
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = BSH
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = BRY
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = CHU
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = CKK
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = DAG
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = ING
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KLM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KHS
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = TUV
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = YAK
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KBK
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KAE
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KHM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KOM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KCC
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = MOV
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = NEE
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = YAM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = UDM
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = MEL
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = TAT
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = FAR
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = CSB
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = ESB
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = SIB
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = URA
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = DON
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = KUB
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = GOR
+						size = 0.02
+					}
+					transfer_units_fraction = {
+						target = RUS
+						size = 0.02
+					}
+				}
+				MEX = {
+					transfer_units_fraction = {
+						target = YUC
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = RGD
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = CAL
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = TAM
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = TRC
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = SLA
+						size = 0.10
+					}
+					transfer_units_fraction = {
+						target = ZAP
+						size = 0.10
+					}
+				}
+				LBA = {
+					
+					transfer_units_fraction = {
+						target = TUA
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = TIE
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = TRP
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = CYR
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = FEZ
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = GNC
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = GNZ
+						size = 0.08
+					}
+					transfer_units_fraction = {
+						target = HOR
+						size = 0.08
+					}
+				}
 			}
 		}
 	}
