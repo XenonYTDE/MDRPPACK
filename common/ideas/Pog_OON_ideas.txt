@@ -57,7 +57,7 @@ ideas = {
 			modifier = {
 				war_support_weekly = -0.02
 				consumer_goods_factor = 0.15
-				production_factory_efficiency_gain_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.15
 			}
 
 			on_remove = {
@@ -83,7 +83,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.15
 				production_speed_buildings_factor = -0.3
-				political_power_cost = 0.1
+				political_power_cost_factor = -0.25
 			}
 
 			on_remove = {
