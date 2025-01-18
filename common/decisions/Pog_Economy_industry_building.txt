@@ -29,6 +29,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 0.6 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -96,6 +97,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 1.2 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes			
 		}
@@ -164,6 +166,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 1.2 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -233,6 +236,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 1.5 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -303,6 +307,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 1.3 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -435,6 +440,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 2.6 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -504,6 +510,7 @@ Build_industry_building = {
 			set_temp_variable = { money_amount = gdp_total }
 			divide_temp_variable = { money_amount = -3000 }
 			multiply_temp_variable = { money_amount = 0.6 }
+			add_to_temp_variable = { money_amount = 0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
 		}
@@ -573,7 +580,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 1 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes			
 			}
 			if = {
@@ -585,7 +593,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 2 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes								
 			}
 			if = {
@@ -597,7 +606,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 3 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes	
 			}
 			if = {
@@ -609,7 +619,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 4 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -621,7 +632,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 5 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -633,7 +645,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 6 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -645,7 +658,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 7 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -657,7 +671,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 8 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -669,7 +684,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 9 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 			if = {
@@ -680,7 +696,8 @@ Build_industry_building = {
 				divide_temp_variable = { money_amount = -3000 }
 				multiply_temp_variable = { money_amount = 0.5 }
 				multiply_temp_variable = { money_amount = 10 }
-				set_temp_variable = { treasury_change = money_amount }
+				add_to_temp_variable = { money_amount = 0.1 }
+			set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
 			}
 		}
