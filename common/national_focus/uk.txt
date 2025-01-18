@@ -4951,6 +4951,7 @@ focus_tree = {
 					id = anglosphere.1 
 				}
 				remove_ideas = faction_british_commonwealth
+				remove_ideas = commonwealth_of_nations_member
 			}
 			clr_country_flag = ENG_commonwealth_forming_cd_flag
 		}
