@@ -2884,6 +2884,8 @@ focus_tree = {
 			CAN = { country_event = britain_md.12 }
 			AST = { country_event = britain_md.12 }
 			NZL = { country_event = britain_md.12 }
+
+			ENG_commonwealth_forming_cd = yes # DO NOT MERGE WITH BASE MD
 		}
 
 		ai_will_do = {
@@ -4912,22 +4914,45 @@ focus_tree = {
 		relative_position_id = ENG_go_with_the_commonwealth
 		x = 0
 		y = 4
-		cost = 25
+		cost = 5
 
 		prerequisite = {
 			focus = ENG_invite_the_united_states
 		}
-		available = { has_completed_focus = ENG_the_throne_of_all_britons }
+		available = { 
+			has_completed_focus = ENG_the_throne_of_all_britons
+			ENG_commonwealth_forming_cd_over = yes
+				if = {
+					limit = {
+						has_country_flag = ENG_commonwealth_forming_cd_flag
+					}
+					custom_trigger_tooltip = {
+						tooltip = ENG_commonwealth_forming_cd_flag_tt
+						NOT = {	has_country_flag = ENG_commonwealth_forming_cd_flag }
+					}
+				}
+		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus 		id = ENG_the_royal_anglosphere"
-			remove_ideas = faction_british_commonwealth
-			create_faction = royal_anglosphere
-			add_ideas = pog_royal_anglosphere
-			every_country = { 
-				limit = { has_idea = commonwealth_of_nations_member }
-				country_event = anglosphere.1 
+			log = "[GetDateText]: [Root.GetName]: Focus id = ENG_the_royal_anglosphere_alliance "
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
 			}
+			remove_ideas = faction_british_commonwealth
+			create_faction = royal_anglosphere_faction
+			add_ideas = pog_royal_anglosphere_idea
+			every_country = { 
+				limit = { 
+					has_idea = commonwealth_of_nations_member 
+					NOT = { tag = ENG } 
+				}
+				country_event =  { 
+					id = anglosphere.1 
+				}
+				remove_ideas = faction_british_commonwealth
+			}
+			clr_country_flag = ENG_commonwealth_forming_cd_flag
 		}
 
 		ai_will_do = {
@@ -4937,22 +4962,42 @@ focus_tree = {
 	focus = {
 		id = ENG_unite_the_royal_anglosphere
 		icon = united_anglosphere
-		relative_position_id = ENG_the_throne_of_all_britons
-		x = 0
+		relative_position_id = ENG_royal_army
+		x = -2
 		y = 2
-		cost = 25
+		cost = 15
 
 		prerequisite = {
 			focus = ENG_the_throne_of_all_britons
-			focus = ENG_restore_the_raj
 			focus = ENG_royal_army
+			focus = ENG_britannia_rules_the_waves
+			focus = ENG_ground_crew_training
 		}
 
-		available = { has_completed_focus = ENG_the_royal_anglosphere }
+		available = { has_completed_focus = ENG_the_royal_anglosphere_alliance }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ENG_unite_the_royal_anglosphere"
-			
+			every_country = { 
+				limit = { 
+					NOT = { tag = ENG }
+					NOT = { has_idea = pog_royal_anglosphere_idea }
+				}
+				country_event = { 
+					id = anglosphere.2
+					days = 1
+					random_days = 13
+				}
+			}
+			every_country = {
+				limit = { has_idea = pog_royal_anglosphere_idea }
+				country_event = { 
+					id = anglosphere.3
+					days = 1
+					random_days = 4
+				}
+			}
+			set_cosmetic_tag = ENG_anglosphere
 		}
 
 		ai_will_do = {

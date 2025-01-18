@@ -1,0 +1,31 @@
+﻿l_english:
+ ENG_the_royal_anglosphere_alliance: "The Royal Anglosphere Alliance"
+ ENG_the_royal_anglosphere_alliance_desc: "In the wake of the growing influence of the Crown, the Commonwealth is changing into The Royal Anglosphere Alliance"
+ ENG_unite_the_royal_anglosphere: "Unite the Royal Anglosphere"
+ ENG_unite_the_royal_anglosphere_desc: "Unite the Royal Anglosphere"
+ 
+ anglosphere.1.t: "[From.GetNameDef] invites us to the Royal Anglosphere!"
+ anglosphere.1.desc: "Do we join the [From.GetNameDef]?"
+ anglosphere.1.a: "God save the Queen!"
+ anglosphere.1.b: "We will not ally with the English."
+
+ anglosphere.2.t: "The Imperial Federations"
+ anglosphere.2.desc: "[From.GetNameDef] offers the status of an Imperial Federation. Our outlook will change to nationalist!"
+ anglosphere.2.a: "We are honored."
+ anglosphere.2.b: "We reject."
+
+ anglosphere.3.t: "The Imperial Federations"
+ anglosphere.3.desc: "[From.GetNameDef] grants the status of an Imperial Federation. Our outlook will change to nationalist!"
+ anglosphere.3.a: "We are honored."
+
+ ENG_anglosphere: "The Crown of Anglosphere"
+
+ autonomy_imperial_federation: "Imperial Federation"
+
+ pog_royal_anglosphere_idea: "Member of the Royal Anglosphere"
+
+ royal_anglosphere_faction: "The Royal Anglosphere"
+
+ ENG_commonwealth_forming_cd_flag: "Formed §YThe Commonwealth Alliance§!"
+ ENG_commonwealth_forming_cd_flag_tt: "Cannot form §RRoyal Anglosphere§! this soon after forming §YThe Commonwealth Alliance§!.
+[?ENG_commonwealth_forming_cd_flag:days_left|Y0] §Ydays left§!"

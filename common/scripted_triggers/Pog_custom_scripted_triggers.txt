@@ -1,0 +1,8 @@
+ENG_commonwealth_forming_cd_over = {
+	NOT = {
+		has_country_flag = {
+			flag = ENG_commonwealth_forming_cd_flag
+			days < 365
+		}
+	}
+}
