@@ -1,0 +1,61 @@
+	# Original Power ranking effects by Yard1
+
+#	# THIS is whatever
+#	# Do the ranking - fired every month
+#	set_GDP_ranking_ideas_for_every_country = {
+#		get_global_factories_GDP = yes
+#		every_country = {
+#			get_percentage_of_global_factories_GDP = yes
+#			determine_GDP_ranking = yes
+#		}
+#	}
+#
+#	# THIS is whatever
+#	# Sum of world's factories (civ, mil, nav) saved in global_num_of_factories variable
+#	get_global_factories_GDP = {
+#		set_variable = { global.global_num_of_factories_GDP = 0 }
+#		every_country = {
+#			set_variable = { global.tmpgdp = gdp_total }
+#			divide_variable = { global.tmpgdp = 100 }	#Scale down to prevent overflow
+#			add_to_variable = { global.global_num_of_factories_GDP = global.tmpgdp }
+#		}
+#		clear_variable = global.tmpgdp
+#	}
+#
+#	# THIS is a country
+#	# Calculates what percentage of global factories the country's factories (civ, mil, nav) make up
+#	# Saved in percentage_of_global_factories_GDPvariable
+#	get_percentage_of_global_factories_GDP = {
+#		set_variable = { percentage_of_global_factories_GDP = gdp_total }
+#		divide_variable = { percentage_of_global_factories_GDP = 100 }	#Scale down to prevent overflow
+#		divide_variable = { percentage_of_global_factories_GDP = global.global_num_of_factories }
+#	}
+#
+#	# THIS is a country
+#	# Determine what kind of power they are
+#	determine_GDP_ranking = {
+#		remove_ideas = {
+#			eco_hegemony
+#			eco_superpower
+#			eco_greatpower
+#			eco_largepower
+#			eco_minorpower
+#			eco_nonpower
+#		if = { limit = { check_variable = { percentage_of_global_factories_GDP < 0.002 } }
+#		}
+#		else_if = { limit = { check_variable = { percentage_of_global_factories_GDP > 0.30 } }
+#			add_ideas = eco_hegemony
+#		}
+#		else_if = { limit = { check_variable = { percentage_of_global_factories_GDP > 0.15 } }
+#			add_ideas = eco_superpower
+#		}
+#		else_if = { limit = { check_variable = { percentage_of_global_factories_GDP > 0.065 } }
+#			add_ideas = eco_greatpower
+#		}
+#		else_if = { limit = { check_variable = { percentage_of_global_factories_GDP > 0.025 } }
+#			add_ideas = eco_largepower
+#		}
+#		else = {
+#			add_ideas = eco_minorpower
+#		}
+#	}

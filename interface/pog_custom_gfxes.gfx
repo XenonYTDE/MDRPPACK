@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_pog_hegemony"
+		texturefile = "gfx/interface/ideas/politics/global_hegemony.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_imperial_federation_icon"
+		texturefile = "gfx/interface/ideas/royal_anglosphere_autonomy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_pog_royal_anglosphere_idea"
+		texturefile = "gfx/interface/ideas/royal_anglosphere_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_anglosphere_event"
+		texturefile = "gfx/event_pictures/anglosphere_event.dds"
+	}
+}

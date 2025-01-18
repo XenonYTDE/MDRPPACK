@@ -909,3 +909,7 @@ CHI_liberalism = {
 	color = rgb { 6 191 158 }
 	color_ui = rgb { 6 191 158 }
 }
+ENG_anglosphere = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}

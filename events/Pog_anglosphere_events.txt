@@ -1,0 +1,127 @@
+add_namespace = anglosphere
+
+country_event = {
+    id = anglosphere.1
+    title = anglosphere.1.t
+    desc = anglosphere.1.desc
+	picture = GFX_anglosphere_event
+    
+    is_triggered_only = yes
+
+	option = {
+		name = anglosphere.1.a
+		log = "[GetDateText]: [This.GetName]: anglosphere.1.a executed"
+
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
+		}
+		if = {
+			limit = { has_idea = NATO_member} 
+			NATO_leave = yes
+		}
+		if = {
+			limit = { has_idea = CSTO_member }
+			CSTO_leave = yes
+		}
+
+		ENG = {
+			add_to_faction = ROOT
+			country_event = diplomatic_response.1
+		}
+	}
+	option = {	#Ah hell nah
+		name = anglosphere.1.b
+		log = "[GetDateText]: [This.GetName]: anglosphere.1.b executed"
+		add_political_power = 10
+		country_event = diplomatic_response.2
+	}
+}
+
+country_event = {
+    id = anglosphere.2
+    title = anglosphere.2.t
+    desc = anglosphere.2.desc
+	picture = GFX_anglosphere_event
+    
+    is_triggered_only = yes
+
+	option = {
+		name = anglosphere.2.a
+		log = "[GetDateText]: [This.GetName]: anglosphere.2.a executed"
+		ENG = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_imperial_federation
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_government = nationalist
+				add = 400
+			}
+			modifier = {
+				has_government = fascism
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = anglosphere.2.b
+		log = "[GetDateText]: [This.GetName]: anglosphere.2.b executed"
+		country_event = diplomatic_response.2
+
+		ai_chance = {
+			base = 250
+			modifier = {
+				has_government = neutrality
+				add = 200
+			}
+			modifier = {
+				has_government = democratic
+				add = 300
+			}
+			modifier = {
+				has_government = communism
+				add = 300
+			}
+			modifier = {
+				has_idea = large_power
+				add = 250
+			}
+			modifier = {
+				has_idea = great_power
+				add = 300
+			}
+			modifier = {
+				has_idea = superpower
+				add = 350
+			}
+		}
+	}
+}
+
+country_event = {
+    id = anglosphere.3
+    title = anglosphere.3.t
+    desc = anglosphere.3.desc
+	picture = GFX_anglosphere_event
+    
+    is_triggered_only = yes
+
+	option = {
+		name = anglosphere.3.a
+		log = "[GetDateText]: [This.GetName]: anglosphere.2.a executed"
+		ENG = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_imperial_federation
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+#	on_actions = {
+#		on_monthly = {
+#			effect = { set_GDP_ranking_ideas_for_every_country = yes }
+#		}
+#
+#		on_startup = {
+#			effect = { set_GDP_ranking_ideas_for_every_country = yes }
+#		}
+#	}

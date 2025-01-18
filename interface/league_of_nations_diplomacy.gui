@@ -26,20 +26,20 @@ guiTypes = {
 		iconType = {
 			name = "background"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x = -1 y = 36 }
+			position = { x = -105 y = 10 }
 		}
 
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_league_of_nations_threat_icon"
-			position = { x = -1 y = 36 }
+			position = { x = -105 y = 10 }
 			scale = 0.5
 			pdx_tooltip = "GENERATED_LEAGUE_OF_NATIONS_THREAT_ICON_TT"
 		}
 
 		instantTextBoxType = {
 			name = "text"
-			position = { x = 15 y = 40 }
+			position = { x = -90 y = 14 }
 			font = "hoi_18mbs"
 			maxWidth = 50
 			maxHeight = 20
