@@ -71,10 +71,6 @@ jobs:
           git clone https://github.com/cwtools/cwtools-action.git .
           chmod +x lib/entrypoint.sh
           
-          # Create and copy to /src directory
-          mkdir -p /src
-          cp -r lib/* /src/
-          
           # Install required packages including ICU
           apt-get update
           apt-get install -y wget ruby ruby-dev build-essential libicu-dev icu-devtools
@@ -85,16 +81,16 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           
-          # Create cwtools-cache-files directory
-          mkdir -p /cwtools-cache-files
+          # Create directories
+          mkdir -p /src /cwtools-cache-files
           export SRC_DIR=/src
           
           # Run the validator
-          /src/entrypoint.sh
+          ./lib/entrypoint.sh
 
       - name: Run CWTools validation
         run: |
-          cd /src
+          cd $HOME/cwtools/lib
           ruby cwtools.rb
 
       - name: Upload artifacts
