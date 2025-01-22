@@ -53,26 +53,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # This ensures we have access to the default branch
+          fetch-depth: 0
       
       - name: Install dependencies
         run: |
           apt-get update
           apt-get install -y wget ruby git jq p7zip
           
-      - name: Install reviewdog
-        run: |
-          curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin/
-          
       - name: Run CWTools validator
         run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents: $(ls -la)"
           echo "Pulling down the CWTools action validator"
-          wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
-          
-          if [ -f "errors.txt" ]; then
-            echo "Running reviewdog..."
-            cat errors.txt | reviewdog -f=checkstyle -name=cwtools -reporter=github-pr-check
-          fi
+          wget -O setup.sh https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh
+          chmod +x setup.sh
+          echo "Setup script contents:"
+          cat setup.sh
+          echo "Running setup script:"
+          bash -x setup.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CI_API_V4_URL: ${{ github.api_url }}
