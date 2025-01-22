@@ -62,13 +62,14 @@ jobs:
           git clone https://github.com/cwtools/cwtools-action.git .
           chmod +x lib/entrypoint.sh
           
-          # Install required packages
+          # Install required packages including ICU
           sudo apt-get update
-          sudo apt-get install -y git wget ruby ruby-dev build-essential
+          sudo apt-get install -y git wget ruby ruby-dev build-essential libicu-dev icu-devtools
           
           # Setup environment
           export PATH="$PATH:/root/.dotnet/tools"
           export GITHUB_WORKSPACE=${{ github.workspace }}
+          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           
           # Run the validator
           ./lib/entrypoint.sh
