@@ -7,6 +7,12 @@ env:
   RULES: "https://github.com/Kaiserreich/cwtools-hoi4-config.git"
   RULES_REF: "master"
   SUPPRESSED_OFFENCE_CATEGORIES: '{"failure":["CW226"],"warning":["CW251"],"notice":[]}'
+  DOCKER_DRIVER: overlay2
+  GIT_STRATEGY: clone
+  INPUT_GAME: "hoi4"
+  INPUT_RULES: "https://github.com/Kaiserreich/cwtools-hoi4-config.git"
+  INPUT_RULESREF: "master"
+  INPUT_SUPPRESSEDOFFENCECATEGORIES: '{"failure":["CW226"],"warning":["CW251"],"notice":[]}'
 
 jobs:
   coding-standards:
@@ -28,6 +34,8 @@ jobs:
         
   cwtools:
     runs-on: ubuntu-latest
+    container: 
+      image: mcr.microsoft.com/dotnet/core/sdk:3.0
     permissions:
       checks: write
       contents: read
@@ -36,17 +44,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: CWTools CI
-        uses: cwtools/cwtools-action@v1.0.0
-        with:
-          game: ${{ env.GAME }}
-          rules: ${{ env.RULES }}
-          rulesRef: ${{ env.RULES_REF }}
-          suppressedOffenceCategories: ${{ env.SUPPRESSED_OFFENCE_CATEGORIES }}
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y wget ruby git
+          
+      - name: Run CWTools validator
+        run: |
+          echo "Pulling down the CWTools action validator"
+          wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTIONS_STEP_DEBUG: true
-          ACTIONS_RUNNER_DEBUG: true
           
       - name: Upload CWTools results
         if: always()
