@@ -77,8 +77,7 @@ jobs:
           # Setup environment
           export PATH="$PATH:$HOME/.dotnet/tools"
           export GITHUB_WORKSPACE=${{ github.workspace }}
-          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
-          export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
+          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
           
           # Create directories
           mkdir -p /src /cwtools-cache-files
@@ -96,6 +95,7 @@ jobs:
           mkdir -p $HOME/cwtools/cwtools-cache-files
           export PATH="$PATH:$HOME/.dotnet/tools"
           export DOTNET_CLI_HOME="$HOME/cwtools"
+          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
           cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }}
           cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }} --path $GITHUB_WORKSPACE --output-file output.json
           ruby lib/cwtools.rb
