@@ -19,6 +19,9 @@ env:
   INPUT_LOCLANGUAGES: "english"
   INPUT_SUPPRESSEDFILES: "[]"
   INPUT_CWTOOLSCLIVERSION: ""
+  INPUT_CWTOOLSACTIONREF: "v1.0.0"
+  INPUT_REVIEWDOGREF: "main"
+  CI_DEFAULT_BRANCH: "main"
 
 jobs:
   coding-standards:
@@ -49,11 +52,13 @@ jobs:
     if: true
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # This ensures we have access to the default branch
       
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y wget ruby git jq
+          apt-get install -y wget ruby git jq p7zip
           
       - name: Install reviewdog
         run: |
