@@ -73,10 +73,12 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           
-          # Create directories with proper permissions
-          sudo mkdir -p /src /src/cwtools-cache-files
-          sudo chown -R $USER:$USER /src /src/cwtools-cache-files
-          export SRC_DIR=/src
+          # Create directories with proper permissions in user space
+          mkdir -p $HOME/src $HOME/cwtools-cache-files
+          export SRC_DIR=$HOME/src
+          
+          # Create symlink for cache files
+          ln -s $HOME/cwtools-cache-files cwtools/cwtools-cache-files
           
           # Run the validator
           ./lib/entrypoint.sh
