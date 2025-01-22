@@ -13,6 +13,12 @@ env:
   INPUT_RULES: "https://github.com/Kaiserreich/cwtools-hoi4-config.git"
   INPUT_RULESREF: "master"
   INPUT_SUPPRESSEDOFFENCECATEGORIES: '{"failure":["CW226"],"warning":["CW251"],"notice":[]}'
+  INPUT_MODPATH: ""
+  INPUT_CACHE: ""
+  INPUT_VANILLAMODE: "0"
+  INPUT_LOCLANGUAGES: "english"
+  INPUT_SUPPRESSEDFILES: "[]"
+  INPUT_CWTOOLSCLIVERSION: ""
 
 jobs:
   coding-standards:
@@ -55,6 +61,10 @@ jobs:
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CI_API_V4_URL: ${{ github.api_url }}
+          CI_PROJECT_ID: ${{ github.repository_id }}
+          CI_COMMIT_SHA: ${{ github.sha }}
+          CI_MERGE_REQUEST_IID: ${{ github.event.pull_request.number }}
           
       - name: Upload CWTools results
         if: always()
