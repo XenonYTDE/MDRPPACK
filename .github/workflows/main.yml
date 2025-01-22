@@ -63,11 +63,7 @@ jobs:
           if [ -f "output.json" ]; then
             echo "CWTools Validation Results:"
             echo "=========================="
-            echo "Raw JSON content:"
-            cat output.json
-            echo "=========================="
-            echo "Parsed results:"
-            jq '.' output.json
+            jq -r '.[] | "\(.severity): \(.message) (File: \(.file), Line \(.position.startLine))"' output.json | sort
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
