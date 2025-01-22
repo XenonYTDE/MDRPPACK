@@ -460,7 +460,14 @@ def main():
 	try:
 		# GitHub API setup
 		repo = os.environ['GITHUB_REPOSITORY']
-		token = sys.argv[1]
+		
+		# Check if token is provided
+		if len(sys.argv) > 1:
+			token = sys.argv[1]
+		else:
+			print("GitHub token not provided. Skipping results posting.")
+			return bad_count
+			
 		headers = {
 			'Authorization': f'token {token}',
 			'Accept': 'application/vnd.github.v3+json'
