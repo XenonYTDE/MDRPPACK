@@ -41,7 +41,7 @@ jobs:
     needs: [codingstandards]
     if: always()
     container:
-      image: mcr.microsoft.com/dotnet/sdk:3.0
+      image: mcr.microsoft.com/dotnet/sdk:6.0
       options: --user root
 
     steps:
