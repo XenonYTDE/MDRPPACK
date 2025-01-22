@@ -63,11 +63,7 @@ jobs:
           if [ -f "output.json" ]; then
             echo "CWTools Validation Results:"
             echo "=========================="
-            echo "Full JSON structure:"
-            jq '.' output.json
-            echo "=========================="
-            echo "Attempting to parse errors:"
-            jq -r 'if type == "array" then .[] | select(.severity != null) | "\(.severity): \(.message) (File: \(.file))" else empty end' output.json | sort
+            jq -r '.[] | "\(.severity): \(.message) (Line: \(.position.startLine), Column: \(.position.startColumn))"' output.json | sort
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
