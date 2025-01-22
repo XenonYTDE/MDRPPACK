@@ -77,7 +77,8 @@ jobs:
           mkdir -p $HOME/src $HOME/cwtools-cache-files
           export SRC_DIR=$HOME/src
           
-          # Create symlink for cache files
+          # Create cwtools directory and symlink
+          mkdir -p cwtools
           ln -s $HOME/cwtools-cache-files cwtools/cwtools-cache-files
           
           # Run the validator
