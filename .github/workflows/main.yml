@@ -8,6 +8,12 @@ on:
     branches:
       - main
 
+env:
+  INPUT_GAME: "hoi4"  # Set the game to HOI4
+  INPUT_RULES: "https://github.com/Kaiserreich/cwtools-hoi4-config.git"
+  INPUT_RULESREF: "master"
+  INPUT_SUPPRESSEDOFFENCECATEGORIES: '{"failure":["CW226"], "warning":["CW251"], "notice":[]}'
+
 jobs:
   codingstandards:
     runs-on: ubuntu-latest
