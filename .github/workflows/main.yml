@@ -50,8 +50,26 @@ jobs:
 
       - name: Run CWTools validation
         run: |
-          echo "Pulling down the CWTools action validator"
-          wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
+          cd $HOME/cwtools
+          dotnet tool install -g cwtools.cli
+          mkdir -p $HOME/cwtools/cwtools-cache-files
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          export DOTNET_CLI_HOME="$HOME/cwtools"
+          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
+          
+          # First run to generate cache
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb --reporttype json
+          
+          # Second run to validate and generate output
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb --reporttype json > output.json
+          
+          # Check if output.json exists and is valid
+          if [ -s "output.json" ]; then
+            ruby lib/cwtools.rb
+          else
+            echo "No validation output generated"
+            exit 1
+          fi
 
       - name: Upload artifacts
         if: always()
