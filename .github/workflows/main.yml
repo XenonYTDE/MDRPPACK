@@ -50,6 +50,7 @@ jobs:
 
       - name: Run CWTools validation
         run: |
+          mkdir -p $HOME/cwtools
           cd $HOME/cwtools
           dotnet tool install -g cwtools.cli
           mkdir -p $HOME/cwtools/cwtools-cache-files
