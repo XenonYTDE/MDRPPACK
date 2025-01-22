@@ -46,17 +46,32 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '3.0.x'
+
       - name: Pull CWTools Action Validator
         run: |
+          # Create working directory
+          sudo mkdir -p /cwtools
+          sudo chown $USER:$USER /cwtools
+          cd /cwtools
+          
+          # Clone and setup CWTools
+          git clone https://github.com/cwtools/cwtools-action.git .
+          chmod +x lib/entrypoint.sh
+          
+          # Install required packages
           sudo apt-get update
           sudo apt-get install -y git wget ruby ruby-dev build-essential
-          mkdir -p $HOME/cwtools
-          cd $HOME/cwtools
-          wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
-          chmod +x $HOME/cwtools/lib/entrypoint.sh
-          cd $HOME/cwtools/lib
+          
+          # Setup environment
           export PATH="$PATH:/root/.dotnet/tools"
-          ./entrypoint.sh
+          export GITHUB_WORKSPACE=${{ github.workspace }}
+          
+          # Run the validator
+          ./lib/entrypoint.sh
 
       - name: Upload artifacts
         if: always()
