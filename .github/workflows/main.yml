@@ -71,6 +71,9 @@ jobs:
           git clone https://github.com/cwtools/cwtools-action.git .
           chmod +x lib/entrypoint.sh
           
+          # Modify entrypoint.sh to run Ruby script with correct path
+          sed -i 's/ruby \.\/cwtools.rb/ruby $HOME\/cwtools\/lib\/cwtools.rb/g' lib/entrypoint.sh
+          
           # Install required packages including ICU
           apt-get update
           apt-get install -y wget ruby ruby-dev build-essential libicu-dev icu-devtools
