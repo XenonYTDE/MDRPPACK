@@ -43,6 +43,9 @@ jobs:
     if: always()
     permissions:
       contents: write
+    container:
+      image: ubuntu:latest
+      options: --user root
 
     steps:
       - name: Checkout code
@@ -64,8 +67,8 @@ jobs:
           chmod +x lib/entrypoint.sh
           
           # Install required packages including ICU
-          sudo apt-get update
-          sudo apt-get install -y git wget ruby ruby-dev build-essential libicu-dev icu-devtools
+          apt-get update
+          apt-get install -y git wget ruby ruby-dev build-essential libicu-dev icu-devtools
           
           # Setup environment
           export PATH="$PATH:$HOME/.dotnet/tools"
@@ -73,13 +76,9 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           
-          # Create directories with proper permissions in user space
-          mkdir -p $HOME/src $HOME/cwtools-cache-files
-          export SRC_DIR=$HOME/src
-          
-          # Create cwtools directory and symlink
-          mkdir -p cwtools
-          ln -s $HOME/cwtools-cache-files cwtools/cwtools-cache-files
+          # Create directories
+          mkdir -p /src /cwtools-cache-files
+          export SRC_DIR=/src
           
           # Run the validator
           ./lib/entrypoint.sh
