@@ -95,6 +95,7 @@ jobs:
           dotnet tool install -g cwtools.cli
           mkdir -p $HOME/cwtools/cwtools-cache-files
           export PATH="$PATH:$HOME/.dotnet/tools"
+          export DOTNET_CLI_HOME="$HOME/cwtools"
           cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }}
           cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }} --path $GITHUB_WORKSPACE --output-file output.json
           ruby lib/cwtools.rb
