@@ -91,7 +91,7 @@ jobs:
       - name: Run CWTools validation
         run: |
           cd /action/lib
-          ruby cwtools.rb
+          ruby ./cwtools.rb
 
       - name: Upload artifacts
         if: always()
