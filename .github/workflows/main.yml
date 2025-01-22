@@ -96,8 +96,13 @@ jobs:
           export PATH="$PATH:$HOME/.dotnet/tools"
           export DOTNET_CLI_HOME="$HOME/cwtools"
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
-          cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }}
-          cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }} --path $GITHUB_WORKSPACE --output-file output.json
+          
+          # First run to generate cache
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb
+          
+          # Second run to validate and generate output
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb > output.json
+          
           ruby lib/cwtools.rb
 
       - name: Upload artifacts
