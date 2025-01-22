@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  INPUT_GAME: "hoi4"  # Set the game to HOI4
+  INPUT_GAME: "hoi4"
   INPUT_RULES: "https://github.com/Kaiserreich/cwtools-hoi4-config.git"
   INPUT_RULESREF: "master"
   INPUT_SUPPRESSEDOFFENCECATEGORIES: '{"failure":["CW226"], "warning":["CW251"], "notice":[]}'
@@ -17,7 +17,6 @@ env:
 jobs:
   codingstandards:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -32,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Coding Standards
+      - name: Run Coding Standards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python tools/coding_standards.py $GITHUB_TOKEN
@@ -41,56 +40,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: [codingstandards]
     if: always()
-    permissions:
-      contents: write
     container:
-      image: ubuntu:latest
+      image: mcr.microsoft.com/dotnet/sdk:3.0
       options: --user root
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install basic dependencies
-        run: |
-          apt-get update
-          apt-get install -y curl git
-
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '6.0.x'
-
-      - name: Pull CWTools Action Validator
-        run: |
-          # Create working directory in user space
-          mkdir -p $HOME/cwtools
-          cd $HOME/cwtools
-          
-          # Clone and setup CWTools
-          git clone https://github.com/cwtools/cwtools-action.git .
-          
-          # Install required packages including ICU
-          apt-get update
-          apt-get install -y wget ruby ruby-dev build-essential libicu-dev icu-devtools
-          
-          # Setup environment
-          export PATH="$PATH:$HOME/.dotnet/tools"
-          export GITHUB_WORKSPACE=${{ github.workspace }}
-          export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
-          
-          # Create directories
-          mkdir -p /src /cwtools-cache-files
-          export SRC_DIR=/src
-
-      - name: Setup .NET Core 3.0
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '3.0.x'
-          
       - name: Run CWTools validation
         run: |
-          cd $HOME/cwtools
+          echo "Pulling down the CWTools action validator"
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
 
       - name: Upload artifacts
@@ -104,7 +64,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [CWTools_CI]
     if: always()
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -118,7 +77,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [styling]
     if: always()
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -140,15 +98,14 @@ jobs:
           git commit -m 'Fixed Styling for you'
           git push -u origin HEAD:$GITHUB_REF_NAME
 
-  create_releaseable:
+  create_release:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
-
+    if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Create a Release
+      - name: Create Release
         uses: actions/create-release@v1
         with:
           tag_name: ${{ github.ref }}
