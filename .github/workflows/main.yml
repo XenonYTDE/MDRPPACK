@@ -41,6 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [codingstandards]
     if: always()
+    permissions:
+      contents: write  # Add explicit permissions
 
     steps:
       - name: Checkout code
@@ -70,9 +72,11 @@ jobs:
           export GITHUB_WORKSPACE=${{ github.workspace }}
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
-          export SRC_DIR=$HOME/cwtools/src  # Changed to user-writable directory
-          mkdir -p $SRC_DIR
-          chmod 777 $SRC_DIR  # Ensure proper permissions
+          
+          # Create src directory with sudo
+          sudo mkdir -p /src
+          sudo chown -R $USER:$USER /src
+          export SRC_DIR=/src
           
           # Run the validator
           ./lib/entrypoint.sh
