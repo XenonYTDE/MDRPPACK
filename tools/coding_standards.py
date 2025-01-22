@@ -458,29 +458,31 @@ def main():
 
 
 	try:
-		projectId = os.environ['CI_PROJECT_ID'];
-		privateToken = privateToken = sys.argv[1]
-		headers = {'PRIVATE-TOKEN': privateToken}
-		payload = {'body': message}
-
+		# GitHub API setup
+		repo = os.environ['GITHUB_REPOSITORY']
+		token = sys.argv[1]
+		headers = {
+			'Authorization': f'token {token}',
+			'Accept': 'application/vnd.github.v3+json'
+		}
+		
 		if postResults == True:
-			if "CI_MERGE_REQUEST_IID" in os.environ:
-				mergeRequestId = os.environ['CI_MERGE_REQUEST_IID'];
-				r = requests.post(
-					"https://gitlab.com/api/v4/projects/" + projectId + "/merge_requests/" + mergeRequestId + "/discussions",
-					data=payload, headers=headers)
-				print("Posted results to merge request")
-
+			if "GITHUB_EVENT_NAME" in os.environ and os.environ['GITHUB_EVENT_NAME'] == 'pull_request':
+				pr_number = os.environ['GITHUB_REF'].split('/')[2]
+				url = f"https://api.github.com/repos/{repo}/issues/{pr_number}/comments"
+				payload = {'body': message}
+				r = requests.post(url, json=payload, headers=headers)
+				print("Posted results to pull request")
 			else:
-				commitID = os.environ['CI_COMMIT_SHA'];
-				r = requests.post(
-					"https://gitlab.com/api/v4/projects/" + projectId + "/commits/" + commitID + "/discussions",
-					data=payload, headers=headers)
+				commit_sha = os.environ['GITHUB_SHA']
+				url = f"https://api.github.com/repos/{repo}/commits/{commit_sha}/comments"
+				payload = {'body': message}
+				r = requests.post(url, json=payload, headers=headers)
 				print("Posted results to commit")
 		else:
 			print("File validation passed Coding Standards: SUCCESS")
-	except:
-		print("Couldn't post results to gitlab")
+	except Exception as e:
+		print(f"Couldn't post results to GitHub: {str(e)}")
 
 	return bad_count
 
