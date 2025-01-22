@@ -48,11 +48,14 @@ jobs:
 
       - name: Pull CWTools Action Validator
         run: |
+          sudo apt-get update
+          sudo apt-get install -y git wget ruby ruby-dev build-essential
           mkdir -p $HOME/cwtools
           cd $HOME/cwtools
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
           chmod +x $HOME/cwtools/lib/entrypoint.sh
           cd $HOME/cwtools/lib
+          export PATH="$PATH:/root/.dotnet/tools"
           ./entrypoint.sh
 
       - name: Upload artifacts
