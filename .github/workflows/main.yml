@@ -42,7 +42,7 @@ jobs:
     needs: [codingstandards]
     if: always()
     permissions:
-      contents: write  # Add explicit permissions
+      contents: write
 
     steps:
       - name: Checkout code
@@ -73,9 +73,9 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           
-          # Create src directory with sudo
-          sudo mkdir -p /src
-          sudo chown -R $USER:$USER /src
+          # Create directories with proper permissions
+          sudo mkdir -p /src /src/cwtools-cache-files
+          sudo chown -R $USER:$USER /src /src/cwtools-cache-files
           export SRC_DIR=/src
           
           # Run the validator
