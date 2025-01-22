@@ -97,11 +97,11 @@ jobs:
           export DOTNET_CLI_HOME="$HOME/cwtools"
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
           
-          # First run to generate cache
-          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb
+          # Generate the cache file
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb
           
-          # Second run to validate and generate output
-          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb > output.json
+          # Validate and generate output using the cache file
+          cwtools validate --directory $GITHUB_WORKSPACE --game ${{ env.INPUT_GAME }} --rulespath ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --cachefile $HOME/cwtools/cwtools-cache-files/cache.cwb > output.json
           
           ruby lib/cwtools.rb
 
