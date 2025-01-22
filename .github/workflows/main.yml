@@ -67,15 +67,13 @@ jobs:
           mkdir -p $HOME/cwtools
           cd $HOME/cwtools
           
-          # Create src directory first
-          mkdir -p /src
-          
           # Clone and setup CWTools
           git clone https://github.com/cwtools/cwtools-action.git .
           chmod +x lib/entrypoint.sh
           
-          # Copy Ruby script to /src
-          cp lib/cwtools.rb /src/
+          # Create and copy to /src directory
+          mkdir -p /src
+          cp -r lib/* /src/
           
           # Install required packages including ICU
           apt-get update
@@ -92,7 +90,7 @@ jobs:
           export SRC_DIR=/src
           
           # Run the validator
-          ./lib/entrypoint.sh
+          /src/entrypoint.sh
 
       - name: Run CWTools validation
         run: |
