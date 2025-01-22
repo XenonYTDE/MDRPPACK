@@ -66,7 +66,7 @@ jobs:
             echo "Total Errors: $(jq '.errorCount' output.json)"
             echo "=========================="
             echo "Errors by file:"
-            jq -r '.files[] | .errors[] | "\(.severity): \(.message) (Line: \(.position.startLine), Column: \(.position.startColumn))"' output.json | sort
+            jq -r '.files[] | .errors[] as $error | "\($error.severity): \($error.message) (File: \(.path), Line: \($error.position.startLine), Column: \($error.position.startColumn))"' output.json | sort
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
