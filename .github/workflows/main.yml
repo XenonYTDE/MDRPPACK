@@ -13,7 +13,7 @@ env:
 jobs:
   coding-standards:
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline')
+    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false
     steps:
       - uses: actions/checkout@v3
       
@@ -30,7 +30,7 @@ jobs:
         
   cwtools:
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') && !contains(github.event.pull_request.labels.*.name, 'skip-cwtools-job')
+    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false && contains(github.event.pull_request.labels.*.name, 'skip-cwtools-job') == false
     steps:
       - uses: actions/checkout@v3
       
@@ -51,7 +51,7 @@ jobs:
 
   styling:
     needs: [coding-standards]
-    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline')
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -69,7 +69,7 @@ jobs:
 
   fix-styling:
     needs: [styling]
-    if: failure() && !contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') && !contains(github.event.pull_request.labels.*.name, 'skip-fixing-styling')
+    if: failure() && contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false && contains(github.event.pull_request.labels.*.name, 'skip-fixing-styling') == false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
