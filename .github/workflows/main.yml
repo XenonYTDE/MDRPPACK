@@ -69,10 +69,6 @@ jobs:
           
           # Clone and setup CWTools
           git clone https://github.com/cwtools/cwtools-action.git .
-          chmod +x lib/entrypoint.sh
-          
-          # Modify entrypoint.sh to run Ruby script with correct path
-          sed -i 's/ruby \.\/cwtools.rb/ruby $HOME\/cwtools\/lib\/cwtools.rb/g' lib/entrypoint.sh
           
           # Install required packages including ICU
           apt-get update
@@ -87,14 +83,11 @@ jobs:
           # Create directories
           mkdir -p /src /cwtools-cache-files
           export SRC_DIR=/src
-          
-          # Run the validator
-          ./lib/entrypoint.sh
 
       - name: Run CWTools validation
         run: |
-          cd $HOME/cwtools/lib
-          ruby cwtools.rb
+          cd $HOME/cwtools
+          ruby lib/cwtools.rb
 
       - name: Upload artifacts
         if: always()
