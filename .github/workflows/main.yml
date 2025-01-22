@@ -53,10 +53,9 @@ jobs:
 
       - name: Pull CWTools Action Validator
         run: |
-          # Create working directory
-          sudo mkdir -p /cwtools
-          sudo chown $USER:$USER /cwtools
-          cd /cwtools
+          # Create working directory in user space
+          mkdir -p $HOME/cwtools
+          cd $HOME/cwtools
           
           # Clone and setup CWTools
           git clone https://github.com/cwtools/cwtools-action.git .
@@ -67,10 +66,12 @@ jobs:
           sudo apt-get install -y git wget ruby ruby-dev build-essential libicu-dev icu-devtools
           
           # Setup environment
-          export PATH="$PATH:/root/.dotnet/tools"
+          export PATH="$PATH:$HOME/.dotnet/tools"
           export GITHUB_WORKSPACE=${{ github.workspace }}
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
+          export SRC_DIR=$HOME/src  # Use user-writable directory
+          mkdir -p $SRC_DIR
           
           # Run the validator
           ./lib/entrypoint.sh
