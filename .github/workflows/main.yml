@@ -51,10 +51,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install curl
+      - name: Install basic dependencies
         run: |
           apt-get update
-          apt-get install -y curl
+          apt-get install -y curl git
 
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v3
@@ -73,7 +73,7 @@ jobs:
           
           # Install required packages including ICU
           apt-get update
-          apt-get install -y git wget ruby ruby-dev build-essential libicu-dev icu-devtools
+          apt-get install -y wget ruby ruby-dev build-essential libicu-dev icu-devtools
           
           # Setup environment
           export PATH="$PATH:$HOME/.dotnet/tools"
