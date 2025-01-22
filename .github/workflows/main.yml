@@ -48,11 +48,12 @@ jobs:
 
       - name: Pull CWTools Action Validator
         run: |
-          mkdir -p /tmp/cwtools
-          cd /tmp/cwtools
+          mkdir -p $HOME/cwtools
+          cd $HOME/cwtools
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
-          chmod +x /tmp/cwtools/lib/entrypoint.sh
-          /tmp/cwtools/lib/entrypoint.sh
+          chmod +x $HOME/cwtools/lib/entrypoint.sh
+          cd $HOME/cwtools/lib
+          ./entrypoint.sh
 
       - name: Upload artifacts
         if: always()
