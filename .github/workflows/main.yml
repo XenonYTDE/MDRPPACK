@@ -45,6 +45,8 @@ jobs:
           suppressedOffenceCategories: ${{ env.SUPPRESSED_OFFENCE_CATEGORIES }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTIONS_STEP_DEBUG: true
+          ACTIONS_RUNNER_DEBUG: true
           
       - name: Upload CWTools results
         if: always()
