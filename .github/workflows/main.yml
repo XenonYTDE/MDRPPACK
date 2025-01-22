@@ -37,7 +37,7 @@ jobs:
         with:
           game: ${{ env.GAME }}
           rules: ${{ env.RULES }}
-          rules-ref: ${{ env.RULES_REF }}
+          rulesRef: ${{ env.RULES_REF }}
           suppressedOffenceCategories: ${{ env.SUPPRESSED_OFFENCE_CATEGORIES }}
           
       - name: Upload CWTools results
