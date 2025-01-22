@@ -52,9 +52,18 @@ jobs:
         run: |
           mkdir -p $HOME/cwtools
           cd $HOME/cwtools
+          
+          # Install .NET Core 3.1 (LTS version that includes 3.0 compatibility)
+          wget https://dot.net/v1/dotnet-install.sh
+          chmod +x dotnet-install.sh
+          ./dotnet-install.sh --version 3.1.32
+          export PATH="$PATH:$HOME/.dotnet"
+          
+          # Install CWTools CLI
           dotnet tool install -g cwtools.cli
-          mkdir -p $HOME/cwtools/cwtools-cache-files
           export PATH="$PATH:$HOME/.dotnet/tools"
+          
+          mkdir -p $HOME/cwtools/cwtools-cache-files
           export DOTNET_CLI_HOME="$HOME/cwtools"
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true
           
