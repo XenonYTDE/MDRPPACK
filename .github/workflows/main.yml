@@ -83,16 +83,18 @@ jobs:
           # Create directories
           mkdir -p /src /cwtools-cache-files
           export SRC_DIR=/src
-          
-          # Run CWTools CLI to generate metadata cache
-          dotnet tool install -g cwtools.cli
-          mkdir -p $HOME/cwtools/cwtools-cache-files
-          cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }}
 
+      - name: Setup .NET Core 3.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '3.0.x'
+          
       - name: Run CWTools validation
         run: |
           cd $HOME/cwtools
           dotnet tool install -g cwtools.cli
+          mkdir -p $HOME/cwtools/cwtools-cache-files
+          cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }}
           cwtools --metadata-cache-path $HOME/cwtools/cwtools-cache-files --game ${{ env.INPUT_GAME }} --rules ${{ env.INPUT_RULES }} --rules-ref ${{ env.INPUT_RULESREF }} --suppressed-offence-categories ${{ env.INPUT_SUPPRESSEDOFFENCECATEGORIES }} --path $GITHUB_WORKSPACE --output-file output.json
           ruby lib/cwtools.rb
 
