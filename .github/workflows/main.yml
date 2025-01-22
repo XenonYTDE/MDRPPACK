@@ -53,12 +53,18 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y wget ruby git
+          apt-get install -y wget ruby git jq
           
       - name: Run CWTools validator
         run: |
           echo "Pulling down the CWTools action validator"
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
+          
+          if [ -f "output.json" ]; then
+            echo "CWTools Validation Results:"
+            echo "=========================="
+            jq -r '.[] | "File: \(.file)\nLine: \(.line)\nSeverity: \(.severity)\nMessage: \(.message)\n"' output.json
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CI_API_V4_URL: ${{ github.api_url }}
