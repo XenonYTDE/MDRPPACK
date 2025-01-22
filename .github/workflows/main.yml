@@ -88,6 +88,11 @@ jobs:
           # Run the validator
           ./lib/entrypoint.sh
 
+      - name: Run CWTools validation
+        run: |
+          cd /action/lib
+          ruby cwtools.rb
+
       - name: Upload artifacts
         if: always()
         uses: actions/upload-artifact@v3
