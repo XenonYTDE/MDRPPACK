@@ -72,6 +72,7 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           export SRC_DIR=$HOME/src  # Use user-writable directory
           mkdir -p $SRC_DIR
+          sudo chown -R $USER:$USER $SRC_DIR  # Ensure proper permissions
           
           # Run the validator
           ./lib/entrypoint.sh
