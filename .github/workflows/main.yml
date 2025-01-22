@@ -11,7 +11,7 @@ env:
 jobs:
   coding-standards:
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false
+    if: true
     steps:
       - uses: actions/checkout@v3
       
@@ -28,7 +28,10 @@ jobs:
         
   cwtools:
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false && contains(github.event.pull_request.labels.*.name, 'skip-cwtools-job') == false
+    permissions:
+      checks: write
+      contents: read
+    if: true
     steps:
       - uses: actions/checkout@v3
       
@@ -37,10 +40,8 @@ jobs:
         with:
           game: ${{ env.GAME }}
           rules: ${{ env.RULES }}
-          rulesRef: ${{ env.RULES_REF }}
+          rules-ref: ${{ env.RULES_REF }}
           suppressedOffenceCategories: ${{ env.SUPPRESSED_OFFENCE_CATEGORIES }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload CWTools results
         if: always()
@@ -69,7 +70,7 @@ jobs:
 
   fix-styling:
     needs: [styling]
-    if: failure() && contains(github.event.pull_request.labels.*.name, 'skip-coding-pipeline') == false && contains(github.event.pull_request.labels.*.name, 'skip-fixing-styling') == false
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
