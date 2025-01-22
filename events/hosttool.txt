@@ -88,6 +88,7 @@ news_event = {
 	option = {
 		name = "OK..."
 		clear_variable=this.target_country
+		log = "[From.Getname]: Set [From.From.From.owner.Getname] free"
 	}
 }
 news_event = {
@@ -100,6 +101,7 @@ news_event = {
 	option = {
 		name = "OK..."
 		clear_variable=this.target_country
+		log = "[From.Getname]: Removed [?ROOT.host_marked_states^num] cores from [From.From.Owner.Getname]"
 	}
 }
 news_event = {
@@ -112,5 +114,6 @@ news_event = {
 	option = {
 		name = "OK..."
 		clear_variable=this.target_country
+		log = "[From.Getname]: Transferred Host Tool to [From.From.Owner.Getname]"
 	}
 }
