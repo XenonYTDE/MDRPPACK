@@ -55,21 +55,18 @@ jobs:
           apt-get update
           apt-get install -y wget ruby git jq
           
+      - name: Install reviewdog
+        run: |
+          curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin/
+          
       - name: Run CWTools validator
         run: |
           echo "Pulling down the CWTools action validator"
           wget -O - -q https://raw.githubusercontent.com/cwtools/cwtools-action/v1.0.0/lib/gitlab_setup.sh | sh -s
           
-          if [ -f "output.json" ]; then
-            echo "CWTools Validation Results:"
-            echo "=========================="
-            echo "Total Errors: $(jq '.errorCount' output.json)"
-            echo "=========================="
-            echo "Errors by file:"
-            jq -r '.files[] | select(.path != null) | .errors[] as $error | "\($error.severity): \($error.message) (File: \(.path), Line: \($error.position.startLine), Column: \($error.position.startColumn))"' output.json | sort
-            echo "=========================="
-            echo "Errors with unknown files:"
-            jq -r '.files[] | select(.path == null) | .errors[] as $error | "\($error.severity): \($error.message) (Line: \($error.position.startLine), Column: \($error.position.startColumn))"' output.json | sort
+          if [ -f "errors.txt" ]; then
+            echo "Running reviewdog..."
+            cat errors.txt | reviewdog -f=checkstyle -name=cwtools -reporter=github-pr-check
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -77,13 +74,16 @@ jobs:
           CI_PROJECT_ID: ${{ github.repository_id }}
           CI_COMMIT_SHA: ${{ github.sha }}
           CI_MERGE_REQUEST_IID: ${{ github.event.pull_request.number }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload CWTools results
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cwtools-output
-          path: output.json
+          path: |
+            output.json
+            errors.txt
 
   styling:
     needs: [coding-standards]
