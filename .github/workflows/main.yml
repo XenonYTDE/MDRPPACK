@@ -43,7 +43,8 @@ jobs:
           rules: ${{ env.RULES }}
           rulesRef: ${{ env.RULES_REF }}
           suppressedOffenceCategories: ${{ env.SUPPRESSED_OFFENCE_CATEGORIES }}
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload CWTools results
         if: always()
