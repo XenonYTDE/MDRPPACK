@@ -1,8 +1,6 @@
 name: CI
 
-on:
-  pull_request:
-    branches: [ master, main ]
+on: [push]
 
 env:
   GAME: "hoi4"
