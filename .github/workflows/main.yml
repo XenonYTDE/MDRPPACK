@@ -67,6 +67,9 @@ jobs:
           mkdir -p $HOME/cwtools
           cd $HOME/cwtools
           
+          # Create src directory first
+          mkdir -p /src
+          
           # Clone and setup CWTools
           git clone https://github.com/cwtools/cwtools-action.git .
           chmod +x lib/entrypoint.sh
@@ -84,8 +87,8 @@ jobs:
           export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
           export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
           
-          # Create directories
-          mkdir -p /src /cwtools-cache-files
+          # Create cwtools-cache-files directory
+          mkdir -p /cwtools-cache-files
           export SRC_DIR=/src
           
           # Run the validator
