@@ -53,18 +53,18 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -129,12 +129,12 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -193,15 +193,9 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
-
-			modifier = {
-				gdp_debt_ratio_lower_100 = yes
-				add = -100
-			}
-
 
 			modifier = {
 				check_variable = { treasury > 19.9 }
@@ -258,7 +252,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -317,7 +311,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -376,7 +370,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
@@ -434,7 +428,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -493,7 +487,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -552,7 +546,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -611,7 +605,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
@@ -669,7 +663,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -728,7 +722,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -787,7 +781,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -846,7 +840,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
@@ -904,7 +898,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -963,7 +957,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1021,7 +1015,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1079,7 +1073,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
@@ -1137,7 +1131,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1195,7 +1189,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1253,7 +1247,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1311,7 +1305,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
@@ -1369,7 +1363,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1427,7 +1421,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1486,7 +1480,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 
@@ -1545,7 +1539,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_lower_100 = yes
+				gdp_debt_ratio_higher_100 = yes
 				add = -100
 			}
 	
