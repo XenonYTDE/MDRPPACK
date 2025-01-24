@@ -20,7 +20,11 @@ ideas = {
                 has_idea = social_06
                 has_idea = police_05
                 has_idea = edu_05
-                has_idea = bureau_03
+                OR = { 
+                    has_idea = bureau_03
+                    has_idea = bureau_04
+                    has_idea = bureau_05
+                }
                 custom_trigger_tooltip = {
                     tooltip = 50_per_capita_or_more_tt
                     check_variable = { gdp_per_capita > 49.999 }
@@ -89,7 +93,7 @@ ideas = {
                 }
             }
 
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
         }
 
         pog_rentier_state = {
