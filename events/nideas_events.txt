@@ -15,5 +15,6 @@ country_event = {
 		set_variable = { ROOT.nideas_cw_refund = 0 }
 		
 		clr_country_flag = nideas_cw_cflag
+        log = "[GetRootName]: Refunded [ROOT.nideas_cw_refund] political power from civil war"
     }
 }
