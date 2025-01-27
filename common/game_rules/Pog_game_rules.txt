@@ -172,13 +172,14 @@ hypermerge = {
 		desc = "RULE_NO_HYPERMERGE_DESC"
 	}
 }
-hyper_fragmentation = {
+hyperfragmentation = {
 	name = "RULE_HYPERFRAGMENTED"
 	group = MDOptimization_RULES
 	icon = "GFX_production_licenses"
 	option = {
 		name = yes
 		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_HYPERFRAGMENTATION_DESC"
 	}
 	default = {
 		name = no

@@ -12,6 +12,7 @@ news_event = {
     
     option = {
         name = si.1.a
+        log = "[GetRootName]: Transferred state [ROOT.si_transferred_state_var] to [ROOT.si_transferred_target_tag_var]"
     }
 }
 
@@ -27,6 +28,7 @@ news_event = {
     
     option = {
         name = si.2.a
+        log = "[GetRootName]: Claimed state [ROOT.si_claimed_state_var]"
     }
 }
 
@@ -51,6 +53,7 @@ country_event = {
     option = {
         name = si.3.a
 		ai_chance = { base = 1 }
+        log = "[GetRootName]: Started border war in state [ROOT.si_border_war_attacked_state_var] against [ROOT.si_border_war_attacker_tag_var]"
     }
 }
 
@@ -76,5 +79,6 @@ country_event = {
     option = {
         name = si.4.a
 		ai_chance = { base = 1 }
+        log = "[GetRootName]: Immediate border war in state [ROOT.si_border_war_attacked_state_var] against [ROOT.si_border_war_attacker_tag_var]"
     }
 }

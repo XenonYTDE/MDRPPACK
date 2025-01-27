@@ -1,0 +1,55 @@
+on_actions = {
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+				}
+				if = { 
+					limit = {
+						original_tag = 	CHI
+						has_country_flag = set_liberalism
+						}
+				set_cosmetic_tag = CHI_liberalism
+					}
+				}
+			}
+		}
+
+		on_join_faction = {
+			effect = {
+				if = {
+					limit = { 
+						FROM = { has_idea = pog_royal_anglosphere_idea } 
+					}
+					add_ideas = pog_royal_anglosphere_idea
+					ENG = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_imperial_federation
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+			}
+		}
+		on_offer_join_faction = {
+			effect = {
+				if = {
+					limit = { 
+						FROM = { has_idea = pog_royal_anglosphere_idea } 
+					}
+					FROM = { add_ideas = pog_royal_anglosphere_idea }
+					ENG = {
+						set_autonomy = {
+							target = FROM
+							autonomy_state = autonomy_imperial_federation
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+			} 
+		}
+	}

@@ -18,11 +18,6 @@ EGY_baath_flag = {
 	color_ui = rgb { 231 148 129 }
 }
 
-CHI_liberalism = {
-	color = rgb { 6 191 158 }
-	color_ui = rgb { 6 191 158 }
-}
-
 UN_KOS = {
 	color = rgb  { 185  62  97 }
 	color_ui = rgb { 163 17 31 }
@@ -822,6 +817,10 @@ SOV_hyper_empire = {
 	color = rgb { 120 118 8 }
 	color_ui = rgb { 120 118 8 }
 }
+SOV_uss = {
+	color = rgb { 0 0 139 }
+	color_ui = rgb { 0 0 139 }
+}
 CUB_confederation = {
 	color = rgb { 112 128 144 }
 	color_ui = rgb { 112 128 144 }
@@ -905,4 +904,12 @@ CZE_imperka = {
 CZE_SLO_czechoslovakia = {
 	color = rgb { 0 153 153 }
 	color_ui = rgb  { 0 153 153 }
+}
+CHI_liberalism = {
+	color = rgb { 6 191 158 }
+	color_ui = rgb { 6 191 158 }
+}
+ENG_anglosphere = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
 }

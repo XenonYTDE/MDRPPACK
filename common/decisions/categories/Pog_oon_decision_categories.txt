@@ -26,14 +26,3 @@ OON_reforms_info = {
 
 	priority = 900
 }
-
-OON_peacekeeping_missions = {
-	visible = {
-		is_league_of_nations_member = yes
-	}
-	
-	icon = GFX_peacekeeping_mission_icon
-	picture = GFX_peacekeeping_mission_picture
-
-	priority = 850
-}

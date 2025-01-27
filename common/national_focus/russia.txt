@@ -15497,6 +15497,7 @@ focus_tree = {
 			focus = SOV_subject_guarantee
 			focus = SOV_return_arms_subject
 			focus = SOV_our_own_section_230
+			focus = SOV_phase_three # DO NOT MERGE FROM BASE MD
 		}
 		prerequisite = { focus = SOV_changes_in_the_constitution }
 		available = {
@@ -15831,6 +15832,7 @@ focus_tree = {
 			}
 		}
 
+		mutually_exclusive = { focus = SOV_recreate_the_uss } # DO NOT MERGE FROM BASE MD
 		mutually_exclusive = { focus = SOV_rework_constituion }
 		prerequisite = { focus = SOV_true_federalism }
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
@@ -16041,6 +16043,7 @@ focus_tree = {
 			}
 		}
 
+		mutually_exclusive = { focus = SOV_recreate_the_uss } # DO NOT MERGE FROM BASE MD
 		mutually_exclusive = { focus = SOV_usr }
 		prerequisite = { focus = SOV_true_federalism }
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
@@ -16060,6 +16063,197 @@ focus_tree = {
 			}
 		}
 	}
+	focus = { # DO NOT MERGE FROM BASE MD
+		id = SOV_recreate_the_uss
+		icon = Russian_Statocratic_Government
+
+		x = 0
+		y = 2
+		relative_position_id = SOV_release_prisoners
+		cost = 5
+
+		available = {
+			OR = {
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+			}
+		}
+
+		mutually_exclusive = { focus = SOV_usr }
+		mutually_exclusive = { focus = SOV_rework_constituion }
+		prerequisite = { focus = SOV_true_federalism }
+		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
+
+		completion_reward = {
+			add_political_power = 500
+			one_office_construction = yes
+			one_random_industrial_complex = yes
+			one_random_arms_factory = yes
+			two_random_network_infrastructure = yes
+		}
+	}
+	focus = {
+		id = SOV_phase_one
+		icon = free_independent_alliance
+
+		x = 0
+		y = 3
+		relative_position_id = SOV_release_prisoners
+		cost = 5
+
+		available = {
+			OR = {
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+			}
+		}
+
+		prerequisite = { focus = SOV_recreate_the_uss }
+		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
+
+		completion_reward = {
+			
+				every_state = {  #add core for Soviet Union
+					limit = {
+						is_soviet_union_state = yes
+					}
+					add_core_of = SOV
+				}
+			}
+		
+		
+	}
+	focus = {
+		id = SOV_phase_two
+		icon = russian_investments
+
+		x = 0
+		y = 4
+		relative_position_id = SOV_release_prisoners
+		cost = 5
+
+		available = {
+			OR = {
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+			}
+		}
+
+		
+		prerequisite = { focus = SOV_phase_one }
+		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
+
+		completion_reward = {
+			add_country_leader_trait = pro_western_dima
+		}
+	}
+	focus = {
+		id = SOV_phase_three
+		icon = SOV_stable_Russia
+
+		x = 0
+		y = 5
+		relative_position_id = SOV_release_prisoners
+		cost = 5
+
+		available = {
+			OR = {
+				western_liberals_are_in_power = yes
+				western_conservatism_are_in_power = yes
+				western_social_democrats_are_in_power = yes
+				western_autocrats_are_in_power = yes
+				neutrality_neutral_oligarch_are_in_power = yes
+			}
+			OR = {
+				country_exists = PMR
+				country_exists = MLV
+			}
+			OR = {
+				country_exists = ABK
+				country_exists = SOO
+				country_exists = GEO
+			}
+			UKR = {
+					is_subject_of = SOV
+				}
+			BLR = {
+					is_subject_of = SOV
+				}
+			LIT = {
+					is_subject_of = SOV
+				}
+			LAT = {
+					is_subject_of = SOV
+				}
+			EST = {
+					is_subject_of = SOV
+				}
+			MLV = {
+					is_subject_of = SOV
+				}
+			GEO = {
+					is_subject_of = SOV
+				}
+			ARM = {
+					is_subject_of = SOV
+				}
+			AZE = {
+					is_subject_of = SOV
+				}
+			KAZ = {
+					is_subject_of = SOV
+				}
+			UZB = {
+					is_subject_of = SOV
+				}
+			TRK = {
+					is_subject_of = SOV
+				}
+			KYR = {
+					is_subject_of = SOV
+				}
+			TAJ = {
+					is_subject_of = SOV
+				}
+		}
+
+		prerequisite = { focus = SOV_phase_two }
+		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
+
+		completion_reward = {
+			set_cosmetic_tag = SOV_uss
+			annex_country = { target = UKR transfer_troops = yes }
+			annex_country = { target = BLR transfer_troops = yes }
+			annex_country = { target = LIT transfer_troops = yes }
+			annex_country = { target = LAT transfer_troops = yes }
+			annex_country = { target = EST transfer_troops = yes }
+			annex_country = { target = MLV transfer_troops = yes }
+			annex_country = { target = PMR transfer_troops = yes }
+			annex_country = { target = CHE transfer_troops = yes }
+			annex_country = { target = ABK transfer_troops = yes }
+			annex_country = { target = SOO transfer_troops = yes }
+			annex_country = { target = GEO transfer_troops = yes }
+			annex_country = { target = NKR transfer_troops = yes }
+			annex_country = { target = ARM transfer_troops = yes }
+			annex_country = { target = AZE transfer_troops = yes }
+			annex_country = { target = KAZ transfer_troops = yes }
+			annex_country = { target = UZB transfer_troops = yes }
+			annex_country = { target = TRK transfer_troops = yes }
+			annex_country = { target = KYR transfer_troops = yes }
+			annex_country = { target = TAJ transfer_troops = yes }
+			add_country_leader_trait = president_of_union_state
+			add_country_leader_trait = defender_of_eastern_democracy
+		}
+	} # DO NOT MERGE FROM BASE MD | SOV_USS END
 	focus = {
 		id = SOV_referendum_constituion
 		icon = Strengthening_Russian_Democracy

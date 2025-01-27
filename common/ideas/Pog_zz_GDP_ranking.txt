@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		eco_hegemony = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_hegemony" }
+			picture = GFX_idea_pog_hegemony
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		eco_superpower = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_superpower" }
+			picture = GFX_idea_superpower
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		eco_greatpower = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_greatpower" }
+			picture = GFX_idea_great_power
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		eco_largepower = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_largepower" }
+			picture = GFX_idea_large_power
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		eco_minorpower = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_minorpower" }
+			picture = GFX_idea_minor_power
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.50
+			}
+		}
+		eco_nonpower = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea eco_nonpower" }
+			picture = GFX_idea_non_power
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.75
+			}
+		}
+	}
+}

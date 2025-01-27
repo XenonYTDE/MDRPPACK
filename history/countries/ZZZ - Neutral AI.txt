@@ -5,9 +5,6 @@ set_rule = {
 }
 country_lock_all_division_template = yes
 
-set_technology = {
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

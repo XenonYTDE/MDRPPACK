@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		pog_royal_anglosphere_idea = {
+			picture = pog_royal_anglosphere_idea
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				nationalist_drift = 0.04
+			}
+		}
+	}
+}

@@ -56,14 +56,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/civilians.dds"
 	}
 	spritetype = {
-		name = "GFX_peacekeeping_mission_picture"
-		texturefile = "gfx/interface/decisions/decision_categories/oon/missions/peacekeeping_mission_picture.dds"
-	}
-	spritetype = {
-		name = "GFX_peacekeeping_mission_icon"
-		texturefile = "gfx/interface/decisions/decision_categories/oon/missions/peacekeeping_missions_icon.dds"
-	}
-	spritetype = {
 		name = "GFX_reforms_picture"
 		texturefile = "gfx/interface/decisions/decision_categories/oon/reforms/reforms_picture.dds"
 	}

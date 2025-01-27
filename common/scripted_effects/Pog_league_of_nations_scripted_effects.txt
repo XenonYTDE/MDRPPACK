@@ -60,9 +60,6 @@ add_to_league_of_nations = {
 				}
 			}
 			add_ideas = league_of_nations_lon_member_idea
-			set_variable = { OON_limit_countries_somali = 0 }
-			set_variable = { OON_limit_countries_congo = 0 }
-			set_variable = { OON_limit_countries_angola = 0 }
 			set_country_flag = OON_gensek_annani
 			set_temp_variable = { election_time = 2555 }
 			activate_mission = OON_selecting_sec_gen
