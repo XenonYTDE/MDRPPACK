@@ -6,12 +6,9 @@ ideas = {
 
         advanced_officer_training = {
 
-            available = {
-                command_power > 5
-            }
-
             level = 2  
 
+            cost = 200
             removal_cost = 0
 
             modifier = {
@@ -24,7 +21,7 @@ ideas = {
             }
 
             on_add = {
-                add_command_power = -5
+                add_command_power = -50
             }
 
             ai_will_do = {
@@ -42,6 +39,7 @@ ideas = {
 
             level = 1
 
+            cost = 150
             removal_cost = 0
 
             modifier = {
@@ -50,6 +48,10 @@ ideas = {
                dig_in_speed_factor = 0.10
                max_planning_factor = 0.05
                planning_speed = 0.05
+            }
+
+            on_add = {
+                add_command_power = -25
             }
 
             ai_will_do = {

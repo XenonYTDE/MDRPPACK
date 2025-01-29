@@ -10,7 +10,6 @@ ideas = {
 
             }
 
-            cost = 80
             removal_cost = 0
 
             modifier = {
@@ -34,7 +33,6 @@ ideas = {
 
             }
 
-            cost = 80
             removal_cost = 0
 
             modifier = {

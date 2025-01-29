@@ -6,6 +6,8 @@ ideas = {
 
         very_high_taxation = {
 
+            cost = 150
+
             available = {  
                 OR = {
                  NOT = {
@@ -141,6 +143,8 @@ ideas = {
             }
 
             very_low_taxation = {
+
+                cost = 150
 
                 available = {
                     NOT = {

@@ -6,6 +6,8 @@ ideas = {
 
         no_trade_tariffs = {
 
+            cost = 150
+
             available = {
 
                 OR = {
@@ -142,6 +144,8 @@ ideas = {
         }
 
         extreme_trade_tariffs = {
+
+            cost = 150
 
             available = {
 

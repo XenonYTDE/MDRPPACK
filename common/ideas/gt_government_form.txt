@@ -106,34 +106,6 @@ ideas = {
             cancel_if_invalid = yes
         }
 
-        city_state = {
-
-            available = {
-                num_of_controlled_states < 3
-            }
-
-            cost = 250
-            removal_cost = -1
-
-            modifier = {
-                global_building_slots_factor = 5
-                industrial_capacity_factory = 2
-                industrial_capacity_dockyard = 2
-                conscription_factor = 0.20
-                production_speed_buildings_factor = 3
-                special_forces_min = 50
-                monthly_population = 10
-                local_resources_factor = 0.5
-
-            }
-
-            ai_will_do = {
-                base = 150
-            }
-
-            cancel_if_invalid = yes
-        }
-
         region_state = {
 
             available = {
@@ -149,7 +121,7 @@ ideas = {
                 industrial_capacity_dockyard = 1.0
                 conscription_factor = 0.15
                 production_speed_buildings_factor = 2.0
-                special_forces_min = 25
+                special_forces_min = 15
                 monthly_population = 5
                 local_resources_factor = 0.20
             }
@@ -160,5 +132,34 @@ ideas = {
 
             cancel_if_invalid = yes
         }
+
+        city_state = {
+
+            available = {
+                num_of_controlled_states < 3
+            }
+
+            cost = 250
+            removal_cost = -1
+
+            modifier = {
+                global_building_slots_factor = 5
+                industrial_capacity_factory = 2
+                industrial_capacity_dockyard = 2
+                conscription_factor = 0.20
+                production_speed_buildings_factor = 3
+                special_forces_min = 25
+                monthly_population = 7.5
+                local_resources_factor = 0.5
+
+            }
+
+            ai_will_do = {
+                base = 150
+            }
+
+            cancel_if_invalid = yes
+        }
+
     }
  }
