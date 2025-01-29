@@ -7,9 +7,9 @@ ideas = {
         large_volunteer_force = {
 
             available = {
-                num_divisions > 7
+                num_divisions > 25
             }
-            cost = 50
+            cost = 150
             #level #= #3
             
             removal_cost = 0
@@ -32,9 +32,9 @@ ideas = {
         small_force = {
 
             available = {
-                num_divisions > 5
+                num_divisions > 10
             }
-            cost = 50
+            cost = 100
             #level #= #2
             
             removal_cost = 0

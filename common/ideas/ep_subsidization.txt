@@ -6,8 +6,7 @@ ideas = {
         military_spending = {
             available = {
             }
-            
-            cost = 50
+
             removal_cost = 0
             
             modifier = {
@@ -41,7 +40,6 @@ ideas = {
             available = {
             }
 
-            cost = 50
             removal_cost = 0
 
             modifier = {
@@ -66,7 +64,6 @@ ideas = {
                 }
             }
 
-            cost = 50
             removal_cost = 0
 
             modifier = {
@@ -102,7 +99,6 @@ ideas = {
             available = {
             }
 
-            cost = 50
             removal_cost = 0
 
             modifier = {

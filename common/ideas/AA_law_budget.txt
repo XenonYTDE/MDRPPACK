@@ -495,6 +495,13 @@ ideas = {
 					has_idea = bureau_02
 					ai_has_deficit = yes
 				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
+				}
 			}
 
 			cancel_if_invalid = no
@@ -684,6 +691,13 @@ ideas = {
 					has_idea = bureau_03
 					ai_has_deficit = yes
 				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
+				}
 			}
 
 			cancel_if_invalid = no
@@ -812,6 +826,13 @@ ideas = {
 					factor = 0
 					has_idea = bureau_04
 					ai_has_deficit = yes
+				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
 				}
 			}
 
@@ -1584,6 +1605,13 @@ ideas = {
 					has_idea = police_04
 					ai_has_deficit = yes
 				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
+				}
 			}
 
 			cancel_if_invalid = no
@@ -2352,6 +2380,13 @@ ideas = {
 					has_idea = edu_04
 					check_variable = { treasury_rate > 11.00 }
 					ai_check_briks_gseven = yes
+				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
 				}
 			}
 
@@ -3355,6 +3390,13 @@ ideas = {
 				modifier = {
 					factor = 0
 					has_health_law_desired = yes
+				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
 				}
 			}
 
@@ -4399,6 +4441,13 @@ ideas = {
 					set_temp_variable = { unemployment_threshold_twice = unemployment_threshold_display_var }
 					multiply_temp_variable = { unemployment_threshold_twice = 2 }
 					check_variable = { total_unemployed_percentage_display > unemployment_threshold_twice }
+				}
+				modifier = {
+					factor = 100
+					AND = {
+						date > 2025.01.01
+						gdp_debt_ratio_lower_100 = yes
+					}
 				}
 			}
 		}

@@ -5,22 +5,33 @@ ideas = {
 
         post_scarcity = {
             available = {
-                has_tech = fully_automated_drones
-                has_tech = medical_nanorobots
-                has_tech = computing6
-                has_tech = t3D_printed_nanofibers
-                has_tech = internet6
-                has_tech = large_scale_nanocellulose_manufacturing
+                has_tech = early_maglev_rail
                 has_tech = construction7
                 has_tech = excavation7
-                has_tech = crispr_treatment
+                has_tech = t3D_printed_nanofibers
+                has_tech = crispr_gene_edited_crops
+                has_tech = electrification_8
+                has_tech = utility_scale_battery_storage4
+                has_tech = early_futuristic_renewables
                 has_tech = energy_efficiency7
-                has_tech = early_maglev_rail
-                has_idea = health_06
+                has_tech = fuel_efficiency5
+                has_tech = reactor7
+                has_tech = agi_maintained_agricultural_developments
+                has_tech = computing6
+                has_tech = internet6
+                has_tech = modern_satellite_internet
+                has_tech = medical_nanobots
+                has_tech = fully_automated_drones
+                has_tech = GNSS7
+                has_tech = COMSAT7
                 has_idea = social_06
                 has_idea = police_05
                 has_idea = edu_05
-                has_idea = bureau_03
+                OR = { 
+                    has_idea = bureau_03
+                    has_idea = bureau_04
+                    has_idea = bureau_05 
+                }
                 custom_trigger_tooltip = {
                     tooltip = 50_per_capita_or_more_tt
                     check_variable = { gdp_per_capita > 49.999 }
@@ -40,56 +51,43 @@ ideas = {
                     has_idea = negligible_corruption
                 }
             }
-            
+
+            cost = 150
             level = 9
 
             modifier = {
                 monthly_population = 0.5
                 stability_factor = 0.5
-                local_resources_factor = 2.5
-                industrial_capacity_factory = 2.5
+                war_support_factor = -0.25
+                local_resources_factor = 1.5
+                industrial_capacity_factory = 2.0
                 research_speed_factor = 2.5
-                production_speed_buildings_factor = 2.5
-                production_factory_efficiency_gain_factor = 2.5
-                production_factory_max_efficiency_factor = 2.5
-                production_factory_start_efficiency_factor = 2.5
-                industrial_capacity_dockyard = 2.5
-                mil_facs_worker_requirement_modifier = -0.9
-                civ_facs_worker_requirement_modifier = -0.9
-                offices_worker_requirement_modifier = -0.9
+                production_speed_buildings_factor = 2.0
+                production_factory_efficiency_gain_factor = 1.5
+                production_factory_max_efficiency_factor = 1.5
+                industrial_capacity_dockyard = 1.5
+                mil_facs_worker_requirement_modifier = -0.85
+                civ_facs_worker_requirement_modifier = -0.85
+                offices_worker_requirement_modifier = -0.85
                 energy_use_multiplier = 0.5
                 high_unemployment_threshold_modifier = 1
                 base_migration_rate_value = 1
                 political_power_gain = 2.5
                 justify_war_goal_time = 1.0
                 enemy_justify_war_goal_time = 1
-                trade_opinion_factor = 0.25
-                civilian_intel_to_others = 10
+                trade_opinion_factor = 0.50
+                civilian_intel_to_others = 15
                 foreign_influence_defense_modifier = -0.2
-                health_cost_multiplier_modifier = -0.20
-				social_cost_multiplier_modifier = -0.20
+                health_cost_multiplier_modifier = -0.25
+				social_cost_multiplier_modifier = -0.25
                 foreign_influence_modifier = 0.25
             }
 
             ai_will_do = {
                 base = 1000
-
-                modifier = {
-                    has_government = democratic
-                    add = 20
-                }
-
-                modifier = {
-                    has_government = communism
-                    add = 20
-                }
-
-                modifier = {
-                    factor = 3
-                }
             }
 
-            cancel_if_invalid = yes
+            cancel_if_invalid = no
         }
 
         pog_rentier_state = {
@@ -103,7 +101,8 @@ ideas = {
                     aluminium > 99
                 }
             }
-            
+
+            cost = 150
             level = 8
 
             modifier = {
@@ -143,6 +142,7 @@ ideas = {
 
         laisezz_faire = {
 
+            cost = 150
             level = 7
 
             modifier = {
@@ -172,6 +172,7 @@ ideas = {
                 }
             }
 
+            cost = 150
             level = 6
 
             modifier = {
@@ -209,6 +210,7 @@ ideas = {
             available = {
             }
 
+            cost = 150
             level = 5
 
             modifier = {
@@ -243,6 +245,7 @@ ideas = {
                 }
             }
 
+            cost = 150
             level = 4
 
             modifier = {
@@ -275,6 +278,7 @@ ideas = {
                 }
             }
 
+            cost = 150
             level = 3
 
             modifier = {
@@ -306,7 +310,8 @@ ideas = {
             available = {
                 has_government = communism
             }
-            
+
+            cost = 150
             level = 2
         
             modifier = {
@@ -342,6 +347,7 @@ ideas = {
                 has_government = communism
             }
 
+            cost = 150
             level = 1
 
             modifier = {

@@ -2449,19 +2449,8 @@ ideas = {
 			available = {
 				# DO NOT MERGE FROM BASE MD
 				NOT = {
-					has_idea = non_combat_roles
 					has_idea = support_roles
 					has_idea = equal_service
-				}
-				if = {
-					limit = {
-						OR = {
-							has_idea = volunteer_women
-							has_idea = drafted_women
-						}
-						women_conscription_decrease_blocked = yes
-					}
-					women_conscription_decrease_blocked = no
 				}
 			}
 
@@ -2526,7 +2515,7 @@ ideas = {
 				if = {
 					limit = {
 						has_idea = no_women_in_military
-						women_conscription_increase_blocked = yes
+						women_conscription_increase_blocked = no
 					}
 					women_conscription_increase_blocked = no
 				}
