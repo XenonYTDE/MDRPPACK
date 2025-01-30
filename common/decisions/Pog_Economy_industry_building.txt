@@ -70,7 +70,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		
 		}		
@@ -144,7 +144,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -217,7 +217,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}	
@@ -292,7 +292,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -428,7 +428,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -503,7 +503,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -577,7 +577,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -961,7 +961,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}
 	}	
