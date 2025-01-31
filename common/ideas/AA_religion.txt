@@ -672,5 +672,27 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		pog_oriental_orthodox = {
+			allowed = { 
+				NOT = {
+					OR = {
+						TAG = EGY
+						TAG = ETH
+						TAG = ARM
+					}
+				}
+			}
+			allowed_civil_war = { always = yes }
+			cost = 1500
+			picture = idea_eastern_church_eth
+			modifier = {
+				democratic_acceptance = 5
+				communism_acceptance = 5
+				neutrality_drift = 0.01
+				fascism_acceptance = -20
+				fascism_drift = -0.02
+			}
+			cancel_if_invalid = no
+		}
 	}
 }

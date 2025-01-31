@@ -4,13 +4,13 @@ ideas = {
         law = yes
         use_list_view = yes
 
-        cost = 150
-
         army_dominant = {
 
             available = {
 
             }
+
+            cost = 150
             
             level = 3
 

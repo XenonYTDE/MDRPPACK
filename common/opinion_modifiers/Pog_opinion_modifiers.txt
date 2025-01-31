@@ -7,5 +7,9 @@ opinion_modifiers = {
 	}   
 	mutual_improvement_relations.3 = {
 		value = 20
-	}      
+	}
+
+	oriental_orthodox_opinion = {
+		value = 40
+	}
 }
