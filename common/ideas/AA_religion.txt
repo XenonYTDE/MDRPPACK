@@ -679,12 +679,13 @@ ideas = {
 						TAG = EGY
 						TAG = ETH
 						TAG = ARM
+						TAG = NKR
 					}
 				}
 			}
 			allowed_civil_war = { always = yes }
 			cost = 1500
-			picture = idea_eastern_church_eth
+			picture = eastern_church_eth
 			modifier = {
 				democratic_acceptance = 5
 				communism_acceptance = 5
