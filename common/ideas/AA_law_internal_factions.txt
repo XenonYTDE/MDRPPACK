@@ -102,7 +102,7 @@ ideas = {
 			ai_will_do = {
 				factor = 0
 			}
-			cancel_if_invalid = yes
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		industrial_conglomerates = {
