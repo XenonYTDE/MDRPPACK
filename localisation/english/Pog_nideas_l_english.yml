@@ -325,7 +325,7 @@
 
  ### GROUP 6
  NIDEAS_IDEA_GROUP6_TITLE:0 "INNOVATION"
- NIDEAS_IDEA_GROUP6_TAKEN:0 "[?ROOT.idea_group6_taken]/6"
+ NIDEAS_IDEA_GROUP6_TAKEN:0 "[?ROOT.idea_group6_taken]/8"
  NIDEAS_IDEA_GROUP6_BUTTON1_TT:0 "§HAdaptable Industries§!\n£factory_conversion_texticon  Military to Civilian Factory conversion cost: §G-15.00%§!\n£factory_conversion_texticon  Civilian to Military Factory conversion cost: §G-15.00%§!\n£efficiency_base_texticon  Production Efficiency Base: §G+5.00%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
  NIDEAS_IDEA_GROUP6_BUTTON2_TT:0 "§HBlueprint Architects§!\n£production_licence_speed_texticon  License production speed: §G+15%§!\n£army_experience  Equipment Experience Cost: §G-10%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!"
  NIDEAS_IDEA_GROUP6_BUTTON3_TT:0 "§HResearch Councils§!\n£research_speed_texticon  Research Speed: §G+5.00%§!\nCost (£pol_power ):§H[NIDEAS_SCRIPT_LOC_IDEA_COST_PP]§!\n\nRequires:\n  §HAdaptable Industries§!\n  §HBlueprint Architects§!"
@@ -367,7 +367,7 @@
  NIDEAS_IDEA_GROUP6_SPIRIT6:0 "§HInnovation Ideas: Advanced Alloy Manufacturing§!"
  NIDEAS_IDEA_GROUP6_SPIRIT7:0 "§HInnovation Ideas: Our People Come First§!"
  NIDEAS_IDEA_GROUP6_SPIRIT8:0 "§HInnovation Ideas: Experimental Warehouse Automation§!"
- NIDEAS_IDEA_GROUP6_SPIRIT_SPEC1:0 "§HInnovation Ideas: Specialised - Military Applications§!"
+ NIDEAS_IDEA_GROUP6_SPIRIT_SPEC1:0 "§HInnovation Ideas: Specialised Universal Applications§!"
  NIDEAS_IDEA_GROUP6_SPIRIT_SPEC2:0 "§HInnovation Ideas: Specialised - Civilian Applications§!"
  NIDEAS_IDEA_GROUP6_SPIRIT1_desc:0 "Our industries must prepare to adapt to the changing geopolitical climate. By developing technologies to more efficiently retool our factories, we can more readily shift focus between civilian and military needs; the balance of power will always be in our favour."
  NIDEAS_IDEA_GROUP6_SPIRIT2_desc:0 "The potential of our finest minds goes to waste each passing day. Their talent can be better utilised in training them to know the ins and outs of existing designs and those shared by foreign states. Soon enough they will surely improve on these crude designs."

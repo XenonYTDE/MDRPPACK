@@ -62,7 +62,7 @@ scripted_gui = {
 				if = {
 					limit = {
 						has_country_flag = nideas_idea_cost_reduced_cflag
-						check_variable = { ROOT.national_ideas_taken < 54 }
+						check_variable = { ROOT.national_ideas_taken < 56 }
 					}
 					OR = {
 						AND = {	check_variable = { ROOT.idea_group1_taken < 6 }   has_political_power < 99.99 }
@@ -70,7 +70,7 @@ scripted_gui = {
 						AND = {	check_variable = { ROOT.idea_group3_taken < 6 }   has_political_power < 99.99 }
 						AND = {	check_variable = { ROOT.idea_group4_taken < 6 }   has_political_power < 99.99 }
 						AND = {	check_variable = { ROOT.idea_group5_taken < 6 }   has_political_power < 99.99 }
-						AND = {	check_variable = { ROOT.idea_group6_taken < 6 }   has_political_power < 99.99 }
+						AND = {	check_variable = { ROOT.idea_group6_taken < 8 }   has_political_power < 99.99 }
 						AND = {	check_variable = { ROOT.idea_group7_taken = 0 }   has_political_power < 99.99 }
 						AND = {	check_variable = { ROOT.idea_group8_taken = 0 }   has_political_power < 99.99 }
 						AND = {	check_variable = { ROOT.idea_group9_taken = 0 }   has_political_power < 99.99 }
@@ -88,7 +88,7 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						NOT = { has_country_flag = nideas_idea_cost_reduced_cflag }
-						check_variable = { ROOT.national_ideas_taken < 54 }
+						check_variable = { ROOT.national_ideas_taken < 56 }
 					}
 					OR = {
 						AND = {	check_variable = { ROOT.idea_group1_taken < 6 }   has_political_power < 149.99 }
@@ -96,7 +96,7 @@ scripted_gui = {
 						AND = {	check_variable = { ROOT.idea_group3_taken < 6 }   has_political_power < 149.99 }
 						AND = {	check_variable = { ROOT.idea_group4_taken < 6 }   has_political_power < 149.99 }
 						AND = {	check_variable = { ROOT.idea_group5_taken < 6 }   has_political_power < 149.99 }
-						AND = {	check_variable = { ROOT.idea_group6_taken < 6 }   has_political_power < 149.99 }
+						AND = {	check_variable = { ROOT.idea_group6_taken < 8 }   has_political_power < 149.99 }
 						AND = {	check_variable = { ROOT.idea_group7_taken = 0 }   has_political_power < 149.99 }
 						AND = {	check_variable = { ROOT.idea_group8_taken = 0 }   has_political_power < 149.99 }
 						AND = {	check_variable = { ROOT.idea_group9_taken = 0 }   has_political_power < 149.99 }
@@ -112,7 +112,7 @@ scripted_gui = {
 					}
 				}
 				else = {
-					check_variable = { ROOT.national_ideas_taken = 54 }
+					check_variable = { ROOT.national_ideas_taken = 56 }
 				}
 			}
 			nideas_open_button2_visible = { # can take ideas
@@ -124,7 +124,7 @@ scripted_gui = {
 						AND = {	check_variable = { ROOT.idea_group3_taken < 6 }   has_political_power > 99.99 }
 						AND = {	check_variable = { ROOT.idea_group4_taken < 6 }   has_political_power > 99.99 }
 						AND = {	check_variable = { ROOT.idea_group5_taken < 6 }   has_political_power > 99.99 }
-						AND = {	check_variable = { ROOT.idea_group6_taken < 6 }   has_political_power > 99.99 }
+						AND = {	check_variable = { ROOT.idea_group6_taken < 8 }   has_political_power > 99.99 }
 						AND = {	check_variable = { ROOT.idea_group7_taken = 0 }   has_political_power > 99.99 }
 						AND = {	check_variable = { ROOT.idea_group8_taken = 0 }   has_political_power > 99.99 }
 						AND = {	check_variable = { ROOT.idea_group9_taken = 0 }   has_political_power > 99.99 }
@@ -141,7 +141,7 @@ scripted_gui = {
 						AND = {	check_variable = { ROOT.idea_group3_taken < 6 }   has_political_power > 149.99 }
 						AND = {	check_variable = { ROOT.idea_group4_taken < 6 }   has_political_power > 149.99 }
 						AND = {	check_variable = { ROOT.idea_group5_taken < 6 }   has_political_power > 149.99 }
-						AND = {	check_variable = { ROOT.idea_group6_taken < 6 }   has_political_power > 149.99 }
+						AND = {	check_variable = { ROOT.idea_group6_taken < 8 }   has_political_power > 149.99 }
 						AND = {	check_variable = { ROOT.idea_group7_taken = 0 }   has_political_power > 149.99 }
 						AND = {	check_variable = { ROOT.idea_group8_taken = 0 }   has_political_power > 149.99 }
 						AND = {	check_variable = { ROOT.idea_group9_taken = 0 }   has_political_power > 149.99 }
@@ -168,11 +168,11 @@ scripted_gui = {
 				}
 				AND = {
 					has_political_power > 300
-					NOT = { check_variable = { ROOT.national_ideas_taken = 54 } }
+					NOT = { check_variable = { ROOT.national_ideas_taken = 56 } }
 				}
 				AND = {
 					has_country_flag = nideas_open_cflag
-					check_variable = { ROOT.national_ideas_taken = 54 }
+					check_variable = { ROOT.national_ideas_taken = 56 }
 				}
 			}
 		}
@@ -307,41 +307,6 @@ scripted_gui = {
 					NIDEAS_IDEA_GROUP1_SPIRIT4
 					NIDEAS_IDEA_GROUP1_SPIRIT5
 				}
-				if = {
-					limit = { has_elections = no }
-					if = {
-						limit = { has_government = var:communism }
-						set_politics = { ruling_party = var:communism   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:fascism }
-						set_politics = { ruling_party = var:fascism   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:democratic }
-						set_politics = { ruling_party = var:democratic   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:neutrality }
-						set_politics = { ruling_party = var:neutrality   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:technocracy   }
-						set_politics = { ruling_party = var:technocracy   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:trozkism }
-						set_politics = { ruling_party = var:trozkism   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:monarchy }
-						set_politics = { ruling_party = var:monarchy   elections_allowed = yes   election_frequency = 48 }
-					}
-					if = {
-						limit = { has_government = var:anarchism }
-						set_politics = { ruling_party = var:anarchism   elections_allowed = yes   election_frequency = 48 }
-					}
-				}
 				add_to_variable = { var = ROOT.idea_group1_taken value = 1 }
 				add_to_variable = { var = ROOT.national_ideas_taken value = 1 }
 				#set_country_flag = nideas_coring_cost_reduced_cflag
@@ -379,41 +344,6 @@ scripted_gui = {
 					NIDEAS_IDEA_GROUP1_SPIRIT3
 					NIDEAS_IDEA_GROUP1_SPIRIT4
 					NIDEAS_IDEA_GROUP1_SPIRIT7
-				}
-				if = {
-					limit = { has_elections = yes }
-					if = {
-						limit = { has_government = var:communism }
-						set_politics = { ruling_party = var:communism   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:fascism }
-						set_politics = { ruling_party = var:fascism   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:democratic }
-						set_politics = { ruling_party = var:democratic   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:neutrality }
-						set_politics = { ruling_party = var:neutrality   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:technocracy   }
-						set_politics = { ruling_party = var:technocracy   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:trozkism }
-						set_politics = { ruling_party = var:trozkism   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:monarchy }
-						set_politics = { ruling_party = var:monarchy   elections_allowed = no }
-					}
-					if = {
-						limit = { has_government = var:anarchism }
-						set_politics = { ruling_party = var:anarchism   elections_allowed = no }
-					}
 				}
 				add_to_variable = { var = ROOT.idea_group1_taken value = 1 }
 				add_to_variable = { var = ROOT.national_ideas_taken value = 1 }
@@ -1095,7 +1025,10 @@ scripted_gui = {
 				set_country_flag = nideas_idea_group6_idea4_complete_cflag
 				add_political_power = -150
 				if = {
-					limit = { has_country_flag = nideas_idea_group6_idea6_complete_cflag }
+					limit = {
+						has_country_flag = nideas_idea_group6_idea6_complete_cflag
+						has_country_flag = nideas_idea_group6_idea8_complete_cflag
+					}
 					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC1
 					remove_ideas = {
 						NIDEAS_IDEA_GROUP6_SPIRIT1
@@ -1103,19 +1036,21 @@ scripted_gui = {
 						NIDEAS_IDEA_GROUP6_SPIRIT3
 						NIDEAS_IDEA_GROUP6_SPIRIT5
 						NIDEAS_IDEA_GROUP6_SPIRIT6
-					}
-				}
-				else_if = {
-					limit = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
-					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC2
-					remove_ideas = {
-						NIDEAS_IDEA_GROUP6_SPIRIT1
-						NIDEAS_IDEA_GROUP6_SPIRIT2
-						NIDEAS_IDEA_GROUP6_SPIRIT3
 						NIDEAS_IDEA_GROUP6_SPIRIT7
 						NIDEAS_IDEA_GROUP6_SPIRIT8
 					}
 				}
+		#		else_if = {
+		#			limit = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
+		#			add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC2
+		#			remove_ideas = {
+		#				NIDEAS_IDEA_GROUP6_SPIRIT1
+		#				NIDEAS_IDEA_GROUP6_SPIRIT2
+		#				NIDEAS_IDEA_GROUP6_SPIRIT3
+		#				NIDEAS_IDEA_GROUP6_SPIRIT7
+		#				NIDEAS_IDEA_GROUP6_SPIRIT8
+		#			}
+		#		}
 				else = {
 					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT4
 				}
@@ -1150,7 +1085,10 @@ scripted_gui = {
 					add_political_power = -150
 				}
 				if = {
-					limit = { has_country_flag = nideas_idea_group6_idea4_complete_cflag }
+					limit = {
+						has_country_flag = nideas_idea_group6_idea4_complete_cflag
+						has_country_flag = nideas_idea_group6_idea8_complete_cflag
+					}
 					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC1
 					remove_ideas = {
 						NIDEAS_IDEA_GROUP6_SPIRIT1
@@ -1158,6 +1096,8 @@ scripted_gui = {
 						NIDEAS_IDEA_GROUP6_SPIRIT3
 						NIDEAS_IDEA_GROUP6_SPIRIT4
 						NIDEAS_IDEA_GROUP6_SPIRIT5
+						NIDEAS_IDEA_GROUP6_SPIRIT7
+						NIDEAS_IDEA_GROUP6_SPIRIT8
 					}
 				}
 				else = {
@@ -1193,13 +1133,18 @@ scripted_gui = {
 					add_political_power = -150
 				}
 				if = {
-					limit = { has_country_flag = nideas_idea_group6_idea4_complete_cflag }
-					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC2
+					limit = {
+						has_country_flag = nideas_idea_group6_idea4_complete_cflag
+						has_country_flag = nideas_idea_group6_idea6_complete_cflag
+					}
+					add_ideas = NIDEAS_IDEA_GROUP6_SPIRIT_SPEC1
 					remove_ideas = {
 						NIDEAS_IDEA_GROUP6_SPIRIT1
 						NIDEAS_IDEA_GROUP6_SPIRIT2
 						NIDEAS_IDEA_GROUP6_SPIRIT3
 						NIDEAS_IDEA_GROUP6_SPIRIT4
+						NIDEAS_IDEA_GROUP6_SPIRIT5
+						NIDEAS_IDEA_GROUP6_SPIRIT6
 						NIDEAS_IDEA_GROUP6_SPIRIT7
 					}
 				}
@@ -3954,7 +3899,6 @@ scripted_gui = {
 		#IDEA 5 + PRECEEDING BRANCH
 			nideas_idea_group6_button5_unavailable_visible = {
 				NOT = {	has_country_flag = nideas_idea_group6_idea5_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button5_available_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -3967,20 +3911,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea3_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button5_complete_visible = {
 				has_country_flag = nideas_idea_group6_idea5_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button5_blocked_visible = {
-				has_country_flag = nideas_idea_group6_idea7_complete_cflag
+				always = no
 			}
 
 			#OR -> Button5
 			nideas_branch_group6_or_top_incomplete1_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_or_top_available1_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -3993,20 +3934,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea3_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_or_top_complete1_visible = {
 				has_country_flag = nideas_idea_group6_idea5_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_or_top_blocked1_visible = {
-				has_country_flag = nideas_idea_group6_idea7_complete_cflag
+				always = no
 			}
 
 		#IDEA 6 + PRECEEDING BRANCH
 			nideas_idea_group6_button6_unavailable_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea6_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button6_available_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4019,20 +3957,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea5_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea6_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button6_complete_visible = {
 				has_country_flag = nideas_idea_group6_idea6_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_idea_group6_button6_blocked_visible = {
-				has_country_flag = nideas_idea_group6_idea7_complete_cflag
+				always = no
 			}
 
 			#Button5 -> Button6
 			nideas_branch_group6_straight2_incomplete2_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea6_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_straight2_available2_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4045,20 +3980,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea5_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea6_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_straight2_complete2_visible = {
 				has_country_flag = nideas_idea_group6_idea6_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
 			}
 			nideas_branch_group6_straight2_blocked2_visible = {
-				has_country_flag = nideas_idea_group6_idea7_complete_cflag
+				always = no
 			}
 
 		#IDEA 7 + PRECEEDING BRANCH
 			nideas_idea_group6_button7_unavailable_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button7_available_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4071,20 +4003,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea3_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button7_complete_visible = {
 				has_country_flag = nideas_idea_group6_idea7_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button7_blocked_visible = {
-				has_country_flag = nideas_idea_group6_idea5_complete_cflag
+				always = no
 			}
 
 			#OR -> Button7
 			nideas_branch_group6_or_bot_incomplete1_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_or_bot_available1_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4097,20 +4026,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea3_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea7_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_or_bot_complete1_visible = {
 				has_country_flag = nideas_idea_group6_idea7_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_or_bot_blocked1_visible = {
-				has_country_flag = nideas_idea_group6_idea5_complete_cflag
+				always = no
 			}
 			
 		#IDEA 8 + PRECEEDING BRANCH
 			nideas_idea_group6_button8_unavailable_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button8_available_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4123,20 +4049,17 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea7_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button8_complete_visible = {
 				has_country_flag = nideas_idea_group6_idea8_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_idea_group6_button8_blocked_visible = {
-				has_country_flag = nideas_idea_group6_idea5_complete_cflag
+				always = no
 			}
 
 			#Button7 -> Button8
 			nideas_branch_group6_straight2_incomplete3_visible = {
 				NOT = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_straight2_available3_visible = {
 				NOT = { has_country_flag = nideas_cw_cflag }
@@ -4149,14 +4072,12 @@ scripted_gui = {
 				}
 				has_country_flag = nideas_idea_group6_idea7_complete_cflag
 				NOT = { has_country_flag = nideas_idea_group6_idea8_complete_cflag }
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_straight2_complete3_visible = {
 				has_country_flag = nideas_idea_group6_idea8_complete_cflag
-				NOT = { has_country_flag = nideas_idea_group6_idea5_complete_cflag }
 			}
 			nideas_branch_group6_straight2_blocked3_visible = {
-				has_country_flag = nideas_idea_group6_idea5_complete_cflag
+				always = no
 			}
 
 ######################################################################

@@ -4,7 +4,7 @@ idea_categories = {
 		slot = gt_head_of_state
 		slot = gt_judiciary
 		slot = gt_government_form
-		slot = internal_factions
+		slot = religion
 		
 		ledger = civilian
 		
