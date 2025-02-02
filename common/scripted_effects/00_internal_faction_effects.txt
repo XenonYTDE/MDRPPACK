@@ -1176,6 +1176,16 @@ if_no_longer_has_faction_clear_previous = {
 		clear_variable = CHAE_psinfra_factor_avr
 		clear_variable = CHAE_local_resouces_factor
 	}
+	if = {
+		limit = {
+			NOT = { has_idea = small_medium_business_owners }
+			has_variable = small_medium_business_owners_opinion
+		}
+		clear_variable = pog_enviromentalists_opinion
+		clear_variable = pog_env_production_speed_synthetic_refinery_factor
+		clear_variable = pog_env_production_speed_fossil_powerplant_factor
+		clear_variable = pog_env_consumer_goods_factor_var
+	}
 }
 
 # Dynamic Modifier System for Internal Factions. The dynamic effects are sourced here using dynamic modifiers and basic variables.
