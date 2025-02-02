@@ -6394,6 +6394,42 @@ on_actions = {
 						set_temp_variable = { treasury_change = 5 }
 						modify_treasury_effect = yes
 				}
+				DRP = {
+					inherit_technology = UKR
+					add_state_core = 1086
+					transfer_state = 1086
+						set_variable = { civilian_factory_employment_var = 1 }
+						set_variable = { naval_factory_employment_var = 1 }
+						set_variable = { military_factory_employment_var = 1 }
+						set_variable = { office_employment_var = 1 }
+						set_variable = { agriculture_district_employment_var = 1 }
+						set_variable = { gdpc_converging_var = FROM.gdpc_converging_var }
+						calculate_influence_percentage = yes 
+						startup_politics = yes
+						ingame_update_setup = yes 
+						setup_init_factions = yes 
+						set_law_vars = yes
+						update_neighbors_effects = yes
+						economic_cycle_drift_popularity = yes
+						ai_update_build_units = yes
+						init_auto_influence_array = yes
+						ingame_init_investment_system = yes
+						research_slot_init_for_country = yes
+						calculate_expected_spending = yes
+						add_to_league_of_nations = yes
+						add_ideas = league_of_nations_lon_member_idea
+						add_ideas = OON_annani_idea
+						remove_ideas = Non_State_Actor
+						remove_ideas = Lacks_International_Recognition
+						add_dynamic_modifier = { modifier = GNSS_system }
+						add_dynamic_modifier = { modifier = COMSAT_system }
+						add_dynamic_modifier = { modifier = SPYSAT_system }
+						update_sat_systems_stats = yes
+						set_temp_variable = { debt_change = -15 }
+						modify_debt_effect = yes
+						set_temp_variable = { treasury_change = 5 }
+						modify_treasury_effect = yes
+				}
 				KUB = {
 					inherit_technology = SOV
 					add_state_core = 1140
@@ -9058,6 +9094,10 @@ on_actions = {
 					}
 					transfer_units_fraction = {
 						target = MLR
+						size = 0.05
+					}
+					transfer_units_fraction = {
+						target = DRP
 						size = 0.05
 					}
 				}
