@@ -1,0 +1,27 @@
+ideas = {
+	internal_factions = {
+
+		pog_enviromentalists = {
+			cost = 1500
+			allowed = {
+				NOT = { 
+					original_tag = WAG 
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: added Internal Faction pog_enviromentalists"
+				custom_effect_tooltip = pog_enviromentalists_opinion_tt
+				hidden_effect = {
+					if_no_longer_has_faction_clear_previous = yes
+					set_variable = { pog_enviromentalists_opinion = 60 }
+					initialize_internal_faction_dynamic_modifiers = yes
+				}
+			}
+
+			ai_will_do = {
+				base = -1
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

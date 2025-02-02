@@ -43,7 +43,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = no
 		}
@@ -73,8 +73,9 @@ ideas = {
 				expected_education_modifier = 0.5
 			}
 
+
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = no
 		}
@@ -85,9 +86,6 @@ ideas = {
 				NOT = {
 					original_tag = WAG
 				}
-			}
-			available = { # DO NOT MERGE FROM BASE MD
-				neutrality_neutral_green_not_in_power_or_coalition = yes
 			}
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: added Internal Faction fossil_fuel_industry"
@@ -100,7 +98,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
@@ -113,7 +111,6 @@ ideas = {
 					NOT = {
 						has_idea = oligarchs
 					}
-					neutrality_oligarchism_not_in_power_or_coalition = yes
 				}
 
 			on_add = {
@@ -132,7 +129,7 @@ ideas = {
 				expected_adm_modifier = 0.5
 			}
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = yes
 		}
@@ -141,31 +138,6 @@ ideas = {
 			cost = 1500
 			# DO NOT MERGE FROM BASE MD
 			available = {
-					OR = {
-						neutrality_oligarchism_in_power_or_coalition = yes
-						OR = {
-							original_tag = SOV
-							original_tag = UKR
-							original_tag = KAZ
-							original_tag = MLV
-							original_tag = PMR
-							original_tag = NOV
-							original_tag = ARM
-							original_tag = KYR
-							original_tag = TAJ
-							original_tag = SOO
-							original_tag = ABK
-							original_tag = GEO
-							original_tag = TRK
-							original_tag = UZB
-							original_tag = BLR
-							original_tag = SYR
-							original_tag = EGY
-							original_tag = VEN
-							original_tag = NIG
-							original_tag = WAG
-						}
-					}
 					NOT = {
 						has_idea = industrial_conglomerates
 					}
@@ -187,7 +159,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = yes
 		}
@@ -224,6 +196,9 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -248,6 +223,9 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -278,6 +256,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -311,6 +292,9 @@ ideas = {
 				expected_police_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -346,6 +330,9 @@ ideas = {
 				expected_healthcare_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -371,6 +358,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -402,6 +392,9 @@ ideas = {
 				agriculture_district_worker_requirement_modifier = 0.05
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -437,6 +430,9 @@ ideas = {
 				expected_adm_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -477,6 +473,9 @@ ideas = {
 				expected_mil_modifier = -0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -508,6 +507,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -545,6 +547,9 @@ ideas = {
 				expected_mil_modifier = -0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -590,6 +595,9 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -616,6 +624,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -635,6 +646,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -662,6 +676,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -687,6 +704,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -739,6 +759,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -769,7 +792,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 0
+				base = -1
 			}
 			cancel_if_invalid = no
 		}
@@ -792,6 +815,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -821,6 +847,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 
@@ -847,6 +876,9 @@ ideas = {
 				}
 			}
 
+			ai_will_do = {
+				base = -1
+			}
 			cancel_if_invalid = no
 		}
 	}
