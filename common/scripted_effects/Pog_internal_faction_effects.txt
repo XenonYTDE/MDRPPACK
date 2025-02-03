@@ -1,0 +1,1 @@
+Display_pog_enviromentalists = { custom_effect_tooltip = script.0.pog_enviromentalists }

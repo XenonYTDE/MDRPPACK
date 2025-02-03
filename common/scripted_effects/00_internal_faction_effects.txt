@@ -850,19 +850,19 @@ display_election_status_VEVAK = {
 
 display_election_status_pog_enviromentalists = { # DO NOT MERGE FROM BASE MD
 	set_temp_variable = { election_funding = 0 }
-	if = { limit = { hostile_pog_enviromentalists_owners = yes }
+	if = { limit = { hostile_pog_enviromentalists = yes }
 		add_to_temp_variable = { election_funding = -2 }
 	}
-	else_if = { limit = { negative_pog_enviromentalists_owners = yes }
+	else_if = { limit = { negative_pog_enviromentalists = yes }
 		add_to_temp_variable = { election_funding = -1 }
 	}
-	else_if = { limit = { indifferent_pog_enviromentalists_owners = yes }
+	else_if = { limit = { indifferent_pog_enviromentalists = yes }
 		add_to_temp_variable = { election_funding = 0 }
 	}
-	else_if = { limit = { positive_pog_enviromentalists_owners = yes }
+	else_if = { limit = { positive_pog_enviromentalists = yes }
 		add_to_temp_variable = { election_funding = 1 }
 	}
-	else_if = { limit = { enthusiastic_pog_enviromentalists_owners = yes }
+	else_if = { limit = { enthusiastic_pog_enviromentalists = yes }
 		add_to_temp_variable = { election_funding = 2 }
 	}
 	add_to_variable = { campaign_funding_count = election_funding }
@@ -1178,13 +1178,15 @@ if_no_longer_has_faction_clear_previous = {
 	}
 	if = {
 		limit = {
-			NOT = { has_idea = small_medium_business_owners }
-			has_variable = small_medium_business_owners_opinion
+			NOT = { has_idea = pog_enviromentalists }
+			has_variable = pog_enviromentalists_opinion
 		}
 		clear_variable = pog_enviromentalists_opinion
 		clear_variable = pog_env_production_speed_synthetic_refinery_factor
-		clear_variable = pog_env_production_speed_fossil_powerplant_factor
-		clear_variable = pog_env_consumer_goods_factor_var
+		clear_variable = pog_env_production_speed_nuclear_reactor_factor
+		clear_variable = pog_env_political_power
+		clear_variable = pog_env_neutrality_drift
+		clear_variable = pog_env_consumer_goods_factor
 	}
 }
 
@@ -1301,6 +1303,11 @@ initialize_internal_faction_dynamic_modifiers = {
 	if = { limit = { has_idea = chaebols }
 		add_dynamic_modifier = { modifier = chaebols_force_dynamic_modifier }
 		apply_chaebols_effect_DYNMOD = yes
+	}
+
+	if = { limit = { has_idea = pog_enviromentalists }
+		add_dynamic_modifier = { modifier = pog_enviromentalists_dynamic_modifier }
+		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
 	}
 }
 
@@ -1853,6 +1860,27 @@ apply_chaebols_effect_DYNMOD = {
 	multiply_variable = { CHAE_psic_factor_var = 0.003 }
 	multiply_variable = { CHAE_psinfra_factor_avr = 0.003 }
 	multiply_variable = { CHAE_local_resouces_factor = 0.003 }
+
+	# Force the Update Dynamic Modifier with new Calculated Effects
+	force_update_dynamic_modifier = yes
+}
+apply_pog_enviromentalists_dynamic_effect_DYNMOD = {
+	# Sets the base to current opinion then subtracts 50 from it to get the modifier value
+	set_temp_variable = { base_modifier = pog_enviromentalists_opinion }
+	add_to_temp_variable = { base_modifier = -50 }
+
+	set_variable = { pog_env_production_speed_synthetic_refinery_factor = base_modifier }
+	set_variable = { pog_env_production_speed_nuclear_reactor_factor = base_modifier }
+	set_variable = { pog_env_political_power = base_modifier }
+	set_variable = { pog_env_neutrality_drift = base_modifier }
+	set_variable = { pog_env_consumer_goods_factor = base_modifier }
+
+	# Multiplies by the scaled factor - Max values: 25%, 10%, 15%, 10%, -15%
+	multiply_variable = { pog_env_production_speed_synthetic_refinery_factor = 0.005 }
+	multiply_variable = { pog_env_production_speed_nuclear_reactor_factor = 0.002 }
+	multiply_variable = { pog_env_political_power = 0.003 }
+	multiply_variable = { pog_env_neutrality_drift = 0.001 }
+	multiply_variable = { pog_env_consumer_goods_factor = -0.003 }
 
 	# Force the Update Dynamic Modifier with new Calculated Effects
 	force_update_dynamic_modifier = yes
@@ -3117,6 +3145,44 @@ change_wall_street_opinion = {
 	}
 }
 
+change_pog_enviromentalists_opinion = {
+	if = { limit = { has_idea = pog_enviromentalists }
+
+		#Greens get faction effects double
+		if = {
+			limit = {
+				OR = {
+					is_in_array = { ruling_party = 17 }	#Western Autocrats
+				}
+				check_variable = { temp_opinion > 0 }
+			}
+			multiply_temp_variable = { temp_opinion = 2 }
+		}
+
+		add_to_variable = { pog_enviromentalists_opinion = temp_opinion }
+
+		set_temp_variable = { pog_enviromentalists_min = 0 }
+		set_temp_variable = { pog_enviromentalists_max = 100 }
+
+		# Custom Min/Max Opinion Instructions
+		# if = {
+		#	limit = { tag = TAG }
+		# 	set_variable = { the_military_min = x }
+		# }
+
+		clamp_variable = {
+			var = pog_enviromentalists_opinion
+			min = pog_enviromentalists_min
+			max = pog_enviromentalists_max
+		}
+		# THIS MUST STAY BETWEEN 0 - 100 pls. Makes my life easier
+		custom_effect_tooltip = display_pog_enviromentalists_opinion
+		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
+		# Reset command in case there is a successive change
+		#set_temp_variable = { temp_opinion = 0 }
+	}
+}
+
 # Internal Faction Debugging Tools:
 # The following command sets all of one's Internal Factions to maximum
 # This is only used for cheating or extensive testing. :shrug:
@@ -3235,6 +3301,10 @@ set_to_max_internal_faction_opinions = {
 		set_variable = { the_bazaar_opinion = 100 }
 		apply_the_bazaar_dynamic_effect_DYNMOD = yes
 	}
+	if = { limit = { has_idea = pog_enviromentalists }
+		set_variable = { pog_enviromentalists_opinion = 100 }
+		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
+	}
 }
 
 # The following command sets all of one's Internal Factions to neutral or 50
@@ -3319,6 +3389,10 @@ reset_all_internal_faction_opinions = {
 	}
 	if = { limit = { has_idea = the_bazaar }
 		set_variable = { the_bazaar_opinion = 50 }
+	}
+
+	if = { limit = { has_idea = pog_enviromentalists }
+		set_variable = { pog_enviromentalists_opinion = 50 }
 	}
 }
 
@@ -3551,5 +3625,14 @@ monthly_tick_internal_factions_opinion = {
 		subtract_from_variable = { the_bazaar_opinion = global.monthly_internal_faction_tick_rate }
 		clamp_variable = { var = the_bazaar_opinion min = 50 }
 		apply_the_bazaar_dynamic_effect_DYNMOD = yes
+	}
+	if = {
+		limit = {
+			has_idea = pog_enviromentalists
+			check_variable = { pog_enviromentalists_opinion > 49 }
+		}
+		subtract_from_variable = { pog_enviromentalists_opinion = global.monthly_internal_faction_tick_rate }
+		clamp_variable = { var = pog_enviromentalists_opinion min = 50 }
+		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
 	}
 }

@@ -18,6 +18,11 @@ ideas = {
 				}
 			}
 
+			modifier = {
+				production_speed_fossil_powerplant_factor = -0.25
+				expected_education_modifier = 0.5
+			}
+
 			ai_will_do = {
 				base = -1
 			}

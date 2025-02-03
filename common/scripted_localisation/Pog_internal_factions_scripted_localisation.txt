@@ -1,0 +1,12 @@
+defined_text = {
+	name = pog_enviromentalists_opinion_display
+	text = { trigger = { check_variable = { pog_enviromentalists_opinion > 50 } }
+		localization_key = positive_pog_enviromentalists_tt
+	}
+	text = { trigger = { check_variable = { pog_enviromentalists_opinion < 50 } }
+		localization_key = negative_pog_enviromentalists_tt
+	}
+	text = {
+		localization_key = neutral_pog_enviromentalists_tt
+	}
+}

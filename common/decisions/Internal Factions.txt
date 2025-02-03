@@ -392,6 +392,8 @@ decision_category_internal_factions = {
 			change_maritime_industry_opinion = yes
 			change_industrial_conglomerates_opinion = yes
 			change_fossil_fuel_industry_opinion = yes
+			set_temp_variable = { temp_opinion = -5 }
+			change_pog_enviromentalists_opinion = yes
 		}
 		modifier = {
 			corporate_tax_income_multiplier_modifier = -0.05
@@ -418,6 +420,28 @@ decision_category_internal_factions = {
 			change_the_donju_opinion = yes
 			change_chaebols_opinion = yes
 			change_industrial_conglomerates_opinion = yes
+		}
+	}
+	green_energy_subsidies_decision = {
+		icon = GFX_decisions_wages_up_button
+		visible = {
+			has_idea = pog_enviromentalists
+		}
+		days_remove = 90
+		days_re_enable = 90
+		cost = 150
+
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.10
+			oil_export_multiplier_modifier = -0.05
+			fuel_gain_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision remove green_energy_subsidies_decision"
+			set_temp_variable = { temp_opinion = -8 }
+			change_fossil_fuel_industry_opinion = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_pog_enviromentalists_opinion = yes
 		}
 	}
 }
