@@ -1,0 +1,16 @@
+guiTypes = {
+	containerWindowType = {
+		name = "MOIM_button"
+		position = { x = -42 y = -364 }
+		size = { width = 50 height = 50 }
+		orientation = lower_right
+
+		buttonType = {
+			name = "MOIM_open_button"
+			spriteType = "GFX_MOIM_open_button"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "MOIM_open_button_tt"
+			pdx_tooltip_delayed = "MOIM_open_button_tt_delayed"
+		}
+	}
+}
