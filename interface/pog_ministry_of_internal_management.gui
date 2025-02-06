@@ -13,4 +13,17 @@ guiTypes = {
 			pdx_tooltip_delayed = "MOIM_open_button_tt_delayed"
 		}
 	}
+
+	containerWindowType = {
+		name = "MOIM_screen"
+		position = { x = 0 y = 0 }
+		size = { width = 700 height = 500}
+		orientation = center
+		moveable = yes
+
+		background = {
+			name = "MOIM_background"
+			quadTextureSprite = "GFX_MOIM_background"
+		}
+	}
 }
