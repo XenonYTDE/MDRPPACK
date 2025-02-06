@@ -1,11 +1,11 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_MOIM_background"
-		textureFile = "MOIM_background.dds"
+		textureFile = "gfx/interface/moim/moim_background.dds"
 	}
 
 	spriteType = {
 		name = "GFX_MOIM_open_button"
-		textureFile = "MOIM_open_button.dds"
+		textureFile = "gfx/interface/moim/moim_open_button.dds"
 	}
 }
