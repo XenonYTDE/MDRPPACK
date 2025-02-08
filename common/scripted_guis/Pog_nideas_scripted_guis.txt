@@ -3712,8 +3712,8 @@ scripted_gui = {
 
 		#COMPLETE OVERLAY
 			nideas_idea_group6_complete_visible = {
-				has_country_flag = nideas_idea_group6_idea4_complete_cflag
-				OR = {
+				AND = {
+					has_country_flag = nideas_idea_group6_idea4_complete_cflag
 					has_country_flag = nideas_idea_group6_idea6_complete_cflag
 					has_country_flag = nideas_idea_group6_idea8_complete_cflag
 				}

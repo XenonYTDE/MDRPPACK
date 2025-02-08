@@ -4,7 +4,7 @@ guiTypes = {
 ### OPENER
 	containerWindowType = {
 		name = "nideas_open_button_container"
-		position = { x = 690 y = 36 }
+		position = { x = 715 y = 36 }
 
 		buttonType ={
 			name ="nideas_open_button1"
