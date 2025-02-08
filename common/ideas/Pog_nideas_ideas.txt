@@ -961,7 +961,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_PP_MODIFIER
-			#	custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_XP_MODIFIER
+				custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_XP_MODIFIER
 			}
 		}	
 	}
@@ -1038,7 +1038,7 @@ ideas = {
 
 				custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_aRAILWAY_CONSTRUCTION_SPEED_MODIFIER
 				custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_PP_MODIFIER
-			#	custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_XP_MODIFIER
+				custom_modifier_tooltip = NIDEAS_IDEA_GROUP6_IDEA_COST_XP_MODIFIER
 
 				hidden_modifier = { production_speed_rail_way_factor = 0.1 }
 				local_resources_factor = 0.1
@@ -1052,7 +1052,7 @@ ideas = {
 				
 				production_speed_nuclear_reactor_factor = 0.05
 				nuclear_energy_generation_modifier = 0.10
-				nuclear_fuel_consumption_modifier = -0.05
+				nuclear_fuel_consumption_modifier = -0.
 			}
 			research_bonus = {
 				CAT_nuclear = 0.05

@@ -91,6 +91,7 @@ defined_text = {
 				has_elections = no
 			}
 		}
+		localization_key = "                                               Elections will be held every 48 months"
 	}
 	text = {
 		trigger = {
@@ -107,6 +108,7 @@ defined_text = {
 				has_elections = yes
 			}
 		}
+		localization_key = "                               Elections will no longer be held"
 	}
 	text = {
 		trigger = {
