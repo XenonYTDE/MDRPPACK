@@ -1,9 +1,10 @@
 guiTypes = {
+
 	containerWindowType = {
 		name = "MOIM_button"
 		position = { x = -42 y = -364 }
-		size = { width = 50 height = 50 }
-		orientation = lower_right
+		size = { width = 46 height = 46 }
+		orientation = LOWER_RIGHT
 
 		buttonType = {
 			name = "MOIM_open_button"
@@ -15,7 +16,7 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "MOIM_screen"
+		name = "MOIM_main"
 		position = { x = 0 y = 0 }
 		size = { width = 900 height = 600}
 		orientation = center

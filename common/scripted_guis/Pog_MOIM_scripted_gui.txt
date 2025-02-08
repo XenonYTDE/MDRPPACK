@@ -1,7 +1,8 @@
 scripted_gui = {
+
 	MOIM_open_button_gui = {
 		context_type = player_context
-		window_name = "MOIM_open_button"
+		window_name = "MOIM_button"
 
 		visible = { 
 			always = yes
@@ -21,9 +22,17 @@ scripted_gui = {
 	}
 
 	MOIM_main_gui = {
+		context_type = player_context
+		window_name = "MOIM_main"
 
 		visible = { 
 			has_country_flag = MOIM_open_flag 
 		}
+
+		background = {
+			name = "MOIM_background"
+			spriteType = "GFX_MOIM_background"
+		}
+
 	}
 }
