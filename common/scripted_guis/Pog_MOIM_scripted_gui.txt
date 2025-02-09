@@ -31,6 +31,9 @@ scripted_gui = {
 		}
 
 		effects = {
+			MOIM_close_button_click = {
+				clr_country_flag = MOIM_open_flag
+			}
 			MOIM_unlock_button_click = {
 				if = {
 					limit = { has_political_power > 499 }

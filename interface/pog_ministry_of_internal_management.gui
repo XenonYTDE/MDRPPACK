@@ -11,7 +11,6 @@ guiTypes = {
 			spriteType = "GFX_MOIM_open_button"
 			position = { x = 0 y = 0 }
 			pdx_tooltip = "MOIM_open_button_tt"
-			pdx_tooltip_delayed = "MOIM_open_button_tt_delayed"
 		}
 	}
 
@@ -139,6 +138,16 @@ guiTypes = {
 			origo = center
 			spriteType = "GFX_MOIM_unlock_button_75"
 			pdx_tooltip = "MOIM_unlock_button_tt"
+		}
+
+		buttonType = {
+			name = "MOIM_close_button"
+			position = { x = 865 y = 3 }
+			spriteType = "GFX_closebutton"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "DIPLOMACY_CLOSE"
+			shortcut = "ESCAPE"
 		}
 
 	}
