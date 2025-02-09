@@ -3,6 +3,7 @@ scripted_gui = {
 	MOIM_open_button_gui = {
 		context_type = player_context
 		window_name = "MOIM_button"
+		parent_window_name = "MapmodesInterface_Ingame"
 
 		visible = { 
 			always = yes
