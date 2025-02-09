@@ -1,11 +1,73 @@
 spriteTypes = {
+
 	spriteType = {
 		name = "GFX_MOIM_background"
 		textureFile = "gfx/interface/moim/moim_background.dds"
+	}
+
+	spriteType = { # dev version
+		name = "GFX_MOIM_background2"
+		textureFile = "gfx/interface/moim/moim_background2.dds"
 	}
 
 	spriteType = {
 		name = "GFX_MOIM_open_button"
 		textureFile = "gfx/interface/moim/moim_open_button.dds"
 	}
+
+	spriteType = {
+		name = "GFX_MOIM_main_overlay"
+		textureFile = "gfx/interface/moim/moim_main_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dop_overlay"
+		textureFile = "gfx/interface/moim/moim_dop_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_doir_overlay"
+		textureFile = "gfx/interface/moim/moim_doir_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dom_overlay"
+		textureFile = "gfx/interface/moim/moim_dom_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dorad_overlay"
+		textureFile = "gfx/interface/moim/moim_dorad_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dop_main"
+		textureFile = "gfx/interface/moim/moim_dop_main.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_doir_main"
+		textureFile = "gfx/interface/moim/moim_doir_main.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dom_main"
+		textureFile = "gfx/interface/moim/moim_dom_main.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_dorad_main"
+		textureFile = "gfx/interface/moim/moim_dorad_main.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_unlock_button_75"
+		textureFile = "gfx/interface/moim/moim_unlock_button_75.dds"
+	}
+
+	spriteType = {
+		name = "GFX_MOIM_unlock_button_50"
+		textureFile = "gfx/interface/moim/moim_unlock_button_50.dds"
+	}
+
 }

@@ -3,7 +3,7 @@ scripted_gui = {
 	MOIM_open_button_gui = {
 		context_type = player_context
 		window_name = "MOIM_button"
-		parent_window_name = "MapmodesInterface_Ingame"
+		parent_window_token = top_bar
 
 		visible = { 
 			always = yes
@@ -30,10 +30,84 @@ scripted_gui = {
 			has_country_flag = MOIM_open_flag 
 		}
 
-		background = {
-			name = "MOIM_background"
-			spriteType = "GFX_MOIM_background"
+		effects = {
+			MOIM_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_dop_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dop_bought_flag
+				}
+			}
+			MOIM_dom_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dom_bought_flag
+				}
+			}
+			MOIM_dorad_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dorad_bought_flag
+				}
+			}
 		}
 
+		triggers = {
+			MOIM_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_main_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_doir_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_dop_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dop_bought_flag
+				}
+			}
+			MOIM_dop_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dop_bought_flag
+				}
+			}
+			MOIM_dom_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dom_bought_flag
+				}
+			}
+			MOIM_dom_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dom_bought_flag
+				}
+			}
+			MOIM_dorad_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dorad_bought_flag
+				}
+			}
+			MOIM_dorad_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dorad_bought_flag
+				}
+			}
+		}
 	}
+
 }

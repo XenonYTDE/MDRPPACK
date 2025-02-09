@@ -27,5 +27,120 @@ guiTypes = {
 			name = "MOIM_background"
 			quadTextureSprite = "GFX_MOIM_background"
 		}
+
+		containerWindowType = {
+			name = "MOIM_doir_main"
+
+			iconType = {
+				name = "MOIM_doir_main"
+				position = { x = 408 y = 101 }
+				size = { width = 394 height = 170 }
+				spriteType = "GFX_MOIM_doir_main"
+			}
+
+			iconType = {
+				name = "MOIM_doir_overlay"
+				position = { x = 408 y = 101 }
+				size = { width = 394 height = 170 }
+				spriteType = "GFX_MOIM_doir_overlay"
+			}
+		}
+
+		containerWindowType = {
+			name = "MOIM_dop_main"
+
+			iconType = {
+				name = "MOIM_dop_main"
+				position = { x = 14 y = 101 }
+				size = { width = 394 height = 170 }
+				spriteType = "GFX_MOIM_dop_main"
+			}
+
+			iconType = {
+				name = "MOIM_dop_overlay"
+				position = { x = 14 y = 101 }
+				size = { width = 394 height = 170 }
+				spriteType = "GFX_MOIM_dop_overlay"
+			}
+
+			buttonType = {
+				name = "MOIM_dop_unlock_button"
+				position = { x = 186 y = 165 }
+				size = { width = 50 height = 50 }
+				spriteType = "GFX_MOIM_unlock_button_50"
+				pdx_tooltip = "MOIM_dop_unlock_button_tt"
+			}
+		}
+
+		containerWindowType = {
+			name = "MOIM_dom_main"
+
+			iconType = {
+				name = "MOIM_dom_main"
+				position = { x = 14 y = 271 }
+				size = { width = 300 height = 315 }
+				spriteType = "GFX_MOIM_dom_main"
+			}
+
+			iconType = {
+				name = "MOIM_dom_overlay"
+				position = { x = 14 y = 271 }
+				size = { width = 300 height = 315 }
+				spriteType = "GFX_MOIM_dom_overlay"
+			}
+
+			buttonType = {
+				name = "MOIM_dom_unlock_button"
+				position = { x = 140 y = 390 }
+				size = { width = 50 height = 50 }
+				spriteType = "GFX_MOIM_unlock_button_50"
+				pdx_tooltip = "MOIM_dom_unlock_button_tt"
+			}
+		}
+
+		containerWindowType = {
+			name = "MOIM_dorad_main"
+
+			iconType = {
+				name = "MOIM_dorad_main"
+				position = { x = 314 y = 271 }
+				size = { width = 572 height = 315 }
+				spriteType = "GFX_MOIM_dorad_main"
+			}
+
+			iconType = {
+				name = "MOIM_dorad_overlay"
+				position = { x = 314 y = 271 }
+				size = { width = 572 height = 315 }
+				spriteType = "GFX_MOIM_dorad_overlay"
+			}
+
+			buttonType = {
+				name = "MOIM_dorad_unlock_button"
+				position = { x = 575 y = 390 }
+				size = { width = 50 height = 50 }
+				spriteType = "GFX_MOIM_unlock_button_50"
+				pdx_tooltip = "MOIM_dorad_unlock_button_tt"
+			}
+		}
+
+		iconType = {
+			name = "MOIM_main_overlay"
+			position = { x = 0 y = 0 }
+			size = { width = 900 height = 600 }
+			spriteType = "GFX_MOIM_main_overlay"
+		}
+
+		buttonType = {
+			name = "MOIM_unlock_button"
+			position = { x = -37 y = -37 }
+			size = { width = 75 height = 75 }
+			orientation = center
+			origo = center
+			spriteType = "GFX_MOIM_unlock_button_75"
+			pdx_tooltip = "MOIM_unlock_button_tt"
+		}
+
 	}
+
 }
