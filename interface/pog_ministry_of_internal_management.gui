@@ -37,6 +37,30 @@ guiTypes = {
 				spriteType = "GFX_MOIM_doir_main"
 			}
 
+			buttonType = {
+				name = "MOIM_pp_button"
+				position = { x = 521 y = 174 }
+				size = { width = 55 height = 55 }
+				spriteType = "GFX_MOIM_pp_button"
+				pdx_tooltip = "MOIM_pp_button_tt"
+			}
+
+			buttonType = {
+				name = "MOIM_cp_button"
+				position = { x = 613 y = 174 }
+				size = { width = 55 height = 55 }
+				spriteType = "GFX_MOIM_cp_button"
+				pdx_tooltip = "MOIM_cp_button_tt"
+			}
+
+			buttonType = {
+				name = "MOIM_xp_button"
+				position = { x = 705 y = 174 }
+				size = { width = 55 height = 55 }
+				spriteType = "GFX_MOIM_xp_button"
+				pdx_tooltip = "MOIM_xp_button_tt"
+			}
+
 			iconType = {
 				name = "MOIM_doir_overlay"
 				position = { x = 408 y = 101 }
@@ -53,6 +77,42 @@ guiTypes = {
 				position = { x = 14 y = 101 }
 				size = { width = 394 height = 170 }
 				spriteType = "GFX_MOIM_dop_main"
+			}
+
+			buttonType = {
+				name = "MOIM_boost_emerging_button"
+				position = { x = 42 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_emerging_button"
+				pdx_tooltip = "MOIM_boost_emerging_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_boost_western_button"
+				position = { x = 114 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_western_button"
+				pdx_tooltip = "MOIM_boost_western_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_boost_nonaligned_button"
+				position = { x = 186 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_nonaligned_button"
+				pdx_tooltip = "MOIM_boost_nonaligned_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_boost_nationalist_button"
+				position = { x = 258 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_nationalist_button"
+				pdx_tooltip = "MOIM_boost_nationalist_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_boost_salafist_button"
+				position = { x = 330 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_salafist_button"
+				pdx_tooltip = "MOIM_boost_salafist_button_tt"
 			}
 
 			iconType = {
@@ -127,7 +187,7 @@ guiTypes = {
 			name = "MOIM_main_overlay"
 			position = { x = 0 y = 0 }
 			size = { width = 900 height = 600 }
-			spriteType = "GFX_MOIM_main_overlay"
+			spriteType = "GFX_MOIM_main_overlay "
 		}
 
 		buttonType = {
