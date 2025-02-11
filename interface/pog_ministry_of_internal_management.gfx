@@ -69,23 +69,67 @@ spriteTypes = {
 		textureFile = "gfx/interface/moim/moim_xp_button.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_boost_emerging_button"
+		name = "GFX_MOIM_dop_plus_button"
+		textureFile = "gfx/interface/moim/moim_dop_plus_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dop_minus_button"
+		textureFile = "gfx/interface/moim/moim_dop_minus_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_emerging_icon"
 		textureFile = "gfx/interface/moim/moim_boost_emerging.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_boost_western_button"
+		name = "GFX_MOIM_boost_western_icon"
 		textureFile = "gfx/interface/moim/moim_boost_western.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_boost_nonaligned_button"
+		name = "GFX_MOIM_boost_nonaligned_icon"
 		textureFile = "gfx/interface/moim/moim_boost_nonaligned.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_boost_nationalist_button"
+		name = "GFX_MOIM_boost_nationalist_icon"
 		textureFile = "gfx/interface/moim/moim_boost_nationalist.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_boost_salafist_button"
+		name = "GFX_MOIM_boost_salafist_icon"
 		textureFile = "gfx/interface/moim/moim_boost_salafist.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_army_atk"
+		textureFile = "gfx/interface/moim/moim_army_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_army_def"
+		textureFile = "gfx/interface/moim/moim_army_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_army_spd"
+		textureFile = "gfx/interface/moim/moim_army_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_atk"
+		textureFile = "gfx/interface/moim/moim_navy_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_def"
+		textureFile = "gfx/interface/moim/moim_navy_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_spd"
+		textureFile = "gfx/interface/moim/moim_navy_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_atk"
+		textureFile = "gfx/interface/moim/moim_air_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_def"
+		textureFile = "gfx/interface/moim/moim_air_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_spd"
+		textureFile = "gfx/interface/moim/moim_air_speed.dds"
 	}
 }

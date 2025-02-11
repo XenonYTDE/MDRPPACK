@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "MOIM_button"
-		position = { x = -42 y = -444 }
+		position = { x = 272 y = -250 }
 		size = { width = 46 height = 46 }
 		orientation = LOWER_RIGHT
 
@@ -78,43 +78,102 @@ guiTypes = {
 				size = { width = 394 height = 170 }
 				spriteType = "GFX_MOIM_dop_main"
 			}
-
+			# Boost Emerging
 			buttonType = {
 				name = "MOIM_boost_emerging_button"
-				position = { x = 42 y = 177 }
-				size = { width = 47 height = 47 }
-				spriteType = "GFX_MOIM_boost_emerging_button"
+				position = { x = 45 y = 162 }
+				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_emerging_button_tt"
 			}
+			iconType = {
+				name = "MOIM_dop_emerging_icon"
+				position = { x = 42 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_emerging_icon"
+			}
+			buttonType = {
+				name = "MOIM_nerf_emerging_button"
+				position = { x = 45 y = 226 }
+				spriteType = "GFX_MOIM_dop_minus_button"
+				pdx_tooltip = "MOIM_nerf_emerging_button_tt"
+			}
+			# Boost Western
 			buttonType = {
 				name = "MOIM_boost_western_button"
-				position = { x = 114 y = 177 }
-				size = { width = 47 height = 47 }
-				spriteType = "GFX_MOIM_boost_western_button"
+				position = { x = 117 y = 162 }
+				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_western_button_tt"
 			}
+			iconType = {
+				name = "MOIM_dop_western_icon"
+				position = { x = 114 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_western_icon"
+			}
+			buttonType = {
+				name = "MOIM_nerf_western_button"
+				position = { x = 117 y = 226 }
+				spriteType = "GFX_MOIM_dop_minus_button"
+				pdx_tooltip = "MOIM_nerf_western_button_tt"
+			}
+			# Boost Non-Aligned
 			buttonType = {
 				name = "MOIM_boost_nonaligned_button"
-				position = { x = 186 y = 177 }
-				size = { width = 47 height = 47 }
-				spriteType = "GFX_MOIM_boost_nonaligned_button"
+				position = { x = 189 y = 162 }
+				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_nonaligned_button_tt"
 			}
+			iconType = {
+				name = "MOIM_dop_nonaligned_icon"
+				position = { x = 186 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_nonaligned_icon"
+			}
+			buttonType = {
+				name = "MOIM_nerf_nonaligned_button"
+				position = { x = 189 y = 226 }
+				spriteType = "GFX_MOIM_dop_minus_button"
+				pdx_tooltip = "MOIM_nerf_nonaligned_button_tt"
+			}
+			# Boost Nationalist
 			buttonType = {
 				name = "MOIM_boost_nationalist_button"
-				position = { x = 258 y = 177 }
-				size = { width = 47 height = 47 }
-				spriteType = "GFX_MOIM_boost_nationalist_button"
+				position = { x = 261 y = 162 }
+				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_nationalist_button_tt"
 			}
+			iconType = {
+				name = "MOIM_dop_nationalist_icon"
+				position = { x = 258 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_nationalist_icon"
+			}
+			buttonType = {
+				name = "MOIM_nerf_nationalist_button"
+				position = { x = 261 y = 226 }
+				spriteType = "GFX_MOIM_dop_minus_button"
+				pdx_tooltip = "MOIM_nerf_nationalist_button_tt"
+			}
+			# Boost Salafist
 			buttonType = {
 				name = "MOIM_boost_salafist_button"
-				position = { x = 330 y = 177 }
-				size = { width = 47 height = 47 }
-				spriteType = "GFX_MOIM_boost_salafist_button"
+				position = { x = 333 y = 162 }
+				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_salafist_button_tt"
 			}
-
+			iconType = {
+				name = "MOIM_dop_salafist_icon"
+				position = { x = 330 y = 177 }
+				size = { width = 47 height = 47 }
+				spriteType = "GFX_MOIM_boost_salafist_icon"
+			}
+			buttonType = {
+				name = "MOIM_nerf_salafist_button"
+				position = { x = 333 y = 226 }
+				spriteType = "GFX_MOIM_dop_minus_button"
+				pdx_tooltip = "MOIM_nerf_salafist_button_tt"
+			}
+			# Main Overlay
 			iconType = {
 				name = "MOIM_dop_overlay"
 				position = { x = 14 y = 101 }
@@ -139,6 +198,61 @@ guiTypes = {
 				position = { x = 14 y = 271 }
 				size = { width = 300 height = 315 }
 				spriteType = "GFX_MOIM_dom_main"
+			}
+
+			buttonType = {
+				name = "MOIM_army_atk"
+				position = { x = 57 y = 333 }
+				spriteType = "GFX_MOIM_army_atk"
+				pdx_tooltip = "MOIM_army_atk_tt"
+			}
+			buttonType = {
+				name = "MOIM_army_def"
+				position = { x = 137 y = 333 }
+				spriteType = "GFX_MOIM_army_def"
+				pdx_tooltip = "MOIM_army_def_tt"
+			}
+			buttonType = {
+				name = "MOIM_army_spd"
+				position = { x = 217 y = 333 }
+				spriteType = "GFX_MOIM_army_spd"
+				pdx_tooltip = "MOIM_army_spd_tt"
+			}
+			buttonType = {
+				name = "MOIM_navy_atk"
+				position = { x = 57 y = 416 }
+				spriteType = "GFX_MOIM_navy_atk"
+				pdx_tooltip = "MOIM_navy_atk_tt"
+			}
+			buttonType = {
+				name = "MOIM_navy_def"
+				position = { x = 137 y = 416 }
+				spriteType = "GFX_MOIM_navy_def"
+				pdx_tooltip = "MOIM_navy_def_tt"
+			}
+			buttonType = {
+				name = "MOIM_navy_spd"
+				position = { x = 217 y = 416 }
+				spriteType = "GFX_MOIM_navy_spd"
+				pdx_tooltip = "MOIM_navy_spd_tt"
+			}
+			buttonType = {
+				name = "MOIM_air_atk"
+				position = { x = 57 y = 496 }
+				spriteType = "GFX_MOIM_air_atk"
+				pdx_tooltip = "MOIM_air_atk_tt"
+			}
+			buttonType = {
+				name = "MOIM_air_def"
+				position = { x = 137 y = 496 }
+				spriteType = "GFX_MOIM_air_def"
+				pdx_tooltip = "MOIM_air_def_tt"
+			}
+			buttonType = {
+				name = "MOIM_air_spd"
+				position = { x = 217 y = 496 }
+				spriteType = "GFX_MOIM_air_spd"
+				pdx_tooltip = "MOIM_air_spd_tt"
 			}
 
 			iconType = {

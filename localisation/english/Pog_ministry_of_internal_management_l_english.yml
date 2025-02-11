@@ -1,21 +1,31 @@
 ﻿l_english:
 
  MOIM_open_button_tt: "Open the §GMinistry of Internal Management§! tab"
- MOIM_unlock_button_tt: "£political_power_texticon §Y500§!"
- MOIM_dop_unlock_button_tt: "£political_power_texticon §Y500§!"
- MOIM_dom_unlock_button_tt: "£political_power_texticon §Y500§!"
- MOIM_dorad_unlock_button_tt: "£political_power_texticon §Y500§!"
+ MOIM_unlock_button_tt: "Unlock the §GMinistry of Internal Management§!\n§YCost:£political_power_texticon 500§!"
+ MOIM_dop_unlock_button_tt: "Unlock the Department of Politics\n§YCost:£political_power_texticon 500§!"
+ MOIM_dom_unlock_button_tt: "Unlock the Department of Military\n§YCost:£political_power_texticon 500§!"
+ MOIM_dorad_unlock_button_tt: "Unlock the Department of Research & Development\n§YCost:£political_power_texticon 500§!"
  
- MOIM_pp_button_tt: "£political_power_texticon §Y250§!"
- MOIM_cp_button_tt: "£political_power_texticon §Y250§!"
- MOIM_xp_button_tt: "£political_power_texticon §Y250§!"
+ MOIM_pp_button_tt: "Boost §9Political Power§! Gain +2%\n§YCost:£political_power_texticon 200§!"
+ MOIM_cp_button_tt: "Boost §RCommand Power§! Gain +2%\n§YCost:£political_power_texticon 200§!"
+ MOIM_xp_button_tt: "Boost §GExper§!§Bience§!§R Gain§! +2%\n§YCost:£political_power_texticon 200§!"
  MOIM_boost_emerging_button_tt: "Boost §7Emerging Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
  MOIM_nerf_emerging_button_tt: "Nerf §7Emerging Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
- MOIM_boost_western_button_tt: "Boost §BWestern Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
+ MOIM_boost_western_button_tt: "Boost §BWestern Outlook§! Support +0.01 (Max 0.05)\n§YCost: £political_power_texticon 250§!"
  MOIM_nerf_western_button_tt: "Nerf §BWestern Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
- MOIM_boost_nonaligned_button_tt: "Boost §gNonaligned Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
- MOIM_nerf_nonaligned_button_tt: "Nerf §gNonaligned Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
- MOIM_boost_nationalist_button_tt: "Boost §LNationalist Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
- MOIM_nerf_nationalist_button_tt: "Nerf §LNationalist Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
- MOIM_boost_salafist_button_tt: "Boost §bSalafist Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
- MOIM_nerf_salafist_button_tt: "Nerf §bSalafist Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
+ MOIM_boost_nonaligned_button_tt: "Boost §gNon-Aligned Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
+ MOIM_nerf_nonaligned_button_tt: "Nerf §gNon-Aligned Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
+ MOIM_boost_nationalist_button_tt: "Boost §ONationalist Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
+ MOIM_nerf_nationalist_button_tt: "Nerf §ONationalist Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
+ MOIM_boost_salafist_button_tt: "Boost §LSalafist Outlook§! Support +0.01 (Max 0.05)\n§YCost:£political_power_texticon 250§!"
+ MOIM_nerf_salafist_button_tt: "Nerf §LSalafist Outlook§! Support -0.01 (Min 0.00)\n§YCost:£political_power_texticon 250§!"
+
+ MOIM_army_atk_tt: "Gain +1% Army Attack\n§YCost:£political_power_texticon 50 £army_xp 100§!"
+ MOIM_army_def_tt: 
+ MOIM_army_spd_tt:
+ MOIM_navy_atk_tt:
+ MOIM_navy_def_tt:
+ MOIM_navy_spd_tt:
+ MOIM_air_atk_tt:
+ MOIM_air_def_tt:
+ MOIM_air_spd_tt:

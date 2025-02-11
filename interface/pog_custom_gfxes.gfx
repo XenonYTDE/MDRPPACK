@@ -1,4 +1,17 @@
 spriteTypes = {
+# XP texticons
+	spriteType = {
+		name = "GFX_pog_xp_army"
+		texturefile = "gfx/texticons/pog_texticons/xp_army.dds"
+	}
+	spriteType = {
+		name = "GFX_pog_xp_navy"
+		texturefile = "gfx/texticons/pog_texticons/xp_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_pog_xp_air"
+		texturefile = "gfx/texticons/pog_texticons/xp_air.dds"
+	}
 # Global Hegemony
 	spriteType = {
 		name = "GFX_idea_pog_hegemony"
