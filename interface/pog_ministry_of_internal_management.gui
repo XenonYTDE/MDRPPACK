@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "MOIM_button"
-		position = { x = 272 y = -250 }
+		position = { x = 272 y = -290 }
 		size = { width = 46 height = 46 }
 		orientation = LOWER_RIGHT
 
@@ -202,55 +202,55 @@ guiTypes = {
 
 			buttonType = {
 				name = "MOIM_army_atk"
-				position = { x = 57 y = 333 }
+				position = { x = 56 y = 331 }
 				spriteType = "GFX_MOIM_army_atk"
 				pdx_tooltip = "MOIM_army_atk_tt"
 			}
 			buttonType = {
 				name = "MOIM_army_def"
-				position = { x = 137 y = 333 }
+				position = { x = 138 y = 331 }
 				spriteType = "GFX_MOIM_army_def"
 				pdx_tooltip = "MOIM_army_def_tt"
 			}
 			buttonType = {
 				name = "MOIM_army_spd"
-				position = { x = 217 y = 333 }
+				position = { x = 220 y = 331 }
 				spriteType = "GFX_MOIM_army_spd"
 				pdx_tooltip = "MOIM_army_spd_tt"
 			}
 			buttonType = {
 				name = "MOIM_navy_atk"
-				position = { x = 57 y = 416 }
+				position = { x = 56 y = 417 }
 				spriteType = "GFX_MOIM_navy_atk"
 				pdx_tooltip = "MOIM_navy_atk_tt"
 			}
 			buttonType = {
 				name = "MOIM_navy_def"
-				position = { x = 137 y = 416 }
+				position = { x = 138 y = 417 }
 				spriteType = "GFX_MOIM_navy_def"
 				pdx_tooltip = "MOIM_navy_def_tt"
 			}
 			buttonType = {
 				name = "MOIM_navy_spd"
-				position = { x = 217 y = 416 }
+				position = { x = 220 y = 417 }
 				spriteType = "GFX_MOIM_navy_spd"
 				pdx_tooltip = "MOIM_navy_spd_tt"
 			}
 			buttonType = {
 				name = "MOIM_air_atk"
-				position = { x = 57 y = 496 }
+				position = { x = 56 y = 499 }
 				spriteType = "GFX_MOIM_air_atk"
 				pdx_tooltip = "MOIM_air_atk_tt"
 			}
 			buttonType = {
 				name = "MOIM_air_def"
-				position = { x = 137 y = 496 }
+				position = { x = 138 y = 499 }
 				spriteType = "GFX_MOIM_air_def"
 				pdx_tooltip = "MOIM_air_def_tt"
 			}
 			buttonType = {
 				name = "MOIM_air_spd"
-				position = { x = 217 y = 496 }
+				position = { x = 220 y = 499 }
 				spriteType = "GFX_MOIM_air_spd"
 				pdx_tooltip = "MOIM_air_spd_tt"
 			}
