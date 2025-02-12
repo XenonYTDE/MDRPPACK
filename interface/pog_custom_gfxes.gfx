@@ -1,16 +1,19 @@
 spriteTypes = {
 # XP texticons
 	spriteType = {
-		name = "GFX_pog_xp_army"
-		texturefile = "gfx/texticons/pog_texticons/xp_army.dds"
+		name = "GFX_army_xp_texticon"
+		textureFile = "gfx/texticons/army_xp_texticon.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_pog_xp_navy"
-		texturefile = "gfx/texticons/pog_texticons/xp_navy.dds"
+		name = "GFX_navy_xp_texticon"
+		textureFile = "gfx/texticons/navy_xp_texticon.dds"
+		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_pog_xp_air"
-		texturefile = "gfx/texticons/pog_texticons/xp_air.dds"
+		name = "GFX_air_xp_texticon"
+		textureFile = "gfx/texticons/air_xp_texticon.dds"
+		legacy_lazy_load = no
 	}
 # Global Hegemony
 	spriteType = {

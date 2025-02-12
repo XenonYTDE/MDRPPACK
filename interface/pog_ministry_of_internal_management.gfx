@@ -16,6 +16,7 @@ spriteTypes = {
 		name = "GFX_MOIM_main_overlay"
 		textureFile = "gfx/interface/moim/moim_main_overlay.dds"
 	}
+	# Department Overlays
 	spriteType = {
 		name = "GFX_MOIM_dop_overlay"
 		textureFile = "gfx/interface/moim/moim_dop_overlay.dds"
@@ -32,6 +33,7 @@ spriteTypes = {
 		name = "GFX_MOIM_dorad_overlay"
 		textureFile = "gfx/interface/moim/moim_dorad_overlay.dds"
 	}
+	# Department Mains
 	spriteType = {
 		name = "GFX_MOIM_dop_main"
 		textureFile = "gfx/interface/moim/moim_dop_main.dds"
@@ -56,6 +58,7 @@ spriteTypes = {
 		name = "GFX_MOIM_unlock_button_50"
 		textureFile = "gfx/interface/moim/moim_unlock_button_50.dds"
 	}
+	# Department of Internal Resources
 	spriteType = {
 		name = "GFX_MOIM_pp_button"
 		textureFile = "gfx/interface/moim/moim_pp_button.dds"
@@ -68,6 +71,7 @@ spriteTypes = {
 		name = "GFX_MOIM_xp_button"
 		textureFile = "gfx/interface/moim/moim_xp_button.dds"
 	}
+	# Department of Politics
 	spriteType = {
 		name = "GFX_MOIM_dop_plus_button"
 		textureFile = "gfx/interface/moim/moim_dop_plus_button.dds"
@@ -96,6 +100,7 @@ spriteTypes = {
 		name = "GFX_MOIM_boost_salafist_icon"
 		textureFile = "gfx/interface/moim/moim_boost_salafist.dds"
 	}
+	# Department of Military
 	spriteType = {
 		name = "GFX_MOIM_army_atk"
 		textureFile = "gfx/interface/moim/moim_army_attack.dds"
@@ -131,6 +136,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_MOIM_air_spd"
 		textureFile = "gfx/interface/moim/moim_air_speed.dds"
+	}
+	# Department of Research & Development
+	spriteType = {
+		name = "GFX_MOIM_dorad_research"
+		textureFile = "gfx/interface/moim/moim_dorad_research.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_construction"
+		textureFile = "gfx/interface/moim/moim_dorad_construction.dds"
 	}
 	spriteType = {
 		name = "GFX_MOIM_dorad_inf_util"
