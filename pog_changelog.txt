@@ -17,6 +17,7 @@ v1.11.1d
 
 v1.11.2
 
+-Compatibility with Millenium Dawn 1.11.2
 -New system - Ministry of Internal Management; can now invest pp, cp, xp into various political, army, research buffs for the nation.
 -Added 4th Internal Faction slot
 -Added new Internal Faction - Enviromentalists
@@ -26,6 +27,7 @@ v1.11.2
 -Increased Division Cap per Army to 32
 -All 8 National Ideas are available in ... group
 -Political Power cap increased to 10000
+-Command Power cap increasd to 1000
 -Dnipropetrovsk Republic added to Hyperfragmentation
 -Added more requirements to Post Scarcity Economy and nerfed it
 -Rebalanced most law costs

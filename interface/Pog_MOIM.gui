@@ -1,3 +1,4 @@
+# Author: Lynxivium
 guiTypes = {
 
 	containerWindowType = {
@@ -398,7 +399,7 @@ guiTypes = {
 		iconType = {
 			name = "MOIM_main_overlay"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_MOIM_main_overlay "
+			spriteType = "GFX_MOIM_main_overlay"
 		}
 
 		buttonType = {

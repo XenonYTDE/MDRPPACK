@@ -1,3 +1,4 @@
+# Author: Lynxivium
 scripted_gui = {
 
 	MOIM_open_button_gui = {
@@ -31,6 +32,7 @@ scripted_gui = {
 		}
 
 		effects = {
+			# Main
 			MOIM_close_button_click = {
 				clr_country_flag = MOIM_open_flag
 			}
@@ -39,6 +41,14 @@ scripted_gui = {
 					limit = { has_political_power > 499 }
 					add_political_power = -500
 					set_country_flag = MOIM_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_doir_dynmod
+					}
+					set_variable = { moim_pp_factor = 0 }
+					set_variable = { moim_cp_factor = 0 }
+					set_variable = { moim_army_xp_factor = 0 }
+					set_variable = { moim_navy_xp_factor = 0 }
+					set_variable = { moim_air_xp_factor = 0 }
 				}
 			}
 			MOIM_dop_unlock_button_click = {
@@ -60,6 +70,47 @@ scripted_gui = {
 					limit = { has_political_power > 499 }
 					add_political_power = -500
 					set_country_flag = MOIM_dorad_bought_flag
+				}
+			}
+			# Department of Internal Resources 
+			MOIM_pp_button_click = {
+				if = {
+					limit = { 
+						has_political_power > 199
+						check_variable = { moim_pp_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_pp_factor_effect = yes
+				}
+			}
+			MOIM_cp_button_click = {
+				if = {
+					limit = { 
+						has_political_power > 199
+						command_power > 49
+						check_variable = { moim_cp_factor < 0.50 }
+					}
+					add_political_power = -200
+					add_command_power = -50
+					MOIM_change_cp_factor_effect = yes
+				}
+			}
+			MOIM_xp_button_click = {
+				if = {
+					limit = {
+						has_political_power > 99
+						has_army_experience > 49
+						has_navy_experience > 49
+						has_air_experience > 49
+						check_variable = { moim_army_xp_factor < 0.25 }
+					}
+					add_political_power = -100
+					army_experience = -50
+					navy_experience = -50
+					air_experience = -50
+					MOIM_change_army_xp_factor_effect = yes
+					MOIM_change_navy_xp_factor_effect = yes
+					MOIM_change_air_xp_factor_effect = yes
 				}
 			}
 		}
