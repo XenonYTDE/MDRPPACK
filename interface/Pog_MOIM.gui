@@ -40,7 +40,6 @@ guiTypes = {
 			buttonType = {
 				name = "MOIM_pp_button"
 				position = { x = 521 y = 174 }
-				size = { width = 55 height = 55 }
 				spriteType = "GFX_MOIM_pp_button"
 				pdx_tooltip = "MOIM_pp_button_tt"
 			}
@@ -48,7 +47,6 @@ guiTypes = {
 			buttonType = {
 				name = "MOIM_cp_button"
 				position = { x = 613 y = 174 }
-				size = { width = 55 height = 55 }
 				spriteType = "GFX_MOIM_cp_button"
 				pdx_tooltip = "MOIM_cp_button_tt"
 			}
@@ -56,7 +54,6 @@ guiTypes = {
 			buttonType = {
 				name = "MOIM_xp_button"
 				position = { x = 705 y = 174 }
-				size = { width = 55 height = 55 }
 				spriteType = "GFX_MOIM_xp_button"
 				pdx_tooltip = "MOIM_xp_button_tt"
 			}
@@ -89,10 +86,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_boost_emerging_icon"
 			}
 			buttonType = {
-				name = "MOIM_nerf_emerging_button"
+				name = "MOIM_lower_emerging_button"
 				position = { x = 45 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_nerf_emerging_button_tt"
+				pdx_tooltip = "MOIM_lower_emerging_button_tt"
 			}
 			# Boost Western
 			buttonType = {
@@ -107,10 +104,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_boost_western_icon"
 			}
 			buttonType = {
-				name = "MOIM_nerf_western_button"
+				name = "MOIM_lower_western_button"
 				position = { x = 117 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_nerf_western_button_tt"
+				pdx_tooltip = "MOIM_lower_western_button_tt"
 			}
 			# Boost Non-Aligned
 			buttonType = {
@@ -125,10 +122,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_boost_nonaligned_icon"
 			}
 			buttonType = {
-				name = "MOIM_nerf_nonaligned_button"
+				name = "MOIM_lower_nonaligned_button"
 				position = { x = 189 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_nerf_nonaligned_button_tt"
+				pdx_tooltip = "MOIM_lower_nonaligned_button_tt"
 			}
 			# Boost Nationalist
 			buttonType = {
@@ -143,10 +140,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_boost_nationalist_icon"
 			}
 			buttonType = {
-				name = "MOIM_nerf_nationalist_button"
+				name = "MOIM_lower_nationalist_button"
 				position = { x = 261 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_nerf_nationalist_button_tt"
+				pdx_tooltip = "MOIM_lower_nationalist_button_tt"
 			}
 			# Boost Salafist
 			buttonType = {
@@ -161,10 +158,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_boost_salafist_icon"
 			}
 			buttonType = {
-				name = "MOIM_nerf_salafist_button"
+				name = "MOIM_lower_salafist_button"
 				position = { x = 333 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_nerf_salafist_button_tt"
+				pdx_tooltip = "MOIM_lower_salafist_button_tt"
 			}
 			# Main Overlay
 			iconType = {
@@ -176,7 +173,6 @@ guiTypes = {
 			buttonType = {
 				name = "MOIM_dop_unlock_button"
 				position = { x = 186 y = 165 }
-				size = { width = 50 height = 50 }
 				spriteType = "GFX_MOIM_unlock_button_50"
 				pdx_tooltip = "MOIM_dop_unlock_button_tt"
 			}
@@ -249,14 +245,12 @@ guiTypes = {
 			iconType = {
 				name = "MOIM_dom_overlay"
 				position = { x = 14 y = 271 }
-				size = { width = 300 height = 315 }
 				spriteType = "GFX_MOIM_dom_overlay"
 			}
 
 			buttonType = {
 				name = "MOIM_dom_unlock_button"
 				position = { x = 140 y = 390 }
-				size = { width = 50 height = 50 }
 				spriteType = "GFX_MOIM_unlock_button_50"
 				pdx_tooltip = "MOIM_dom_unlock_button_tt"
 			}
@@ -268,7 +262,6 @@ guiTypes = {
 			iconType = {
 				name = "MOIM_dorad_main"
 				position = { x = 314 y = 271 }
-				size = { width = 572 height = 315 }
 				spriteType = "GFX_MOIM_dorad_main"
 			}
 			
@@ -383,14 +376,12 @@ guiTypes = {
 			iconType = {
 				name = "MOIM_dorad_overlay"
 				position = { x = 314 y = 271 }
-				size = { width = 572 height = 315 }
 				spriteType = "GFX_MOIM_dorad_overlay"
 			}
 
 			buttonType = {
 				name = "MOIM_dorad_unlock_button"
 				position = { x = 575 y = 390 }
-				size = { width = 50 height = 50 }
 				spriteType = "GFX_MOIM_unlock_button_50"
 				pdx_tooltip = "MOIM_dorad_unlock_button_tt"
 			}
@@ -405,7 +396,6 @@ guiTypes = {
 		buttonType = {
 			name = "MOIM_unlock_button"
 			position = { x = -37 y = -37 }
-			size = { width = 75 height = 75 }
 			orientation = center
 			origo = center
 			spriteType = "GFX_MOIM_unlock_button_75"

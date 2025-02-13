@@ -10,6 +10,7 @@ moim_doir_dynmod = {
 	experience_gain_army = moim_army_xp_factor
 	experience_gain_navy = moim_navy_xp_factor
 	experience_gain_air = moim_air_xp_factor
+	stability_factor = 0.01
 }
 
 moim_dop_dynmod = {
@@ -22,6 +23,7 @@ moim_dop_dynmod = {
 	neutrality_drift = moim_nonaligned_factor
 	nationalist_drift = moim_nationalist_factor
 	fascism_drift = moim_salafist_factor
+	stability_factor = 0.01
 }
 
 moim_dom_dynmod = {
@@ -30,13 +32,22 @@ moim_dom_dynmod = {
 		has_country_flag = MOIM_bought_flag
 	}
 	army_attack_factor = moim_army_atk_factor
-	army_speed_factor = moim_army_spd_factor
 	army_defence_factor = moim_army_def_factor
-	naval_damage_factor = moim_navy_atk_factor
+	army_speed_factor = moim_army_spd_factor
+	navy_screen_attack_factor = moim_navy_atk_factor
+	navy_screen_defence_factor = moim_navy_def_factor
+	navy_capital_ship_attack_factor = moim_navy_atk_factor
+	navy_capital_ship_defence_factor = moim_navy_def_factor
+	navy_submarine_attack_factor = moim_navy_atk_factor
+	navy_submarine_defence_factor = moim_navy_def_factor
 	naval_speed_factor = moim_navy_spd_factor
-	naval_defense_factor = moim_navy_def_factor
 	air_attack_factor = moim_air_atk_factor
+	air_defence_factor = moim_air_def_factor
 	air_maximum_speed_factor = moim_air_spd_factor
+	stability_factor = 0.01
+	research_bonus = {
+		CAT_inf = 0.01
+	}
 }
 
 moim_dorad_dynmod = {
@@ -46,4 +57,5 @@ moim_dorad_dynmod = {
 	}
 	research_speed_factor = moim_research_speed_factor
 	production_speed_buildings_factor = moim_construction_speed_factor
+	stability_factor = 0.01
 }

@@ -56,6 +56,14 @@ scripted_gui = {
 					limit = { has_political_power > 499 }
 					add_political_power = -500
 					set_country_flag = MOIM_dop_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dop_dynmod
+					}
+					set_variable = { moim_emerging_factor = 0 }
+					set_variable = { moim_western_factor = 0 }
+					set_variable = { moim_nonaligned_factor = 0 }
+					set_variable = { moim_nationalist_factor = 0 }
+					set_variable = { moim_salafist_factor = 0 }
 				}
 			}
 			MOIM_dom_unlock_button_click = {
@@ -63,6 +71,18 @@ scripted_gui = {
 					limit = { has_political_power > 499 }
 					add_political_power = -500
 					set_country_flag = MOIM_dom_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dom_dynmod
+					}
+					set_variable = { moim_army_atk_factor = 0 }
+					set_variable = { moim_army_spd_factor = 0 }
+					set_variable = { moim_army_def_factor = 0 }
+					set_variable = { moim_navy_atk_factor = 0 }
+					set_variable = { moim_navy_spd_factor = 0 }
+					set_variable = { moim_navy_def_factor = 0 }
+					set_variable = { moim_air_atk_factor = 0 }
+					set_variable = { moim_air_spd_factor = 0 }
+					set_variable = { moim_air_def_factor = 0 }
 				}
 			}
 			MOIM_dorad_unlock_button_click = {
@@ -70,6 +90,11 @@ scripted_gui = {
 					limit = { has_political_power > 499 }
 					add_political_power = -500
 					set_country_flag = MOIM_dorad_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dorad_dynmod
+					}
+					set_variable = { moim_research_speed_factor = 0 }
+					set_variable = { moim_construction_speed_factor = 0 }
 				}
 			}
 			# Department of Internal Resources 
@@ -111,6 +136,237 @@ scripted_gui = {
 					MOIM_change_army_xp_factor_effect = yes
 					MOIM_change_navy_xp_factor_effect = yes
 					MOIM_change_air_xp_factor_effect = yes
+				}
+			}
+			# Department of Politics
+			MOIM_boost_emerging_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_emerging_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_emerging_factor_effect = yes
+				}
+			}
+			MOIM_lower_emerging_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_emerging_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_emerging_factor_effect = yes
+				}
+			}
+			MOIM_boost_western_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_western_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_western_factor_effect = yes
+				}
+			}
+			MOIM_lower_western_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_western_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_western_factor_effect = yes
+				}
+			}
+			MOIM_boost_nonaligned_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nonaligned_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_nonaligned_factor_effect = yes
+				}
+			}
+			MOIM_lower_nonaligned_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nonaligned_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_nonaligned_factor_effect = yes
+				}
+			}
+			MOIM_boost_nationalist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nationalist_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_nationalist_factor_effect = yes
+				}
+			}
+			MOIM_lower_nationalist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nationalist_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_nationalist_factor_effect = yes
+				}
+			}
+			MOIM_boost_salafist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_salafist_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_salafist_factor_effect = yes
+				}
+			}
+			MOIM_lower_salafist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_salafist_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_salafist_factor_effect = yes
+				}
+			}
+			# Department of Military
+			MOIM_army_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_atk_factor_effect = yes
+				}
+			}
+			MOIM_army_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_spd_factor_effect = yes
+				}
+			}
+			MOIM_army_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_def_factor_effect = yes
+				}
+			}
+			MOIM_navy_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_atk_factor_effect = yes
+				}
+			}
+			MOIM_navy_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_spd_factor_effect = yes
+				}
+			}
+			MOIM_navy_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_def_factor_effect = yes
+				}
+			}
+			MOIM_air_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_atk_factor_effect = yes
+				}
+			}
+			MOIM_air_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_spd_factor_effect = yes
+				}
+			}
+			MOIM_air_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_def_factor_effect = yes
+				}
+			}
+			# Department of Research & Development
+			MOIM_dorad_research_click = {
+				if = {
+					limit = {
+						has_political_power > 199
+						check_variable = { moim_research_speed_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_research_speed_factor_effect = yes
+				}
+			}
+			MOIM_dorad_construction_click = {
+				if = {
+					limit = {
+						has_political_power > 199
+						check_variable = { moim_construction_speed_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_construction_speed_factor_effect = yes
 				}
 			}
 		}
