@@ -312,9 +312,9 @@ EU_clear_voting = {
 		clr_global_flag = focus_EU610_result
 		clr_global_flag = focus_EU610_QMV_result
 		clr_global_flag = focus_EU610_maj_result
-		clr_global_flag = focus_EU701_result
-		clr_global_flag = focus_EU701_QMV_result
-		clr_global_flag = focus_EU701_maj_result
+		clr_global_flag = focus_EU701_result # DO NOT MERGE WITH BASE MD
+		clr_global_flag = focus_EU701_QMV_result # DO NOT MERGE WITH BASE MD
+		clr_global_flag = focus_EU701_maj_result # DO NOT MERGE WITH BASE MD
 		clr_global_flag = focus_EU611_result
 		clr_global_flag = focus_EU611_QMV_result
 		clr_global_flag = focus_EU611_maj_result
@@ -329,7 +329,7 @@ EU_clear_voting = {
 ##############################################
 
 EU_update_vars = {
-	custom_effect_tooltip = "Update Ratio of Total EU, Euroscepticism, Europeanism"
+	custom_effect_tooltip = tooltip_EU_update_ration_euroscepticism_europeanism
 	hidden_effect = {
 		# EU population vars update
 		# Sets Global EU Population and Country Population
@@ -1424,14 +1424,14 @@ leaving_EU = {
 					set_country_flag = focus_EU610_QMV_yes
 				}
 		}
-		if = { limit = { has_country_flag = focus_EU701_yes }
+		if = { limit = { has_country_flag = focus_EU701_yes } # DO NOT MERGE WITH BASE MD
 				 clr_country_flag = focus_EU701_yes
 				random_country = {
 					limit = { has_idea = EU_member }
 					set_country_flag = focus_EU701_yes
 				}
 		}
-		if = { limit = { has_country_flag = focus_EU701_QMV_yes }
+		if = { limit = { has_country_flag = focus_EU701_QMV_yes } # DO NOT MERGE WITH BASE MD
 				 clr_country_flag = focus_EU701_QMV_yes
 				random_country = {
 					limit = { has_idea = EU_member }

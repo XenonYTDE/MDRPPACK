@@ -1,0 +1,8 @@
+ideas = {
+	country = {
+		
+		moim_dorad_inf = {
+			
+		}
+	}
+}

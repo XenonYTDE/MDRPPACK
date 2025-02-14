@@ -25,7 +25,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -39,7 +39,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -52,11 +52,11 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 		}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }
 
@@ -86,7 +86,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -100,7 +100,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -113,11 +113,11 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }
 
@@ -147,7 +147,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -161,7 +161,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -174,11 +174,11 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }
 
@@ -208,7 +208,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -222,7 +222,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -235,11 +235,11 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }
 
@@ -269,7 +269,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -283,7 +283,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -296,11 +296,11 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }
 
@@ -330,7 +330,7 @@ autonomy_state = {
 	}
 
 	ai_subject_wants_higher = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 
 		modifier = {
 			CHI = { has_government = democratic }
@@ -344,7 +344,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_lower = {
-		base = 0
+		base = 0 # DO NOT MERGE FROM BASE MD
 	}
 
 	ai_overlord_wants_garrison = {
@@ -357,10 +357,10 @@ autonomy_state = {
 	}
 
 	can_take_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 
 	can_lose_level = {
-		always = yes
+		always = yes # DO NOT MERGE FROM BASE MD
 	}
 }

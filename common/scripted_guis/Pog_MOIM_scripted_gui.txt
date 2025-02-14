@@ -369,6 +369,14 @@ scripted_gui = {
 					MOIM_change_construction_speed_factor_effect = yes
 				}
 			}
+			MOIM_dorad_inf_util_click = {
+				if = {
+					limit = {
+						has_political_power > 199
+					}
+					add_political_power = -200
+				}
+			}
 		}
 
 		triggers = {

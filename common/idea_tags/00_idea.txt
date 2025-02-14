@@ -15,9 +15,10 @@ idea_categories = {
 	}
 
 	national_status = {
+		# DO NOT MERGE FROM BASE MD
 		slot = economic_cycles
 		slot = corruption
-		slot = internal_factions
+		slot = internal_factions # DO NOT MERGE FROM BASE MD
 		slot = internal_factions
 		slot = internal_factions
 		slot = internal_factions

@@ -45,9 +45,6 @@ moim_dom_dynmod = {
 	air_defence_factor = moim_air_def_factor
 	air_maximum_speed_factor = moim_air_spd_factor
 	stability_factor = 0.01
-	research_bonus = {
-		CAT_inf = 0.01
-	}
 }
 
 moim_dorad_dynmod = {

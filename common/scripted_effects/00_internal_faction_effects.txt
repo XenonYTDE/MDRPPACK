@@ -1176,7 +1176,7 @@ if_no_longer_has_faction_clear_previous = {
 		clear_variable = CHAE_psinfra_factor_avr
 		clear_variable = CHAE_local_resouces_factor
 	}
-	if = {
+	if = { # DO NOT MERGE WITH BASE MD
 		limit = {
 			NOT = { has_idea = pog_enviromentalists }
 			has_variable = pog_enviromentalists_opinion
@@ -1304,7 +1304,7 @@ initialize_internal_faction_dynamic_modifiers = {
 		add_dynamic_modifier = { modifier = chaebols_force_dynamic_modifier }
 		apply_chaebols_effect_DYNMOD = yes
 	}
-
+# DO NOT MERGE WITH BASE MD
 	if = { limit = { has_idea = pog_enviromentalists }
 		add_dynamic_modifier = { modifier = pog_enviromentalists_dynamic_modifier }
 		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
@@ -1864,7 +1864,7 @@ apply_chaebols_effect_DYNMOD = {
 	# Force the Update Dynamic Modifier with new Calculated Effects
 	force_update_dynamic_modifier = yes
 }
-apply_pog_enviromentalists_dynamic_effect_DYNMOD = {
+apply_pog_enviromentalists_dynamic_effect_DYNMOD = { # DO NOT MERGE WITH BASE MD
 	# Sets the base to current opinion then subtracts 50 from it to get the modifier value
 	set_temp_variable = { base_modifier = pog_enviromentalists_opinion }
 	add_to_temp_variable = { base_modifier = -50 }
@@ -3144,7 +3144,7 @@ change_wall_street_opinion = {
 		#set_temp_variable = { temp_opinion = 0 }
 	}
 }
-
+# DO NOT MERGE WITH BASE MD
 change_pog_enviromentalists_opinion = {
 	if = { limit = { has_idea = pog_enviromentalists }
 
@@ -3301,7 +3301,7 @@ set_to_max_internal_faction_opinions = {
 		set_variable = { the_bazaar_opinion = 100 }
 		apply_the_bazaar_dynamic_effect_DYNMOD = yes
 	}
-	if = { limit = { has_idea = pog_enviromentalists }
+	if = { limit = { has_idea = pog_enviromentalists } # DO NOT MERGE WITH BASE MD
 		set_variable = { pog_enviromentalists_opinion = 100 }
 		apply_pog_enviromentalists_dynamic_effect_DYNMOD = yes
 	}
@@ -3390,7 +3390,7 @@ reset_all_internal_faction_opinions = {
 	if = { limit = { has_idea = the_bazaar }
 		set_variable = { the_bazaar_opinion = 50 }
 	}
-
+# DO NOT MERGE WITH BASE MD
 	if = { limit = { has_idea = pog_enviromentalists }
 		set_variable = { pog_enviromentalists_opinion = 50 }
 	}
@@ -3626,7 +3626,7 @@ monthly_tick_internal_factions_opinion = {
 		clamp_variable = { var = the_bazaar_opinion min = 50 }
 		apply_the_bazaar_dynamic_effect_DYNMOD = yes
 	}
-	if = {
+	if = { # DO NOT MERGE WITH BASE MD
 		limit = {
 			has_idea = pog_enviromentalists
 			check_variable = { pog_enviromentalists_opinion > 49 }

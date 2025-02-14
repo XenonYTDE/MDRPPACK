@@ -3,83 +3,96 @@
 ###   GAME RULES   ###
 ######################
 
- gr:0 "§OGeneric RP§!"
+ gr: "§OGeneric RP§!"
 
- RULE_OPTION_FREE:0 "Free"
- RULE_OPTION_NORMAL:0 "Normal"
- RULE_OPTION_ALLOWED:0 "Allowed"
- RULE_OPTION_BLOCKED:0 "Blocked"
+ RULE_OPTION_FREE: "Free"
+ RULE_OPTION_NORMAL: "Normal"
+ RULE_OPTION_ALLOWED: "Allowed"
+ RULE_OPTION_BLOCKED: "Blocked"
 
-### Enable National Ideas
- gr_nideas:0 "National Ideas"
- gr_nideas_enable_y:0 "Enabled"
- gr_nideas_enable_y_desc:0 "Enables the National Ideas interface, a selection of 9 Idea Groups that can further specialise your country."
- gr_nideas_enable_n:0 "Disabled"
- gr_nideas_enable_n_desc:0 "Disables the National Ideas interface."
- gr_NIDEAS_DISABLED_TT:0 "§HNational Ideas§! has been disabled"
-
-
-### Enable State Interactions
- gr_state_interactions:0 "State Interactions"
- gr_state_interactions_enable_y:0 "Enabled"
- gr_state_interactions_enable_y_desc:0 "Enables State Interactions, a range of ways you can interact with yours or others states from coring to building factories."
- gr_state_interactions_enable_n:0 "Disabled"
- gr_state_interactions_enable_n_desc:0 "Disables State Interactions."
-
-
-### Enable State Interactions: Coring
- gr_state_interactions_core:0 "State Interactions: Coring"
- gr_state_interactions_core_enable_y:0 "Enabled"
- gr_state_interactions_core_enable_y_desc:0 "Enables the options to core and uncore your owned states."
- gr_state_interactions_core_enable_n:0 "Disabled"
- gr_state_interactions_core_enable_n_desc:0 "Disables the options to core and uncore your owned states."
-
-
-### Enable State Interactions: Resource Extraction
- gr_state_interactions_re:0 "State Interactions: Resource Extraction"
- gr_state_interactions_re_enable_y:0 "Enabled"
- gr_state_interactions_re_enable_y_desc:0 "Enables the option to spend money to extract more resources from owned states."
- gr_state_interactions_re_enable_n:0 "Disabled"
- gr_state_interactions_re_enable_n_desc:0 "Disables the option to spend money to extract more resources from owned states."
-
-
-### Enable State Interactions: Industrial Expansion
- gr_state_interactions_ie:0 "State Interactions: Industrial Expansion"
- gr_state_interactions_ie_1:0 "16 times"
- gr_state_interactions_ie_1_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 16 times."
- gr_state_interactions_ie_2:0 "8 times"
- gr_state_interactions_ie_2_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 8 times."
- gr_state_interactions_ie_3:0 "4 times"
- gr_state_interactions_ie_3_desc:0 "Each state can have it's industrial capacity (building slots) expanded a maximum of 4 times."
- gr_state_interactions_ie_4:0 "Disabled"
- gr_state_interactions_ie_4_desc:0 "Disables the option to spend money to expand states' industrial capacity (building slots)."
-
-
-### Enable State Interactions: Construct Buildings
- gr_state_interactions_cb:0 "State Interactions: Construct Buildings"
- gr_state_interactions_cb_enable_y:0 "Enabled"
- gr_state_interactions_cb_enable_y_desc:0 "Enables the options to spend money to construct buildings in owned states."
- gr_state_interactions_cb_enable_n:0 "Disabled"
- gr_state_interactions_cb_enable_n_desc:0 "Disables the options to spend money to construct buildings in owned states."
-
-
-### Enable State Interactions: Events
- gr_state_interactions_events:0 "State Interactions: Events"
- gr_state_interactions_events_enable_y:0 "Enabled"
- gr_state_interactions_events_enable_y_desc:0 "Enables news events for various interactions such as the State Transfer and Claim Tool, notifying all players what has been used and how."
- gr_state_interactions_events_enable_n:0 "Disabled"
- gr_state_interactions_events_enable_n_desc:0 "Disables news events."
-
-
-### Enable State Transfer Tool
- gr_stt:0 "State Transfer Tool"
- gr_stt_enable_y:0 "Enabled (excludes Subjects)"
- gr_stt_enable_y_desc:0 "Enables the State Transfer Tool for your owned states only."
- gr_stt_enable_ys:0 "Enabled (includes Subjects)"
- gr_stt_enable_ys_desc:0 "Enables the State Transfer Tool for your owned states and your subject's owned states only."
- gr_stt_enable_n:0 "Disabled"
- gr_stt_enable_n_desc:0 "Disables the State Transfer Tool."
-
- ### EU one day
+### EU one day
  RULE_OPTION_EU_ONE: "1 Day"
  RULE_OPTION_EU_ONE_DESC: "Absolutely for testing purposes only."
+
+# MD Opt Base
+ RULE_NO_ADD_BONUS_OPTION_DESC:0 "Leave as default"
+ MDOptimization_RULES:0 "MD Optimization Custom Rules"
+
+#ZZZ AI STUFF#
+ ai_reduce_spam:0 "AI Rights Law"
+ ai_reduce_spam_desc:0 "Only To Serve"
+
+#Merge SA#
+ RULE_MERGE_SOUTH_AMERICA:0 "Merge South America"
+ RULE_YES_MERGE_SOUTH_AMERICA_DESC:0 "Merges South America"
+ RULE_NO_MERGE_SOUTH_AMERICA_DESC:0 "Doesn't Merge South America"
+ 
+#Merge Africa#
+ RULE_MERGE_AFRICA:0 "Merge Africa"
+ RULE_YES_MERGE_AFRICA_DESC:0 "Merges Africa"
+ RULE_NO_MERGE_AFRICA_DESC:0 "Keeps The Same Africa"
+ 
+#Merge Central America#
+ RULE_MERGE_CENTRAL_AMERICA:0 "Merge Central America"
+ RULE_YES_MERGE_CENTRAL_AMERICA_DESC:0 "Merges Central America"
+ RULE_NO_MERGE_CENTRAL_AMERICA_DESC:0 "Keeps Central America The Same" 
+ 
+#Hypermerge
+ RULE_HYPERMERGE:0 "Hypermerge"
+ RULE_YES_HYPERMERGE_DESC:0 "Merges even more countries! §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_NO_HYPERMERGE_DESC:0 "Keeps Everything The Same"
+
+#Supermerge
+ RULE_SUPERMERGE:0 "Supermerge"
+ RULE_YES_SUPERMERGE_DESC:0 "Merges 100+ nations in the World. §tTURN OFF MICRONATION MERGING AND ANY OTHER MERGES§!"
+ RULE_NO_SUPERMERGE_DESC:0 "Keeps Everything The Same"
+
+#Hyperfragmentation
+ RULE_HYPERFRAGMENTED:0 "Hyperfragmentation"
+ RULE_YES_HYPERFRAGMENTATION_DESC:0 "Very performance heavy, adds 100+ countries."
+
+#Merge Asia
+ RULE_MERGE_ASIA:0 "Merge Asia"
+ RULE_YES_MERGE_ASIA_DESC:0 "Merges Asia"
+ RULE_NO_MERGE_ASIA_DESC:0 "Keeps Asia The Same"
+
+#Merge Arabia#
+ RULE_MERGE_ARABIA:0 "Merge Arabia"
+ RULE_YES_MERGE_ARABIA_DESC:0 "Merges Arabia"
+ RULE_NO_MERGE_ARABIA_DESC:0 "Keeps Arabia The Same"
+ 
+#Merge Oceania#
+ RULE_MERGE_OCEANIA:0 "Merge Oceania"
+ RULE_YES_MERGE_OCEANIA_DESC:0 "Merges Oceania"
+ RULE_NO_MERGE_OCEANIA_DESC:0 "Keeps Oceania The Same"
+
+#Merge Scandinavia#
+ RULE_MERGE_SCANDINAVIA:0 "Merge Scandinavia"
+ RULE_NOR_MERGE_SCANDINAVIA_DESC:0 "Merge into Norway"
+ RULE_SWE_MERGE_SCANDINAVIA_DESC:0 "Merge into Sweden"
+ RULE_FIN_MERGE_SCANDINAVIA_DESC:0 "Merge into Finland"
+ RULE_NO_MERGE_SCANDINAVIA_DESC:0 "Keeps Scandinavia The Same"
+ RULE_OPTION_NOR:0 "Norway"
+ RULE_OPTION_SWE:0 "Sweden"
+ RULE_OPTION_FIN:0 "Finland"
+
+#Merge Baltics#
+ RULE_MERGE_BALTICS:0 "Merge Baltics"
+ RULE_EST_MERGE_BALTICS_DESC:0 "Merge into Estonia"
+ RULE_LAT_MERGE_BALTICS_DESC:0 "Merge into Latvia"
+ RULE_LIT_MERGE_BALTICS_DESC:0 "Merge into Lithuania"
+ RULE_NO_MERGE_BALTICS_DESC:0 "Keeps Baltic States The Same"
+ RULE_OPTION_EST:0 "Estonia"
+ RULE_OPTION_LAT:0 "Latvia"
+ RULE_OPTION_LIT:0 "Lithuania"
+
+#Disable AI#
+ RULE_DISABLE_AI_NATIONS:0 "Disable AI Nations"
+ RULE_YES_DISABLE_AI_NATIONS_DESC:0 "Adds a national spirit to all ai nations that prevents them from doing anything speeding up the game"
+ RULE_NO_DISABLE_AI_NATIONS_DESC:0 "AI nations will have their full capabilities. Recommended for lower player count or singleplayer games"
+ disabled_ai_nation:0 "AI Rights Law"
+ disabled_ai_nation_desc:0 "Only To Serve"
+ REMOVE_AI_LIMITER:0 "Remove AI Limiter"
+ REMOVE_AI_LIMITER_desc:0 "Removes AI Limiter"
+ REMOVE_AI_LIMITER_DECISION:0 "Remove AI Limiter"
+ REMOVE_AI_LIMITER_DECISION_desc:0 "Removes AI Limiter"

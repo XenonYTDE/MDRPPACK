@@ -1,4 +1,11 @@
 ﻿l_english:
+
+# Oriental Orthodox
  pog_oriental_orthodox: "Oriental Orthodox"
  pog_oriental_orthodox_desc: "The Oriental Orthodox Churches are a communion of the Coptic Orthodox Church of Alexandria, the Ethopian Orthodox Tewahedo Church, the Eritrean Orthodox Tewahedo Church, the Syriac Orthodox Church of Antioch and the Armenian Apostolic Church. The Malabar Independent Syrian Church and British Orthodox Church have formerly been members of the communion as well. These churches adhere to the Miaphysite Christology and are one of the oldest branches of Christianity. These churches are sometimes referred to as the Ancient Churches of the East. The seperation from the Roman church occured in 451 AD during the Council of Chalcedon."
  pog_ateism: "Atheism"
+
+# Global Hegemony
+ pog_hegemony: "Global Hegemony"
+ pog_hegemony_desc: "We are a Global Hegemony, absolutely dominating in the world. We can exert influence on massive scales and dwarf all other powers on the globe. The world is now our playground.\n\nPower status is determined by how much GDP we contribute to the world total, modified by our §YIndependence from Foreign Influence§!. Our current contribution is §Y[?ROOT.percentage_of_global_factories|%1]§!.\n\nThe required contributions for the different levels are:\nMore than §Y30%§! for §YHegemonies§!\nMore than §Y15%§! for §Y$superpower$§!\nMore than §Y6.5%§! for §Y$great_power$§!\nMore than §Y2.5%§! for §Y$large_power$§!\nMore than §Y0.2%§! for §Y$minor_power$§!\nLess than §Y0.2%§! for §Y$non_power$§!\n\nIn every geographic region, a certain number of the strongest §Y$minor_power$s§! will be classified as §Y$regional_power$s§! if there aren't enough §YGlobal Hegemonies§!, §Y$superpower$s§!, §Y$great_power$s§! and §Y$large_power$s§! in the region. The regions and numbers of countries above §Y$minor_power$§! are:\nEurope (7)\nMiddle East and North Africa (3)\nSub-Saharan Africa (3)\nAsia (7)\nAmericas (4)"
+ pog_hegemony_tt:"£economy_laws_cost_texticon  Laws Cost: §R+125%§!\n£economy_laws_cost_texticon  §YInternal Investment§! Slots: §G+5!"

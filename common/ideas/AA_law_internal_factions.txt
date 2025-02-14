@@ -43,7 +43,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
 			cancel_if_invalid = no
 		}
@@ -73,9 +73,8 @@ ideas = {
 				expected_education_modifier = 0.5
 			}
 
-
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
 			cancel_if_invalid = no
 		}
@@ -98,7 +97,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
 			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
@@ -108,8 +107,26 @@ ideas = {
 
 			# DO NOT MERGE FROM BASE MD
 			available = {
+			# DO NOT MERGE FROM BASE MD
 					NOT = {
 						has_idea = oligarchs
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
 					}
 				}
 
@@ -129,17 +146,65 @@ ideas = {
 				expected_adm_modifier = 0.5
 			}
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
-			cancel_if_invalid = yes
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		oligarchs = {
 			cost = 1500
 			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
 			available = {
 					NOT = {
 						has_idea = industrial_conglomerates
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
+						# DO NOT MERGE FROM BASE MD
 					}
 			}
 
@@ -159,9 +224,9 @@ ideas = {
 			}
 
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
-			cancel_if_invalid = yes
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		#####################
@@ -196,9 +261,6 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -223,9 +285,6 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -256,9 +315,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -272,7 +328,7 @@ ideas = {
 					original_tag = WAG
 				}
 			}
-
+			# DO NOT MERGE FROM BASE MD
 			available = {
 				has_intelligence_agency = yes
 			}
@@ -292,9 +348,6 @@ ideas = {
 				expected_police_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -330,9 +383,6 @@ ideas = {
 				expected_healthcare_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -358,9 +408,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -392,9 +439,6 @@ ideas = {
 				agriculture_district_worker_requirement_modifier = 0.05
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -408,10 +452,25 @@ ideas = {
 			# Hide the Communist Cadres
 			# If you are not communist you can't have communist things
 			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
+			# DO NOT MERGE FROM BASE MD
 			available = {
 				OR = {
-					emerging_communist_state_in_power_or_coalition = yes
-					neutrality_neutral_communism_in_power_or_coalition = yes
+					emerging_communist_state_in_power_or_coalition = yes # DO NOT MERGE FROM BASE MD
+					neutrality_neutral_communism_in_power_or_coalition = yes # DO NOT MERGE FROM BASE MD
 				}
 			}
 
@@ -430,9 +489,6 @@ ideas = {
 				expected_adm_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -473,9 +529,6 @@ ideas = {
 				expected_mil_modifier = -0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -507,9 +560,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -547,9 +597,6 @@ ideas = {
 				expected_mil_modifier = -0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -595,9 +642,6 @@ ideas = {
 				expected_mil_modifier = 0.5
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -624,9 +668,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -646,9 +687,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -676,9 +714,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -704,9 +739,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -759,9 +791,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -792,7 +821,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				base = -1
+				factor = 0
 			}
 			cancel_if_invalid = no
 		}
@@ -815,9 +844,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -847,9 +873,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 
@@ -876,9 +899,6 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				base = -1
-			}
 			cancel_if_invalid = no
 		}
 	}

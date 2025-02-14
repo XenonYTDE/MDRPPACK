@@ -39,8 +39,9 @@ scripted_gui = {
 		window_name = "IS_main_background_window"
 
 		dirty = global.international_system_refresh_gui
+		ai_enabled = { always = no }
 		ai_test_interval = 96
-		ai_max_weight_taken_per_test = 1
+		ai_max_weight_taken_per_test = 2
 
 		visible = {
 			OR = {
@@ -1636,6 +1637,8 @@ scripted_gui = {
 				add_political_power = -100
 				update_international_system_gui = yes
 			}
+
+			# Counter Terror Section
 			ct_region_asia_button_click = {
 				clear_array = ct_region_selected
 				clear_ct_flags = yes
@@ -2060,6 +2063,8 @@ scripted_gui = {
 					factor = 300
 				}
 			}
+
+			# Counter Terror section
 			ct_region_asia_button_click = {
 				ai_will_do = {
 					factor = 100
@@ -2546,6 +2551,7 @@ scripted_gui = {
 		window_name = "IS_pmc_companies_container"
 
 		dirty = global.international_system_refresh_gui
+		ai_enabled = { always = no }
 		ai_test_interval = 168
 		ai_max_weight_taken_per_test = 1
 
@@ -4340,6 +4346,7 @@ scripted_gui = {
 		window_name = "IS_counter_terror_states_container"
 
 		dirty = global.international_system_refresh_gui
+		ai_enabled = { always = no }
 		ai_test_interval = 168
 		ai_max_weight_taken_per_test = 1
 
