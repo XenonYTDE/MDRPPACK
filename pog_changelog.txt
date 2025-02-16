@@ -32,6 +32,7 @@ v1.11.2
 -Added Light Africa Merge option (merges 14 countries)
 -Added more requirements to Post Scarcity Economy and nerfed it
 -Rebalanced most law costs
+-Removed Walkers, as they seemed obsolete and buggy
 -Nerfed City and Regional State Population Growths slightly
 -Fixed AI spamming Resource and Building decisions
 -Replaced some National Ideas effects that impacted only vanilla with MD compatible ones
