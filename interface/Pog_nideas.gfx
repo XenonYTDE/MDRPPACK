@@ -4,417 +4,417 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nideas_group1_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group1_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group1_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group2_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group2_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group3_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group3_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group4_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group4_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group5_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group5_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group6_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group6_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group7_idea9"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group7_idea9.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group8_idea9"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group8_idea9.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea1"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea1.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea2"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea2.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea3"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea3.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea4"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea4.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea5"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea5.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea6"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea6.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea7"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea7.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea8"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea8.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_group9_idea9"
 		textureFile = "gfx/interface/national_ideas/idea_icons/nideas_group9_idea9.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 
@@ -453,7 +453,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nideas_open_button_bg"
 		texturefile = "gfx/interface/national_ideas/nideas_open_button_bg.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
@@ -471,7 +471,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nideas_idea_group_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_idea_group_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 
@@ -479,171 +479,171 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nideas_branch_straight1_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight1_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight1_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight1_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight1_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight1_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_straight2_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight2_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight2_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight2_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight2_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight2_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight2_blocked"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight2_blocked.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_straight3_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight3_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight3_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight3_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight3_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight3_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_straight4_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight4_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight4_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight4_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight4_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight4_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight4_blocked"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight4_blocked.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_straight5_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight5_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight5_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight5_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_straight5_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_straight5_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_corner_bot_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_bot_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_corner_bot_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_bot_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_corner_bot_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_bot_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_corner_top_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_top_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_corner_top_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_top_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_corner_top_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_corner_top_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_or_bot_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_bot_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_bot_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_bot_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_bot_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_bot_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_bot_blocked"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_bot_blocked.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_or_top_incomplete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_top_incomplete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_top_available"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_top_available.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_top_complete"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_top_complete.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_nideas_branch_or_top_blocked"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or_top_blocked.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_nideas_branch_or"
 		texturefile = "gfx/interface/national_ideas/nideas_branch_or.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	### NATIONAL SPIRITS

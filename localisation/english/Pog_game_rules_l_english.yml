@@ -54,6 +54,7 @@
 #Hyperfragmentation
  RULE_HYPERFRAGMENTED:0 "Hyperfragmentation"
  RULE_YES_HYPERFRAGMENTATION_DESC:0 "Very performance heavy, adds 100+ countries."
+ RULE_NO_HYPERFRAGMENTATION_DESC:0 "Keeps the world as it is."
 
 #Merge Asia
  RULE_MERGE_ASIA:0 "Merge Asia"
@@ -100,3 +101,5 @@
  REMOVE_AI_LIMITER_desc:0 "Removes AI Limiter"
  REMOVE_AI_LIMITER_DECISION:0 "Remove AI Limiter"
  REMOVE_AI_LIMITER_DECISION_desc:0 "Removes AI Limiter"
+ RULE_USE_NEW_TOOL_NO_DESC:0 "Does not use the new tool for state transfers."
+ RULE_USE_NEW_TOOL_YES_DESC:0 "Uses the new tool for state transfers, potentially affecting gameplay mechanics."
