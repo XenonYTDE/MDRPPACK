@@ -3,10 +3,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "MOIM_button"
-		position = { x = 272 y = -290 }
-		size = { width = 46 height = 46 }
-		orientation = LOWER_RIGHT
-
+		position = { x=196 y=-65 }
+		Orientation = UPPER_RIGHT
+		origo = UPPER_RIGHT
 		buttonType = {
 			name = "MOIM_open_button"
 			spriteType = "GFX_MOIM_open_button"
