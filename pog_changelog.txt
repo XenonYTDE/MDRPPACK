@@ -25,7 +25,7 @@ v1.11.2
 -Added Oriental Orthodox Church and Atheism to Religions as an option for everyone
 -Increased Dockyards assignable to 100
 -Increased Division Cap per Army to 32
--All 8 National Ideas are available in ... group
+-All 8 National Ideas are available in Innovation group
 -Political Power cap increased to 10000
 -Command Power cap increasd to 1000
 -Dnipropetrovsk Republic added to Hyperfragmentation
