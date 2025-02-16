@@ -1,21 +1,22 @@
-ideas = {
+ideas = { # DO NOT MERGE ANYTHING FROM BASE MD
 	religion = {
 		law = yes
 		use_list_view = yes
 
 		sunni = {
 			allowed_civil_war = { always = yes }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
+			cost = 1500 # DO NOT MERGE FROM BASE MD 
 			picture = sunni_idea
 			modifier = {
 				fascism_acceptance = 15
-				fascism_drift = 0.05 # DO NOT MERGE FROM BASE MD
+				fascism_drift = 0.01 # DO NOT MERGE FROM BASE MD
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		shia = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = shia_idea
 			modifier = {
@@ -23,38 +24,45 @@ ideas = {
 				fascism_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		sufi_islam = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = sufi_islam
 			modifier = {
+				maximum_radicalization_modifier = -10
+				maximum_terror_threat_modifier = -10
 				democratic_acceptance = -5
 				fascism_acceptance = -10
 				fascism_drift = -0.02
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		ibadi = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = ibadi_idea
 
 			modifier = {
+				maximum_radicalization_modifier = -10
+				maximum_terror_threat_modifier = -10
 				communism_acceptance = 5
 				democratic_acceptance = 5
 				fascism_acceptance = 5
 				fascism_drift = -0.02
 				neutrality_drift = 0.02
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		christian = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = christian_idea
 
@@ -62,10 +70,11 @@ ideas = {
 				fascism_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		orthodox_christian = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = orthodox_christian_idea
 			modifier = {
@@ -73,11 +82,12 @@ ideas = {
 				fascism_drift = -0.05
 				communism_drift = 0.02 ###Would lead to greece, Ukraine, Romania enivatbly going emerging? Logical? Discuss###
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 		pluralist = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = pluralist_religion_idea
 
@@ -86,10 +96,11 @@ ideas = {
 				fascism_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		buddism = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = buddism_idea
 
@@ -97,10 +108,11 @@ ideas = {
 				fascism_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		hindu = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = hindu_idea
 
@@ -108,10 +120,11 @@ ideas = {
 				fascism_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		judaism = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = judaism_idea
 
@@ -120,10 +133,11 @@ ideas = {
 				democratic_acceptance = 10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		shinto = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = shinto_idea
 
@@ -132,10 +146,11 @@ ideas = {
 				democratic_acceptance = 10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		cheondo = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = cheondo_idea
 
@@ -144,10 +159,11 @@ ideas = {
 				democratic_acceptance = -10
 				fascism_drift = -0.05
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		uniate_church = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = uniate_idea
 
@@ -159,10 +175,11 @@ ideas = {
 				communism_drift = -0.01
 				democratic_drift = 0.01
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		zoroastrian = {
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = zoroastrianism_idea
 
@@ -172,7 +189,7 @@ ideas = {
 				nationalist_drift = 0.05
 				fascism_drift = -0.10
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 
 
@@ -180,6 +197,7 @@ ideas = {
 		assianism = {
 			allowed = { tag = SOO }
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = assianism_idea
 
@@ -189,7 +207,7 @@ ideas = {
 				nationalist_drift = 0.05
 				fascism_drift = -0.10
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		fifty_fifty_divide = {
 			allowed = { tag = NIG }
@@ -203,7 +221,7 @@ ideas = {
 				neutrality_drift = 0.10
 				democratic_acceptance = 10
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		#Islamic Majority
 		NIG_islamic_majority_10_idea = {
@@ -211,7 +229,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 100
@@ -229,7 +246,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 90
@@ -246,7 +262,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 80
@@ -263,7 +278,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 70
@@ -280,7 +294,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 60
@@ -297,7 +310,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 50
@@ -314,7 +326,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 40
@@ -329,7 +340,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = 30
 				fascism_drift = 0.025
@@ -344,7 +354,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 20
@@ -360,7 +369,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 
 			modifier = {
 				fascism_acceptance = 10
@@ -376,7 +384,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -100
 				democratic_acceptance = 100
@@ -391,7 +398,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -90
 				democratic_acceptance = 90
@@ -406,7 +412,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -80
 				democratic_acceptance = 80
@@ -421,7 +426,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -70
 				democratic_acceptance = 70
@@ -436,7 +440,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -60
 				democratic_acceptance = 60
@@ -451,7 +454,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -50
 				democratic_acceptance = 50
@@ -466,7 +468,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -40
 				democratic_acceptance = 40
@@ -480,7 +481,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -30
 				democratic_acceptance = 30
@@ -494,7 +494,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -20
 				democratic_acceptance = 20
@@ -508,7 +507,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				fascism_acceptance = -10
 				democratic_acceptance = 10
@@ -521,7 +519,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = flexible_foreign_policy2
 			modifier = {
 				stability_factor = 0.05
@@ -534,7 +531,6 @@ ideas = {
 			allowed = { tag = NIG }
 			allowed_civil_war = { always = yes }
 			available = { always = no }
-			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = flexible_foreign_policy2
 			modifier = {
 				stability_factor = 0.075
@@ -546,6 +542,7 @@ ideas = {
 		eastern_church_arm = {
 			allowed = { tag = ARM } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = eastern_church_arm
 			modifier = {
@@ -555,10 +552,12 @@ ideas = {
 				fascism_acceptance = -20
 				fascism_drift = -0.02
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		eastern_church_eth = {
 			allowed = { tag = ETH } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = idea_eastern_church_eth
 			modifier = {
@@ -568,10 +567,12 @@ ideas = {
 				fascism_acceptance = -20
 				fascism_drift = -0.02
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		eastern_church_egy = {
 			allowed = { tag = EGY } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = eastern_church_eth
 			modifier = {
@@ -581,20 +582,24 @@ ideas = {
 				fascism_acceptance = -20
 				fascism_drift = -0.02
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		ARM_state_ateism = {
 			allowed = { tag = ARM } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = idea_ateism
 			modifier = {
 				research_speed_factor = 0.02
 				political_power_gain = 0.10
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		ARM_kom_code = {
 			allowed = { tag = ARM } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = communist_cadres
 
@@ -603,10 +608,12 @@ ideas = {
 				political_power_gain = 0.5
 				stability_weekly = 0.001
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		UKR_idea_orthodox_christian_church = {
 			allowed = {tag = UKR } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = orthodox_christian_idea
 			modifier = {
@@ -617,21 +624,25 @@ ideas = {
 				political_power_factor = 0.15
 				production_factory_max_efficiency_factor = 0.05
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		DEN_idea_state_atheism = {
 			picture = communism3 #REPLACEME
 			allowed = { tag = DEN } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			modifier = {
 				political_power_factor = 0.10
 				communism_drift = 0.03
 				stability_factor = 0.02
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		SOV_russian_orthodox_church_idea = {
 			allowed = { tag = SOV } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = orthodox_christian_idea
 			modifier = {
@@ -642,10 +653,12 @@ ideas = {
 				political_power_factor = 0.10
 				stability_factor = 0.05
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		CRM_russian_orthodox_communist_church_idea = {
 			allowed = { tag = CRM } # DO NOT MERGE FROM BASE MD
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = communism9
 			modifier = {
@@ -657,10 +670,12 @@ ideas = {
 				political_power_factor = 0.11
 				stability_factor = -0.01
 			}
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
 		}
 		religious_divide = {
 			allowed = { tag = ISR }
 			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } } # DO NOT MERGE FROM BASE MD
 			available = { always = no }
 			cost = 1500 # DO NOT MERGE FROM BASE MD
 			picture = fifty_fifty_religious_divide
@@ -670,7 +685,49 @@ ideas = {
 				neutrality_drift = 0.10
 				democratic_acceptance = 10
 			}
-			cancel_if_invalid = no
+			cancel_if_invalid = yes # DO NOT MERGE FROM BASE MD
+		}
+		pog_oriental_orthodox = { # DO NOT MERGE FROM BASE MD
+			allowed = { 
+				NOT = {
+					OR = {
+						TAG = EGY
+						TAG = ETH
+						TAG = ARM
+						TAG = NKR
+					}
+				}
+			}
+			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } }
+			cost = 1500
+			picture = eastern_church_eth
+			modifier = {
+				democratic_acceptance = 5
+				communism_acceptance = 5
+				neutrality_drift = 0.01
+				fascism_acceptance = -20
+				fascism_drift = -0.02
+			}
+			cancel_if_invalid = yes
+		}
+		pog_ateism = {
+			allowed_civil_war = { always = yes }
+			available = { NOT = { has_government = fascism } }
+			cost = 1500 
+			picture = ateism
+
+			modifier = {
+				stability_factor = 0.03
+				fascism_acceptance = -10
+				communism_drift = 0.01
+				democratic_drift = 0.01
+				neutrality_drift = 0.03
+				democratic_acceptance = 10
+				neutrality_acceptance = 10
+				communism_acceptance = 10
+			}
+			cancel_if_invalid = yes
 		}
 	}
 }

@@ -121,9 +121,10 @@ ideas = {
                 industrial_capacity_dockyard = 1.0
                 conscription_factor = 0.15
                 production_speed_buildings_factor = 2.0
+                research_speed_factor = 0.25
                 special_forces_min = 15
-                monthly_population = 5
-                local_resources_factor = 0.20
+                monthly_population = 3.5
+                local_resources_factor = 0.15
             }
 
             ai_will_do = {
@@ -148,14 +149,15 @@ ideas = {
                 industrial_capacity_dockyard = 2
                 conscription_factor = 0.20
                 production_speed_buildings_factor = 3
+                research_speed_factor = 0.10
                 special_forces_min = 25
-                monthly_population = 7.5
-                local_resources_factor = 0.5
+                monthly_population = 7
+                local_resources_factor = 0.4
 
             }
 
             ai_will_do = {
-                base = 150
+                base = 250
             }
 
             cancel_if_invalid = yes

@@ -1,0 +1,706 @@
+ideas = {
+	hidden_ideas = {
+
+		# inf_util
+		moim_dorad_inf_util_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_inf_util_1" }
+
+			research_bonus = {
+				CAT_inf = 0.10
+				CAT_util = 0.10
+			}
+		}
+		moim_dorad_inf_util_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_inf_util_2" }
+
+			research_bonus = {
+				CAT_inf = 0.20
+				CAT_util = 0.20
+			}
+		}
+		moim_dorad_inf_util_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_inf_util_3" }
+
+			research_bonus = {
+				CAT_inf = 0.30
+				CAT_util = 0.30
+			}
+		}
+		moim_dorad_inf_util_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_inf_util_4" }
+
+			research_bonus = {
+				CAT_inf = 0.40
+				CAT_util = 0.40
+			}
+		}
+		moim_dorad_inf_util_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_inf_util_5" }
+
+			research_bonus = {
+				CAT_inf = 0.50
+				CAT_util = 0.50
+			}
+		}
+
+		# armor
+		moim_dorad_armor_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_armor_1" }
+
+			research_bonus = {
+				CAT_armor = 0.10
+			}
+		}
+		moim_dorad_armor_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_armor_2" }
+
+			research_bonus = {
+				CAT_armor = 0.20
+			}
+		}
+		moim_dorad_armor_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_armor_3" }
+
+			research_bonus = {
+				CAT_armor = 0.30
+			}
+		}
+		moim_dorad_armor_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_armor_4" }
+
+			research_bonus = {
+				CAT_armor = 0.40
+			}
+		}
+		moim_dorad_armor_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_armor_5" }
+
+			research_bonus = {
+				CAT_armor = 0.50
+			}
+		}
+
+		# artillery
+		moim_dorad_artillery_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_artillery_1" }
+
+			research_bonus = {
+				CAT_artillery = 0.10
+			}
+		}
+		moim_dorad_artillery_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_artillery_2" }
+
+			research_bonus = {
+				CAT_artillery = 0.20
+			}
+		}
+		moim_dorad_artillery_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_artillery_3" }
+
+			research_bonus = {
+				CAT_artillery = 0.30
+			}
+		}
+		moim_dorad_artillery_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_artillery_4" }
+
+			research_bonus = {
+				CAT_artillery = 0.40
+			}
+		}
+		moim_dorad_artillery_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_artillery_5" }
+
+			research_bonus = {
+				CAT_artillery = 0.50
+			}
+		}
+
+		# aa_at
+		moim_dorad_aa_at_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_aa_at_1" }
+
+			research_bonus = {
+				CAT_aa = 0.10
+				CAT_at = 0.10
+			}
+		}
+		moim_dorad_aa_at_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_aa_at_2" }
+
+			research_bonus = {
+				CAT_aa = 0.20
+				CAT_at = 0.20
+			}
+		}
+		moim_dorad_aa_at_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_aa_at_3" }
+
+			research_bonus = {
+				CAT_aa = 0.30
+				CAT_at = 0.30
+			}
+		}
+		moim_dorad_aa_at_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_aa_at_4" }
+
+			research_bonus = {
+				CAT_aa = 0.40
+				CAT_at = 0.40
+			}
+		}
+		moim_dorad_aa_at_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_aa_at_5" }
+
+			research_bonus = {
+				CAT_aa = 0.50
+				CAT_at = 0.50
+			}
+		}
+
+		# heli
+		moim_dorad_heli_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_heli_1" }
+
+			research_bonus = {
+				CAT_heli = 0.10
+			}
+		}
+		moim_dorad_heli_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_heli_2" }
+
+			research_bonus = {
+				CAT_heli = 0.20
+			}
+		}
+		moim_dorad_heli_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_heli_3" }
+
+			research_bonus = {
+				CAT_heli = 0.30
+			}
+		}
+		moim_dorad_heli_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_heli_4" }
+
+			research_bonus = {
+				CAT_heli = 0.40
+			}
+		}
+		moim_dorad_heli_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_heli_5" }
+
+			research_bonus = {
+				CAT_heli = 0.50
+			}
+		}
+
+		# airframes
+		moim_dorad_airframes_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_airframes_1" }
+
+			research_bonus = {
+				CAT_small_plane = 0.10
+				CAT_medium_plane = 0.10
+				CAT_large_plane = 0.10
+			}
+		}
+		moim_dorad_airframes_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_airframes_2" }
+
+			research_bonus = {
+				CAT_small_plane = 0.20
+				CAT_medium_plane = 0.20
+				CAT_large_plane = 0.20
+			}
+		}
+		moim_dorad_airframes_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_airframes_3" }
+
+			research_bonus = {
+				CAT_small_plane = 0.30
+				CAT_medium_plane = 0.30
+				CAT_large_plane = 0.30
+			}
+		}
+		moim_dorad_airframes_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_airframes_4" }
+
+			research_bonus = {
+				CAT_small_plane = 0.40
+				CAT_medium_plane = 0.40
+				CAT_large_plane = 0.40
+			}
+		}
+		moim_dorad_airframes_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_airframes_5" }
+
+			research_bonus = {
+				CAT_small_plane = 0.50
+				CAT_medium_plane = 0.50
+				CAT_large_plane = 0.50
+			}
+		}
+
+		# air_eqp
+		moim_dorad_air_eqp_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air_eqp_1" }
+
+			research_bonus = {
+				CAT_air_eqp = 0.10
+			}
+		}
+		moim_dorad_air_eqp_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air_eqp_2" }
+
+			research_bonus = {
+				CAT_air_eqp = 0.20
+			}
+		}
+		moim_dorad_air_eqp_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air_eqp_3" }
+
+			research_bonus = {
+				CAT_air_eqp = 0.30
+			}
+		}
+		moim_dorad_air_eqp_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air_eqp_4" }
+
+			research_bonus = {
+				CAT_air_eqp = 0.40
+			}
+		}
+		moim_dorad_air_eqp_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air_eqp_5" }
+
+			research_bonus = {
+				CAT_air_eqp = 0.50
+			}
+		}
+
+		# ship_hulls
+		moim_dorad_ship_hulls_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ship_hulls_1" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.10
+				CAT_sub = 0.10
+			}
+		}
+		moim_dorad_ship_hulls_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ship_hulls_2" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.20
+				CAT_sub = 0.20
+			}
+		}
+		moim_dorad_ship_hulls_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ship_hulls_3" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.30
+				CAT_sub = 0.30
+			}
+		}
+		moim_dorad_ship_hulls_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ship_hulls_4" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.40
+				CAT_sub = 0.40
+			}
+		}
+		moim_dorad_ship_hulls_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ship_hulls_5" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.50
+				CAT_sub = 0.50
+			}
+		}
+
+		# naval_misc
+		moim_dorad_naval_misc_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_naval_misc_1" }
+
+			research_bonus = {
+				CAT_naval_misc = 0.10
+			}
+		}
+		moim_dorad_naval_misc_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_naval_misc_2" }
+
+			research_bonus = {
+				CAT_naval_misc = 0.20
+			}
+		}
+		moim_dorad_naval_misc_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_naval_misc_3" }
+
+			research_bonus = {
+				CAT_naval_misc = 0.30
+			}
+		}
+		moim_dorad_naval_misc_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_naval_misc_4" }
+
+			research_bonus = {
+				CAT_naval_misc = 0.40
+			}
+		}
+		moim_dorad_naval_misc_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_naval_misc_5" }
+
+			research_bonus = {
+				CAT_naval_misc = 0.50
+			}
+		}
+
+		# ai_comp_internet
+		moim_dorad_ai_comp_internet_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ai_comp_internet_1" }
+
+			research_bonus = {
+				CAT_ai = 0.10
+				CAT_computing_tech = 0.10
+				CAT_internet_tech = 0.10
+			}
+		}
+		moim_dorad_ai_comp_internet_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ai_comp_internet_2" }
+
+			research_bonus = {
+				CAT_ai = 0.20
+				CAT_computing_tech = 0.20
+				CAT_internet_tech = 0.20
+			}
+		}
+		moim_dorad_ai_comp_internet_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ai_comp_internet_3" }
+
+			research_bonus = {
+				CAT_ai = 0.30
+				CAT_computing_tech = 0.30
+				CAT_internet_tech = 0.30
+			}
+		}
+		moim_dorad_ai_comp_internet_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ai_comp_internet_4" }
+
+			research_bonus = {
+				CAT_ai = 0.40
+				CAT_computing_tech = 0.40
+				CAT_internet_tech = 0.40
+			}
+		}
+		moim_dorad_ai_comp_internet_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_ai_comp_internet_5" }
+
+			research_bonus = {
+				CAT_ai = 0.50
+				CAT_computing_tech = 0.50
+				CAT_internet_tech = 0.50
+			}
+		}
+
+		# infr_constr_agri
+		moim_dorad_infr_constr_agri_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_infr_constr_agri_1" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.10
+				CAT_construction_tech = 0.10
+				CAT_agriculture_tech = 0.10
+			}
+		}
+		moim_dorad_infr_constr_agri_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_infr_constr_agri_2" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.20
+				CAT_construction_tech = 0.20
+				CAT_agriculture_tech = 0.20
+			}
+		}
+		moim_dorad_infr_constr_agri_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_infr_constr_agri_3" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.30
+				CAT_construction_tech = 0.30
+				CAT_agriculture_tech = 0.30
+			}
+		}
+		moim_dorad_infr_constr_agri_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_infr_constr_agri_4" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.40
+				CAT_construction_tech = 0.40
+				CAt_agriculture_tech = 0.40
+			}
+		}
+		moim_dorad_infr_constr_agri_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_infr_constr_agri_5" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.50
+				CAT_construction_tech = 0.50
+				CAT_agriculture_tech = 0.50
+			}
+		}
+
+		# nfibers_3d_genes
+		moim_dorad_nfibers_3d_genes_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_nfibers_3d_genes_1" }
+
+			research_bonus = {
+				CAT_nfibers = 0.10
+				CAT_3d = 0.10
+				CAT_genes = 0.10
+			}
+		}
+		moim_dorad_nfibers_3d_genes_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_nfibers_3d_genes_2" }
+
+			research_bonus = {
+				CAT_nfibers = 0.20
+				CAT_3d = 0.20
+				CAT_genes = 0.20
+			}
+		}
+		moim_dorad_nfibers_3d_genes_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_nfibers_3d_genes_3" }
+
+			research_bonus = {
+				CAT_nfibers = 0.30
+				CAT_3d = 0.30
+				CAT_genes = 0.30
+			}
+		}
+		moim_dorad_nfibers_3d_genes_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_nfibers_3d_genes_4" }
+
+			research_bonus = {
+				CAT_nfibers = 0.40
+				CAT_3d = 0.40
+				CAT_genes = 0.40
+			}
+		}
+		moim_dorad_nfibers_3d_genes_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_nfibers_3d_genes_5" }
+
+			research_bonus = {
+				CAT_nfibers = 0.50
+				CAT_3d = 0.50
+				CAT_genes = 0.50
+			}
+		}
+
+		# powerplants
+		moim_dorad_powerplants_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_powerplants_1" }
+
+			research_bonus = {
+				CAT_fuel_oil = 0.10
+				CAT_nuclear_reactors = 0.10
+			}
+		}
+		moim_dorad_powerplants_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_powerplants_2" }
+
+			research_bonus = {
+				CAT_fuel_oil = 0.20
+				CAT_nuclear_reactors = 0.20
+			}
+		}
+		moim_dorad_powerplants_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_powerplants_3" }
+
+			research_bonus = {
+				CAT_fuel_oil = 0.30
+				CAT_nuclear_reactors = 0.30
+			}
+		}
+		moim_dorad_powerplants_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_powerplants_4" }
+
+			research_bonus = {
+				CAT_fuel_oil = 0.40
+				CAT_nuclear_reactors = 0.40
+			}
+		}
+		moim_dorad_powerplants_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_powerplants_5" }
+
+			research_bonus = {
+				CAT_fuel_oil = 0.50
+				CAT_nuclear_reactors = 0.50
+			}
+		}
+
+		# satellites
+		moim_dorad_satellites_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_satellites_1" }
+
+			research_bonus = {
+				CAT_satellite = 0.10
+			}
+		}
+		moim_dorad_satellites_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_satellites_2" }
+
+			research_bonus = {
+				CAT_satellite = 0.20
+			}
+		}
+		moim_dorad_satellites_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_satellites_3" }
+
+			research_bonus = {
+				CAT_satellite = 0.30
+			}
+		}
+		moim_dorad_satellites_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_satellites_4" }
+
+			research_bonus = {
+				CAT_satellite = 0.40
+			}
+		}
+		moim_dorad_satellites_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_satellites_5" }
+
+			research_bonus = {
+				CAT_satellite = 0.50
+			}
+		}
+
+		# missiles
+		moim_dorad_missiles_1 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_missiles_1" }
+
+			research_bonus = {
+				CAT_missile = 0.10
+			}
+		}
+		moim_dorad_missiles_2 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_missiles_2" }
+
+			research_bonus = {
+				CAT_missile = 0.20
+			}
+		}
+		moim_dorad_missiles_3 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_missiles_3" }
+
+			research_bonus = {
+				CAT_missile = 0.30
+			}
+		}
+		moim_dorad_missiles_4 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_missiles_4" }
+
+			research_bonus = {
+				CAT_missile = 0.40
+			}
+		}
+		moim_dorad_missiles_5 = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_missiles_5" }
+
+			research_bonus = {
+				CAT_missile = 0.50
+			}
+		}
+
+		# Merged for decluttering
+		moim_dorad_army = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_army" }
+
+			research_bonus = {
+				CAT_inf = 0.50
+				CAT_util = 0.50
+				CAT_armor = 0.50
+				CAT_artillery = 0.50
+				CAT_aa = 0.50
+				CAT_at = 0.50
+			}
+		}
+		moim_dorad_navy = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_navy" }
+
+			research_bonus = {
+				CAT_surface_ship = 0.50
+				CAT_sub = 0.50
+				CAT_naval_misc = 0.50
+			}
+		}
+		moim_dorad_air = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_air" }
+
+			research_bonus = {
+				CAT_heli = 0.50
+				CAT_small_plane = 0.50
+				CAT_medium_plane = 0.50
+				CAT_large_plane = 0.50
+				CAT_air_eqp = 0.50
+			}
+		}
+		moim_dorad_industry = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_industry" }
+
+			research_bonus = {
+				CAT_infrastructure = 0.50
+				CAT_construction_tech = 0.50
+				CAT_agriculture_tech = 0.50
+				CAT_nfibers = 0.50
+				CAT_3d = 0.50
+				CAT_genes = 0.50
+				CAT_fuel_oil = 0.50
+				CAT_nuclear_reactors = 0.50
+			}
+			
+		}
+	}
+	country = {
+		moim_dorad_completed = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_dorad_completed" }
+
+			modifier = {
+				research_speed_factor = 0.10
+			}
+			research_bonus = {
+				CAT_inf = 0.55
+				CAT_util = 0.55
+				CAT_armor = 0.55
+				CAT_artillery = 0.55
+				CAT_aa = 0.55
+				CAT_at = 0.55
+				CAT_surface_ship = 0.55
+				CAT_sub = 0.55
+				CAT_naval_misc = 0.55
+				CAT_heli = 0.55
+				CAT_smal_plane = 0.55
+				CAT_medium_plane = 0.55
+				CAT_large_plane = 0.55
+				CAT_air_eqp = 0.55
+				CAT_ai = 0.55
+				CAT_internet_tech = 0.55
+				CAT_computing_tech = 0.55
+				CAT_infrastructure = 0.55
+				CAT_construction_tech = 0.55
+				CAT_agriculture_tech = 0.55
+				CAT_nfibers = 0.55
+				CAT_3d = 0.55
+				CAT_genes = 0.55
+				CAT_fuel_oil = 0.55
+				CAT_nuclear_reactors = 0.55
+				CAT_satellite = 0.55
+				CAT_missile = 0.55
+			}
+		}
+	}
+}

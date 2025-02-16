@@ -28,7 +28,7 @@ ideas = {
 				stability_factor = -0.1
 				productivity_growth_modifier = -3
 				maximum_migration_rate_value = -0.25
-				return_on_investment_modifier = -0.015
+				return_on_investment_modifier = -0.015 # DO NOT MERGE FROM BASE MD
 			}
 			ai_will_do = { #you never want to be here! VERY BAD
 				factor = 0
@@ -78,7 +78,7 @@ ideas = {
 				stability_factor = -0.05
 				productivity_growth_modifier = -1.5
 				maximum_migration_rate_value = -0.15
-				return_on_investment_modifier = -0.005
+				return_on_investment_modifier = -0.005 # DO NOT MERGE FROM BASE MD
 			}
 			ai_will_do = {
 				factor = 1
@@ -370,7 +370,7 @@ ideas = {
 				stability_factor = 0.02
 				productivity_growth_modifier = 2
 				maximum_migration_rate_value = 0.15
-				return_on_investment_modifier = 0.005
+				return_on_investment_modifier = 0.005 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -472,7 +472,7 @@ ideas = {
 				stability_factor = 0.04
 				productivity_growth_modifier = 3
 				maximum_migration_rate_value = 0.25
-				return_on_investment_modifier = 0.01
+				return_on_investment_modifier = 0.01 # DO NOT MERGE FROM BASE MD
 			}
 			ai_will_do = {
 				factor = 1
@@ -564,7 +564,7 @@ ideas = {
 			modifier = {
 				min_export = 0.10
 				consumer_goods_factor = 0.08
-				return_on_investment_modifier = -0.015
+				return_on_investment_modifier = -0.015 # DO NOT MERGE FROM BASE MD
 			}
 
 			ai_will_do = {
@@ -856,7 +856,7 @@ ideas = {
 				min_export = 0.65
 				consumer_goods_factor = -0.03
 				resource_export_multiplier_modifier = 0.16
-				return_on_investment_modifier = 0.005
+				return_on_investment_modifier = 0.005 # DO NOT MERGE FROM BASE MD
 			}
 			ai_will_do = {
 				factor = 1
@@ -914,7 +914,7 @@ ideas = {
 				min_export = 0.8
 				consumer_goods_factor = -0.06
 				resource_export_multiplier_modifier = 0.20
-				return_on_investment_modifier = 0.01
+				return_on_investment_modifier = 0.01 # DO NOT MERGE FROM BASE MD
 			}
 			ai_will_do = {
 				factor = 1

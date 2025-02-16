@@ -1,0 +1,2512 @@
+# Author: Lynxivium
+scripted_gui = {
+
+	MOIM_open_button_gui = {
+		context_type = player_context
+		window_name = "MOIM_button"
+		parent_window_name = "MapmodesInterface_Ingame"
+
+		visible = { 
+			always = yes
+		}
+
+		effects = {
+			MOIM_open_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = MOIM_open_flag } }
+					set_country_flag = MOIM_open_flag
+				}
+				else = {
+					clr_country_flag = MOIM_open_flag
+				}
+			}
+		}
+	}
+
+	MOIM_main_gui = {
+		context_type = player_context
+		window_name = "MOIM_main"
+
+		visible = { 
+			has_country_flag = MOIM_open_flag 
+		}
+
+		effects = {
+			# Main
+			MOIM_close_button_click = {
+				clr_country_flag = MOIM_open_flag
+			}
+			MOIM_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_doir_dynmod
+					}
+					set_variable = { moim_pp_factor = 0 }
+					set_variable = { moim_cp_factor = 0 }
+					set_variable = { moim_army_xp_factor = 0 }
+					set_variable = { moim_navy_xp_factor = 0 }
+					set_variable = { moim_air_xp_factor = 0 }
+				}
+			}
+			MOIM_dop_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dop_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dop_dynmod
+					}
+					set_variable = { moim_emerging_factor = 0 }
+					set_variable = { moim_western_factor = 0 }
+					set_variable = { moim_nonaligned_factor = 0 }
+					set_variable = { moim_nationalist_factor = 0 }
+					set_variable = { moim_salafist_factor = 0 }
+				}
+			}
+			MOIM_dom_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dom_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dom_dynmod
+					}
+					set_variable = { moim_army_atk_factor = 0 }
+					set_variable = { moim_army_spd_factor = 0 }
+					set_variable = { moim_army_def_factor = 0 }
+					set_variable = { moim_navy_atk_factor = 0 }
+					set_variable = { moim_navy_spd_factor = 0 }
+					set_variable = { moim_navy_def_factor = 0 }
+					set_variable = { moim_air_atk_factor = 0 }
+					set_variable = { moim_air_spd_factor = 0 }
+					set_variable = { moim_air_def_factor = 0 }
+				}
+			}
+			MOIM_dorad_unlock_button_click = {
+				if = {
+					limit = { has_political_power > 499 }
+					add_political_power = -500
+					set_country_flag = MOIM_dorad_bought_flag
+					add_dynamic_modifier = {
+						modifier = moim_dorad_dynmod
+					}
+					set_variable = { moim_research_speed_factor = 0 }
+					set_variable = { moim_construction_speed_factor = 0 }
+				}
+			}
+			# Department of Internal Resources 
+			MOIM_pp_button_click = {
+				if = {
+					limit = { 
+						has_political_power > 199
+						check_variable = { moim_pp_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_pp_factor_effect = yes
+				}
+			}
+			MOIM_cp_button_click = {
+				if = {
+					limit = { 
+						has_political_power > 199
+						command_power > 49
+						check_variable = { moim_cp_factor < 0.50 }
+					}
+					add_political_power = -200
+					add_command_power = -50
+					MOIM_change_cp_factor_effect = yes
+				}
+			}
+			MOIM_xp_button_click = {
+				if = {
+					limit = {
+						has_political_power > 99
+						has_army_experience > 49
+						has_navy_experience > 49
+						has_air_experience > 49
+						check_variable = { moim_army_xp_factor < 0.25 }
+					}
+					add_political_power = -100
+					army_experience = -50
+					navy_experience = -50
+					air_experience = -50
+					MOIM_change_army_xp_factor_effect = yes
+					MOIM_change_navy_xp_factor_effect = yes
+					MOIM_change_air_xp_factor_effect = yes
+				}
+			}
+			# Department of Politics
+			MOIM_boost_emerging_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_emerging_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_emerging_factor_effect = yes
+				}
+			}
+			MOIM_lower_emerging_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_emerging_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_emerging_factor_effect = yes
+				}
+			}
+			MOIM_boost_western_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_western_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_western_factor_effect = yes
+				}
+			}
+			MOIM_lower_western_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_western_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_western_factor_effect = yes
+				}
+			}
+			MOIM_boost_nonaligned_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nonaligned_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_nonaligned_factor_effect = yes
+				}
+			}
+			MOIM_lower_nonaligned_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nonaligned_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_nonaligned_factor_effect = yes
+				}
+			}
+			MOIM_boost_nationalist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nationalist_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_nationalist_factor_effect = yes
+				}
+			}
+			MOIM_lower_nationalist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_nationalist_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_nationalist_factor_effect = yes
+				}
+			}
+			MOIM_boost_salafist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_salafist_factor < 0.05 }
+					}
+					add_political_power = -250
+					MOIM_boost_salafist_factor_effect = yes
+				}
+			}
+			MOIM_lower_salafist_button_click = {
+				if = {
+					limit = {
+						has_political_power > 249
+						check_variable = { moim_salafist_factor > -0.05 }
+					}
+					add_political_power = -250
+					MOIM_lower_salafist_factor_effect = yes
+				}
+			}
+			# Department of Military
+			MOIM_army_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_atk_factor_effect = yes
+				}
+			}
+			MOIM_army_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_spd_factor_effect = yes
+				}
+			}
+			MOIM_army_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_army_experience > 99
+						check_variable = { moim_army_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					army_experience = -100
+					MOIM_change_army_def_factor_effect = yes
+				}
+			}
+			MOIM_navy_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_atk_factor_effect = yes
+				}
+			}
+			MOIM_navy_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_spd_factor_effect = yes
+				}
+			}
+			MOIM_navy_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_navy_experience > 99
+						check_variable = { moim_navy_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					navy_experience = -100
+					MOIM_change_navy_def_factor_effect = yes
+				}
+			}
+			MOIM_air_atk_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_atk_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_atk_factor_effect = yes
+				}
+			}
+			MOIM_air_spd_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_spd_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_spd_factor_effect = yes
+				}
+			}
+			MOIM_air_def_click = {
+				if = {
+					limit = {
+						has_political_power > 49
+						has_air_experience > 99
+						check_variable = { moim_air_def_factor < 0.25 }
+					}
+					add_political_power = -50
+					air_experience = -100
+					MOIM_change_air_def_factor_effect = yes
+				}
+			}
+			# Department of Research & Development
+			MOIM_dorad_research_click = {
+				if = {
+					limit = {
+						has_political_power > 199
+						check_variable = { moim_research_speed_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_research_speed_factor_effect = yes
+				}
+			}
+			MOIM_dorad_construction_click = {
+				if = {
+					limit = {
+						has_political_power > 199
+						check_variable = { moim_construction_speed_factor < 0.50 }
+					}
+					add_political_power = -200
+					MOIM_change_construction_speed_factor_effect = yes
+				}
+			}
+			MOIM_dorad_inf_util_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_inf_util_5
+							has_idea = moim_dorad_army
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -250
+
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_4
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_4
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_inf_util_4
+								has_idea = moim_dorad_armor_5
+								has_idea = moim_dorad_artillery_5
+								has_idea = moim_dorad_aa_at_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_4
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						add_ideas = moim_dorad_army
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_inf_util_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_inf_util_4
+								add_idea = moim_dorad_inf_util_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_inf_util_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_inf_util_3
+								add_idea = moim_dorad_inf_util_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_inf_util_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_inf_util_2
+								add_idea = moim_dorad_inf_util_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_inf_util_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_inf_util_1
+								add_idea = moim_dorad_inf_util_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_inf_util_1
+						}
+				}
+			}
+			MOIM_dorad_armor_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_armor_5
+							has_idea = moim_dorad_army
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_4
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_4
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_inf_util_5
+								has_idea = moim_dorad_armor_4
+								has_idea = moim_dorad_artillery_5
+								has_idea = moim_dorad_aa_at_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_4
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						add_ideas = moim_dorad_army
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_armor_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_armor_4
+								add_idea = moim_dorad_armor_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_armor_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_armor_3
+								add_idea = moim_dorad_armor_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_armor_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_armor_2
+								add_idea = moim_dorad_armor_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_armor_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_armor_1
+								add_idea = moim_dorad_armor_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_armor_1
+						}
+				}
+			}
+			MOIM_dorad_artillery_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_artillery_5
+							has_idea = moim_dorad_army
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_4
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_4
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_inf_util_5
+								has_idea = moim_dorad_armor_5
+								has_idea = moim_dorad_artillery_4
+								has_idea = moim_dorad_aa_at_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_4
+						remove_ideas = moim_dorad_aa_at_5
+						add_ideas = moim_dorad_army
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_artillery_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_artillery_4
+								add_idea = moim_dorad_artillery_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_artillery_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_artillery_3
+								add_idea = moim_dorad_artillery_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_artillery_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_artillery_2
+								add_idea = moim_dorad_artillery_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_artillery_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_artillery_1
+								add_idea = moim_dorad_artillery_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_artillery_1
+						}
+				}
+			}
+			MOIM_dorad_aa_at_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_aa_at_5
+							has_idea = moim_dorad_army
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_4
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_4
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_inf_util_5
+								has_idea = moim_dorad_armor_5
+								has_idea = moim_dorad_artillery_5
+								has_idea = moim_dorad_aa_at_4
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_4
+						add_ideas = moim_dorad_army
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_aa_at_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_aa_at_4
+								add_idea = moim_dorad_aa_at_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_aa_at_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_aa_at_3
+								add_idea = moim_dorad_aa_at_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_aa_at_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_aa_at_2
+								add_idea = moim_dorad_aa_at_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_aa_at_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_aa_at_1
+								add_idea = moim_dorad_aa_at_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_aa_at_1
+						}
+				}
+			}
+			MOIM_dorad_heli_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 199
+						has_air_experience > 149
+						NOT = { 
+							has_idea = moim_dorad_heli_5
+							has_idea = moim_dorad_air
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -200
+					air_experience = -150
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_4
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_4
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_heli_4
+								has_idea = moim_dorad_airframes_5
+								has_idea = moim_dorad_air_eqp_5
+							}
+						}
+						remove_ideas = moim_dorad_heli_4
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						add_ideas = moim_dorad_air
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_heli_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_heli_4
+								add_idea = moim_dorad_heli_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_heli_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_heli_3
+								add_idea = moim_dorad_heli_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_heli_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_heli_2
+								add_idea = moim_dorad_heli_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_heli_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_heli_1
+								add_idea = moim_dorad_heli_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_heli_1
+						}
+				}
+			}
+			MOIM_dorad_airframes_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_air_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_airframes_5
+							has_idea = moim_dorad_air
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					air_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_4
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_4
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_heli_5
+								has_idea = moim_dorad_airframes_4
+								has_idea = moim_dorad_air_eqp_5
+							}
+						}
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_4
+						remove_ideas = moim_dorad_air_eqp_5
+						add_ideas = moim_dorad_air
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_airframes_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_airframes_4
+								add_idea = moim_dorad_airframes_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_airframes_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_airframes_3
+								add_idea = moim_dorad_airframes_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_airframes_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_airframes_2
+								add_idea = moim_dorad_airframes_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_airframes_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_airframes_1
+								add_idea = moim_dorad_airframes_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_airframes_1
+						}
+				}
+			}
+			MOIM_dorad_air_eqp_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_air_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_air_eqp_5
+							has_idea = moim_dorad_air
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					air_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_4
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_4
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_heli_5
+								has_idea = moim_dorad_airframes_5
+								has_idea = moim_dorad_air_eqp_4
+							}
+						}
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_4
+						add_ideas = moim_dorad_air
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_air_eqp_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_air_eqp_4
+								add_idea = moim_dorad_air_eqp_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_air_eqp_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_air_eqp_3
+								add_idea = moim_dorad_air_eqp_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_air_eqp_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_air_eqp_2
+								add_idea = moim_dorad_air_eqp_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_air_eqp_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_air_eqp_1
+								add_idea = moim_dorad_air_eqp_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_air_eqp_1
+						}
+				}
+			}
+			MOIM_dorad_ship_hulls_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_navy_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_ship_hulls_5
+							has_idea = moim_dorad_navy
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					navy_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_4
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_4
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_ship_hulls_4
+								has_idea = moim_dorad_naval_misc_5
+							}
+						}
+						remove_ideas = moim_dorad_ship_hulls_4
+						remove_ideas = moim_dorad_naval_misc_5
+						add_ideas = moim_dorad_navy
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ship_hulls_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ship_hulls_4
+								add_idea = moim_dorad_ship_hulls_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ship_hulls_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ship_hulls_3
+								add_idea = moim_dorad_ship_hulls_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ship_hulls_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ship_hulls_2
+								add_idea = moim_dorad_ship_hulls_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ship_hulls_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_ship_hulls_1
+								add_idea = moim_dorad_ship_hulls_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_ship_hulls_1
+						}
+				}
+			}
+			MOIM_dorad_naval_misc_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_navy_experience > 249
+						NOT = { 
+							has_idea = moim_dorad_naval_misc_5
+							has_idea = moim_dorad_navy
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					navy_experience = -250
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_4
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_4
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_ship_hulls_5
+								has_idea = moim_dorad_naval_misc_4
+							}
+						}
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_4
+						add_ideas = moim_dorad_navy
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_naval_misc_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_naval_misc_4
+								add_idea = moim_dorad_naval_misc_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_naval_misc_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_naval_misc_3
+								add_idea = moim_dorad_naval_misc_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_naval_misc_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_naval_misc_2
+								add_idea = moim_dorad_naval_misc_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_naval_misc_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_naval_misc_1
+								add_idea = moim_dorad_naval_misc_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_naval_misc_1
+						}
+				}
+			}
+			MOIM_dorad_ai_comp_internet_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						NOT = { 
+							has_idea = moim_dorad_ai_comp_internet_5
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_4
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_4
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ai_comp_internet_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ai_comp_internet_4
+								add_idea = moim_dorad_ai_comp_internet_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ai_comp_internet_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ai_comp_internet_3
+								add_idea = moim_dorad_ai_comp_internet_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ai_comp_internet_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_ai_comp_internet_2
+								add_idea = moim_dorad_ai_comp_internet_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_ai_comp_internet_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_ai_comp_internet_1
+								add_idea = moim_dorad_ai_comp_internet_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_ai_comp_internet_1
+						}
+				}
+			}
+			MOIM_dorad_infr_constr_agri_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						NOT = { 
+							has_idea = moim_dorad_infr_constr_agri_5
+							has_idea = moim_dorad_industry
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_4
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_4
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_infr_constr_agri_4
+								has_idea = moim_dorad_nfibers_3d_genes_5
+								has_idea = moim_dorad_powerplants_5
+							}
+						}
+						remove_ideas = moim_dorad_infr_constr_agri_4
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						add_ideas = moim_dorad_industry
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_infr_constr_agri_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_infr_constr_agri_4
+								add_idea = moim_dorad_infr_constr_agri_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_infr_constr_agri_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_infr_constr_agri_3
+								add_idea = moim_dorad_infr_constr_agri_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_infr_constr_agri_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_infr_constr_agri_2
+								add_idea = moim_dorad_infr_constr_agri_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_infr_constr_agri_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_infr_constr_agri_1
+								add_idea = moim_dorad_infr_constr_agri_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_infr_constr_agri_1
+						}
+				}
+			}
+			MOIM_dorad_nfibers_3d_genes_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						NOT = { 
+							has_idea = moim_dorad_nfibers_3d_genes_5
+							has_idea = moim_dorad_industry
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_4
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_4
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_infr_constr_agri_5
+								has_idea = moim_dorad_nfibers_3d_genes_4
+								has_idea = moim_dorad_powerplants_5
+							}
+						}
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_4
+						remove_ideas = moim_dorad_powerplants_5
+						add_ideas = moim_dorad_industry
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_nfibers_3d_genes_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_nfibers_3d_genes_4
+								add_idea = moim_dorad_nfibers_3d_genes_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_nfibers_3d_genes_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_nfibers_3d_genes_3
+								add_idea = moim_dorad_nfibers_3d_genes_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_nfibers_3d_genes_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_nfibers_3d_genes_2
+								add_idea = moim_dorad_nfibers_3d_genes_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_nfibers_3d_genes_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_nfibers_3d_genes_1
+								add_idea = moim_dorad_nfibers_3d_genes_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_nfibers_3d_genes_1
+						}
+				}
+			}
+			MOIM_dorad_powerplants_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						NOT = { 
+							has_idea = moim_dorad_powerplants_5
+							has_idea = moim_dorad_industry
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_4
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_4
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_idea = moim_dorad_infr_constr_agri_5
+								has_idea = moim_dorad_nfibers_3d_genes_5
+								has_idea = moim_dorad_powerplants_4
+							}
+						}
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_4
+						add_ideas = moim_dorad_industry
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_powerplants_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_powerplants_4
+								add_idea = moim_dorad_powerplants_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_powerplants_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_powerplants_3
+								add_idea = moim_dorad_powerplants_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_powerplants_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_powerplants_2
+								add_idea = moim_dorad_powerplants_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_powerplants_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_powerplants_1
+								add_idea = moim_dorad_powerplants_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_powerplants_1
+						}
+				}
+			}
+			MOIM_dorad_satellites_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_air_experience > 149
+						NOT = { 
+							has_idea = moim_dorad_satellites_5
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					air_experience = -150
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_4
+								has_idea = moim_dorad_missiles_5
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_4
+						remove_ideas = moim_dorad_missiles_5
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_satellites_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_satellites_4
+								add_idea = moim_dorad_satellites_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_satellites_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_satellites_3
+								add_idea = moim_dorad_satellites_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_satellites_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_satellites_2
+								add_idea = moim_dorad_satellites_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_satellites_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_satellites_1
+								add_idea = moim_dorad_satellites_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_satellites_1
+						}
+				}
+			}
+			MOIM_dorad_missiles_click = {
+				if = {
+					limit = {
+						has_political_power > 499
+						has_army_experience > 99
+						has_navy_experience > 99
+						has_air_experience > 99
+						NOT = { 
+							has_idea = moim_dorad_missiles_5
+							has_idea = moim_dorad_completed
+						}
+					}
+					add_political_power = -500
+					army_experience = -100
+					navy_experience = -100
+					air_experience = -100
+					
+					if = {
+						limit = {
+							AND = {
+								OR = {
+									AND = {
+										has_idea = moim_dorad_inf_util_5
+										has_idea = moim_dorad_armor_5
+										has_idea = moim_dorad_artillery_5
+										has_idea = moim_dorad_aa_at_5
+									}
+									has_idea = moim_dorad_army
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_heli_5
+										has_idea = moim_dorad_airframes_5
+										has_idea = moim_dorad_air_eqp_5
+									}
+									has_idea = moim_dorad_air
+								}
+								OR = {
+									AND = {
+										has_idea = moim_dorad_ship_hulls_5
+										has_idea = moim_dorad_naval_misc_5
+									}
+								has_idea = moim_dorad_navy
+								}
+								has_idea = moim_dorad_ai_comp_internet_5
+								OR = {
+									AND = {
+										has_idea = moim_dorad_infr_constr_agri_5
+										has_idea = moim_dorad_nfibers_3d_genes_5
+										has_idea = moim_dorad_powerplants_5
+									}
+									has_idea = moim_dorad_industry
+								}
+								has_idea = moim_dorad_satellites_5
+								has_idea = moim_dorad_missiles_4
+							}
+						}
+						remove_ideas = moim_dorad_inf_util_5
+						remove_ideas = moim_dorad_armor_5
+						remove_ideas = moim_dorad_artillery_5
+						remove_ideas = moim_dorad_aa_at_5
+						remove_ideas = moim_dorad_heli_5
+						remove_ideas = moim_dorad_airframes_5
+						remove_ideas = moim_dorad_air_eqp_5
+						remove_ideas = moim_dorad_ship_hulls_5
+						remove_ideas = moim_dorad_naval_misc_5
+						remove_ideas = moim_dorad_ai_comp_internet_5
+						remove_ideas = moim_dorad_infr_constr_agri_5
+						remove_ideas = moim_dorad_nfibers_3d_genes_5
+						remove_ideas = moim_dorad_powerplants_5
+						remove_ideas = moim_dorad_satellites_5
+						remove_ideas = moim_dorad_missiles_4
+						remove_ideas = moim_dorad_army
+						remove_ideas = moim_dorad_navy
+						remove_ideas = moim_dorad_air
+						remove_ideas = moim_dorad_industry
+						add_ideas = moim_dorad_completed
+					}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_missiles_4
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_missiles_4
+								add_idea = moim_dorad_missiles_5
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_missiles_3
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_missiles_3
+								add_idea = moim_dorad_missiles_4
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_missiles_2
+							}
+							swap_ideas = {
+								remove_idea = moim_dorad_missiles_2
+								add_idea = moim_dorad_missiles_3
+							}
+						}
+					else_if = {
+						limit = {
+							has_idea = moim_dorad_missiles_1
+								}
+							swap_ideas = {
+								remove_idea = moim_dorad_missiles_1
+								add_idea = moim_dorad_missiles_2
+							}
+						}
+					else = {
+							add_ideas = moim_dorad_missiles_1
+						}
+				}
+			}
+		}
+
+		triggers = {
+			MOIM_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_main_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_doir_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_bought_flag
+				}
+			}
+			MOIM_dop_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dop_bought_flag
+				}
+			}
+			MOIM_dop_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dop_bought_flag
+				}
+			}
+			MOIM_dom_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dom_bought_flag
+				}
+			}
+			MOIM_dom_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dom_bought_flag
+				}
+			}
+			MOIM_dorad_overlay_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dorad_bought_flag
+				}
+			}
+			MOIM_dorad_unlock_button_visible = {
+				NOT = { 
+					has_country_flag = MOIM_dorad_bought_flag
+				}
+			}
+			MOIM_pp_button_overlay_visible = {
+				check_variable = { moim_pp_factor > 0.49 }
+			}
+			MOIM_cp_button_overlay_visible = {
+				check_variable = { moim_cp_factor > 0.49 }
+			}
+			MOIM_xp_button_overlay_visible = {
+				check_variable = { moim_army_xp_factor > 0.49 }
+			}
+			MOIM_boost_emerging_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_emerging_factor < 0.05 }
+				}
+			}
+			MOIM_lower_emerging_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_emerging_factor > -0.05 }
+				}
+			}
+			MOIM_boost_western_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_western_factor < 0.05 }
+				}
+			}
+			MOIM_lower_western_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_western_factor > -0.05 }
+				}
+			}
+			MOIM_boost_nonaligned_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_nonaligned_factor < 0.05 }
+				}
+			}
+			MOIM_lower_nonaligned_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_nonaligned_factor > -0.05 }
+				}
+			}
+			MOIM_boost_nationalist_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_nationalist_factor < 0.05 }
+				}
+			}
+			MOIM_lower_nationalist_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_nationalist_factor > -0.05 }
+				}
+			}
+			MOIM_boost_salafist_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_salafist_factor < 0.05 }
+				}
+			}
+			MOIM_lower_salafist_button_overlay_visible = {
+				NOT = {
+					check_variable = { moim_salafist_factor > -0.05 }
+				}
+			}
+			MOIM_army_atk_overlay_visible = {
+				check_variable = { moim_army_atk_factor > 0.24 }
+			}
+			MOIM_army_def_overlay_visible = {
+				check_variable = { moim_army_def_factor > 0.24 }
+			}
+			MOIM_army_spd_overlay_visible = {
+				check_variable = { moim_army_spd_factor > 0.24 }
+			}
+			MOIM_navy_atk_overlay_visible = {
+				check_variable = { moim_navy_atk_factor > 0.24 }
+			}
+			MOIM_navy_def_overlay_visible = {
+				check_variable = { moim_navy_def_factor > 0.24 }
+			}
+			MOIM_navy_spd_overlay_visible = {
+				check_variable = { moim_navy_spd_factor > 0.24 }
+			}
+			MOIM_air_atk_overlay_visible = {
+				check_variable = { moim_air_atk_factor > 0.24 }
+			}
+			MOIM_air_def_overlay_visible = {
+				check_variable = { moim_air_def_factor > 0.24 }
+			}
+			MOIM_air_spd_overlay_visible = {
+				check_variable = { moim_air_spd_factor > 0.24 }
+			}
+			MOIM_dorad_research_overlay_visible = {
+				check_variable = { moim_research_speed_factor > 0.49 }
+			}
+			MOIM_dorad_construction_overlay_visible = {
+				check_variable = { moim_construction_speed_factor > 0.49 }
+			}
+			MOIM_dorad_inf_util_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_inf_util_5
+					has_idea = moim_dorad_army
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_armor_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_armor_5
+					has_idea = moim_dorad_army
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_artillery_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_artillery_5
+					has_idea = moim_dorad_army
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_aa_at_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_aa_at_5
+					has_idea = moim_dorad_army
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_heli_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_heli_5
+					has_idea = moim_dorad_air
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_airframes_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_airframes_5
+					has_idea = moim_dorad_air
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_air_eqp_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_air_eqp_5
+					has_idea = moim_dorad_air
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_ship_hulls_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_ship_hulls_5
+					has_idea = moim_dorad_navy
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_naval_misc_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_naval_misc_5
+					has_idea = moim_dorad_navy
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_ai_comp_internet_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_ai_comp_internet_5
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_infr_constr_agri_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_infr_constr_agri_5
+					has_idea = moim_dorad_industry
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_nfibers_3d_genes_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_nfibers_3d_genes_5
+					has_idea = moim_dorad_industry
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_powerplants_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_powerplants_5
+					has_idea = moim_dorad_industry
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_satellites_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_satellites_5
+					has_idea = moim_dorad_completed
+				}
+			}
+			MOIM_dorad_missiles_overlay_visible = {
+				OR = {
+					has_idea = moim_dorad_missiles_5
+					has_idea = moim_dorad_completed
+				}
+			}
+		}
+	}
+
+}

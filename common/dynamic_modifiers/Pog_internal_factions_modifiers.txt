@@ -1,0 +1,9 @@
+pog_enviromentalists_dynamic_modifier = {
+	enable = { has_idea = pog_enviromentalists }
+
+	consumer_goods_factor = pog_env_consumer_goods_factor
+	neutrality_drift = pog_env_neutrality_drift
+	political_power_factor = pog_env_political_power
+	production_speed_synthetic_refinery_factor = pog_env_production_speed_synthetic_refinery_factor
+	production_speed_nuclear_reactor_factor = pog_env_production_speed_nuclear_reactor_factor
+}

@@ -16,6 +16,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -100
 		}
 
 		remove_effect = {
@@ -53,18 +54,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
-				add = -100
-			}
-
-			modifier = {
-				gdp_debt_ratio_higher_100 = yes
-				add = -100
-			}
-
-
-			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -92,6 +82,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -100
 		}
 
 		remove_effect = {
@@ -129,15 +120,9 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
-
-			modifier = {
-				gdp_debt_ratio_higher_100 = yes
-				add = -100
-			}
-
 
 			modifier = {
 				check_variable = { treasury > 49.9 }
@@ -163,6 +148,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			add_political_power = -15
 		}
 
 		available = {
@@ -193,7 +179,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -222,6 +208,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 		available = {
@@ -252,7 +239,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -281,6 +268,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 		available = {
@@ -311,7 +299,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -340,6 +328,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -150 }
 			modify_treasury_effect = yes
+			add_political_power = -100
 		}
 
 		available = {
@@ -370,7 +359,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	
@@ -398,6 +387,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			add_political_power = -15
 		}
 
 	  available = {
@@ -428,7 +418,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -457,6 +447,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 	  available = {
@@ -487,7 +478,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -516,6 +507,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 	  available = {
@@ -546,7 +538,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -575,6 +567,7 @@ resources_expansion_category = {
 		  complete_effect = {
 			  set_temp_variable = { treasury_change = -150 }
 			  modify_treasury_effect = yes
+			  add_political_power = -100
 		  }
   
 		available = {
@@ -605,7 +598,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	
@@ -633,6 +626,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			add_political_power = -15
 		}
 
 	  available = {
@@ -663,7 +657,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -692,6 +686,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 	  available = {
@@ -722,7 +717,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -751,6 +746,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 	  available = {
@@ -781,7 +777,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -810,6 +806,7 @@ resources_expansion_category = {
 		  complete_effect = {
 			  set_temp_variable = { treasury_change = -150 }
 			  modify_treasury_effect = yes
+			  add_political_power = -100
 		  }
   
 		available = {
@@ -840,7 +837,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	
@@ -866,8 +863,9 @@ resources_expansion_category = {
  	 custom_cost_text = cost_10_0
 
  	 complete_effect = {
- 		 set_temp_variable = { treasury_change = -10 }
- 		 modify_treasury_effect = yes
+ 		set_temp_variable = { treasury_change = -10 }
+ 		modify_treasury_effect = yes
+		add_political_power = -15
  	 }
 
 	  available = {
@@ -898,7 +896,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -927,6 +925,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 	  available = {
@@ -957,7 +956,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -985,6 +984,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 	  available = {
@@ -1015,7 +1015,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1043,6 +1043,7 @@ resources_expansion_category = {
 		  complete_effect = {
 			  set_temp_variable = { treasury_change = -150 }
 			  modify_treasury_effect = yes
+			  add_political_power = -100
 		  }
   
 		available = {
@@ -1073,7 +1074,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	
@@ -1101,6 +1102,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			add_political_power = -15
 		}
 
 		available = {
@@ -1131,7 +1133,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1159,6 +1161,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 		available = {
@@ -1189,7 +1192,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1217,6 +1220,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 		available = {
@@ -1247,7 +1251,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1275,6 +1279,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -150 }
 			modify_treasury_effect = yes
+			add_political_power = -100
 		}
 
 		available = {
@@ -1305,7 +1310,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	
@@ -1333,6 +1338,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			add_political_power = -15
 		}
 
 	  available = {
@@ -1363,7 +1369,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1391,6 +1397,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
+			add_political_power = -30
 		}
 
 	  available = {
@@ -1421,7 +1428,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1450,6 +1457,7 @@ resources_expansion_category = {
 		complete_effect = {
 			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 	  available = {
@@ -1480,7 +1488,7 @@ resources_expansion_category = {
 		base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 
@@ -1509,6 +1517,7 @@ resources_expansion_category = {
 		  complete_effect = {
 			  set_temp_variable = { treasury_change = -150 }
 			  modify_treasury_effect = yes
+			  add_political_power = -100
 		  }
   
 		available = {
@@ -1539,7 +1548,7 @@ resources_expansion_category = {
 			base = 0
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}
 	

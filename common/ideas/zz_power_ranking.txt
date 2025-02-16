@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		# DO NOT MERGE ANYTHING FROM BASE MD WITHOUT ASKING LYNX FIRST
+		# DO NOT MERGE ANYTHING IN HERE FROM BASE MD
 		pog_hegemony = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pog_hegemony" }
 			picture = GFX_idea_pog_hegemony
@@ -13,64 +13,65 @@ ideas = {
 				foreign_influence_modifier = 0.75
 				foreign_influence_defense_modifier = 0.75
 				foreign_influence_auto_influence_cap_modifier = 5
-				interest_rate_multiplier_modifier = -2.5
+				interest_rate_multiplier_modifier = -2.0
 				research_speed_factor = 0.20
 				custom_modifier_tooltip = pog_hegemony_tt
 				hidden_modifier = {
-					corruption_cost_factor = 1.25
-					economic_cycles_cost_factor = 1.25
-					internal_factions_cost_factor = 1.25
-					bureaucracy_cost_factor = 1.25
-					Military_Spending_cost_factor = 1.25
-					crime_fighting_cost_factor = 1.25
-					education_budget_cost_factor = 1.25
-					health_budget_cost_factor = 1.25
-					social_budget_cost_factor = 1.25
-					trade_laws_cost_factor = 1.25
-					Nuclear_Status_cost_factor = 1.25
-					Nuclear_Stance_cost_factor = 1.25
-					Conscription_Law_cost_factor = 1.25
-					Military_Status_Women_cost_factor = 1.25
-					Foreign_Intervention_Law_cost_factor = 1.25
-					Officer_Training_Law_cost_factor = 1.25
-					materiel_manufacturer_cost_factor = 1.25
-					tank_manufacturer_cost_factor = 1.25
-					aircraft_manufacturer_cost_factor = 1.25
-					naval_manufacturer_cost_factor = 1.25
-					tax_rate_change_multiplier_modifier = 1.25
-					migration_laws_cost_factor = 1.25
-					ep_economic_model_cost_factor = 1.25
-					ep_foreign_investments_cost_factor = 1.25
-					ep_subsidization_cost_factor = 1.25
-					ep_taxation_policy_cost_factor = 1.25
-					ep_trade_tariffs_cost_factor = 1.25
-					ep_war_bonds_cost_factor = 1.25
-					gf_command_structure_cost_factor = 1.25
-					gf_logistics_system_cost_factor = 1.25
-					gf_marine_role_cost_factor = 1.25
-					gf_officer_training_cost_factor = 1.25
-					gf_paratrooper_role_cost_factor = 1.25
-					gf_special_forces_role_cost_factor = 1.25
-					gp_gender_equality_cost_factor = 1.25
-					gp_minority_rights_cost_factor = 1.25
-					gp_national_ideas_cost_factor = 1.25
-					gp_press_law_cost_factor = 1.25
-					gp_public_meetings_cost_factor = 1.25
-					gt_government_form_cost_factor = 1.25
-					gt_head_of_state_cost_factor = 1.25
-					gt_judiciary_cost_factor = 1.25
-					ip_construction_focus_cost_factor = 1.25
-					ip_economic_base_cost_factor = 1.25
-					ip_resource_efforts_cost_factor = 1.25
-					is_firearm_regulation_cost_factor = 1.25
-					is_penal_system_cost_factor = 1.25
-					is_trade_unions_cost_factor = 1.25
-					mj_branch_rivalry_cost_factor = 1.25
-					mj_code_of_ethics_cost_factor = 1.25
-					mj_female_service_cost_factor = 1.25
-					mj_non_core_manpower_cost_factor = 1.25
-					mj_training_quality_cost_factor = 1.25
-					mj_volunteer_forces_cost_factor = 1.25
+					corruption_cost_factor = 1.2
+					economic_cycles_cost_factor = 1.2
+					internal_factions_cost_factor = 1.2
+					bureaucracy_cost_factor = 1.2
+					Military_Spending_cost_factor = 1.2
+					crime_fighting_cost_factor = 1.2
+					education_budget_cost_factor = 1.2
+					health_budget_cost_factor = 1.2
+					social_budget_cost_factor = 1.2
+					trade_laws_cost_factor = 1.2
+					Nuclear_Status_cost_factor = 1.2
+					Nuclear_Stance_cost_factor = 1.2
+					Conscription_Law_cost_factor = 1.2
+					Military_Status_Women_cost_factor = 1.2
+					Foreign_Intervention_Law_cost_factor = 1.2
+					Officer_Training_Law_cost_factor = 1.2
+					materiel_manufacturer_cost_factor = 1.2
+					tank_manufacturer_cost_factor = 1.2
+					aircraft_manufacturer_cost_factor = 1.2
+					naval_manufacturer_cost_factor = 1.2
+					tax_rate_change_multiplier_modifier = 1.2
+					migration_laws_cost_factor = 1.2
+					ep_economic_model_cost_factor = 1.2
+					ep_foreign_investments_cost_factor = 1.2
+					ep_subsidization_cost_factor = 1.2
+					ep_taxation_policy_cost_factor = 1.2
+					ep_trade_tariffs_cost_factor = 1.2
+					ep_war_bonds_cost_factor = 1.2
+					gf_command_structure_cost_factor = 1.2
+					gf_logistics_system_cost_factor = 1.2
+					gf_marine_role_cost_factor = 1.2
+					gf_officer_training_cost_factor = 1.2
+					gf_paratrooper_role_cost_factor = 1.2
+					gf_special_forces_role_cost_factor = 1.2
+					gp_gender_equality_cost_factor = 1.2
+					gp_minority_rights_cost_factor = 1.2
+					gp_national_ideas_cost_factor = 1.2
+					gp_press_law_cost_factor = 1.2
+					gp_public_meetings_cost_factor = 1.2
+					gt_government_form_cost_factor = 1.2
+					gt_head_of_state_cost_factor = 1.2
+					gt_judiciary_cost_factor = 1.2
+					ip_construction_focus_cost_factor = 1.2
+					ip_economic_base_cost_factor = 1.2
+					ip_resource_efforts_cost_factor = 1.2
+					is_firearm_regulation_cost_factor = 1.2
+					is_penal_system_cost_factor = 1.2
+					is_trade_unions_cost_factor = 1.2
+					mj_branch_rivalry_cost_factor = 1.2
+					mj_code_of_ethics_cost_factor = 1.2
+					mj_female_service_cost_factor = 1.2
+					mj_non_core_manpower_cost_factor = 1.2
+					mj_training_quality_cost_factor = 1.2
+					mj_volunteer_forces_cost_factor = 1.2
+					religion_cost_factor = 1.2
 				}
 			}
 		}
@@ -145,6 +146,7 @@ ideas = {
 					mj_non_core_manpower_cost_factor = 0.8
 					mj_training_quality_cost_factor = 0.8
 					mj_volunteer_forces_cost_factor = 0.8
+					religion_cost_factor = 0.8
 				}
 			}
 		}
@@ -221,6 +223,7 @@ ideas = {
 					mj_non_core_manpower_cost_factor = 0.45
 					mj_training_quality_cost_factor = 0.45
 					mj_volunteer_forces_cost_factor = 0.45
+					religion_cost_factor = 0.45
 				}
 			}
 		}
@@ -297,6 +300,7 @@ ideas = {
 					mj_non_core_manpower_cost_factor = 0.3
 					mj_training_quality_cost_factor = 0.3
 					mj_volunteer_forces_cost_factor = 0.3
+					religion_cost_factor = 0.3
 				}
 			}
 		}
@@ -370,6 +374,7 @@ ideas = {
 					mj_non_core_manpower_cost_factor = 0.2
 					mj_training_quality_cost_factor = 0.2
 					mj_volunteer_forces_cost_factor = 0.2
+					religion_cost_factor = 0.2
 				}
 			}
 		}
@@ -452,6 +457,7 @@ ideas = {
 					mj_non_core_manpower_cost_factor = -0.2
 					mj_training_quality_cost_factor = -0.2
 					mj_volunteer_forces_cost_factor = -0.2
+					religion_cost_factor = -0.2
 				}
 			}
 		}

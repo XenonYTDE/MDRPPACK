@@ -2,3 +2,16 @@
 # Poggers Additional Decisions
  cut_taxes_industry_decision: "Cut Taxes on Industries"
  raise_wages_small_medium_business_owners_decision: "Raise Business Wages"
+ green_energy_subsidies_decision: "Green Energy Subsidies"
+
+# Enviromentalists
+ pog_enviromentalists: "Enviromentalists"
+ pog_enviromentalists_desc: "As the 21st century progresses, more people are taking notice of climate change and the impact humans have on nature and their surrounding enviroment. Their main focus is clean energy and enviroment care."
+ pog_enviromentalists_dynamic_modifier: "£pol_idea $pog_enviromentalists$"
+ pog_enviromentalists_opinion_tt: "$opinion_tick_rate_tt$Opinion of §Y$enviromentalists$§!: [pog_enviromentalists_opinion_display]\n\n§YEffects from opinion:§!\n$MODIFIER_POLITICAL_POWER_FACTOR$: [?THIS.pog_env_political_power|+%]\n$modifier_production_speed_synthetic_refinery_factor$: [?THIS.pog_env_production_speed_synthetic_refinery_factor|+%]\n$modifier_production_speed_nuclear_reactor_factor$: [?THIS.pog_env_production_speed_nuclear_reactor_factor|+%]\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?THIS.pog_env_consumer_goods_factor|Y%]\n$neutrality_drift$: [?THIS.pog_env_neutrality_drift|+%]\n"
+ positive_pog_enviromentalists_tt: "§G[?THIS.pog_enviromentalists_opinion|2]§!"
+ negative_pog_enviromentalists_tt: "§R[?THIS.pog_enviromentalists_opinion|2]§!"
+ neutral_pog_enviromentalists_tt: "§Y[?THIS.pog_enviromentalists_opinion|2]§!"
+ display_pog_enviromentalists_opinion: "Opinion of §Y$pog_enviromentalists$§! changes by [?temp_opinion|+0] (Current: [pog_enviromentalists_opinion_display])\n"
+ 
+ script.0.pog_enviromentalists: "§YEnviromentalists§! "
