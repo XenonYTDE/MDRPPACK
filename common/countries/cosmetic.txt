@@ -921,6 +921,7 @@ CZE_SLO_czechoslovakia = {
 	color = rgb { 0 153 153 }
 	color_ui = rgb  { 0 153 153 }
 }
+# Poggers
 CHI_liberalism = {
 	color = rgb { 6 191 158 }
 	color_ui = rgb { 6 191 158 }
@@ -932,4 +933,12 @@ ENG_anglosphere = {
 SOV_uss = {
 	color = rgb { 0 0 139 }
 	color_ui = rgb { 0 0 139 }
+}
+FIJ_romfij = {
+	color = rgb { 34 232 246 }
+	color_ui = rgb { 34 232 246 }
+}
+ROM_romfij = {
+	color = rgb { 34 232 246 }
+	color_ui = rgb { 34 232 246 }
 }

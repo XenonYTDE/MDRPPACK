@@ -77,6 +77,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/industry_policies/ip_construction_focus/_infrastructure_focus.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_diversify_construction_funds"
+		texturefile = "gfx/interface/ideas/laws/economic_policies/ep_subsidization/_industrial_subsidies.dds"
+	}
+
 
 	#ip_resource_efforts #3slots
 

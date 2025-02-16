@@ -27,6 +27,10 @@
  RULE_YES_MERGE_SOUTH_AMERICA_DESC:0 "Merges South America"
  RULE_NO_MERGE_SOUTH_AMERICA_DESC:0 "Doesn't Merge South America"
  
+#Merge Africa Light
+ RULE_MERGE_AFRICA_LIGHT: "Light Africa Merge"
+ RULE_YES_MERGE_AFRICA_LIGHT_DESC: "Lightly Merges Africa"
+
 #Merge Africa#
  RULE_MERGE_AFRICA:0 "Merge Africa"
  RULE_YES_MERGE_AFRICA_DESC:0 "Merges Africa"

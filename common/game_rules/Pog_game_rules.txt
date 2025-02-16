@@ -15,6 +15,21 @@ merge_south_america = {
 	}
 }
 ####AFRICA####
+merge_africa_light = {
+	name = "RULE_MERGE_AFRICA_LIGHT"
+	group = "MDOptimization_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_YES_MERGE_AFRICA_LIGHT_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_MERGE_AFRICA_LIGHT_DESC"
+	}
+}
 merge_africa = {
 	name = "RULE_MERGE_AFRICA"
 	group = "MDOptimization_RULES"

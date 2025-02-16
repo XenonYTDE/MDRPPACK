@@ -18,8 +18,8 @@ ideas = {
                 political_power_factor = -0.10
                 send_volunteers_tension = -0.75
                 send_volunteer_divisions_required = -0.75
-                send_volunteer_size = 10
-                air_volunteer_cap = 15
+                send_volunteer_size = 7
+                air_volunteer_cap = 10
             }
 
             ai_will_do = {
