@@ -1,0 +1,39 @@
+v1.11.1d
+
+-Hyperfragmentation has been massively improved (as in even more countries)
+-The UK has received a miniscule expansion to its focus tree, as well as a new cosmetic tag and autonomy level if you follow the Royal Anglosphere path
+-Union of Sovereign States for Russia has been merged into the submod, courtesy of the creator: https://steamcommunity.com/sharedfiles/filedetails/?id=3402359752&searchtext=union+of+sovereign
+-Land trade distance has been increased, but distance penalty to trade opinion has increased
+-Max armies per marshall increased from 5 to 6
+-Base population growth increased by 10%
+-Removed UN peacekeeping missions as they were obsolete
+-Added 1 day EU option for testing purposes
+-Buffed Luxury Goods and Economic sanctions slightly
+-Removed the Faction Spirit idea, as it has been integrated into the game defines
+-Increased cost of defensive pact from 25 to 100 (guarantees scale with the numbers present, so this is to bring it more in line with guarantees)
+-Removed construction speed boost from Power Status ideas as it could be easily abused
+-Added research speed boost to Power Status ideas
+-Added a minimum of 0.1b cost to the Industry Buildings decisions, so that small economies don't abuse it that much
+
+v1.11.2
+
+-Compatibility with Millenium Dawn 1.11.2
+-New system - Ministry of Internal Management; can now invest PP, CP, XP into various political, army, research buffs for the nation.
+-Added 4th Internal Faction slot
+-Added new Internal Faction - Enviromentalists
+-Can now choose Religions for Political Power
+-Added Oriental Orthodox Church and Atheism to Religions as an option for everyone
+-Increased Dockyards assignable to 100
+-Increased Division Cap per Army to 32
+-All 8 National Ideas are available in Innovation group
+-Political Power cap increased to 10000
+-Command Power cap increasd to 1000
+-Dnipropetrovsk Republic added to Hyperfragmentation
+-Added Light Africa Merge option (merges 14 countries)
+-Added more requirements to Post Scarcity Economy and nerfed it
+-Rebalanced most law costs
+-Removed Walkers, as they seemed obsolete and buggy
+-Nerfed City and Regional State Population Growths slightly
+-Fixed AI spamming Resource and Building decisions
+-Replaced some National Ideas effects that impacted only vanilla with MD compatible ones
+-Various other bugfixes and micro balances

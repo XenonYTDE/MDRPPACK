@@ -2539,7 +2539,7 @@ EU_voting_category = {
 				}
 		}
 	}
-
+	# DO NOT MERGE FROM BASE MD
 	###############################################
 	########## Russia # Result Mission QMV ########
 	###############################################
@@ -2770,7 +2770,7 @@ EU_voting_category = {
 		selectable_mission = yes
 		fire_only_once = yes
 		complete_effect = {
-			custom_effect_tooltip = "Puts the draft on the agenda of the European Parliament"
+			custom_effect_tooltip = EU_draft_agenda
 			hidden_effect = {
 				set_country_flag = focus_EU_mff_EP_agenda
 				set_country_flag = focus_on_EP_agenda
@@ -2789,7 +2789,7 @@ EU_voting_category = {
 						}
 					}
 				}
-				custom_effect_tooltip = "Puts the draft on the agenda of the European Parliament"
+				custom_effect_tooltip = EU_draft_agenda
 				hidden_effect = {
 					set_country_flag = focus_EU_mff_EP_agenda
 					set_country_flag = focus_on_EP_agenda
@@ -2942,7 +2942,7 @@ EU_voting_category = {
 		selectable_mission = yes
 		fire_only_once = yes
 		complete_effect = {
-			custom_effect_tooltip = "Puts the draft on the agenda of the European Parliament"
+			custom_effect_tooltip = EU_draft_agenda
 			hidden_effect = {
 				set_country_flag = focus_EU_budget_EP_agenda
 				set_country_flag = focus_on_EP_agenda
@@ -2962,7 +2962,7 @@ EU_voting_category = {
 						}
 					}
 				}
-				custom_effect_tooltip = "Puts the draft on the agenda of the European Parliament"
+				custom_effect_tooltip = EU_draft_agenda
 				hidden_effect = {
 					set_country_flag = focus_EU_budget_EP_agenda
 					set_country_flag = focus_on_EP_agenda
@@ -3320,6 +3320,7 @@ EU_exit_category = {
 						has_elections = no
 						check_variable = { THIS.eurosceptic < 0.50 }
 					}
+					# DO NOT MERGE FROM BASE MD
 				}
 			}
 		}
@@ -4329,7 +4330,7 @@ EU_apply_for_membership_category = {
 			has_country_flag = EU_candidate
 			NOT = { has_war = yes }
 			custom_trigger_tooltip = {
-				tooltip =  EU_Eurosceptism_less_than_10_tt
+				tooltip =  EU_Eurosceptism_less_than_10_tt # DO NOT MERGE FROM BASE MD
 				check_variable = { THIS.eurosceptic < 0.10 }
 			}
 		}

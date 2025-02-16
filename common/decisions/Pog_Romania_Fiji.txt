@@ -1,0 +1,23 @@
+romania_fiji_category = {
+
+	rom_fij_establish_empire = {
+
+		cost = 100
+		days_remove = 7
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision rom_fij_establish_empire"
+
+			if = {
+				limit = { original_tag = FIJ }
+				set_cosmetic_tag = FIJ_romfij
+				create_faction = rom_fij_faction
+			}
+			else_if = {
+				limit = { original_tag = ROM }
+				set_cosmetic_tag = ROM_romfij
+				create_faction = rom_fij_faction
+			}
+		}
+	}
+}

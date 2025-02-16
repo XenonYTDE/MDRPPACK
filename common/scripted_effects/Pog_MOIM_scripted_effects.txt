@@ -1,0 +1,106 @@
+# Author: Lynxivium
+
+MOIM_change_pp_factor_effect = {
+	add_to_variable = { moim_pp_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_cp_factor_effect = {
+	add_to_variable = { moim_cp_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_army_xp_factor_effect = {
+	add_to_variable = { moim_army_xp_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_navy_xp_factor_effect = {
+	add_to_variable = { moim_navy_xp_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_air_xp_factor_effect = {
+	add_to_variable = { moim_air_xp_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_boost_emerging_factor_effect = {
+	add_to_variable = { moim_emerging_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_lower_emerging_factor_effect = {
+	add_to_variable = { moim_emerging_factor = -0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_boost_western_factor_effect = {
+	add_to_variable = { moim_western_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_lower_western_factor_effect = {
+	add_to_variable = { moim_western_factor = -0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_boost_nonaligned_factor_effect = {
+	add_to_variable = { moim_nonaligned_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_lower_nonaligned_factor_effect = {
+	add_to_variable = { moim_nonaligned_factor = -0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_boost_nationalist_factor_effect = {
+	add_to_variable = { moim_nationalist_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_lower_nationalist_factor_effect = {
+	add_to_variable = { moim_nationalist_factor = -0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_boost_salafist_factor_effect = {
+	add_to_variable = { moim_salafist_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_lower_salafist_factor_effect = {
+	add_to_variable = { moim_salafist_factor = -0.01 }
+	force_update_dynamic_modifier = yes
+} 
+MOIM_change_army_atk_factor_effect = {
+	add_to_variable = { moim_army_atk_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_army_spd_factor_effect = {
+	add_to_variable = { moim_army_spd_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_army_def_factor_effect = {
+	add_to_variable = { moim_army_def_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_navy_atk_factor_effect = {
+	add_to_variable = { moim_navy_atk_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_navy_spd_factor_effect = {
+	add_to_variable = { moim_navy_spd_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_navy_def_factor_effect = {
+	add_to_variable = { moim_navy_def_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_air_atk_factor_effect = {
+	add_to_variable = { moim_air_atk_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_air_spd_factor_effect = {
+	add_to_variable = { moim_air_spd_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_air_def_factor_effect = {
+	add_to_variable = { moim_air_def_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_research_speed_factor_effect = {
+	add_to_variable = { moim_research_speed_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_construction_speed_factor_effect = {
+	add_to_variable = { moim_construction_speed_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}

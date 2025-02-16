@@ -1,0 +1,14 @@
+# Xenon's Fourth Reich Event
+news_event = {
+	id = news.556
+	title = news.556.t
+	desc = news.556.d
+	picture = GFX_fourth_reich
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.556.a
+		log = "[GetDateText]: [This.GetName]: Executed news.556.a option"
+	}
+}

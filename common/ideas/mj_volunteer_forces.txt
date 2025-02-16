@@ -7,9 +7,9 @@ ideas = {
         large_volunteer_force = {
 
             available = {
-                num_divisions > 7
+                num_divisions > 25
             }
-            cost = 50
+            cost = 150
             #level #= #3
             
             removal_cost = 0
@@ -18,8 +18,8 @@ ideas = {
                 political_power_factor = -0.10
                 send_volunteers_tension = -0.75
                 send_volunteer_divisions_required = -0.75
-                send_volunteer_size = 10
-                air_volunteer_cap = 15
+                send_volunteer_size = 7
+                air_volunteer_cap = 10
             }
 
             ai_will_do = {
@@ -32,9 +32,9 @@ ideas = {
         small_force = {
 
             available = {
-                num_divisions > 5
+                num_divisions > 10
             }
-            cost = 50
+            cost = 100
             #level #= #2
             
             removal_cost = 0

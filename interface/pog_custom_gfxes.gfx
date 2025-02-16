@@ -1,21 +1,45 @@
 spriteTypes = {
+# XP texticons
+	spriteType = {
+		name = "GFX_army_xp_texticon"
+		textureFile = "gfx/texticons/army_xp_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_navy_xp_texticon"
+		textureFile = "gfx/texticons/navy_xp_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_air_xp_texticon"
+		textureFile = "gfx/texticons/air_xp_texticon.dds"
+		legacy_lazy_load = no
+	}
+# Global Hegemony
 	spriteType = {
 		name = "GFX_idea_pog_hegemony"
 		texturefile = "gfx/interface/ideas/politics/global_hegemony.dds"
 	}
-
+# Anglosphere
 	spriteType = {
 		name = "GFX_autonomy_imperial_federation_icon"
 		texturefile = "gfx/interface/ideas/royal_anglosphere_autonomy.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_pog_royal_anglosphere_idea"
 		texturefile = "gfx/interface/ideas/royal_anglosphere_idea.dds"
 	}
-
 	spriteType = {
 		name = "GFX_anglosphere_event"
 		texturefile = "gfx/event_pictures/anglosphere_event.dds"
+	}
+# Enviromentalists
+	spriteType = {
+		name = "GFX_idea_pog_enviromentalists"
+		texturefile = "gfx/interface/ideas/enviromentalists_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pog_enviromentalists"
+		texturefile = "gfx/interface/ideas/enviromentalists_faction.png"
 	}
 }

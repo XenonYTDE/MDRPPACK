@@ -9,6 +9,8 @@ ideas = {
             available = {
 
             }
+
+            cost = 150
             
             level = 3
 
@@ -111,6 +113,8 @@ ideas = {
         }
 
         navy_dominant = {
+
+            cost = 150
 
             available = {
                 num_of_naval_factories > 0

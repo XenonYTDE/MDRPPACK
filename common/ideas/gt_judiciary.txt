@@ -7,9 +7,6 @@ ideas = {
         Independent = {
 
             available = {
-                NOT = {
-                    has_idea = pog_rentier_state
-                }
                 OR = {
                     has_idea = prime_minister
                     has_idea = president 

@@ -370,6 +370,7 @@ decision_category_internal_factions = {
 			}
 		}
 	}
+
 	cut_taxes_industry_decision = {
 		icon = GFX_decisions_tax_down_button
 		visible = {
@@ -392,12 +393,11 @@ decision_category_internal_factions = {
 			change_maritime_industry_opinion = yes
 			change_industrial_conglomerates_opinion = yes
 			change_fossil_fuel_industry_opinion = yes
+			set_temp_variable = { temp_opinion = -5 } # DO NOT MERGE FROM BASE MD
+			change_pog_enviromentalists_opinion = yes # DO NOT MERGE FROM BASE MD
 		}
 		modifier = {
 			corporate_tax_income_multiplier_modifier = -0.05
-			dockyard_income_tax_modifier = -0.10
-			military_industry_tax_modifier = -0.10
-			civilian_industry_tax_modifier = -0.10
 		}
 	}
 	raise_wages_small_medium_business_owners_decision = {
@@ -408,16 +408,40 @@ decision_category_internal_factions = {
 		days_remove = 120
 		days_re_enable = 90
 		cost = 100
+
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: decision remove raise_wages_small_medium_business_owners_decision"
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
+			change_communist_cadres_opinion = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_small_medium_business_owners_opinion = yes
 			change_the_bazaar_opinion = yes
 			change_the_donju_opinion = yes
 			change_chaebols_opinion = yes
 			change_industrial_conglomerates_opinion = yes
+		}
+	}
+	green_energy_subsidies_decision = { # DO NOT MERGE FROM BASE MD
+		icon = GFX_decisions_wages_up_button
+		visible = {
+			has_idea = pog_enviromentalists
+		}
+		days_remove = 90
+		days_re_enable = 90
+		cost = 150
+
+		modifier = {
+			production_speed_synthetic_refinery_factor = 0.10
+			oil_export_multiplier_modifier = -0.05
+			fuel_gain_factor = -0.05
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision remove green_energy_subsidies_decision"
+			set_temp_variable = { temp_opinion = -8 }
+			change_fossil_fuel_industry_opinion = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_pog_enviromentalists_opinion = yes
 		}
 	}
 }

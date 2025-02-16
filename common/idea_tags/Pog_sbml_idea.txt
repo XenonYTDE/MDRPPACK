@@ -4,6 +4,7 @@ idea_categories = {
 		slot = gt_head_of_state
 		slot = gt_judiciary
 		slot = gt_government_form
+		slot = religion
 		
 		ledger = civilian
 		
@@ -49,7 +50,7 @@ idea_categories = {
 
 		ledger = civilian
 		
-		cost = 80
+		cost = 100
 		removal_cost = -1
 	}
 
@@ -63,7 +64,7 @@ idea_categories = {
 
 		ledger = civilian
 		
-		cost = 80
+		cost = 100
 		removal_cost = -1
 	}
 

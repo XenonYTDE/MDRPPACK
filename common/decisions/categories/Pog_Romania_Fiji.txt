@@ -1,0 +1,13 @@
+romania_fiji_category = {
+    icon = generic_political_actions
+    visible = {
+        OR = {
+            original_tag = FIJ
+            original_tag = ROM
+        }
+        AND = {
+            FIJ = { has_government = nationalist }
+            ROM = { has_government = nationalist }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+enthusiastic_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion > 79 }
+}
+positive_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion < 80 }
+	check_variable = { pog_enviromentalists_opinion > 59 }
+}
+indifferent_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion < 61 }
+	check_variable = { pog_enviromentalists_opinion > 39 }
+}
+negative_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion < 40 }
+	check_variable = { pog_enviromentalists_opinion > 19 }
+}
+hostile_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion < 20 }
+}
+non_indifferent_pog_enviromentalists = {
+	check_variable = { pog_enviromentalists_opinion > 61 }
+	check_variable = { pog_enviromentalists_opinion < 39 }
+}

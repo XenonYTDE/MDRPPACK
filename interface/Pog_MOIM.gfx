@@ -1,0 +1,567 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_MOIM_background"
+		textureFile = "gfx/interface/moim/moim_background.dds"
+	}
+	spriteType = { # dev version
+		name = "GFX_MOIM_background2"
+		textureFile = "gfx/interface/moim/moim_background2.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_open_button"
+		textureFile = "gfx/interface/moim/moim_open_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_main_overlay"
+		textureFile = "gfx/interface/moim/moim_main_overlay.dds"
+	}
+	# Department Ideas
+	spriteType = {
+		name = "GFX_MOIM_doir_dynmod"
+		textureFile = "gfx/interface/moim/moim_doir_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dop_dynmod"
+		textureFile = "gfx/interface/moim/moim_dop_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dom_dynmod"
+		textureFile = "gfx/interface/moim/moim_dom_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_dynmod"
+		textureFile = "gfx/interface/moim/moim_dorad_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_completed"
+		textureFile = "gfx/interface/moim/moim_dorad_completed.dds"
+	}
+	# Department Overlays
+	spriteType = {
+		name = "GFX_MOIM_dop_overlay"
+		textureFile = "gfx/interface/moim/moim_dop_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_doir_overlay"
+		textureFile = "gfx/interface/moim/moim_doir_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dom_overlay"
+		textureFile = "gfx/interface/moim/moim_dom_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_overlay"
+		textureFile = "gfx/interface/moim/moim_dorad_overlay.dds"
+	}
+	# Department Mains
+	spriteType = {
+		name = "GFX_MOIM_dop_main"
+		textureFile = "gfx/interface/moim/moim_dop_main.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_doir_main"
+		textureFile = "gfx/interface/moim/moim_doir_main.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dom_main"
+		textureFile = "gfx/interface/moim/moim_dom_main.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_main"
+		textureFile = "gfx/interface/moim/moim_dorad_main.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_unlock_button_75"
+		textureFile = "gfx/interface/moim/moim_unlock_button_75.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_unlock_button_50"
+		textureFile = "gfx/interface/moim/moim_unlock_button_50.dds"
+	}
+	# Button Overlays
+	spriteType = {
+		name = "GFX_MOIM_button_47_overlay"
+		textureFile = "gfx/interface/moim/moim_button_47_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_button_55_overlay"
+		textureFile = "gfx/interface/moim/moim_button_55_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_button_75_overlay"
+		textureFile = "gfx/interface/moim/moim_button_75_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dop_plus_button_overlay"
+		textureFile = "gfx/interface/moim/moim_button_plus_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dop_minus_button_overlay"
+		textureFile = "gfx/interface/moim/moim_button_minus_overlay.dds"
+	}
+	# Department of Internal Resources
+	spriteType = {
+		name = "GFX_MOIM_pp_button"
+		textureFile = "gfx/interface/moim/moim_pp_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_cp_button"
+		textureFile = "gfx/interface/moim/moim_cp_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_xp_button"
+		textureFile = "gfx/interface/moim/moim_xp_button.dds"
+	}
+	# Department of Politics
+	spriteType = {
+		name = "GFX_MOIM_dop_plus_button"
+		textureFile = "gfx/interface/moim/moim_dop_plus_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dop_minus_button"
+		textureFile = "gfx/interface/moim/moim_dop_minus_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_emerging_icon"
+		textureFile = "gfx/interface/moim/moim_boost_emerging.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_western_icon"
+		textureFile = "gfx/interface/moim/moim_boost_western.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_nonaligned_icon"
+		textureFile = "gfx/interface/moim/moim_boost_nonaligned.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_nationalist_icon"
+		textureFile = "gfx/interface/moim/moim_boost_nationalist.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_boost_salafist_icon"
+		textureFile = "gfx/interface/moim/moim_boost_salafist.dds"
+	}
+	# Department of Military
+	spriteType = {
+		name = "GFX_MOIM_army_atk"
+		textureFile = "gfx/interface/moim/moim_army_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_army_def"
+		textureFile = "gfx/interface/moim/moim_army_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_army_spd"
+		textureFile = "gfx/interface/moim/moim_army_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_atk"
+		textureFile = "gfx/interface/moim/moim_navy_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_def"
+		textureFile = "gfx/interface/moim/moim_navy_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_navy_spd"
+		textureFile = "gfx/interface/moim/moim_navy_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_atk"
+		textureFile = "gfx/interface/moim/moim_air_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_def"
+		textureFile = "gfx/interface/moim/moim_air_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_air_spd"
+		textureFile = "gfx/interface/moim/moim_air_speed.dds"
+	}
+	# Department of Research & Development
+	spriteType = {
+		name = "GFX_MOIM_dorad_research"
+		textureFile = "gfx/interface/moim/moim_dorad_research.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_construction"
+		textureFile = "gfx/interface/moim/moim_dorad_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_inf_util"
+		textureFile = "gfx/interface/moim/moim_dorad_inf_util.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_armor"
+		textureFile = "gfx/interface/moim/moim_dorad_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_artillery"
+		textureFile = "gfx/interface/moim/moim_dorad_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_aa_at"
+		textureFile = "gfx/interface/moim/moim_dorad_aa_at.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_heli"
+		textureFile = "gfx/interface/moim/moim_dorad_heli.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_airframes"
+		textureFile = "gfx/interface/moim/moim_dorad_airframes.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_air_eqp"
+		textureFile = "gfx/interface/moim/moim_dorad_air_eqp.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_surface_ship_sub"
+		textureFile = "gfx/interface/moim/moim_dorad_surface_ship_sub.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_naval_misc"
+		textureFile = "gfx/interface/moim/moim_dorad_naval_misc.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_ai_comp_internet"
+		textureFile = "gfx/interface/moim/moim_dorad_ai_comp_internet.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_infr_constr_agri"
+		textureFile = "gfx/interface/moim/moim_dorad_infr_constr_agri.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_nfibers_3d_genes"
+		textureFile = "gfx/interface/moim/moim_dorad_nfibers_3d_genes.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_powerplants"
+		textureFile = "gfx/interface/moim/moim_dorad_powerplants.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_satellites"
+		textureFile = "gfx/interface/moim/moim_dorad_satellites.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_dorad_missiles"
+		textureFile = "gfx/interface/moim/moim_dorad_missiles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_inf_util_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_inf_util_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_inf_util_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_inf_util_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_inf_util_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_armor_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_armor_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_armor_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_armor_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_armor_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_artillery_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_artillery_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_artillery_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_artillery_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_artillery_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_aa_at_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_aa_at_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_aa_at_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_aa_at_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_aa_at_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_heli_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_heli_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_heli_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_heli_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_heli_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_airframes_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_airframes_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_airframes_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_airframes_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_airframes_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air_eqp_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air_eqp_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air_eqp_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air_eqp_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air_eqp_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ship_hulls_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ship_hulls_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ship_hulls_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ship_hulls_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ship_hulls_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_naval_misc_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_naval_misc_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_naval_misc_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_naval_misc_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_naval_misc_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ai_comp_internet_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ai_comp_internet_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ai_comp_internet_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ai_comp_internet_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_ai_comp_internet_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_infr_constr_agri_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_infr_constr_agri_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_infr_constr_agri_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_infr_constr_agri_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_infr_constr_agri_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_nfibers_3d_genes_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_nfibers_3d_genes_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_nfibers_3d_genes_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_nfibers_3d_genes_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_nfibers_3d_genes_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_powerplants_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_powerplants_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_powerplants_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_powerplants_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_powerplants_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_satellites_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_satellites_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_satellites_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_satellites_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_satellites_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_missiles_1"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_missiles_2"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_missiles_3"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_missiles_4"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_missiles_5"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_army"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_navy"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_air"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_moim_dorad_industry"
+		textureFile = "gfx/interface/moim/moim_research_idea.dds"
+	}
+}

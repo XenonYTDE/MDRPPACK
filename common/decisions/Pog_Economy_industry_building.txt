@@ -32,6 +32,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -10
 		}
 
 		remove_effect = {
@@ -70,7 +71,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		
 		}		
@@ -105,6 +106,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes			
+			add_political_power = -20
 		}
 
 		remove_effect = {
@@ -144,7 +146,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -178,6 +180,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -20
 		}
 
 		remove_effect = {
@@ -217,7 +220,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}	
@@ -252,6 +255,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -40
 		}
 
 		remove_effect = {
@@ -292,7 +296,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -327,6 +331,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -20
 		}
 
 		remove_effect = {
@@ -428,7 +433,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -464,6 +469,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 		remove_effect = {
@@ -503,7 +509,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -538,6 +544,7 @@ Build_industry_building = {
 			add_to_temp_variable = { money_amount = -0.1 }
 			set_temp_variable = { treasury_change = money_amount }
 			modify_treasury_effect = yes
+			add_political_power = -50
 		}
 
 		remove_effect = {
@@ -577,7 +584,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}		
 	}
@@ -611,7 +618,8 @@ Build_industry_building = {
 				multiply_temp_variable = { money_amount = 1 }
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
-				modify_treasury_effect = yes			
+				modify_treasury_effect = yes
+				add_political_power = -25		
 			}
 			if = {
 				limit = {
@@ -624,7 +632,8 @@ Build_industry_building = {
 				multiply_temp_variable = { money_amount = 2 }
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
-				modify_treasury_effect = yes								
+				modify_treasury_effect = yes
+				add_political_power = -30							
 			}
 			if = {
 				limit = {
@@ -637,7 +646,8 @@ Build_industry_building = {
 				multiply_temp_variable = { money_amount = 3 }
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
-				modify_treasury_effect = yes	
+				modify_treasury_effect = yes
+				add_political_power = -35	
 			}
 			if = {
 				limit = {
@@ -651,6 +661,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -40
 			}
 			if = {
 				limit = {
@@ -664,6 +675,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -45
 			}
 			if = {
 				limit = {
@@ -677,6 +689,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -50
 			}
 			if = {
 				limit = {
@@ -690,6 +703,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -55
 			}
 			if = {
 				limit = {
@@ -703,6 +717,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -60
 			}
 			if = {
 				limit = {
@@ -716,6 +731,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -65
 			}
 			if = {
 				limit = {
@@ -728,6 +744,7 @@ Build_industry_building = {
 				add_to_temp_variable = { money_amount = -0.1 }
 				set_temp_variable = { treasury_change = money_amount }
 				modify_treasury_effect = yes
+				add_political_power = -70
 			}
 		}
 
@@ -961,7 +978,7 @@ Build_industry_building = {
 			base = 1
 
 			modifier = {
-				gdp_debt_ratio_higher_100 = yes
+				gdp_debt_ratio_higher_50 = yes
 				add = -100
 			}		}
 	}	
