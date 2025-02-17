@@ -10,7 +10,7 @@ ideas = {
 			}
 			on_remove = {
 				log = "[GetDateText]: [ROOT.GetName]: remove idea TIC_member"
-				remove_to_array = { global.TIC_member = THIS }
+				remove_from_array = { global.TIC_member = THIS }
 			}
 
 			modifier = {
@@ -24,68 +24,244 @@ ideas = {
 			}
 		}
 
-		TIC_council = {
+		TIC_office_1_idea = {
 			picture = TIC_council
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_1 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_1 = EUU.id }
+			}
 		}
 
-		TIC_parliament = {
+		TIC_office_2_idea = {
 			picture = TIC_parliament
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_2 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_2 = EUU.id }
+			}
 		}
 
-		TIC_commission = {
+		TIC_office_3_idea = {
 			picture = TIC_commission
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_3 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_3 = EUU.id }
+			}
 		}
 
-		TIC_bank = {
+		TIC_office_4_idea = {
 			picture = TIC_bank
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_4 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_4 = EUU.id }
+			}
 		}
 
-		TIC_ecofin = {
+		TIC_office_5_idea = {
 			picture = TIC_ecofin
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_5 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_5 = EUU.id }
+			}
 		}
 
-		TIC_eneinf = {
+		TIC_office_6_idea = {
 			picture = TIC_eneinf
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_6 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_6 = EUU.id }
+			}
 		}
 
-		TIC_restec = {
+		TIC_office_7_idea = {
 			picture = TIC_restec
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_7 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_7 = EUU.id }
+			}
 		}
 
-		TIC_heawel = {
+		TIC_office_8_idea = {
 			picture = TIC_heawel
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_8 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_8 = EUU.id }
+			}
 		}
 
-		TIC_space = {
+		TIC_office_9_idea = {
 			picture = TIC_space
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_9 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_9 = EUU.id }
+			}
 		}
 
-		TIC_frontex = {
+		TIC_office_10_idea = {
 			picture = TIC_frontex
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_10 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_10 = EUU.id }
+			}
 		}
 
-		TIC_court = {
+		TIC_office_11_idea = {
 			picture = TIC_court
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_11 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_11 = EUU.id }
+			}
 		}
 
-		TIC_isia = {
+		TIC_office_12_idea = {
 			picture = TIC_isia
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_12 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_12 = EUU.id }
+			}
 		}
 
-		TIC_milcom = {
+		TIC_office_13_idea = {
 			picture = TIC_milcom
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_13 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_13 = EUU.id }
+			}
 		}
 
-		TIC_secarmy = {
+		TIC_office_14_idea = {
 			picture = TIC_secarmy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_14 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_14 = EUU.id }
+			}
 		}
 
-		TIC_secairforce = {
+		TIC_office_15_idea = {
 			picture = TIC_secairforce
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_15 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_15 = EUU.id }
+			}
 		}
 
-		TIC_navy = {
-			picture = TIC_navy
+		TIC_office_16_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { set_variable = { global.TIC_office_16 = ROOT.id } }
+			on_remove = {
+				set_variable = { global.TIC_office_16 = EUU.id }
+			}
 		}
 	}
 }

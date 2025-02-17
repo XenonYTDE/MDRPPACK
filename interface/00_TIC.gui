@@ -633,6 +633,58 @@ guiTypes = {
 				pdx_tooltip_delayed = "TIC_office_16_full_tt"
 			}
 		}
+
+		containerWindowType = {
+			name = TIC_info_tab
+			position = { x = 0 y = 0 }
+
+			instantTextBoxType = {
+				name = "TIC_info_country"
+				position = { x = 50 y = 145 }
+				font = "hoi_16mbs"
+				maxWidth = 110
+				maxHeight = 20
+				format = center
+				text = "TIC_info_country_text"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_population"
+				position = { x = 170 y = 145 }
+				font = "hoi_16mbs"
+				maxWidth = 110
+				maxHeight = 20
+				format = center
+				text = "TIC_info_population_text"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_ratio"
+				position = { x = 290 y = 145 }
+				font = "hoi_16mbs"
+				maxWidth = 110
+				maxHeight = 20
+				format = center
+				text = "TIC_info_ratio_text"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_gdp"
+				position = { x = 410 y = 145 }
+				font = "hoi_16mbs"
+				maxWidth = 110
+				maxHeight = 20
+				format = center
+				text = "TIC_info_gdp_text"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_debt"
+				position = { x = 530 y = 145 }
+				font = "hoi_16mbs"
+				maxWidth = 110
+				maxHeight = 20
+				format = center
+				text = "TIC_info_debt_text"
+			}
+
+		}
 		
 	}
 }

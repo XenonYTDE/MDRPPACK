@@ -13,12 +13,12 @@
  TIC_upper_button_5_title: "Budget"
  TIC_upper_button_6_title: "Legislations"
 
- TIC_offices_tab_desc: "The Offices of §OThe Intercontinental Confederacy§! that can be held by member states."
- TIC_info_tab_desc: "General member states' information of §OThe Intercontinental Confederacy§!"
- TIC_parliament_tab_desc: "The first legislative body of §OThe Intercontinental Confederacy§!"
- TIC_council_tab_desc: "The second legislative body of §OThe Intercontinental Confederacy§!"
- TIC_budget_tab_desc: "The financial body of §OThe Intercontinental Confederacy§!"
- TIC_legislations_tab_desc: "Legislations enforced in §OThe Intercontinental Confederacy§!"
+ TIC_offices_tab_desc: "The Offices of §OThe Intercontinental Confederation§! that can be held by member states."
+ TIC_info_tab_desc: "General member states' information of §OThe Intercontinental Confederation§!"
+ TIC_parliament_tab_desc: "The first legislative body of §OThe Intercontinental Confederation§!"
+ TIC_council_tab_desc: "The second legislative body of §OThe Intercontinental Confederation§!"
+ TIC_budget_tab_desc: "The financial body of §OThe Intercontinental Confederation§!"
+ TIC_legislations_tab_desc: "Legislations enforced in §OThe Intercontinental Confederation§!"
 
 # Office tab
  TIC_office_1_text: "President of the Council"

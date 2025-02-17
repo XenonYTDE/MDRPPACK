@@ -16,7 +16,7 @@ scripted_gui = {
 
 		effects = {
 			TIC_open_the_gui_click = {
-				TIC_screen_selection = yes
+				set_country_flag = TIC_offices_tab_open
 				if = { limit = { NOT = { has_country_flag = new_TIC_open  } }
 					set_country_flag = new_TIC_open
 				}
@@ -24,13 +24,6 @@ scripted_gui = {
 					clr_country_flag = new_TIC_open
 				}
 				update_TIC_dirty_variable = yes
-			}
-		}
-
-		# Bums the Missile GUI one for now
-		properties = {
-			TIC_open_the_gui = {
-				x = global.var_missiles_button_x
 			}
 		}
 	}
@@ -108,6 +101,9 @@ scripted_gui = {
 			TIC_office_1_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_1_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 2
 			TIC_office_2_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -117,6 +113,9 @@ scripted_gui = {
 			}
 			TIC_office_2_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_2_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 3
 			TIC_office_3_flag_visible = {
@@ -128,6 +127,9 @@ scripted_gui = {
 			TIC_office_3_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_3_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 4
 			TIC_office_4_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -137,6 +139,9 @@ scripted_gui = {
 			}
 			TIC_office_4_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_4_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 5
 			TIC_office_5_flag_visible = {
@@ -148,6 +153,9 @@ scripted_gui = {
 			TIC_office_5_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_5_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 6
 			TIC_office_6_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -157,6 +165,9 @@ scripted_gui = {
 			}
 			TIC_office_6_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_6_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 7
 			TIC_office_7_flag_visible = {
@@ -168,6 +179,9 @@ scripted_gui = {
 			TIC_office_7_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_7_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 8
 			TIC_office_8_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -177,6 +191,9 @@ scripted_gui = {
 			}
 			TIC_office_8_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_8_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 9
 			TIC_office_9_flag_visible = {
@@ -188,6 +205,9 @@ scripted_gui = {
 			TIC_office_9_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_9_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 10
 			TIC_office_10_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -197,6 +217,9 @@ scripted_gui = {
 			}
 			TIC_office_10_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_10_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 11
 			TIC_office_11_flag_visible = {
@@ -208,6 +231,9 @@ scripted_gui = {
 			TIC_office_11_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_11_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 12
 			TIC_office_12_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -217,6 +243,9 @@ scripted_gui = {
 			}
 			TIC_office_12_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_12_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 13
 			TIC_office_13_flag_visible = {
@@ -228,6 +257,9 @@ scripted_gui = {
 			TIC_office_13_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_13_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 14
 			TIC_office_14_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -237,6 +269,9 @@ scripted_gui = {
 			}
 			TIC_office_14_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_14_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 			# Office 15
 			TIC_office_15_flag_visible = {
@@ -248,6 +283,9 @@ scripted_gui = {
 			TIC_office_15_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
 			}
+			TIC_office_15_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+			}
 			# Office 16
 			TIC_office_16_flag_visible = {
 				TIC_offices_tab_open_trigger =  yes
@@ -257,6 +295,9 @@ scripted_gui = {
 			}
 			TIC_office_16_text_visible = {
 				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_16_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
 			}
 
 		}
@@ -305,6 +346,7 @@ scripted_gui = {
 					idea = TIC_office_1_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.101
@@ -316,6 +358,7 @@ scripted_gui = {
 					idea = TIC_office_2_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.102
@@ -327,6 +370,7 @@ scripted_gui = {
 					idea = TIC_office_3_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.103
@@ -338,6 +382,7 @@ scripted_gui = {
 					idea = TIC_office_4_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.104
@@ -349,6 +394,7 @@ scripted_gui = {
 					idea = TIC_office_5_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.105
@@ -360,6 +406,7 @@ scripted_gui = {
 					idea = TIC_office_6_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.106
@@ -371,6 +418,7 @@ scripted_gui = {
 					idea = TIC_office_7_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.107
@@ -382,6 +430,7 @@ scripted_gui = {
 					idea = TIC_office_8_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.108
@@ -393,6 +442,7 @@ scripted_gui = {
 					idea = TIC_office_9_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.109
@@ -404,6 +454,7 @@ scripted_gui = {
 					idea = TIC_office_10_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.110
@@ -415,6 +466,7 @@ scripted_gui = {
 					idea = TIC_office_11_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.111
@@ -426,6 +478,7 @@ scripted_gui = {
 					idea = TIC_office_12_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.112
@@ -437,6 +490,7 @@ scripted_gui = {
 					idea = TIC_office_13_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.113
@@ -448,6 +502,7 @@ scripted_gui = {
 					idea = TIC_office_14_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.114
@@ -459,6 +514,7 @@ scripted_gui = {
 					idea = TIC_office_15_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.115
@@ -470,6 +526,7 @@ scripted_gui = {
 					idea = TIC_office_16_idea
 					days = 1825
 				}
+				set_country_flag = TIC_holding_office
 				for_each_scope_loop = {
 					array = global.TIC_member
 					news_event = TIC_news.116

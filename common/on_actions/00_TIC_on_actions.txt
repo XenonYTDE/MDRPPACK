@@ -1,0 +1,22 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { global.TIC_office_1 = C01.id }
+			set_variable = { global.TIC_office_2 = C01.id }
+			set_variable = { global.TIC_office_3 = C01.id }
+			set_variable = { global.TIC_office_4 = C01.id }
+			set_variable = { global.TIC_office_5 = C01.id }
+			set_variable = { global.TIC_office_6 = C01.id }
+			set_variable = { global.TIC_office_7 = C01.id }
+			set_variable = { global.TIC_office_8 = C01.id }
+			set_variable = { global.TIC_office_9 = C01.id }
+			set_variable = { global.TIC_office_10 = C01.id }
+			set_variable = { global.TIC_office_11 = C01.id }
+			set_variable = { global.TIC_office_12 = C01.id }
+			set_variable = { global.TIC_office_13 = C01.id }
+			set_variable = { global.TIC_office_14 = C01.id }
+			set_variable = { global.TIC_office_15 = C01.id }
+			set_variable = { global.TIC_office_16 = C01.id }
+		}
+	}
+}
