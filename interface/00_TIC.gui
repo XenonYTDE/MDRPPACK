@@ -93,13 +93,13 @@ guiTypes = {
 			pdx_tooltip = "TIC_council_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_5" # budget
+			name = "TIC_upper_button_5" # bank
 			position = { x = 579 y = 82 }
 			spriteType = "GFX_tic_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_5_title"
 			format = center
-			pdx_tooltip = "TIC_budget_tab_desc"
+			pdx_tooltip = "TIC_bank_tab_desc"
 		}
 		buttonType = {
 			name = "TIC_upper_button_6" # legislations
@@ -640,51 +640,155 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_info_country"
-				position = { x = 50 y = 145 }
-				font = "hoi_16mbs"
-				maxWidth = 110
+				position = { x = 70 y = 140 }
+				font = "hoi_18mbs"
+				maxWidth = 230
 				maxHeight = 20
 				format = center
 				text = "TIC_info_country_text"
 			}
 			instantTextBoxType = {
 				name = "TIC_info_population"
-				position = { x = 170 y = 145 }
-				font = "hoi_16mbs"
-				maxWidth = 110
+				position = { x = 405 y = 140 }
+				font = "hoi_18mbs"
+				maxWidth = 100
 				maxHeight = 20
 				format = center
 				text = "TIC_info_population_text"
 			}
 			instantTextBoxType = {
 				name = "TIC_info_ratio"
-				position = { x = 290 y = 145 }
-				font = "hoi_16mbs"
-				maxWidth = 110
+				position = { x = 485 y = 140 }
+				font = "hoi_18mbs"
+				maxWidth = 100
 				maxHeight = 20
 				format = center
 				text = "TIC_info_ratio_text"
 			}
 			instantTextBoxType = {
-				name = "TIC_info_gdp"
-				position = { x = 410 y = 145 }
-				font = "hoi_16mbs"
-				maxWidth = 110
+				name = "TIC_info_unity"
+				position = { x = 565 y = 140 }
+				font = "hoi_18mbs"
+				maxWidth = 100
 				maxHeight = 20
 				format = center
-				text = "TIC_info_gdp_text"
+				text = "TIC_info_unity_text"
 			}
+
 			instantTextBoxType = {
-				name = "TIC_info_debt"
-				position = { x = 530 y = 145 }
-				font = "hoi_16mbs"
-				maxWidth = 110
+				name = "TIC_info_member_count"
+				position = { x = 700 y = 160 }
+
+				font = "hoi_20mbs"
+				text = "[?global.TIC_member_count|0Y] Members"
+				maxWidth = 120
 				maxHeight = 20
 				format = center
-				text = "TIC_info_debt_text"
+				fixedsize = yes
+
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "TIC_info_poptotal"
+				position = { x = 700 y = 210 }
+
+				font = "hoi_20mbs"
+				text = "[?global.TIC_poptotal_display|Y]M"
+				maxWidth = 120
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+
+				Orientation = "UPPER_LEFT"
 			}
 
 		}
 		
+	}
+
+	containerWindowType = {
+		name = "TIC_info_list_screen"
+		position = { x = 45 y = 150 }
+		size = { width = 630 height = 500 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_info_list_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 300 height = 25 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_info_dynlist"
+
+		instantTextBoxType = {
+			name = "TIC_info_dynlist_country"
+			position = { x = 0 y = 0 }
+
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "[THIS.GetNameWithFlag]"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = yes
+
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "TIC_info_dynlist_population"
+			position = { x = 362 y = 0 }
+
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "[?THIS.population_total_m|C2]M"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "TIC_info_dynlist_popratio"
+			position = { x = 458 y = 0 }
+
+			font = "hoi_18mbs"
+			text = "[?THIS.TIC_popratio|C3]%"
+			maxWidth = 70
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "TIC_info_dynlist_unity"
+			position = { x = 537 y = 0 }
+
+			font = "hoi_18mbs"
+			text = "[?THIS.TIC_unity|%R]"
+			maxWidth = 70
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+
+			Orientation = "UPPER_LEFT"
+		}
+
 	}
 }

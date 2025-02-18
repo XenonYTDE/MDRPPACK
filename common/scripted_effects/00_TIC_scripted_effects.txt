@@ -16,7 +16,40 @@ TIC_tab_selection = {
 	clr_country_flag = TIC_info_tab_open
 	clr_country_flag = TIC_parliament_tab_open
 	clr_country_flag = TIC_council_tab_open
-	clr_country_flag = TIC_budget_tab_open
+	clr_country_flag = TIC_bank_tab_open
 	clr_country_flag = TIC_legislations_tab_open
 	update_TIC_dirty_variable = yes
+}
+
+TIC_var_update = {
+
+	set_variable = { var = global.TIC_member_count value = 0 }
+		for_each_scope_loop = {
+			array = global.TIC_member
+			add_to_variable = { global.TIC_member_count = 1 }
+		}
+	
+	set_variable = { var = global.TIC_poptotal value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		set_temp_variable = { converted_manpower = max_manpower_k }
+		divide_temp_variable = { converted_manpower = 100 }
+		set_variable = { TIC_member_pop = converted_manpower }
+		divide_variable = { TIC_member_pop = 10 }
+		add_to_variable = { global.TIC_poptotal = converted_manpower }
+	}
+	set_variable = { var = global.TIC_poptotal_display value = global.TIC_poptotal }
+	divide_variable = { global.TIC_poptotal_display = 10 }
+
+	for_each_scope_loop = {
+		array = global.TIC_member
+		set_variable = { THIS.TIC_popratio = 0 }
+		add_to_variable = { THIS.TIC_popratio = THIS.max_manpower_k }
+		divide_variable = { THIS.TIC_popratio = global.TIC_poptotal }
+	}
+	#set_variable = { var = THIS.TIC_popratio_display value = THIS.TIC_popratio }
+	#multiply_variable = { THIS.TIC_popratio_display = 100 }
+
+	update_TIC_dirty_variable = yes
+
 }

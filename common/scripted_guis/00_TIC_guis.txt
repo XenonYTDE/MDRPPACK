@@ -23,7 +23,9 @@ scripted_gui = {
 				else = {
 					clr_country_flag = new_TIC_open
 				}
+				TIC_tab_selection = yes
 				update_TIC_dirty_variable = yes
+				TIC_var_update = yes
 			}
 		}
 	}
@@ -84,7 +86,7 @@ scripted_gui = {
 					has_country_flag = TIC_info_tab_open
 					has_country_flag = TIC_parliament_tab_open
 					has_country_flag = TIC_council_tab_open
-					has_country_flag = TIC_budget_tab_open
+					has_country_flag = TIC_bank_tab_open
 					has_country_flag = TIC_legislations_tab_open
 				}
 			}
@@ -300,6 +302,37 @@ scripted_gui = {
 				NOT = { has_country_flag = TIC_holding_office }
 			}
 
+		# TIC Info
+
+			TIC_info_country_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_population_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_ratio_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_unity_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_member_count_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_poptotal_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_list_screen_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			
+
+		# TIC Parliament
+
+		# TIC Council
+
+		# TIC Legislations
+
 		}
 
 		effects = {
@@ -329,10 +362,10 @@ scripted_gui = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_council_tab_open
 			}
-			# Open Budget
+			# Open Bank
 			TIC_upper_button_5_click = {
 				TIC_tab_selection = yes
-				set_country_flag = TIC_budget_tab_open
+				set_country_flag = TIC_bank_tab_open
 			}
 			# Open Legislations
 			TIC_upper_button_6_click = {
@@ -532,6 +565,26 @@ scripted_gui = {
 					news_event = TIC_news.116
 				}
 				update_TIC_dirty_variable = yes
+			}
+		}
+	}
+
+	TIC_info_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = "intercontinental_confederation_gui"
+		window_name = "TIC_info_list_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			has_country_flag = TIC_info_tab_open
+			has_country_flag = new_TIC_open
+		}
+
+		dynamic_lists = {
+			TIC_info_list_gridbox = {
+				array = global.TIC_member
+				entry_container = "TIC_info_dynlist"
+				change_scope = yes
 			}
 		}
 	}

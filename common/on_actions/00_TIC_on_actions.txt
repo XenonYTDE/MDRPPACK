@@ -1,22 +1,33 @@
 on_actions = {
 	on_startup = {
+
 		effect = {
-			set_variable = { global.TIC_office_1 = C01.id }
-			set_variable = { global.TIC_office_2 = C01.id }
-			set_variable = { global.TIC_office_3 = C01.id }
-			set_variable = { global.TIC_office_4 = C01.id }
-			set_variable = { global.TIC_office_5 = C01.id }
-			set_variable = { global.TIC_office_6 = C01.id }
-			set_variable = { global.TIC_office_7 = C01.id }
-			set_variable = { global.TIC_office_8 = C01.id }
-			set_variable = { global.TIC_office_9 = C01.id }
-			set_variable = { global.TIC_office_10 = C01.id }
-			set_variable = { global.TIC_office_11 = C01.id }
-			set_variable = { global.TIC_office_12 = C01.id }
-			set_variable = { global.TIC_office_13 = C01.id }
-			set_variable = { global.TIC_office_14 = C01.id }
-			set_variable = { global.TIC_office_15 = C01.id }
-			set_variable = { global.TIC_office_16 = C01.id }
+			set_variable = { global.TIC_office_1 = ZZZ.id }
+			set_variable = { global.TIC_office_2 = ZZZ.id }
+			set_variable = { global.TIC_office_3 = ZZZ.id }
+			set_variable = { global.TIC_office_4 = ZZZ.id }
+			set_variable = { global.TIC_office_5 = ZZZ.id }
+			set_variable = { global.TIC_office_6 = ZZZ.id }
+			set_variable = { global.TIC_office_7 = ZZZ.id }
+			set_variable = { global.TIC_office_8 = ZZZ.id }
+			set_variable = { global.TIC_office_9 = ZZZ.id }
+			set_variable = { global.TIC_office_10 = ZZZ.id }
+			set_variable = { global.TIC_office_11 = ZZZ.id }
+			set_variable = { global.TIC_office_12 = ZZZ.id }
+			set_variable = { global.TIC_office_13 = ZZZ.id }
+			set_variable = { global.TIC_office_14 = ZZZ.id }
+			set_variable = { global.TIC_office_15 = ZZZ.id }
+			set_variable = { global.TIC_office_16 = ZZZ.id }
+
+			every_country = {
+				add_ideas = TIC_member
+			}
+			
+			every_country = {
+				limit = { has_idea = TIC_member }
+				TIC_var_update = yes
+			}
 		}
+
 	}
 }

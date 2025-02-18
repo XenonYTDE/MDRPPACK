@@ -2957,6 +2957,8 @@ on_actions = {
 						target = RYU
 						size = 0.10
 					}
+					set_temp_variable = { debt_change = -2000 }
+					modify_debt_effect = yes
 				}
 				SUD = {
 					release = DAR
@@ -6106,6 +6108,14 @@ on_actions = {
 						modify_treasury_effect = yes
 				}
 				RYU = {
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 611
+					add_state_core = 619
+					transfer_state = 609
+					transfer_state = 610
+					transfer_state = 611
+					transfer_state = 619
 					inherit_technology = JAP
 						set_variable = { civilian_factory_employment_var = 1 }
 						set_variable = { naval_factory_employment_var = 1 }
@@ -6321,9 +6331,7 @@ on_actions = {
 				OPR = {
 					inherit_technology = UKR
 					add_state_core = 695
-					add_state_core = 1086
 					transfer_state = 695
-					transfer_state = 1086
 						set_variable = { civilian_factory_employment_var = 1 }
 						set_variable = { naval_factory_employment_var = 1 }
 						set_variable = { military_factory_employment_var = 1 }
@@ -6578,8 +6586,8 @@ on_actions = {
 				}
 				DRP = {
 					inherit_technology = UKR
-					add_state_core = 1086
-					transfer_state = 1086
+					add_state_core = 1087
+					transfer_state = 1087
 						set_variable = { civilian_factory_employment_var = 1 }
 						set_variable = { naval_factory_employment_var = 1 }
 						set_variable = { military_factory_employment_var = 1 }
@@ -6773,6 +6781,7 @@ on_actions = {
 				FAR = {
 					inherit_technology = SOV
 					add_state_core = 555
+					add_state_core = 617
 					add_state_core = 687
 					add_state_core = 690
 					add_state_core = 691
@@ -6783,6 +6792,7 @@ on_actions = {
 					add_state_core = 1096
 					add_state_core = 1168
 					transfer_state = 555
+					transfer_state = 617
 					transfer_state = 687
 					transfer_state = 690
 					transfer_state = 691
@@ -8825,7 +8835,9 @@ on_actions = {
 				KHA = {
 					inherit_technology = RAJ
 					add_state_core = 563
+					add_state_core = 428
 					transfer_state = 563
+					transfer_state = 428
 						set_variable = { civilian_factory_employment_var = 1 }
 						set_variable = { naval_factory_employment_var = 1 }
 						set_variable = { military_factory_employment_var = 1 }
@@ -8929,6 +8941,13 @@ on_actions = {
 						modify_debt_effect = yes
 						set_temp_variable = { treasury_change = 5 }
 						modify_treasury_effect = yes
+				}
+
+				PAK = {
+					add_state_core = 984
+					add_state_core = 987
+					transfer_state = 984
+					transfer_state = 987
 				}
 
 				############################## END OF INDIVIDUAL TRANSFER ##############################

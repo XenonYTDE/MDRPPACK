@@ -35,7 +35,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_1 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_1 = EUU.id }
+				set_variable = { global.TIC_office_1 = ZZZ.id }
 			}
 		}
 
@@ -50,7 +50,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_2 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_2 = EUU.id }
+				set_variable = { global.TIC_office_2 = ZZZ.id }
 			}
 		}
 
@@ -65,7 +65,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_3 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_3 = EUU.id }
+				set_variable = { global.TIC_office_3 = ZZZ.id }
 			}
 		}
 
@@ -80,7 +80,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_4 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_4 = EUU.id }
+				set_variable = { global.TIC_office_4 = ZZZ.id }
 			}
 		}
 
@@ -95,7 +95,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_5 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_5 = EUU.id }
+				set_variable = { global.TIC_office_5 = ZZZ.id }
 			}
 		}
 
@@ -110,7 +110,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_6 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_6 = EUU.id }
+				set_variable = { global.TIC_office_6 = ZZZ.id }
 			}
 		}
 
@@ -125,7 +125,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_7 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_7 = EUU.id }
+				set_variable = { global.TIC_office_7 = ZZZ.id }
 			}
 		}
 
@@ -140,7 +140,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_8 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_8 = EUU.id }
+				set_variable = { global.TIC_office_8 = ZZZ.id }
 			}
 		}
 
@@ -155,7 +155,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_9 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_9 = EUU.id }
+				set_variable = { global.TIC_office_9 = ZZZ.id }
 			}
 		}
 
@@ -170,7 +170,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_10 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_10 = EUU.id }
+				set_variable = { global.TIC_office_10 = ZZZ.id }
 			}
 		}
 
@@ -185,7 +185,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_11 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_11 = EUU.id }
+				set_variable = { global.TIC_office_11 = ZZZ.id }
 			}
 		}
 
@@ -200,7 +200,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_12 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_12 = EUU.id }
+				set_variable = { global.TIC_office_12 = ZZZ.id }
 			}
 		}
 
@@ -215,7 +215,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_13 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_13 = EUU.id }
+				set_variable = { global.TIC_office_13 = ZZZ.id }
 			}
 		}
 
@@ -230,7 +230,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_14 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_14 = EUU.id }
+				set_variable = { global.TIC_office_14 = ZZZ.id }
 			}
 		}
 
@@ -245,7 +245,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_15 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_15 = EUU.id }
+				set_variable = { global.TIC_office_15 = ZZZ.id }
 			}
 		}
 
@@ -260,7 +260,7 @@ ideas = {
 
 			on_add = { set_variable = { global.TIC_office_16 = ROOT.id } }
 			on_remove = {
-				set_variable = { global.TIC_office_16 = EUU.id }
+				set_variable = { global.TIC_office_16 = ZZZ.id }
 			}
 		}
 	}
