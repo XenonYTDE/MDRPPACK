@@ -16,14 +16,14 @@ scripted_gui = {
 
 		effects = {
 			TIC_open_the_gui_click = {
-				set_country_flag = TIC_offices_tab_open
 				if = { limit = { NOT = { has_country_flag = new_TIC_open  } }
+					TIC_tab_selection = yes
+					set_country_flag = TIC_offices_tab_open
 					set_country_flag = new_TIC_open
 				}
 				else = {
 					clr_country_flag = new_TIC_open
 				}
-				TIC_tab_selection = yes
 				update_TIC_dirty_variable = yes
 				TIC_var_update = yes
 			}
@@ -322,7 +322,34 @@ scripted_gui = {
 			TIC_info_poptotal_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
+			TIC_info_gdp_total_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_gdpc_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_info_factories_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
 			TIC_info_list_screen_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_gdisplay_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_gplus_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_gminus_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_cdisplay_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_cplus_visible = {
+				TIC_info_tab_open_trigger = yes
+			}
+			TIC_unity_cminus_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
 			

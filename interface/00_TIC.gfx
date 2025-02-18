@@ -21,7 +21,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/international_confederation/tic_open_button.dds"
 		legacy_lazy_load = no
 	}
-	
 	spriteType = {
 		name = "GFX_tic_upper_button"
 		texturefile = "gfx/interface/international_confederation/tic_upper_button.dds"
@@ -40,5 +39,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_TIC_member"
 		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_council"
 	}
 }

@@ -20,11 +20,22 @@ on_actions = {
 			set_variable = { global.TIC_office_16 = ZZZ.id }
 
 			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+						is_on_continent = europe
+						is_on_continent = asia
+						}
+					}
+				}
 				add_ideas = TIC_member
 			}
 			
 			every_country = {
 				limit = { has_idea = TIC_member }
+				set_variable = { var = THIS.TIC_c_unity max = 1 }
+				set_variable = { var = THIS.TIC_c_unity min = 0 }
+				set_variable = { THIS.TIC_c_unity = random }
 				TIC_var_update = yes
 			}
 		}

@@ -23,32 +23,68 @@ TIC_tab_selection = {
 
 TIC_var_update = {
 
+	# Member count
 	set_variable = { var = global.TIC_member_count value = 0 }
 		for_each_scope_loop = {
 			array = global.TIC_member
 			add_to_variable = { global.TIC_member_count = 1 }
 		}
-	
+	# Total population
 	set_variable = { var = global.TIC_poptotal value = 0 }
 	for_each_scope_loop = {
 		array = global.TIC_member
 		set_temp_variable = { converted_manpower = max_manpower_k }
-		divide_temp_variable = { converted_manpower = 100 }
-		set_variable = { TIC_member_pop = converted_manpower }
-		divide_variable = { TIC_member_pop = 10 }
+		divide_temp_variable = { converted_manpower = 1000 }
 		add_to_variable = { global.TIC_poptotal = converted_manpower }
 	}
-	set_variable = { var = global.TIC_poptotal_display value = global.TIC_poptotal }
-	divide_variable = { global.TIC_poptotal_display = 10 }
-
+	# Population ratio
 	for_each_scope_loop = {
 		array = global.TIC_member
 		set_variable = { THIS.TIC_popratio = 0 }
 		add_to_variable = { THIS.TIC_popratio = THIS.max_manpower_k }
 		divide_variable = { THIS.TIC_popratio = global.TIC_poptotal }
 	}
-	#set_variable = { var = THIS.TIC_popratio_display value = THIS.TIC_popratio }
-	#multiply_variable = { THIS.TIC_popratio_display = 100 }
+	# Total GDP
+	set_variable = { var = global.TIC_gdptotal value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_gdptotal = THIS.gdp_total }
+	}
+	# Total GDP/C
+	set_variable = { var = global.TIC_gdpc value = 0 }
+	add_to_variable = { global.TIC_gdpc = global.TIC_gdptotal }
+	divide_variable = { global.TIC_gdpc = global.TIC_poptotal }
+	# Total Factories
+	set_variable = { var = global.TIC_factories value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_factories = THIS.num_of_factories }
+	}
+	# Total Civs
+	set_variable = { var = global.TIC_civs value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_civs = THIS.num_of_civilian_factories }
+	}
+	# Total Mils
+	set_variable = { var = global.TIC_mils value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_mils = THIS.num_of_military_factories }
+	}
+	# Total Docks
+	set_variable = { var = global.TIC_docks value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_docks = THIS.num_of_naval_factories }
+	}
+	# Global Unity
+	set_variable = { var = global.TIC_unity value = 0 }
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { global.TIC_unity = THIS.TIC_c_unity }
+	}
+	divide_variable = { global.TIC_unity = global.TIC_member_count }
 
 	update_TIC_dirty_variable = yes
 

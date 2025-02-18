@@ -44,6 +44,30 @@
  TIC_info_ratio_text: "Pop Ratio"
  TIC_info_unity_text: "TIC Unity"
 
+ TIC_info_factores_tt: "Total Civilian Industries: [?global.TIC_civs|Y0]\nTotal Military Industries: [?global.TIC_mils|Y0]\nTotal Naval Yards: [?global.TIC_docks|Y0]"
+
+ raise_global_unity: "§7Raise Global Unity§!"
+ lower_global_unity: "§OLower Global Unity§!"
+ raise_country_unity: "§7Raise Country Unity§!"
+ lower_country_unity: "§OLower Country Unity§!"
+
 # Ideas
  TIC_member: "Confederated State of The Intercontinental Confederation"
+
+ TIC_office_1_idea: "President of the Council"
+ TIC_office_2_idea: "President of the Parliament"
+ TIC_office_3_idea: "President of the Commission"
+ TIC_office_4_idea: "President of the Central Bank"
+ TIC_office_5_idea: "Economy and Finance Minister"
+ TIC_office_6_idea: "Energy and Infrastructure Minister"
+ TIC_office_7_idea: "Research and Technology Minister"
+ TIC_office_8_idea: "Health and Welfare Minister"
+ TIC_office_9_idea: "President of TIC Space Agency"
+ TIC_office_10_idea: "President of Frontex"
+ TIC_office_11_idea: "President of TIC Court"
+ TIC_office_12_idea: "President of the Internal Stability & Interoperability Agency"
+ TIC_office_13_idea: "Military Committee Chairman"
+ TIC_office_14_idea: "Secretary General of TIC Armies"
+ TIC_office_15_idea: "Secretary General of TIC Airforces"
+ TIC_office_16_idea: "Secretary General of TIC Navies"
  

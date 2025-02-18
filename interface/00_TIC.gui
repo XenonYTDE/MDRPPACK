@@ -677,31 +677,124 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_info_member_count"
-				position = { x = 700 y = 160 }
+				position = { x = 690 y = 160 }
 
-				font = "hoi_20mbs"
-				text = "[?global.TIC_member_count|0Y] Members"
-				maxWidth = 120
+				font = "hoi_18mbs"
+				text = "Members: [?global.TIC_member_count|0Y]"
+				maxWidth = 150
 				maxHeight = 20
 				format = center
 				fixedsize = yes
 
 				Orientation = "UPPER_LEFT"
 			}
-			
 			instantTextBoxType = {
 				name = "TIC_info_poptotal"
-				position = { x = 700 y = 210 }
+				position = { x = 690 y = 200 }
 
-				font = "hoi_20mbs"
-				text = "[?global.TIC_poptotal_display|Y]M"
-				maxWidth = 120
+				font = "hoi_18mbs"
+				text = "Population: [?global.TIC_poptotal|Y]M"
+				maxWidth = 150
 				maxHeight = 20
 				format = center
 				fixedsize = yes
 
 				Orientation = "UPPER_LEFT"
 			}
+			instantTextBoxType = {
+				name = "TIC_info_gdp_total"
+				position = { x = 690 y = 240 }
+
+				font = "hoi_18mbs"
+				text = "Total GDP: [?global.TIC_gdptotal|Y]B"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_gdpc"
+				position = { x = 690 y = 280 }
+
+				font = "hoi_18mbs"
+				text = "Total GDP/C: [?global.TIC_gdpc|Y]k"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "TIC_info_factories"
+				position = { x = 690 y = 320 }
+
+				font = "hoi_18mbs"
+				text = "Total Factories: [?global.TIC_factories|Y0]"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = TIC_info_factores_tt
+			}
+
+			instantTextBoxType = {
+				name = "TIC_unity_gdisplay"
+				position = { x = 683 y = 380 }
+				text = "Global Unity: [?global.TIC_unity|0%O]"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "TIC_unity_gplus"
+				position = { x = 695 y = 400 }
+				spriteType = "GFX_tic_upper_button"
+
+				font = "hoi_16mbs"
+				text = raise_global_unity
+				format = center
+			}
+			buttonType = {	
+				name = "TIC_unity_gminus"
+				position = { x = 695 y = 450 }
+				spriteType = "GFX_tic_upper_button"
+
+				font = "hoi_16mbs"
+				text = lower_global_unity
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TIC_unity_cdisplay"
+				position = { x = 693 y = 510 }
+				text = "Country Unity: [?THIS.TIC_c_unity|0%O]"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "TIC_unity_cplus"
+				position = { x = 695 y = 530 }
+				spriteType = "GFX_tic_upper_button"
+
+				font = "hoi_16mbs"
+				text = raise_country_unity
+				format = center
+			}
+			buttonType = {
+				name = "TIC_unity_cminus"
+				position = { x = 695 y = 580 }
+				spriteType = "GFX_tic_upper_button"
+
+				font = "hoi_16mbs"
+				text = lower_country_unity
+				format = center
+			}
+			
 
 		}
 		
@@ -781,7 +874,7 @@ guiTypes = {
 			position = { x = 537 y = 0 }
 
 			font = "hoi_18mbs"
-			text = "[?THIS.TIC_unity|%R]"
+			text = "[?THIS.TIC_c_unity|0%O]"
 			maxWidth = 70
 			maxHeight = 20
 			fixedsize = yes
