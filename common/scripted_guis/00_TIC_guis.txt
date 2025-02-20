@@ -331,9 +331,9 @@ scripted_gui = {
 			TIC_info_factories_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
-			TIC_info_list_screen_visible = {
-				TIC_info_tab_open_trigger = yes
-			}
+		#	TIC_info_list_screen_visible = {
+		#		TIC_info_tab_open_trigger = yes
+		#	}
 			TIC_unity_gdisplay_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
@@ -352,10 +352,195 @@ scripted_gui = {
 			TIC_unity_cminus_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
+
+			TIC_unity_gplus_click_enabled = {
+			#	set_temp_variable = { temp_pp = TIC_unity_pp_cost_limit }
+			#	subtract_from_temp_variable = { temp_pp = 1 }
+				has_political_power > TIC_unity_pp_cost_limit
+				check_variable = { global.TIC_unity < 1 }
+			}
+			TIC_unity_gminus_click_enabled = {
+			#	set_temp_variable = { temp_pp = TIC_unity_pp_cost_limit }
+			#	subtract_from_temp_variable = { temp_pp = 1 }
+				has_political_power > TIC_unity_pp_cost_limit
+				check_variable = { global.TIC_unity > 0 }
+			}
+			TIC_unity_cplus_click_enabled = {
+				has_political_power > 99
+				check_variable = { THIS.TIC_c_unity < 1 }
+			}
+			TIC_unity_cminus_click_enabled = {
+				has_political_power > 99
+				check_variable = { THIS.TIC_c_unity > 0 }
+			}
+			
 			
 
 		# TIC Parliament
+			TIC_parliament_parties_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_0_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_1_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_2_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_3_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_4_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_5_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_6_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_7_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_8_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_9_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_10_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_11_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_12_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_13_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_14_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_15_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_16_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_17_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_18_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_19_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_20_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_21_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_22_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_23_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_0_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_1_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_2_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_3_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_4_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_5_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_6_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_7_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_8_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_9_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_10_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_11_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_12_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_13_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_14_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_15_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_16_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_17_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_18_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_19_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_20_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_21_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_22_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parlparty_23_infl_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
 
+			TIC_total_mp_count_title_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_total_mp_count_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+
+			TIC_laws_list_screen_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_laws_list_gridbox_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_available_law_button_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
 		# TIC Council
 
 		# TIC Legislations
@@ -593,6 +778,53 @@ scripted_gui = {
 				}
 				update_TIC_dirty_variable = yes
 			}
+
+			# TIC Info
+			# Unity
+			TIC_unity_gplus_click = {
+				if = {
+					limit = {
+						has_political_power > TIC_unity_pp_cost_limit
+						check_variable = { global.TIC_unity < 1 }
+					}
+					add_political_power = TIC_unity_pp_cost
+					TIC_g_unity_increase = yes
+					TIC_var_update = yes
+				}
+			}
+			TIC_unity_gminus_click = {
+				if = {
+					limit = {
+						has_political_power > TIC_unity_pp_cost_limit
+						check_variable = { global.TIC_unity > 0 }
+					}
+					add_political_power = TIC_unity_pp_cost
+					TIC_g_unity_decrease = yes
+					TIC_var_update = yes
+				}
+			}
+			TIC_unity_cplus_click = {
+				if = {
+					limit = {
+						has_political_power > 99
+						check_variable = { THIS.TIC_c_unity < 1 }
+					}
+					add_political_power = -100
+					add_to_variable = { THIS.TIC_c_unity = 0.01 }
+					TIC_var_update = yes
+				}
+			}
+			TIC_unity_cminus_click = {
+				if = {
+					limit = {
+						has_political_power > 99
+						check_variable = { THIS.TIC_c_unity > 0 }
+					}
+					add_political_power = -100
+					subtract_from_variable = { THIS.TIC_c_unity = 0.01 }
+					TIC_var_update = yes
+				}
+			}
 		}
 	}
 
@@ -612,6 +844,26 @@ scripted_gui = {
 				array = global.TIC_member
 				entry_container = "TIC_info_dynlist"
 				change_scope = yes
+			}
+		}
+	}
+
+	TIC_laws_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = "intercontinental_confederation_gui"
+		window_name = "TIC_laws_list_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			has_country_flag = TIC_parliament_tab_open
+			has_country_flag = new_TIC_open
+		}
+
+		dynamic_lists = {
+			TIC_laws_list_gridbox = {
+				array = global.TIC_available_laws
+				entry_container = "TIC_available_laws_list"
+
 			}
 		}
 	}

@@ -1,34 +1,42 @@
 spriteTypes = {
 
 	corneredTileSpriteType = {
-		name = "GFX_tic_main_gui_bg"
+		name = "GFX_TIC_main_gui_bg"
 		size = { x = 900 y = 700 }
-		texturefile = "gfx/interface/international_confederation/tic_main_gui_bg.dds"
+		texturefile = "gfx/interface/tic/tic_main_gui_bg.dds"
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
 	corneredTileSpriteType = {
-		name = "GFX_tic_main_gui_bg_logo"
+		name = "GFX_TIC_main_gui_bg_logo"
 		size = { x = 900 y = 700 }
-		texturefile = "gfx/interface/international_confederation/tic_main_gui_bg_logo.dds"
+		texturefile = "gfx/interface/tic/tic_main_gui.dds"
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
 	spriteType = {
-		name = "GFX_tic_open_button"
-		texturefile = "gfx/interface/international_confederation/tic_open_button.dds"
+		name = "GFX_TIC_open_button"
+		texturefile = "gfx/interface/tic/tic_open_button.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_tic_upper_button"
-		texturefile = "gfx/interface/international_confederation/tic_upper_button.dds"
+		name = "GFX_TIC_upper_button"
+		texturefile = "gfx/interface/tic/tic_upper_button.dds"
+	}
+	spriteType = {
+		name = "GFX_TIC_narrow_button"
+		texturefile = "gfx/interface/tic/TIC_narrow_button.dds"
+	}
+	spriteType = {
+		name = "GFX_TIC_narrow2_button"
+		texturefile = "gfx/interface/tic/TIC_narrow2_button.dds"
 	}
 
 	spriteType = {
-		name = "GFX_tic_office_frame"
-		texturefile = "gfx/interface/international_confederation/tic_office_frame.dds"
+		name = "GFX_TIC_office_frame"
+		texturefile = "gfx/interface/tic/tic_office_frame.dds"
 	}
 
 	spriteType = {
@@ -40,7 +48,69 @@ spriteTypes = {
 		name = "GFX_idea_TIC_member"
 		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
 	}
+	# Office Ideas
 	spriteType = {
 		name = "GFX_idea_TIC_council"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_parliament"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_commission"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_bank"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_ecofin"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_eneinf"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_restec"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_heawel"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_space"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_frontex"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_court"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_isia"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_milcom"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_secarmy"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_secair"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIC_secnavy"
+		texturefile = "gfx/interface/ideas/tic_ideas/idea_tic_member.dds"
 	}
 }

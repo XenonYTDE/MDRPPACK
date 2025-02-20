@@ -235,7 +235,7 @@ ideas = {
 		}
 
 		TIC_office_15_idea = {
-			picture = TIC_secairforce
+			picture = TIC_secair
 			allowed = { has_idea = TIC_member }
 			cancel = { NOT = { has_idea = TIC_member } }
 

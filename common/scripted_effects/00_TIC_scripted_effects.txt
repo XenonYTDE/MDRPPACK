@@ -80,12 +80,54 @@ TIC_var_update = {
 	}
 	# Global Unity
 	set_variable = { var = global.TIC_unity value = 0 }
+	set_variable = { var = global.TIC_unity max = 1 }
+	set_variable = { var = global.TIC_unity min = 0 }
+	set_variable = { var = THIS.TIC_c_unity max = 1 }
+	set_variable = { var = THIS.TIC_c_unity min = 0 }
+	clamp_variable = { var = global.TIC_unity min = 0 max = 1}
+	clamp_variable = { var = THIS.TIC_c_unity min = 0 max = 1}
 	for_each_scope_loop = {
 		array = global.TIC_member
 		add_to_variable = { global.TIC_unity = THIS.TIC_c_unity }
 	}
 	divide_variable = { global.TIC_unity = global.TIC_member_count }
+	# G Unity PP Cost
+	set_variable = { var = TIC_unity_pp_cost value = 10 }
+	multiply_variable = { TIC_unity_pp_cost = global.TIC_member_count }
+	set_variable = { var = TIC_unity_pp_cost_limit value = TIC_unity_pp_cost }
+	add_to_variable = { TIC_pp_cost_limit = 1 }
+	multiply_variable = { TIC_unity_pp_cost = -1 }
 
 	update_TIC_dirty_variable = yes
 
+}
+
+TIC_g_unity_increase = {
+
+	for_each_scope_loop = {
+		array = global.TIC_member
+		add_to_variable = { THIS.TIC_c_unity = 0.01 }
+		clamp_variable = { var = global.TIC_unity min = 0 max = 1}
+		clamp_variable = { var = THIS.TIC_c_unity min = 0 max = 1}
+	}
+}
+TIC_g_unity_decrease = {
+
+	for_each_scope_loop = {
+		array = global.TIC_member
+		subtract_from_variable = { THIS.TIC_c_unity = 0.01 }
+		clamp_variable = { var = global.TIC_unity min = 0 max = 1}
+		clamp_variable = { var = THIS.TIC_c_unity min = 0 max = 1}
+	}
+}
+
+TIC_parliament_init = {
+	BRA = {
+		add_ideas = mao_zedong_thought
+	}
+}
+
+TIC_parl_elections = {
+
+	
 }
