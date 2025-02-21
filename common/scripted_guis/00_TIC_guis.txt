@@ -76,6 +76,18 @@ scripted_gui = {
 			TIC_office_14_flag = { image = "[?global.TIC_office_14.GetFlag]" }
 			TIC_office_15_flag = { image = "[?global.TIC_office_15.GetFlag]" }
 			TIC_office_16_flag = { image = "[?global.TIC_office_16.GetFlag]" }
+			TIC_office_17_flag = { image = "[?global.TIC_office_17.GetFlag]" }
+			TIC_office_18_flag = { image = "[?global.TIC_office_18.GetFlag]" }
+			TIC_office_19_flag = { image = "[?global.TIC_office_19.GetFlag]" }
+			TIC_office_20_flag = { image = "[?global.TIC_office_20.GetFlag]" }
+			TIC_office_21_flag = { image = "[?global.TIC_office_21.GetFlag]" }
+			TIC_office_22_flag = { image = "[?global.TIC_office_22.GetFlag]" }
+			TIC_office_23_flag = { image = "[?global.TIC_office_23.GetFlag]" }
+			TIC_office_24_flag = { image = "[?global.TIC_office_24.GetFlag]" }
+			TIC_office_25_flag = { image = "[?global.TIC_office_25.GetFlag]" }
+
+			TIC_parliament_president_flag = { image = "[?global.TIC_office_2.GetFlag]" }
+			TIC_council_president_flag = { image = "[?global.TIC_office_3.GetFlag]" }
 		}
 
 		triggers = {
@@ -87,6 +99,7 @@ scripted_gui = {
 					has_country_flag = TIC_parliament_tab_open
 					has_country_flag = TIC_council_tab_open
 					has_country_flag = TIC_bank_tab_open
+					has_country_flag = TIC_institutions_tab_open
 					has_country_flag = TIC_legislations_tab_open
 				}
 			}
@@ -105,6 +118,7 @@ scripted_gui = {
 			}
 			TIC_office_1_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_1_taken }
 			}
 			# Office 2
 			TIC_office_2_flag_visible = {
@@ -118,6 +132,7 @@ scripted_gui = {
 			}
 			TIC_office_2_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_2_taken }
 			}
 			# Office 3
 			TIC_office_3_flag_visible = {
@@ -131,6 +146,7 @@ scripted_gui = {
 			}
 			TIC_office_3_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_3_taken }
 			}
 			# Office 4
 			TIC_office_4_flag_visible = {
@@ -144,6 +160,7 @@ scripted_gui = {
 			}
 			TIC_office_4_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_4_taken }
 			}
 			# Office 5
 			TIC_office_5_flag_visible = {
@@ -157,6 +174,7 @@ scripted_gui = {
 			}
 			TIC_office_5_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_5_taken }
 			}
 			# Office 6
 			TIC_office_6_flag_visible = {
@@ -170,6 +188,7 @@ scripted_gui = {
 			}
 			TIC_office_6_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_6_taken }
 			}
 			# Office 7
 			TIC_office_7_flag_visible = {
@@ -183,6 +202,7 @@ scripted_gui = {
 			}
 			TIC_office_7_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_7_taken }
 			}
 			# Office 8
 			TIC_office_8_flag_visible = {
@@ -196,6 +216,7 @@ scripted_gui = {
 			}
 			TIC_office_8_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_8_taken }
 			}
 			# Office 9
 			TIC_office_9_flag_visible = {
@@ -209,6 +230,7 @@ scripted_gui = {
 			}
 			TIC_office_9_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_9_taken }
 			}
 			# Office 10
 			TIC_office_10_flag_visible = {
@@ -222,6 +244,7 @@ scripted_gui = {
 			}
 			TIC_office_10_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_10_taken }
 			}
 			# Office 11
 			TIC_office_11_flag_visible = {
@@ -235,6 +258,7 @@ scripted_gui = {
 			}
 			TIC_office_11_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_11_taken }
 			}
 			# Office 12
 			TIC_office_12_flag_visible = {
@@ -248,6 +272,7 @@ scripted_gui = {
 			}
 			TIC_office_12_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_12_taken }
 			}
 			# Office 13
 			TIC_office_13_flag_visible = {
@@ -261,6 +286,7 @@ scripted_gui = {
 			}
 			TIC_office_13_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_13_taken }
 			}
 			# Office 14
 			TIC_office_14_flag_visible = {
@@ -274,6 +300,7 @@ scripted_gui = {
 			}
 			TIC_office_14_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_14_taken }
 			}
 			# Office 15
 			TIC_office_15_flag_visible = {
@@ -287,6 +314,7 @@ scripted_gui = {
 			}
 			TIC_office_15_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_15_taken }
 			}
 			# Office 16
 			TIC_office_16_flag_visible = {
@@ -300,6 +328,133 @@ scripted_gui = {
 			}
 			TIC_office_16_click_enabled = {
 				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_16_taken }
+			}
+			# Office 17
+			TIC_office_17_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_17_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_17_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_17_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_17_taken }
+			}
+			# Office 18
+			TIC_office_18_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_18_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_18_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_18_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_18_taken }
+			}
+			# Office 19
+			TIC_office_19_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_19_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_19_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_19_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_19_taken }
+			}
+			# Office 20
+			TIC_office_20_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_20_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_20_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_20_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_20_taken }
+			}
+			# Office 21
+			TIC_office_21_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_21_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_21_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_21_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_21_taken }
+			}
+			# Office 22
+			TIC_office_22_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_22_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_22_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_22_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_22_taken }
+			}
+			# Office 23
+			TIC_office_23_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_23_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_23_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_23_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_23_taken }
+			}
+			# Office 24
+			TIC_office_24_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_24_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_24_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_24_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_24_taken }
+			}
+			# Office 25
+			TIC_office_25_flag_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_25_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_25_text_visible = {
+				TIC_offices_tab_open_trigger =  yes
+			}
+			TIC_office_25_click_enabled = {
+				NOT = { has_country_flag = TIC_holding_office }
+				NOT = { has_global_flag = TIC_office_25_taken }
 			}
 
 		# TIC Info
@@ -331,9 +486,6 @@ scripted_gui = {
 			TIC_info_factories_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
-		#	TIC_info_list_screen_visible = {
-		#		TIC_info_tab_open_trigger = yes
-		#	}
 			TIC_unity_gdisplay_visible = {
 				TIC_info_tab_open_trigger = yes
 			}
@@ -354,14 +506,10 @@ scripted_gui = {
 			}
 
 			TIC_unity_gplus_click_enabled = {
-			#	set_temp_variable = { temp_pp = TIC_unity_pp_cost_limit }
-			#	subtract_from_temp_variable = { temp_pp = 1 }
 				has_political_power > TIC_unity_pp_cost_limit
 				check_variable = { global.TIC_unity < 1 }
 			}
 			TIC_unity_gminus_click_enabled = {
-			#	set_temp_variable = { temp_pp = TIC_unity_pp_cost_limit }
-			#	subtract_from_temp_variable = { temp_pp = 1 }
 				has_political_power > TIC_unity_pp_cost_limit
 				check_variable = { global.TIC_unity > 0 }
 			}
@@ -531,17 +679,24 @@ scripted_gui = {
 			TIC_total_mp_count_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
-
-			TIC_laws_list_screen_visible = {
+			TIC_parliament_president_flag_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
-			TIC_laws_list_gridbox_visible = {
+			TIC_parliament_president_icon_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
-			TIC_available_law_button_visible = {
+			TIC_parliament_president_text_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_available_laws_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_available_expansions_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
 		# TIC Council
+
+		# TIC Institutions
 
 		# TIC Legislations
 
@@ -579,8 +734,13 @@ scripted_gui = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_bank_tab_open
 			}
-			# Open Legislations
+			# Open Institutions
 			TIC_upper_button_6_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_institutions_tab_open
+			}
+			# Open Legislations
+			TIC_upper_button_7_click = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_legislations_tab_open
 			}
@@ -778,6 +938,114 @@ scripted_gui = {
 				}
 				update_TIC_dirty_variable = yes
 			}
+			TIC_office_17_click = {
+				add_timed_idea = {
+					idea = TIC_office_17_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.117
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_18_click = {
+				add_timed_idea = {
+					idea = TIC_office_18_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.118
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_19_click = {
+				add_timed_idea = {
+					idea = TIC_office_19_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.119
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_20_click = {
+				add_timed_idea = {
+					idea = TIC_office_20_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.120
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_21_click = {
+				add_timed_idea = {
+					idea = TIC_office_21_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.121
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_22_click = {
+				add_timed_idea = {
+					idea = TIC_office_22_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.122
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_23_click = {
+				add_timed_idea = {
+					idea = TIC_office_23_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.123
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_24_click = {
+				add_timed_idea = {
+					idea = TIC_office_24_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.124
+				}
+				update_TIC_dirty_variable = yes
+			}
+			TIC_office_25_click = {
+				add_timed_idea = {
+					idea = TIC_office_25_idea
+					days = 1825
+				}
+				set_country_flag = TIC_holding_office
+				for_each_scope_loop = {
+					array = global.TIC_member
+					news_event = TIC_news.125
+				}
+				update_TIC_dirty_variable = yes
+			}
 
 			# TIC Info
 			# Unity
@@ -830,13 +1098,12 @@ scripted_gui = {
 
 	TIC_info_dynlist_gui = {
 		context_type = player_context
-		parent_scripted_gui = "intercontinental_confederation_gui"
+		parent_scripted_gui = intercontinental_confederation_gui
 		window_name = "TIC_info_list_screen"
 		dirty = global.TIC_dirty_update_var
 
 		visible = {
-			has_country_flag = TIC_info_tab_open
-			has_country_flag = new_TIC_open
+			TIC_info_tab_open_trigger = yes
 		}
 
 		dynamic_lists = {
@@ -850,20 +1117,35 @@ scripted_gui = {
 
 	TIC_laws_dynlist_gui = {
 		context_type = player_context
-		parent_scripted_gui = "intercontinental_confederation_gui"
+		parent_scripted_gui = intercontinental_confederation_gui
 		window_name = "TIC_laws_list_screen"
 		dirty = global.TIC_dirty_update_var
 
 		visible = {
-			has_country_flag = TIC_parliament_tab_open
-			has_country_flag = new_TIC_open
+			TIC_parliament_tab_open_trigger = yes
 		}
 
 		dynamic_lists = {
 			TIC_laws_list_gridbox = {
 				array = global.TIC_available_laws
 				entry_container = "TIC_available_laws_list"
+			}
+		}
+	}
+	TIC_expansions_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = intercontinental_confederation_gui
+		window_name = "TIC_expansions_list_screen"
+		dirty = global.TIC_dirty_update_var
 
+		visible = {
+			TIC_parliament_tab_open_trigger = yes
+		}
+
+		dynamic_lists = {
+			TIC_expansions_list_gridbox = {
+				array = global.TIC_available_expansions
+				entry_container = "TIC_available_expansions_list"
 			}
 		}
 	}

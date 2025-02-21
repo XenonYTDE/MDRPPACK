@@ -1,0 +1,81 @@
+defined_text = {
+	name = TIC_available_laws_name
+
+	text = { trigger = { check_variable = { v = 100 } }
+		localization_key = TIC_av_laws_name_100_loc_key
+	}
+	text = { trigger = { check_variable = { v = 101 } }
+		localization_key = TIC_av_laws_name_101_loc_key
+	}
+	text = { trigger = { check_variable = { v = 102 } }
+		localization_key = TIC_av_laws_name_102_loc_key
+	}
+	text = { trigger = { check_variable = { v = 103 } }
+		localization_key = TIC_av_laws_name_103_loc_key
+	}
+	text = { trigger = { check_variable = { v = 104 } }
+		localization_key = TIC_av_laws_name_104_loc_key
+	}
+	text = { trigger = { check_variable = { v = 105 } }
+		localization_key = TIC_av_laws_name_105_loc_key
+	}
+	text = { trigger = { check_variable = { v = 106 } }
+		localization_key = TIC_av_laws_name_106_loc_key
+	}
+	text = { trigger = { check_variable = { v = 107 } }
+		localization_key = TIC_av_laws_name_107_loc_key
+	}
+	text = { trigger = { check_variable = { v = 108 } }
+		localization_key = TIC_av_laws_name_108_loc_key
+	}
+	text = { trigger = { check_variable = { v = 109 } }
+		localization_key = TIC_av_laws_name_109_loc_key
+	}
+	text = { trigger = { check_variable = { v = 110 } }
+		localization_key = TIC_av_laws_name_110_loc_key
+	}
+	text = { trigger = { check_variable = { v = 111 } }
+		localization_key = TIC_av_laws_name_111_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_available_expansions_name
+
+	text = { trigger = { check_variable = { v = 100 } }
+		localization_key = TIC_av_exp_name_100_loc_key
+	}
+	text = { trigger = { check_variable = { v = 101 } }
+		localization_key = TIC_av_exp_name_101_loc_key
+	}
+	text = { trigger = { check_variable = { v = 102 } }
+		localization_key = TIC_av_exp_name_102_loc_key
+	}
+	text = { trigger = { check_variable = { v = 103 } }
+		localization_key = TIC_av_exp_name_103_loc_key
+	}
+	text = { trigger = { check_variable = { v = 104 } }
+		localization_key = TIC_av_exp_name_104_loc_key
+	}
+	text = { trigger = { check_variable = { v = 105 } }
+		localization_key = TIC_av_exp_name_105_loc_key
+	}
+	text = { trigger = { check_variable = { v = 106 } }
+		localization_key = TIC_av_exp_name_106_loc_key
+	}
+	text = { trigger = { check_variable = { v = 107 } }
+		localization_key = TIC_av_exp_name_107_loc_key
+	}
+	text = { trigger = { check_variable = { v = 108 } }
+		localization_key = TIC_av_exp_name_108_loc_key
+	}
+	text = { trigger = { check_variable = { v = 109 } }
+		localization_key = TIC_av_exp_name_109_loc_key
+	}
+	text = { trigger = { check_variable = { v = 110 } }
+		localization_key = TIC_av_exp_name_110_loc_key
+	}
+	text = { trigger = { check_variable = { v = 111 } }
+		localization_key = TIC_av_exp_name_111_loc_key
+	}
+}

@@ -1900,7 +1900,7 @@ focus_EU701_QMV_result = {
 
 		SOV = { set_country_flag = EU_candidate }
 
-		add_to_array = {global.EU_candidates = SOV }
+		add_to_array = { global.EU_candidates = SOV }
 	}
 	else = {
 		set_country_flag = focus_EU701_QMV_no

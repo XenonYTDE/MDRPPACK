@@ -18,6 +18,15 @@ on_actions = {
 			set_variable = { global.TIC_office_14 = ZZZ.id }
 			set_variable = { global.TIC_office_15 = ZZZ.id }
 			set_variable = { global.TIC_office_16 = ZZZ.id }
+			set_variable = { global.TIC_office_17 = ZZZ.id }
+			set_variable = { global.TIC_office_18 = ZZZ.id }
+			set_variable = { global.TIC_office_19 = ZZZ.id }
+			set_variable = { global.TIC_office_20 = ZZZ.id }
+			set_variable = { global.TIC_office_21 = ZZZ.id }
+			set_variable = { global.TIC_office_22 = ZZZ.id }
+			set_variable = { global.TIC_office_23 = ZZZ.id }
+			set_variable = { global.TIC_office_24 = ZZZ.id }
+			set_variable = { global.TIC_office_25 = ZZZ.id }
 
 			every_country = {
 			#	limit = {
@@ -41,6 +50,7 @@ on_actions = {
 
 			random_country = {
 				TIC_parliament_init = yes
+				TIC_parl_elections = yes
 			}
 
 		}

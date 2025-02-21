@@ -20,7 +20,7 @@ guiTypes = {
 	# The Main UI
 	containerWindowType = {
 		name = "TIC_main_background_window"
-		size = { width = 886 height = 686 }
+		size = { width = 1100 height = 800 }
 		position = { x = 0 y = 0 }
 		clipping = no
 		orientation = center
@@ -30,7 +30,7 @@ guiTypes = {
 		# Close UI
 		buttonType = {
 			name = "TIC_close_button"
-			position = { x = 852 y = 2 }
+			position = { x = 1052 y = 2 }
 			spriteType = "GFX_closebutton"
 			font = "hoi_18mbs"
 			format = center
@@ -58,7 +58,7 @@ guiTypes = {
 		# Guide
 		buttonType = {
 			name = "TIC_laws_flowchart_button"
-			position = { x = 825 y = 30 }
+			position = { x = 1025 y = 30 }
 			quadTextureSprite ="GFX_help_button_custom"
 			clicksound = click_default
 			pdx_tooltip = "TIC_MD_LAW_FLOWCHART"
@@ -69,7 +69,7 @@ guiTypes = {
 		# Upper Buttons
 		buttonType = {
 			name = "TIC_upper_button_1" # offices
-			position = { x = 43 y = 82 }
+			position = { x = 47 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_1_title"
@@ -78,7 +78,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_2" # info
-			position = { x = 177 y = 82 }
+			position = { x = 189 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_2_title"
@@ -87,7 +87,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_3" # parliament
-			position = { x = 311 y = 82 }
+			position = { x = 331 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_3_title"
@@ -96,7 +96,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_4" # council
-			position = { x = 445 y = 82 }
+			position = { x = 473 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_4_title"
@@ -105,7 +105,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_5" # bank
-			position = { x = 579 y = 82 }
+			position = { x = 615 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_5_title"
@@ -113,11 +113,20 @@ guiTypes = {
 			pdx_tooltip = "TIC_bank_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_6" # legislations
-			position = { x = 713 y = 82 }
+			name = "TIC_upper_button_6" # institutions
+			position = { x = 757 y = 94 }
 			spriteType = "GFX_TIC_upper_button"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_6_title"
+			format = center
+			pdx_tooltip = "TIC_institutions_tab_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_7" # legislations
+			position = { x = 899 y = 94 }
+			spriteType = "GFX_TIC_upper_button"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_7_title"
 			format = center
 			pdx_tooltip = "TIC_legislations_tab_desc"
 		}
@@ -132,7 +141,7 @@ guiTypes = {
 			# Office 1
 			buttonType = {
 				name = "TIC_office_1_flag"
-				position = { x = 109 y = 195 }
+				position = { x = 101 y = 185 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -141,7 +150,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_1"
-				position = { x = 58 y = 159 }
+				position = { x = 50 y = 149 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -151,7 +160,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_1_text"
-				position = { x = 58 y = 248 }
+				position = { x = 50 y = 238 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -164,7 +173,7 @@ guiTypes = {
 			# Office 2
 			buttonType = {
 				name = "TIC_office_2_flag"
-				position = { x = 304 y = 195 }
+				position = { x = 301 y = 185 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -173,7 +182,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_2"
-				position = { x = 253 y = 159 }
+				position = { x = 250 y = 149 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -183,7 +192,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_2_text"
-				position = { x = 253 y = 248 }
+				position = { x = 250 y = 238 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -196,7 +205,7 @@ guiTypes = {
 			# Office 3
 			buttonType = {
 				name = "TIC_office_3_flag"
-				position = { x = 499 y = 195 }
+				position = { x = 501 y = 185 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -205,7 +214,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_3"
-				position = { x = 448 y = 159 }
+				position = { x = 450 y = 149 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -215,7 +224,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_3_text"
-				position = { x = 448 y = 248 }
+				position = { x = 450 y = 238 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -228,7 +237,7 @@ guiTypes = {
 			# Office 4
 			buttonType = {
 				name = "TIC_office_4_flag"
-				position = { x = 694 y = 195 }
+				position = { x = 701 y = 185 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -237,7 +246,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_4"
-				position = { x = 643 y = 159 }
+				position = { x = 650 y = 149 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -247,7 +256,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_4_text"
-				position = { x = 643 y = 248 }
+				position = { x = 650 y = 238 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -261,7 +270,7 @@ guiTypes = {
 			# Office 5
 			buttonType = {
 				name = "TIC_office_5_flag"
-				position = { x = 109 y = 317 }
+				position = { x = 901 y = 185 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -270,7 +279,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_5"
-				position = { x = 58 y = 281 }
+				position = { x = 850 y = 149 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -280,7 +289,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_5_text"
-				position = { x = 58 y = 370 }
+				position = { x = 850 y = 238 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -293,7 +302,7 @@ guiTypes = {
 			# Office 6
 			buttonType = {
 				name = "TIC_office_6_flag"
-				position = { x = 304 y = 317 }
+				position = { x = 101 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -302,7 +311,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_6"
-				position = { x = 253 y = 281 }
+				position = { x = 50 y = 264 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -312,7 +321,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_6_text"
-				position = { x = 253 y = 370 }
+				position = { x = 50 y = 353 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -325,7 +334,7 @@ guiTypes = {
 			# Office 7
 			buttonType = {
 				name = "TIC_office_7_flag"
-				position = { x = 499 y = 317 }
+				position = { x = 301 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -334,7 +343,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_7"
-				position = { x = 448 y = 281 }
+				position = { x = 250 y = 264 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -344,7 +353,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_7_text"
-				position = { x = 448 y = 370 }
+				position = { x = 250 y = 353 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -357,7 +366,7 @@ guiTypes = {
 			# Office 8
 			buttonType = {
 				name = "TIC_office_8_flag"
-				position = { x = 694 y = 317 }
+				position = { x = 501 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -366,7 +375,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_8"
-				position = { x = 643 y = 281 }
+				position = { x = 450 y = 264 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -376,7 +385,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_8_text"
-				position = { x = 643 y = 370 }
+				position = { x = 450 y = 353 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -390,7 +399,7 @@ guiTypes = {
 			# Office 9
 			buttonType = {
 				name = "TIC_office_9_flag"
-				position = { x = 109 y = 441 }
+				position = { x = 701 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -399,7 +408,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_9"
-				position = { x = 58 y = 405 }
+				position = { x = 650 y = 264 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -409,7 +418,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_9_text"
-				position = { x = 58 y = 494 }
+				position = { x = 650 y = 353 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -422,7 +431,7 @@ guiTypes = {
 			# Office 10
 			buttonType = {
 				name = "TIC_office_10_flag"
-				position = { x = 304 y = 441 }
+				position = { x = 701 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -431,7 +440,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_10"
-				position = { x = 253 y = 405 }
+				position = { x = 850 y = 264 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -441,7 +450,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_10_text"
-				position = { x = 253 y = 494 }
+				position = { x = 850 y = 353 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -454,7 +463,7 @@ guiTypes = {
 			# Office 11
 			buttonType = {
 				name = "TIC_office_11_flag"
-				position = { x = 499 y = 441 }
+				position = { x = 101 y = 424 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -463,7 +472,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_11"
-				position = { x = 448 y = 405 }
+				position = { x = 50 y = 388 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -473,7 +482,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_11_text"
-				position = { x = 448 y = 494 }
+				position = { x = 50 y = 477 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -486,7 +495,7 @@ guiTypes = {
 			# Office 12
 			buttonType = {
 				name = "TIC_office_12_flag"
-				position = { x = 694 y = 441 }
+				position = { x = 301 y = 424 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -495,7 +504,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_12"
-				position = { x = 643 y = 405 }
+				position = { x = 250 y = 388 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -505,7 +514,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_12_text"
-				position = { x = 643 y = 494 }
+				position = { x = 250 y = 477 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -519,7 +528,7 @@ guiTypes = {
 			# Office 13
 			buttonType = {
 				name = "TIC_office_13_flag"
-				position = { x = 109 y = 563 }
+				position = { x = 501 y = 424 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -528,7 +537,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_13"
-				position = { x = 58 y = 527 }
+				position = { x = 450 y = 388 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -538,7 +547,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_13_text"
-				position = { x = 58 y = 616 }
+				position = { x = 450 y = 477 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -551,7 +560,7 @@ guiTypes = {
 			# Office 14
 			buttonType = {
 				name = "TIC_office_14_flag"
-				position = { x = 304 y = 563 }
+				position = { x = 701 y = 424 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -560,7 +569,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_14"
-				position = { x = 253 y = 527 }
+				position = { x = 650 y = 388 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -570,7 +579,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_14_text"
-				position = { x = 253 y = 616 }
+				position = { x = 650 y = 477 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -583,7 +592,7 @@ guiTypes = {
 			# Office 15
 			buttonType = {
 				name = "TIC_office_15_flag"
-				position = { x = 499 y = 563 }
+				position = { x = 901 y = 424 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -592,7 +601,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_15"
-				position = { x = 448 y = 527 }
+				position = { x = 850 y = 388 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -602,7 +611,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_15_text"
-				position = { x = 448 y = 616 }
+				position = { x = 850 y = 477 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -615,7 +624,7 @@ guiTypes = {
 			# Office 16
 			buttonType = {
 				name = "TIC_office_16_flag"
-				position = { x = 694 y = 563 }
+				position = { x = 101 y = 546 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -624,7 +633,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_office_16"
-				position = { x = 643 y = 527 }
+				position = { x = 50 y = 510 }
 				quadTextureSprite = "GFX_TIC_office_frame"
 				font = "hoi_18mbs"
 				text = ""
@@ -634,7 +643,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_office_16_text"
-				position = { x = 643 y = 616 }
+				position = { x = 50 y = 599 }
 				font = "hoi_16mbs"
 				maxWidth = 185
 				maxHeight = 20
@@ -643,6 +652,295 @@ guiTypes = {
 				pdx_tooltip = "TIC_office_16_tt"
 				pdx_tooltip_delayed = "TIC_office_16_full_tt"
 			}
+
+			# Office 17
+			buttonType = {
+				name = "TIC_office_17_flag"
+				position = { x = 301 y = 546 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_17_tt"
+			}
+			buttonType = {
+				name = "TIC_office_17"
+				position = { x = 250 y = 510 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_17_tt"
+				pdx_tooltip_delayed = "TIC_office_17_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_17_text"
+				position = { x = 250 y = 599 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_17_text"
+				pdx_tooltip = "TIC_office_17_tt"
+				pdx_tooltip_delayed = "TIC_office_17_full_tt"
+			}
+			
+			# Office 18
+			buttonType = {
+				name = "TIC_office_18_flag"
+				position = { x = 501 y = 546 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_18_tt"
+			}
+			buttonType = {
+				name = "TIC_office_18"
+				position = { x = 450 y = 510 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_18_tt"
+				pdx_tooltip_delayed = "TIC_office_18_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_18_text"
+				position = { x = 450 y = 599 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_18_text"
+				pdx_tooltip = "TIC_office_18_tt"
+				pdx_tooltip_delayed = "TIC_office_18_full_tt"
+			}
+						
+			# Office 19
+			buttonType = {
+				name = "TIC_office_19_flag"
+				position = { x = 701 y = 546 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_19_tt"
+			}
+			buttonType = {
+				name = "TIC_office_19"
+				position = { x = 650 y = 510 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_19_tt"
+				pdx_tooltip_delayed = "TIC_office_19_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_19_text"
+				position = { x = 650 y = 599 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_19_text"
+				pdx_tooltip = "TIC_office_19_tt"
+				pdx_tooltip_delayed = "TIC_office_19_full_tt"
+			}
+						
+			# Office 20
+			buttonType = {
+				name = "TIC_office_20_flag"
+				position = { x = 901 y = 546 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_20_tt"
+			}
+			buttonType = {
+				name = "TIC_office_20"
+				position = { x = 850 y = 510 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_20_tt"
+				pdx_tooltip_delayed = "TIC_office_20_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_20_text"
+				position = { x = 850 y = 599 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_20_text"
+				pdx_tooltip = "TIC_office_20_tt"
+				pdx_tooltip_delayed = "TIC_office_20_full_tt"
+			}
+						
+			# Office 21
+			buttonType = {
+				name = "TIC_office_21_flag"
+				position = { x = 101 y = 668 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_21_tt"
+			}
+			buttonType = {
+				name = "TIC_office_21"
+				position = { x = 50 y = 632 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_21_tt"
+				pdx_tooltip_delayed = "TIC_office_21_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_21_text"
+				position = { x = 50 y = 721 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_21_text"
+				pdx_tooltip = "TIC_office_21_tt"
+				pdx_tooltip_delayed = "TIC_office_21_full_tt"
+			}
+						
+			# Office 22
+			buttonType = {
+				name = "TIC_office_22_flag"
+				position = { x = 301 y = 668 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_22_tt"
+			}
+			buttonType = {
+				name = "TIC_office_22"
+				position = { x = 250 y = 632 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_22_tt"
+				pdx_tooltip_delayed = "TIC_office_22_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_22_text"
+				position = { x = 250 y = 721 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_22_text"
+				pdx_tooltip = "TIC_office_22_tt"
+				pdx_tooltip_delayed = "TIC_office_22_full_tt"
+			}
+						
+			# Office 23
+			buttonType = {
+				name = "TIC_office_23_flag"
+				position = { x = 501 y = 668 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_23_tt"
+			}
+			buttonType = {
+				name = "TIC_office_23"
+				position = { x = 450 y = 632 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_23_tt"
+				pdx_tooltip_delayed = "TIC_office_23_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_23_text"
+				position = { x = 450 y = 721 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_23_text"
+				pdx_tooltip = "TIC_office_23_tt"
+				pdx_tooltip_delayed = "TIC_office_23_full_tt"
+			}
+						
+			# Office 24
+			buttonType = {
+				name = "TIC_office_24_flag"
+				position = { x = 701 y = 668 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_24_tt"
+			}
+			buttonType = {
+				name = "TIC_office_24"
+				position = { x = 650 y = 632 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_24_tt"
+				pdx_tooltip_delayed = "TIC_office_24_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_24_text"
+				position = { x = 650 y = 721 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_24_text"
+				pdx_tooltip = "TIC_office_24_tt"
+				pdx_tooltip_delayed = "TIC_office_24_full_tt"
+			}
+						
+			# Office 25
+			buttonType = {
+				name = "TIC_office_25_flag"
+				position = { x = 901 y = 668 }
+				quadTextureSprite = "GFX_shield_medium"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_25_tt"
+			}
+			buttonType = {
+				name = "TIC_office_25"
+				position = { x = 850 y = 632 }
+				quadTextureSprite = "GFX_TIC_office_frame"
+				font = "hoi_18mbs"
+				text = ""
+				format = center
+				pdx_tooltip = "TIC_office_25_tt"
+				pdx_tooltip_delayed = "TIC_office_25_full_tt"
+			}
+			instantTextBoxType = {
+				name = "TIC_office_25_text"
+				position = { x = 850 y = 721 }
+				font = "hoi_16mbs"
+				maxWidth = 185
+				maxHeight = 20
+				format = center
+				text = "TIC_office_25_text"
+				pdx_tooltip = "TIC_office_25_tt"
+				pdx_tooltip_delayed = "TIC_office_25_full_tt"
+			}
+
 		}
 
 		containerWindowType = {
@@ -651,7 +949,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_info_country"
-				position = { x = 70 y = 140 }
+				position = { x = 70 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 230
 				maxHeight = 20
@@ -660,7 +958,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_population"
-				position = { x = 405 y = 140 }
+				position = { x = 405 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -669,7 +967,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_ratio"
-				position = { x = 485 y = 140 }
+				position = { x = 485 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -678,7 +976,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_unity"
-				position = { x = 565 y = 140 }
+				position = { x = 565 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -688,11 +986,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_info_member_count"
-				position = { x = 683 y = 160 }
+				position = { x = 840 y = 160 }
 
 				font = "hoi_18mbs"
 				text = "Members: [?global.TIC_member_count|0Y]"
-				maxWidth = 150
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
@@ -701,11 +999,11 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_poptotal"
-				position = { x = 683 y = 200 }
+				position = { x = 840 y = 210 }
 
 				font = "hoi_18mbs"
 				text = "Population: [?global.TIC_poptotal|Y]M"
-				maxWidth = 160
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
@@ -714,11 +1012,11 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_gdp_total"
-				position = { x = 683 y = 240 }
+				position = { x = 840 y = 260 }
 
 				font = "hoi_18mbs"
 				text = "Total GDP: [?global.TIC_gdptotal|Y]B"
-				maxWidth = 160
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
@@ -726,11 +1024,11 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_gdpc"
-				position = { x = 683 y = 280 }
+				position = { x = 840 y = 310 }
 
 				font = "hoi_18mbs"
 				text = "Total GDP/C: [?global.TIC_gdpc|Y]k"
-				maxWidth = 160
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
@@ -738,11 +1036,11 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_factories"
-				position = { x = 683 y = 320 }
+				position = { x = 840 y = 360 }
 
 				font = "hoi_18mbs"
 				text = "Total Factories: [?global.TIC_factories|Y0]"
-				maxWidth = 160
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
@@ -752,16 +1050,16 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_unity_gdisplay"
-				position = { x = 683 y = 380 }
+				position = { x = 840 y = 470 }
 				text = "Global Unity: [?global.TIC_unity|0%O]"
-				maxWidth = 150
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
 			}
 			buttonType = {
 				name = "TIC_unity_gplus"
-				position = { x = 695 y = 400 }
+				position = { x = 870 y = 500 }
 				spriteType = "GFX_TIC_upper_button"
 
 				font = "hoi_16mbs"
@@ -770,7 +1068,7 @@ guiTypes = {
 			}
 			buttonType = {	
 				name = "TIC_unity_gminus"
-				position = { x = 695 y = 450 }
+				position = { x = 870 y = 550 }
 				spriteType = "GFX_TIC_upper_button"
 
 				font = "hoi_16mbs"
@@ -780,16 +1078,16 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_unity_cdisplay"
-				position = { x = 693 y = 510 }
+				position = { x = 840 y = 600 }
 				text = "Country Unity: [?THIS.TIC_c_unity|0%O]"
-				maxWidth = 150
+				maxWidth = 200
 				maxHeight = 20
 				format = center
 				fixedsize = yes
 			}
 			buttonType = {
 				name = "TIC_unity_cplus"
-				position = { x = 695 y = 530 }
+				position = { x = 870 y = 630 }
 				spriteType = "GFX_TIC_upper_button"
 
 				font = "hoi_16mbs"
@@ -798,7 +1096,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_unity_cminus"
-				position = { x = 695 y = 580 }
+				position = { x = 870 y = 680 }
 				spriteType = "GFX_TIC_upper_button"
 
 				font = "hoi_16mbs"
@@ -817,7 +1115,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_parliament_parties"
-				position = { x = 60 y = 5 }
+				position = { x = 60 y = 12 }
 				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -825,7 +1123,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_0"
-				position = { x = 10 y = 28 }
+				position = { x = 10 y = 33 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -834,7 +1132,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_0_infl"
-				position = { x = 200 y = 28 }
+				position = { x = 205 y = 33 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_0_infl
@@ -842,7 +1140,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_1"
-				position = { x = 10 y = 48 }
+				position = { x = 10 y = 57 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -851,7 +1149,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_1_infl"
-				position = { x = 200 y = 48 }
+				position = { x = 205 y = 57 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_1_infl
@@ -859,7 +1157,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_2"
-				position = { x = 10 y = 68 }
+				position = { x = 10 y = 81 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -868,7 +1166,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_2_infl"
-				position = { x = 200 y = 68 }
+				position = { x = 205 y = 81 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_2_infl
@@ -876,7 +1174,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_3"
-				position = { x = 10 y = 88 }
+				position = { x = 10 y = 105 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -885,7 +1183,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_3_infl"
-				position = { x = 200 y = 88 }
+				position = { x = 205 y = 105 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_3_infl
@@ -893,7 +1191,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_4"
-				position = { x = 10 y = 108 }
+				position = { x = 10 y = 129 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -902,7 +1200,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_4_infl"
-				position = { x = 200 y = 108 }
+				position = { x = 205 y = 129 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_4_infl
@@ -910,7 +1208,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_5"
-				position = { x = 10 y = 128 }
+				position = { x = 10 y = 153 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -919,7 +1217,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_5_infl"
-				position = { x = 200 y = 128 }
+				position = { x = 205 y = 153 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_5_infl
@@ -927,7 +1225,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_6"
-				position = { x = 10 y = 148 }
+				position = { x = 10 y = 177 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -936,7 +1234,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_6_infl"
-				position = { x = 200 y = 148 }
+				position = { x = 205 y = 177 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_6_infl
@@ -944,7 +1242,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_7"
-				position = { x = 10 y = 168 }
+				position = { x = 10 y = 201 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -953,7 +1251,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_7_infl"
-				position = { x = 200 y = 168 }
+				position = { x = 205 y = 201 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_7_infl
@@ -961,7 +1259,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_8"
-				position = { x = 10 y = 188 }
+				position = { x = 10 y = 225 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -970,7 +1268,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_8_infl"
-				position = { x = 200 y = 188 }
+				position = { x = 205 y = 225 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_8_infl
@@ -978,7 +1276,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_9"
-				position = { x = 10 y = 208 }
+				position = { x = 10 y = 249 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -987,7 +1285,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_9_infl"
-				position = { x = 200 y = 208 }
+				position = { x = 205 y = 249 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_9_infl
@@ -995,7 +1293,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_10"
-				position = { x = 10 y = 228 }
+				position = { x = 10 y = 273 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1004,7 +1302,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_10_infl"
-				position = { x = 200 y = 228 }
+				position = { x = 205 y = 273 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_10_infl
@@ -1012,7 +1310,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_11"
-				position = { x = 10 y = 248 }
+				position = { x = 10 y = 297 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1021,7 +1319,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_11_infl"
-				position = { x = 200 y = 248 }
+				position = { x = 205 y = 297 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_11_infl
@@ -1029,7 +1327,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_12"
-				position = { x = 10 y = 268 }
+				position = { x = 10 y = 321 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1038,7 +1336,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_12_infl"
-				position = { x = 200 y = 268 }
+				position = { x = 205 y = 321 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_12_infl
@@ -1046,7 +1344,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_13"
-				position = { x = 10 y = 288 }
+				position = { x = 10 y = 345 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1055,7 +1353,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_13_infl"
-				position = { x = 200 y = 288 }
+				position = { x = 205 y = 345 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_13_infl
@@ -1063,7 +1361,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_14"
-				position = { x = 10 y = 308 }
+				position = { x = 10 y = 369 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1072,7 +1370,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_14_infl"
-				position = { x = 200 y = 308 }
+				position = { x = 205 y = 369 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_14_infl
@@ -1080,7 +1378,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_15"
-				position = { x = 10 y = 328 }
+				position = { x = 10 y = 393 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1089,7 +1387,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_15_infl"
-				position = { x = 200 y = 328 }
+				position = { x = 205 y = 393 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_15_infl
@@ -1097,7 +1395,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_16"
-				position = { x = 10 y = 348 }
+				position = { x = 10 y = 417 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1106,7 +1404,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_16_infl"
-				position = { x = 200 y = 348 }
+				position = { x = 205 y = 417 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_16_infl
@@ -1114,7 +1412,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_17"
-				position = { x = 10 y = 368 }
+				position = { x = 10 y = 441 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1123,7 +1421,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_17_infl"
-				position = { x = 200 y = 368 }
+				position = { x = 205 y = 441 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_17_infl
@@ -1131,7 +1429,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_18"
-				position = { x = 10 y = 388 }
+				position = { x = 10 y = 465 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1140,7 +1438,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_18_infl"
-				position = { x = 200 y = 388 }
+				position = { x = 205 y = 465 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_18_infl
@@ -1148,7 +1446,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_19"
-				position = { x = 10 y = 408 }
+				position = { x = 10 y = 489 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1157,7 +1455,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_19_infl"
-				position = { x = 200 y = 408 }
+				position = { x = 205 y = 489 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_19_infl
@@ -1165,7 +1463,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_20"
-				position = { x = 10 y = 428 }
+				position = { x = 10 y = 513 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1174,7 +1472,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_20_infl"
-				position = { x = 200 y = 428 }
+				position = { x = 205 y = 513 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_20_infl
@@ -1182,7 +1480,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_21"
-				position = { x = 10 y = 448 }
+				position = { x = 10 y = 537 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1191,7 +1489,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_21_infl"
-				position = { x = 200 y = 448 }
+				position = { x = 205 y = 537 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_21_infl
@@ -1199,7 +1497,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_22"
-				position = { x = 10 y = 468 }
+				position = { x = 10 y = 561 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1208,7 +1506,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_22_infl"
-				position = { x = 200 y = 468 }
+				position = { x = 205 y = 561 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_22_infl
@@ -1216,7 +1514,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_23"
-				position = { x = 10 y = 488 }
+				position = { x = 10 y = 585 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 20
@@ -1225,7 +1523,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "TIC_parlparty_23_infl"
-				position = { x = 200 y = 488 }
+				position = { x = 205 y = 585 }
 				spriteType = "GFX_TIC_narrow_button"
 				font = "hoi_16mbs"
 				text = TIC_parlparty_23_infl
@@ -1236,7 +1534,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_total_mp_count_title"
-				position = { x = 320 y = 10 }
+				position = { x = 345 y = 15 }
 				font = "hoi_18mbs"
 				maxWidth = 150
 				maxHeight = 20
@@ -1245,7 +1543,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_total_mp_count"
-				position = { x = 320 y = 30 }
+				position = { x = 345 y = 35 }
 				font = "hoi_18mbs"
 				maxWidth = 150
 				maxHeight = 20
@@ -1254,16 +1552,46 @@ guiTypes = {
 				pdx_tooltip = TIC_total_mp_count_tt
 			}
 
+			iconType = {
+				name = "TIC_parliament_president_flag"
+				position = { x = 581 y = 51 }
+				quadTextureSprite = "GFX_shield_medium"
+			}
+			iconType = {
+				name = "TIC_parliament_president_icon"
+				position = { x = 530 y = 15 }
+				spriteType = "GFX_TIC_office_frame"
+			}
+			instantTextBoxType = {
+				name = "TIC_parliament_president_text"
+				position = { x = 530 y = 104 }
+				text = "President of the Parliament"
+				font = "hoi_16mbs"
+				format = center
+				maxWidth = 185
+				maxHeight = 20
+			}
+			
+
 			# Laws
 
 			instantTextBoxType = {
 				name = "TIC_available_laws"
-				position = { x = 550 y = 10 }
+				position = { x = 730 y = 15 }
 				font = "hoi_18mbs"
 				maxWidth = 250
-				maxHeight = 30
+				maxHeight = 25
 				format = center
 				text = "Available Laws"
+			}
+			instantTextBoxType = {
+				name = "TIC_available_expansions"
+				position = { x = 730 y = 315 }
+				font = "hoi_18mbs"
+				maxWidth = 250
+				maxHeight = 25
+				format = center
+				text = "Available Expansions"
 			}
 
 		}
@@ -1272,8 +1600,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_info_list_screen"
-		position = { x = 45 y = 150 }
-		size = { width = 630 height = 500 }
+		position = { x = 45 y = 160 }
+		size = { width = 630 height = 590 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
 
@@ -1357,14 +1685,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_laws_list_screen"
-		position = { x = 550 y = 80 }
-		size = { width = 250 height = 450 }
+		position = { x = 770 y = 160 }
+		size = { width = 280 height = 290 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
 
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_transparent"
+			quadTextureSprite = "GFX_tiled_window_transparent"
 		}
 
 		gridboxType = {
@@ -1380,15 +1708,48 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_available_laws_list"
-		position = { x = 550 y = 100 }
-		size = { width = 250 height = 450 }
 
 		buttonType = {
 			name = "TIC_available_laws_button"
-			position = { x = 550 y = 200 }
+			position = { x = 0 y = 0 }
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "[TIC_law_name]"
+			buttonText = "[TIC_available_laws_name]"
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_expansions_list_screen"
+		position = { x = 770 y = 460 }
+		size = { width = 280 height = 290 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_expansions_list_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 250 height = 35 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_available_expansions_list"
+
+		buttonType = {
+			name = "TIC_available_expansions_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_TIC_narrow2_button"
+			buttonFont = "hoi_18mbs"
+			buttonText = "[TIC_available_expansions_name]"
 		}
 	}
 }

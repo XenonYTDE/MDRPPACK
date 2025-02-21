@@ -23,9 +23,9 @@ ideas = {
 				consumer_goods_factor = -0.10
 			}
 		}
-
+		
 		TIC_office_1_idea = {
-			picture = TIC_council
+			picture = TIC_commission
 			allowed = { has_idea = TIC_member }
 			cancel = { NOT = { has_idea = TIC_member } }
 
@@ -33,9 +33,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_1 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_1 = ROOT.id }
+				set_global_flag = TIC_office_1_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_1 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_1_taken
 			}
 		}
 
@@ -48,14 +53,19 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_2 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_2 = ROOT.id }
+				set_global_flag = TIC_office_2_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_2 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_2_taken
 			}
 		}
 
 		TIC_office_3_idea = {
-			picture = TIC_commission
+			picture = TIC_council
 			allowed = { has_idea = TIC_member }
 			cancel = { NOT = { has_idea = TIC_member } }
 
@@ -63,9 +73,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_3 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_3 = ROOT.id }
+				set_global_flag = TIC_office_3_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_3 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_3_taken
 			}
 		}
 
@@ -78,9 +93,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_4 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_4 = ROOT.id }
+				set_global_flag = TIC_office_4_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_4 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_4_taken
 			}
 		}
 
@@ -93,9 +113,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_5 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_5 = ROOT.id }
+				set_global_flag = TIC_office_5_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_5 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_5_taken
 			}
 		}
 
@@ -108,9 +133,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_6 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_6 = ROOT.id }
+				set_global_flag = TIC_office_6_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_6 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_6_taken
 			}
 		}
 
@@ -123,9 +153,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_7 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_7 = ROOT.id }
+				set_global_flag = TIC_office_7_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_7 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_7_taken
 			}
 		}
 
@@ -138,9 +173,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_8 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_8 = ROOT.id }
+				set_global_flag = TIC_office_8_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_8 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_8_taken
 			}
 		}
 
@@ -153,9 +193,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_9 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_9 = ROOT.id }
+				set_global_flag = TIC_office_9_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_9 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_9_taken
 			}
 		}
 
@@ -168,9 +213,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_10 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_10 = ROOT.id }
+				set_global_flag = TIC_office_10_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_10 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_10_taken
 			}
 		}
 
@@ -183,9 +233,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_11 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_11 = ROOT.id }
+				set_global_flag = TIC_office_11_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_11 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_11_taken
 			}
 		}
 
@@ -198,9 +253,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_12 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_12 = ROOT.id }
+				set_global_flag = TIC_office_12_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_12 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_12_taken
 			}
 		}
 
@@ -213,9 +273,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_13 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_13 = ROOT.id }
+				set_global_flag = TIC_office_13_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_13 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_13_taken
 			}
 		}
 
@@ -228,9 +293,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_14 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_14 = ROOT.id }
+				set_global_flag = TIC_office_14_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_14 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_14_taken
 			}
 		}
 
@@ -243,9 +313,14 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_15 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_15 = ROOT.id }
+				set_global_flag = TIC_office_15_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_15 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_15_taken
 			}
 		}
 
@@ -258,9 +333,194 @@ ideas = {
 				political_power_factor = 0.15
 			}
 
-			on_add = { set_variable = { global.TIC_office_16 = ROOT.id } }
+			on_add = { 
+				set_variable = { global.TIC_office_16 = ROOT.id }
+				set_global_flag = TIC_office_16_taken
+			}
 			on_remove = {
 				set_variable = { global.TIC_office_16 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_16_taken
+			}
+		}
+		
+		TIC_office_17_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_17 = ROOT.id }
+				set_global_flag = TIC_office_17_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_17 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_17_taken
+			}
+		}
+		
+		TIC_office_18_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_18 = ROOT.id }
+				set_global_flag = TIC_office_18_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_18 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_18_taken
+			}
+		}
+		
+		TIC_office_19_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_19 = ROOT.id }
+				set_global_flag = TIC_office_19_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_19 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_19_taken
+			}
+		}
+		
+		TIC_office_20_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_20 = ROOT.id }
+				set_global_flag = TIC_office_20_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_20 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_20_taken
+			}
+		}
+		
+		TIC_office_21_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_21 = ROOT.id }
+				set_global_flag = TIC_office_21_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_21 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_21_taken
+			}
+		}
+		
+		TIC_office_22_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_22 = ROOT.id }
+				set_global_flag = TIC_office_22_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_22 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_22_taken
+			}
+		}
+		
+		TIC_office_23_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_23 = ROOT.id }
+				set_global_flag = TIC_office_23_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_23 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_23_taken
+			}
+		}
+		
+		TIC_office_24_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_24 = ROOT.id }
+				set_global_flag = TIC_office_24_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_24 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_24_taken
+			}
+		}
+
+		TIC_office_25_idea = {
+			picture = TIC_secnavy
+			allowed = { has_idea = TIC_member }
+			cancel = { NOT = { has_idea = TIC_member } }
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+			on_add = { 
+				set_variable = { global.TIC_office_25 = ROOT.id }
+				set_global_flag = TIC_office_25_taken
+			}
+			on_remove = {
+				set_variable = { global.TIC_office_25 = ZZZ.id }
+				clr_country_flag = TIC_holding_office
+				clr_global_flag = TIC_office_25_taken
 			}
 		}
 	}

@@ -52,6 +52,16 @@ TIC_bank_tab_open_trigger = {
 	}
 }
 
+TIC_institutions_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_institutions_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
 TIC_legislations_tab_open_trigger = {
 	OR = {
 		AND = {

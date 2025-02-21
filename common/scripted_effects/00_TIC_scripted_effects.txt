@@ -125,6 +125,32 @@ TIC_parliament_init = {
 	BRA = {
 		add_ideas = mao_zedong_thought
 	}
+	# Available Laws
+	add_to_array = { global.TIC_available_laws = 100 }
+	add_to_array = { global.TIC_available_laws = 101 }
+	add_to_array = { global.TIC_available_laws = 102 }
+	add_to_array = { global.TIC_available_laws = 103 }
+	add_to_array = { global.TIC_available_laws = 104 }
+	add_to_array = { global.TIC_available_laws = 105 }
+	add_to_array = { global.TIC_available_laws = 106 }
+	add_to_array = { global.TIC_available_laws = 107 }
+	add_to_array = { global.TIC_available_laws = 108 }
+	add_to_array = { global.TIC_available_laws = 109 }
+	add_to_array = { global.TIC_available_laws = 110 }
+	add_to_array = { global.TIC_available_laws = 111 }
+	# Available Expansions
+	add_to_array = { global.TIC_available_expansions = 100 }
+	add_to_array = { global.TIC_available_expansions = 101 }
+	add_to_array = { global.TIC_available_expansions = 102 }
+	add_to_array = { global.TIC_available_expansions = 103 }
+	add_to_array = { global.TIC_available_expansions = 104 }
+	add_to_array = { global.TIC_available_expansions = 105 }
+	add_to_array = { global.TIC_available_expansions = 106 }
+	add_to_array = { global.TIC_available_expansions = 107 }
+	add_to_array = { global.TIC_available_expansions = 108 }
+	add_to_array = { global.TIC_available_expansions = 109 }
+	add_to_array = { global.TIC_available_expansions = 110 }
+	add_to_array = { global.TIC_available_expansions = 111 }
 }
 
 TIC_parl_elections = {
