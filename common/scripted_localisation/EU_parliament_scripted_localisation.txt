@@ -13327,9 +13327,6 @@ defined_text = {
 	text = { trigger = { has_country_flag = focus_EU610_EP_agenda }
 		localization_key = EU610
 	}
-	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
-		localization_key = EU701
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { has_country_flag = focus_EU611_EP_agenda }
 		localization_key = EU611
 	}
@@ -13340,6 +13337,13 @@ defined_text = {
 	}
 	text = { trigger = { has_country_flag = focus_EU_budget_EP_agenda }
 		localization_key = EU999
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
+		localization_key = EU701
+	}
+	text = { trigger = { has_country_flag = focus_EU777_EP_agenda }
+		localization_key = EU777
 	}
 }
 
@@ -13474,9 +13478,6 @@ defined_text = {
 	text = { trigger = { has_country_flag = focus_EU610_EP_agenda }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { has_country_flag = focus_EU611_EP_agenda }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -13487,6 +13488,13 @@ defined_text = {
 	}
 	text = { trigger = { has_country_flag = focus_EU_budget_EP_agenda }
 		localization_key = EU_show_available_999_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { has_country_flag = focus_EU701_EP_agenda }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { has_country_flag = focus_EU777_EP_agenda }
+		localization_key = EU_show_available_777_loc_key
 	}
 }
 

@@ -512,7 +512,6 @@
  EU_show_available_608_loc_key: "Caucasus Enlargement"
  EU_show_available_609_loc_key: "European Economic Area"
  EU_show_available_610_loc_key: "Belarus"
- EU_show_available_701_loc_key: "Russia" # DO NOT MERGE FROM BASE MD
  EU_show_available_611_loc_key: "Internal Enlargement"
  EU_show_available_112_loc_key: "European Federation"
  EU_show_available_110_loc_key: "Federalisation of the European Union"
@@ -569,7 +568,6 @@
  EU_show_available_desc_608_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\nThe Caucasus countries of §Y[ARM.GetNameWithFlag]§!, §Y[AZE.GetNameWithFlag]§! and §Y[GEO.GetNameWithFlag]§! become candidate for joining §C[EUU.GetFlag] The European Union§!."
  EU_show_available_desc_609_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\nThe non-EU countries of the European Economic Area (§Y[SWI.GetNameWithFlag]§!, §Y[NOR.GetNameWithFlag]§! and §Y[ICE.GetNameWithFlag]§!) as well as the microstates of Europe (§Y[HLS.GetNameWithFlag]§!, §Y[SMA.GetNameWithFlag]§!, §Y[MNC.GetNameWithFlag]§!, §Y[ADO.GetNameWithFlag]§!, and §Y[LIC.GetNameWithFlag]§!) become candidate for joining §C[EUU.GetFlag] The European Union§!."
  EU_show_available_desc_610_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\n§Y[BLR.GetNameWithFlag]§! becomes candidate for joining §C[EUU.GetFlag] The European Union§!."
- EU_show_available_desc_701_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\n§Y[SOV.GetNameWithFlag]§! becomes candidate for joining §C[EUU.GetFlag] The European Union§!." # DO NOT MERGE FROM BASE MD
  EU_show_available_desc_611_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\nInternal enlargement is the process of new member states arising from the break-up of or secession from an existing member state. §Y[CAT.GetNameWithFlag]§!, §Y[CRE.GetNameWithFlag]§!, §Y[SCL.GetNameWithFlag]§!, §Y[SCO.GetNameWithFlag]§!, §Y[VOJ.GetNameWithFlag]§! and §Y[WAS.GetNameWithFlag]§! can become candidates for joining §C[EUU.GetFlag] The European Union§!, when they become independent."
  EU_show_available_desc_110_loc_key: "§YThis proposed law is a Federalization EU Law.§!\n\nThe process of European integration has reached a state where any further integration will lead to a Federalisation of §C[EUU.GetNameWithFlag]§!."
  EU_show_available_desc_111_loc_key: "§YThis proposed law is a Federalization EU Law.§!\n\nAfter more than 70 years of European integration the member states of §C[EUU.GetNameWithFlag]§! have decided to give up its sovereignty and form the §C[EUU.GetFlag] The United States of Europe§!."
@@ -864,8 +862,6 @@
  EU_voting_mission_focus_EU609_QMV_result_desc: "The member states have voted on the European Economic Area. Time to show the result."
  EU_voting_mission_focus_EU610_QMV_result: "Belarus Voting Result"
  EU_voting_mission_focus_EU610_QMV_result_desc: "The member states have voted on Belarus. Time to show the result."
- EU_voting_mission_focus_EU701_QMV_result: "Russia Voting Result"
- EU_voting_mission_focus_EU701_QMV_result_desc: "The member states have voted on Russia. Time to show the result." # DO NOT MERGE FROM BASE MD
  EU_voting_mission_focus_EU611_QMV_result: "Internal Enlargement Voting Result"
  EU_voting_mission_focus_EU611_QMV_result_desc: "The member states have voted on Internal Enlargement. Time to show the result."
 
@@ -1561,8 +1557,6 @@
  tooltip_EU_parliament_focus_EU609_EP_agenda_additional: "Grants [SWI.GetNameWithFlag], [NOR.GetNameWithFlag], [ICE.GetNameWithFlag], [HLS.GetNameWithFlag], [SMA.GetNameWithFlag], [MNC.GetNameWithFlag], [ADO.GetNameWithFlag], and [LIC.GetNameWithFlag] §YEuropean Candidacy§!"
  tooltip_EU_parliament_focus_EU610_EP_agenda: "Places §YBelarus§! on the agenda of the EP.\n\n"
  tooltip_EU_parliament_focus_EU610_EP_agenda_additional: "Grants [BLR.GetNameWithFlag] §YEuropean Candidacy§!"
- tooltip_EU_parliament_focus_EU701_EP_agenda: "Places §YRussia§! on the agenda of the EP.\n\n" # DO NOT MERGE FROM BASE MD
- tooltip_EU_parliament_focus_EU701_EP_agenda_additional: "Grants [SOV.GetNameWithFlag] §YEuropean Candidacy§!" # DO NOT MERGE FROM BASE MD
  tooltip_EU_parliament_focus_EU611_EP_agenda: "Places §YInternal Enlargement§! on the agenda of the EP.\n\n"
  tooltip_EU_parliament_focus_EU611_EP_agenda_additional: "Grants [CAT.GetNameWithFlag], [CRE.GetNameWithFlag], [SCL.GetNameWithFlag], [SCO.GetNameWithFlag], [WAS.GetNameWithFlag] and [VOJ.GetNameWithFlag]§YEuropean Candidacy§!"
  # European Parliament Federalization United States of Europe
@@ -1616,7 +1610,6 @@
  tooltip_EU_parliament_focus_EU608_approve: "§YCaucasus Enlargement§! gets §GEP approval§!."
  tooltip_EU_parliament_focus_EU609_approve: "§YEuropean Economic Area§! gets §GEP approval§!."
  tooltip_EU_parliament_focus_EU610_approve: "§YBelarus§! gets §GEP approval§!."
- tooltip_EU_parliament_focus_EU701_approve: "§YRussia§! gets §GEP approval§!." # DO NOT MERGE FROM BASE MD
  tooltip_EU_parliament_focus_EU611_approve: "§YInternal Enlargement§! gets §GEP approval§!."
  tooltip_EU_parliament_focus_EU002_approve_NOT: "§YMember State Policies§! did not get §GEP approval§!."
  tooltip_EU_parliament_focus_EU100_approve_NOT: "§YEU Reforms§! did not get §GEP approval§!."
@@ -1708,7 +1701,6 @@
  tooltip_EU_parliament_focus_EU608_remove: "Remove §YCaucasus Enlargement§! from EP agenda."
  tooltip_EU_parliament_focus_EU609_remove: "Remove §YEuropean Economic Area§! from EP agenda."
  tooltip_EU_parliament_focus_EU610_remove: "Remove §YBelarus§! from EP agenda."
- tooltip_EU_parliament_focus_EU701_remove: "Remove §YRussia§! from EP agenda." # DO NOT MERGE FROM BASE MD
  tooltip_EU_parliament_focus_EU611_remove: "Remove §YInternal Enlargement§! from EP agenda."
 
  tooltip_focus__Majority_trigger: ""
@@ -3889,11 +3881,6 @@
  tooltip_focus_EU610_EP_approval: "§YBelarus§! is §Gapproved§! by the European Parliament.\n"
  tooltip_focus_EU610_EP_approval_NOT: "§YBelarus§! is not §Gapproved§! by the European Parliament.\n"
  tooltip_focus_EU610_EP_overrule_option: "European Parliament has the option to §Ooverrule§! the Council (§YEuropean Constitution§! OR §YEuropean Federation§! has been §Caccepted§! AND §YBelarus§! was §Rdismissed§! and retry taken).\n"
- ############ EU701 ############## # DO NOT MERGE FROM BASE MD
- tooltip_focus_EU701_draft: "§YRussia§! is §Ldrafted§! (any country has completed national focus §YBelarus§!).\n"
- tooltip_focus_EU701_accepted: "§YRussia§! is §Caccepted§! by the Council.\n"
- tooltip_focus_EU701_EP_approval: "§YRussia§! is §Gapproved§! by the European Parliament.\n"
- tooltip_focus_EU701_EP_overrule_option: "European Parliament has the option to §Ooverrule§! the Council (§YEuropean Constitution§! OR §YEuropean Federation§! has been §Caccepted§! AND §YRussia§! was §Rdismissed§! and retry taken).\n"
  ### EU611 ###
  tooltip_focus_EU611_draft: "§YInternal Enlargement§! is §Ldrafted§! (any country has completed national focus §YInternal Enlargement§!).\n"
  tooltip_focus_EU611_accepted: "§YInternal Enlargement§! is §Caccepted§! by the Council.\n"
@@ -3917,3 +3904,41 @@
  tooltip_focus_EU999_EP_overrule_option: "European Parliament has the option to §Ooverrule§! the Council (§YEuropean Constitution§! OR §YEuropean Federation§! has been §Caccepted§! AND §YEU Budget Draft§! was §Rdismissed§! and retry taken).\n"
  tooltip_EU_no_mission_complete: "If they don't complete the mission they get:"
  tooltip_EU_update_ration_euroscepticism_europeanism: "Update Ratio of Total EU, Euroscepticism, Europeanism"
+
+ ################################################
+ ### Poggers Laws # DO NOT MERGE FROM BASE MD ###
+ ################################################
+
+ EU_show_available_701_loc_key: "Russia"
+ EU_show_available_777_loc_key: "§OThe Intercontinental Confederation§!"
+ 
+ EU_show_available_desc_701_loc_key: "§OThis proposed law is an Enlargement EU Law.§!\n\n§Y[SOV.GetNameWithFlag]§! becomes candidate for joining §C[EUU.GetFlag] The European Union§!."
+ EU_show_available_desc_777_loc_key: "§YThis proposed law is a complete transformation of the EU law.§!\n\nThe member states of §C[EUU.GetNameWithFlag]§! have decided to transform the §C[EUU.GetNameWithFlag]§! into a much grander and more ambitious entity - §OThe Intercontinental Confederation§!. The reforming process will take a few years."
+
+ EU_voting_mission_focus_EU701_QMV_result: "Russia Voting Result"
+ EU_voting_mission_focus_EU701_QMV_result_desc: "The member states have voted on Russia. Time to show the result."
+ EU_voting_mission_focus_EU777_QMV_result: "§OTIC§! Voting Result"
+ EU_voting_mission_focus_EU777_QMV_result_desc: "The member states have voted on forming §OTIC§!. Time to show the result."
+
+ tooltip_EU_parliament_focus_EU701_EP_agenda: "Places §YRussia§! on the agenda of the EP.\n\n"
+ tooltip_EU_parliament_focus_EU701_EP_agenda_additional: "Grants [SOV.GetNameWithFlag] §YEuropean Candidacy§!"
+ tooltip_EU_parliament_focus_EU777_EP_agenda: "Places §OThe Intercontinental Confederation§! on the agenda of the EP.\n\n"
+ tooltip_EU_parliament_focus_EU777_EP_agenda_additional: "Begins the formation of §OThe Intercontinental Confederation§!"
+
+ tooltip_EU_parliament_focus_EU701_approve: "§YRussia§! gets §GEP approval§!."
+ tooltip_EU_parliament_focus_EU701_remove: "Remove §YRussia§! from EP agenda."
+ tooltip_EU_parliament_focus_EU777_approve: "§OTIC§! gets §GEP approval§!."
+ tooltip_EU_parliament_focus_EU777_remove: "Remove §OTIC§! from EP agenda."
+
+ tooltip_focus_EU701_draft: "§YRussia§! is §Ldrafted§! (any country has completed national focus §YBelarus§!).\n"
+ tooltip_focus_EU701_accepted: "§YRussia§! is §Caccepted§! by the Council.\n"
+ tooltip_focus_EU701_accepted_NOT: "§YRussia§ enlargement of the European Union§! is not §Caccepted§! by the Council.\n"
+ tooltip_focus_EU701_EP_approval: "§YRussia§! is §Gapproved§! by the European Parliament.\n"
+ tooltip_focus_EU701_EP_approval_NOT: "§YRussia§ enlargement of the European Union§! is not §Gapproved§! by the European Parliament.\n"
+ tooltip_focus_EU701_EP_overrule_option: "European Parliament has the option to §Ooverrule§! the Council (§YEuropean Constitution§! OR §YEuropean Federation§! has been §Caccepted§! AND §YRussia§! was §Rdismissed§! and retry taken).\n"
+ tooltip_focus_EU777_draft: "§OTIC§! is §Ldrafted§! (any country has completed national focus §YBelarus§!).\n"
+ tooltip_focus_EU777_accepted: "§OTIC§! is §Caccepted§! by the Council.\n"
+ tooltip_focus_EU777_accepted_NOT: "§OTIC§! is not §Caccepted§! by the Council.\n"
+ tooltip_focus_EU777_EP_approval: "§OTIC§! is §Gapproved§! by the European Parliament.\n"
+ tooltip_focus_EU777_EP_approval_NOT: "§OTIC§! is not §Gapproved§! by the European Parliament.\n"
+ tooltip_focus_EU777_EP_overrule_option: "European Parliament has the option to §Ooverrule§! the Council (§YEuropean Constitution§! OR §YEuropean Federation§! has been §Caccepted§! AND §OTIC§! was §Rdismissed§! and retry taken).\n"

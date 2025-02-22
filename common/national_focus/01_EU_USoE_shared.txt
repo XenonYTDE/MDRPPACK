@@ -3384,3 +3384,21 @@ shared_focus = {
 		factor = 1
 	}
 }
+
+shared_focus = {
+	id = USoE_TIC
+	icon = TIC_focus_icon
+	relative_position_id = USoE701
+	x = 0
+	y = 1
+	cost = 52.2
+	prerequisite = { focus = USoE701 }
+
+	available = { has_country_flag = USoE }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USoE_TIC"
+		set_global_flag = TIC_focus_complete
+		custom_trigger_tooltip = USoE_TIC_tt
+	}
+}

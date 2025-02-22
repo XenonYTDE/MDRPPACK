@@ -100,6 +100,7 @@ scripted_gui = {
 					has_country_flag = TIC_council_tab_open
 					has_country_flag = TIC_bank_tab_open
 					has_country_flag = TIC_institutions_tab_open
+					has_country_flag = TIC_military_tab_open
 					has_country_flag = TIC_legislations_tab_open
 				}
 			}
@@ -698,6 +699,8 @@ scripted_gui = {
 
 		# TIC Institutions
 
+		# TIC Military
+
 		# TIC Legislations
 
 		}
@@ -739,8 +742,13 @@ scripted_gui = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_institutions_tab_open
 			}
-			# Open Legislations
+			# Open Military
 			TIC_upper_button_7_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_military_tab_open
+			}
+			# Open Legislations
+			TIC_upper_button_8_click = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_legislations_tab_open
 			}

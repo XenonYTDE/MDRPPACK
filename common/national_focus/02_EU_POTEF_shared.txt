@@ -7124,3 +7124,21 @@ shared_focus = {
 		factor = 1
 	}
 }
+
+shared_focus = {
+	id = POTEF_TIC
+	icon = TIC_focus_icon
+	relative_position_id = POTEF001
+	x = -5
+	y = 1
+	cost = 52.2
+	prerequisite = { focus = POTEF001 }
+
+	available = { has_idea = EU_president }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POTEF_TIC"
+		set_global_flag = TIC_focus_complete
+		custom_trigger_tooltip = POTEF_TIC_tt
+	}
+}

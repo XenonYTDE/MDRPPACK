@@ -70,7 +70,7 @@ guiTypes = {
 		buttonType = {
 			name = "TIC_upper_button_1" # offices
 			position = { x = 47 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			spriteType = "GFX_TIC_button_123x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_1_title"
 			format = center
@@ -78,8 +78,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_2" # info
-			position = { x = 189 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			position = { x = 171 y = 94 }
+			spriteType = "GFX_TIC_button_123x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_2_title"
 			format = center
@@ -87,8 +87,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_3" # parliament
-			position = { x = 331 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			position = { x = 295 y = 94 }
+			spriteType = "GFX_TIC_button_123x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_3_title"
 			format = center
@@ -96,8 +96,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_4" # council
-			position = { x = 473 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			position = { x = 419 y = 94 }
+			spriteType = "GFX_TIC_button_124x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_4_title"
 			format = center
@@ -105,8 +105,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_5" # bank
-			position = { x = 615 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			position = { x = 544 y = 94 }
+			spriteType = "GFX_TIC_button_124x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_5_title"
 			format = center
@@ -114,19 +114,28 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_6" # institutions
-			position = { x = 757 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			position = { x = 669 y = 94 }
+			spriteType = "GFX_TIC_button_123x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_6_title"
 			format = center
 			pdx_tooltip = "TIC_institutions_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_7" # legislations
-			position = { x = 899 y = 94 }
-			spriteType = "GFX_TIC_upper_button"
+			name = "TIC_upper_button_7" # military
+			position = { x = 793 y = 94 }
+			spriteType = "GFX_TIC_button_123x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_7_title"
+			format = center
+			pdx_tooltip = "TIC_military_tab_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_8" # legislations
+			position = { x = 917 y = 94 }
+			spriteType = "GFX_TIC_button_123x43"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_8_title"
 			format = center
 			pdx_tooltip = "TIC_legislations_tab_desc"
 		}

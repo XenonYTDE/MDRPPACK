@@ -2327,60 +2327,6 @@ focus_EU610_EP_overrule_option = {
 	}
 }
 
-################################################ # DO NOT MERGE FROM BASE MD
-############# EU701 ########## Russia ########## # DO NOT MERGE FROM BASE MD
-################################################ # DO NOT MERGE FROM BASE MD
-
-focus_EU701_draft = {
-	custom_trigger_tooltip = {
-		tooltip = tooltip_focus_EU701_draft
-		any_of_scopes = {
-			array = global.EU_member
-			OR = {
-				has_country_flag = focus_EU701
-				has_country_flag = focus_EU701_QMV
-				has_country_flag = focus_EU701_maj
-			}
-		}
-	}
-}
-
-focus_EU701_accepted = {
-	custom_trigger_tooltip = {
-		tooltip = tooltip_focus_EU701_accepted
-		any_of_scopes = {
-			array = global.EU_member
-			OR = {
-				has_country_flag = focus_EU701_yes
-				has_country_flag = focus_EU701_QMV_yes
-			}
-		}
-	}
-}
-
-focus_EU701_EP_approval = {
-	custom_trigger_tooltip = {
-		tooltip = tooltip_focus_EU701_EP_approval
-		any_of_scopes = {
-			array = global.EU_member
-			has_global_flag = focus_EU701_EP_approval
-		}
-	}
-}
-
-focus_EU701_EP_overrule_option = {
-	custom_trigger_tooltip = {
-		tooltip = tooltip_focus_EU701_EP_overrule_option
-		AND = {
-			OR = {
-				has_global_flag = european_constitution
-				has_global_flag = european_federation
-			}
-			has_global_flag = focus_EU701_EP_overrule_option
-		}
-	}
-}
-
 ### EU611 ###
 
 focus_EU611_draft = {
@@ -2615,6 +2561,114 @@ EU_parliament_focus_EUXXX_overrule_check = {
 
 		}
 		EUXXX = "[EUXXX_EP_agenda]"
+	}
+}
+
+################################################ # DO NOT MERGE FROM BASE MD
+############# EU701 ########## Russia ########## # DO NOT MERGE FROM BASE MD
+################################################ # DO NOT MERGE FROM BASE MD
+
+focus_EU701_draft = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU701_draft
+		any_of_scopes = {
+			array = global.EU_member
+			OR = {
+				has_country_flag = focus_EU701
+				has_country_flag = focus_EU701_QMV
+				has_country_flag = focus_EU701_maj
+			}
+		}
+	}
+}
+
+focus_EU701_accepted = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU701_accepted
+		any_of_scopes = {
+			array = global.EU_member
+			OR = {
+				has_country_flag = focus_EU701_yes
+				has_country_flag = focus_EU701_QMV_yes
+			}
+		}
+	}
+}
+
+focus_EU701_EP_approval = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU701_EP_approval
+		any_of_scopes = {
+			array = global.EU_member
+			has_global_flag = focus_EU701_EP_approval
+		}
+	}
+}
+
+focus_EU701_EP_overrule_option = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU701_EP_overrule_option
+		AND = {
+			OR = {
+				has_global_flag = european_constitution
+				has_global_flag = european_federation
+			}
+			has_global_flag = focus_EU701_EP_overrule_option
+		}
+	}
+}
+
+############################################# # DO NOT MERGE FROM BASE MD
+############# EU777 ########## TIC ########## # DO NOT MERGE FROM BASE MD
+############################################# # DO NOT MERGE FROM BASE MD
+
+focus_EU777_draft = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU777_draft
+		any_of_scopes = {
+			array = global.EU_member
+			OR = {
+				has_country_flag = focus_EU777
+				has_country_flag = focus_EU777_QMV
+				has_country_flag = focus_EU777_maj
+			}
+		}
+	}
+}
+
+focus_EU777_accepted = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU777_accepted
+		any_of_scopes = {
+			array = global.EU_member
+			OR = {
+				has_country_flag = focus_EU777_yes
+				has_country_flag = focus_EU777_QMV_yes
+			}
+		}
+	}
+}
+
+focus_EU777_EP_approval = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU777_EP_approval
+		any_of_scopes = {
+			array = global.EU_member
+			has_global_flag = focus_EU777_EP_approval
+		}
+	}
+}
+
+focus_EU777_EP_overrule_option = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_focus_EU777_EP_overrule_option
+		AND = {
+			OR = {
+				has_global_flag = european_constitution
+				has_global_flag = european_federation
+			}
+			has_global_flag = focus_EU777_EP_overrule_option
+		}
 	}
 }
 

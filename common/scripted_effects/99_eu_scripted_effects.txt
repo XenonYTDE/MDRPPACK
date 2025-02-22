@@ -176,9 +176,6 @@ EU_clear_voting = {
 		clr_global_flag = focus_EU610_voted
 		clr_global_flag = focus_EU610_QMV_voted
 		clr_global_flag = focus_EU610_maj_voted
-		clr_global_flag = focus_EU701_voted # DO NOT MERGE FROM BASE MD
-		clr_global_flag = focus_EU701_QMV_voted # DO NOT MERGE FROM BASE MD
-		clr_global_flag = focus_EU701_maj_voted # DO NOT MERGE FROM BASE MD
 		clr_global_flag = focus_EU611_voted
 		clr_global_flag = focus_EU611_QMV_voted
 		clr_global_flag = focus_EU611_maj_voted
@@ -312,12 +309,22 @@ EU_clear_voting = {
 		clr_global_flag = focus_EU610_result
 		clr_global_flag = focus_EU610_QMV_result
 		clr_global_flag = focus_EU610_maj_result
-		clr_global_flag = focus_EU701_result # DO NOT MERGE WITH BASE MD
-		clr_global_flag = focus_EU701_QMV_result # DO NOT MERGE WITH BASE MD
-		clr_global_flag = focus_EU701_maj_result # DO NOT MERGE WITH BASE MD
 		clr_global_flag = focus_EU611_result
 		clr_global_flag = focus_EU611_QMV_result
 		clr_global_flag = focus_EU611_maj_result
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+		clr_global_flag = focus_EU701_voted
+		clr_global_flag = focus_EU701_QMV_voted
+		clr_global_flag = focus_EU701_maj_voted
+		clr_global_flag = focus_EU701_result
+		clr_global_flag = focus_EU701_QMV_result
+		clr_global_flag = focus_EU701_maj_result
+		clr_global_flag = focus_EU777_voted
+		clr_global_flag = focus_EU777_QMV_voted
+		clr_global_flag = focus_EU777_maj_voted
+		clr_global_flag = focus_EU777_result
+		clr_global_flag = focus_EU777_QMV_result
+		clr_global_flag = focus_EU777_maj_result
 	}
 	update_eu_dirty_variable = yes
 }
@@ -1424,20 +1431,6 @@ leaving_EU = {
 					set_country_flag = focus_EU610_QMV_yes
 				}
 		}
-		if = { limit = { has_country_flag = focus_EU701_yes } # DO NOT MERGE WITH BASE MD
-				 clr_country_flag = focus_EU701_yes
-				random_country = {
-					limit = { has_idea = EU_member }
-					set_country_flag = focus_EU701_yes
-				}
-		}
-		if = { limit = { has_country_flag = focus_EU701_QMV_yes } # DO NOT MERGE WITH BASE MD
-				 clr_country_flag = focus_EU701_QMV_yes
-				random_country = {
-					limit = { has_idea = EU_member }
-					set_country_flag = focus_EU701_QMV_yes
-				}
-		}
 		if = { limit = { has_country_flag = focus_EU611_yes }
 				 clr_country_flag = focus_EU611_yes
 				random_country = {
@@ -1451,6 +1444,35 @@ leaving_EU = {
 				limit = { has_idea = EU_member }
 				set_country_flag = focus_EU611_QMV_yes
 			}
+		}
+		### Poggers Laws # DO NOT MERGE FROM BASE MD
+		if = { limit = { has_country_flag = focus_EU701_yes }
+				 clr_country_flag = focus_EU701_yes
+				random_country = {
+					limit = { has_idea = EU_member }
+					set_country_flag = focus_EU701_yes
+				}
+		}
+		if = { limit = { has_country_flag = focus_EU701_QMV_yes }
+				 clr_country_flag = focus_EU701_QMV_yes
+				random_country = {
+					limit = { has_idea = EU_member }
+					set_country_flag = focus_EU701_QMV_yes
+				}
+		}
+		if = { limit = { has_country_flag = focus_EU777_yes }
+				 clr_country_flag = focus_EU777_yes
+				random_country = {
+					limit = { has_idea = EU_member }
+					set_country_flag = focus_EU777_yes
+				}
+		}
+		if = { limit = { has_country_flag = focus_EU777_QMV_yes }
+				 clr_country_flag = focus_EU777_QMV_yes
+				random_country = {
+					limit = { has_idea = EU_member }
+					set_country_flag = focus_EU777_QMV_yes
+				}
 		}
 
 		### end of focus flag clearing and setting
@@ -2494,7 +2516,6 @@ init_the_european_union = {
 	add_to_array = { global.EU_potential_votes = 608 } # Caucasus Enlargement
 	add_to_array = { global.EU_potential_votes = 609 } # European Economic Area
 	add_to_array = { global.EU_potential_votes = 610 } # Belarus
-	add_to_array = { global.EU_potential_votes = 701 } # Russia # DO NOT MERGE FROM BASE MD
 	add_to_array = { global.EU_potential_votes = 611 } # Internal Enlargement
 	add_to_array = { global.EU_potential_votes = 110 } # Federalisation of the European Union
 	add_to_array = { global.EU_potential_votes = 111 } # United States of Europe
@@ -2544,8 +2565,13 @@ init_the_european_union = {
 	add_to_array = { global.EU_expansion_laws = 608 }
 	add_to_array = { global.EU_expansion_laws = 609 }
 	add_to_array = { global.EU_expansion_laws = 610 }
-	add_to_array = { global.EU_expansion_laws = 701 } # DO NOT MERGE FROM BASE MD
 	add_to_array = { global.EU_expansion_laws = 611 }
+
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	add_to_array = { global.EU_potential_votes = 701 } # Russia
+	add_to_array = { global.EU_potential_votes = 777 } # TIC
+	add_to_array = { global.EU_expansion_laws = 701 } # Russia
+	add_to_array = { global.EU_expansion_laws = 777 } # TIC
 
 	#base voting array for pp calcuations
 	add_to_array = { array = global.starting_mep_support_parliment value = -100 }
@@ -2785,11 +2811,14 @@ on_startup_euu_action = {
 			add_to_array = { global.EU_potential_votes = 608 } # Caucasus Enlargement
 			add_to_array = { global.EU_potential_votes = 609 } # European Economic Area
 			add_to_array = { global.EU_potential_votes = 610 } # Belarus
-			add_to_array = { global.EU_potential_votes = 701 } # Russia # DO NOT MERGE FROM BASE MD
 			add_to_array = { global.EU_potential_votes = 611 } # Internal Enlargement
 			add_to_array = { global.EU_potential_votes = 110 } # Federalisation of the European Union
 			add_to_array = { global.EU_potential_votes = 111 } # United States of Europe
 			add_to_array = { global.EU_potential_votes = 112 } # European Federation
+
+			### Poggers Laws # DO NOT MERGE FROM BASE MD
+			add_to_array = { global.EU_potential_votes = 701 } # Russia
+			add_to_array = { global.EU_potential_votes = 777 } # TIC
 
 			#base voting array for pp calcuations
 			add_to_array = { array = global.starting_mep_support_parliment value = -100 }

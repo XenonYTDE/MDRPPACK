@@ -729,7 +729,21 @@ EU_update_AI_focus_EU610_voting_modifier = {
 
 	EU_update_AI_general_voting_modifiers = yes
 }
-EU_update_AI_focus_EU701_voting_modifier = { # DO NOT MERGE WITH BASE MD
+EU_update_AI_focus_EU611_voting_modifier = {
+	set_temp_variable = { EU_AI_focus_modifier_yes_vote = 0 }
+
+	set_temp_variable = { value1 = -25 }
+	set_temp_variable = { value2 = 25 }
+	set_temp_variable = { value3 = 25 }
+	set_temp_variable = { value4 = 25 }
+	set_temp_variable = { value5 = 25 }
+	set_temp_variable = { value6 = -25 }
+	EU_law_party_value_weight = yes
+
+	EU_update_AI_general_voting_modifiers = yes
+}
+### Poggers Laws # DO NOT MERGE FROM BASE MD
+EU_update_AI_focus_EU701_voting_modifier = {
 	set_temp_variable = { EU_AI_focus_modifier_yes_vote = 0 }
 
 	set_temp_variable = { value1 = 25 }
@@ -742,10 +756,10 @@ EU_update_AI_focus_EU701_voting_modifier = { # DO NOT MERGE WITH BASE MD
 
 	EU_update_AI_general_voting_modifiers = yes
 }
-EU_update_AI_focus_EU611_voting_modifier = {
+EU_update_AI_focus_EU777_voting_modifier = {
 	set_temp_variable = { EU_AI_focus_modifier_yes_vote = 0 }
 
-	set_temp_variable = { value1 = -25 }
+	set_temp_variable = { value1 = 25 }
 	set_temp_variable = { value2 = 25 }
 	set_temp_variable = { value3 = 25 }
 	set_temp_variable = { value4 = 25 }
@@ -1884,29 +1898,6 @@ focus_EU610_QMV_result = {
 		cleanup_european_union_voting_no = yes
 	}
 }
-# DO NOT MERGE FROM BASE MD
-#####################
-####### EU701 #######
-#####################
-
-focus_EU701_QMV_result = {
-	if = {
-		limit = {
-			EU_voting_decision_result_trigger = yes
-		}
-		set_country_flag = focus_EU701_QMV_yes
-
-		cleanup_european_union_voting_yes = yes
-
-		SOV = { set_country_flag = EU_candidate }
-
-		add_to_array = { global.EU_candidates = SOV }
-	}
-	else = {
-		set_country_flag = focus_EU701_QMV_no
-		cleanup_european_union_voting_no = yes
-	}
-}
 
 ### EU611 ###
 focus_EU611_QMV_result = {
@@ -1935,6 +1926,46 @@ focus_EU611_QMV_result = {
 		cleanup_european_union_voting_no = yes
 	}
 	update_eu_dirty_variable = yes
+}
+
+### Poggers Laws # DO NOT MERGE FROM BASE MD
+#####################
+####### EU701 #######
+#####################
+focus_EU701_QMV_result = {
+	if = {
+		limit = {
+			EU_voting_decision_result_trigger = yes
+		}
+		set_country_flag = focus_EU701_QMV_yes
+
+		cleanup_european_union_voting_yes = yes
+
+		SOV = { set_country_flag = EU_candidate }
+
+		add_to_array = { global.EU_candidates = SOV }
+	}
+	else = {
+		set_country_flag = focus_EU701_QMV_no
+		cleanup_european_union_voting_no = yes
+	}
+}
+#####################
+####### EU777 #######
+#####################
+focus_EU777_QMV_result = {
+	if = {
+		limit = {
+			EU_voting_decision_result_trigger = yes
+		}
+		set_global_flag = TIC_EU_law_passed
+
+		cleanup_european_union_voting_yes = yes
+	}
+	else = {
+		set_country_flag = focus_EU777_QMV_no
+		cleanup_european_union_voting_no = yes
+	}
 }
 
 cleanup_european_union_voting_yes = {
@@ -2177,11 +2208,15 @@ EU_show_display_effects_for_law = {
 		else_if = { limit = { check_variable = { v = 610 } }
 			custom_effect_tooltip = tooltip_EU_parliament_focus_EU610_EP_agenda_additional
 		}
-		else_if = { limit = { check_variable = { v = 701 } } # DO NOT MERGE FROM BASE MD
-			custom_effect_tooltip = tooltip_EU_parliament_focus_EU701_EP_agenda_additional
-		}
 		else_if = { limit = { check_variable = { v = 611 } }
 			custom_effect_tooltip = tooltip_EU_parliament_focus_EU611_EP_agenda_additional
+		}
+		### Poggers Laws # DO NOT MERGE FROM BASE MD
+		else_if = { limit = { check_variable = { v = 701 } }
+			custom_effect_tooltip = tooltip_EU_parliament_focus_EU701_EP_agenda_additional
+		}
+		else_if = { limit = { check_variable = { v = 777 } }
+			custom_effect_tooltip = tooltip_EU_parliament_focus_EU777_EP_agenda_additional
 		}
 		else = {
 			custom_effect_tooltip = EU_show_display_effects_for_law_no_effect_tt

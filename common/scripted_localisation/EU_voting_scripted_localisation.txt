@@ -118,9 +118,6 @@ defined_text = {
 	text = { trigger = { check_variable = { v = 610 } }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { check_variable = { v = 701 } }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -132,6 +129,13 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 111 } }
 		localization_key = EU_show_available_111_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { v = 701 } }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { check_variable = { v = 777 } }
+		localization_key = EU_show_available_777_loc_key
 	}
 }
 
@@ -255,9 +259,6 @@ defined_text = {
 	text = { trigger = { check_variable = { v = 610 } }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { check_variable = { v = 701 } }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -269,6 +270,13 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 111 } }
 		localization_key = EU_show_available_111_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { v = 701 } }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { check_variable = { v = 777 } }
+		localization_key = EU_show_available_777_loc_key
 	}
 }
 
@@ -392,9 +400,6 @@ defined_text = {
 	text = { trigger = { check_variable = { v = 610 } }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { check_variable = { v = 701 } }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -406,6 +411,13 @@ defined_text = {
 	}
 	text = { trigger = { check_variable = { v = 111 } }
 		localization_key = EU_show_available_111_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { v = 701 } }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { check_variable = { v = 777 } }
+		localization_key = EU_show_available_777_loc_key
 	}
 }
 
@@ -530,9 +542,6 @@ defined_text = {
 	text = { trigger = { check_variable = { global.current_active_agenda_disp = 610 } }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { check_variable = { global.current_active_agenda_disp = 701 } }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_agenda_disp = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -554,6 +563,13 @@ defined_text = {
 	text = {
 		localization_key = EU_show_available_0_loc_key
 	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { global.current_active_agenda_disp = 701 } }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { check_variable = { global.current_active_agenda_disp = 777 } }
+	localization_key = EU_show_available_777_loc_key
+}
 }
 
 defined_text = {
@@ -677,9 +693,6 @@ defined_text = {
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 610 } }
 		localization_key = EU_show_available_610_loc_key
 	}
-	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
-		localization_key = EU_show_available_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 611 } }
 		localization_key = EU_show_available_611_loc_key
 	}
@@ -700,6 +713,13 @@ defined_text = {
 	}
 	text = {
 		localization_key = EU_show_available_0_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
+		localization_key = EU_show_available_701_loc_key
+	}
+	text = { trigger = { check_variable = { global.current_active_vote_disp = 777 } }
+		localization_key = EU_show_available_777_loc_key
 	}
 }
 
@@ -824,9 +844,6 @@ defined_text = {
 	text = { trigger = { check_variable = { v = 610 } }
 		localization_key = EU_show_available_desc_610_loc_key
 	}
-	text = { trigger = { check_variable = { v = 701 } }
-		localization_key = EU_show_available_desc_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { v = 611 } }
 		localization_key = EU_show_available_desc_611_loc_key
 	}
@@ -850,6 +867,13 @@ defined_text = {
 	}
 	text = {
 		localization_key = EU_show_available_0_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { v = 701 } }
+		localization_key = EU_show_available_desc_701_loc_key
+	}
+	text = { trigger = { check_variable = { v = 777 } }
+		localization_key = EU_show_available_desc_777_loc_key
 	}
 }
 
@@ -974,9 +998,6 @@ defined_text = {
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 610 } }
 		localization_key = EU_show_available_desc_610_loc_key
 	}
-	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
-		localization_key = EU_show_available_desc_701_loc_key
-	} # DO NOT MERGE FROM BASE MD
 	text = { trigger = { check_variable = { global.current_active_vote_disp = 611 } }
 		localization_key = EU_show_available_desc_611_loc_key
 	}
@@ -1000,5 +1021,12 @@ defined_text = {
 	}
 	text = {
 		localization_key = EU_show_available_desc_0_loc_key
+	}
+	### Poggers Laws # DO NOT MERGE FROM BASE MD
+	text = { trigger = { check_variable = { global.current_active_vote_disp = 701 } }
+		localization_key = EU_show_available_desc_701_loc_key
+	}
+	text = { trigger = { check_variable = { global.current_active_vote_disp = 777 } }
+		localization_key = EU_show_available_desc_777_loc_key
 	}
 }
