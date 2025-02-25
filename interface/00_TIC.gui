@@ -1133,7 +1133,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "TIC_parlparty_0"
 				position = { x = 10 y = 33 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_0
@@ -1143,14 +1143,14 @@ guiTypes = {
 				name = "TIC_parlparty_0_infl"
 				position = { x = 205 y = 33 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_0_infl
 				pdx_tooltip = TIC_parlparty_0_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_1"
 				position = { x = 10 y = 57 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_1
@@ -1160,14 +1160,14 @@ guiTypes = {
 				name = "TIC_parlparty_1_infl"
 				position = { x = 205 y = 57 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_1_infl
 				pdx_tooltip = TIC_parlparty_1_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_2"
 				position = { x = 10 y = 81 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_2
@@ -1177,14 +1177,14 @@ guiTypes = {
 				name = "TIC_parlparty_2_infl"
 				position = { x = 205 y = 81 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_2_infl
 				pdx_tooltip = TIC_parlparty_2_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_3"
 				position = { x = 10 y = 105 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_3
@@ -1194,14 +1194,14 @@ guiTypes = {
 				name = "TIC_parlparty_3_infl"
 				position = { x = 205 y = 105 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_3_infl
 				pdx_tooltip = TIC_parlparty_3_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_4"
 				position = { x = 10 y = 129 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_4
@@ -1211,14 +1211,14 @@ guiTypes = {
 				name = "TIC_parlparty_4_infl"
 				position = { x = 205 y = 129 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_4_infl
 				pdx_tooltip = TIC_parlparty_4_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_5"
 				position = { x = 10 y = 153 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_5
@@ -1228,14 +1228,14 @@ guiTypes = {
 				name = "TIC_parlparty_5_infl"
 				position = { x = 205 y = 153 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_5_infl
 				pdx_tooltip = TIC_parlparty_5_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_6"
 				position = { x = 10 y = 177 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_6
@@ -1245,14 +1245,14 @@ guiTypes = {
 				name = "TIC_parlparty_6_infl"
 				position = { x = 205 y = 177 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_6_infl
 				pdx_tooltip = TIC_parlparty_6_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_7"
 				position = { x = 10 y = 201 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_7
@@ -1262,14 +1262,14 @@ guiTypes = {
 				name = "TIC_parlparty_7_infl"
 				position = { x = 205 y = 201 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_7_infl
 				pdx_tooltip = TIC_parlparty_7_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_8"
 				position = { x = 10 y = 225 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_8
@@ -1279,14 +1279,14 @@ guiTypes = {
 				name = "TIC_parlparty_8_infl"
 				position = { x = 205 y = 225 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_8_infl
 				pdx_tooltip = TIC_parlparty_8_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_9"
 				position = { x = 10 y = 249 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_9
@@ -1296,14 +1296,14 @@ guiTypes = {
 				name = "TIC_parlparty_9_infl"
 				position = { x = 205 y = 249 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_9_infl
 				pdx_tooltip = TIC_parlparty_9_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_10"
 				position = { x = 10 y = 273 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_10
@@ -1313,14 +1313,14 @@ guiTypes = {
 				name = "TIC_parlparty_10_infl"
 				position = { x = 205 y = 273 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_10_infl
 				pdx_tooltip = TIC_parlparty_10_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_11"
 				position = { x = 10 y = 297 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_11
@@ -1330,14 +1330,14 @@ guiTypes = {
 				name = "TIC_parlparty_11_infl"
 				position = { x = 205 y = 297 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_11_infl
 				pdx_tooltip = TIC_parlparty_11_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_12"
 				position = { x = 10 y = 321 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_12
@@ -1347,14 +1347,14 @@ guiTypes = {
 				name = "TIC_parlparty_12_infl"
 				position = { x = 205 y = 321 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_12_infl
 				pdx_tooltip = TIC_parlparty_12_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_13"
 				position = { x = 10 y = 345 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_13
@@ -1364,14 +1364,14 @@ guiTypes = {
 				name = "TIC_parlparty_13_infl"
 				position = { x = 205 y = 345 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_13_infl
 				pdx_tooltip = TIC_parlparty_13_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_14"
 				position = { x = 10 y = 369 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_14
@@ -1381,14 +1381,14 @@ guiTypes = {
 				name = "TIC_parlparty_14_infl"
 				position = { x = 205 y = 369 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_14_infl
 				pdx_tooltip = TIC_parlparty_14_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_15"
 				position = { x = 10 y = 393 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_15
@@ -1398,14 +1398,14 @@ guiTypes = {
 				name = "TIC_parlparty_15_infl"
 				position = { x = 205 y = 393 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_15_infl
 				pdx_tooltip = TIC_parlparty_15_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_16"
 				position = { x = 10 y = 417 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_16
@@ -1415,14 +1415,14 @@ guiTypes = {
 				name = "TIC_parlparty_16_infl"
 				position = { x = 205 y = 417 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_16_infl
 				pdx_tooltip = TIC_parlparty_16_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_17"
 				position = { x = 10 y = 441 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_17
@@ -1432,14 +1432,14 @@ guiTypes = {
 				name = "TIC_parlparty_17_infl"
 				position = { x = 205 y = 441 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_17_infl
 				pdx_tooltip = TIC_parlparty_17_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_18"
 				position = { x = 10 y = 465 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_18
@@ -1449,14 +1449,14 @@ guiTypes = {
 				name = "TIC_parlparty_18_infl"
 				position = { x = 205 y = 465 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_18_infl
 				pdx_tooltip = TIC_parlparty_18_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_19"
 				position = { x = 10 y = 489 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_19
@@ -1466,14 +1466,14 @@ guiTypes = {
 				name = "TIC_parlparty_19_infl"
 				position = { x = 205 y = 489 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_19_infl
 				pdx_tooltip = TIC_parlparty_19_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_20"
 				position = { x = 10 y = 513 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_20
@@ -1483,14 +1483,14 @@ guiTypes = {
 				name = "TIC_parlparty_20_infl"
 				position = { x = 205 y = 513 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_20_infl
 				pdx_tooltip = TIC_parlparty_20_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_21"
 				position = { x = 10 y = 537 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_21
@@ -1500,14 +1500,14 @@ guiTypes = {
 				name = "TIC_parlparty_21_infl"
 				position = { x = 205 y = 537 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_21_infl
 				pdx_tooltip = TIC_parlparty_21_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_22"
 				position = { x = 10 y = 561 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_22
@@ -1517,14 +1517,14 @@ guiTypes = {
 				name = "TIC_parlparty_22_infl"
 				position = { x = 205 y = 561 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_22_infl
 				pdx_tooltip = TIC_parlparty_22_infl_tt
 			}
 			instantTextBoxType = {
 				name = "TIC_parlparty_23"
 				position = { x = 10 y = 585 }
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				maxWidth = 200
 				maxHeight = 20
 				text = TIC_parlparty_23
@@ -1534,7 +1534,7 @@ guiTypes = {
 				name = "TIC_parlparty_23_infl"
 				position = { x = 205 y = 585 }
 				spriteType = "GFX_TIC_narrow_button"
-				font = "hoi_16mbs"
+				font = "hoi_18mbs"
 				text = TIC_parlparty_23_infl
 				pdx_tooltip = TIC_parlparty_23_infl_tt
 			}
@@ -1578,6 +1578,43 @@ guiTypes = {
 				font = "hoi_16mbs"
 				format = center
 				maxWidth = 185
+				maxHeight = 20
+			}
+
+			instantTextBoxType = {
+				name = "TIC_parl_active_laws_agenda_title"
+				position = { x = 495 y = 130 }
+				text = "Current Law Agenda:"
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_parl_active_laws_agenda"
+				position = { x = 495 y = 155 }
+				text = "[TIC_active_laws_agenda_name]"
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_parl_active_exp_agenda_title"
+				position = { x = 495 y = 185 }
+				text = "Current Expansion Agenda:"
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_parl_active_exp_agenda"
+				position = { x = 495 y = 210 }
+				text = "[TIC_active_exp_agenda_name]"
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
 				maxHeight = 20
 			}
 			
@@ -1754,7 +1791,7 @@ guiTypes = {
 		name = "TIC_available_expansions_list"
 
 		buttonType = {
-			name = "TIC_available_expansions_button"
+			name = "TIC_available_exp_button"
 			position = { x = 0 y = 0 }
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"

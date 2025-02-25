@@ -73,7 +73,11 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
 		}		
 	}
 
@@ -148,7 +152,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}
 
 	Build_military_factory = {
@@ -222,7 +231,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}	
 
 	Build_offices_sector = {
@@ -298,7 +312,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}
 
 	Build_dockyard = {
@@ -435,7 +454,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}
 
 	Build_nuclear_power = {
@@ -511,7 +535,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}
 
 	Build_rafinery = {
@@ -586,7 +615,12 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}		
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}		
 	}
 
 	Expand_building_slots = {
@@ -980,6 +1014,11 @@ Build_industry_building = {
 			modifier = {
 				gdp_debt_ratio_higher_50 = yes
 				add = -100
-			}		}
+			}
+			modifier = {
+				has_political_power < 200
+				add = -100
+			}
+		}
 	}	
 }

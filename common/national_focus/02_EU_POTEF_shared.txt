@@ -7139,6 +7139,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus POTEF_TIC"
 		set_global_flag = TIC_focus_complete
-		custom_trigger_tooltip = POTEF_TIC_tt
+		custom_effect_tooltip = POTEF_TIC_tt
 	}
 }
