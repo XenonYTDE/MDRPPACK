@@ -2,6 +2,8 @@
 ### TIC scripted triggers ###
 #############################
 
+# Upper buttons
+
 TIC_offices_tab_open_trigger = {
 	OR = {
 		AND = {
@@ -66,6 +68,16 @@ TIC_military_tab_open_trigger = {
 	OR = {
 		AND = {
 			has_country_flag = TIC_military_tab_open
+			has_country_flag = new_TIC_open
+		}
+		is_ai = yes
+	}
+}
+
+TIC_space_tab_open_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = TIC_space_tab_open
 			has_country_flag = new_TIC_open
 		}
 		is_ai = yes

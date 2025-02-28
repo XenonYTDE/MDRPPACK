@@ -46,7 +46,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "TIC_main_gui_title"
-			position = { x = -251 y = 35 }
+			position = { x = -251 y = 40 }
 			format = center
 			orientation = center_up
 			maxWidth = 500
@@ -440,7 +440,7 @@ guiTypes = {
 			# Office 10
 			buttonType = {
 				name = "TIC_office_10_flag"
-				position = { x = 701 y = 300 }
+				position = { x = 901 y = 300 }
 				quadTextureSprite = "GFX_shield_medium"
 				font = "hoi_18mbs"
 				text = ""
@@ -1540,25 +1540,126 @@ guiTypes = {
 			}
 
 			# Parliament info
-
+			instantTextBoxType = {
+				name = "TIC_next_elections_title"
+				position = { x = 320 y = 15 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_next_elections_title
+			}
+			instantTextBoxType = {
+				name = "TIC_next_elections"
+				position = { x = 320 y = 35 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_next_elections
+			}
 			instantTextBoxType = {
 				name = "TIC_total_mp_count_title"
-				position = { x = 345 y = 15 }
+				position = { x = 320 y = 65 }
 				font = "hoi_18mbs"
-				maxWidth = 150
+				maxWidth = 190
 				maxHeight = 20
 				format = center
 				text = TIC_total_mp_count_title
 			}
 			instantTextBoxType = {
 				name = "TIC_total_mp_count"
-				position = { x = 345 y = 35 }
+				position = { x = 320 y = 85 }
 				font = "hoi_18mbs"
-				maxWidth = 150
+				maxWidth = 190
 				maxHeight = 20
 				format = center
 				text = TIC_total_mp_count
 				pdx_tooltip = TIC_total_mp_count_tt
+			}
+			instantTextBoxType = {
+				name = "TIC_unaffiliated_mp_count"
+				position = { x = 320 y = 115 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_parlunaff
+			}
+			instantTextBoxType = {
+				name = "TIC_supermajority_mp_count_title"
+				position = { x = 320 y = 145 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_supermajority_title
+				pdx_tooltip = TIC_supermajority_tt
+			}
+			instantTextBoxType = {
+				name = "TIC_supermajority_mp_count"
+				position = { x = 320 y = 165 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_supermajority
+				pdx_tooltip = TIC_supermajority_tt
+			}
+
+			instantTextBoxType = {
+				name = "TIC_supporting_mp_count_title"
+				position = { x = 320 y = 195 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_supporting_mp_count_title
+			}
+			instantTextBoxType = {
+				name = "TIC_supporting_mp_count"
+				position = { x = 320 y = 215 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_supporting_mp_count
+			}
+			instantTextBoxType = {
+				name = "TIC_rejecting_mp_count_title"
+				position = { x = 320 y = 245 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_rejecting_mp_count_title
+			}
+			instantTextBoxType = {
+				name = "TIC_rejecting_mp_count"
+				position = { x = 320 y = 265 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_rejecting_mp_count
+			}
+			instantTextBoxType = {
+				name = "TIC_abstaining_mp_count_title"
+				position = { x = 320 y = 295 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_abstaining_mp_count_title
+			}
+			instantTextBoxType = {
+				name = "TIC_abstaining_mp_count"
+				position = { x = 320 y = 315 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_abstaining_mp_count
 			}
 
 			iconType = {
