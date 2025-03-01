@@ -153,6 +153,9 @@ TIC_parliament_init = {
 	add_to_array = { global.TIC_available_laws = 122 }
 	add_to_array = { global.TIC_available_laws = 123 }
 	add_to_array = { global.TIC_available_laws = 124 }
+	add_to_array = { global.TIC_available_laws = 125 }
+	add_to_array = { global.TIC_available_laws = 126 }
+	add_to_array = { global.TIC_available_laws = 127 }
 	# Available Expansions
 	add_to_array = { global.TIC_available_expansions = 101 }
 	add_to_array = { global.TIC_available_expansions = 102 }
@@ -189,6 +192,32 @@ TIC_parliament_init = {
 	add_to_array = { global.TIC_available_expansions = 133 }
 	add_to_array = { global.TIC_available_expansions = 134 }
 	add_to_array = { global.TIC_available_expansions = 135 }
+	add_to_array = { global.TIC_available_expansions = 136 }
+
+	add_to_array = { global.TIC_parlparty_number = 0 }
+	add_to_array = { global.TIC_parlparty_number = 1 }
+	add_to_array = { global.TIC_parlparty_number = 2 }
+	add_to_array = { global.TIC_parlparty_number = 3 }
+	add_to_array = { global.TIC_parlparty_number = 4 }
+	add_to_array = { global.TIC_parlparty_number = 5 }
+	add_to_array = { global.TIC_parlparty_number = 6 }
+	add_to_array = { global.TIC_parlparty_number = 7 }
+	add_to_array = { global.TIC_parlparty_number = 8 }
+	add_to_array = { global.TIC_parlparty_number = 9 }
+	add_to_array = { global.TIC_parlparty_number = 10 }
+	add_to_array = { global.TIC_parlparty_number = 11 }
+	add_to_array = { global.TIC_parlparty_number = 12 }
+	add_to_array = { global.TIC_parlparty_number = 13 }
+	add_to_array = { global.TIC_parlparty_number = 14 }
+	add_to_array = { global.TIC_parlparty_number = 15 }
+	add_to_array = { global.TIC_parlparty_number = 16 }
+	add_to_array = { global.TIC_parlparty_number = 17 }
+	add_to_array = { global.TIC_parlparty_number = 18 }
+	add_to_array = { global.TIC_parlparty_number = 19 }
+	add_to_array = { global.TIC_parlparty_number = 20 }
+	add_to_array = { global.TIC_parlparty_number = 21 }
+	add_to_array = { global.TIC_parlparty_number = 22 }
+	add_to_array = { global.TIC_parlparty_number = 23 }
 }
 
 TIC_parl_elections_daily = {
@@ -204,318 +233,28 @@ TIC_parl_elections_daily = {
 
 TIC_parl_elections = {
 
-	set_variable = { global.TIC_parlparty_0_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_0_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_0_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_0_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_0_MP = THIS.party_pop_array^0 }
-		round_variable = THIS.TIC_parlparty_0_MP
-		clamp_variable = { var = THIS.TIC_parlparty_0_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_0_total_MP = THIS.TIC_parlparty_0_MP }
-		clamp_variable = { var = global.TIC_parlparty_0_total_MP min = 0 }
-	}
-
-	set_variable = { global.TIC_parlparty_1_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_1_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_1_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_1_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_1_MP = THIS.party_pop_array^1 }
-		round_variable = THIS.TIC_parlparty_1_MP
-		clamp_variable = { var = THIS.TIC_parlparty_1_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_1_total_MP = THIS.TIC_parlparty_1_MP }
-		clamp_variable = { var = global.TIC_parlparty_1_total_MP min = 0 }
-	}
+	for_each_loop = {
+		array = global.TIC_parlparty_number
+		set_variable = { v_number = global.TIC_parlparty_number^i }
 	
-	set_variable = { global.TIC_parlparty_2_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_2_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_2_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_2_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_2_MP = THIS.party_pop_array^2 }
-		round_variable = THIS.TIC_parlparty_2_MP
-		clamp_variable = { var = THIS.TIC_parlparty_2_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_2_total_MP = THIS.TIC_parlparty_2_MP }
-		clamp_variable = { var = global.TIC_parlparty_2_total_MP min = 0 }
+		meta_effect = {
+			text = {
+				set_variable = { global.TIC_parlparty_[number]_total_MP = 0 }
+				for_each_scope_loop = {
+					array = global.TIC_member
+					set_variable = { THIS.TIC_parlparty_[number]_MP = 0 }
+					add_to_variable = { THIS.TIC_parlparty_[number]_MP = THIS.max_manpower_k }
+					divide_variable = { THIS.TIC_parlparty_[number]_MP = 2000 }
+					multiply_variable = { THIS.TIC_parlparty_[number]_MP = THIS.party_pop_array^[number] }
+					round_variable = THIS.TIC_parlparty_[number]_MP
+					clamp_variable = { var = THIS.TIC_parlparty_[number]_MP min = 0 }
+					add_to_variable = { global.TIC_parlparty_[number]_total_MP = THIS.TIC_parlparty_[number]_MP }
+					clamp_variable = { var = global.TIC_parlparty_[number]_total_MP min = 0 }
+				}
+			}
+			number = "[?v_number]"
+		}
 	}
-	
-	set_variable = { global.TIC_parlparty_3_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_3_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_3_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_3_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_3_MP = THIS.party_pop_array^3 }
-		round_variable = THIS.TIC_parlparty_3_MP
-		clamp_variable = { var = THIS.TIC_parlparty_3_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_3_total_MP = THIS.TIC_parlparty_3_MP }
-		clamp_variable = { var = global.TIC_parlparty_3_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_4_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_4_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_4_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_4_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_4_MP = THIS.party_pop_array^4 }
-		round_variable = THIS.TIC_parlparty_4_MP
-		clamp_variable = { var = THIS.TIC_parlparty_4_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_4_total_MP = THIS.TIC_parlparty_4_MP }
-		clamp_variable = { var = global.TIC_parlparty_4_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_5_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_5_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_5_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_5_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_5_MP = THIS.party_pop_array^5 }
-		round_variable = THIS.TIC_parlparty_5_MP
-		clamp_variable = { var = THIS.TIC_parlparty_5_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_5_total_MP = THIS.TIC_parlparty_5_MP }
-		clamp_variable = { var = global.TIC_parlparty_5_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_6_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_6_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_6_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_6_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_6_MP = THIS.party_pop_array^6 }
-		round_variable = THIS.TIC_parlparty_6_MP
-		clamp_variable = { var = THIS.TIC_parlparty_6_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_6_total_MP = THIS.TIC_parlparty_6_MP }
-		clamp_variable = { var = global.TIC_parlparty_6_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_7_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_7_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_7_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_7_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_7_MP = THIS.party_pop_array^7 }
-		round_variable = THIS.TIC_parlparty_7_MP
-		clamp_variable = { var = THIS.TIC_parlparty_7_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_7_total_MP = THIS.TIC_parlparty_7_MP }
-		clamp_variable = { var = global.TIC_parlparty_7_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_8_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_8_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_8_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_8_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_8_MP = THIS.party_pop_array^8 }
-		round_variable = THIS.TIC_parlparty_8_MP
-		clamp_variable = { var = THIS.TIC_parlparty_8_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_8_total_MP = THIS.TIC_parlparty_8_MP }
-		clamp_variable = { var = global.TIC_parlparty_8_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_9_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_9_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_9_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_9_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_9_MP = THIS.party_pop_array^9 }
-		round_variable = THIS.TIC_parlparty_9_MP
-		clamp_variable = { var = THIS.TIC_parlparty_9_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_9_total_MP = THIS.TIC_parlparty_9_MP }
-		clamp_variable = { var = global.TIC_parlparty_9_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_10_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_10_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_10_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_10_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_10_MP = THIS.party_pop_array^10 }
-		round_variable = THIS.TIC_parlparty_10_MP
-		clamp_variable = { var = THIS.TIC_parlparty_10_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_10_total_MP = THIS.TIC_parlparty_10_MP }
-		clamp_variable = { var = global.TIC_parlparty_10_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_11_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_11_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_11_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_11_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_11_MP = THIS.party_pop_array^11 }
-		round_variable = THIS.TIC_parlparty_11_MP
-		clamp_variable = { var = THIS.TIC_parlparty_11_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_11_total_MP = THIS.TIC_parlparty_11_MP }
-		clamp_variable = { var = global.TIC_parlparty_11_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_12_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_12_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_12_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_12_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_12_MP = THIS.party_pop_array^12 }
-		round_variable = THIS.TIC_parlparty_12_MP
-		clamp_variable = { var = THIS.TIC_parlparty_12_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_12_total_MP = THIS.TIC_parlparty_12_MP }
-		clamp_variable = { var = global.TIC_parlparty_12_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_13_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_13_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_13_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_13_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_13_MP = THIS.party_pop_array^13 }
-		round_variable = THIS.TIC_parlparty_13_MP
-		clamp_variable = { var = THIS.TIC_parlparty_13_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_13_total_MP = THIS.TIC_parlparty_13_MP }
-		clamp_variable = { var = global.TIC_parlparty_13_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_14_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_14_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_14_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_14_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_14_MP = THIS.party_pop_array^14 }
-		round_variable = THIS.TIC_parlparty_14_MP
-		clamp_variable = { var = THIS.TIC_parlparty_14_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_14_total_MP = THIS.TIC_parlparty_14_MP }
-		clamp_variable = { var = global.TIC_parlparty_14_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_15_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_15_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_15_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_15_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_15_MP = THIS.party_pop_array^15 }
-		round_variable = THIS.TIC_parlparty_15_MP
-		clamp_variable = { var = THIS.TIC_parlparty_15_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_15_total_MP = THIS.TIC_parlparty_15_MP }
-		clamp_variable = { var = global.TIC_parlparty_15_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_16_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_16_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_16_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_16_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_16_MP = THIS.party_pop_array^16 }
-		round_variable = THIS.TIC_parlparty_16_MP
-		clamp_variable = { var = THIS.TIC_parlparty_16_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_16_total_MP = THIS.TIC_parlparty_16_MP }
-		clamp_variable = { var = global.TIC_parlparty_16_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_17_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_17_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_17_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_17_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_17_MP = THIS.party_pop_array^17 }
-		round_variable = THIS.TIC_parlparty_17_MP
-		clamp_variable = { var = THIS.TIC_parlparty_17_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_17_total_MP = THIS.TIC_parlparty_17_MP }
-		clamp_variable = { var = global.TIC_parlparty_17_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_18_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_18_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_18_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_18_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_18_MP = THIS.party_pop_array^18 }
-		round_variable = THIS.TIC_parlparty_18_MP
-		clamp_variable = { var = THIS.TIC_parlparty_18_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_18_total_MP = THIS.TIC_parlparty_18_MP }
-		clamp_variable = { var = global.TIC_parlparty_18_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_19_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_19_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_19_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_19_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_19_MP = THIS.party_pop_array^19 }
-		round_variable = THIS.TIC_parlparty_19_MP
-		clamp_variable = { var = THIS.TIC_parlparty_19_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_19_total_MP = THIS.TIC_parlparty_19_MP }
-		clamp_variable = { var = global.TIC_parlparty_19_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_20_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_20_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_20_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_20_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_20_MP = THIS.party_pop_array^20 }
-		round_variable = THIS.TIC_parlparty_20_MP
-		clamp_variable = { var = THIS.TIC_parlparty_20_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_20_total_MP = THIS.TIC_parlparty_20_MP }
-		clamp_variable = { var = global.TIC_parlparty_20_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_21_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_21_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_21_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_21_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_21_MP = THIS.party_pop_array^21 }
-		round_variable = THIS.TIC_parlparty_21_MP
-		clamp_variable = { var = THIS.TIC_parlparty_21_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_21_total_MP = THIS.TIC_parlparty_21_MP }
-		clamp_variable = { var = global.TIC_parlparty_21_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_22_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_22_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_22_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_22_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_22_MP = THIS.party_pop_array^22 }
-		round_variable = THIS.TIC_parlparty_22_MP
-		clamp_variable = { var = THIS.TIC_parlparty_22_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_22_total_MP = THIS.TIC_parlparty_22_MP }
-		clamp_variable = { var = global.TIC_parlparty_22_total_MP min = 0 }
-	}
-	
-	set_variable = { global.TIC_parlparty_23_total_MP = 0 }
-	for_each_scope_loop = {
-		array = global.TIC_member
-		set_variable = { THIS.TIC_parlparty_23_MP = 0 }
-		add_to_variable = { THIS.TIC_parlparty_23_MP = max_manpower_k }
-		divide_variable = { THIS.TIC_parlparty_23_MP = 2000 }
-		multiply_variable = { THIS.TIC_parlparty_23_MP = THIS.party_pop_array^23 }
-		round_variable = THIS.TIC_parlparty_23_MP
-		clamp_variable = { var = THIS.TIC_parlparty_23_MP min = 0 }
-		add_to_variable = { global.TIC_parlparty_23_total_MP = THIS.TIC_parlparty_23_MP }
-		clamp_variable = { var = global.TIC_parlparty_23_total_MP min = 0 }
-	}
-
 # Sum all MPs
 	set_variable = { global.TIC_parl_all_MP = 0 }
 	add_to_variable = { global.TIC_parl_all_MP = global.TIC_parlparty_0_total_MP }
@@ -556,221 +295,27 @@ TIC_parl_elections = {
 # Election countdown
 #	set_variable = { global.TIC_parl_elections_cd = 10 }
 # Influence Cost calculations
-	set_variable = { global.TIC_parlparty_0_infl_cost = global.TIC_parlparty_0_total_MP }
-	multiply_variable = { global.TIC_parlparty_0_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_0_infl_cost_2 = global.TIC_parlparty_0_infl_cost }
-	multiply_variable = { global.TIC_parlparty_0_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_0_infl_cost_minus = global.TIC_parlparty_0_infl_cost }
-	multiply_variable = { global.TIC_parlparty_0_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_0_infl_cost_2_minus = global.TIC_parlparty_0_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_0_infl_cost_2_minus = -1 }
 
-	set_variable = { global.TIC_parlparty_1_infl_cost = global.TIC_parlparty_1_total_MP }
-	multiply_variable = { global.TIC_parlparty_1_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_1_infl_cost_2 = global.TIC_parlparty_1_infl_cost }
-	multiply_variable = { global.TIC_parlparty_1_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_1_infl_cost_minus = global.TIC_parlparty_1_infl_cost }
-	multiply_variable = { global.TIC_parlparty_1_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_1_infl_cost_2_minus = global.TIC_parlparty_1_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_1_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_2_infl_cost = global.TIC_parlparty_2_total_MP }
-	multiply_variable = { global.TIC_parlparty_2_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_2_infl_cost_2 = global.TIC_parlparty_2_infl_cost }
-	multiply_variable = { global.TIC_parlparty_2_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_2_infl_cost_minus = global.TIC_parlparty_2_infl_cost }
-	multiply_variable = { global.TIC_parlparty_2_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_2_infl_cost_2_minus = global.TIC_parlparty_2_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_2_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_3_infl_cost = global.TIC_parlparty_3_total_MP }
-	multiply_variable = { global.TIC_parlparty_3_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_3_infl_cost_2 = global.TIC_parlparty_3_infl_cost }
-	multiply_variable = { global.TIC_parlparty_3_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_3_infl_cost_minus = global.TIC_parlparty_3_infl_cost }
-	multiply_variable = { global.TIC_parlparty_3_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_3_infl_cost_2_minus = global.TIC_parlparty_3_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_3_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_4_infl_cost = global.TIC_parlparty_4_total_MP }
-	multiply_variable = { global.TIC_parlparty_4_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_4_infl_cost_2 = global.TIC_parlparty_4_infl_cost }
-	multiply_variable = { global.TIC_parlparty_4_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_4_infl_cost_minus = global.TIC_parlparty_4_infl_cost }
-	multiply_variable = { global.TIC_parlparty_4_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_4_infl_cost_2_minus = global.TIC_parlparty_4_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_4_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_5_infl_cost = global.TIC_parlparty_5_total_MP }
-	multiply_variable = { global.TIC_parlparty_5_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_5_infl_cost_2 = global.TIC_parlparty_5_infl_cost }
-	multiply_variable = { global.TIC_parlparty_5_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_5_infl_cost_minus = global.TIC_parlparty_5_infl_cost }
-	multiply_variable = { global.TIC_parlparty_5_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_5_infl_cost_2_minus = global.TIC_parlparty_5_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_5_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_6_infl_cost = global.TIC_parlparty_6_total_MP }
-	multiply_variable = { global.TIC_parlparty_6_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_6_infl_cost_2 = global.TIC_parlparty_6_infl_cost }
-	multiply_variable = { global.TIC_parlparty_6_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_6_infl_cost_minus = global.TIC_parlparty_6_infl_cost }
-	multiply_variable = { global.TIC_parlparty_6_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_6_infl_cost_2_minus = global.TIC_parlparty_6_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_6_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_7_infl_cost = global.TIC_parlparty_7_total_MP }
-	multiply_variable = { global.TIC_parlparty_7_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_7_infl_cost_2 = global.TIC_parlparty_7_infl_cost }
-	multiply_variable = { global.TIC_parlparty_7_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_7_infl_cost_minus = global.TIC_parlparty_7_infl_cost }
-	multiply_variable = { global.TIC_parlparty_7_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_7_infl_cost_2_minus = global.TIC_parlparty_7_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_7_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_8_infl_cost = global.TIC_parlparty_8_total_MP }
-	multiply_variable = { global.TIC_parlparty_8_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_8_infl_cost_2 = global.TIC_parlparty_8_infl_cost }
-	multiply_variable = { global.TIC_parlparty_8_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_8_infl_cost_minus = global.TIC_parlparty_8_infl_cost }
-	multiply_variable = { global.TIC_parlparty_8_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_8_infl_cost_2_minus = global.TIC_parlparty_8_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_8_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_9_infl_cost = global.TIC_parlparty_9_total_MP }
-	multiply_variable = { global.TIC_parlparty_9_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_9_infl_cost_2 = global.TIC_parlparty_9_infl_cost }
-	multiply_variable = { global.TIC_parlparty_9_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_9_infl_cost_minus = global.TIC_parlparty_9_infl_cost }
-	multiply_variable = { global.TIC_parlparty_9_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_9_infl_cost_2_minus = global.TIC_parlparty_9_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_9_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_10_infl_cost = global.TIC_parlparty_10_total_MP }
-	multiply_variable = { global.TIC_parlparty_10_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_10_infl_cost_2 = global.TIC_parlparty_10_infl_cost }
-	multiply_variable = { global.TIC_parlparty_10_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_10_infl_cost_minus = global.TIC_parlparty_10_infl_cost }
-	multiply_variable = { global.TIC_parlparty_10_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_10_infl_cost_2_minus = global.TIC_parlparty_10_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_10_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_11_infl_cost = global.TIC_parlparty_11_total_MP }
-	multiply_variable = { global.TIC_parlparty_11_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_11_infl_cost_2 = global.TIC_parlparty_11_infl_cost }
-	multiply_variable = { global.TIC_parlparty_11_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_11_infl_cost_minus = global.TIC_parlparty_11_infl_cost }
-	multiply_variable = { global.TIC_parlparty_11_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_11_infl_cost_2_minus = global.TIC_parlparty_11_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_11_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_12_infl_cost = global.TIC_parlparty_12_total_MP }
-	multiply_variable = { global.TIC_parlparty_12_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_12_infl_cost_2 = global.TIC_parlparty_12_infl_cost }
-	multiply_variable = { global.TIC_parlparty_12_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_12_infl_cost_minus = global.TIC_parlparty_12_infl_cost }
-	multiply_variable = { global.TIC_parlparty_12_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_12_infl_cost_2_minus = global.TIC_parlparty_12_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_12_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_13_infl_cost = global.TIC_parlparty_13_total_MP }
-	multiply_variable = { global.TIC_parlparty_13_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_13_infl_cost_2 = global.TIC_parlparty_13_infl_cost }
-	multiply_variable = { global.TIC_parlparty_13_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_13_infl_cost_minus = global.TIC_parlparty_13_infl_cost }
-	multiply_variable = { global.TIC_parlparty_13_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_13_infl_cost_2_minus = global.TIC_parlparty_13_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_13_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_14_infl_cost = global.TIC_parlparty_14_total_MP }
-	multiply_variable = { global.TIC_parlparty_14_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_14_infl_cost_2 = global.TIC_parlparty_14_infl_cost }
-	multiply_variable = { global.TIC_parlparty_14_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_14_infl_cost_minus = global.TIC_parlparty_14_infl_cost }
-	multiply_variable = { global.TIC_parlparty_14_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_14_infl_cost_2_minus = global.TIC_parlparty_14_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_14_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_15_infl_cost = global.TIC_parlparty_15_total_MP }
-	multiply_variable = { global.TIC_parlparty_15_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_15_infl_cost_2 = global.TIC_parlparty_15_infl_cost }
-	multiply_variable = { global.TIC_parlparty_15_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_15_infl_cost_minus = global.TIC_parlparty_15_infl_cost }
-	multiply_variable = { global.TIC_parlparty_15_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_15_infl_cost_2_minus = global.TIC_parlparty_15_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_15_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_16_infl_cost = global.TIC_parlparty_16_total_MP }
-	multiply_variable = { global.TIC_parlparty_16_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_16_infl_cost_2 = global.TIC_parlparty_16_infl_cost }
-	multiply_variable = { global.TIC_parlparty_16_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_16_infl_cost_minus = global.TIC_parlparty_16_infl_cost }
-	multiply_variable = { global.TIC_parlparty_16_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_16_infl_cost_2_minus = global.TIC_parlparty_16_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_16_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_17_infl_cost = global.TIC_parlparty_17_total_MP }
-	multiply_variable = { global.TIC_parlparty_17_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_17_infl_cost_2 = global.TIC_parlparty_17_infl_cost }
-	multiply_variable = { global.TIC_parlparty_17_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_17_infl_cost_minus = global.TIC_parlparty_17_infl_cost }
-	multiply_variable = { global.TIC_parlparty_17_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_17_infl_cost_2_minus = global.TIC_parlparty_17_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_17_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_18_infl_cost = global.TIC_parlparty_18_total_MP }
-	multiply_variable = { global.TIC_parlparty_18_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_18_infl_cost_2 = global.TIC_parlparty_18_infl_cost }
-	multiply_variable = { global.TIC_parlparty_18_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_18_infl_cost_minus = global.TIC_parlparty_18_infl_cost }
-	multiply_variable = { global.TIC_parlparty_18_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_18_infl_cost_2_minus = global.TIC_parlparty_18_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_18_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_19_infl_cost = global.TIC_parlparty_19_total_MP }
-	multiply_variable = { global.TIC_parlparty_19_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_19_infl_cost_2 = global.TIC_parlparty_19_infl_cost }
-	multiply_variable = { global.TIC_parlparty_19_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_19_infl_cost_minus = global.TIC_parlparty_19_infl_cost }
-	multiply_variable = { global.TIC_parlparty_19_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_19_infl_cost_2_minus = global.TIC_parlparty_19_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_19_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_20_infl_cost = global.TIC_parlparty_20_total_MP }
-	multiply_variable = { global.TIC_parlparty_20_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_20_infl_cost_2 = global.TIC_parlparty_20_infl_cost }
-	multiply_variable = { global.TIC_parlparty_20_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_20_infl_cost_minus = global.TIC_parlparty_20_infl_cost }
-	multiply_variable = { global.TIC_parlparty_20_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_20_infl_cost_2_minus = global.TIC_parlparty_20_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_20_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_21_infl_cost = global.TIC_parlparty_21_total_MP }
-	multiply_variable = { global.TIC_parlparty_21_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_21_infl_cost_2 = TIC_parlparty_21_infl_cost }
-	multiply_variable = { global.TIC_parlparty_21_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_21_infl_cost_minus = global.TIC_parlparty_21_infl_cost }
-	multiply_variable = { global.TIC_parlparty_21_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_21_infl_cost_2_minus = global.TIC_parlparty_21_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_21_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_22_infl_cost = global.TIC_parlparty_22_total_MP }
-	multiply_variable = { global.TIC_parlparty_22_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_22_infl_cost_2 = global.TIC_parlparty_22_infl_cost }
-	multiply_variable = { global.TIC_parlparty_22_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_22_infl_cost_minus = global.TIC_parlparty_22_infl_cost }
-	multiply_variable = { global.TIC_parlparty_22_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_22_infl_cost_2_minus = global.TIC_parlparty_22_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_22_infl_cost_2_minus = -1 }
-	
-	set_variable = { global.TIC_parlparty_23_infl_cost = global.TIC_parlparty_23_total_MP }
-	multiply_variable = { global.TIC_parlparty_23_infl_cost = 2 }
-	set_variable = { global.TIC_parlparty_23_infl_cost_2 = global.TIC_parlparty_23_infl_cost }
-	multiply_variable = { global.TIC_parlparty_23_infl_cost_2 = 2 }
-	set_variable = { global.TIC_parlparty_23_infl_cost_minus = global.TIC_parlparty_23_infl_cost }
-	multiply_variable = { global.TIC_parlparty_23_infl_cost_minus = -1 }
-	set_variable = { global.TIC_parlparty_23_infl_cost_2_minus = global.TIC_parlparty_23_infl_cost_2 }
-	multiply_variable = { global.TIC_parlparty_23_infl_cost_2_minus = -1 }
+	for_each_loop = {
+		array = global.TIC_parlparty_number
+		set_variable = { v_number = global.TIC_parlparty_number^i }
+
+		meta_effect = {
+			text = {
+				set_variable = { global.TIC_parlparty_[number]_infl_cost = global.TIC_parlparty_[number]_total_MP }
+			multiply_variable = { global.TIC_parlparty_[number]_infl_cost = 2 }
+			round_variable = global.TIC_parlparty_[number]_infl_cost
+			set_variable = { global.TIC_parlparty_[number]_infl_cost_2 = global.TIC_parlparty_[number]_infl_cost }
+			multiply_variable = { global.TIC_parlparty_[number]_infl_cost_2 = 1.5 }
+			round_variable = global.TIC_parlparty_[number]_infl_cost_2
+			set_variable = { global.TIC_parlparty_[number]_infl_cost_minus = global.TIC_parlparty_[number]_infl_cost }
+			multiply_variable = { global.TIC_parlparty_[number]_infl_cost_minus = -1 }
+			set_variable = { global.TIC_parlparty_[number]_infl_cost_2_minus = global.TIC_parlparty_[number]_infl_cost_2 }
+			multiply_variable = { global.TIC_parlparty_[number]_infl_cost_2_minus = -1 }
+			}
+			number = "[?v_number]"
+		}
+	}
 }
 
 TIC_parl_ongoing_vote = {

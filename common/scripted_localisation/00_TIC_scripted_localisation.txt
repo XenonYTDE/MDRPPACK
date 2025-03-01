@@ -397,507 +397,43 @@ defined_text = {
 }
 # Influence Color Loc Keys
 defined_text = {
-	name = TIC_parlparty_0_infl_loc
+	name = TIC_parlparty_color_infl_loc
 
 	text = {
-		trigger = { has_global_flag = TIC_parlparty_0_sup_flag }
-		localization_key = TIC_parlparty_0_infl_g
+		trigger = {
+			check_variable = { v = v }
+			meta_trigger = {
+				text = {
+					has_global_flag = TIC_parlparty_[index]_sup_flag 
+				}
+				index = v
+			}
+		}
+		localization_key = TIC_parlparty_[?v]_infl_g
 	}
 	text = {
 		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_0_abs_flag 
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag } 
+			check_variable = { v = v }
+			meta_trigger = {
+				text = {
+					has_global_flag = TIC_parlparty_[index]_abs_flag 
+				}
+				index = v
 			}
 		}
-		localization_key = TIC_parlparty_0_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_0_rej_flag }
-		localization_key = TIC_parlparty_0_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_1_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_1_sup_flag }
-		localization_key = TIC_parlparty_1_infl_g
+		localization_key = TIC_parlparty_[?v]_infl_n
 	}
 	text = {
 		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_1_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
+			check_variable = { v = v }
+			meta_trigger = {
+				text = {
+					has_global_flag = TIC_parlparty_[index]_rej_flag 
+				}
+				index = v
 			}
 		}
-		localization_key = TIC_parlparty_1_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_1_rej_flag }
-		localization_key = TIC_parlparty_1_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_2_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_2_sup_flag }
-		localization_key = TIC_parlparty_2_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_2_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_2_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_2_rej_flag }
-		localization_key = TIC_parlparty_2_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_3_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_3_sup_flag }
-		localization_key = TIC_parlparty_3_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_3_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_3_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_3_rej_flag }
-		localization_key = TIC_parlparty_3_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_4_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_4_sup_flag }
-		localization_key = TIC_parlparty_4_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_4_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_4_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_4_rej_flag }
-		localization_key = TIC_parlparty_4_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_5_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_5_sup_flag }
-		localization_key = TIC_parlparty_5_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_5_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_5_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_5_rej_flag }
-		localization_key = TIC_parlparty_5_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_6_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_6_sup_flag }
-		localization_key = TIC_parlparty_6_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_6_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_6_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_6_rej_flag }
-		localization_key = TIC_parlparty_6_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_7_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_7_sup_flag }
-		localization_key = TIC_parlparty_7_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_7_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_7_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_7_rej_flag }
-		localization_key = TIC_parlparty_7_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_8_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_8_sup_flag }
-		localization_key = TIC_parlparty_8_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_8_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_8_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_8_rej_flag }
-		localization_key = TIC_parlparty_8_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_9_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_9_sup_flag }
-		localization_key = TIC_parlparty_9_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_9_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_9_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_9_rej_flag }
-		localization_key = TIC_parlparty_9_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_10_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_10_sup_flag }
-		localization_key = TIC_parlparty_10_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_10_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_10_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_10_rej_flag }
-		localization_key = TIC_parlparty_10_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_11_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_11_sup_flag }
-		localization_key = TIC_parlparty_11_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_11_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_11_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_11_rej_flag }
-		localization_key = TIC_parlparty_11_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_12_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_12_sup_flag }
-		localization_key = TIC_parlparty_12_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_12_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_12_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_12_rej_flag }
-		localization_key = TIC_parlparty_12_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_13_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_13_sup_flag }
-		localization_key = TIC_parlparty_13_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_13_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_13_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_13_rej_flag }
-		localization_key = TIC_parlparty_13_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_14_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_14_sup_flag }
-		localization_key = TIC_parlparty_14_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_14_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_14_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_14_rej_flag }
-		localization_key = TIC_parlparty_14_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_15_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_15_sup_flag }
-		localization_key = TIC_parlparty_15_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_15_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_15_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_15_rej_flag }
-		localization_key = TIC_parlparty_15_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_16_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_16_sup_flag }
-		localization_key = TIC_parlparty_16_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_16_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_16_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_16_rej_flag }
-		localization_key = TIC_parlparty_16_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_17_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_17_sup_flag }
-		localization_key = TIC_parlparty_17_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_17_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_17_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_17_rej_flag }
-		localization_key = TIC_parlparty_17_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_18_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_18_sup_flag }
-		localization_key = TIC_parlparty_18_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_18_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_18_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_18_rej_flag }
-		localization_key = TIC_parlparty_18_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_19_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_19_sup_flag }
-		localization_key = TIC_parlparty_19_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_19_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_19_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_19_rej_flag }
-		localization_key = TIC_parlparty_19_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_20_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_20_sup_flag }
-		localization_key = TIC_parlparty_20_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_20_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_20_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_20_rej_flag }
-		localization_key = TIC_parlparty_20_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_21_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_21_sup_flag }
-		localization_key = TIC_parlparty_21_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_21_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_21_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_21_rej_flag }
-		localization_key = TIC_parlparty_21_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_22_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_22_sup_flag }
-		localization_key = TIC_parlparty_22_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_22_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_22_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_22_rej_flag }
-		localization_key = TIC_parlparty_22_infl_r
-	}
-}
-defined_text = {
-	name = TIC_parlparty_23_infl_loc
-
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_23_sup_flag }
-		localization_key = TIC_parlparty_23_infl_g
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_global_flag = TIC_parlparty_23_abs_flag
-				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
-			}
-		}
-		localization_key = TIC_parlparty_23_infl_n
-	}
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_23_rej_flag }
-		localization_key = TIC_parlparty_23_infl_r
+		localization_key = TIC_parlparty_[?v]_infl_r
 	}
 }
 
@@ -905,290 +441,63 @@ defined_text = {
 # Influence Cost Loc Keys #
 ###########################
 defined_text = {
-	name = TIC_parlparty_0_infl_cost_loc
-	
+	name = TIC_parlparty_infl_cost_loc
+		
 	text = {
-		trigger = { has_global_flag = TIC_parlparty_0_abs_flag }
-		localization_key = TIC_parlparty_0_infl_cost_lockey
+		trigger = {
+			check_variable = { v = v }
+			meta_trigger = {
+				text = {
+					has_global_flag = TIC_parlparty_[index]_sup_flag 
+				}
+				index = v
+			}
+		}
+		localization_key = TIC_parlparty_[?v]_infl_cost_2_lockey
+	}
+	text = {
+		trigger = {
+			check_variable = { v = v }
+			OR = {
+				meta_trigger = {
+					text = {
+						has_global_flag = TIC_parlparty_[index]_abs_flag 
+					}
+					index = v
+				}
+				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
+			}
+		}
+		localization_key = TIC_parlparty_[?v]_infl_cost_lockey
 	}	
 	text = {
-		trigger = { has_global_flag = TIC_parlparty_0_rej_flag }
-		localization_key = TIC_parlparty_0_infl_cost_2_lockey
+		trigger = {
+			check_variable = { v = v }
+			meta_trigger = {
+				text = {
+					has_global_flag = TIC_parlparty_[index]_rej_flag 
+				}
+				index = v
+			}
+		}
+		localization_key = TIC_parlparty_[?v]_infl_cost_2_lockey
 	}
 }
+
+
 defined_text = {
-	name = TIC_parlparty_1_infl_cost_loc
+	name = TIC_influence_party_loc
 	
 	text = {
-		trigger = { has_global_flag = TIC_parlparty_1_abs_flag }
-		localization_key = TIC_parlparty_1_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_1_rej_flag }
-		localization_key = TIC_parlparty_1_infl_cost_2_lockey
+		trigger = { check_variable = { v = v } }
+		localization_key = TIC_parlparty_[?v]_infl
 	}
 }
+
 defined_text = {
-	name = TIC_parlparty_2_infl_cost_loc
-	
+	name = TIC_parlparty_dyn_infl_tt
 	text = {
-		trigger = { has_global_flag = TIC_parlparty_2_abs_flag }
-		localization_key = TIC_parlparty_2_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_2_rej_flag }
-		localization_key = TIC_parlparty_2_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_3_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_3_abs_flag }
-		localization_key = TIC_parlparty_3_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_3_rej_flag }
-		localization_key = TIC_parlparty_3_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_4_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_4_abs_flag }
-		localization_key = TIC_parlparty_4_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_4_rej_flag }
-		localization_key = TIC_parlparty_4_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_5_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_5_abs_flag }
-		localization_key = TIC_parlparty_5_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_5_rej_flag }
-		localization_key = TIC_parlparty_5_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_6_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_6_abs_flag }
-		localization_key = TIC_parlparty_6_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_6_rej_flag }
-		localization_key = TIC_parlparty_6_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_7_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_7_abs_flag }
-		localization_key = TIC_parlparty_7_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_7_rej_flag }
-		localization_key = TIC_parlparty_7_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_8_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_8_abs_flag }
-		localization_key = TIC_parlparty_8_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_8_rej_flag }
-		localization_key = TIC_parlparty_8_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_9_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_9_abs_flag }
-		localization_key = TIC_parlparty_9_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_9_rej_flag }
-		localization_key = TIC_parlparty_9_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_10_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_10_abs_flag }
-		localization_key = TIC_parlparty_10_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_10_rej_flag }
-		localization_key = TIC_parlparty_10_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_11_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_11_abs_flag }
-		localization_key = TIC_parlparty_11_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_11_rej_flag }
-		localization_key = TIC_parlparty_11_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_12_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_12_abs_flag }
-		localization_key = TIC_parlparty_12_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_12_rej_flag }
-		localization_key = TIC_parlparty_12_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_13_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_13_abs_flag }
-		localization_key = TIC_parlparty_13_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_13_rej_flag }
-		localization_key = TIC_parlparty_13_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_14_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_14_abs_flag }
-		localization_key = TIC_parlparty_14_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_14_rej_flag }
-		localization_key = TIC_parlparty_14_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_15_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_15_abs_flag }
-		localization_key = TIC_parlparty_15_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_15_rej_flag }
-		localization_key = TIC_parlparty_15_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_16_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_16_abs_flag }
-		localization_key = TIC_parlparty_16_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_16_rej_flag }
-		localization_key = TIC_parlparty_16_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_17_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_17_abs_flag }
-		localization_key = TIC_parlparty_17_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_17_rej_flag }
-		localization_key = TIC_parlparty_17_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_18_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_18_abs_flag }
-		localization_key = TIC_parlparty_18_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_18_rej_flag }
-		localization_key = TIC_parlparty_18_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_19_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_19_abs_flag }
-		localization_key = TIC_parlparty_19_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_19_rej_flag }
-		localization_key = TIC_parlparty_19_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_20_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_20_abs_flag }
-		localization_key = TIC_parlparty_20_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_20_rej_flag }
-		localization_key = TIC_parlparty_20_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_21_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_21_abs_flag }
-		localization_key = TIC_parlparty_21_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_21_rej_flag }
-		localization_key = TIC_parlparty_21_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_22_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_22_abs_flag }
-		localization_key = TIC_parlparty_22_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_22_rej_flag }
-		localization_key = TIC_parlparty_22_infl_cost_2_lockey
-	}
-}
-defined_text = {
-	name = TIC_parlparty_23_infl_cost_loc
-	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_23_abs_flag }
-		localization_key = TIC_parlparty_23_infl_cost_lockey
-	}	
-	text = {
-		trigger = { has_global_flag = TIC_parlparty_23_rej_flag }
-		localization_key = TIC_parlparty_23_infl_cost_2_lockey
+		trigger = { check_variable = { v = v } }
+		localization_key = TIC_parlparty_[?v]_infl_tt
 	}
 }

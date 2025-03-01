@@ -650,175 +650,6 @@ scripted_gui = {
 				TIC_parliament_tab_open_trigger = yes
 			}
 
-			TIC_parlparty_0_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_0_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_0_sup_flag }
-			}
-			TIC_parlparty_1_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_1_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_1_sup_flag }
-			}
-			TIC_parlparty_2_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_2_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_2_sup_flag }
-			}
-			TIC_parlparty_3_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_3_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_3_sup_flag }
-			}
-			TIC_parlparty_4_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_4_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_4_sup_flag }
-			}
-			TIC_parlparty_5_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_5_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_5_sup_flag }
-			}
-			TIC_parlparty_6_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_6_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_6_sup_flag }
-			}
-			TIC_parlparty_7_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_7_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_7_sup_flag }
-			}
-			TIC_parlparty_8_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_8_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_8_sup_flag }
-			}
-			TIC_parlparty_9_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_9_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_9_sup_flag }
-			}
-			TIC_parlparty_10_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_10_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_10_sup_flag }
-			}
-			TIC_parlparty_11_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_11_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_11_sup_flag }
-			}
-			TIC_parlparty_12_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_12_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_12_sup_flag }
-			}
-			TIC_parlparty_13_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_13_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_13_sup_flag }
-			}
-			TIC_parlparty_14_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_14_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_14_sup_flag }
-			}
-			TIC_parlparty_15_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_15_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_15_sup_flag }
-			}
-			TIC_parlparty_16_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_16_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_16_sup_flag }
-			}
-			TIC_parlparty_17_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_17_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_17_sup_flag }
-			}
-			TIC_parlparty_18_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_18_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_18_sup_flag }
-			}
-			TIC_parlparty_19_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_19_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_19_sup_flag }
-			}
-			TIC_parlparty_20_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_20_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_20_sup_flag }
-			}
-			TIC_parlparty_21_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_21_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_21_sup_flag }
-			}
-			TIC_parlparty_22_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_22_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_22_sup_flag }
-			}
-			TIC_parlparty_23_infl_visible = {
-				TIC_parliament_tab_open_trigger = yes
-			}
-			TIC_parlparty_23_infl_click_enabled = {
-				has_global_flag = TIC_parl_ongoing_vote_flag
-				NOT = { has_global_flag = TIC_parlparty_23_sup_flag }
-			}
-
 			TIC_next_elections_title_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
@@ -1301,657 +1132,6 @@ scripted_gui = {
 			
 			# Parliament effects
 
-			TIC_parlparty_0_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_0_infl_cost
-						has_global_flag = TIC_parlparty_0_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_0_infl_cost_minus
-					clr_global_flag = TIC_parlparty_0_abs_flag
-					set_global_flag = TIC_parlparty_0_sup_flag
-					TIC_parlparty_0_abs_sub_effect = yes
-					TIC_parlparty_0_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_0_infl_cost_2
-						has_global_flag = TIC_parlparty_0_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_0_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_0_rej_flag
-					set_global_flag = TIC_parlparty_0_sup_flag
-					TIC_parlparty_0_rej_sub_effect = yes
-					TIC_parlparty_0_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_0_infl_right_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_0_infl_cost
-						has_global_flag = TIC_parlparty_0_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_0_infl_cost_minus
-					clr_global_flag = TIC_parlparty_0_abs_flag
-					set_global_flag = TIC_parlparty_0_rej_flag
-					TIC_parlparty_0_abs_sub_effect = yes
-					TIC_parlparty_0_rej_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_0_infl_cost_2
-						has_global_flag = TIC_parlparty_0_sup_flag
-					}
-					add_political_power = global.TIC_parlparty_0_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_0_sup_flag
-					set_global_flag = TIC_parlparty_0_rej_flag
-					TIC_parlparty_0_sup_sub_effect = yes
-					TIC_parlparty_0_rej_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_1_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_1_infl_cost
-						has_global_flag = TIC_parlparty_1_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_1_infl_cost_minus
-					clr_global_flag = TIC_parlparty_1_abs_flag
-					set_global_flag = TIC_parlparty_1_sup_flag
-					TIC_parlparty_1_abs_sub_effect = yes
-					TIC_parlparty_1_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_1_infl_cost_2
-						has_global_flag = TIC_parlparty_1_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_1_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_1_rej_flag
-					set_global_flag = TIC_parlparty_1_sup_flag
-					TIC_parlparty_1_rej_sub_effect = yes
-					TIC_parlparty_1_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_2_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_2_infl_cost
-						has_global_flag = TIC_parlparty_2_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_2_infl_cost_minus
-					clr_global_flag = TIC_parlparty_2_abs_flag
-					set_global_flag = TIC_parlparty_2_sup_flag
-					TIC_parlparty_2_abs_sub_effect = yes
-					TIC_parlparty_2_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_2_infl_cost_2
-						has_global_flag = TIC_parlparty_2_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_2_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_2_rej_flag
-					set_global_flag = TIC_parlparty_2_sup_flag
-					TIC_parlparty_2_rej_sub_effect = yes
-					TIC_parlparty_2_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_3_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_3_infl_cost
-						has_global_flag = TIC_parlparty_3_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_3_infl_cost_minus
-					clr_global_flag = TIC_parlparty_3_abs_flag
-					set_global_flag = TIC_parlparty_3_sup_flag
-					TIC_parlparty_3_abs_sub_effect = yes
-					TIC_parlparty_3_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_3_infl_cost_2
-						has_global_flag = TIC_parlparty_3_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_3_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_3_rej_flag
-					set_global_flag = TIC_parlparty_3_sup_flag
-					TIC_parlparty_3_rej_sub_effect = yes
-					TIC_parlparty_3_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_4_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_4_infl_cost
-						has_global_flag = TIC_parlparty_4_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_4_infl_cost_minus
-					clr_global_flag = TIC_parlparty_4_abs_flag
-					set_global_flag = TIC_parlparty_4_sup_flag
-					TIC_parlparty_4_abs_sub_effect = yes
-					TIC_parlparty_4_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_4_infl_cost_2
-						has_global_flag = TIC_parlparty_4_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_4_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_4_rej_flag
-					set_global_flag = TIC_parlparty_4_sup_flag
-					TIC_parlparty_4_rej_sub_effect = yes
-					TIC_parlparty_4_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_5_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_5_infl_cost
-						has_global_flag = TIC_parlparty_5_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_5_infl_cost_minus
-					clr_global_flag = TIC_parlparty_5_abs_flag
-					set_global_flag = TIC_parlparty_5_sup_flag
-					TIC_parlparty_5_abs_sub_effect = yes
-					TIC_parlparty_5_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_5_infl_cost_2
-						has_global_flag = TIC_parlparty_5_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_5_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_5_rej_flag
-					set_global_flag = TIC_parlparty_5_sup_flag
-					TIC_parlparty_5_rej_sub_effect = yes
-					TIC_parlparty_5_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_6_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_6_infl_cost
-						has_global_flag = TIC_parlparty_6_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_6_infl_cost_minus
-					clr_global_flag = TIC_parlparty_6_abs_flag
-					set_global_flag = TIC_parlparty_6_sup_flag
-					TIC_parlparty_6_abs_sub_effect = yes
-					TIC_parlparty_6_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_6_infl_cost_2
-						has_global_flag = TIC_parlparty_6_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_6_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_6_rej_flag
-					set_global_flag = TIC_parlparty_6_sup_flag
-					TIC_parlparty_6_rej_sub_effect = yes
-					TIC_parlparty_6_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_7_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_7_infl_cost
-						has_global_flag = TIC_parlparty_7_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_7_infl_cost_minus
-					clr_global_flag = TIC_parlparty_7_abs_flag
-					set_global_flag = TIC_parlparty_7_sup_flag
-					TIC_parlparty_7_abs_sub_effect = yes
-					TIC_parlparty_7_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_7_infl_cost_2
-						has_global_flag = TIC_parlparty_7_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_7_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_7_rej_flag
-					set_global_flag = TIC_parlparty_7_sup_flag
-					TIC_parlparty_7_rej_sub_effect = yes
-					TIC_parlparty_7_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_8_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_8_infl_cost
-						has_global_flag = TIC_parlparty_8_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_8_infl_cost_minus
-					clr_global_flag = TIC_parlparty_8_abs_flag
-					set_global_flag = TIC_parlparty_8_sup_flag
-					TIC_parlparty_8_abs_sub_effect = yes
-					TIC_parlparty_8_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_8_infl_cost_2
-						has_global_flag = TIC_parlparty_8_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_8_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_8_rej_flag
-					set_global_flag = TIC_parlparty_8_sup_flag
-					TIC_parlparty_8_rej_sub_effect = yes
-					TIC_parlparty_8_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_9_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_9_infl_cost
-						has_global_flag = TIC_parlparty_9_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_9_infl_cost_minus
-					clr_global_flag = TIC_parlparty_9_abs_flag
-					set_global_flag = TIC_parlparty_9_sup_flag
-					TIC_parlparty_9_abs_sub_effect = yes
-					TIC_parlparty_9_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_9_infl_cost_2
-						has_global_flag = TIC_parlparty_9_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_9_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_9_rej_flag
-					set_global_flag = TIC_parlparty_9_sup_flag
-					TIC_parlparty_9_rej_sub_effect = yes
-					TIC_parlparty_9_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_10_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_10_infl_cost
-						has_global_flag = TIC_parlparty_10_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_10_infl_cost_minus
-					clr_global_flag = TIC_parlparty_10_abs_flag
-					set_global_flag = TIC_parlparty_10_sup_flag
-					TIC_parlparty_10_abs_sub_effect = yes
-					TIC_parlparty_10_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_10_infl_cost_2
-						has_global_flag = TIC_parlparty_10_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_10_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_10_rej_flag
-					set_global_flag = TIC_parlparty_10_sup_flag
-					TIC_parlparty_10_rej_sub_effect = yes
-					TIC_parlparty_10_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_11_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_11_infl_cost
-						has_global_flag = TIC_parlparty_11_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_11_infl_cost_minus
-					clr_global_flag = TIC_parlparty_11_abs_flag
-					set_global_flag = TIC_parlparty_11_sup_flag
-					TIC_parlparty_11_abs_sub_effect = yes
-					TIC_parlparty_11_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_11_infl_cost_2
-						has_global_flag = TIC_parlparty_11_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_11_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_11_rej_flag
-					set_global_flag = TIC_parlparty_11_sup_flag
-					TIC_parlparty_11_rej_sub_effect = yes
-					TIC_parlparty_11_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_12_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_12_infl_cost
-						has_global_flag = TIC_parlparty_12_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_12_infl_cost_minus
-					clr_global_flag = TIC_parlparty_12_abs_flag
-					set_global_flag = TIC_parlparty_12_sup_flag
-					TIC_parlparty_12_abs_sub_effect = yes
-					TIC_parlparty_12_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_12_infl_cost_2
-						has_global_flag = TIC_parlparty_12_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_12_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_12_rej_flag
-					set_global_flag = TIC_parlparty_12_sup_flag
-					TIC_parlparty_12_rej_sub_effect = yes
-					TIC_parlparty_12_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_13_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_13_infl_cost
-						has_global_flag = TIC_parlparty_13_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_13_infl_cost_minus
-					clr_global_flag = TIC_parlparty_13_abs_flag
-					set_global_flag = TIC_parlparty_13_sup_flag
-					TIC_parlparty_13_abs_sub_effect = yes
-					TIC_parlparty_13_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_13_infl_cost_2
-						has_global_flag = TIC_parlparty_13_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_13_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_13_rej_flag
-					set_global_flag = TIC_parlparty_13_sup_flag
-					TIC_parlparty_13_rej_sub_effect = yes
-					TIC_parlparty_13_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_14_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_14_infl_cost
-						has_global_flag = TIC_parlparty_14_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_14_infl_cost_minus
-					clr_global_flag = TIC_parlparty_14_abs_flag
-					set_global_flag = TIC_parlparty_14_sup_flag
-					TIC_parlparty_14_abs_sub_effect = yes
-					TIC_parlparty_14_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_14_infl_cost_2
-						has_global_flag = TIC_parlparty_14_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_14_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_14_rej_flag
-					set_global_flag = TIC_parlparty_14_sup_flag
-					TIC_parlparty_14_rej_sub_effect = yes
-					TIC_parlparty_14_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_15_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_15_infl_cost
-						has_global_flag = TIC_parlparty_15_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_15_infl_cost_minus
-					clr_global_flag = TIC_parlparty_15_abs_flag
-					set_global_flag = TIC_parlparty_15_sup_flag
-					TIC_parlparty_15_abs_sub_effect = yes
-					TIC_parlparty_15_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_15_infl_cost_2
-						has_global_flag = TIC_parlparty_15_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_15_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_15_rej_flag
-					set_global_flag = TIC_parlparty_15_sup_flag
-					TIC_parlparty_15_rej_sub_effect = yes
-					TIC_parlparty_15_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_16_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_16_infl_cost
-						has_global_flag = TIC_parlparty_16_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_16_infl_cost_minus
-					clr_global_flag = TIC_parlparty_16_abs_flag
-					set_global_flag = TIC_parlparty_16_sup_flag
-					TIC_parlparty_16_abs_sub_effect = yes
-					TIC_parlparty_16_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_16_infl_cost_2
-						has_global_flag = TIC_parlparty_16_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_16_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_16_rej_flag
-					set_global_flag = TIC_parlparty_16_sup_flag
-					TIC_parlparty_16_rej_sub_effect = yes
-					TIC_parlparty_16_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_17_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_17_infl_cost
-						has_global_flag = TIC_parlparty_17_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_17_infl_cost_minus
-					clr_global_flag = TIC_parlparty_17_abs_flag
-					set_global_flag = TIC_parlparty_17_sup_flag
-					TIC_parlparty_17_abs_sub_effect = yes
-					TIC_parlparty_17_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_17_infl_cost_2
-						has_global_flag = TIC_parlparty_17_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_17_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_17_rej_flag
-					set_global_flag = TIC_parlparty_17_sup_flag
-					TIC_parlparty_17_rej_sub_effect = yes
-					TIC_parlparty_17_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_18_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_18_infl_cost
-						has_global_flag = TIC_parlparty_18_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_18_infl_cost_minus
-					clr_global_flag = TIC_parlparty_18_abs_flag
-					set_global_flag = TIC_parlparty_18_sup_flag
-					TIC_parlparty_18_abs_sub_effect = yes
-					TIC_parlparty_18_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_18_infl_cost_2
-						has_global_flag = TIC_parlparty_18_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_18_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_18_rej_flag
-					set_global_flag = TIC_parlparty_18_sup_flag
-					TIC_parlparty_18_rej_sub_effect = yes
-					TIC_parlparty_18_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_19_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_19_infl_cost
-						has_global_flag = TIC_parlparty_19_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_19_infl_cost_minus
-					clr_global_flag = TIC_parlparty_19_abs_flag
-					set_global_flag = TIC_parlparty_19_sup_flag
-					TIC_parlparty_19_abs_sub_effect = yes
-					TIC_parlparty_19_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_19_infl_cost_2
-						has_global_flag = TIC_parlparty_19_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_19_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_19_rej_flag
-					set_global_flag = TIC_parlparty_19_sup_flag
-					TIC_parlparty_19_rej_sub_effect = yes
-					TIC_parlparty_19_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_20_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_20_infl_cost
-						has_global_flag = TIC_parlparty_20_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_20_infl_cost_minus
-					clr_global_flag = TIC_parlparty_20_abs_flag
-					set_global_flag = TIC_parlparty_20_sup_flag
-					TIC_parlparty_20_abs_sub_effect = yes
-					TIC_parlparty_20_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_20_infl_cost_2
-						has_global_flag = TIC_parlparty_20_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_20_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_20_rej_flag
-					set_global_flag = TIC_parlparty_20_sup_flag
-					TIC_parlparty_20_rej_sub_effect = yes
-					TIC_parlparty_20_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_21_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_21_infl_cost
-						has_global_flag = TIC_parlparty_21_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_21_infl_cost_minus
-					clr_global_flag = TIC_parlparty_21_abs_flag
-					set_global_flag = TIC_parlparty_21_sup_flag
-					TIC_parlparty_21_abs_sub_effect = yes
-					TIC_parlparty_21_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_21_infl_cost_2
-						has_global_flag = TIC_parlparty_21_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_21_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_21_rej_flag
-					set_global_flag = TIC_parlparty_21_sup_flag
-					TIC_parlparty_21_rej_sub_effect = yes
-					TIC_parlparty_21_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_22_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_22_infl_cost
-						has_global_flag = TIC_parlparty_22_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_22_infl_cost_minus
-					clr_global_flag = TIC_parlparty_22_abs_flag
-					set_global_flag = TIC_parlparty_22_sup_flag
-					TIC_parlparty_22_abs_sub_effect = yes
-					TIC_parlparty_22_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_22_infl_cost_2
-						has_global_flag = TIC_parlparty_22_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_22_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_22_rej_flag
-					set_global_flag = TIC_parlparty_22_sup_flag
-					TIC_parlparty_22_rej_sub_effect = yes
-					TIC_parlparty_22_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-			TIC_parlparty_23_infl_click = {
-				if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_23_infl_cost
-						has_global_flag = TIC_parlparty_23_abs_flag
-					}
-					add_political_power = global.TIC_parlparty_23_infl_cost_minus
-					clr_global_flag = TIC_parlparty_23_abs_flag
-					set_global_flag = TIC_parlparty_23_sup_flag
-					TIC_parlparty_23_abs_sub_effect = yes
-					TIC_parlparty_23_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-				else_if = {
-					limit = {
-						has_political_power > global.TIC_parlparty_23_infl_cost_2
-						has_global_flag = TIC_parlparty_23_rej_flag
-					}
-					add_political_power = global.TIC_parlparty_23_infl_cost_2_minus
-					clr_global_flag = TIC_parlparty_23_rej_flag
-					set_global_flag = TIC_parlparty_23_sup_flag
-					TIC_parlparty_23_rej_sub_effect = yes
-					TIC_parlparty_23_sup_add_effect = yes
-					update_TIC_dirty_variable = yes
-				}
-			}
-
 		}
 	}
 
@@ -2040,5 +1220,94 @@ scripted_gui = {
 			}
 		}
 
+	}
+
+	TIC_parlparty_influence_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = intercontinental_confederation_gui
+		window_name = "TIC_influence_party_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			TIC_parliament_tab_open_trigger = yes
+		}
+
+		dynamic_lists = {
+			TIC_influence_party_gridbox = {
+				array = global.TIC_parlparty_number
+				entry_container = "TIC_influence_party_list"
+			}
+		}
+
+		triggers = {
+			TIC_influence_party_button_click_enabled = {
+				has_global_flag = TIC_parl_ongoing_vote_flag
+			}
+		}
+
+		effects = {
+			TIC_influence_party_button_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_political_power > global.TIC_parlparty_[index]_infl_cost
+								has_global_flag = TIC_parlparty_[index]_abs_flag
+							}
+							add_political_power = global.TIC_parlparty_[index]_infl_cost_minus
+							clr_global_flag = TIC_parlparty_[index]_abs_flag
+							set_global_flag = TIC_parlparty_[index]_sup_flag
+							TIC_parlparty_[index]_abs_sub_effect = yes
+							TIC_parlparty_[index]_sup_add_effect = yes
+							update_TIC_dirty_variable = yes
+						}
+						else_if = {
+							limit = {
+								has_political_power > global.TIC_parlparty_[index]_infl_cost_2
+								has_global_flag = TIC_parlparty_[index]_rej_flag
+							}
+							add_political_power = global.TIC_parlparty_[index]_infl_cost_2_minus
+							clr_global_flag = TIC_parlparty_[index]_rej_flag
+							set_global_flag = TIC_parlparty_[index]_sup_flag
+							TIC_parlparty_[index]_rej_sub_effect = yes
+							TIC_parlparty_[index]_sup_add_effect = yes
+							update_TIC_dirty_variable = yes
+						}
+					}
+					index = "[?v]"
+				}
+			}
+			TIC_influence_party_button_right_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_political_power > global.TIC_parlparty_[index]_infl_cost
+								has_global_flag = TIC_parlparty_[index]_abs_flag
+							}
+							add_political_power = global.TIC_parlparty_[index]_infl_cost_minus
+							clr_global_flag = TIC_parlparty_[index]_abs_flag
+							set_global_flag = TIC_parlparty_[index]_rej_flag
+							TIC_parlparty_[index]_abs_sub_effect = yes
+							TIC_parlparty_[index]_rej_add_effect = yes
+							update_TIC_dirty_variable = yes
+						}
+						else_if = {
+							limit = {
+								has_political_power > global.TIC_parlparty_[index]_infl_cost_2
+								has_global_flag = TIC_parlparty_[index]_sup_flag
+							}
+							add_political_power = global.TIC_parlparty_[index]_infl_cost_2_minus
+							clr_global_flag = TIC_parlparty_[index]_sup_flag
+							set_global_flag = TIC_parlparty_[index]_rej_flag
+							TIC_parlparty_[index]_sup_sub_effect = yes
+							TIC_parlparty_[index]_rej_add_effect = yes
+							update_TIC_dirty_variable = yes
+						}
+					}
+					index = "[?v]"
+				}
+			}
+		}
 	}
 }
