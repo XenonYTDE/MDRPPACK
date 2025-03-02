@@ -372,6 +372,13 @@
 
 # Laws
 
+ TIC_current_law_agenda: "§YCurrent Law Agenda:§!"
+ TIC_current_expansion_agenda: "§YCurrent Expansion Agenda:§!"
+ TIC_laws_expansions_text: "§YAvailable Laws§!"
+ TIC_available_expansions_text: "§YAvailable Expansions§!"
+ TIC_active_laws_agenda_name: "§5[TIC_active_laws_agenda_name]§!"
+ TIC_active_exp_agenda_name: "§5[TIC_active_exp_agenda_name]§!"
+
  TIC_av_laws_name_101_loc_key: "A New Constitution"
  TIC_av_laws_name_102_loc_key: "Re-establish the Central Bank"
  TIC_av_laws_name_103_loc_key: "Establish the TIC Court"

@@ -695,6 +695,13 @@ scripted_gui = {
 				has_global_flag = TIC_parl_ongoing_vote_flag
 			}
 
+			TIC_parl_pass_law_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parl_reject_law_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+
 			TIC_parliament_president_flag_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}

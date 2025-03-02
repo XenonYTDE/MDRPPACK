@@ -140,7 +140,11 @@ guiTypes = {
 			pdx_tooltip = "TIC_legislations_tab_desc"
 		}
 
-		# Offices Tab
+		#######################
+		#######################
+		##### Offices Tab #####
+		#######################
+		#######################
 
 		containerWindowType = {
 			name = "TIC_offices_tab"
@@ -952,6 +956,12 @@ guiTypes = {
 
 		}
 
+		####################
+		####################
+		##### Info Tab #####
+		####################
+		####################
+
 		containerWindowType = {
 			name = TIC_info_tab
 			position = { x = 0 y = 0 }
@@ -1115,6 +1125,12 @@ guiTypes = {
 			
 
 		}
+
+		##########################
+		##########################
+		##### Parliament Tab #####
+		##########################
+		##########################
 
 		containerWindowType = {
 			name = "TIC_parliament_main"
@@ -1417,7 +1433,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_supporting_mp_count_title"
-				position = { x = 320 y = 195 }
+				position = { x = 535 y = 15 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1426,7 +1442,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_supporting_mp_count"
-				position = { x = 320 y = 215 }
+				position = { x = 535 y = 35 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1435,7 +1451,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_rejecting_mp_count_title"
-				position = { x = 320 y = 245 }
+				position = { x = 535 y = 65 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1444,7 +1460,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_rejecting_mp_count"
-				position = { x = 320 y = 265 }
+				position = { x = 535 y = 85 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1453,7 +1469,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_abstaining_mp_count_title"
-				position = { x = 320 y = 295 }
+				position = { x = 535 y = 115 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1462,7 +1478,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_abstaining_mp_count"
-				position = { x = 320 y = 315 }
+				position = { x = 535 y = 135 }
 				font = "hoi_18mbs"
 				maxWidth = 190
 				maxHeight = 20
@@ -1470,19 +1486,34 @@ guiTypes = {
 				text = TIC_abstaining_mp_count
 			}
 
+			buttonType = {
+				name = "TIC_parl_pass_law"
+				position = { x = 500 y = 165 }
+				spriteType = "GFX_TIC_button_123x43"
+				font = "hoi_18mbs"
+				text = "Pass Agenda"
+			}
+			buttonType = {
+				name = "TIC_parl_reject_law"
+				position = { x = 640 y = 165 }
+				spriteType = "GFX_TIC_button_123x43"
+				font = "hoi_18mbs"
+				text = "Reject Agenda"
+			}
+
 			iconType = {
 				name = "TIC_parliament_president_flag"
-				position = { x = 581 y = 51 }
+				position = { x = 851 y = 51 }
 				quadTextureSprite = "GFX_shield_medium"
 			}
 			iconType = {
 				name = "TIC_parliament_president_icon"
-				position = { x = 530 y = 15 }
+				position = { x = 800 y = 15 }
 				spriteType = "GFX_TIC_office_frame"
 			}
 			instantTextBoxType = {
 				name = "TIC_parliament_president_text"
-				position = { x = 530 y = 104 }
+				position = { x = 800 y = 104 }
 				text = "President of the Parliament"
 				font = "hoi_16mbs"
 				format = center
@@ -1492,8 +1523,8 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_parl_active_laws_agenda_title"
-				position = { x = 495 y = 130 }
-				text = "Current Law Agenda:"
+				position = { x = 765 y = 130 }
+				text = TIC_current_law_agenda
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1501,8 +1532,8 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parl_active_laws_agenda"
-				position = { x = 495 y = 155 }
-				text = "[TIC_active_laws_agenda_name]"
+				position = { x = 765 y = 155 }
+				text = TIC_active_laws_agenda_name
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1510,8 +1541,8 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parl_active_exp_agenda_title"
-				position = { x = 495 y = 185 }
-				text = "Current Expansion Agenda:"
+				position = { x = 765 y = 185 }
+				text = TIC_current_expansion_agenda
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1519,8 +1550,8 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_parl_active_exp_agenda"
-				position = { x = 495 y = 210 }
-				text = "[TIC_active_exp_agenda_name]"
+				position = { x = 765 y = 210 }
+				text = TIC_active_exp_agenda_name
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1528,30 +1559,36 @@ guiTypes = {
 			}
 			
 
-			# Laws
+			# Laws & Expansions
 
 			instantTextBoxType = {
 				name = "TIC_available_laws"
-				position = { x = 730 y = 15 }
+				position = { x = 390 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
 				format = center
-				text = "Available Laws"
+				text = TIC_available_laws_text
 			}
 			instantTextBoxType = {
 				name = "TIC_available_expansions"
-				position = { x = 730 y = 315 }
+				position = { x = 710 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
 				format = center
-				text = "Available Expansions"
+				text = TIC_available_expansions_text
 			}
 
 		}
 
 	}
+
+	#########################
+	#########################
+	##### Dynamic Lists #####
+	#########################
+	#########################
 
 	containerWindowType = {
 		name = "TIC_info_list_screen"
@@ -1639,9 +1676,44 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "TIC_influence_party_screen"
+		position = { x = 255 y = 158 }
+		size = { width = 280 height = 593 }
+		margin = { top = 10 bottom = 10 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_influence_party_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 0 bottom = 0 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 200 height = 24 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_influence_party_list"
+
+		buttonType = {
+			name = "TIC_influence_party_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_TIC_narrow_button"
+			buttonFont = "hoi_18mbs"
+			buttonText = "[TIC_influence_party_loc]"
+			pdx_tooltip = "TIC_parlparty_dyn_infl_tt"
+		}
+	}
+
+	containerWindowType = {
 		name = "TIC_laws_list_screen"
-		position = { x = 770 y = 160 }
-		size = { width = 280 height = 290 }
+		position = { x = 420 y = 390 }
+		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
 
@@ -1675,8 +1747,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_expansions_list_screen"
-		position = { x = 770 y = 460 }
-		size = { width = 280 height = 290 }
+		position = { x = 750 y = 390 }
+		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
 
@@ -1708,38 +1780,4 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
-		name = "TIC_influence_party_screen"
-		position = { x = 225 y = 158 }
-		size = { width = 280 height = 593 }
-		margin = { top = 10 bottom = 10 }
-
-		background = {
-			name = "Background"
-			quadTextureSprite = "GFX_tiled_window_transparent"
-		}
-
-		gridboxType = {
-			name = "TIC_influence_party_gridbox"
-			position = { x = 0 y = 0 }
-			padding = { top = 0 bottom = 0 }
-			size = { width = 100%% height = 100%% }
-			slotsize = { width = 200 height = 24 }
-			format = "UPPER_LEFT"
-			max_slots_horizontal = 1
-		}
-	}
-
-	containerWindowType = {
-		name = "TIC_influence_party_list"
-
-		buttonType = {
-			name = "TIC_influence_party_button"
-			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_TIC_narrow_button"
-			buttonFont = "hoi_18mbs"
-			buttonText = "[TIC_influence_party_loc]"
-			pdx_tooltip = "TIC_parlparty_dyn_infl_tt"
-		}
-	}
 }
