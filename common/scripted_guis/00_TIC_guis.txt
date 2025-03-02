@@ -1174,13 +1174,14 @@ scripted_gui = {
 		triggers = {
 			TIC_available_laws_button_click_enabled = {
 				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
+				check_variable = { global.TIC_parl_elections_cd > 14 }
 			}
 		}
 
 		effects = {
 			TIC_available_laws_button_click = {
 				set_variable = { global.TIC_active_laws_agenda_name = v }
-				set_global_flag = TIC_parl_ongoing_vote_flag
+				set_global_flag = { flag = TIC_parl_ongoing_vote_flag value = 1 days = 14 }
 				TIC_parl_ongoing_vote = yes
 
 				update_TIC_dirty_variable = yes
@@ -1208,13 +1209,14 @@ scripted_gui = {
 		triggers = {
 			TIC_available_exp_button_click_enabled = {
 				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
+				check_variable = { global.TIC_parl_elections_cd > 14 }
 			}
 		}
 
 		effects = {
 			TIC_available_exp_button_click = {
 				set_variable = { global.TIC_active_exp_agenda_name = v }
-				set_global_flag = TIC_parl_ongoing_vote_flag
+				set_global_flag = { flag = TIC_parl_ongoing_vote_flag value = 1 days = 14}
 				TIC_parl_ongoing_vote = yes
 				update_TIC_dirty_variable = yes
 			}

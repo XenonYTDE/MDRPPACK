@@ -408,17 +408,23 @@ defined_text = {
 				}
 				index = v
 			}
+			has_global_flag = TIC_parl_ongoing_vote_flag
 		}
 		localization_key = TIC_parlparty_[?v]_infl_g
 	}
 	text = {
 		trigger = {
-			check_variable = { v = v }
-			meta_trigger = {
-				text = {
-					has_global_flag = TIC_parlparty_[index]_abs_flag 
+			OR = {
+				AND = {
+					check_variable = { v = v }
+					meta_trigger = {
+						text = {
+							has_global_flag = TIC_parlparty_[index]_abs_flag 
+						}
+						index = v
+					}
 				}
-				index = v
+				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
 			}
 		}
 		localization_key = TIC_parlparty_[?v]_infl_n
@@ -432,6 +438,7 @@ defined_text = {
 				}
 				index = v
 			}
+			has_global_flag = TIC_parl_ongoing_vote_flag
 		}
 		localization_key = TIC_parlparty_[?v]_infl_r
 	}
