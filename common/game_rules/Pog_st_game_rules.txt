@@ -50,10 +50,12 @@ use_new_tool = {
 	default = {
 		name = "NO"
 		text = "No"
+		desc = "RULE_USE_NEW_TOOL_NO_DESC"
 		allow_achievements = no	
 	}
 	option = {
 		name = "YES"
 		text = "Yes"
+		desc = "RULE_USE_NEW_TOOL_YES_DESC"
 	}
 }

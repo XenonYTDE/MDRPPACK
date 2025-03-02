@@ -832,10 +832,6 @@ guiTypes = {
 			size = { x = 250 y = 40 }
 			pdx_tooltip = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_PASSED"
 			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_DELAYED_PASSED"
-			pdx_tooltip_anchor = {
-				x = 260
-				y = -300
-			}
 		}
 
 		buttonType = {
@@ -845,10 +841,6 @@ guiTypes = {
 			size = { x = 250 y = 40 }
 			pdx_tooltip = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT"
 			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_DELAYED"
-			pdx_tooltip_anchor = {
-				x = 260
-				y = -300
-			}
 		}
 
 		buttonType = {
@@ -906,10 +898,6 @@ guiTypes = {
 			size = { x = 120 y = 40 }
 			pdx_tooltip = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_PASSED"
 			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_DELAYED_PASSED"
-			pdx_tooltip_anchor = {
-				x = 150
-				y = -300
-			}
 		}
 
 		buttonType = {
@@ -919,10 +907,6 @@ guiTypes = {
 			size = { x = 120 y = 40 }
 			pdx_tooltip = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT"
 			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_REFORM_ENTRY_TT_DELAYED"
-			pdx_tooltip_anchor = {
-				x = 150
-				y = -300
-			}
 		}
 
 		buttonType = {
