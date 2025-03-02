@@ -50,3 +50,8 @@
  request_resource_rights_ai_condition:0 "Is AI"
  request_resource_rights1_opmod:0 "Relation: Resource Rights"
  STATE_INTERACTIONS_TITLE:0 "State Interactions"
+
+ # Border War News Event
+ si.5.t:0 "Border Tensions Erupt into Conflict"
+ si.5.desc:0 "Reports indicate that [Root.GetName] has initiated a border war. Military units from both sides have engaged in a limited conflict over disputed territory. The international community is watching closely as tensions escalate in the region."
+ si.5.a:0 "Concerning developments."

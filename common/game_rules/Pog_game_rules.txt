@@ -199,6 +199,7 @@ hyperfragmentation = {
 	default = {
 		name = no
 		text = "RULE_OPTION_NO"
+		desc = "RULE_NO_HYPERFRAGMENTATION_DESC"
 	}
 }
 ####DISABLE-AI####

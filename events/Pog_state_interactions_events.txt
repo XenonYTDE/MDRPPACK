@@ -82,3 +82,18 @@ country_event = {
         log = "[GetRootName]: Immediate border war in state [ROOT.si_border_war_attacked_state_var] against [ROOT.si_border_war_attacker_tag_var]"
     }
 }
+
+# border war news event
+news_event = {
+    id = si.5
+    title = si.5.t
+    desc = si.5.desc
+    picture = GFX_news_event_009
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = si.5.a
+    }
+}
