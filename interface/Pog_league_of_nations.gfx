@@ -88,14 +88,14 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-		allwaystransparent = yes
+		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
 	spriteType = {
 		name = "GFX_league_of_nations_button_glow_strip"
 		texturefile = "gfx/interface/league_of_nations_button.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 		animation = {
 			animationmaskfile = "gfx/interface/league_of_nations_button.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -195,7 +195,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_league_of_nations_leader_flag_frame"
 		texturefile = "gfx/interface/league_of_nations_leader_flag_frame.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {

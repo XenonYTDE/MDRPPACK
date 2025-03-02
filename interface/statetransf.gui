@@ -118,7 +118,7 @@ guiTypes = {
 			spriteType = "GFX_generic_text_bg_154"
 			position = { x=3 y=3}
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
@@ -169,7 +169,7 @@ guiTypes = {
 			spriteType = "GFX_tiled_window_small"
 			position = { x=189 y=9}
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		buttonType = {

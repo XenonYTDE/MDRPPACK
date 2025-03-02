@@ -212,6 +212,11 @@ scripted_gui = {
 						value = 1
 					}
 				}
+				
+				# Trigger news event from the ROOT scope
+				ROOT = {
+					news_event = { id = si.5 }
+				}
 			}
 			
 			#demiliterise
