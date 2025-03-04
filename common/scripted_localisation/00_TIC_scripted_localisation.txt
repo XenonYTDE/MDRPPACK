@@ -1,400 +1,236 @@
 defined_text = {
-	name = TIC_available_laws_name
+	name = TIC_available_parl_laws_name
 
-	text = { trigger = { check_variable = { v = 101 } }
+	text = { 
+		trigger = { check_variable = { v = v } }
+		localization_key = TIC_av_laws_name_[?v]_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_available_parl_expansions_name
+
+	text = { trigger = { check_variable = { v = v } }
+		localization_key = TIC_av_exp_name_[?v]_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_available_council_laws_name
+
+	text = { 
+		trigger = { check_variable = { v = v } }
+		localization_key = TIC_av_laws_name_[?v]_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_available_council_expansions_name
+
+	text = { trigger = { check_variable = { v = v } }
+		localization_key = TIC_av_exp_name_[?v]_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_parl_active_laws_agenda_name
+	
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 101 } }
 		localization_key = TIC_av_laws_name_101_loc_key
 	}
-	text = { trigger = { check_variable = { v = 102 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 102 } }
 		localization_key = TIC_av_laws_name_102_loc_key
 	}
-	text = { trigger = { check_variable = { v = 103 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 103 } }
 		localization_key = TIC_av_laws_name_103_loc_key
 	}
-	text = { trigger = { check_variable = { v = 104 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 104 } }
 		localization_key = TIC_av_laws_name_104_loc_key
 	}
-	text = { trigger = { check_variable = { v = 105 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 105 } }
 		localization_key = TIC_av_laws_name_105_loc_key
 	}
-	text = { trigger = { check_variable = { v = 106 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 106 } }
 		localization_key = TIC_av_laws_name_106_loc_key
 	}
-	text = { trigger = { check_variable = { v = 107 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 107 } }
 		localization_key = TIC_av_laws_name_107_loc_key
 	}
-	text = { trigger = { check_variable = { v = 108 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 108 } }
 		localization_key = TIC_av_laws_name_108_loc_key
 	}
-	text = { trigger = { check_variable = { v = 109 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 109 } }
 		localization_key = TIC_av_laws_name_109_loc_key
 	}
-	text = { trigger = { check_variable = { v = 110 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 110 } }
 		localization_key = TIC_av_laws_name_110_loc_key
 	}
-	text = { trigger = { check_variable = { v = 111 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 111 } }
 		localization_key = TIC_av_laws_name_111_loc_key
 	}
-	text = { trigger = { check_variable = { v = 112 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 112 } }
 		localization_key = TIC_av_laws_name_112_loc_key
 	}
-	text = { trigger = { check_variable = { v = 113 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 113 } }
 		localization_key = TIC_av_laws_name_113_loc_key
 	}
-	text = { trigger = { check_variable = { v = 114 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 114 } }
 		localization_key = TIC_av_laws_name_114_loc_key
 	}
-	text = { trigger = { check_variable = { v = 115 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 115 } }
 		localization_key = TIC_av_laws_name_115_loc_key
 	}
-	text = { trigger = { check_variable = { v = 116 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 116 } }
 		localization_key = TIC_av_laws_name_116_loc_key
 	}
-	text = { trigger = { check_variable = { v = 117 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 117 } }
 		localization_key = TIC_av_laws_name_117_loc_key
 	}
-	text = { trigger = { check_variable = { v = 118 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 118 } }
 		localization_key = TIC_av_laws_name_118_loc_key
 	}
-	text = { trigger = { check_variable = { v = 119 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 119 } }
 		localization_key = TIC_av_laws_name_119_loc_key
 	}
-	text = { trigger = { check_variable = { v = 120 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 120 } }
 		localization_key = TIC_av_laws_name_120_loc_key
 	}
-	text = { trigger = { check_variable = { v = 121 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 121 } }
 		localization_key = TIC_av_laws_name_121_loc_key
 	}
-	text = { trigger = { check_variable = { v = 122 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 122 } }
 		localization_key = TIC_av_laws_name_122_loc_key
 	}
-	text = { trigger = { check_variable = { v = 123 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 123 } }
 		localization_key = TIC_av_laws_name_123_loc_key
 	}
-	text = { trigger = { check_variable = { v = 124 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 124 } }
 		localization_key = TIC_av_laws_name_124_loc_key
 	}
-	text = { trigger = { check_variable = { v = 125 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 125 } }
 		localization_key = TIC_av_laws_name_125_loc_key
 	}
-	text = { trigger = { check_variable = { v = 126 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 126 } }
 		localization_key = TIC_av_laws_name_126_loc_key
 	}
-	text = { trigger = { check_variable = { v = 127 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_laws_agenda_name = 127 } }
 		localization_key = TIC_av_laws_name_127_loc_key
 	}
 }
 
 defined_text = {
-	name = TIC_available_expansions_name
+	name = TIC_parl_active_exp_agenda_name
 
-	text = { trigger = { check_variable = { v = 101 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 101 } }
 		localization_key = TIC_av_exp_name_101_loc_key
 	}
-	text = { trigger = { check_variable = { v = 102 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 102 } }
 		localization_key = TIC_av_exp_name_102_loc_key
 	}
-	text = { trigger = { check_variable = { v = 103 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 103 } }
 		localization_key = TIC_av_exp_name_103_loc_key
 	}
-	text = { trigger = { check_variable = { v = 104 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 104 } }
 		localization_key = TIC_av_exp_name_104_loc_key
 	}
-	text = { trigger = { check_variable = { v = 105 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 105 } }
 		localization_key = TIC_av_exp_name_105_loc_key
 	}
-	text = { trigger = { check_variable = { v = 106 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 106 } }
 		localization_key = TIC_av_exp_name_106_loc_key
 	}
-	text = { trigger = { check_variable = { v = 107 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 107 } }
 		localization_key = TIC_av_exp_name_107_loc_key
 	}
-	text = { trigger = { check_variable = { v = 108 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 108 } }
 		localization_key = TIC_av_exp_name_108_loc_key
 	}
-	text = { trigger = { check_variable = { v = 109 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 109 } }
 		localization_key = TIC_av_exp_name_109_loc_key
 	}
-	text = { trigger = { check_variable = { v = 110 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 110 } }
 		localization_key = TIC_av_exp_name_110_loc_key
 	}
-	text = { trigger = { check_variable = { v = 111 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 111 } }
 		localization_key = TIC_av_exp_name_111_loc_key
 	}
-	text = { trigger = { check_variable = { v = 112 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 112 } }
 		localization_key = TIC_av_exp_name_112_loc_key
 	}
-	text = { trigger = { check_variable = { v = 113 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 113 } }
 		localization_key = TIC_av_exp_name_113_loc_key
 	}
-	text = { trigger = { check_variable = { v = 114 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 114 } }
 		localization_key = TIC_av_exp_name_114_loc_key
 	}
-	text = { trigger = { check_variable = { v = 115 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 115 } }
 		localization_key = TIC_av_exp_name_115_loc_key
 	}
-	text = { trigger = { check_variable = { v = 116 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 116 } }
 		localization_key = TIC_av_exp_name_116_loc_key
 	}
-	text = { trigger = { check_variable = { v = 117 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 117 } }
 		localization_key = TIC_av_exp_name_117_loc_key
 	}
-	text = { trigger = { check_variable = { v = 118 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 118 } }
 		localization_key = TIC_av_exp_name_118_loc_key
 	}
-	text = { trigger = { check_variable = { v = 119 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 119 } }
 		localization_key = TIC_av_exp_name_119_loc_key
 	}
-	text = { trigger = { check_variable = { v = 120 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 120 } }
 		localization_key = TIC_av_exp_name_120_loc_key
 	}
-	text = { trigger = { check_variable = { v = 121 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 121 } }
 		localization_key = TIC_av_exp_name_121_loc_key
 	}
-	text = { trigger = { check_variable = { v = 122 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 122 } }
 		localization_key = TIC_av_exp_name_122_loc_key
 	}
-	text = { trigger = { check_variable = { v = 123 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 123 } }
 		localization_key = TIC_av_exp_name_123_loc_key
 	}
-	text = { trigger = { check_variable = { v = 124 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 124 } }
 		localization_key = TIC_av_exp_name_124_loc_key
 	}
-	text = { trigger = { check_variable = { v = 125 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 125 } }
 		localization_key = TIC_av_exp_name_125_loc_key
 	}
-	text = { trigger = { check_variable = { v = 126 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 126 } }
 		localization_key = TIC_av_exp_name_126_loc_key
 	}
-	text = { trigger = { check_variable = { v = 127 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 127 } }
 		localization_key = TIC_av_exp_name_127_loc_key
 	}
-	text = { trigger = { check_variable = { v = 128 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 128 } }
 		localization_key = TIC_av_exp_name_128_loc_key
 	}
-	text = { trigger = { check_variable = { v = 129 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 129 } }
 		localization_key = TIC_av_exp_name_129_loc_key
 	}
-	text = { trigger = { check_variable = { v = 130 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 130 } }
 		localization_key = TIC_av_exp_name_130_loc_key
 	}
-	text = { trigger = { check_variable = { v = 131 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 131 } }
 		localization_key = TIC_av_exp_name_131_loc_key
 	}
-	text = { trigger = { check_variable = { v = 132 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 132 } }
 		localization_key = TIC_av_exp_name_132_loc_key
 	}
-	text = { trigger = { check_variable = { v = 133 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 133 } }
 		localization_key = TIC_av_exp_name_133_loc_key
 	}
-	text = { trigger = { check_variable = { v = 134 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 134 } }
 		localization_key = TIC_av_exp_name_134_loc_key
 	}
-	text = { trigger = { check_variable = { v = 135 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 135 } }
 		localization_key = TIC_av_exp_name_135_loc_key
 	}
-	text = { trigger = { check_variable = { v = 136 } }
+	text = { trigger = { check_variable = { global.TIC_parl_active_exp_agenda_name = 136 } }
 		localization_key = TIC_av_exp_name_136_loc_key
 	}
 }
 
-defined_text = {
-	name = TIC_active_laws_agenda_name
-
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 101 } }
-		localization_key = TIC_av_laws_name_101_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 102 } }
-		localization_key = TIC_av_laws_name_102_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 103 } }
-		localization_key = TIC_av_laws_name_103_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 104 } }
-		localization_key = TIC_av_laws_name_104_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 105 } }
-		localization_key = TIC_av_laws_name_105_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 106 } }
-		localization_key = TIC_av_laws_name_106_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 107 } }
-		localization_key = TIC_av_laws_name_107_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 108 } }
-		localization_key = TIC_av_laws_name_108_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 109 } }
-		localization_key = TIC_av_laws_name_109_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 110 } }
-		localization_key = TIC_av_laws_name_110_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 111 } }
-		localization_key = TIC_av_laws_name_111_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 112 } }
-		localization_key = TIC_av_laws_name_112_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 113 } }
-		localization_key = TIC_av_laws_name_113_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 114 } }
-		localization_key = TIC_av_laws_name_114_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 115 } }
-		localization_key = TIC_av_laws_name_115_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 116 } }
-		localization_key = TIC_av_laws_name_116_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 117 } }
-		localization_key = TIC_av_laws_name_117_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 118 } }
-		localization_key = TIC_av_laws_name_118_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 119 } }
-		localization_key = TIC_av_laws_name_119_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 120 } }
-		localization_key = TIC_av_laws_name_120_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 121 } }
-		localization_key = TIC_av_laws_name_121_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 122 } }
-		localization_key = TIC_av_laws_name_122_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 123 } }
-		localization_key = TIC_av_laws_name_123_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 124 } }
-		localization_key = TIC_av_laws_name_124_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 125 } }
-		localization_key = TIC_av_laws_name_125_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 126 } }
-		localization_key = TIC_av_laws_name_126_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_laws_agenda_name = 127 } }
-		localization_key = TIC_av_laws_name_127_loc_key
-	}
-}
-
-defined_text = {
-	name = TIC_active_exp_agenda_name
-
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 101 } }
-		localization_key = TIC_av_exp_name_101_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 102 } }
-		localization_key = TIC_av_exp_name_102_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 103 } }
-		localization_key = TIC_av_exp_name_103_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 104 } }
-		localization_key = TIC_av_exp_name_104_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 105 } }
-		localization_key = TIC_av_exp_name_105_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 106 } }
-		localization_key = TIC_av_exp_name_106_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 107 } }
-		localization_key = TIC_av_exp_name_107_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 108 } }
-		localization_key = TIC_av_exp_name_108_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 109 } }
-		localization_key = TIC_av_exp_name_109_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 110 } }
-		localization_key = TIC_av_exp_name_110_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 111 } }
-		localization_key = TIC_av_exp_name_111_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 112 } }
-		localization_key = TIC_av_exp_name_112_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 113 } }
-		localization_key = TIC_av_exp_name_113_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 114 } }
-		localization_key = TIC_av_exp_name_114_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 115 } }
-		localization_key = TIC_av_exp_name_115_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 116 } }
-		localization_key = TIC_av_exp_name_116_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 117 } }
-		localization_key = TIC_av_exp_name_117_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 118 } }
-		localization_key = TIC_av_exp_name_118_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 119 } }
-		localization_key = TIC_av_exp_name_119_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 120 } }
-		localization_key = TIC_av_exp_name_120_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 121 } }
-		localization_key = TIC_av_exp_name_121_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 122 } }
-		localization_key = TIC_av_exp_name_122_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 123 } }
-		localization_key = TIC_av_exp_name_123_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 124 } }
-		localization_key = TIC_av_exp_name_124_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 125 } }
-		localization_key = TIC_av_exp_name_125_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 126 } }
-		localization_key = TIC_av_exp_name_126_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 127 } }
-		localization_key = TIC_av_exp_name_127_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 128 } }
-		localization_key = TIC_av_exp_name_128_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 129 } }
-		localization_key = TIC_av_exp_name_129_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 130 } }
-		localization_key = TIC_av_exp_name_130_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 131 } }
-		localization_key = TIC_av_exp_name_131_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 132 } }
-		localization_key = TIC_av_exp_name_132_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 133 } }
-		localization_key = TIC_av_exp_name_133_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 134 } }
-		localization_key = TIC_av_exp_name_134_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 135 } }
-		localization_key = TIC_av_exp_name_135_loc_key
-	}
-	text = { trigger = { check_variable = { global.TIC_active_exp_agenda_name = 136 } }
-		localization_key = TIC_av_exp_name_136_loc_key
-	}
-}
 # Influence Color Loc Keys
 defined_text = {
 	name = TIC_parlparty_color_infl_loc
@@ -506,5 +342,204 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { v = v } }
 		localization_key = TIC_parlparty_[?v]_infl_tt
+	}
+}
+
+defined_text = {
+	name = TIC_coun_active_laws_agenda_name
+	
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 101 } }
+		localization_key = TIC_av_laws_name_101_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 102 } }
+		localization_key = TIC_av_laws_name_102_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 103 } }
+		localization_key = TIC_av_laws_name_103_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 104 } }
+		localization_key = TIC_av_laws_name_104_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 105 } }
+		localization_key = TIC_av_laws_name_105_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 106 } }
+		localization_key = TIC_av_laws_name_106_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 107 } }
+		localization_key = TIC_av_laws_name_107_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 108 } }
+		localization_key = TIC_av_laws_name_108_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 109 } }
+		localization_key = TIC_av_laws_name_109_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 110 } }
+		localization_key = TIC_av_laws_name_110_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 111 } }
+		localization_key = TIC_av_laws_name_111_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 112 } }
+		localization_key = TIC_av_laws_name_112_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 113 } }
+		localization_key = TIC_av_laws_name_113_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 114 } }
+		localization_key = TIC_av_laws_name_114_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 115 } }
+		localization_key = TIC_av_laws_name_115_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 116 } }
+		localization_key = TIC_av_laws_name_116_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 117 } }
+		localization_key = TIC_av_laws_name_117_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 118 } }
+		localization_key = TIC_av_laws_name_118_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 119 } }
+		localization_key = TIC_av_laws_name_119_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 120 } }
+		localization_key = TIC_av_laws_name_120_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 121 } }
+		localization_key = TIC_av_laws_name_121_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 122 } }
+		localization_key = TIC_av_laws_name_122_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 123 } }
+		localization_key = TIC_av_laws_name_123_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 124 } }
+		localization_key = TIC_av_laws_name_124_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 125 } }
+		localization_key = TIC_av_laws_name_125_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 126 } }
+		localization_key = TIC_av_laws_name_126_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_laws_agenda_name = 127 } }
+		localization_key = TIC_av_laws_name_127_loc_key
+	}
+}
+
+defined_text = {
+	name = TIC_coun_active_exp_agenda_name
+
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 101 } }
+		localization_key = TIC_av_exp_name_101_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 102 } }
+		localization_key = TIC_av_exp_name_102_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 103 } }
+		localization_key = TIC_av_exp_name_103_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 104 } }
+		localization_key = TIC_av_exp_name_104_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 105 } }
+		localization_key = TIC_av_exp_name_105_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 106 } }
+		localization_key = TIC_av_exp_name_106_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 107 } }
+		localization_key = TIC_av_exp_name_107_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 108 } }
+		localization_key = TIC_av_exp_name_108_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 109 } }
+		localization_key = TIC_av_exp_name_109_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 110 } }
+		localization_key = TIC_av_exp_name_110_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 111 } }
+		localization_key = TIC_av_exp_name_111_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 112 } }
+		localization_key = TIC_av_exp_name_112_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 113 } }
+		localization_key = TIC_av_exp_name_113_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 114 } }
+		localization_key = TIC_av_exp_name_114_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 115 } }
+		localization_key = TIC_av_exp_name_115_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 116 } }
+		localization_key = TIC_av_exp_name_116_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 117 } }
+		localization_key = TIC_av_exp_name_117_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 118 } }
+		localization_key = TIC_av_exp_name_118_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 119 } }
+		localization_key = TIC_av_exp_name_119_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 120 } }
+		localization_key = TIC_av_exp_name_120_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 121 } }
+		localization_key = TIC_av_exp_name_121_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 122 } }
+		localization_key = TIC_av_exp_name_122_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 123 } }
+		localization_key = TIC_av_exp_name_123_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 124 } }
+		localization_key = TIC_av_exp_name_124_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 125 } }
+		localization_key = TIC_av_exp_name_125_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 126 } }
+		localization_key = TIC_av_exp_name_126_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 127 } }
+		localization_key = TIC_av_exp_name_127_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 128 } }
+		localization_key = TIC_av_exp_name_128_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 129 } }
+		localization_key = TIC_av_exp_name_129_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 130 } }
+		localization_key = TIC_av_exp_name_130_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 131 } }
+		localization_key = TIC_av_exp_name_131_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 132 } }
+		localization_key = TIC_av_exp_name_132_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 133 } }
+		localization_key = TIC_av_exp_name_133_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 134 } }
+		localization_key = TIC_av_exp_name_134_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 135 } }
+		localization_key = TIC_av_exp_name_135_loc_key
+	}
+	text = { trigger = { check_variable = { global.TIC_coun_active_exp_agenda_name = 136 } }
+		localization_key = TIC_av_exp_name_136_loc_key
 	}
 }

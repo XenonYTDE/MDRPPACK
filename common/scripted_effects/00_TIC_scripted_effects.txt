@@ -129,70 +129,70 @@ TIC_parliament_init = {
 		add_ideas = mao_zedong_thought
 	}
 	# Available Laws
-	add_to_array = { global.TIC_available_laws = 101 }
-	add_to_array = { global.TIC_available_laws = 102 }
-	add_to_array = { global.TIC_available_laws = 103 }
-	add_to_array = { global.TIC_available_laws = 104 }
-	add_to_array = { global.TIC_available_laws = 105 }
-	add_to_array = { global.TIC_available_laws = 106 }
-	add_to_array = { global.TIC_available_laws = 107 }
-	add_to_array = { global.TIC_available_laws = 108 }
-	add_to_array = { global.TIC_available_laws = 109 }
-	add_to_array = { global.TIC_available_laws = 110 }
-	add_to_array = { global.TIC_available_laws = 111 }
-	add_to_array = { global.TIC_available_laws = 112 }
-	add_to_array = { global.TIC_available_laws = 113 }
-	add_to_array = { global.TIC_available_laws = 114 }
-	add_to_array = { global.TIC_available_laws = 115 }
-	add_to_array = { global.TIC_available_laws = 116 }
-	add_to_array = { global.TIC_available_laws = 117 }
-	add_to_array = { global.TIC_available_laws = 118 }
-	add_to_array = { global.TIC_available_laws = 119 }
-	add_to_array = { global.TIC_available_laws = 120 }
-	add_to_array = { global.TIC_available_laws = 121 }
-	add_to_array = { global.TIC_available_laws = 122 }
-	add_to_array = { global.TIC_available_laws = 123 }
-	add_to_array = { global.TIC_available_laws = 124 }
-	add_to_array = { global.TIC_available_laws = 125 }
-	add_to_array = { global.TIC_available_laws = 126 }
-	add_to_array = { global.TIC_available_laws = 127 }
+	add_to_array = { global.TIC_available_parl_laws = 101 }
+	add_to_array = { global.TIC_available_parl_laws = 102 }
+	add_to_array = { global.TIC_available_parl_laws = 103 }
+	add_to_array = { global.TIC_available_parl_laws = 104 }
+	add_to_array = { global.TIC_available_parl_laws = 105 }
+	add_to_array = { global.TIC_available_parl_laws = 106 }
+	add_to_array = { global.TIC_available_parl_laws = 107 }
+	add_to_array = { global.TIC_available_parl_laws = 108 }
+	add_to_array = { global.TIC_available_parl_laws = 109 }
+	add_to_array = { global.TIC_available_parl_laws = 110 }
+	add_to_array = { global.TIC_available_parl_laws = 111 }
+	add_to_array = { global.TIC_available_parl_laws = 112 }
+	add_to_array = { global.TIC_available_parl_laws = 113 }
+	add_to_array = { global.TIC_available_parl_laws = 114 }
+	add_to_array = { global.TIC_available_parl_laws = 115 }
+	add_to_array = { global.TIC_available_parl_laws = 116 }
+	add_to_array = { global.TIC_available_parl_laws = 117 }
+	add_to_array = { global.TIC_available_parl_laws = 118 }
+	add_to_array = { global.TIC_available_parl_laws = 119 }
+	add_to_array = { global.TIC_available_parl_laws = 120 }
+	add_to_array = { global.TIC_available_parl_laws = 121 }
+	add_to_array = { global.TIC_available_parl_laws = 122 }
+	add_to_array = { global.TIC_available_parl_laws = 123 }
+	add_to_array = { global.TIC_available_parl_laws = 124 }
+	add_to_array = { global.TIC_available_parl_laws = 125 }
+	add_to_array = { global.TIC_available_parl_laws = 126 }
+	add_to_array = { global.TIC_available_parl_laws = 127 }
 	# Available Expansions
-	add_to_array = { global.TIC_available_expansions = 101 }
-	add_to_array = { global.TIC_available_expansions = 102 }
-	add_to_array = { global.TIC_available_expansions = 103 }
-	add_to_array = { global.TIC_available_expansions = 104 }
-	add_to_array = { global.TIC_available_expansions = 105 }
-	add_to_array = { global.TIC_available_expansions = 106 }
-	add_to_array = { global.TIC_available_expansions = 107 }
-	add_to_array = { global.TIC_available_expansions = 108 }
-	add_to_array = { global.TIC_available_expansions = 109 }
-	add_to_array = { global.TIC_available_expansions = 110 }
-	add_to_array = { global.TIC_available_expansions = 111 }
-	add_to_array = { global.TIC_available_expansions = 112 }
-	add_to_array = { global.TIC_available_expansions = 113 }
-	add_to_array = { global.TIC_available_expansions = 114 }
-	add_to_array = { global.TIC_available_expansions = 115 }
-	add_to_array = { global.TIC_available_expansions = 116 }
-	add_to_array = { global.TIC_available_expansions = 117 }
-	add_to_array = { global.TIC_available_expansions = 118 }
-	add_to_array = { global.TIC_available_expansions = 119 }
-	add_to_array = { global.TIC_available_expansions = 120 }
-	add_to_array = { global.TIC_available_expansions = 121 }
-	add_to_array = { global.TIC_available_expansions = 122 }
-	add_to_array = { global.TIC_available_expansions = 123 }
-	add_to_array = { global.TIC_available_expansions = 124 }
-	add_to_array = { global.TIC_available_expansions = 125 }
-	add_to_array = { global.TIC_available_expansions = 126 }
-	add_to_array = { global.TIC_available_expansions = 127 }
-	add_to_array = { global.TIC_available_expansions = 128 }
-	add_to_array = { global.TIC_available_expansions = 129 }
-	add_to_array = { global.TIC_available_expansions = 130 }
-	add_to_array = { global.TIC_available_expansions = 131 }
-	add_to_array = { global.TIC_available_expansions = 132 }
-	add_to_array = { global.TIC_available_expansions = 133 }
-	add_to_array = { global.TIC_available_expansions = 134 }
-	add_to_array = { global.TIC_available_expansions = 135 }
-	add_to_array = { global.TIC_available_expansions = 136 }
+	add_to_array = { global.TIC_available_parl_expansions = 101 }
+	add_to_array = { global.TIC_available_parl_expansions = 102 }
+	add_to_array = { global.TIC_available_parl_expansions = 103 }
+	add_to_array = { global.TIC_available_parl_expansions = 104 }
+	add_to_array = { global.TIC_available_parl_expansions = 105 }
+	add_to_array = { global.TIC_available_parl_expansions = 106 }
+	add_to_array = { global.TIC_available_parl_expansions = 107 }
+	add_to_array = { global.TIC_available_parl_expansions = 108 }
+	add_to_array = { global.TIC_available_parl_expansions = 109 }
+	add_to_array = { global.TIC_available_parl_expansions = 110 }
+	add_to_array = { global.TIC_available_parl_expansions = 111 }
+	add_to_array = { global.TIC_available_parl_expansions = 112 }
+	add_to_array = { global.TIC_available_parl_expansions = 113 }
+	add_to_array = { global.TIC_available_parl_expansions = 114 }
+	add_to_array = { global.TIC_available_parl_expansions = 115 }
+	add_to_array = { global.TIC_available_parl_expansions = 116 }
+	add_to_array = { global.TIC_available_parl_expansions = 117 }
+	add_to_array = { global.TIC_available_parl_expansions = 118 }
+	add_to_array = { global.TIC_available_parl_expansions = 119 }
+	add_to_array = { global.TIC_available_parl_expansions = 120 }
+	add_to_array = { global.TIC_available_parl_expansions = 121 }
+	add_to_array = { global.TIC_available_parl_expansions = 122 }
+	add_to_array = { global.TIC_available_parl_expansions = 123 }
+	add_to_array = { global.TIC_available_parl_expansions = 124 }
+	add_to_array = { global.TIC_available_parl_expansions = 125 }
+	add_to_array = { global.TIC_available_parl_expansions = 126 }
+	add_to_array = { global.TIC_available_parl_expansions = 127 }
+	add_to_array = { global.TIC_available_parl_expansions = 128 }
+	add_to_array = { global.TIC_available_parl_expansions = 129 }
+	add_to_array = { global.TIC_available_parl_expansions = 130 }
+	add_to_array = { global.TIC_available_parl_expansions = 131 }
+	add_to_array = { global.TIC_available_parl_expansions = 132 }
+	add_to_array = { global.TIC_available_parl_expansions = 133 }
+	add_to_array = { global.TIC_available_parl_expansions = 134 }
+	add_to_array = { global.TIC_available_parl_expansions = 135 }
+	add_to_array = { global.TIC_available_parl_expansions = 136 }
 
 	add_to_array = { global.TIC_parlparty_number = 0 }
 	add_to_array = { global.TIC_parlparty_number = 1 }
@@ -346,6 +346,59 @@ TIC_parl_ongoing_vote = {
 	set_global_flag = TIC_parlparty_21_abs_flag
 	set_global_flag = TIC_parlparty_22_abs_flag
 	set_global_flag = TIC_parlparty_23_abs_flag
+	TIC_parlparty_0_abs_add_effect = yes
+	TIC_parlparty_1_abs_add_effect = yes
+	TIC_parlparty_2_abs_add_effect = yes
+	TIC_parlparty_3_abs_add_effect = yes
+	TIC_parlparty_4_abs_add_effect = yes
+	TIC_parlparty_5_abs_add_effect = yes
+	TIC_parlparty_6_abs_add_effect = yes
+	TIC_parlparty_7_abs_add_effect = yes
+	TIC_parlparty_8_abs_add_effect = yes
+	TIC_parlparty_9_abs_add_effect = yes
+	TIC_parlparty_10_abs_add_effect = yes
+	TIC_parlparty_11_abs_add_effect = yes
+	TIC_parlparty_12_abs_add_effect = yes
+	TIC_parlparty_13_abs_add_effect = yes
+	TIC_parlparty_14_abs_add_effect = yes
+	TIC_parlparty_15_abs_add_effect = yes
+	TIC_parlparty_16_abs_add_effect = yes
+	TIC_parlparty_17_abs_add_effect = yes
+	TIC_parlparty_18_abs_add_effect = yes
+	TIC_parlparty_19_abs_add_effect = yes
+	TIC_parlparty_20_abs_add_effect = yes
+	TIC_parlparty_21_abs_add_effect = yes
+	TIC_parlparty_22_abs_add_effect = yes
+	TIC_parlparty_23_abs_add_effect = yes
+	set_variable = { global.TIC_parl_ongoing_vote_d = 7 }
+	update_TIC_dirty_variable = yes
+}
+
+TIC_parl_vote_clear = {
+	clr_global_flag = TIC_parlparty_0_abs_flag
+	clr_global_flag = TIC_parlparty_1_abs_flag
+	clr_global_flag = TIC_parlparty_2_abs_flag
+	clr_global_flag = TIC_parlparty_3_abs_flag
+	clr_global_flag = TIC_parlparty_4_abs_flag
+	clr_global_flag = TIC_parlparty_5_abs_flag
+	clr_global_flag = TIC_parlparty_6_abs_flag
+	clr_global_flag = TIC_parlparty_7_abs_flag
+	clr_global_flag = TIC_parlparty_8_abs_flag
+	clr_global_flag = TIC_parlparty_9_abs_flag
+	clr_global_flag = TIC_parlparty_10_abs_flag
+	clr_global_flag = TIC_parlparty_11_abs_flag
+	clr_global_flag = TIC_parlparty_12_abs_flag
+	clr_global_flag = TIC_parlparty_13_abs_flag
+	clr_global_flag = TIC_parlparty_14_abs_flag
+	clr_global_flag = TIC_parlparty_15_abs_flag
+	clr_global_flag = TIC_parlparty_16_abs_flag
+	clr_global_flag = TIC_parlparty_17_abs_flag
+	clr_global_flag = TIC_parlparty_18_abs_flag
+	clr_global_flag = TIC_parlparty_19_abs_flag
+	clr_global_flag = TIC_parlparty_20_abs_flag
+	clr_global_flag = TIC_parlparty_21_abs_flag
+	clr_global_flag = TIC_parlparty_22_abs_flag
+	clr_global_flag = TIC_parlparty_23_abs_flag
 	clr_global_flag = TIC_parlparty_0_sup_flag
 	clr_global_flag = TIC_parlparty_1_sup_flag
 	clr_global_flag = TIC_parlparty_2_sup_flag
@@ -394,31 +447,9 @@ TIC_parl_ongoing_vote = {
 	clr_global_flag = TIC_parlparty_21_rej_flag
 	clr_global_flag = TIC_parlparty_22_rej_flag
 	clr_global_flag = TIC_parlparty_23_rej_flag
-	TIC_parlparty_0_abs_add_effect = yes
-	TIC_parlparty_1_abs_add_effect = yes
-	TIC_parlparty_2_abs_add_effect = yes
-	TIC_parlparty_3_abs_add_effect = yes
-	TIC_parlparty_4_abs_add_effect = yes
-	TIC_parlparty_5_abs_add_effect = yes
-	TIC_parlparty_6_abs_add_effect = yes
-	TIC_parlparty_7_abs_add_effect = yes
-	TIC_parlparty_8_abs_add_effect = yes
-	TIC_parlparty_9_abs_add_effect = yes
-	TIC_parlparty_10_abs_add_effect = yes
-	TIC_parlparty_11_abs_add_effect = yes
-	TIC_parlparty_12_abs_add_effect = yes
-	TIC_parlparty_13_abs_add_effect = yes
-	TIC_parlparty_14_abs_add_effect = yes
-	TIC_parlparty_15_abs_add_effect = yes
-	TIC_parlparty_16_abs_add_effect = yes
-	TIC_parlparty_17_abs_add_effect = yes
-	TIC_parlparty_18_abs_add_effect = yes
-	TIC_parlparty_19_abs_add_effect = yes
-	TIC_parlparty_20_abs_add_effect = yes
-	TIC_parlparty_21_abs_add_effect = yes
-	TIC_parlparty_22_abs_add_effect = yes
-	TIC_parlparty_23_abs_add_effect = yes
-	update_TIC_dirty_variable = yes
+	clr_global_flag = TIC_parl_ongoing_vote_flag
+	set_variable = { global.TIC_parl_active_laws_agenda_name = 0 }
+	set_variable = { global.TIC_parl_active_exp_agenda_name = 0 }
 }
 
 # MP voting effects
@@ -861,4 +892,9 @@ TIC_parlparty_22_abs_sub_effect = {
 }
 TIC_parlparty_23_abs_sub_effect = {
 	subtract_from_variable = { global.TIC_parl_abs_count = global.TIC_parlparty_23_total_MP }
+}
+
+
+TIC_council_ongoing_vote = {
+
 }

@@ -672,6 +672,13 @@ scripted_gui = {
 			TIC_supermajority_mp_count_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
+			TIC_parl_vote_countdown_title_visible = {
+				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parl_vote_countdown_visible = {
+				TIC_parliament_tab_open_trigger = yes
+				has_global_flag = TIC_parl_ongoing_vote_flag
+			}
 
 			TIC_supporting_mp_count_title_visible = {
 				TIC_parliament_tab_open_trigger = yes
@@ -698,8 +705,22 @@ scripted_gui = {
 			TIC_parl_pass_law_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
+			TIC_parl_pass_law_click_enabled = {
+				has_global_flag = TIC_parl_ongoing_vote_flag
+				OR = {
+					check_variable = { global.TIC_parl_sup_count > global.TIC_supermajority_count }
+					check_variable = { global.TIC_parl_sup_count = global.TIC_supermajority_count }
+				}
+			}
 			TIC_parl_reject_law_visible = {
 				TIC_parliament_tab_open_trigger = yes
+			}
+			TIC_parl_reject_law_click_enabled = {
+				has_global_flag = TIC_parl_ongoing_vote_flag
+				OR = {
+					check_variable = { global.TIC_parl_rej_count > global.TIC_supermajority_count }
+					check_variable = { global.TIC_parl_rej_count = global.TIC_supermajority_count }
+				}
 			}
 
 			TIC_parliament_president_flag_visible = {
@@ -712,10 +733,10 @@ scripted_gui = {
 				TIC_parliament_tab_open_trigger = yes
 			}
 
-			TIC_available_laws_visible = {
+			TIC_available_parl_laws_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
-			TIC_available_expansions_visible = {
+			TIC_available_parl_expansions_visible = {
 				TIC_parliament_tab_open_trigger = yes
 			}
 			TIC_parl_active_laws_agenda_title_visible = {
@@ -1098,7 +1119,7 @@ scripted_gui = {
 						has_political_power > TIC_unity_pp_cost_limit
 						check_variable = { global.TIC_unity < 1 }
 					}
-					add_political_power = global.TIC_unity_pp_cost
+					add_political_power = TIC_unity_pp_cost
 					TIC_g_unity_increase = yes
 					TIC_var_update = yes
 				}
@@ -1109,7 +1130,7 @@ scripted_gui = {
 						has_political_power > TIC_unity_pp_cost_limit
 						check_variable = { global.TIC_unity > 0 }
 					}
-					add_political_power = global.TIC_unity_pp_cost
+					add_political_power = TIC_unity_pp_cost
 					TIC_g_unity_decrease = yes
 					TIC_var_update = yes
 				}
@@ -1139,8 +1160,42 @@ scripted_gui = {
 			
 			# Parliament effects
 
+			TIC_parl_pass_law_click = {
+				if = {
+					limit = { check_variable = { global.TIC_parl_active_laws_agenda_name > 0 } }
+					set_temp_variable = { temp_parl = global.TIC_parl_active_laws_agenda_name }
+					add_to_array = { global.TIC_available_council_laws = temp_parl }
+					remove_from_array = { global.TIC_available_parl_laws = temp_parl }
+					TIC_parl_vote_clear = yes
+					update_TIC_dirty_variable = yes
+				}
+				if = {
+					limit = { check_variable = { global.TIC_parl_active_exp_agenda_name > 0 } }
+					set_temp_variable = { temp_parl = global.TIC_parl_active_exp_agenda_name }
+					add_to_array = { global.TIC_available_council_expansions = temp_parl }
+					remove_from_array = { global.TIC_available_parl_expansions = temp_parl }
+					TIC_parl_vote_clear = yes
+					update_TIC_dirty_variable = yes
+				}
+			}
+
+			TIC_parl_reject_law_click = {
+				if = {
+					limit = { check_variable = { global.TIC_parl_active_laws_agenda_name > 0 } }
+					TIC_parl_vote_clear = yes
+					update_TIC_dirty_variable = yes
+				}
+				if = {
+					limit = { check_variable = { global.TIC_parl_active_exp_agenda_name > 0 } }
+					TIC_parl_vote_clear = yes
+					update_TIC_dirty_variable = yes
+				}
+			}
+
 		}
+
 	}
+
 
 	TIC_info_dynlist_gui = {
 		context_type = player_context
@@ -1161,10 +1216,10 @@ scripted_gui = {
 		}
 	}
 
-	TIC_laws_dynlist_gui = {
+	TIC_parl_laws_dynlist_gui = {
 		context_type = player_context
 		parent_scripted_gui = intercontinental_confederation_gui
-		window_name = "TIC_laws_list_screen"
+		window_name = "TIC_parl_laws_list_screen"
 		dirty = global.TIC_dirty_update_var
 
 		visible = {
@@ -1172,22 +1227,22 @@ scripted_gui = {
 		}
 
 		dynamic_lists = {
-			TIC_laws_list_gridbox = {
-				array = global.TIC_available_laws
-				entry_container = "TIC_available_laws_list"
+			TIC_parl_laws_list_gridbox = {
+				array = global.TIC_available_parl_laws
+				entry_container = "TIC_available_parl_laws_list"
 			}
 		}
 
 		triggers = {
-			TIC_available_laws_button_click_enabled = {
+			TIC_available_parl_laws_button_click_enabled = {
 				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
 				check_variable = { global.TIC_parl_elections_cd > 14 }
 			}
 		}
 
 		effects = {
-			TIC_available_laws_button_click = {
-				set_variable = { global.TIC_active_laws_agenda_name = v }
+			TIC_available_parl_laws_button_click = {
+				set_variable = { global.TIC_parl_active_laws_agenda_name = v }
 				set_global_flag = { flag = TIC_parl_ongoing_vote_flag value = 1 days = 14 }
 				TIC_parl_ongoing_vote = yes
 
@@ -1196,10 +1251,10 @@ scripted_gui = {
 		}
 
 	}
-	TIC_expansions_dynlist_gui = {
+	TIC_parl_expansions_dynlist_gui = {
 		context_type = player_context
 		parent_scripted_gui = intercontinental_confederation_gui
-		window_name = "TIC_expansions_list_screen"
+		window_name = "TIC_parl_expansions_list_screen"
 		dirty = global.TIC_dirty_update_var
 
 		visible = {
@@ -1207,9 +1262,9 @@ scripted_gui = {
 		}
 
 		dynamic_lists = {
-			TIC_expansions_list_gridbox = {
-				array = global.TIC_available_expansions
-				entry_container = "TIC_available_expansions_list"
+			TIC_parl_expansions_list_gridbox = {
+				array = global.TIC_available_parl_expansions
+				entry_container = "TIC_available_parl_expansions_list"
 			}
 		}
 
@@ -1222,7 +1277,7 @@ scripted_gui = {
 
 		effects = {
 			TIC_available_exp_button_click = {
-				set_variable = { global.TIC_active_exp_agenda_name = v }
+				set_variable = { global.TIC_parl_active_exp_agenda_name = v }
 				set_global_flag = { flag = TIC_parl_ongoing_vote_flag value = 1 days = 14}
 				TIC_parl_ongoing_vote = yes
 				update_TIC_dirty_variable = yes
@@ -1318,5 +1373,73 @@ scripted_gui = {
 				}
 			}
 		}
+	}
+
+	TIC_council_laws_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = intercontinental_confederation_gui
+		window_name = "TIC_council_laws_list_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			TIC_council_tab_open_trigger = yes
+		}
+
+		dynamic_lists = {
+			TIC_council_laws_list_gridbox = {
+				array = global.TIC_available_council_laws
+				entry_container = "TIC_available_council_laws_list"
+			}
+		}
+
+		triggers = {
+			TIC_available_council_laws_button_click_enabled = {
+				NOT = { has_global_flag = TIC_council_ongoing_vote_flag }
+			}
+		}
+
+		effects = {
+			TIC_available_council_laws_button_click = {
+				set_variable = { global.TIC_parl_active_laws_agenda_name = v }
+				set_global_flag = { flag = TIC_council_ongoing_vote_flag value = 1 days = 14 }
+				TIC_council_ongoing_vote = yes
+
+				update_TIC_dirty_variable = yes
+			}
+		}
+
+	}
+	TIC_council_expansions_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = intercontinental_confederation_gui
+		window_name = "TIC_council_expansions_list_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			TIC_council_tab_open_trigger = yes
+		}
+
+		dynamic_lists = {
+			TIC_council_expansions_list_gridbox = {
+				array = global.TIC_available_council_expansions
+				entry_container = "TIC_available_council_expansions_list"
+			}
+		}
+
+		triggers = {
+			TIC_available_exp_button_click_enabled = {
+				NOT = { has_global_flag = TIC_council_ongoing_vote_flag }
+			}
+		}
+
+		effects = {
+			TIC_available_exp_button_click = {
+				set_variable = { global.TIC_parl_active_exp_agenda_name = v }
+				set_global_flag = { flag = TIC_council_ongoing_vote_flag value = 1 days = 14}
+				TIC_council_ongoing_vote = yes
+				update_TIC_dirty_variable = yes
+			}
+		}
+
 	}
 }

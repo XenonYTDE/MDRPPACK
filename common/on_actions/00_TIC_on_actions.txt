@@ -53,7 +53,7 @@ on_actions = {
 				TIC_parliament_init = yes
 				TIC_parl_elections = yes
 			}
-			set_variable = { global.TIC_parl_elections_cd = 10 }
+			set_variable = { global.TIC_parl_elections_cd = 3 }
 
 		}
 
@@ -63,6 +63,27 @@ on_actions = {
 	on_daily = {
 
 		effect = {
+
+			if = {
+				limit = { 
+					has_global_flag = TIC_parl_ongoing_vote_flag 
+					NOT = { has_global_flag = daily_countdown_parl_flag } 
+				}
+				if = {
+					limit = {
+						check_variable = { global.TIC_parl_ongoing_vote_d > 0 }
+					}
+					subtract_from_variable = { global.TIC_parl_ongoing_vote_d = 1 }
+					update_TIC_dirty_variable = yes
+				}
+				else = {
+					TIC_parl_vote_clear = yes
+					clr_global_flag = TIC_parl_ongoing_vote_flag
+					update_TIC_dirty_variable = yes
+				}
+				set_global_flag = { flag = daily_countdown_parl_flag value = 1 days = 1 }
+			}
+
 			if = {
 				limit = { NOT = { has_global_flag = daily_countdown_flag } }
 				if = {
@@ -79,7 +100,9 @@ on_actions = {
 				}
 				set_global_flag = { flag = daily_countdown_flag value = 1 days = 1 }
 			}
+
 		}
+		
 
 	}
 

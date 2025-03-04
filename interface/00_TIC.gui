@@ -57,7 +57,7 @@ guiTypes = {
 
 		# Guide
 		buttonType = {
-			name = "TIC_laws_flowchart_button"
+			name = "TIC_parl_laws_flowchart_button"
 			position = { x = 1025 y = 30 }
 			quadTextureSprite ="GFX_help_button_custom"
 			clicksound = click_default
@@ -1133,7 +1133,7 @@ guiTypes = {
 		##########################
 
 		containerWindowType = {
-			name = "TIC_parliament_main"
+			name = "TIC_parliament_tab"
 			position = { x = 38 y = 134 }
 
 			#Parties
@@ -1430,6 +1430,25 @@ guiTypes = {
 				text = TIC_supermajority
 				pdx_tooltip = TIC_supermajority_tt
 			}
+			instantTextBoxType = {
+				name = "TIC_parl_vote_countdown_title"
+				position = { x = 320 y = 195 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_parl_vote_countdown_title
+			}
+			instantTextBoxType = {
+				name = "TIC_parl_vote_countdown"
+				position = { x = 320 y = 215 }
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				format = center
+				text = TIC_parl_vote_countdown
+			}
+
 
 			instantTextBoxType = {
 				name = "TIC_supporting_mp_count_title"
@@ -1533,7 +1552,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "TIC_parl_active_laws_agenda"
 				position = { x = 765 y = 155 }
-				text = TIC_active_laws_agenda_name
+				text = TIC_parl_active_laws_agenda_name
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1551,7 +1570,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "TIC_parl_active_exp_agenda"
 				position = { x = 765 y = 210 }
-				text = TIC_active_exp_agenda_name
+				text = TIC_parl_active_exp_agenda_name
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
@@ -1562,22 +1581,22 @@ guiTypes = {
 			# Laws & Expansions
 
 			instantTextBoxType = {
-				name = "TIC_available_laws"
+				name = "TIC_available_parl_laws"
 				position = { x = 390 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
 				format = center
-				text = TIC_available_laws_text
+				text = TIC_available_parl_laws_text
 			}
 			instantTextBoxType = {
-				name = "TIC_available_expansions"
+				name = "TIC_available_parl_expansions"
 				position = { x = 710 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
 				format = center
-				text = TIC_available_expansions_text
+				text = TIC_available_parl_expansions_text
 			}
 
 		}
@@ -1711,7 +1730,7 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "TIC_laws_list_screen"
+		name = "TIC_parl_laws_list_screen"
 		position = { x = 420 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
@@ -1723,7 +1742,7 @@ guiTypes = {
 		}
 
 		gridboxType = {
-			name = "TIC_laws_list_gridbox"
+			name = "TIC_parl_laws_list_gridbox"
 			position = { x = 0 y = 0 }
 			padding = { top = 50 bottom = 50 }
 			size = { width = 100%% height = 100%% }
@@ -1734,19 +1753,19 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "TIC_available_laws_list"
+		name = "TIC_available_parl_laws_list"
 
 		buttonType = {
-			name = "TIC_available_laws_button"
+			name = "TIC_available_parl_laws_button"
 			position = { x = 0 y = 0 }
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "[TIC_available_laws_name]"
+			buttonText = "[TIC_available_parl_laws_name]"
 		}
 	}
 
 	containerWindowType = {
-		name = "TIC_expansions_list_screen"
+		name = "TIC_parl_expansions_list_screen"
 		position = { x = 750 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
@@ -1758,7 +1777,7 @@ guiTypes = {
 		}
 
 		gridboxType = {
-			name = "TIC_expansions_list_gridbox"
+			name = "TIC_parl_expansions_list_gridbox"
 			position = { x = 0 y = 0 }
 			padding = { top = 50 bottom = 50 }
 			size = { width = 100%% height = 100%% }
@@ -1769,14 +1788,84 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "TIC_available_expansions_list"
+		name = "TIC_available_parl_expansions_list"
 
 		buttonType = {
 			name = "TIC_available_exp_button"
 			position = { x = 0 y = 0 }
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
-			buttonText = "[TIC_available_expansions_name]"
+			buttonText = "[TIC_available_parl_expansions_name]"
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_council_laws_list_screen"
+		position = { x = 255 y = 390 }
+		size = { width = 280 height = 360 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_council_laws_list_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 250 height = 35 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_available_council_laws_list"
+
+		buttonType = {
+			name = "TIC_available_council_laws_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_TIC_narrow2_button"
+			buttonFont = "hoi_18mbs"
+			buttonText = "[TIC_available_council_laws_name]"
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_council_expansions_list_screen"
+		position = { x = 750 y = 390 }
+		size = { width = 280 height = 360 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_council_expansions_list_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 250 height = 35 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_available_council_expansions_list"
+
+		buttonType = {
+			name = "TIC_available_council_exp_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_TIC_narrow2_button"
+			buttonFont = "hoi_18mbs"
+			buttonText = "[TIC_available_council_expansions_name]"
 		}
 	}
 
