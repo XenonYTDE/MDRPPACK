@@ -44,7 +44,7 @@ TIC_var_update = {
 	for_each_scope_loop = {
 		array = global.TIC_member
 		set_variable = { THIS.TIC_popratio = 0 }
-		add_to_variable = { THIS.TIC_popratio = THIS.max_manpower_k }
+		add_to_variable = { THIS.TIC_popratio = max_manpower_k }
 		divide_variable = { THIS.TIC_popratio = global.TIC_poptotal }
 	}
 	# Total GDP

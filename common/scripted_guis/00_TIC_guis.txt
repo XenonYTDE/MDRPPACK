@@ -87,7 +87,7 @@ scripted_gui = {
 			TIC_office_25_flag = { image = "[?global.TIC_office_25.GetFlag]" }
 
 			TIC_parliament_president_flag = { image = "[?global.TIC_office_2.GetFlag]" }
-			TIC_council_president_flag = { image = "[?global.TIC_office_3.GetFlag]" }
+			TIC_council_president_flag = { image = "[?global.TIC_office_1.GetFlag]" }
 		}
 
 		triggers = {
@@ -101,6 +101,7 @@ scripted_gui = {
 					has_country_flag = TIC_bank_tab_open
 					has_country_flag = TIC_institutions_tab_open
 					has_country_flag = TIC_military_tab_open
+					has_country_flag = TIC_space_tab_open
 					has_country_flag = TIC_legislations_tab_open
 				}
 			}
@@ -115,6 +116,12 @@ scripted_gui = {
 			TIC_upper_button_4_click_enabled = {
 				has_idea = TIC_member
 			}
+			TIC_upper_button_3_b_click_enabled = {
+				has_idea = TIC_member
+			}
+			TIC_upper_button_4_b_click_enabled = {
+				has_idea = TIC_member
+			}
 			TIC_upper_button_5_click_enabled = {
 				has_idea = TIC_member
 			}
@@ -126,6 +133,17 @@ scripted_gui = {
 			}
 			TIC_upper_button_8_click_enabled = {
 				has_idea = TIC_member
+			}
+			TIC_upper_button_9_click_enabled = {
+				has_idea = TIC_member
+			}
+
+			
+			TIC_upper_button_3_b_visible = {
+				has_global_flag = TIC_parl_ongoing_vote_flag
+			}
+			TIC_upper_button_4_b_visible = {
+				has_global_flag = TIC_council_ongoing_vote_flag
 			}
 
 		# Offices
@@ -753,6 +771,40 @@ scripted_gui = {
 			}
 		# TIC Council
 
+			TIC_council_president_flag_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_council_president_icon_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_council_president_text_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+
+			TIC_available_council_laws_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_available_council_expansions_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+
+			TIC_council_active_laws_vote_title_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_council_active_laws_vote_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_council_active_exp_vote_title_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+			TIC_council_active_exp_vote_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+
+			TIC_council_infl_country_title_visible = {
+				TIC_council_tab_open_trigger = yes
+			}
+
 		# TIC Institutions
 
 		# TIC Military
@@ -783,8 +835,18 @@ scripted_gui = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_parliament_tab_open
 			}
+			# Open Parliament Blue ##########
+			TIC_upper_button_3_b_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_parliament_tab_open
+			}
 			# Open Council
 			TIC_upper_button_4_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_council_tab_open
+			}
+			# Open Council Blue ##########
+			TIC_upper_button_4_b_click = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_council_tab_open
 			}
@@ -803,8 +865,13 @@ scripted_gui = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_military_tab_open
 			}
-			# Open Legislations
+			# Open Space
 			TIC_upper_button_8_click = {
+				TIC_tab_selection = yes
+				set_country_flag = TIC_space_tab_open
+			}
+			# Open Legislations
+			TIC_upper_button_9_click = {
 				TIC_tab_selection = yes
 				set_country_flag = TIC_legislations_tab_open
 			}
@@ -1427,13 +1494,13 @@ scripted_gui = {
 		}
 
 		triggers = {
-			TIC_available_exp_button_click_enabled = {
+			TIC_available_council_exp_button_click_enabled = {
 				NOT = { has_global_flag = TIC_council_ongoing_vote_flag }
 			}
 		}
 
 		effects = {
-			TIC_available_exp_button_click = {
+			TIC_available_council_exp_button_click = {
 				set_variable = { global.TIC_parl_active_exp_agenda_name = v }
 				set_global_flag = { flag = TIC_council_ongoing_vote_flag value = 1 days = 14}
 				TIC_council_ongoing_vote = yes
@@ -1442,4 +1509,24 @@ scripted_gui = {
 		}
 
 	}
+
+	TIC_council_country_dynlist_gui = {
+		context_type = player_context
+		parent_scripted_gui = intercontinental_confederation_gui
+		window_name = "TIC_infl_country_list_screen"
+		dirty = global.TIC_dirty_update_var
+
+		visible = {
+			TIC_council_tab_open_trigger = yes
+		}
+
+		dynamic_lists = {
+			TIC_infl_country_list_gridbox = {
+				array = global.TIC_member
+				entry_container = "TIC_infl_country_list"
+				change_scope = yes
+			}
+		}
+	}
+
 }

@@ -69,8 +69,8 @@ guiTypes = {
 		# Upper Buttons
 		buttonType = {
 			name = "TIC_upper_button_1" # offices
-			position = { x = 47 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			position = { x = 45 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_1_title"
 			format = center
@@ -78,8 +78,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_2" # info
-			position = { x = 171 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			position = { x = 156 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_2_title"
 			format = center
@@ -87,26 +87,44 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_3" # parliament
-			position = { x = 295 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			position = { x = 267 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_3_title"
 			format = center
 			pdx_tooltip = "TIC_parliament_tab_desc"
 		}
 		buttonType = {
+			name = "TIC_upper_button_3_b" # parliament blue
+			position = { x = 267 y = 92 }
+			spriteType = "GFX_TIC_button_110x43_b"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_3_title"
+			format = center
+			pdx_tooltip = "TIC_parliament_tab_b_desc"
+		}
+		buttonType = {
 			name = "TIC_upper_button_4" # council
-			position = { x = 419 y = 94 }
-			spriteType = "GFX_TIC_button_124x43"
+			position = { x = 378 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_4_title"
 			format = center
 			pdx_tooltip = "TIC_council_tab_desc"
 		}
 		buttonType = {
+			name = "TIC_upper_button_4_b" # council blue
+			position = { x = 378 y = 92 }
+			spriteType = "GFX_TIC_button_110x43_b"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_4_title"
+			format = center
+			pdx_tooltip = "TIC_council_tab_b_desc"
+		}
+		buttonType = {
 			name = "TIC_upper_button_5" # bank
-			position = { x = 544 y = 94 }
-			spriteType = "GFX_TIC_button_124x43"
+			position = { x = 489 y = 92 }
+			spriteType = "GFX_TIC_button_109x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_5_title"
 			format = center
@@ -114,8 +132,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_6" # institutions
-			position = { x = 669 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			position = { x = 599 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_6_title"
 			format = center
@@ -123,19 +141,28 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "TIC_upper_button_7" # military
-			position = { x = 793 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			position = { x = 710 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_7_title"
 			format = center
 			pdx_tooltip = "TIC_military_tab_desc"
 		}
 		buttonType = {
-			name = "TIC_upper_button_8" # legislations
-			position = { x = 917 y = 94 }
-			spriteType = "GFX_TIC_button_123x43"
+			name = "TIC_upper_button_8" # space
+			position = { x = 821 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
 			font = "hoi_18mbs"
 			text = "TIC_upper_button_8_title"
+			format = center
+			pdx_tooltip = "TIC_space_tab_desc"
+		}
+		buttonType = {
+			name = "TIC_upper_button_9" # legislations
+			position = { x = 932 y = 92 }
+			spriteType = "GFX_TIC_button_110x43"
+			font = "hoi_18mbs"
+			text = "TIC_upper_button_9_title"
 			format = center
 			pdx_tooltip = "TIC_legislations_tab_desc"
 		}
@@ -968,7 +995,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_info_country"
-				position = { x = 70 y = 150 }
+				position = { x = 280 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 230
 				maxHeight = 20
@@ -977,7 +1004,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_population"
-				position = { x = 405 y = 150 }
+				position = { x = 560 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -986,7 +1013,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_ratio"
-				position = { x = 485 y = 150 }
+				position = { x = 640 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -995,7 +1022,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_info_unity"
-				position = { x = 565 y = 150 }
+				position = { x = 720 y = 150 }
 				font = "hoi_18mbs"
 				maxWidth = 100
 				maxHeight = 20
@@ -1582,7 +1609,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_available_parl_laws"
-				position = { x = 390 y = 245 }
+				position = { x = 385 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
@@ -1591,7 +1618,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_available_parl_expansions"
-				position = { x = 710 y = 245 }
+				position = { x = 715 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
@@ -1599,6 +1626,102 @@ guiTypes = {
 				text = TIC_available_parl_expansions_text
 			}
 
+		}
+
+		#######################
+		#######################
+		##### Council Tab #####
+		#######################
+		#######################
+
+		containerWindowType = {
+			name = "TIC_council_tab"
+			position = { x = 38 y = 134 }
+
+			iconType = {
+				name = "TIC_council_president_flag"
+				position = { x = 91 y = 51 }
+				quadTextureSprite = "GFX_shield_medium"
+			}
+			iconType = {
+				name = "TIC_council_president_icon"
+				position = { x = 40 y = 15 }
+				spriteType = "GFX_TIC_office_frame"
+			}
+			instantTextBoxType = {
+				name = "TIC_council_president_text"
+				position = { x = 40 y = 104 }
+				text = "President of the Council"
+				font = "hoi_16mbs"
+				format = center
+				maxWidth = 185
+				maxHeight = 20
+			}
+
+			instantTextBoxType = {
+				name = "TIC_council_active_laws_vote_title"
+				position = { x = 5 y = 130 }
+				text = TIC_current_law_vote
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_council_active_laws_vote"
+				position = { x = 5 y = 155 }
+				text = TIC_council_active_laws_vote_name
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_council_active_exp_vote_title"
+				position = { x = 5 y = 185 }
+				text = TIC_current_expansion_vote
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "TIC_council_active_exp_vote"
+				position = { x = 5 y = 210 }
+				text = TIC_council_active_exp_vote_name
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 20
+			}
+
+			instantTextBoxType = {
+				name = "TIC_available_council_laws"
+				position = { x = 5 y = 245 }
+				font = "hoi_18mbs"
+				maxWidth = 250
+				maxHeight = 25
+				format = center
+				text = TIC_available_council_laws_text
+			}
+			instantTextBoxType = {
+				name = "TIC_available_council_expansions"
+				position = { x = 325 y = 245 }
+				font = "hoi_18mbs"
+				maxWidth = 250
+				maxHeight = 25
+				format = center
+				text = TIC_available_council_expansions_text
+			}
+			instantTextBoxType = {
+				name = "TIC_council_infl_country_title"
+				position = { x = 740 y = 15 }
+				text = TIC_council_infl_country_title
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
 		}
 
 	}
@@ -1611,8 +1734,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_info_list_screen"
-		position = { x = 45 y = 160 }
-		size = { width = 630 height = 590 }
+		position = { x = 245 y = 160 }
+		size = { width = 580 height = 590 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
 
@@ -1641,8 +1764,8 @@ guiTypes = {
 
 			font = "hoi_18mbs"
 			borderSize = { x = 0 y = 0 }
-			text = "[THIS.GetNameWithFlag]"
-			maxWidth = 350
+			text = "[?THIS.GetNameWithFlag]"
+			maxWidth = 300
 			maxHeight = 20
 			fixedsize = yes
 
@@ -1651,7 +1774,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "TIC_info_dynlist_population"
-			position = { x = 362 y = 0 }
+			position = { x = 312 y = 0 }
 
 			font = "hoi_18mbs"
 			borderSize = { x = 0 y = 0 }
@@ -1666,7 +1789,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "TIC_info_dynlist_popratio"
-			position = { x = 458 y = 0 }
+			position = { x = 408 y = 0 }
 
 			font = "hoi_18mbs"
 			text = "[?THIS.TIC_popratio|C3]%"
@@ -1680,7 +1803,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "TIC_info_dynlist_unity"
-			position = { x = 537 y = 0 }
+			position = { x = 487 y = 0 }
 
 			font = "hoi_18mbs"
 			text = "[?THIS.TIC_c_unity|0%O]"
@@ -1801,7 +1924,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_council_laws_list_screen"
-		position = { x = 255 y = 390 }
+		position = { x = 43 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
@@ -1836,7 +1959,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_council_expansions_list_screen"
-		position = { x = 750 y = 390 }
+		position = { x = 368 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
@@ -1866,6 +1989,41 @@ guiTypes = {
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
 			buttonText = "[TIC_available_council_expansions_name]"
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_infl_country_list_screen"
+		position = { x = 770 y = 150 }
+		size = { width = 280 height = 590 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_infl_country_list_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 250 height = 35 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_infl_country_list"
+
+		buttonType = {
+			name = "TIC_infl_country_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_TIC_narrow2_button"
+			buttonFont = "hoi_18mbs"
+			buttonText = "[THIS.GetNameWithFlag]"
 		}
 	}
 

@@ -34,6 +34,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/tic/TIC_button_124x43.dds"
 	}
 	spriteType = {
+		name = "GFX_TIC_button_110x43"
+		texturefile = "gfx/interface/tic/TIC_button_110x43.dds"
+	}
+	spriteType = {
+		name = "GFX_TIC_button_109x43"
+		texturefile = "gfx/interface/tic/TIC_button_109x43.dds"
+	}
+	spriteType = {
+		name = "GFX_TIC_button_110x43_b"
+		texturefile = "gfx/interface/tic/TIC_button_110x43_b.dds"
+	}
+	spriteType = {
+		name = "GFX_TIC_button_109x43_b"
+		texturefile = "gfx/interface/tic/TIC_button_109x43_b.dds"
+	}
+	spriteType = {
 		name = "GFX_TIC_narrow_button"
 		texturefile = "gfx/interface/tic/TIC_narrow_button.dds"
 	}

@@ -543,3 +543,12 @@ defined_text = {
 		localization_key = TIC_av_exp_name_136_loc_key
 	}
 }
+
+defined_text = {
+	name = TIC_infl_country_name
+
+	text = {
+		check_variable = { global.TIC_member = v }
+		localization_key = TIC_infl_country_name_loc_key
+	}
+}

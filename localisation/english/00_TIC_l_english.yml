@@ -12,13 +12,14 @@
 
 # Upper buttons
  TIC_upper_button_1_title: "Offices"
- TIC_upper_button_2_title: "TIC Info"
+ TIC_upper_button_2_title: "Info"
  TIC_upper_button_3_title: "Parliament"
  TIC_upper_button_4_title: "Council"
  TIC_upper_button_5_title: "Bank"
  TIC_upper_button_6_title: "Institutions"
  TIC_upper_button_7_title: "Military"
- TIC_upper_button_8_title: "Legislations"
+ TIC_upper_button_8_title: "Space"
+ TIC_upper_button_9_title: "Legislature"
 
  TIC_offices_tab_desc: "The Offices of §OThe Intercontinental Confederation§! that can be held by member states."
  TIC_info_tab_desc: "General member states' information of §OThe Intercontinental Confederation§!"
@@ -27,7 +28,11 @@
  TIC_bank_tab_desc: "The financial body of §OThe Intercontinental Confederation§!"
  TIC_institutions_tab_desc: "Institutions of §OThe Intercontinental Confederation§!"
  TIC_military_tab_desc: "Military sector of §OThe Intercontinental Confederation§!"
+ TIC_space_tab_desc: "Space sector of §OThe Intercontinental Confederation§!"
  TIC_legislations_tab_desc: "Legislations enforced in §OThe Intercontinental Confederation§!"
+
+ TIC_parliament_tab_b_desc: "§BOngoing§! §OTIC§! §BParliament vote!§!"
+ TIC_council_tab_b_desc: "§BOngoing§! §OTIC§! §BCouncil vote!§!"
 
 # Office tab
  TIC_office_1_text: "President of the Council"
@@ -362,7 +367,7 @@
  TIC_supermajority_title: "§YSupermajority:§!"
  TIC_supermajority: "§5[?global.TIC_supermajority_count]§!"
  TIC_supermajority_tt: "To pass laws in the Parliament a §YSupermajority§! of §5[?global.TIC_supermajority_count] MPs§! is required."
- TIC_parl_vote_countdown_title: "§YOngoing vote countdown:§!"
+ TIC_parl_vote_countdown_title: "§YDays for voting:§!"
  TIC_parl_vote_countdown: "§5[?global.TIC_parl_ongoing_vote_d]§!"
 
   # Voting Counts
@@ -373,6 +378,11 @@
  TIC_abstaining_mp_count_title: "§YAbstaining:§!"
  TIC_abstaining_mp_count: "[?global.TIC_parl_abs_count]"
 
+# Council tab
+ TIC_council_infl_country_title: "§YInfluence Country§!"
+
+ TIC_infl_country_name_loc_key: "[THIS.GetNameWithFlag]"
+
 # Laws
 
  TIC_current_law_agenda: "§YCurrent Law Agenda:§!"
@@ -381,6 +391,13 @@
  TIC_available_parl_expansions_text: "§YAvailable Expansions§!"
  TIC_parl_active_laws_agenda_name: "§5[TIC_parl_active_laws_agenda_name]§!"
  TIC_parl_active_exp_agenda_name: "§5[TIC_parl_active_exp_agenda_name]§!"
+
+ TIC_current_law_vote: "§YCurrent Law Vote:§!"
+ TIC_current_expansion_vote: "§YCurrent Expansion Vote:§!"
+ TIC_available_council_laws_text: "§YAvailable Laws§!"
+ TIC_available_council_expansions_text: "§YAvailable Expansions§!"
+ TIC_council_active_laws_vote_name: "§5[TIC_council_active_laws_vote_name]§!"
+ TIC_council_active_exp_vote_name: "§5[TIC_council_active_exp_vote_name]§!"
 
  TIC_av_laws_name_0_loc_key: "" # Empty
  TIC_av_laws_name_101_loc_key: "A New Constitution"
