@@ -381,6 +381,18 @@
 # Council tab
  TIC_council_infl_country_title: "§YInfluence Country§!"
 
+ TIC_council_countries_sm_title: "§YCountries Supermajority§!"
+ TIC_council_countries_sm: "§5[?global.TIC_country_sm_count]§!"
+ TIC_council_countries_sup_title: "§YCountry Support:§!"
+ TIC_council_countries_sup: "§G[?global.TIC_country_sup_count]§!"
+ TIC_council_countries_rej: "§R[?global.TIC_country_rej_count]§!"
+ TIC_council_pop_sm_title: "§YPopulation Supermajority§!"
+ TIC_council_pop_sm: "§5[?global.TIC_pop_sm_count]M§!"
+ TIC_council_pop_sup_title: "§YPopulation Support:§!"
+ TIC_council_pop_sup: "§G[?global.TIC_pop_sup_count|0]M§!"
+ TIC_council_pop_rej: "§R[?global.TIC_pop_rej_count|0]M§!"
+ TIC_council_countries_approving: "§YCountries Approving:§!"
+
  TIC_infl_country_name_loc_key: "[THIS.GetNameWithFlag]"
 
 # Laws

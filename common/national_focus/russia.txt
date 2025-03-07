@@ -34789,4 +34789,8 @@ focus_tree = {
 		}
 	}
 
+	# EU
+	shared_focus = USoE001
+	shared_focus = POTEF001
+
 }

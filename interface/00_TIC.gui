@@ -1540,11 +1540,11 @@ guiTypes = {
 				text = "Pass Agenda"
 			}
 			buttonType = {
-				name = "TIC_parl_reject_law"
+				name = "TIC_parl_block_law"
 				position = { x = 640 y = 165 }
 				spriteType = "GFX_TIC_button_123x43"
 				font = "hoi_18mbs"
-				text = "Reject Agenda"
+				text = "Block Agenda"
 			}
 
 			iconType = {
@@ -1697,7 +1697,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "TIC_available_council_laws"
-				position = { x = 5 y = 245 }
+				position = { x = 45 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
@@ -1706,7 +1706,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_available_council_expansions"
-				position = { x = 325 y = 245 }
+				position = { x = 395 y = 245 }
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 25
@@ -1715,12 +1715,143 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "TIC_council_infl_country_title"
-				position = { x = 740 y = 15 }
+				position = { x = 735 y = 15 }
 				text = TIC_council_infl_country_title
 				font = "hoi_18mbs"
 				format = center
 				maxWidth = 250
 				maxHeight = 25
+			}
+
+			instantTextBoxType = {
+				name = "TIC_council_countries_sm_title"
+				position = { x = 220 y = 15 }
+				text = TIC_council_countries_sm_title
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_countries_sm"
+				position = { x = 220 y = 35 }
+				text = TIC_council_countries_sm
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_countries_sup_title"
+				position = { x = 220 y = 60 }
+				text = TIC_council_countries_sup_title
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_countries_sup"
+				position = { x = 220 y = 80 }
+				text = TIC_council_countries_sup
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_countries_rej"
+				position = { x = 220 y = 100 }
+				text = TIC_council_countries_rej
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_pop_sm_title"
+				position = { x = 220 y = 125 }
+				text = TIC_council_pop_sm_title
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_pop_sm"
+				position = { x = 220 y = 145 }
+				text = TIC_council_pop_sm
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_pop_sup_title"
+				position = { x = 220 y = 170 }
+				text = TIC_council_pop_sup_title
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_pop_sup"
+				position = { x = 220 y = 190 }
+				text = TIC_council_pop_sup
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+			instantTextBoxType = {
+				name = "TIC_council_pop_rej"
+				position = { x = 220 y = 210 }
+				text = TIC_council_pop_rej
+				font = "hoi_18mbs"
+				format = center
+				maxWidth = 250
+				maxHeight = 25
+			}
+
+			instantTextBoxType = {
+				name = "TIC_council_countries_approving"
+				position = { x = 450 y = 15 }
+				text = TIC_council_countries_approving
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 150
+				maxHeight = 25
+			}
+
+			buttonType = {
+				name = "TIC_council_approve_law"
+				position = { x = 445 y = 170 }
+				spriteType = "GFX_TIC_button_100x32"
+				font = "hoi_18mbs"
+				text = "Approve Law"
+			}
+			buttonType = {
+				name = "TIC_council_reject_law"
+				position = { x = 585 y = 170 }
+				spriteType = "GFX_TIC_button_100x32"
+				font = "hoi_18mbs"
+				text = "Reject Law"
+			}
+
+			buttonType = {
+				name = "TIC_council_pass_law"
+				position = { x = 445 y = 210 }
+				spriteType = "GFX_TIC_button_100x32_b"
+				font = "hoi_18mbs"
+				text = "Pass Law"
+			}
+			buttonType = {
+				name = "TIC_council_block_law"
+				position = { x = 585 y = 210 }
+				spriteType = "GFX_TIC_button_100x32_b"
+				font = "hoi_18mbs"
+				text = "Block Law"
 			}
 		}
 
@@ -1924,7 +2055,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_council_laws_list_screen"
-		position = { x = 43 y = 390 }
+		position = { x = 83 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
@@ -1959,7 +2090,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_council_expansions_list_screen"
-		position = { x = 368 y = 390 }
+		position = { x = 430 y = 390 }
 		size = { width = 280 height = 360 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
@@ -1994,7 +2125,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TIC_infl_country_list_screen"
-		position = { x = 770 y = 150 }
+		position = { x = 770 y = 160 }
 		size = { width = 280 height = 590 }
 		margin = { top = 10 bottom = 10 }
 		verticalScrollbar = "right_vertical_slider"
@@ -2024,6 +2155,39 @@ guiTypes = {
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
 			buttonText = "[THIS.GetNameWithFlag]"
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_country_approving_screen"
+		position = { x = 490 y = 160 }
+		size = { width = 260 height = 130 }
+		margin = { top = 10 bottom = 10 }
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_transparent"
+		}
+
+		gridboxType = {
+			name = "TIC_country_approving_gridbox"
+			position = { x = 0 y = 0 }
+			padding = { top = 50 bottom = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 15 height = 15 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 15
+		}
+	}
+
+	containerWindowType = {
+		name = "TIC_country_approving_list"
+
+		instantTextBoxType = {
+			name = "TIC_country_approving_text"
+			position = { x = 0 y = 0 }
+			text = "[?THIS.GetFlag]"
 		}
 	}
 

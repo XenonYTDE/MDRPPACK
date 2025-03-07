@@ -374,6 +374,43 @@ TIC_parl_ongoing_vote = {
 	update_TIC_dirty_variable = yes
 }
 
+TIC_parl_pass_agenda = {
+	if = {
+		limit = { check_variable = { global.TIC_parl_active_laws_agenda_name > 0 } }
+		meta_effect = {
+			text = {
+				if = { check_variable = { global.TIC_parl_active_laws_agenda_name > [index] } }
+				set_global_flag = TIC_parl_law_[index]_passed
+			}
+			index = "[?temp_parl]"
+		}
+		set_temp_variable = { temp_parl = global.TIC_parl_active_laws_agenda_name }
+		add_to_array = { global.TIC_available_council_laws = temp_parl }
+		remove_from_array = { global.TIC_available_parl_laws = temp_parl }
+	}
+	if = {
+		limit = { check_variable = { global.TIC_parl_active_exp_agenda_name > 0 } }
+		set_temp_variable = { temp_parl = global.TIC_parl_active_exp_agenda_name }
+		add_to_array = { global.TIC_available_council_expansions = temp_parl }
+		remove_from_array = { global.TIC_available_parl_expansions = temp_parl }
+	}
+	TIC_parl_vote_clear = yes
+	update_TIC_dirty_variable = yes
+}
+
+TIC_parl_block_agenda = {
+	if = {
+		limit = {
+			OR = {
+				check_variable = { global.TIC_parl_active_laws_agenda_name > 0 }
+				check_variable = { global.TIC_parl_active_exp_agenda_name > 0 }
+			}
+		}
+		TIC_parl_vote_clear = yes
+		update_TIC_dirty_variable = yes
+	}
+}
+
 TIC_parl_vote_clear = {
 	clr_global_flag = TIC_parlparty_0_abs_flag
 	clr_global_flag = TIC_parlparty_1_abs_flag
@@ -897,4 +934,33 @@ TIC_parlparty_23_abs_sub_effect = {
 
 TIC_council_ongoing_vote = {
 
+	set_variable = { global.TIC_council_ongoing_vote_d = 7 }
+	# Member pop calc
+	for_each_scope_loop = {
+		array = global.TIC_member 
+		set_variable = { THIS.TIC_member_pop = 0 }
+		add_to_variable = { THIS.TIC_member_pop = THIS.max_manpower_k }
+		round_variable = THIS.TIC_member_pop
+		divide_variable = {	THIS.TIC_member_pop = 1000 }
+	}
+
+}
+
+TIC_council_recalc = {
+
+	# Country Supermajority
+	set_variable = { global.TIC_country_sm_count = global.TIC_member_count }
+	multiply_variable = { global.TIC_country_sm_count = 0.75 }
+	round_variable = global.TIC_country_sm_count
+	# Population Supermajority
+	set_variable = { global.TIC_pop_sm_count = global.TIC_poptotal }
+	multiply_variable = { global.TIC_pop_sm_count = 0.75 }
+	round_variable = global.TIC_pop_sm_count
+
+}
+
+TIC_council_vote_clear = {
+	set_variable = { global.TIC_council_active_laws_agenda_name = 0 }
+	set_variable = { global.TIC_council_active_exp_agenda_name = 0 }
+	clr_global_flag = TIC_council_ongoing_vote_flag
 }
