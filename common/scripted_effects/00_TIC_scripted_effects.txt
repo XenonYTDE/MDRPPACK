@@ -950,11 +950,11 @@ TIC_council_recalc = {
 
 	# Country Supermajority
 	set_variable = { global.TIC_country_sm_count = global.TIC_member_count }
-	multiply_variable = { global.TIC_country_sm_count = 0.75 }
+	multiply_variable = { global.TIC_country_sm_count = 0.01 }
 	round_variable = global.TIC_country_sm_count
 	# Population Supermajority
 	set_variable = { global.TIC_pop_sm_count = global.TIC_poptotal }
-	multiply_variable = { global.TIC_pop_sm_count = 0.75 }
+	multiply_variable = { global.TIC_pop_sm_count = 0.01 }
 	round_variable = global.TIC_pop_sm_count
 
 }

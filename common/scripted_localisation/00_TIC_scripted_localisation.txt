@@ -231,6 +231,22 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = TIC_available_parl_laws_tt
+
+	text = { trigger = { check_variable = { v = v } }
+		localization_key = law_[?v]_tooltip
+	}
+}
+
+defined_text = {
+	name = TIC_available_parl_exp_tt
+
+	text = { trigger = { check_variable = { v = v } }
+		localization_key = exp_[?v]_tooltip
+	}
+}
+
 # Influence Color Loc Keys
 defined_text = {
 	name = TIC_parlparty_color_infl_loc

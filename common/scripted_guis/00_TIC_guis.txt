@@ -1367,6 +1367,7 @@ scripted_gui = {
 						index = "[?temp_council]"
 					}
 					set_temp_variable = { temp_council = global.TIC_council_active_laws_agenda_name }
+					add_to_array = { global.TIC_council_passed_laws = temp_council }
 					remove_from_array = { global.TIC_available_council_laws = temp_council }
 					TIC_council_vote_clear = yes
 					update_TIC_dirty_variable = yes
@@ -1374,6 +1375,7 @@ scripted_gui = {
 				if = {
 					limit = { check_variable = { global.TIC_council_active_exp_agenda_name > 0 } }
 					set_temp_variable = { temp_council = global.TIC_council_active_exp_agenda_name }
+					add_to_array = { global.TIC_council_passed_expansions = temp_council }
 					remove_from_array = { global.TIC_available_council_expansions = temp_council }
 					TIC_council_vote_clear = yes
 					update_TIC_dirty_variable = yes
@@ -1449,175 +1451,178 @@ scripted_gui = {
 					limit = { check_variable = { v = 103 } }
 					custom_trigger_tooltip = {
 						tooltip = law_103_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 102 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 104 } }
 					custom_trigger_tooltip = {
 						tooltip = law_104_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 102 }
+						is_in_array = { global.TIC_council_passed_laws = 103 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 105 } }
 					custom_trigger_tooltip = {
 						tooltip = law_105_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 106 } }
 					custom_trigger_tooltip = {
 						tooltip = law_106_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 107 } }
 					custom_trigger_tooltip = {
 						tooltip = law_107_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 108 } }
 					custom_trigger_tooltip = {
 						tooltip = law_108_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 109 } }
 					custom_trigger_tooltip = {
 						tooltip = law_109_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 110 } }
 					custom_trigger_tooltip = {
 						tooltip = law_110_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 111 } }
 					custom_trigger_tooltip = {
 						tooltip = law_111_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 112 } }
 					custom_trigger_tooltip = {
 						tooltip = law_112_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 105 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 113 } }
 					custom_trigger_tooltip = {
 						tooltip = law_113_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 106 }
+						is_in_array = { global.TIC_council_passed_laws = 107 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 114 } }
 					custom_trigger_tooltip = {
 						tooltip = law_114_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 104 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 115 } }
 					custom_trigger_tooltip = {
 						tooltip = law_115_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 114 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 116 } }
 					custom_trigger_tooltip = {
 						tooltip = law_116_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 114 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 117 } }
 					custom_trigger_tooltip = {
 						tooltip = law_117_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 114 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 118 } }
 					custom_trigger_tooltip = {
 						tooltip = law_118_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 115 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 119 } }
 					custom_trigger_tooltip = {
 						tooltip = law_119_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 116 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 120 } }
 					custom_trigger_tooltip = {
 						tooltip = law_120_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 117 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 121 } }
 					custom_trigger_tooltip = {
 						tooltip = law_121_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 109 }
+						is_in_array = { global.TIC_council_passed_laws = 111 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 122 } }
 					custom_trigger_tooltip = {
 						tooltip = law_122_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 123 } }
 					custom_trigger_tooltip = {
 						tooltip = law_123_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 124 } }
 					custom_trigger_tooltip = {
 						tooltip = law_124_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 125 } }
 					custom_trigger_tooltip = {
 						tooltip = law_125_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 126 } }
 					custom_trigger_tooltip = {
 						tooltip = law_126_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 				else_if = {
 					limit = { check_variable = { v = 127 } }
 					custom_trigger_tooltip = {
 						tooltip = law_127_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 101 }
+						is_in_array = { global.TIC_council_passed_laws = 121 }
 					}
 				}
 			}
@@ -1655,6 +1660,269 @@ scripted_gui = {
 			TIC_available_exp_button_click_enabled = {
 				NOT = { has_global_flag = TIC_parl_ongoing_vote_flag }
 				check_variable = { global.TIC_parl_elections_cd > 14 }
+
+				if = {
+					limit = { check_variable = { v = 101 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_101_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 122 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 102 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_102_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 122 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 103 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_103_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 122 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 104 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_104_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 123 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 105 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_105_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 123 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 106 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_106_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 104 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 107 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_107_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 105 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 108 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_108_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 104 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 109 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_109_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 104 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 110 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_110_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 108 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 111 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_111_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 108 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 112 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_112_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 109 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 113 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_113_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 109 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 114 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_114_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 113 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 115 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_115_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 112 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 116 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_116_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 104 }
+						is_in_array = { global.TIC_council_passed_expansions = 105 }
+						is_in_array = { global.TIC_council_passed_expansions = 108 }
+						is_in_array = { global.TIC_council_passed_expansions = 109 }
+						is_in_array = { global.TIC_council_passed_expansions = 110 }
+						is_in_array = { global.TIC_council_passed_expansions = 112 }
+						is_in_array = { global.TIC_council_passed_expansions = 115 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 117 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_117_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 123 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 118 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_118_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 117 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 119 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_119_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 118 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 120 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_120_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 118 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 121 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_121_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 119 }
+						is_in_array = { global.TIC_council_passed_expansions = 120 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 122 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_122_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 121 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 123 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_123_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 125 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 124 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_124_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 125 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 125 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_125_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 124 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 126 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_126_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 124 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 127 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_127_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 124 }
+						is_in_array = { global.TIC_council_passed_expansions = 125 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 128 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_128_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 123 } ##################################################################
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 129 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_129_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 126 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 130 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_130_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 126 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 131 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_131_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 126 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 132 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_132_tooltip
+						is_in_array = { global.TIC_council_passed_expansions = 129 }
+						is_in_array = { global.TIC_council_passed_expansions = 130 }
+						is_in_array = { global.TIC_council_passed_expansions = 131 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 133 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_133_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 127 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 134 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_134_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 127 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 135 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_135_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 127 }
+					}
+				}
+				else_if = {
+					limit = { check_variable = { v = 136 } }
+					custom_trigger_tooltip = {
+						tooltip = exp_136_tooltip
+						is_in_array = { global.TIC_council_passed_laws = 127 }
+					}
+				}
 			}
 		}
 
