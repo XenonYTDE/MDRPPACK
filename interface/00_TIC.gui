@@ -2015,7 +2015,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
 			buttonText = "[TIC_available_parl_laws_name]"
-			pdx_tooltip = "[TIC_available_parl_laws_tt]"
+			pdx_tooltip = "TIC_available_parl_laws_tt"
 		}
 	}
 
@@ -2051,7 +2051,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_TIC_narrow2_button"
 			buttonFont = "hoi_18mbs"
 			buttonText = "[TIC_available_parl_expansions_name]"
-			pdx_tooltip = "[TIC_available_parl_exp_tt]"
+			pdx_tooltip = "TIC_available_parl_exp_tt"
 		}
 	}
 

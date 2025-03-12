@@ -1458,7 +1458,6 @@ scripted_gui = {
 					limit = { check_variable = { v = 104 } }
 					custom_trigger_tooltip = {
 						tooltip = law_104_tooltip
-						is_in_array = { global.TIC_council_passed_laws = 102 }
 						is_in_array = { global.TIC_council_passed_laws = 103 }
 					}
 				}

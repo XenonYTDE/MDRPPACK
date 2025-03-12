@@ -478,9 +478,13 @@
  TIC_av_exp_name_135_loc_key: "Melanesia"
  TIC_av_exp_name_136_loc_key: "Polynesia"
 
- law_101_tooltip: ""
- law_102_tooltip: ""
- law_103_tooltip: ""
+ TIC_parl_ongoing_vote_flag: "There is an ongoing §5vote§! at the moment"
+ TIC_available_parl_laws_tt: "Requirements:\n[!TIC_available_parl_laws_button_click_enabled]"
+ TIC_available_parl_exp_tt: "[TIC_available_parl_exp_tt]"
+
+ law_101_tooltip: "aaa"
+ law_102_tooltip: "bbb"
+ law_103_tooltip: "ccc"
  law_104_tooltip: ""
  law_105_tooltip: ""
  law_106_tooltip: ""
