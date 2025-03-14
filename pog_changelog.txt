@@ -1,4 +1,5 @@
 v1.11.2d
+-Max 30 Naval Yards (decreased from 100)
 -Bugfixes
 
 v1.11.2c
