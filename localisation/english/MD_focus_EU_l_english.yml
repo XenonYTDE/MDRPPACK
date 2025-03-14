@@ -278,6 +278,8 @@
  VOJ_EU_distribution: "[VOJ.GetNameWithFlag] - [?VOJ.EU_budget_total_gain|§Y2] - [?VOJ.EU_budget_ratio_gain|§C%2] - [?VOJ.EU_growth_subsidies|§O2] - [?VOJ.EU_natural_subsidies|§G2] - [?VOJ.EU_global_exp_subsidies|§L2] - [?VOJ.EU_admin_subsidies|§g2] - [?VOJ.EU_budget_net|§+2]\n"
  SOV_EU_distribution: "[SOV.GetNameWithFlag] - [?SOV.EU_budget_total_gain|§Y2] - [?SOV.EU_budget_ratio_gain|§C%2] - [?SOV.EU_growth_subsidies|§O2] - [?SOV.EU_natural_subsidies|§G2] - [?SOV.EU_global_exp_subsidies|§L2] - [?SOV.EU_admin_subsidies|§g2] - [?SOV.EU_budget_net|§+2]\n" # DO NOT MERGE FROM BASE MD
 
+ EU_draft_agenda: "Puts the draft on the agenda of the European Parliament"
+
  EU_mff: "Multiannual Financial Framework"
  EU_budget: "Budget of the next fiscal year"
 

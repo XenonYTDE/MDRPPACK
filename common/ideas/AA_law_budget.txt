@@ -212,7 +212,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 0
-						has_bureau_idea_law_desired = yes
+					has_bureau_idea_law_desired = yes
 				}
 			}
 
@@ -326,7 +326,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 0
-						has_bureau_idea_law_desired = yes
+					has_bureau_idea_law_desired = yes
 				}
 				modifier = { # DO NOT MERGE FROM BASE MD
 					factor = 100
@@ -467,7 +467,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 0
-						has_bureau_idea_law_desired = yes
+					has_bureau_idea_law_desired = yes
 				}
 				modifier = { # DO NOT MERGE FROM BASE MD
 					factor = 100
@@ -499,7 +499,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -589,7 +589,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 0
-						has_bureau_idea_law_desired = yes
+					has_bureau_idea_law_desired = yes
 				}
 				modifier = { # DO NOT MERGE FROM BASE MD
 					factor = 100
@@ -623,7 +623,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -725,7 +725,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -842,7 +842,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -962,7 +962,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1083,7 +1083,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1195,7 +1195,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1294,7 +1294,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1369,7 +1369,7 @@ ideas = {
 					add = 25
 					has_idea = edu_03
 					OR = {
-					has_country_flag = wants_edu_02
+						has_country_flag = wants_edu_02
 						has_country_flag = wants_edu_01
 					}
 				}
@@ -1417,7 +1417,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1533,7 +1533,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1648,7 +1648,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1754,7 +1754,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1840,7 +1840,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -1954,7 +1954,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2070,7 +2070,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2186,7 +2186,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2305,7 +2305,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2415,7 +2415,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2511,7 +2511,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2606,8 +2606,8 @@ ideas = {
 					factor = 0
 					has_social_law_desired = yes
 				}
-				}
 			}
+		}
 
 		social_03 = {
 			removal_cost = -1
@@ -2625,7 +2625,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2720,8 +2720,8 @@ ideas = {
 					factor = 0
 					has_social_law_desired = yes
 				}
-				}
 			}
+		}
 
 		social_04 = {
 			cost = 40
@@ -2740,7 +2740,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2836,8 +2836,8 @@ ideas = {
 					factor = 0
 					has_social_law_desired = yes
 				}
-				}
 			}
+		}
 
 		social_05 = {
 			cost = 30
@@ -2856,7 +2856,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
@@ -2952,8 +2952,8 @@ ideas = {
 					factor = 0
 					has_social_law_desired = yes
 				}
-				}
 			}
+		}
 
 		social_06 = {
 			cost = 10
@@ -2972,7 +2972,7 @@ ideas = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = ISR
 						is_ai = no
 					}
