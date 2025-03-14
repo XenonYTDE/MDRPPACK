@@ -193,7 +193,7 @@ ideas = {
 				factor = 0
 				modifier = {
 					add = 25
-						has_idea = defence_00
+					has_idea = defence_00
 					OR = {
 						has_country_flag = wants_military_01
 						has_country_flag = wants_military_02
@@ -207,7 +207,7 @@ ideas = {
 				}
 				modifier = {
 					add = 25
-						has_idea = defence_02
+					has_idea = defence_02
 					has_country_flag = wants_military_01
 				}
 				modifier = {
@@ -327,7 +327,7 @@ ideas = {
 				}
 				modifier = {
 					add = 25
-						has_idea = defence_03
+					has_idea = defence_03
 					OR = {
 						has_country_flag = wants_military_01
 						has_country_flag = wants_military_02
@@ -1112,7 +1112,7 @@ ideas = {
 
 			ai_will_do = {
 				factor = 0
-					factor = 0
+				factor = 0
 				modifier = {
 					add = 25
 					has_idea = defence_07
@@ -2216,8 +2216,9 @@ ideas = {
 			cost = 200 #was 350
 			removal_cost = -1
 			level = 6
-			
+
 			modifier = {
+				justify_war_goal_time = -0.15
 				enemy_justify_war_goal_time = -0.30 # DO NOT MERGE FROM BASE MD
 				air_volunteer_cap = 2
 			}

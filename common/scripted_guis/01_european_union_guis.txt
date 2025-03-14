@@ -5732,7 +5732,7 @@ scripted_gui = {
 							modifier = {
 								add = 20
 								OR = {
-								is_in_array = { global.EU_military_laws = v }
+									is_in_array = { global.EU_military_laws = v }
 									is_in_array = { global.EU_expansion_laws = v }
 								}
 								is_liberal_block = yes
@@ -5751,7 +5751,7 @@ scripted_gui = {
 							modifier = {
 								add = -10
 								OR = {
-								is_in_array = { global.EU_economic_laws = v }
+									is_in_array = { global.EU_economic_laws = v }
 									is_in_array = { global.EU_federalization_laws = v }
 								}
 								is_conservative_block = yes
@@ -5764,9 +5764,9 @@ scripted_gui = {
 							modifier = {
 								add = 20
 								OR = {
-								is_in_array = { global.EU_military_laws = v }
-								is_in_array = { global.EU_expansion_laws = v }
-							}
+									is_in_array = { global.EU_military_laws = v }
+									is_in_array = { global.EU_expansion_laws = v }
+								}
 								is_conservative_block = yes
 							}
 							#Communist Block
@@ -5789,10 +5789,10 @@ scripted_gui = {
 							modifier = {
 								add = -30
 								OR = {
-								is_in_array = { global.EU_federal_laws = v }
+									is_in_array = { global.EU_federal_laws = v }
 									is_in_array = { global.EU_economic_laws = v }
-								is_in_array = { global.EU_expansion_laws = v }
-								is_in_array = { global.EU_federalization_laws = v }
+									is_in_array = { global.EU_expansion_laws = v }
+									is_in_array = { global.EU_federalization_laws = v }
 								}
 								is_facist_block = yes
 							}
@@ -5813,7 +5813,7 @@ scripted_gui = {
 								check_variable = { v = 601 }
 								date > 2004.1.1
 								OR = {
-								is_historical_focus_on = yes
+									is_historical_focus_on = yes
 									SOV = { has_added_tension_amount > 5 }
 									USA = { has_added_tension_amount > 10 }
 									CHI = { has_added_tension_amount > 5 }
@@ -5824,7 +5824,7 @@ scripted_gui = {
 								check_variable = { v = 602 }
 								date > 2007.1.1
 								OR = {
-								is_historical_focus_on = yes
+									is_historical_focus_on = yes
 									SOV = { has_added_tension_amount > 5 }
 									USA = { has_added_tension_amount > 10 }
 									CHI = { has_added_tension_amount > 5 }
@@ -5835,7 +5835,7 @@ scripted_gui = {
 								check_variable = { v = 603 }
 								date > 2013.1.1
 								OR = {
-								is_historical_focus_on = yes
+									is_historical_focus_on = yes
 									SOV = { has_added_tension_amount > 5 }
 									USA = { has_added_tension_amount > 10 }
 									CHI = { has_added_tension_amount > 5 }
@@ -5854,7 +5854,7 @@ scripted_gui = {
 							modifier = {
 								factor = 0
 								OR = {
-								has_global_flag = EP_AI_hold_their_vote
+									has_global_flag = EP_AI_hold_their_vote
 									NOT = { check_variable = { global.current_active_agenda_disp = 0 } }
 								}
 							}
