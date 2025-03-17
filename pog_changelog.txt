@@ -1,4 +1,5 @@
 v1.11.2d
+-MD 1.11.2b compatibility
 -Max 30 Naval Yards (decreased from 100)
 -Bugfixes
 
