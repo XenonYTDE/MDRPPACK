@@ -295,7 +295,7 @@ decision_category_internal_factions = {
 			remove_ideas = internal_factions_taxing_religious_institutions
 		}
 	}
-	
+
 	# Communist Cadres
 	encourage_further_party_propaganda = {
 		icon = GFX_decision_bancru_ask_button
@@ -382,8 +382,8 @@ decision_category_internal_factions = {
 			}
 		}
 
-		days_remove = 90
-		days_re_enable = 90
+		days_remove = 120
+		days_re_enable = 120
 		cost = 100
 
 		remove_effect = {
@@ -427,8 +427,8 @@ decision_category_internal_factions = {
 		visible = {
 			has_idea = pog_enviromentalists
 		}
-		days_remove = 90
-		days_re_enable = 90
+		days_remove = 120
+		days_re_enable = 120
 		cost = 150
 
 		modifier = {

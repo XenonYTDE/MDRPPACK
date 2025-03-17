@@ -314,6 +314,7 @@
 	ADO = { set_country_flag = EU_potential }
 	HLS = { set_country_flag = EU_potential }
 	SMA = { set_country_flag = EU_potential }
+	VOJ = { set_country_flag = EU_potential }
 	SOV = { set_country_flag = EU_potential } # DO NOT MERGE FROM BASE MD
 
 	set_country_flag = POTEF_nominee_0

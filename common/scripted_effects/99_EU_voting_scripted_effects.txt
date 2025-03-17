@@ -93,18 +93,18 @@ EU_update_AI_general_voting_modifiers = {
 	# Common Law Section, this is something that can and is repeated so we will be tucking it in here with the general modifiers since that goes at the end.
 	if = {
 		limit = { is_ai = yes }
-	if = {
-		limit = { check_variable = { EU_AI_focus_modifier_yes_vote > 0 } }
-		add_to_variable = { global.EU_active_vote_yes = 1 }
-		add_to_array = { global.EU_active_vote_supporters = THIS }
-		set_temp_variable = { add_ratio_value = THIS.var_EUpopRatio }
-		add_to_variable = { global.var_EUpopRatioYes = add_ratio_value }
-	}
-	else = {
-		add_to_variable = { global.EU_active_vote_no = 1 }
-		add_to_array = { global.EU_active_vote_rejecters = THIS }
-		set_temp_variable = { add_ratio_value = THIS.var_EUpopRatio }
-		add_to_variable = { global.var_EUpopRatioNo = add_ratio_value }
+		if = {
+			limit = { check_variable = { EU_AI_focus_modifier_yes_vote > 0 } }
+			add_to_variable = { global.EU_active_vote_yes = 1 }
+			add_to_array = { global.EU_active_vote_supporters = THIS }
+			set_temp_variable = { add_ratio_value = THIS.var_EUpopRatio }
+			add_to_variable = { global.var_EUpopRatioYes = add_ratio_value }
+		}
+		else = {
+			add_to_variable = { global.EU_active_vote_no = 1 }
+			add_to_array = { global.EU_active_vote_rejecters = THIS }
+			set_temp_variable = { add_ratio_value = THIS.var_EUpopRatio }
+			add_to_variable = { global.var_EUpopRatioNo = add_ratio_value }
 		}
 	}
 	if = { limit = { is_debug = yes }
@@ -965,11 +965,11 @@ focus_EU203_QMV_result = {
 					has_idea = european_debt_crisis
 				}
 			}
-		every_country = {
+			every_country = {
 				limit = {
 					has_idea = EU_member
 				}
-			remove_ideas = european_debt_crisis
+				remove_ideas = european_debt_crisis
 			}
 		}
 		every_country = {
@@ -1075,11 +1075,11 @@ focus_EU205_QMV_result = {
 					has_idea = european_debt_crisis
 				}
 			}
-		every_country = {
+			every_country = {
 				limit = {
 					has_idea = EU_member
 				}
-			remove_ideas = european_debt_crisis
+				remove_ideas = european_debt_crisis
 			}
 		}
 		every_country = {
@@ -2070,7 +2070,7 @@ EU_show_display_effects_for_law = {
 					}
 					if = {
 						limit = { has_idea = european_debt_crisis }
-					remove_ideas = EUU_national_dept_crisis_eu
+						remove_ideas = EUU_national_dept_crisis_eu
 					}
 				}
 			}
