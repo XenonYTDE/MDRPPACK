@@ -42,12 +42,6 @@ guiTypes = {
 				spriteType = "GFX_MOIM_pp_button"
 				pdx_tooltip = "MOIM_pp_button_tt"
 			}
-			buttonType = {
-				name = "MOIM_pp_button_overlay"
-				position = { x = 522 y = 174 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_pp_button_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_cp_button"
@@ -55,23 +49,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_cp_button"
 				pdx_tooltip = "MOIM_cp_button_tt"
 			}
-			buttonType = {
-				name = "MOIM_cp_button_overlay"
-				position = { x = 614 y = 174 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_cp_button_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_xp_button"
 				position = { x = 705 y = 174 }
 				spriteType = "GFX_MOIM_xp_button"
-				pdx_tooltip = "MOIM_xp_button_tt"
-			}
-			buttonType = {
-				name = "MOIM_xp_button_overlay"
-				position = { x = 706 y = 174 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_xp_button_tt"
 			}
 
@@ -97,12 +79,6 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dop_plus_button"
 				pdx_tooltip = "MOIM_boost_emerging_button_tt"
 			}
-			buttonType = {
-				name = "MOIM_boost_emerging_button_overlay"
-				position = { x = 45 y = 162 }
-				spriteType = "GFX_MOIM_dop_plus_button_overlay"
-				pdx_tooltip = "MOIM_boost_emerging_button_tt"
-			}
 			iconType = {
 				name = "MOIM_dop_emerging_icon"
 				position = { x = 42 y = 177 }
@@ -114,23 +90,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dop_minus_button"
 				pdx_tooltip = "MOIM_lower_emerging_button_tt"
 			}
-			buttonType = {
-				name = "MOIM_lower_emerging_button_overlay"
-				position = { x = 45 y = 226 }
-				spriteType = "GFX_MOIM_dop_minus_button_overlay"
-				pdx_tooltip = "MOIM_lower_emerging_button_tt"
-			}
 			# Boost Western
 			buttonType = {
 				name = "MOIM_boost_western_button"
 				position = { x = 117 y = 162 }
 				spriteType = "GFX_MOIM_dop_plus_button"
-				pdx_tooltip = "MOIM_boost_western_button_tt"
-			}
-			iconType = {
-				name = "MOIM_boost_western_button_overlay"
-				position = { x = 117 y = 162 }
-				spriteType = "GFX_MOIM_dop_plus_button_overlay"
 				pdx_tooltip = "MOIM_boost_western_button_tt"
 			}
 			iconType = {
@@ -144,23 +108,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dop_minus_button"
 				pdx_tooltip = "MOIM_lower_western_button_tt"
 			}
-			iconType = {
-				name = "MOIM_lower_western_button_overlay"
-				position = { x = 117 y = 226 }
-				spriteType = "GFX_MOIM_dop_minus_button_overlay"
-				pdx_tooltip = "MOIM_lower_western_button_tt"
-			}
 			# Boost Non-Aligned
 			buttonType = {
 				name = "MOIM_boost_nonaligned_button"
 				position = { x = 189 y = 162 }
 				spriteType = "GFX_MOIM_dop_plus_button"
-				pdx_tooltip = "MOIM_boost_nonaligned_button_tt"
-			}
-			iconType = {
-				name = "MOIM_boost_nonaligned_button_overlay"
-				position = { x = 189 y = 162 }
-				spriteType = "GFX_MOIM_dop_plus_button_overlay"
 				pdx_tooltip = "MOIM_boost_nonaligned_button_tt"
 			}
 			iconType = {
@@ -174,23 +126,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dop_minus_button"
 				pdx_tooltip = "MOIM_lower_nonaligned_button_tt"
 			}
-			iconType = {
-				name = "MOIM_lower_nonaligned_button_overlay"
-				position = { x = 189 y = 226 }
-				spriteType = "GFX_MOIM_dop_minus_button_overlay"
-				pdx_tooltip = "MOIM_lower_nonaligned_button_tt"
-			}
 			# Boost Nationalist
 			buttonType = {
 				name = "MOIM_boost_nationalist_button"
 				position = { x = 261 y = 162 }
 				spriteType = "GFX_MOIM_dop_plus_button"
-				pdx_tooltip = "MOIM_boost_nationalist_button_tt"
-			}
-			iconType = {
-				name = "MOIM_boost_nationalist_button_overlay"
-				position = { x = 261 y = 162 }
-				spriteType = "GFX_MOIM_dop_plus_button_overlay"
 				pdx_tooltip = "MOIM_boost_nationalist_button_tt"
 			}
 			iconType = {
@@ -204,23 +144,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dop_minus_button"
 				pdx_tooltip = "MOIM_lower_nationalist_button_tt"
 			}
-			iconType = {
-				name = "MOIM_lower_nationalist_button_overlay"
-				position = { x = 261 y = 226 }
-				spriteType = "GFX_MOIM_dop_minus_button_overlay"
-				pdx_tooltip = "MOIM_lower_nationalist_button_tt"
-			}
 			# Boost Salafist
 			buttonType = {
 				name = "MOIM_boost_salafist_button"
 				position = { x = 333 y = 162 }
 				spriteType = "GFX_MOIM_dop_plus_button"
-				pdx_tooltip = "MOIM_boost_salafist_button_tt"
-			}
-			iconType = {
-				name = "MOIM_boost_salafist_button_overlay"
-				position = { x = 333 y = 162 }
-				spriteType = "GFX_MOIM_dop_plus_button_overlay"
 				pdx_tooltip = "MOIM_boost_salafist_button_tt"
 			}
 			iconType = {
@@ -232,12 +160,6 @@ guiTypes = {
 				name = "MOIM_lower_salafist_button"
 				position = { x = 333 y = 226 }
 				spriteType = "GFX_MOIM_dop_minus_button"
-				pdx_tooltip = "MOIM_lower_salafist_button_tt"
-			}
-			iconType = {
-				name = "MOIM_lower_salafist_button_overlay"
-				position = { x = 333 y = 226 }
-				spriteType = "GFX_MOIM_dop_minus_button_overlay"
 				pdx_tooltip = "MOIM_lower_salafist_button_tt"
 			}
 			# Main Overlay
@@ -270,22 +192,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_army_atk"
 				pdx_tooltip = "MOIM_army_atk_tt"
 			}
-			iconType = {
-				name = "MOIM_army_atk_overlay"
-				position = { x = 56 y = 336 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_army_atk_tt"
-			}
 			buttonType = {
 				name = "MOIM_army_def"
 				position = { x = 138 y = 331 }
 				spriteType = "GFX_MOIM_army_def"
-				pdx_tooltip = "MOIM_army_def_tt"
-			}
-			iconType = {
-				name = "MOIM_army_def_overlay"
-				position = { x = 138 y = 336 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_army_def_tt"
 			}
 			buttonType = {
@@ -294,22 +204,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_army_spd"
 				pdx_tooltip = "MOIM_army_spd_tt"
 			}
-			iconType = {
-				name = "MOIM_army_spd_overlay"
-				position = { x = 220 y = 336 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_army_spd_tt"
-			}
 			buttonType = {
 				name = "MOIM_navy_atk"
 				position = { x = 56 y = 417 }
 				spriteType = "GFX_MOIM_navy_atk"
-				pdx_tooltip = "MOIM_navy_atk_tt"
-			}
-			iconType = {
-				name = "MOIM_navy_atk_overlay"
-				position = { x = 56 y = 418 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_navy_atk_tt"
 			}
 			buttonType = {
@@ -318,22 +216,10 @@ guiTypes = {
 				spriteType = "GFX_MOIM_navy_def"
 				pdx_tooltip = "MOIM_navy_def_tt"
 			}
-			iconType = {
-				name = "MOIM_navy_def_overlay"
-				position = { x = 138 y = 418 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_navy_def_tt"
-			}
 			buttonType = {
 				name = "MOIM_navy_spd"
 				position = { x = 220 y = 417 }
 				spriteType = "GFX_MOIM_navy_spd"
-				pdx_tooltip = "MOIM_navy_spd_tt"
-			}
-			iconType = {
-				name = "MOIM_navy_spd_overlay"
-				position = { x = 220 y = 418 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_navy_spd_tt"
 			}
 			buttonType = {
@@ -342,34 +228,16 @@ guiTypes = {
 				spriteType = "GFX_MOIM_air_atk"
 				pdx_tooltip = "MOIM_air_atk_tt"
 			}
-			iconType = {
-				name = "MOIM_air_atk_overlay"
-				position = { x = 55 y = 499 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_air_atk_tt"
-			}
 			buttonType = {
 				name = "MOIM_air_def"
 				position = { x = 138 y = 499 }
 				spriteType = "GFX_MOIM_air_def"
 				pdx_tooltip = "MOIM_air_def_tt"
 			}
-			iconType = {
-				name = "MOIM_air_def_overlay"
-				position = { x = 137 y = 499 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_air_def_tt"
-			}
 			buttonType = {
 				name = "MOIM_air_spd"
 				position = { x = 220 y = 499 }
 				spriteType = "GFX_MOIM_air_spd"
-				pdx_tooltip = "MOIM_air_spd_tt"
-			}
-			iconType = {
-				name = "MOIM_air_spd_overlay"
-				position = { x = 219 y = 499 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_air_spd_tt"
 			}
 
@@ -402,23 +270,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_research"
 				pdx_tooltip = "MOIM_dorad_research_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_research_overlay"
-				position = { x = 356 y = 354 }
-				spriteType = "GFX_MOIM_button_75_overlay"
-				pdx_tooltip = "MOIM_dorad_research_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_construction"
 				position = { x = 359 y = 462 }
 				spriteType = "GFX_MOIM_dorad_construction"
-				pdx_tooltip = "MOIM_dorad_construction_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_construction_overlay"
-				position = { x = 356 y = 460 }
-				spriteType = "GFX_MOIM_button_75_overlay"
 				pdx_tooltip = "MOIM_dorad_construction_tt"
 			}
 
@@ -428,23 +284,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_inf_util"
 				pdx_tooltip = "MOIM_dorad_inf_util_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_inf_util_overlay"
-				position = { x = 456 y = 337 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_inf_util_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_armor"
 				position = { x = 459 y = 419 }
 				spriteType = "GFX_MOIM_dorad_armor"
-				pdx_tooltip = "MOIM_dorad_armor_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_armor_overlay"
-				position = { x = 456 y = 417 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_armor_tt"
 			}
 
@@ -454,23 +298,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_artillery"
 				pdx_tooltip = "MOIM_dorad_artillery_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_artillery_overlay"
-				position = { x = 456 y = 497 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_artillery_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_aa_at"
 				position = { x = 539 y = 339 }
 				spriteType = "GFX_MOIM_dorad_aa_at"
-				pdx_tooltip = "MOIM_dorad_aa_at_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_aa_at_overlay"
-				position = { x = 536 y = 337 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_aa_at_tt"
 			}
 
@@ -480,23 +312,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_heli"
 				pdx_tooltip = "MOIM_dorad_heli_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_heli_overlay"
-				position = { x = 536 y = 417 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_heli_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_airframes"
 				position = { x = 539 y = 497 }
 				spriteType = "GFX_MOIM_dorad_airframes"
-				pdx_tooltip = "MOIM_dorad_airframes_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_airframes_overlay"
-				position = { x = 536 y = 497 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_airframes_tt"
 			}
 
@@ -506,23 +326,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_air_eqp"
 				pdx_tooltip = "MOIM_dorad_air_eqp_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_air_eqp_overlay"
-				position = { x = 616 y = 337 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_air_eqp_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_ship_hulls"
 				position = { x = 619 y = 419 }
 				spriteType = "GFX_MOIM_dorad_surface_ship_sub"
-				pdx_tooltip = "MOIM_dorad_surface_ship_sub_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_ship_hulls_overlay"
-				position = { x = 616 y = 417 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_surface_ship_sub_tt"
 			}
 
@@ -532,23 +340,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_naval_misc"
 				pdx_tooltip = "MOIM_dorad_naval_misc_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_naval_misc_overlay"
-				position = { x = 616 y = 497 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_naval_misc_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_ai_comp_internet"
 				position = { x = 699 y = 339 }
 				spriteType = "GFX_MOIM_dorad_ai_comp_internet"
-				pdx_tooltip = "MOIM_dorad_ai_comp_internet_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_ai_comp_internet_overlay"
-				position = { x = 696 y = 337 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_ai_comp_internet_tt"
 			}
 
@@ -558,23 +354,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_infr_constr_agri"
 				pdx_tooltip = "MOIM_dorad_infr_constr_agri_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_infr_constr_agri_overlay"
-				position = { x = 696 y = 417 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_infr_constr_agri_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_nfibers_3d_genes"
 				position = { x = 699 y = 499 }
 				spriteType = "GFX_MOIM_dorad_nfibers_3d_genes"
-				pdx_tooltip = "MOIM_dorad_nfibers_3d_genes_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_nfibers_3d_genes_overlay"
-				position = { x = 696 y = 497 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_nfibers_3d_genes_tt"
 			}
 
@@ -584,12 +368,6 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_powerplants"
 				pdx_tooltip = "MOIM_dorad_powerplants_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_powerplants_overlay"
-				position = { x = 776 y = 337 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_powerplants_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_satellites"
@@ -597,23 +375,11 @@ guiTypes = {
 				spriteType = "GFX_MOIM_dorad_satellites"
 				pdx_tooltip = "MOIM_dorad_satellites_tt"
 			}
-			iconType = {
-				name = "MOIM_dorad_satellites_overlay"
-				position = { x = 776 y = 417 }
-				spriteType = "GFX_MOIM_button_55_overlay"
-				pdx_tooltip = "MOIM_dorad_satellites_tt"
-			}
 
 			buttonType = {
 				name = "MOIM_dorad_missiles"
 				position = { x = 779 y = 499 }
 				spriteType = "GFX_MOIM_dorad_missiles"
-				pdx_tooltip = "MOIM_dorad_missiles_tt"
-			}
-			iconType = {
-				name = "MOIM_dorad_missiles_overlay"
-				position = { x = 776 y = 497 }
-				spriteType = "GFX_MOIM_button_55_overlay"
 				pdx_tooltip = "MOIM_dorad_missiles_tt"
 			}
 

@@ -2312,198 +2312,208 @@ scripted_gui = {
 					has_country_flag = MOIM_dorad_bought_flag
 				}
 			}
-			MOIM_pp_button_overlay_visible = {
-				check_variable = { moim_pp_factor > 0.49 }
+			MOIM_pp_button_click_enabled = {
+				check_variable = { moim_pp_factor < 0.50 }
 			}
-			MOIM_cp_button_overlay_visible = {
-				check_variable = { moim_cp_factor > 0.49 }
+			MOIM_cp_button_click_enabled = {
+				check_variable = { moim_cp_factor < 0.50 }
 			}
-			MOIM_xp_button_overlay_visible = {
-				check_variable = { moim_army_xp_factor > 0.49 }
+			MOIM_xp_button_click_enabled = {
+				check_variable = { moim_army_xp_factor < 0.25 }
 			}
-			MOIM_boost_emerging_button_overlay_visible = {
-				NOT = {
+			MOIM_boost_emerging_button_click_enabled = {
 					check_variable = { moim_emerging_factor < 0.05 }
-				}
 			}
-			MOIM_lower_emerging_button_overlay_visible = {
+			MOIM_lower_emerging_button_click_enabled = {
+				check_variable = { moim_emerging_factor > -0.05 }
+			}
+			MOIM_boost_western_button_click_enabled = {
+				check_variable = { moim_western_factor < 0.05 }
+			}
+			MOIM_lower_western_button_click_enabled = {
+				check_variable = { moim_western_factor > -0.05 }
+			}
+			MOIM_boost_nonaligned_button_click_enabled = {
+				check_variable = { moim_nonaligned_factor < 0.05 }
+			}
+			MOIM_lower_nonaligned_button_click_enabled = {
+				check_variable = { moim_nonaligned_factor > -0.05 }
+			}
+			MOIM_boost_nationalist_button_click_enabled = {
+				check_variable = { moim_nationalist_factor < 0.05 }
+			}
+			MOIM_lower_nationalist_button_click_enabled = {
+				check_variable = { moim_nationalist_factor > -0.05 }
+			}
+			MOIM_boost_salafist_button_click_enabled = {
+				check_variable = { moim_salafist_factor < 0.05 }
+			}
+			MOIM_lower_salafist_button_click_enabled = {
+				check_variable = { moim_salafist_factor > -0.05 }
+			}
+			MOIM_army_atk_click_enabled = {
+				check_variable = { moim_army_atk_factor < 0.25 }
+			}
+			MOIM_army_def_click_enabled = {
+				check_variable = { moim_army_def_factor < 0.25 }
+			}
+			MOIM_army_spd_click_enabled = {
+				check_variable = { moim_army_spd_factor < 0.25 }
+			}
+			MOIM_navy_atk_click_enabled = {
+				check_variable = { moim_navy_atk_factor < 0.25 }
+			}
+			MOIM_navy_def_click_enabled = {
+				check_variable = { moim_navy_def_factor < 0.25 }
+			}
+			MOIM_navy_spd_click_enabled = {
+				check_variable = { moim_navy_spd_factor < 0.25 }
+			}
+			MOIM_air_atk_click_enabled = {
+				check_variable = { moim_air_atk_factor < 0.25 }
+			}
+			MOIM_air_def_click_enabled = {
+				check_variable = { moim_air_def_factor < 0.25 }
+			}
+			MOIM_air_spd_click_enabled = {
+				check_variable = { moim_air_spd_factor < 0.25 }
+			}
+			MOIM_dorad_research_click_enabled = {
+				check_variable = { moim_research_speed_factor < 0.50 }
+			}
+			MOIM_dorad_inf_util_click_enabled = {
+				check_variable = { moim_construction_speed_factor < 0.50 }
+			}
+			MOIM_dorad_armor_click_enabled = {
 				NOT = {
-					check_variable = { moim_emerging_factor > -0.05 }
+					OR = {
+						has_idea = moim_dorad_inf_util_5
+						has_idea = moim_dorad_army
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_boost_western_button_overlay_visible = {
+			MOIM_dorad_armor_click_enabled = {
 				NOT = {
-					check_variable = { moim_western_factor < 0.05 }
+					OR = {
+						has_idea = moim_dorad_armor_5
+						has_idea = moim_dorad_army
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_lower_western_button_overlay_visible = {
+			MOIM_dorad_artillery_click_enabled = {
 				NOT = {
-					check_variable = { moim_western_factor > -0.05 }
+					OR = {
+						has_idea = moim_dorad_artillery_5
+						has_idea = moim_dorad_army
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_boost_nonaligned_button_overlay_visible = {
+			MOIM_dorad_aa_at_click_enabled = {
 				NOT = {
-					check_variable = { moim_nonaligned_factor < 0.05 }
+					OR = {
+						has_idea = moim_dorad_aa_at_5
+						has_idea = moim_dorad_army
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_lower_nonaligned_button_overlay_visible = {
+			MOIM_dorad_heli_click_enabled = {
 				NOT = {
-					check_variable = { moim_nonaligned_factor > -0.05 }
+					OR = {
+						has_idea = moim_dorad_heli_5
+						has_idea = moim_dorad_air
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_boost_nationalist_button_overlay_visible = {
+			MOIM_dorad_airframes_click_enabled = {
 				NOT = {
-					check_variable = { moim_nationalist_factor < 0.05 }
+					OR = {
+						has_idea = moim_dorad_airframes_5
+						has_idea = moim_dorad_air
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_lower_nationalist_button_overlay_visible = {
+			MOIM_dorad_air_eqp_click_enabled = {
 				NOT = {
-					check_variable = { moim_nationalist_factor > -0.05 }
+					OR = {
+						has_idea = moim_dorad_air_eqp_5
+						has_idea = moim_dorad_air
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_boost_salafist_button_overlay_visible = {
+			MOIM_dorad_ship_hulls_click_enabled = {
 				NOT = {
-					check_variable = { moim_salafist_factor < 0.05 }
+					OR = {
+						has_idea = moim_dorad_ship_hulls_5
+						has_idea = moim_dorad_navy
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_lower_salafist_button_overlay_visible = {
+			MOIM_dorad_naval_misc_click_enabled = {
 				NOT = {
-					check_variable = { moim_salafist_factor > -0.05 }
+					OR = {
+						has_idea = moim_dorad_naval_misc_5
+						has_idea = moim_dorad_navy
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_army_atk_overlay_visible = {
-				check_variable = { moim_army_atk_factor > 0.24 }
-			}
-			MOIM_army_def_overlay_visible = {
-				check_variable = { moim_army_def_factor > 0.24 }
-			}
-			MOIM_army_spd_overlay_visible = {
-				check_variable = { moim_army_spd_factor > 0.24 }
-			}
-			MOIM_navy_atk_overlay_visible = {
-				check_variable = { moim_navy_atk_factor > 0.24 }
-			}
-			MOIM_navy_def_overlay_visible = {
-				check_variable = { moim_navy_def_factor > 0.24 }
-			}
-			MOIM_navy_spd_overlay_visible = {
-				check_variable = { moim_navy_spd_factor > 0.24 }
-			}
-			MOIM_air_atk_overlay_visible = {
-				check_variable = { moim_air_atk_factor > 0.24 }
-			}
-			MOIM_air_def_overlay_visible = {
-				check_variable = { moim_air_def_factor > 0.24 }
-			}
-			MOIM_air_spd_overlay_visible = {
-				check_variable = { moim_air_spd_factor > 0.24 }
-			}
-			MOIM_dorad_research_overlay_visible = {
-				check_variable = { moim_research_speed_factor > 0.49 }
-			}
-			MOIM_dorad_construction_overlay_visible = {
-				check_variable = { moim_construction_speed_factor > 0.49 }
-			}
-			MOIM_dorad_inf_util_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_inf_util_5
-					has_idea = moim_dorad_army
-					has_idea = moim_dorad_completed
+			MOIM_dorad_ai_comp_internet_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_ai_comp_internet_5
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_dorad_armor_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_armor_5
-					has_idea = moim_dorad_army
-					has_idea = moim_dorad_completed
+			MOIM_dorad_infr_constr_agri_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_infr_constr_agri_5
+						has_idea = moim_dorad_industry
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_dorad_artillery_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_artillery_5
-					has_idea = moim_dorad_army
-					has_idea = moim_dorad_completed
+			MOIM_dorad_nfibers_3d_genes_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_nfibers_3d_genes_5
+						has_idea = moim_dorad_industry
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_dorad_aa_at_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_aa_at_5
-					has_idea = moim_dorad_army
-					has_idea = moim_dorad_completed
+			MOIM_dorad_powerplants_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_powerplants_5
+						has_idea = moim_dorad_industry
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_dorad_heli_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_heli_5
-					has_idea = moim_dorad_air
-					has_idea = moim_dorad_completed
+			MOIM_dorad_satellites_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_satellites_5
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
-			MOIM_dorad_airframes_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_airframes_5
-					has_idea = moim_dorad_air
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_air_eqp_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_air_eqp_5
-					has_idea = moim_dorad_air
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_ship_hulls_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_ship_hulls_5
-					has_idea = moim_dorad_navy
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_naval_misc_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_naval_misc_5
-					has_idea = moim_dorad_navy
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_ai_comp_internet_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_ai_comp_internet_5
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_infr_constr_agri_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_infr_constr_agri_5
-					has_idea = moim_dorad_industry
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_nfibers_3d_genes_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_nfibers_3d_genes_5
-					has_idea = moim_dorad_industry
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_powerplants_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_powerplants_5
-					has_idea = moim_dorad_industry
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_satellites_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_satellites_5
-					has_idea = moim_dorad_completed
-				}
-			}
-			MOIM_dorad_missiles_overlay_visible = {
-				OR = {
-					has_idea = moim_dorad_missiles_5
-					has_idea = moim_dorad_completed
+			MOIM_dorad_missiles_click_enabled = {
+				NOT = {
+					OR = {
+						has_idea = moim_dorad_missiles_5
+						has_idea = moim_dorad_completed
+					}
 				}
 			}
 		}
