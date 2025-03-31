@@ -5,11 +5,16 @@ moim_doir_dynmod = {
 	enable = {
 		has_country_flag = MOIM_bought_flag
 	}
-	political_power_factor = moim_pp_factor
-	command_power_gain_mult = moim_cp_factor
+	local_resources_factor = moim_rss_factor
 	experience_gain_army = moim_army_xp_factor
 	experience_gain_navy = moim_navy_xp_factor
 	experience_gain_air = moim_air_xp_factor
+	command_power_gain_mult = moim_cp_factor
+	political_power_factor = moim_pp_factor
+	autonomy_gain = moim_autg_factor
+	subjects_autonomy_gain = moim_auts_factor
+	foreign_influence_modifier = moim_infa_factor
+	foreign_influence_defense_modifier = moim_infd_factor
 	stability_factor = 0.01
 }
 

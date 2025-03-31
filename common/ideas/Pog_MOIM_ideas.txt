@@ -683,7 +683,7 @@ ideas = {
 				CAT_sub = 0.55
 				CAT_naval_misc = 0.55
 				CAT_heli = 0.55
-				CAT_smal_plane = 0.55
+				CAT_small_plane = 0.55
 				CAT_medium_plane = 0.55
 				CAT_large_plane = 0.55
 				CAT_air_eqp = 0.55
@@ -700,6 +700,14 @@ ideas = {
 				CAT_nuclear_reactors = 0.55
 				CAT_satellite = 0.55
 				CAT_missile = 0.55
+			}
+		}
+		moim_rescon_completed = {
+			on_add = { log =  "GetDateText]: [Root.GetName]: add idea moim_rescon_completed" }
+
+			modifier = {
+				research_speed_factor = 0.50
+				production_speed_buildings_factor = 0.50
 			}
 		}
 	}

@@ -79,39 +79,34 @@ spriteTypes = {
 		name = "GFX_MOIM_unlock_button_50"
 		textureFile = "gfx/interface/moim/moim_unlock_button_50.dds"
 	}
-	# Button Overlays
-	spriteType = {
-		name = "GFX_MOIM_button_47_overlay"
-		textureFile = "gfx/interface/moim/moim_button_47_overlay.dds"
-	}
-	spriteType = {
-		name = "GFX_MOIM_button_55_overlay"
-		textureFile = "gfx/interface/moim/moim_button_55_overlay.dds"
-	}
-	spriteType = {
-		name = "GFX_MOIM_button_75_overlay"
-		textureFile = "gfx/interface/moim/moim_button_75_overlay.dds"
-	}
-	spriteType = {
-		name = "GFX_MOIM_dop_plus_button_overlay"
-		textureFile = "gfx/interface/moim/moim_button_plus_overlay.dds"
-	}
-	spriteType = {
-		name = "GFX_MOIM_dop_minus_button_overlay"
-		textureFile = "gfx/interface/moim/moim_button_minus_overlay.dds"
-	}
 	# Department of Internal Resources
 	spriteType = {
-		name = "GFX_MOIM_pp_button"
-		textureFile = "gfx/interface/moim/moim_pp_button.dds"
+		name = "GFX_MOIM_rss_button"
+		textureFile = "gfx/interface/moim/moim_rss_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_xp_button"
+		textureFile = "gfx/interface/moim/moim_xp_button.dds"
 	}
 	spriteType = {
 		name = "GFX_MOIM_cp_button"
 		textureFile = "gfx/interface/moim/moim_cp_button.dds"
 	}
 	spriteType = {
-		name = "GFX_MOIM_xp_button"
-		textureFile = "gfx/interface/moim/moim_xp_button.dds"
+		name = "GFX_MOIM_pp_button"
+		textureFile = "gfx/interface/moim/moim_pp_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_aut_button"
+		textureFile = "gfx/interface/moim/moim_aut_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_infa_button"
+		textureFile = "gfx/interface/moim/moim_infa_button.dds"
+	}
+	spriteType = {
+		name = "GFX_MOIM_infd_button"
+		textureFile = "gfx/interface/moim/moim_infd_button.dds"
 	}
 	# Department of Politics
 	spriteType = {

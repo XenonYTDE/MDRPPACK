@@ -1,3 +1,13 @@
+v1.11.3
+-MD 1.11.3 compatibility
+-Expanded Department of Internal Resource in the Ministry to access Resource, Autonomy, Foreign Influence buffs
+-Added more details to Ministry tooltips
+-City State now requires only 1 state
+-Regional State now requires max 4 states
+-City State and Regional State have been slightly nerfed (again)
+-Experience Cap increased to 10000
+-Minor balances and bugfixes
+
 v1.11.2d
 -MD 1.11.2b compatibility
 -Max 30 Naval Yards (decreased from 100)

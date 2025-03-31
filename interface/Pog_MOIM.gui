@@ -37,24 +37,46 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "MOIM_pp_button"
-				position = { x = 521 y = 174 }
-				spriteType = "GFX_MOIM_pp_button"
-				pdx_tooltip = "MOIM_pp_button_tt"
+				name = "MOIM_rss_button"
+				position = { x = 422 y = 196 }
+				spriteType = "GFX_MOIM_rss_button"
+				pdx_tooltip = "MOIM_rss_button_tt"
 			}
-
+			buttonType = {
+				name = "MOIM_xp_button"
+				position = { x = 486 y = 157 }
+				spriteType = "GFX_MOIM_xp_button"
+				pdx_tooltip = "MOIM_xp_button_tt"
+			}
 			buttonType = {
 				name = "MOIM_cp_button"
-				position = { x = 613 y = 174 }
+				position = { x = 552 y = 197 }
 				spriteType = "GFX_MOIM_cp_button"
 				pdx_tooltip = "MOIM_cp_button_tt"
 			}
-
 			buttonType = {
-				name = "MOIM_xp_button"
-				position = { x = 705 y = 174 }
-				spriteType = "GFX_MOIM_xp_button"
-				pdx_tooltip = "MOIM_xp_button_tt"
+				name = "MOIM_pp_button"
+				position = { x = 618 y = 160 }
+				spriteType = "GFX_MOIM_pp_button"
+				pdx_tooltip = "MOIM_pp_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_aut_button"
+				position = { x = 685 y = 196 }
+				spriteType = "GFX_MOIM_aut_button"
+				pdx_tooltip = "MOIM_aut_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_infa_button"
+				position = { x = 752 y = 157 }
+				spriteType = "GFX_MOIM_infa_button"
+				pdx_tooltip = "MOIM_infa_button_tt"
+			}
+			buttonType = {
+				name = "MOIM_infd_button"
+				position = { x = 818 y = 196 }
+				spriteType = "GFX_MOIM_infd_button"
+				pdx_tooltip = "MOIM_infd_button_tt"
 			}
 
 			iconType = {
