@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "open_league_of_nations_window"
-		position = { x = -42 y = -454 }
+		position = { x = -47 y = -500 }
 		size = { width = 50 height = 50 }
 		orientation = lower_right
 
