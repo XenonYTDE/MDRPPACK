@@ -77,7 +77,7 @@ ideas = {
                 return_on_investment_modifier = 0.01
             }
 
-            research_bonus = { industry = 0.05 }
+            research_bonus = { CAT_industry = 0.05 }
 
             ai_will_do = {
                 base = 50

@@ -504,10 +504,12 @@ ideas = {
 				offices_worker_requirement_modifier = -0.05
 			}
 			research_bonus = {
-				industry = 0.05
+				CAT_industry = 0.05
 			}
 			research_bonus = {
-				electronics = 0.15
+				CAT_ai = 0.15
+				CAT_computing_tech = 0.15
+				CAT_internet_tech = 0.15
 			}
 		}	
 	}
@@ -576,7 +578,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 			research_bonus = {
-				industry = 0.05
+				CAT_industry = 0.05
 			}
 		}	
 	}
@@ -601,7 +603,7 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 			research_bonus = {
-				industry = 0.05
+				CAT_industry = 0.05
 			}
 		}	
 	}
