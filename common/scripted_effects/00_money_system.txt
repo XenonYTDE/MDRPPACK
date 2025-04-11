@@ -127,7 +127,7 @@ calculate_tax_rate = {
 			add_dynamic_modifier = { modifier = population_tax_stability_hit }
 		}
 		set_variable = { stability_factor_from_population_tax = population_tax_rate }
-		multiply_variable = { stability_factor_from_population_tax = -0.01 }
+		multiply_variable = { stability_factor_from_population_tax = -0.02 }
 		# Population Growth Penalty
 		set_variable = { population_growth_factor_from_population_tax = population_tax_rate }
 		multiply_variable = { population_growth_factor_from_population_tax = -0.00015 } # -0.05% growth factor per 10% tax rate
