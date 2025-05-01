@@ -589,6 +589,81 @@ Build_industry_building = {
 			}		}		
 	}
 
+	Build_network_infrastructure = {
+		icon = generic_construction
+
+		fire_only_once = no
+
+		days_re_enable = 0
+
+		days_remove = 270
+
+		available = {
+			any_owned_state = { free_building_slots = { building = internet_station size > 0 include_locked = no }}			
+		}
+
+		visible = {	
+		}
+
+		custom_cost_trigger = {
+			check_variable = { treasury > 0 }
+		}
+
+		custom_cost_text = cost_0
+
+
+		complete_effect = {
+			set_temp_variable = { money_amount = gdp_total }
+			divide_temp_variable = { money_amount = -3000 }
+			multiply_temp_variable = { money_amount = 0.8 }
+			add_to_temp_variable = { money_amount = -0.1 }
+			set_temp_variable = { treasury_change = money_amount }
+			modify_treasury_effect = yes
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = internet_station
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = internet_station
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = internet_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				gdp_debt_ratio_higher_50 = yes
+				add = -100
+			}		
+		}		
+	}
+
 	Expand_building_slots = {
 		icon = generic_construction
 

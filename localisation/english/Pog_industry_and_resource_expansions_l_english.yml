@@ -16,8 +16,10 @@ Build_dockyard_desc: "A large fleet needs many shipyards."
 Build_nuclear_power: "Nuclear power"
 Build_nuclear_power_desc: "Nuclear reactors generate electricity for our industry and our population."
 Build_rafinery: "Renewable Energy"
-Build_rafinery_desc: "Renewable Energy gives you energy." 
-Expand_building_slots: "Building slots"
+Build_rafinery_desc: "Renewable Energy gives you energy."
+Build_network_infrastructure: "Build Network Infrastructure"
+Build_network_infrastructure_desc: "Build Network Infrastructure to improve the infrastructure of our country."
+Expand_building_slots: "Expand Building Slots"
 Expand_building_slots_desc: "Expanding building plots is a challenging task and costs a lot of money."
 
 #cost
