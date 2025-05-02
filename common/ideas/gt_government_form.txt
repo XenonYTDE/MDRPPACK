@@ -109,7 +109,7 @@ ideas = {
         region_state = {
 
             available = {
-                num_of_controlled_states < 5
+                num_of_controlled_states < 4
             }
 
             cost = 250
@@ -120,7 +120,7 @@ ideas = {
                 industrial_capacity_factory = 1.0
                 industrial_capacity_dockyard = 1.0
                 conscription_factor = 0.15
-                production_speed_buildings_factor = 2.0
+                production_speed_buildings_factor = 1.75
                 research_speed_factor = 0.25
                 special_forces_min = 15
                 monthly_population = 3.5
@@ -137,22 +137,22 @@ ideas = {
         city_state = {
 
             available = {
-                num_of_controlled_states < 3
+                num_of_controlled_states = 1
             }
 
             cost = 250
             removal_cost = -1
 
             modifier = {
-                global_building_slots_factor = 5
-                industrial_capacity_factory = 2
-                industrial_capacity_dockyard = 2
+                global_building_slots_factor = 4.5
+                industrial_capacity_factory = 1.75
+                industrial_capacity_dockyard = 1.75
                 conscription_factor = 0.20
-                production_speed_buildings_factor = 3
+                production_speed_buildings_factor = 2.5
                 research_speed_factor = 0.10
                 special_forces_min = 25
                 monthly_population = 7
-                local_resources_factor = 0.4
+                local_resources_factor = 0.3
 
             }
 
