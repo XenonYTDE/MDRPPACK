@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		SOV_western_state = {
+			picture = EU_Roundel
+			allowed_civil_war = { always = yes }
+			modifier = {
+				democratic_drift = 0.20
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05
+				education_cost_multiplier_modifier = -0.05
+				health_cost_multiplier_modifier = -0.05
+				social_cost_multiplier_modifier = -0.05
+				bureaucracy_cost_multiplier_modifier = -0.05
+			}
+		}
+		SOV_unified_again = {
+			picture = sov_agency_anti_corrupt_idea
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_cost = -0.03
+				receiving_investment_cost_modifier = -0.05
+				receiving_investment_duration_modifier = -0.05
+				industrial_capacity_factory = 0.05
+				political_power_factor = 0.05
+			}
+		}
+	}
+}
