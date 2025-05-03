@@ -34450,7 +34450,7 @@ focus_tree = {
 		x = 13
 		y = 5
 		relative_position_id = SOV_withdraw_from_the_sco
-		cost = 5
+		cost = 8
 
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
 		
@@ -34482,7 +34482,7 @@ focus_tree = {
 		x = 13
 		y = 6
 		relative_position_id = SOV_withdraw_from_the_sco
-		cost = 5
+		cost = 10
 		
 		prerequisite = { focus = SOV_recreate_the_uss }
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
@@ -34516,7 +34516,7 @@ focus_tree = {
 		x = 13
 		y = 7
 		relative_position_id = SOV_withdraw_from_the_sco
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = SOV_phase_one }
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
@@ -34544,7 +34544,7 @@ focus_tree = {
 		x = 13
 		y = 8
 		relative_position_id = SOV_withdraw_from_the_sco
-		cost = 5
+		cost = 15
 
 		prerequisite = { focus = SOV_phase_two }
 		search_filters = { FOCUS_FILTER_RUSSIA_YABLO FOCUS_FILTER_RUSSIA_SPS FOCUS_FILTER_RUSSIA_PARNAS }
@@ -34668,6 +34668,10 @@ focus_tree = {
 			add_country_leader_trait = president_of_union_state
 			add_country_leader_trait = defender_of_eastern_democracy
 			add_ideas = SOV_unified_again
+			add_timed_idea = {
+				idea = SOV_reunification_shocks
+				days = 200
+			}
 		}
 	}
 }
