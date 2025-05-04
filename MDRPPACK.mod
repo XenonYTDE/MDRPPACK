@@ -9,6 +9,6 @@ dependencies={
 }
 name="wow md modpack poggers - Dev"
 picture="thumbnail.png"
-supported_version="1.15.*"
+supported_version="1.16.*"
 path="mod/MDRPPACK"
 remote_file_id="3324592367"

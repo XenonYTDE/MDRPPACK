@@ -35,7 +35,7 @@ ideas = {
                 international_market_income_modifier = -0.5
             }
 
-            research_bonus = { industry = 0.15 }
+            research_bonus = { CAT_industry = 0.15 }
 
             ai_will_do = {
                 base = 50
@@ -67,7 +67,7 @@ ideas = {
                 international_market_income_modifier = -0.25
             }
 
-            research_bonus = { industry = 0.075 }
+            research_bonus = { CAT_industry = 0.075 }
 
             ai_will_do = {
                 base = 75
@@ -90,7 +90,7 @@ ideas = {
                 
             }
 
-            research_bonus = { industry = -0.05 }
+            research_bonus = { CAT_industry = -0.05 }
 
             ai_will_do = {
                 base = 100
@@ -134,7 +134,7 @@ ideas = {
                 min_export = -0.05
            }
 
-           research_bonus = { industry = -0.075 }
+           research_bonus = { CAT_industry = -0.075 }
 
            ai_will_do = {
             base = 75
@@ -181,7 +181,7 @@ ideas = {
                 min_export = -0.10
             }
 
-            research_bonus = { industry = -0.15 }
+            research_bonus = { CAT_industry = -0.15 }
 
             ai_will_do = {
                 base = 50

@@ -1,11 +1,7 @@
 # Author: Lynxivium
 
-MOIM_change_pp_factor_effect = {
-	add_to_variable = { moim_pp_factor = 0.02 }
-	force_update_dynamic_modifier = yes
-}
-MOIM_change_cp_factor_effect = {
-	add_to_variable = { moim_cp_factor = 0.02 }
+MOIM_change_rss_factor_effect = {
+	add_to_variable = { moim_rss_factor = 0.01 }
 	force_update_dynamic_modifier = yes
 }
 MOIM_change_army_xp_factor_effect = {
@@ -18,6 +14,27 @@ MOIM_change_navy_xp_factor_effect = {
 }
 MOIM_change_air_xp_factor_effect = {
 	add_to_variable = { moim_air_xp_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_cp_factor_effect = {
+	add_to_variable = { moim_cp_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_pp_factor_effect = {
+	add_to_variable = { moim_pp_factor = 0.02 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_aut_factor_effect = {
+	add_to_variable = { moim_autg_factor = 0.5 }
+	subtract_from_variable = { moim_auts_factor = 0.5 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_infa_factor_effect = {
+	add_to_variable = { moim_infa_factor = 0.01 }
+	force_update_dynamic_modifier = yes
+}
+MOIM_change_infd_factor_effect = {
+	add_to_variable = { moim_infd_factor = 0.01 }
 	force_update_dynamic_modifier = yes
 }
 MOIM_boost_emerging_factor_effect = {
