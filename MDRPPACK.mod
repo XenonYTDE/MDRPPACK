@@ -7,7 +7,7 @@ tags={
 dependencies={
 	"Millennium Dawn: A Modern Day Mod"
 }
-name="wow md modpack poggers - Dev"
+name="wow md modpack poggers"
 picture="thumbnail.png"
 supported_version="1.16.*"
 path="mod/MDRPPACK"
