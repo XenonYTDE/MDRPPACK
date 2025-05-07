@@ -1,3 +1,8 @@
+v1.11.2f
+-Reverted Stability nerf to Population Tax
+-Population Tax at max gives -50% Stability, -50% War Support, -15% Monthly Population Growth
+-Max 30 Civs per Market Contract
+
 v1.11.2e
 -Expanded Department of Internal Resource in the Ministry to access Resource, Autonomy, Foreign Influence buffs
 -Added more details to Ministry tooltips
